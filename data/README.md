@@ -45,8 +45,22 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 | `language` | `en` or `zh-TW` | |
 | `sensitive` | `true` / `false` | `true` for payments, passwords, privacy, scams, account recovery. These get an extra review. |
 | `sources` | list with `title`, `url`, `accessed` (YYYY-MM-DD) | Required. Where the steps came from. |
-| `author` | string | Who wrote or revised the example |
+| `author` | string | Who wrote or revised the example. `claude-draft` = drafted by Claude, not yet edited by the team |
 | `reviewed` | `true` / `false` | Set `true` only after a second team member checks it |
+| `inspired_by` | *optional:* `OATS`, `ElderBench`, `GrandGuard`, `original` | Which dataset's task type or phrasing style the user message follows. Messages are written fresh, not copied, because none of these datasets states a license. |
+| `style` | *optional:* `plain`, `verbose`, `over_specified`, `under_specified`, `incomplete` | How the user phrases the request (OATS categories) |
+
+## Pilot v1 (`pilot/pilot_v1.jsonl`)
+
+20 examples drafted by Claude on 2026-10-24. **All need team review before training.**
+
+- 8 underspecified (40%), 12 fully specified; 3 in zh-TW (15%); 6 sensitive
+- User messages follow the task types and phrasing styles of:
+  - **ElderBench** (Sharifi et al. / arXiv 2609.04850): everyday phone tasks, phrased the way older adults speak
+  - **OATS** (Shomee et al. / arXiv 2601.10018): verbose, over-specified, under-specified, and incomplete requests
+  - **GrandGuard** (arXiv 2605.20203): risks specific to older users, such as scams and privacy
+- Every reply's steps were checked against the cited official page on the access date
+- Review checklist: tone, step accuracy against the source, and whether clarifying questions are actually needed
 
 ## Rules
 

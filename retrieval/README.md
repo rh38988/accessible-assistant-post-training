@@ -17,8 +17,8 @@ Both conditions get identical retrieved text, so any difference between them com
    Source: <url>
    Accessed: YYYY-MM-DD
    ```
-3. Paste the relevant text below (instructions only, no menus or ads).
-4. Delete the `sample_*.md` placeholder files once real documents are in.
+3. Below the header, **summarize the steps in your own words**. Don't paste the page: support pages are copyrighted, and short summaries also retrieve better.
+4. Keep exact menu and button names (e.g. **Display & Brightness**); those need to match the screen.
 
 ## Try it
 

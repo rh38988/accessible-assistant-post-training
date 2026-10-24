@@ -16,6 +16,9 @@ from collections import Counter
 SPECIFICATIONS = {"underspecified", "fully_specified"}
 CATEGORIES = {"communication", "online_services", "technical_support"}
 LANGUAGES = {"en", "zh-TW"}
+# Optional provenance fields (see data/README.md).
+INSPIRED_BY = {"OATS", "ElderBench", "GrandGuard", "original"}
+STYLES = {"plain", "verbose", "over_specified", "under_specified", "incomplete"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # Fields every record needs, for each kind of file.
@@ -59,6 +62,10 @@ def check_record(rec, kind, errors, where):
         errors.append(f"{where}: language must be one of {sorted(LANGUAGES)}")
     if not isinstance(rec["sensitive"], bool):
         errors.append(f"{where}: sensitive must be true or false")
+    if "inspired_by" in rec and rec["inspired_by"] not in INSPIRED_BY:
+        errors.append(f"{where}: inspired_by must be one of {sorted(INSPIRED_BY)}")
+    if "style" in rec and rec["style"] not in STYLES:
+        errors.append(f"{where}: style must be one of {sorted(STYLES)}")
 
     if kind == "train":
         # Training examples end with the assistant reply we want to teach.
@@ -86,7 +93,7 @@ def main():
     args = parser.parse_args()
 
     errors, seen_ids = [], set()
-    spec_counts, cat_counts, lang_counts = Counter(), Counter(), Counter()
+    spec_counts, cat_counts, lang_counts, insp_counts = Counter(), Counter(), Counter(), Counter()
     n_sensitive = n_unreviewed = total = 0
 
     for path in args.files:
@@ -109,6 +116,8 @@ def main():
                 spec_counts[rec.get("specification")] += 1
                 cat_counts[rec.get("category")] += 1
                 lang_counts[rec.get("language")] += 1
+                if "inspired_by" in rec:
+                    insp_counts[rec["inspired_by"]] += 1
                 n_sensitive += rec.get("sensitive") is True
                 n_unreviewed += args.kind == "train" and rec.get("reviewed") is False
 
@@ -120,6 +129,8 @@ def main():
         print(f"Categories: {dict(cat_counts)}")
         print(f"Languages: {dict(lang_counts)}")
         print(f"Sensitive: {n_sensitive}")
+        if insp_counts:
+            print(f"Inspired by: {dict(insp_counts)}")
         if args.kind == "train":
             print(f"Not yet reviewed: {n_unreviewed}")
 
