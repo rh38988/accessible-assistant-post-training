@@ -56,8 +56,8 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 
 - 8 underspecified (40%), 12 fully specified; 3 in zh-TW (15%); 6 sensitive
 - User messages follow the task types and phrasing styles of:
-  - **ElderBench** (Sharifi et al. / arXiv 2609.04850): everyday phone tasks, phrased the way older adults speak
-  - **OATS** (Shomee et al. / arXiv 2601.10018): verbose, over-specified, under-specified, and incomplete requests
+  - **ElderBench** (arXiv 2609.04850): everyday phone tasks, phrased the way older adults speak
+  - **OATS** (Sharifi, Shomee, Medya & Chattopadhyay / arXiv 2601.10018): verbose, over-specified, under-specified, and incomplete requests
   - **GrandGuard** (arXiv 2605.20203): risks specific to older users, such as scams and privacy
 - Every reply's steps were checked against the cited official page on the access date
 - Review checklist: tone, step accuracy against the source, and whether clarifying questions are actually needed
