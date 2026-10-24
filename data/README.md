@@ -4,8 +4,10 @@ Owner: **Data Lead**
 
 Training examples live in JSON Lines files (`.jsonl`): one JSON object per line.
 
-- `pilot/` : the small pilot batch (start here, about 50 examples)
-- `train/` : the full training set once the pilot is reviewed
+- `tasks/` : the training task sheet (`train_tasks.csv`, made by `scripts/task_lists.py`)
+- `pilot/` : pilot v1, 20 examples
+- `train/` : train v1, 384 examples in 5 batches
+- `drafting/` : the specs used to draft train v1
 
 Run the validator before every commit:
 
@@ -49,6 +51,23 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 | `reviewed` | `true` / `false` | Set `true` only after a second team member checks it |
 | `inspired_by` | *optional:* `OATS`, `ElderBench`, `GrandGuard`, `original` | Which dataset's task type or phrasing style the user message follows. Messages are written fresh, not copied, because none of these datasets states a license. |
 | `style` | *optional:* `plain`, `verbose`, `over_specified`, `under_specified`, `incomplete` | How the user phrases the request (OATS categories) |
+
+## Train v1 (`train/batch_01.jsonl` to `train/batch_05.jsonl`)
+
+384 examples drafted by Claude on 2026-10-24: 4 examples for each of 96 training tasks (TR-021 to TR-116 in `tasks/train_tasks.csv`). With pilot v1, the total is **404 examples**.
+
+- 39% underspecified, 15% zh-TW, 106 sensitive
+- Every fully specified answer was checked against a readable official page (Apple, Google, Microsoft, Zoom, FTC, LINE, Taiwan police / 165). Pages that couldn't be read led to the task being swapped out, not guessed.
+- zh-TW tasks use only LINE and 165 / police sources, because those pages show the exact Chinese button names. Google and Apple pages returned English labels.
+- Each example has a `task_id`. Task types never overlap with `eval/tasks/eval_tasks.csv`.
+- How the drafts were generated: `data/drafting/README.md`
+
+**Review checklist for each example:**
+1. Steps match the cited source, with button names exactly as written there
+2. One action per step; plain language
+3. A clarifying question only when the answer really depends on the missing detail
+4. Sensitive tasks: safe advice, no requests for passwords or codes, points to official contacts
+5. Then set `reviewed: true` and change `author` if you rewrote it
 
 ## Pilot v1 (`pilot/pilot_v1.jsonl`)
 

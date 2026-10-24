@@ -16,6 +16,12 @@ scenarios/*.jsonl ──> generate.py (x5 conditions) ──> outputs/*.jsonl
                                                    analyze.py
 ```
 
+## Task list
+
+`eval/tasks/eval_tasks.csv` lists 150 held-out tasks (EV-001 to EV-150). Write about one scenario per task, labeled underspecified or fully specified (about 40% underspecified). Task types never overlap with training (`scripts/task_lists.py` checks this). Scam tasks use different stories from the training ones, such as Medicare or utility shut-off calls, to test whether safe behavior generalizes.
+
+Don't paste training examples into scenarios, and don't reuse a training task's wording.
+
 ## Scenario schema
 
 Same fields as training examples, except `turns` replaces `messages` and **ends with a user turn** (the one the model answers). Add `notes_for_raters` to say what a good answer looks like.

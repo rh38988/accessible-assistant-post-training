@@ -126,7 +126,7 @@ EV-124,photo_album,Make a photo album,iPhone,technical_support,en,False
 EV-125,qr_payment_scam,QR code on a parking meter asks for payment,any,online_services,en,True
 EV-126,fake_shopping_site,Website with prices that seem too good,any,online_services,en,True
 EV-127,account_hacked,Email account seems hacked,email,online_services,en,True
-EV-128,account_hacked,LINE account was taken over,LINE,online_services,zh-TW,True
+EV-128,health_product_scam,Ad says a health product cures illness,any,online_services,zh-TW,True
 EV-129,social_friend_request,Friend request from someone already a friend,Facebook,online_services,en,True
 EV-130,data_breach_notice,Letter says my information was in a data breach,any,online_services,en,True
 EV-131,credit_freeze,Freeze credit,credit bureaus,online_services,en,True
@@ -136,7 +136,7 @@ EV-134,email_new_account,Create an email account,Gmail,online_services,en,True
 EV-135,video_call,Make a group video call,iPhone (FaceTime),communication,en,False
 EV-136,meeting_controls,Turn on the camera in a Zoom meeting,Zoom,communication,en,False
 EV-137,app_permissions,Stop an app from using my location,iPhone,technical_support,en,True
-EV-138,contacts_backup,Make sure contacts are saved,iPhone (iCloud),technical_support,en,False
+EV-138,voice_memo,Record a voice memo,iPhone,technical_support,en,False
 EV-139,new_phone_transfer,Move everything to a new phone,iPhone to iPhone,technical_support,en,False
 EV-140,new_phone_transfer,Move everything to a new phone,Android to Android,technical_support,en,False
 EV-141,restart_router,Restart the internet router,unknown,technical_support,en,False

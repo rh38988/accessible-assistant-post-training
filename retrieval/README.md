@@ -9,6 +9,10 @@ Owner: **Data Lead** (owns the source documents)
 
 Both conditions get identical retrieved text, so any difference between them comes from training, not from the documents.
 
+## What the corpus needs to cover
+
+Retrieval is used at **evaluation** time (`rag` and `sft_rag`), so the docs must cover the **eval tasks** in `eval/tasks/eval_tasks.csv`. The current docs mostly cover pilot training tasks, so add summaries for the eval tasks before running the RAG conditions. Adding eval-task docs here is fine: they are never used for training.
+
 ## Adding documents
 
 1. Save each support page as a `.md` or `.txt` file in `docs/`.
