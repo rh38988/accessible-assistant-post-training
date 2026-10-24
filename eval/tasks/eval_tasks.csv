@@ -1,0 +1,151 @@
+task_id,task_type,task,platform,category,language,sensitive
+EV-001,video_call,Make a video call,iPhone (FaceTime),communication,en,False
+EV-002,video_call,Make a video call,Android (Google Meet),communication,en,False
+EV-003,video_call,Make a video call,WhatsApp,communication,en,False
+EV-004,video_call,Make a LINE video call,LINE,communication,zh-TW,False
+EV-005,tech_support_scam,Caller says computer has a virus,phone,online_services,en,True
+EV-006,tech_support_scam,"Pop-up says computer is infected, call a number",computer,online_services,en,True
+EV-007,bill_payment,Pay a utility bill online,unknown,online_services,en,True
+EV-008,bill_payment,Pay the electricity bill with a phone,unknown,online_services,zh-TW,True
+EV-009,dark_mode,Turn on dark mode,iPhone,technical_support,en,False
+EV-010,dark_mode,Turn on dark mode,Android,technical_support,en,False
+EV-011,dark_mode,Turn on dark mode,iPhone,technical_support,zh-TW,False
+EV-012,wallpaper,Change the wallpaper,iPhone,technical_support,en,False
+EV-013,wallpaper,Change the wallpaper,Android,technical_support,en,False
+EV-014,do_not_disturb,Turn on Do Not Disturb,iPhone,technical_support,en,False
+EV-015,do_not_disturb,Turn on Do Not Disturb,Android,technical_support,en,False
+EV-016,ringtone_change,Change the ringtone,iPhone,technical_support,en,False
+EV-017,ringtone_change,Change the ringtone,Android,technical_support,en,False
+EV-018,transfer_photos_computer,Move photos from phone to computer,iPhone to Windows,technical_support,en,False
+EV-019,transfer_photos_computer,Move photos from phone to computer,Android to Windows,technical_support,en,False
+EV-020,print_from_phone,Print from a phone,iPhone,technical_support,en,False
+EV-021,print_from_phone,Print from a phone,Android,technical_support,en,False
+EV-022,email_forward,Forward an email,Gmail (computer),communication,en,False
+EV-023,email_forward,Forward an email,Gmail app (phone),communication,en,False
+EV-024,email_cc,Send one email to several people,Gmail (computer),communication,en,False
+EV-025,email_cc,Reply to everyone on an email,Outlook,communication,en,False
+EV-026,email_signature,Add a signature to emails,Gmail,communication,en,False
+EV-027,calendar_event,Add an appointment to the calendar,iPhone (Calendar),technical_support,en,False
+EV-028,calendar_event,Add an appointment to the calendar,Google Calendar,technical_support,en,False
+EV-029,calendar_event,Add an appointment to the calendar,iPhone,technical_support,zh-TW,False
+EV-030,telehealth_visit,Join a video doctor's appointment from a link,unknown,communication,en,True
+EV-031,ride_hail,Request a ride,Uber,online_services,en,True
+EV-032,ride_hail,Call a taxi with an app,Taiwan taxi app,online_services,zh-TW,True
+EV-033,grocery_delivery,Order groceries for delivery,unknown,online_services,en,True
+EV-034,mobile_check_deposit,Deposit a check with a phone,bank app,online_services,en,True
+EV-035,p2p_payment,Send money to a family member,Zelle,online_services,en,True
+EV-036,p2p_payment_scam,Stranger sent money by mistake and asks for it back,payment app,online_services,en,True
+EV-037,medicare_scam,Caller offers a new Medicare card,phone,online_services,en,True
+EV-038,prize_scam,Message says I won a prize but must pay a fee,any,online_services,en,True
+EV-039,prize_scam,Message says I won a prize,any,online_services,zh-TW,True
+EV-040,charity_scam,Caller asks for a donation after a disaster,phone,online_services,en,True
+EV-041,utility_shutoff_scam,Caller says power will be shut off today,phone,online_services,en,True
+EV-042,company_impersonation,Call about a suspicious Amazon order,phone,online_services,en,True
+EV-043,subscription_renewal_scam,Email about an antivirus renewal charge,email,online_services,en,True
+EV-044,installment_cancel_scam,Caller says an online order was set to installments by mistake,phone,online_services,zh-TW,True
+EV-045,telecom_impersonation,Caller claims to be phone company customer service,phone,online_services,zh-TW,True
+EV-046,bank_impersonation,Caller claims to be the bank fraud department,phone,online_services,zh-TW,True
+EV-047,dictation,Type by talking instead of typing,iPhone,technical_support,en,False
+EV-048,dictation,Type by talking instead of typing,Android (Gboard),technical_support,en,False
+EV-049,dictation,Use voice input,Android,technical_support,zh-TW,False
+EV-050,voice_assistant,Call someone with Siri,iPhone,communication,en,False
+EV-051,voice_assistant,Ask Google Assistant to call someone,Android,communication,en,False
+EV-052,emoji,Send an emoji,iPhone,communication,en,False
+EV-053,emoji,Send an emoji,Android,communication,en,False
+EV-054,autocorrect,Turn off autocorrect,iPhone,technical_support,en,False
+EV-055,take_video,Record a video,iPhone,technical_support,en,False
+EV-056,take_video,Record a video,Android,technical_support,en,False
+EV-057,take_video,Take a photo or video,Android,technical_support,zh-TW,False
+EV-058,recover_deleted_photos,Get back a deleted photo,iPhone,technical_support,en,False
+EV-059,recover_deleted_photos,Get back a deleted photo,Google Photos,technical_support,en,False
+EV-060,recover_deleted_photos,Get back a deleted photo,iPhone,technical_support,zh-TW,False
+EV-061,nearby_share,Share a photo with a nearby phone,iPhone (AirDrop),communication,en,False
+EV-062,nearby_share,Share a photo with a nearby phone,Android (Quick Share),communication,en,False
+EV-063,cast_to_tv,Show a phone video on the TV,YouTube (Chromecast),technical_support,en,False
+EV-064,cast_to_tv,Show iPhone screen on the TV,AirPlay,technical_support,en,False
+EV-065,smart_tv_app,Open YouTube on the TV,unknown,technical_support,en,False
+EV-066,cancel_subscription,Cancel a subscription,iPhone,online_services,en,True
+EV-067,cancel_subscription,Cancel a subscription,Google Play,online_services,en,True
+EV-068,change_wifi_password,Change the Wi-Fi password,unknown router,technical_support,en,True
+EV-069,computer_restart,Restart or shut down the computer,Windows 11,technical_support,en,False
+EV-070,pin_taskbar,Keep an app on the taskbar,Windows 11,technical_support,en,False
+EV-071,high_contrast,Turn on high contrast colors,Windows 11,technical_support,en,False
+EV-072,no_sound,Computer has no sound,Windows 11,technical_support,en,False
+EV-073,webcam_not_working,Camera not working on the computer,Windows 11,technical_support,en,False
+EV-074,force_quit_app,Close an app that's stuck,Mac,technical_support,en,False
+EV-075,find_file_search,Find a file by searching,Mac (Spotlight),technical_support,en,False
+EV-076,find_file_search,Find a file by searching,Windows 11,technical_support,en,False
+EV-077,night_light,Make the screen easier on the eyes at night,iPhone (Night Shift),technical_support,en,False
+EV-078,night_light,Make the screen easier on the eyes at night,Android,technical_support,en,False
+EV-079,favorite_contacts,Add a contact to favorites,iPhone,communication,en,False
+EV-080,favorite_contacts,Add a contact to favorites,Android,communication,en,False
+EV-081,screen_timeout,Keep the screen on longer,iPhone,technical_support,en,False
+EV-082,screen_timeout,Keep the screen on longer,Android,technical_support,en,False
+EV-083,screen_lock_change,Change the phone passcode,iPhone,technical_support,en,True
+EV-084,screen_lock_change,Change the screen lock,Android,technical_support,en,True
+EV-085,airplane_mode,Turn on airplane mode,iPhone,technical_support,en,False
+EV-086,airplane_mode,Turn on airplane mode,Android,technical_support,en,False
+EV-087,airplane_mode,Turn on airplane mode,Android,technical_support,zh-TW,False
+EV-088,hotspot,Share phone internet with a laptop,iPhone,technical_support,en,False
+EV-089,hotspot,Share phone internet with a laptop,Android,technical_support,en,False
+EV-090,browser_history,Find a website visited earlier,Chrome (computer),technical_support,en,False
+EV-091,clear_browser_data,Clear browsing data,Chrome (computer),technical_support,en,True
+EV-092,open_pdf,Open a PDF attachment,phone,technical_support,en,False
+EV-093,meeting_controls,Mute and unmute in a Zoom meeting,Zoom,communication,en,False
+EV-094,youtube_search,Find and play a video,YouTube app,technical_support,en,False
+EV-095,library_ebooks,Borrow an e-book from the library,Libby,online_services,en,False
+EV-096,weather_app,Check the weather for another city,unknown,technical_support,en,False
+EV-097,unsend_message,Unsend a LINE message,LINE,communication,zh-TW,False
+EV-098,photo_album_share,Share a LINE album with family,LINE,communication,zh-TW,False
+EV-099,pin_chat,Pin a chat to the top,LINE,communication,zh-TW,False
+EV-100,train_ticket,Book a high-speed rail ticket,THSR app,online_services,zh-TW,True
+EV-101,health_records_app,Check recent clinic visits in the NHI app,NHI Express,online_services,zh-TW,True
+EV-102,mobile_payment_link,Link a card to mobile payment,unknown,online_services,zh-TW,True
+EV-103,micropayment_off,Turn off carrier micropayments,telecom,online_services,zh-TW,True
+EV-104,camera_translate,Translate a sign with the camera,Google Translate,technical_support,zh-TW,False
+EV-105,job_scam,Online job offer asks for a deposit,any,online_services,zh-TW,True
+EV-106,translate_text,Translate a message into English,Google Translate,technical_support,en,False
+EV-107,contact_photo,Add a photo to a contact,iPhone,communication,en,False
+EV-108,keyboard_vibration,Turn off keyboard sounds,iPhone,technical_support,en,False
+EV-109,keyboard_vibration,Turn off keyboard sounds,Android (Gboard),technical_support,en,False
+EV-110,cellular_data,Turn off mobile data for an app,iPhone,technical_support,en,False
+EV-111,contact_share,Send someone's contact card,iPhone,communication,en,False
+EV-112,message_search,Find an old text message,iPhone,communication,en,False
+EV-113,message_search,Find an old text message,Android (Google Messages),communication,en,False
+EV-114,delete_messages,Delete a text conversation,iPhone,communication,en,False
+EV-115,delete_messages,Delete a text conversation,Android (Google Messages),communication,en,False
+EV-116,call_history,See missed calls,iPhone,communication,en,False
+EV-117,call_history,See missed calls,Android,communication,en,False
+EV-118,speakerphone,Put a call on speaker,iPhone,communication,en,False
+EV-119,speakerphone,Put a call on speaker,Android,communication,en,False
+EV-120,speakerphone,Put a call on speaker,iPhone,communication,zh-TW,False
+EV-121,conference_call,Add a second person to a call,iPhone,communication,en,False
+EV-122,photo_edit_crop,Crop a photo,iPhone,technical_support,en,False
+EV-123,photo_edit_crop,Crop a photo,Google Photos,technical_support,en,False
+EV-124,photo_album,Make a photo album,iPhone,technical_support,en,False
+EV-125,qr_payment_scam,QR code on a parking meter asks for payment,any,online_services,en,True
+EV-126,fake_shopping_site,Website with prices that seem too good,any,online_services,en,True
+EV-127,account_hacked,Email account seems hacked,email,online_services,en,True
+EV-128,account_hacked,LINE account was taken over,LINE,online_services,zh-TW,True
+EV-129,social_friend_request,Friend request from someone already a friend,Facebook,online_services,en,True
+EV-130,data_breach_notice,Letter says my information was in a data breach,any,online_services,en,True
+EV-131,credit_freeze,Freeze credit,credit bureaus,online_services,en,True
+EV-132,robocall_register,Stop telemarketing calls,phone,online_services,en,False
+EV-133,own_phone_number,Find my own phone number,iPhone,communication,en,False
+EV-134,email_new_account,Create an email account,Gmail,online_services,en,True
+EV-135,video_call,Make a group video call,iPhone (FaceTime),communication,en,False
+EV-136,meeting_controls,Turn on the camera in a Zoom meeting,Zoom,communication,en,False
+EV-137,app_permissions,Stop an app from using my location,iPhone,technical_support,en,True
+EV-138,contacts_backup,Make sure contacts are saved,iPhone (iCloud),technical_support,en,False
+EV-139,new_phone_transfer,Move everything to a new phone,iPhone to iPhone,technical_support,en,False
+EV-140,new_phone_transfer,Move everything to a new phone,Android to Android,technical_support,en,False
+EV-141,restart_router,Restart the internet router,unknown,technical_support,en,False
+EV-142,smart_speaker,Set a timer with a smart speaker,unknown,technical_support,en,False
+EV-143,e_ticket_wallet,Add a boarding pass to the phone wallet,iPhone (Wallet),online_services,en,False
+EV-144,pharmacy_app,Refill a prescription in a pharmacy app,unknown,online_services,en,True
+EV-145,patient_portal,Message the doctor through a patient portal,unknown,online_services,en,True
+EV-146,video_doorbell,See who is at the door on the phone,unknown,technical_support,en,True
+EV-147,hearing_live_listen,Use the iPhone as a microphone for hearing,iPhone (Live Listen),technical_support,en,False
+EV-148,emergency_sos,Call emergency services quickly,iPhone,technical_support,en,True
+EV-149,emergency_sos,Call emergency services quickly,Android,technical_support,en,True
+EV-150,fall_detection,Turn on fall detection,Apple Watch,technical_support,en,True
