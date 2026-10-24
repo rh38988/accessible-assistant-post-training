@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Model weights, checkpoints, caches (too large for git; keep on $WORK / $SCRATCH)
+checkpoints/
+adapters/
+hf_cache/
+*.safetensors
+*.bin
+*.pt
+
+# Slurm logs (the folder itself is kept: Slurm cannot write logs to a missing folder)
+slurm/logs/*
+!slurm/logs/.gitkeep
+
+# Generated model outputs (regenerate from scripts; commit only final summaries)
+eval/outputs/*
+!eval/outputs/.gitkeep
+
+# Rating key maps item ids to conditions. Keeping it out of git keeps raters blinded.
+# The Evaluation Lead keeps the key file and backs it up privately.
+eval/ratings/key*.csv
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

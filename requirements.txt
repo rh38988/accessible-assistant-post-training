@@ -1,0 +1,9 @@
+# Install PyTorch separately first (TACC venv already has torch 2.8.0).
+# These versions are minimums; train_sft.py relies on TRL's prompt-completion
+# format with completion-only loss, which needs a recent TRL.
+transformers>=4.57
+peft>=0.17
+trl>=0.20
+datasets>=3.0
+accelerate>=1.0
+huggingface_hub>=0.34
