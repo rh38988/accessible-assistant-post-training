@@ -58,6 +58,8 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 
 `tasks/checkpoint_verify_v1.csv` lists **20 examples to hand-verify for the 10/28 checkpoint**: one per core task, plus 3 failure-recovery drafts (`train/recovery_v1.jsonl`). The CSV has columns to record who checked each example and what changed.
 
+**AI pre-check (2026-10-25):** two independent Claude agents, which did not write the drafts, fetched every cited page and checked the 20 examples claim by claim. Result: 3 pass, 16 pass with notes, 1 fail, no unsafe advice. The fail (tr058-d) and four other verified issues were fixed in `data/drafting/` and rebuilt. The CSV columns `ai_precheck_verdict`, `ai_fixed`, and `ai_notes_for_human_check` show what to look at; full findings are in `tasks/checkpoint_ai_precheck_v1.json`. **This is not the human verification:** every example still has `reviewed: false` until a team member checks it.
+
 ## Train v1 (`train/batch_01.jsonl` to `train/batch_05.jsonl`)
 
 384 examples drafted by Claude on 2026-10-24: 4 examples for each of 96 training tasks (TR-021 to TR-116 in `tasks/train_tasks.csv`). With pilot v1, the total is **404 examples**.

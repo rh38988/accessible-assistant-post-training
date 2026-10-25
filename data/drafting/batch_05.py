@@ -332,7 +332,7 @@ If none of this works, it may need service from Apple.
         "styled_reply": "It looks like your message got cut off. Is your charger **not working**, or is your phone **not charging**? And what kind of phone do you have?",
     },
     {
-        "id": "TR-112", "src": ["tw_line_borrow"], "inspired": "GrandGuard",
+        "id": "TR-112", "src": ["tw_line_borrow", "tw_165_faq"], "inspired": "GrandGuard",
         "full": "我朋友在LINE上傳訊息說他急需用錢，要跟我借兩萬，請我先匯款，說之後會還。這是真的嗎？",
         "steps": """先**不要匯款**。這很可能是詐騙：詐騙集團會先盜用別人的 LINE 帳號，再假冒成朋友來借錢，或要人幫忙代買遊戲點數。
 
@@ -345,7 +345,7 @@ If none of this works, it may need service from Apple.
 - 不管是誰，都**不要把手機收到的簡訊驗證碼**給別人。LINE 不會請別人幫忙代收驗證碼。
 - 有任何疑問，可以打 **165 反詐騙諮詢專線**。
 
-如果您已經匯款了，請馬上告訴我，我們一起處理。""",
+如果您已經匯款了，請**馬上打 165 反詐騙諮詢專線**報案，越快越好。也可以告訴我，我陪您一步一步處理。""",
         "under": "朋友LINE跟我借錢，我該借嗎",
         "clarify": "先別急著匯款，我們先確認一下。請問朋友是**用什麼方式**跟您借的？是 LINE 傳**文字訊息**，還是**打電話**說的？您有跟他本人**講過電話**確認嗎？",
         "answer": "是LINE傳訊息的，他說很急，我還沒打電話問他",

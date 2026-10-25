@@ -180,10 +180,15 @@ def main():
             "sensitive": ex["sensitive"], "source_urls": " ".join(s["url"] for s in ex["sources"]),
             "reviewer": "", "steps_match_source": "", "edited": "", "reviewed_on": "", "notes": "",
         })
-    with open(out / "checkpoint_verify_v1.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=list(vrows[0]))
-        w.writeheader()
-        w.writerows(vrows)
+    verify_path = out / "checkpoint_verify_v1.csv"
+    if verify_path.exists():
+        # Never overwrite: reviewers record their checks in this file.
+        print(f"{verify_path.name} exists; not overwritten")
+    else:
+        with open(verify_path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=list(vrows[0]))
+            w.writeheader()
+            w.writerows(vrows)
 
     # ---- core_tasks_v1.md ----
     fam_order = ["Device Basics", "Communication", "Online Safety"]

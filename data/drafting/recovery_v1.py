@@ -32,10 +32,12 @@ RECOVERY = [
         "reply": """That can happen when the text is set very large. Let's make it a little smaller so the buttons fit again.
 
 1. Open **Settings**.
-2. Tap **Display & Brightness**, then **Text Size**.
-   If you used **Larger Text** instead, go to **Settings**, then **Accessibility**, then **Display & Text Size**, then **Larger Text**.
-3. Drag the slider **one step to the left**.
-4. Go back to the app and check the buttons.
+2. Tap **Display & Brightness**.
+3. Tap **Text Size**.
+4. Drag the slider **one step to the left**.
+5. Go back to the app and check the buttons.
+
+If you made the text bigger with **Larger Text** instead, the slider is in **Settings**, then **Accessibility**, then **Display & Text Size**, then **Larger Text**.
 
 Repeat until the buttons fit on the screen and the text is still easy for you to read.""",
     },

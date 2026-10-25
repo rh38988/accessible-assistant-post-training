@@ -1,0 +1,597 @@
+[
+  {
+    "example_id": "tr022-c",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.google.com/accessibility/android/answer/11183305?hl=en",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "The change happens right away.",
+        "evidence": "The source says you see a preview of the change after moving the slider; it does not state the change is immediate. Plausible on Pixel and low risk.",
+        "fix": "Say 'You'll see the text change as you move the slider.'"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "It takes about a minute.",
+        "evidence": "No time estimate in the source. Harmless.",
+        "fix": "Keep or drop; optional."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "2. Tap the search bar at the top of Settings and type **Font size**.",
+        "evidence": "Two actions (tap, then type) in one numbered step. The source just says 'Search and select Font size'.",
+        "fix": "Split into '2. Tap the search bar at the top of Settings.' and '3. Type Font size.' and renumber."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Yes, there is, and it should mean reaching for your glasses less often. Here's how:\n\nYou can make the writing larger in Settings.",
+        "evidence": "Redundant double intro ('Here's how:' followed by another intro sentence) reads like template stitching.",
+        "fix": "Merge into one intro: 'Yes. You can make the writing larger in Settings. It takes about a minute.'"
+      }
+    ],
+    "behavior_check": "Request is fully specified (Pixel, bigger text), and the assistant correctly answers without asking a question. Steps match the source path (Settings, search Font size, slider) and the 'some apps ignore this' caveat is supported; fallback offered.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr033-b",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.google.com/android/answer/7680439?hl=en",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "Updates are usually a good idea because they fix problems and help keep your phone secure.",
+        "evidence": "The source ties updates to security patches; 'fix problems' is not stated there. Common knowledge and low risk.",
+        "fix": "Optional: 'help keep your phone secure and working well.'"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Updates are usually a good idea because they fix problems and help keep your phone secure.",
+        "evidence": "For low-confidence users, 'my phone says there's an update' can be a fake pop-up in a web browser. The answer endorses updating without telling the user that real updates come from the phone's Settings or a system notification. The source also advises Wi-Fi and charging (at least 75%) first, which applies to any phone.",
+        "fix": "Add one sentence: 'If the message popped up on a website, don't tap it; real updates come from your phone's Settings.' Optionally add 'Connect to Wi-Fi and charge your phone first.'"
+      }
+    ],
+    "behavior_check": "Asking iPhone vs Android is reasonable because update steps differ, and the core 'should I?' question is answered first, so this is one short, justified question. Minor safety gap about fake update pop-ups.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr101-a",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/105103",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "1. Press the **Action button**. By default, it turns Silent mode on and off.",
+        "evidence": "The source says the Action button turns Silent mode on or off by default but gives no press instruction. On real devices the Action button must be pressed and held; a short press only shows a hint. Real usability risk: the user may press briefly, see nothing change, and get stuck.",
+        "fix": "'Press and hold the Action button until you see Silent Mode Off at the top of the screen.'"
+      },
+      {
+        "type": "OUTDATED_VARIES",
+        "quote": "**If your iPhone has an Action button instead** (iPhone 15 Pro and newer):",
+        "evidence": "The source lists the Action button for iPhone 16 and later, iPhone 17e, 16e and 15 Pro, but its separate 'On iPhone Duo' section lists only volume buttons, side button and Camera Control (no Action button or Ring/Silent switch). So 'iPhone 15 Pro and newer' over-generalizes, and an iPhone Duo user gets no path.",
+        "fix": "Say 'most iPhone 15 Pro and newer models' and add a fallback: 'If you don't have a switch or an Action button, tell me your iPhone model.'"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "**If your iPhone has a small switch on the side** (above the volume buttons):",
+        "evidence": "The page only shows the switch in a diagram; location text is not given. True for switch models; harmless.",
+        "fix": "Fine to keep; optionally 'on the left side, above the volume buttons'."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "If it's still too quiet, press the **volume up** button while you're on the Home Screen.",
+        "evidence": "Source supports that the volume buttons adjust ringer volume when not using other apps. It does not mention that this only works when the ringer is set to change with buttons. Minor.",
+        "fix": "Add: 'If that doesn't change it, tell me and we'll check Sounds & Haptics in Settings.'"
+      }
+    ],
+    "behavior_check": "Request is complete enough; branching by switch vs Action button instead of asking the model is a good choice. Silent-mode orange meaning matches the source, but the Action button instruction should be 'press and hold'.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr032-a",
+    "verdict": "PASS",
+    "sources_fetched": [
+      {
+        "url": "https://help.line.me/line/?contentId=20011380&lang=zh-Hant",
+        "ok": true
+      }
+    ],
+    "issues": [],
+    "behavior_check": "Request is complete (mute one LINE group), no unnecessary question. Steps (選單圖示 > 關閉提醒) match the mobile steps; the toggle to 開啟提醒 and the mention-notification caveat are supported (the 三條橫線 description matches the mobile icon image, bars_regular). The '大約十秒鐘' estimate is unsupported but harmless.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr058-d",
+    "verdict": "FAIL",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/101550",
+        "ok": true
+      },
+      {
+        "url": "https://support.apple.com/en-us/108429",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "INCORRECT",
+        "quote": "If the icons start to jiggle instead of showing a menu, tap the **minus** sign on the app's corner, tap **Delete**, then tap **Done**.",
+        "evidence": "Source jiggle-mode steps: tap the Remove (minus) icon in the upper-left corner, tap Delete App, then tap Delete to confirm, then tap Done. The example skips 'Delete App', so the next button the user sees will not match the instruction.",
+        "fix": "'...tap the minus sign in the top-left corner of the app, tap Delete App, tap Delete, then tap Done at the top of the screen.' Better as its own numbered list, one action per step."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "tap the **minus** sign on the app's corner, tap **Delete**, then tap **Done**.",
+        "evidence": "Three actions packed into one sentence; violates one-action-per-step for the fallback path.",
+        "fix": "Turn the fallback into numbered steps."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "If you might want it later, you can download it again from the App Store.",
+        "evidence": "Neither source states this. Common knowledge, low risk. The data-removal sentence before it IS supported by 108429 ('removes the app and its related data').",
+        "fix": "Keep (plausible) or cite the App Store redownload page."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Deleting an app also removes its data from your phone.",
+        "evidence": "101550 explicitly warns that deleting an app does not cancel in-app subscriptions. For older users this is a money-related point the answer omits.",
+        "fix": "Add: 'Deleting an app does not cancel any subscription you pay for in it. Cancel that first in Settings.'"
+      }
+    ],
+    "behavior_check": "First turn correctly asks one short question (iPhone or Android) for an underspecified request; final turn is appropriately specific. Main path (touch and hold > Remove App > Delete App > Delete) matches the source, but the jiggle fallback is missing the Delete App step.",
+    "fixed_after_precheck": "Added missing Delete App tap and subscription warning (Apple 101550)"
+  },
+  {
+    "example_id": "tr027-c",
+    "verdict": "PASS",
+    "sources_fetched": [
+      {
+        "url": "https://support.google.com/android/answer/9075928?hl=en",
+        "ok": true
+      }
+    ],
+    "issues": [],
+    "behavior_check": "Correctly asks one short clarifying question because screenshot buttons depend on the phone (source says 'Depending on your phone'), and first explains what a screenshot is in plain words. Dataset note: only an Android source is cited, so the iPhone follow-up will need an Apple source.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr031-a",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-wi-fi-network-in-windows",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "5. Type your Wi-Fi password and click **Next**.",
+        "evidence": "Two actions in one step (same as source wording, but the target behavior is one action per step).",
+        "fix": "Split into '5. Type your Wi-Fi password.' and '6. Click Next.'"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "When it's done, try opening a website to check that it works.",
+        "evidence": "Does not say what the user should see on success (Windows shows 'Connected' under the network name). Unsupported by source but common knowledge.",
+        "fix": "'When it works, you'll see Connected under your network's name.'"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "If you don't see your network in the list, click **Refresh network list** and look again.",
+        "evidence": "Supported by the source (the button exists, lower right). Only note: the example doesn't say where the button is.",
+        "fix": "'click Refresh network list in the lower right of the panel.'"
+      }
+    ],
+    "behavior_check": "Fully specified request; no question asked, correctly. Step order and labels (network/sound/battery icons, Manage Wi-Fi connections arrow, Connect, Next, Refresh network list) match the source.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr044-d",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://help.line.me/line/smartphone/categoryId/20007848/3/pc?contentId=200000585&lang=zh-Hant",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "5. 選擇國家（台灣），輸入女兒的手機號碼，再點搜尋圖示。",
+        "evidence": "Three actions in one step.",
+        "fix": "拆成：5. 選擇國家「台灣」。6. 輸入女兒的手機號碼。7. 點搜尋圖示。"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "2. 點上方的 **「+」**，再點**加入好友**。",
+        "evidence": "Two actions in one step. Path itself matches the source (聊天 > 畫面上方的加號圖示 > 加入好友).",
+        "fix": "拆成兩步：點上方的「+」；點「加入好友」。"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "6. 找到她之後，點加入好友。",
+        "evidence": "The source stops at tapping the search icon; it does not name the final button. In the LINE app the button on the search result is usually labeled 「加入」, so 「加入好友」 may not match what the user sees.",
+        "fix": "「找到她之後，點她名字下方的「加入」。」並說明看到她的名字和照片代表找對人。"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "如果搜尋不到，可能是她沒有開啟允許別人用電話號碼加她好友的設定。",
+        "evidence": "Source says the other person must have the setting allowing others to add them turned on; it does not name a phone-number-specific setting. Paraphrase is close enough; low risk. The link fallback is supported by the source's 透過連結加入好友 section.",
+        "fix": "Optionally: 「可能是她沒有開啟『允許被加入好友』的設定。」"
+      }
+    ],
+    "behavior_check": "First turn asks one relevant question (is she nearby) since the method depends on it; final turn gives phone-number steps matching the source order and a supported fallback. Main weakness is multi-action steps and a likely mislabeled final button.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr045-c",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/111104",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "OUTDATED_VARIES",
+        "quote": "3. Find the number and tap the **Info** button next to it (a small \"i\" in a circle).",
+        "evidence": "Source: in Recents, tap the phone number or contact, or tap the Info button 'in Classic view'. The Info button applies to Classic view only; on the newer layout the user taps the entry itself. An iPhone 11 can run the current iOS, so the user may not see an Info button.",
+        "fix": "'Tap the number. (If you see a small \"i\" in a circle next to it, tap that instead.)' or add 'If you don't see an \"i\", tap the number itself.'"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "5. Confirm if asked.",
+        "evidence": "Source does not mention a confirmation step. iOS does show a confirmation in practice; harmless but vague.",
+        "fix": "'If a message asks you to confirm, tap Block Contact.'"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Your neighbor is right: blocking it will stop those calls from ringing. Here's how:\n\nYou can block that number from your list of recent calls.",
+        "evidence": "Double intro, slightly repetitive.",
+        "fix": "Merge into one intro sentence."
+      }
+    ],
+    "behavior_check": "Fully specified (iPhone 11, block a number); no question asked, correctly. Block Caller label, caller-not-notified, and voicemail-without-notification claims all match the source. Main risk is the Classic-view-only Info button.",
+    "fixed_after_precheck": "Tap the number; Info button only in Classic view (Apple 111104)"
+  },
+  {
+    "example_id": "tr051-b",
+    "verdict": "PASS",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/118236",
+        "ok": true
+      }
+    ],
+    "issues": [],
+    "behavior_check": "Underspecified request; one short clarifying question (iPhone or Android) is the right move since group-text steps differ. Optional consistency tweak: add '(like Samsung or Google Pixel)' as other examples do. Only an iPhone source is cited, so the Android follow-up needs its own source.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr054-d",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/105104",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "OUTDATED_VARIES",
+        "quote": "Choose how long to share: **one hour**, **until the end of the day**, or **indefinitely**.",
+        "evidence": "Apple lists four choices: an hour, until the end of the day, indefinitely, or a custom time period. The page also notes some location sharing options require iOS 17. The example presents three as the complete list.",
+        "fix": "Choose how long to share, such as **one hour**, **until the end of the day**, or **indefinitely**. (Some iPhones also offer a custom time.)"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "5. Choose your daughter.",
+        "evidence": "Source only says tap Share My Location to add a friend. It does not explain how to pick the person or whether a Send tap is needed. On current iOS you type the name in the To field and tap Send, so an older user may get stuck at this step.",
+        "fix": "5. Type your daughter's name and tap it when it appears. 6. Tap **Send**. (Verify against current iOS before adding, since the source does not state it.)"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "4. Tap the **Add** button (a plus sign), then tap **Share My Location**.",
+        "evidence": "Two actions in one numbered step. Content matches the source.",
+        "fix": "Split into: 4. Tap the **Add** button (a plus sign). 5. Tap **Share My Location**."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Great. Since you both have iPhones, the Find My app makes this easy.\n\nYou can do this in the **Find My** app.",
+        "evidence": "Repeats the same point twice in a row; filler for a low-confidence reader.",
+        "fix": "Keep one sentence: Since you both have iPhones, you can do this in the **Find My** app. It takes about two minutes."
+      }
+    ],
+    "behavior_check": "Earlier clarifying turn was appropriate (device needed), though it bundled two questions; final message correctly does not ask again. No expected-result check besides 'she can see you', and no what-if-it-fails guidance.",
+    "fixed_after_precheck": "Added custom time option for sharing duration (Apple 105104)"
+  },
+  {
+    "example_id": "tr037-a",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "Very large files are added as a Google Drive link instead, which the person can still open.",
+        "evidence": "Source says that over the size limit (25 MB for personal accounts) Gmail removes the attachment and adds it as a Google Drive link. It does not say the recipient can always open it; access depends on Drive sharing settings.",
+        "fix": "Very large files (over 25 MB) are added as a Google Drive link instead. If Gmail asks about sharing, choose the option that lets the person open it."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "3. Tap the **Attach** icon at the top right.",
+        "evidence": "Label and position match the source, but no description of what the icon looks like for a low-confidence user.",
+        "fix": "3. Tap the **Attach** icon at the top right. It looks like a paperclip."
+      }
+    ],
+    "behavior_check": "Complete request, no unnecessary question. Steps, order, labels (Compose, Attach, Photos), the five-photo limit and the Close icon all match the source; one action per step.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr112-c",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://www.hccp.gov.tw/ch/home.jsp?id=132&mcustomize=onemessages_view.jsp&toolsflag=Y&dataserno=201701090002&t=HccpOnes&mserno=201603210003",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "如果您已經匯款了，請馬上告訴我，我們一起處理。",
+        "evidence": "Source case shows the victim called 165 and police were able to freeze (圈存) the transfer through the financial joint-defense platform, so speed and calling 165 are the key action. The example defers to 'tell me' instead of giving the urgent official step.",
+        "fix": "如果您已經匯款，請馬上撥打 165 或 110，並聯絡您的銀行，越快處理越有機會把錢攔下來。"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "不要用 LINE 通話，也不要用訊息裡給的號碼。",
+        "evidence": "Source only says to phone the person directly to verify. Avoiding LINE calls and numbers from the message is not stated, but is sound advice since the account is hijacked. Low risk.",
+        "fix": "Keep as is, or label as an added precaution. Optional."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "說「不方便講電話」又急著要錢，是這類詐騙常見的說法。",
+        "evidence": "Source case uses a car-accident surgery story; it does not mention 'can't talk on the phone' as a common line. Plausible common knowledge.",
+        "fix": "急著要錢、又不讓您打電話確認，是這類詐騙常見的手法。"
+      }
+    ],
+    "behavior_check": "Complete (verbose) request answered without an unnecessary question; no shaming, validates the user's suspicion. Claims about LINE takeover, 簡訊驗證碼, 'LINE 不會請別人代收驗證碼' and 165 all match the source.",
+    "fixed_after_precheck": "If money already sent, call 165 right away; cite 165 FAQ"
+  },
+  {
+    "example_id": "tr089-c",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "**What did the caller say, and did they ask you for money or personal information?**",
+        "evidence": "Asking is correct for an underspecified message, but this is two questions joined together rather than ONE short question.",
+        "fix": "Use one question: **Did the caller ask you for money or personal information?**"
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Okay, let's make sure it was really them.",
+        "evidence": "Optional: FTC says real SSA will not threaten you, suspend your number, or ask for payment by gift card, wire, crypto or payment app. A one-line safety hold before the question would protect a user who may still be on the phone.",
+        "fix": "Okay, let's check. Until we know, please don't give them any money or your Social Security number."
+      }
+    ],
+    "behavior_check": "Correctly asks instead of guessing; no factual claims to contradict the source. Minor: compound question.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr040-d",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "If you already clicked and typed in your card number, call your bank right away using the number on the back of your card.",
+        "evidence": "The cited FTC alert does not cover what to do after clicking or entering card details. Advice is safe and common, but needs a source.",
+        "fix": "Keep the sentence and add a supporting source (for example the FTC phishing or IdentityTheft.gov page), or drop it."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "A small fee plus a link is a very common sign of this scam.",
+        "evidence": "Source lists unpaid postage, missed delivery and shipping-preference updates with a link; it does not mention redelivery fees specifically. Close enough to be plausible.",
+        "fix": "A text with a link asking you to pay or update delivery details is a common sign of this scam."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "Please **don't click the link**. Texts like this are a common scam, even when you really are expecting a package.",
+        "evidence": "Repeats the previous sentence ('common sign of this scam') and step 1 ('Don't click'); redundant for a low-confidence reader.",
+        "fix": "Drop the first sentence of the reply or merge: Please **don't click the link**. Texts like this are a common scam, even when you are expecting a package."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "3. **Report the text.** Use your phone's **junk** or **spam** reporting option if you see one, or forward the text to **7726**.",
+        "evidence": "Correct per source (junk/spam option, else forward to 7726), but the source also says to report to the FTC at ReportFraud.ftc.gov, which is omitted. Also two possible actions in one step.",
+        "fix": "Optionally add: You can also report it at **ReportFraud.ftc.gov**."
+      }
+    ],
+    "behavior_check": "After the user supplied details, the final reply answers without another question, as it should. Core advice (don't click, check via the store's site or app, junk/spam or 7726) matches the source; no requests for sensitive info.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr088-a",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "4. If it's a scam, stop contact and report it at **ReportFraud.ftc.gov** and to the website or app where you met.",
+        "evidence": "Content matches the source (stop communicating, report to FTC and the site or app). But it combines two or three actions in one step and hedges 'If it's a scam' right after saying it matches a scam.",
+        "fix": "4. **Stop contact** with him. 5. **Report it** at **ReportFraud.ftc.gov** and to the website or app where you met."
+      }
+    ],
+    "behavior_check": "Complete request, no unnecessary question; warm, non-shaming opener. Warning signs (oil rig, military, plane ticket), never send money, talk to someone you trust, reverse image search, reporting and refund advice are all supported by the source.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr085-b",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop",
+        "ok": true
+      },
+      {
+        "url": "https://support.google.com/accounts/answer/7682439?hl=en",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "Which email do you use, for example **Gmail**? And are you on a **computer** or a **phone**?",
+        "evidence": "Asking is right (email provider is unknown), but this is two questions, not ONE short question. The provider matters most; the device can be asked or handled later.",
+        "fix": "Use one question: Which email do you use, for example **Gmail**, **Outlook**, or **Yahoo**?"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "(sources list) Google Account Help: How to recover your Google Account or Gmail",
+        "evidence": "Source relevance note, not a claim in the reply: this page covers recovering an account you are locked out of, not making an account more secure. It does not discuss adding recovery phone or email as a security step.",
+        "fix": "Replace with a Google page on security checkup or adding recovery options, if the follow-up turn will use it."
+      }
+    ],
+    "behavior_check": "Correctly asks instead of guessing; no factual claims. Minor: compound question and 'Good question' filler.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr021-r",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-us/102453",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "BEHAVIOR",
+        "quote": "2. Tap **Display & Brightness**, then **Text Size**.\n   If you used **Larger Text** instead, go to **Settings**, then **Accessibility**, then **Display & Text Size**, then **Larger Text**.",
+        "evidence": "Paths match the source, but one step holds two taps plus a nested alternative path with four taps. Hard for a low-confidence user who may not remember which path they used.",
+        "fix": "Lead with the Accessibility path only (it reaches the same setting) as separate steps: 2. Tap **Accessibility**. 3. Tap **Display & Text Size**. 4. Tap **Larger Text**. 5. Drag the slider one step to the left."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "If you need it even bigger, go to **Settings**, then **Accessibility**, then **Display & Text Size**, then **Larger Text**, and drag that slider.",
+        "evidence": "Earlier turn. Matches the source path, but on real iPhones the extra-large sizes only appear after turning on the Larger Accessibility Sizes switch, which the source does not mention. A user may find no bigger option. Real but minor risk.",
+        "fix": "Add (after checking current iOS): If the slider doesn't go bigger, turn on **Larger Accessibility Sizes** first."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "The sample text changes as you drag, so you can stop when it's easy to read.",
+        "evidence": "Earlier turn. Source does not mention sample text, the slider position, or the gear icon. All plausible and true on current iOS.",
+        "fix": "No change needed; optionally soften to 'The text on the screen changes as you drag.'"
+      }
+    ],
+    "behavior_check": "Recovery reply addresses the reported problem directly, matches Apple's warning that very large text can make buttons hard to tap, and gives a check-and-repeat loop. Main weakness is the overloaded step 2.",
+    "fixed_after_precheck": "Split combined step; one action per step"
+  },
+  {
+    "example_id": "tr007-r",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://support.apple.com/en-au/111107",
+        "ok": true
+      },
+      {
+        "url": "https://support.apple.com/en-euro/111786",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "4. **Restart your iPhone**, then open **Settings** and **Wi-Fi** again.",
+        "evidence": "The troubleshooting page only says to restart the device if the Wi-Fi setting is dimmed or after removing VPN software, not as a general step. Harmless and common advice.",
+        "fix": "Keep, or tie to the source: If the Wi-Fi switch looks gray and you can't tap it, restart your iPhone."
+      },
+      {
+        "type": "BEHAVIOR",
+        "quote": "1. **Check the internet box.** Make sure your daughter's router is plugged in and its lights are on. Ask her whether other phones in the house can connect.",
+        "evidence": "Supported by the source (router on and in range; check if other devices connect), but three checks in one step. 'Lights are on' is unsupported but plausible.",
+        "fix": "Split: 1. Ask your daughter if other phones in the house can connect. 2. Check that the router is plugged in and its lights are on."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "5. **Restart the router.** Unplug the router and the modem, then plug them back in.",
+        "evidence": "Supported (source: restart router and cable modem by unplugging and plugging back in). Missing an easy check the source implies: confirm the exact network name with the network owner (it may differ, for example a 5 GHz name, or be hidden).",
+        "fix": "Add before restarting: Ask your daughter to check the exact network name on the router or card; it might be slightly different, like SmithHome-5G."
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "6. Tap **Join**.",
+        "evidence": "Earlier turn. Source says tap the network name and enter the password; it does not mention a Join button. True on current iOS.",
+        "fix": "No change needed; optionally note the button is at the top right of the password screen."
+      }
+    ],
+    "behavior_check": "Good recovery: ordered checks with 'stop when it appears', a warning to ask before restarting the router, and a useful follow-up request for the visible network names. Airplane Mode and router steps match the source.",
+    "fixed_after_precheck": ""
+  },
+  {
+    "example_id": "tr041-r",
+    "verdict": "PASS_WITH_NOTES",
+    "sources_fetched": [
+      {
+        "url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "type": "UNSUPPORTED",
+        "quote": "5. **Tell your church office**, so they can warn other members.",
+        "evidence": "Not in the source. Harmless and sensible, since the pastor's email may be hacked or spoofed.",
+        "fix": "Keep; optionally add 'and let your pastor know his email may have been hacked.'"
+      },
+      {
+        "type": "UNSUPPORTED",
+        "quote": "2. **Keep the cards and the store receipt.** You'll need them when you report it.",
+        "evidence": "Source says always keep a copy of the gift card and store receipt and suggests photographing both. Close match; photo advice missing.",
+        "fix": "2. **Keep the cards and the store receipt**, and take a photo of both. You'll need them when you report it."
+      }
+    ],
+    "behavior_check": "Strong recovery: non-shaming ('fools a lot of careful people'), urgent call to the gift card company, refund and freeze language, and ReportFraud.ftc.gov all match the source; never asks for card numbers. The closing question is an offer to help, not a blocking clarification.",
+    "fixed_after_precheck": ""
+  }
+]

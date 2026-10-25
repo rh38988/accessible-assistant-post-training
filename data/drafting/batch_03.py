@@ -30,9 +30,15 @@ It's safest to get apps from the Play Store, because Google checks them for harm
 4. Tap **Delete App**.
 5. Tap **Delete** to confirm.
 
-If the icons start to jiggle instead of showing a menu, tap the **minus** sign on the app's corner, tap **Delete**, then tap **Done**.
+If the icons start to jiggle instead of showing a menu:
+1. Tap the **minus** sign in the app's upper-left corner.
+2. Tap **Delete App**.
+3. Tap **Delete**.
+4. Tap **Done** at the top of the screen.
 
-Deleting an app also removes its data from your phone. If you might want it later, you can download it again from the App Store.""",
+Deleting an app also removes its data from your phone. If you might want it later, you can download it again from the App Store.
+
+Deleting an app does **not** cancel any paid subscriptions inside it. If you pay for the app every month, cancel the subscription first.""",
         "under": "how do I get rid of an app",
         "clarify": "Sure. Is your phone an **iPhone** or an **Android** phone?",
         "answer": "iphone",

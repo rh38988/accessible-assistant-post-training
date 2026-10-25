@@ -164,6 +164,7 @@ training tasks (task_ids), so no examples were changed.
   - [FTC Consumer Alert: A way to spot scams: how someone asks you to pay](https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay)
   - [FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes](https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes)
   - [新竹縣政府警察局：盜用LINE帳號假冒親友借錢宣導](https://www.hccp.gov.tw/ch/home.jsp?id=132&mcustomize=onemessages_view.jsp&toolsflag=Y&dataserno=201701090002&t=HccpOnes&mserno=201603210003)
+  - [內政部警政署常見問答：撥打165反詐騙諮詢專線與報案方式](https://www.npa.gov.tw/ch/app/faq/view?module=faq&id=2144&serno=A1078837)
 
 ### CT-14 Someone claiming to be an authority calls
 - **Risk level:** high

@@ -184,7 +184,7 @@ If your phone uses a different contacts app and you don't see an **Add** icon, t
 
 1. Open the **Phone** app.
 2. Tap **Recents**.
-3. Find the number and tap the **Info** button next to it (a small "i" in a circle).
+3. Find the number and tap it. (If you see a small **"i"** in a circle next to the number, tap that instead.)
 4. Scroll down and tap **Block Caller**.
 5. Confirm if asked.
 
@@ -381,7 +381,7 @@ To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, us
 3. Tap **People** at the bottom.
 4. Tap the **Add** button (a plus sign), then tap **Share My Location**.
 5. Choose your daughter.
-6. Choose how long to share: **one hour**, **until the end of the day**, or **indefinitely**.
+6. Choose how long to share, such as **one hour**, **until the end of the day**, or **indefinitely**. Some versions also let you pick a custom time.
 
 Your daughter can then see where you are in her Find My app.
 
