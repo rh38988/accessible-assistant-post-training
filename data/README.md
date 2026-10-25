@@ -58,7 +58,9 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 
 `tasks/checkpoint_verify_v1.csv` lists **20 examples to hand-verify for the 10/28 checkpoint**: one per core task, plus 3 failure-recovery drafts (`train/recovery_v1.jsonl`). The CSV has columns to record who checked each example and what changed.
 
-**AI pre-check (2026-10-25):** two independent Claude agents, which did not write the drafts, fetched every cited page and checked the 20 examples claim by claim. Result: 3 pass, 16 pass with notes, 1 fail, no unsafe advice. The fail (tr058-d) and four other verified issues were fixed in `data/drafting/` and rebuilt. The CSV columns `ai_precheck_verdict`, `ai_fixed`, and `ai_notes_for_human_check` show what to look at; full findings are in `tasks/checkpoint_ai_precheck_v1.json`. **This is not the human verification:** every example still has `reviewed: false` until a team member checks it.
+**AI pre-check (2026-10-25):** two independent Claude agents, which did not write the drafts, fetched every cited page and checked the 20 examples claim by claim. Result: 3 pass, 16 pass with notes, 1 fail, no unsafe advice. The fail (tr058-d) and four other verified issues were fixed in `data/drafting/` and rebuilt. The CSV columns `ai_precheck_verdict`, `ai_fixed`, and `ai_notes_for_human_check` show what to look at; full findings are in `tasks/checkpoint_ai_precheck_v1.json`. This was not the human verification.
+
+**Human verification (2026-10-25):** Ryan Hsieh reviewed all 20 checkpoint examples against their sources, approving 5 as is and editing 15 (mostly splitting steps into one action each, single clarifying questions, and safety additions). All 20 now have `reviewed: true`. The CSV `notes` column records each change, including which additions came from the reviewer rather than the cited page. The other 387 examples are still drafts (`reviewed: false`).
 
 ## Train v1 (`train/batch_01.jsonl` to `train/batch_05.jsonl`)
 
