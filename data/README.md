@@ -52,6 +52,8 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 | `inspired_by` | *optional:* `OATS`, `ElderBench`, `GrandGuard`, `original` | Which dataset's task type or phrasing style the user message follows. Messages are written fresh, not copied, because none of these datasets states a license. |
 | `style` | *optional:* `plain`, `verbose`, `over_specified`, `under_specified`, `incomplete`, `failure_recovery` | How the user phrases the request (OATS categories), or `failure_recovery` when the user reports that a step didn't work |
 
+**Checkpoint data status:** see [`QUALITY_SUMMARY_v1.md`](QUALITY_SUMMARY_v1.md).
+
 ## Core tasks and checkpoint (`tasks/core_tasks_v1.md`)
 
 17 core tasks in 3 families (Device Basics 7, Communication 5, Online Safety 5), grouping 207 of the existing examples. Each core task lists its expected result, common failure, risk level, and sources. Device and communication core tasks are goals covered on 2 or more platforms. Online-safety core tasks group scams by the decision the user has to make.
