@@ -4,7 +4,7 @@ Owner: **Data Lead**
 
 Training examples live in JSON Lines files (`.jsonl`): one JSON object per line.
 
-- `tasks/` : the training task sheet (`train_tasks.csv`, made by `scripts/task_lists.py`)
+- `tasks/` : the training task sheet (`train_tasks.csv`, made by `scripts/task_lists.py`), plus `core_tasks_v1` and the checkpoint verify list (made by `scripts/core_tasks.py`)
 - `pilot/` : pilot v1, 20 examples
 - `train/` : train v1, 384 examples in 5 batches
 - `drafting/` : the specs used to draft train v1
@@ -50,7 +50,13 @@ python scripts/validate_data.py --kind train data/pilot/sample.jsonl
 | `author` | string | Who wrote or revised the example. `claude-draft` = drafted by Claude, not yet edited by the team |
 | `reviewed` | `true` / `false` | Set `true` only after a second team member checks it |
 | `inspired_by` | *optional:* `OATS`, `ElderBench`, `GrandGuard`, `original` | Which dataset's task type or phrasing style the user message follows. Messages are written fresh, not copied, because none of these datasets states a license. |
-| `style` | *optional:* `plain`, `verbose`, `over_specified`, `under_specified`, `incomplete` | How the user phrases the request (OATS categories) |
+| `style` | *optional:* `plain`, `verbose`, `over_specified`, `under_specified`, `incomplete`, `failure_recovery` | How the user phrases the request (OATS categories), or `failure_recovery` when the user reports that a step didn't work |
+
+## Core tasks and checkpoint (`tasks/core_tasks_v1.md`)
+
+17 core tasks in 3 families (Device Basics 7, Communication 5, Online Safety 5), grouping 207 of the existing examples. Each core task lists its expected result, common failure, risk level, and sources. Device and communication core tasks are goals covered on 2 or more platforms. Online-safety core tasks group scams by the decision the user has to make.
+
+`tasks/checkpoint_verify_v1.csv` lists **20 examples to hand-verify for the 10/28 checkpoint**: one per core task, plus 3 failure-recovery drafts (`train/recovery_v1.jsonl`). The CSV has columns to record who checked each example and what changed.
 
 ## Train v1 (`train/batch_01.jsonl` to `train/batch_05.jsonl`)
 

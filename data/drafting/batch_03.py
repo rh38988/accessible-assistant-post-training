@@ -42,7 +42,7 @@ Deleting an app also removes its data from your phone. If you might want it late
         "styled_reply": "Sure, I can help you delete an app. Is it on an **iPhone**, an **Android** phone, or a **computer**?",
     },
     {
-        "id": "TR-059", "src": ["play_delete_app", "and_storage"], "inspired": "ElderBench",
+        "id": "TR-059", "src": ["play_delete_app", "and_storage", "play_disable_apps"], "inspired": "ElderBench",
         "full": "How do I uninstall an app on my Android phone?",
         "steps": """You can remove it through the Play Store. It takes about a minute.
 

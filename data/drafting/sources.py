@@ -41,6 +41,7 @@ SOURCES = {
     "and_spam": ("Phone app Help: Use caller ID & spam protection", "https://support.google.com/phoneapp/answer/3459196?hl=en"),
     "maps_share_location": ("Google Maps Help: Share your real-time location with others (Android)", "https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid"),
     "and_install_app": ("Android Help: Download apps to your Android device", "https://support.google.com/android/answer/9457058?hl=en"),
+    "play_disable_apps": ("Google Play Help: Disable apps that came with your Android device", "https://support.google.com/googleplay/answer/13627571?hl=en"),
     "play_delete_app": ("Google Play Help: Delete apps on your Android device", "https://support.google.com/googleplay/answer/13627402?hl=en"),
     "and_storage": ("Android Help: Free up storage on your Android device", "https://support.google.com/android/answer/7431795?hl=en"),
     "and_quick_settings": ("Android Help: Change settings quickly on your Android phone", "https://support.google.com/android/answer/9083864?hl=en"),

@@ -18,7 +18,7 @@ CATEGORIES = {"communication", "online_services", "technical_support"}
 LANGUAGES = {"en", "zh-TW"}
 # Optional provenance fields (see data/README.md).
 INSPIRED_BY = {"OATS", "ElderBench", "GrandGuard", "original"}
-STYLES = {"plain", "verbose", "over_specified", "under_specified", "incomplete"}
+STYLES = {"plain", "verbose", "over_specified", "under_specified", "incomplete", "failure_recovery"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # Fields every record needs, for each kind of file.
