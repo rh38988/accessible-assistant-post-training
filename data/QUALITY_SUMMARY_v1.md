@@ -98,7 +98,7 @@ Three stages, in order:
 
 Target for the first full pilot: **about 60 to 70 verified examples** (17 core tasks × about 4 conversation types).
 
-1. **Verify from the draft pool.** The 17 core tasks already have 207 drafts (13 to 22 per family subgroup). Pick 3 more per core task to reach about 4 each.
+1. **Verify from the draft pool.** The 17 core tasks already have 207 drafts (5 to 22 per core task). Pick 3 more per core task to reach about 4 each.
 2. **Add failure-recovery examples.** Only 3 exist. Draft one per core task, following the same pattern (extend an existing example).
 3. **Decide on recap.** If the team adds recap as a target behavior, draft recap examples and add it to the rubric.
 4. **Second reviewer.** Have another team member independently review about 10 of the verified examples, to report agreement.
