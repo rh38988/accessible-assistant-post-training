@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "snapshot_file": "data/approved/pilot_reviewed20_v1.jsonl",
+  "selection": "Every record with reviewed exactly true in data/pilot/*.jsonl and data/train/*.jsonl.",
+  "ordering": "Source paths in lexicographic POSIX order, then original source line order.",
+  "preservation": "Original record bytes copied verbatim, including whitespace and line endings; no JSON reserialization.",
+  "hash_algorithm": "SHA-256",
+  "hash_scope": "Snapshot and source hashes cover complete file bytes. Each record hash covers its original line bytes including the line ending.",
+  "sha256": "5a7e81e4152c3233cdff52c550a2df7871278e69ab7e4a1f44edd915fbc8612f",
+  "total_count": 20,
+  "unique_task_count": 20,
+  "family_distribution": {
+    "Communication": 5,
+    "Device Basics": 9,
+    "Online Safety": 6
+  },
+  "language_distribution": {
+    "en": 17,
+    "zh-TW": 3
+  },
+  "family_language_distribution": {
+    "Communication": {
+      "en": 4,
+      "zh-TW": 1
+    },
+    "Device Basics": {
+      "en": 8,
+      "zh-TW": 1
+    },
+    "Online Safety": {
+      "en": 5,
+      "zh-TW": 1
+    }
+  },
+  "family_mapping": {
+    "source_file": "data/tasks/core_tasks_v1.csv",
+    "sha256": "8b039d3977c807e80eeba189e8b8b3f35a22200ec951cd6adaff5a71b6309e76",
+    "method": "Map each record task_id to task_ids membership in core_tasks_v1.csv."
+  },
+  "sources": [
+    {
+      "source_file": "data/pilot/pilot_v1.jsonl",
+      "sha256": "dbafea6cb9e39542496a9abf7d0234eb2e6bd512ff47411427ae27658919a06d",
+      "total_count": 20,
+      "selected_count": 0
+    },
+    {
+      "source_file": "data/train/batch_01.jsonl",
+      "sha256": "02d2f5e1d18b4bf00aea5ad2beacccc9127c47930c7358baa1d7d9c90559df8c",
+      "total_count": 64,
+      "selected_count": 5
+    },
+    {
+      "source_file": "data/train/batch_02.jsonl",
+      "sha256": "3665bee4dc47ffbdbe97ce2bd8c189435d718b8eab1485afacb601ffe247a514",
+      "total_count": 80,
+      "selected_count": 6
+    },
+    {
+      "source_file": "data/train/batch_03.jsonl",
+      "sha256": "de6dcd5ab4cc0da9c627c4383ca47782cff0ca5fb4b2e3b2f193b950c5eb29b6",
+      "total_count": 80,
+      "selected_count": 1
+    },
+    {
+      "source_file": "data/train/batch_04.jsonl",
+      "sha256": "61a792ce6e838218ec70429dee179394997a04e285e5cbd09857ccff699bceef",
+      "total_count": 80,
+      "selected_count": 3
+    },
+    {
+      "source_file": "data/train/batch_05.jsonl",
+      "sha256": "7df3c818b80650913879952cd3cfbe607c01618dbb072e089a54a8f5c76e6926",
+      "total_count": 80,
+      "selected_count": 2
+    },
+    {
+      "source_file": "data/train/recovery_v1.jsonl",
+      "sha256": "2789742d6d615cf51b8bfd97c596b4825772a2ff21b81347b510abef5bcc57b2",
+      "total_count": 3,
+      "selected_count": 3
+    }
+  ],
+  "records": [
+    {
+      "snapshot_line": 1,
+      "source_file": "data/train/batch_01.jsonl",
+      "source_line": 7,
+      "record_id": "tr022-c",
+      "task_id": "TR-022",
+      "reviewed": true,
+      "core_task_id": "CT-01",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "99caf9d829dc2b1397defeade145d5b1452539e0f81a05b22321b114cbcfbdc5"
+    },
+    {
+      "snapshot_line": 2,
+      "source_file": "data/train/batch_01.jsonl",
+      "source_line": 27,
+      "record_id": "tr027-c",
+      "task_id": "TR-027",
+      "reviewed": true,
+      "core_task_id": "CT-06",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "b83c37c7dc27830174156b3b6d136a6ca4767f3ec236e01ba495ba8cbf96c1ac"
+    },
+    {
+      "snapshot_line": 3,
+      "source_file": "data/train/batch_01.jsonl",
+      "source_line": 41,
+      "record_id": "tr031-a",
+      "task_id": "TR-031",
+      "reviewed": true,
+      "core_task_id": "CT-07",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "6946bc55a7cecc86ba4009820e7fec90f2f808bc0c5b67ac3675a8dc1eb0546f"
+    },
+    {
+      "snapshot_line": 4,
+      "source_file": "data/train/batch_01.jsonl",
+      "source_line": 45,
+      "record_id": "tr032-a",
+      "task_id": "TR-032",
+      "reviewed": true,
+      "core_task_id": "CT-04",
+      "family": "Device Basics",
+      "language": "zh-TW",
+      "sha256": "0217faf5f9770977d553d2cbb7fd946a320112d3da4b68d51f6bd00b9c116214"
+    },
+    {
+      "snapshot_line": 5,
+      "source_file": "data/train/batch_01.jsonl",
+      "source_line": 50,
+      "record_id": "tr033-b",
+      "task_id": "TR-033",
+      "reviewed": true,
+      "core_task_id": "CT-02",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "8a11b429bb57356c22dd6b7a7365c9ba07d635e3ecb447d6c6465ee2f9c0a843"
+    },
+    {
+      "snapshot_line": 6,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 1,
+      "record_id": "tr037-a",
+      "task_id": "TR-037",
+      "reviewed": true,
+      "core_task_id": "CT-12",
+      "family": "Communication",
+      "language": "en",
+      "sha256": "853c2912ea72d1c289f327db58a8cc05cc32c79632ea324b1fcdd5781b129685"
+    },
+    {
+      "snapshot_line": 7,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 16,
+      "record_id": "tr040-d",
+      "task_id": "TR-040",
+      "reviewed": true,
+      "core_task_id": "CT-15",
+      "family": "Online Safety",
+      "language": "en",
+      "sha256": "4f29bc1c5126734049c1a8a5da07cadde7906575077044e632fe6fcbc86354ff"
+    },
+    {
+      "snapshot_line": 8,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 32,
+      "record_id": "tr044-d",
+      "task_id": "TR-044",
+      "reviewed": true,
+      "core_task_id": "CT-08",
+      "family": "Communication",
+      "language": "zh-TW",
+      "sha256": "c3f20bb3bf1398c4b0945efe892a356267aa9f96f1a4c0e5c46fd1535fb3025c"
+    },
+    {
+      "snapshot_line": 9,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 35,
+      "record_id": "tr045-c",
+      "task_id": "TR-045",
+      "reviewed": true,
+      "core_task_id": "CT-09",
+      "family": "Communication",
+      "language": "en",
+      "sha256": "fb3a83922a9dfc4064238f5b4c8dce31697d001076fb36b7e27189983bf324f3"
+    },
+    {
+      "snapshot_line": 10,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 58,
+      "record_id": "tr051-b",
+      "task_id": "TR-051",
+      "reviewed": true,
+      "core_task_id": "CT-10",
+      "family": "Communication",
+      "language": "en",
+      "sha256": "9bad87e3a67fdbcea42fc27fb1569a683cffc1ba6fa24ec6c7a093f66ed2f07d"
+    },
+    {
+      "snapshot_line": 11,
+      "source_file": "data/train/batch_02.jsonl",
+      "source_line": 72,
+      "record_id": "tr054-d",
+      "task_id": "TR-054",
+      "reviewed": true,
+      "core_task_id": "CT-11",
+      "family": "Communication",
+      "language": "en",
+      "sha256": "e357ab110bbf81fba491c59df1aa00b7623397e6645377a12d256049d263d168"
+    },
+    {
+      "snapshot_line": 12,
+      "source_file": "data/train/batch_03.jsonl",
+      "source_line": 8,
+      "record_id": "tr058-d",
+      "task_id": "TR-058",
+      "reviewed": true,
+      "core_task_id": "CT-05",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "33c1d2c5b68bc8f54cbfbec5e79e879f46d5c22809abd0f3a327c75ef25bc7fb"
+    },
+    {
+      "snapshot_line": 13,
+      "source_file": "data/train/batch_04.jsonl",
+      "source_line": 34,
+      "record_id": "tr085-b",
+      "task_id": "TR-085",
+      "reviewed": true,
+      "core_task_id": "CT-17",
+      "family": "Online Safety",
+      "language": "en",
+      "sha256": "aba5c6258d43890cb713d34b24c5ed33f05606d3bc349deb42a036e936370d05"
+    },
+    {
+      "snapshot_line": 14,
+      "source_file": "data/train/batch_04.jsonl",
+      "source_line": 45,
+      "record_id": "tr088-a",
+      "task_id": "TR-088",
+      "reviewed": true,
+      "core_task_id": "CT-16",
+      "family": "Online Safety",
+      "language": "en",
+      "sha256": "0ea3592bbc8460a83408e7ee5483dbb60e24c54a70b0c72ce14930caf59ddcc8"
+    },
+    {
+      "snapshot_line": 15,
+      "source_file": "data/train/batch_04.jsonl",
+      "source_line": 51,
+      "record_id": "tr089-c",
+      "task_id": "TR-089",
+      "reviewed": true,
+      "core_task_id": "CT-14",
+      "family": "Online Safety",
+      "language": "en",
+      "sha256": "01efd5476ac8a7515e74ba5ed7b128e57992b28e9f00fc19db4e8d6606af2690"
+    },
+    {
+      "snapshot_line": 16,
+      "source_file": "data/train/batch_05.jsonl",
+      "source_line": 17,
+      "record_id": "tr101-a",
+      "task_id": "TR-101",
+      "reviewed": true,
+      "core_task_id": "CT-03",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "4d99f142751307635b44550047067a5563a30b3f6f5077f42aa0f35f7b00f9e3"
+    },
+    {
+      "snapshot_line": 17,
+      "source_file": "data/train/batch_05.jsonl",
+      "source_line": 63,
+      "record_id": "tr112-c",
+      "task_id": "TR-112",
+      "reviewed": true,
+      "core_task_id": "CT-13",
+      "family": "Online Safety",
+      "language": "zh-TW",
+      "sha256": "54e32cb1b15119e40fb86150944f69db7e6c614045a19a32704f52d36ad64ec2"
+    },
+    {
+      "snapshot_line": 18,
+      "source_file": "data/train/recovery_v1.jsonl",
+      "source_line": 1,
+      "record_id": "tr021-r",
+      "task_id": "TR-021",
+      "reviewed": true,
+      "core_task_id": "CT-01",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "f1638bc122a93ea6fdb834766e4827d2ebfa1e1e8d480ae7cb29a3cd03c281d8"
+    },
+    {
+      "snapshot_line": 19,
+      "source_file": "data/train/recovery_v1.jsonl",
+      "source_line": 2,
+      "record_id": "tr007-r",
+      "task_id": "TR-007",
+      "reviewed": true,
+      "core_task_id": "CT-07",
+      "family": "Device Basics",
+      "language": "en",
+      "sha256": "a67808f52adbade513286afd61478c44815e10846c460a3d6707cc1fede804f3"
+    },
+    {
+      "snapshot_line": 20,
+      "source_file": "data/train/recovery_v1.jsonl",
+      "source_line": 3,
+      "record_id": "tr041-r",
+      "task_id": "TR-041",
+      "reviewed": true,
+      "core_task_id": "CT-16",
+      "family": "Online Safety",
+      "language": "en",
+      "sha256": "045cfed485695ff17edd3c14d69b13bdfe8ae6bd4504e20e206fe1ce45de6868"
+    }
+  ]
+}
