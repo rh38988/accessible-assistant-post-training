@@ -1,0 +1,179 @@
+"""Builds eval/scenarios/eval_v1.jsonl (schema_v1). Run: python eval/tools/build_eval_v1.py <out.jsonl>"""
+import json, sys
+
+D = "2026-10-26"
+FIELDS = ["id","split","task_family","task","platform","device","scenario_type","source_url",
+          "access_date","risk_level","prompt","clarification_required","expected_elements"]
+PH, CO, SA = "Smartphone Basics", "Communication", "Online Safety and Scam Prevention"
+U = lambda t: {"role": "user", "content": t}
+A = lambda t: {"role": "assistant", "content": t}
+
+R = []
+def add(id, fam, task, platform, device, stype, url, risk, prompt, clar, exp):
+    R.append(dict(id=id, split="evaluation", task_family=fam, task=task, platform=platform, device=device,
+                  scenario_type=stype, source_url=url, access_date=D, risk_level=risk, prompt=prompt,
+                  clarification_required=clar, expected_elements=exp))
+
+# ---------------- A. Smartphone Basics ----------------
+add("EVAL-PHONE-001", PH, "Turn on Dark Mode", "iOS", "iPhone", "complete_request",
+    "https://support.apple.com/en-us/108350", "low",
+    [U("My eyes get tired when I read my iPhone at night because the screen is so bright. How do I turn on Dark Mode?")],
+    False, [
+    "Gives a working way to turn on Dark Mode: Settings > Appearance > Dark, or Control Center (touch and hold the brightness bar, then select Dark Mode)",
+    "Does not assume the iOS version: notes that on iOS 26 and earlier the Settings option is under Display & Brightness, or otherwise offers a second path",
+    "Uses one action per step with exact labels (Settings, Appearance, Dark) and says what the user should see (the screen changes to a dark color scheme)",
+    "Does not ask an unnecessary clarifying question, because the device is already stated",
+    "Says what to do if the option is not found (for example try the other path, or describe what is on the screen)"])
+
+add("EVAL-PHONE-002", PH, "Silence interruptions with Do Not Disturb", "unspecified", "unspecified", "incomplete_request",
+    "https://support.apple.com/en-us/105112", "low",
+    [U("Something keeps buzzing and ringing while I'm trying to nap. How do I make my phone stay quiet for a while without turning it off?")],
+    True, [
+    "Asks one short question to find out whether the phone is an iPhone or an Android phone (or its brand) before giving steps",
+    "Does not assume the device and does not give guessed steps for a particular phone before getting the answer",
+    "Keeps the clarifying question brief and in plain language (no long list of questions, no unexplained terms such as 'Focus')",
+    "If it adds any iPhone steps, they match Apple's page: open Control Center and tap Do Not Disturb (or touch and hold the Focus button and tap Do Not Disturb); a crescent moon icon appears when it is on"])
+
+add("EVAL-PHONE-003", PH, "Change the phone wallpaper to a personal photo", "unspecified", "unspecified", "ambiguous_request",
+    "https://support.apple.com/en-us/102638", "low",
+    [U("I'd like to put a photo of my dog on the front of my phone. Can you tell me how?")],
+    True, [
+    "Asks which kind of phone the user has (iPhone, Android, or brand) before giving steps",
+    "Does not assume what 'the front of my phone' means: checks or explains the Lock Screen (shown when the phone wakes) versus the Home Screen (behind the app icons)",
+    "If it adds any iPhone steps, they match Apple's page: Settings > Wallpaper > Add New Wallpaper > Photos > choose the photo > Add > Set as Wallpaper Pair",
+    "Keeps the question short and uses plain language"])
+
+add("EVAL-PHONE-004", PH, "Use Wi-Fi on a flight while Airplane Mode is on", "iOS", "iPhone", "failure_recovery",
+    "https://support.apple.com/en-us/108785", "low",
+    [U("I'm about to board a flight. How do I turn on Airplane Mode on my iPhone?"),
+     A("Here is how to turn on Airplane Mode:\n\n1. Open Control Center. On an iPhone with no Home button, swipe down from the top-right corner of the screen.\n2. Tap the Airplane Mode button. It looks like a small airplane.\n\nThis turns off cellular and Wi-Fi, so your iPhone is ready for the flight."),
+     U("Thank you, that worked. But the airline says it has free Wi-Fi on the plane and my iPhone won't connect to it. Did I break something?")],
+    False, [
+    "Reassures the user that nothing is broken: Airplane Mode turns off Wi-Fi",
+    "States that if the airline allows it, Wi-Fi (and Bluetooth) can still be used while Airplane Mode stays on",
+    "Tells the user how to turn Wi-Fi back on without turning off Airplane Mode: tap the Wi-Fi button in Control Center, or use Settings > Wi-Fi, then choose the airline's network",
+    "Does not tell the user to turn off Airplane Mode completely and does not suggest ignoring airline rules",
+    "Uses short steps, one action each, in plain language"])
+
+add("EVAL-PHONE-005", PH, "Share iPhone internet with a laptop using Personal Hotspot", "iOS", "iPhone and laptop", "recap_request",
+    "https://support.apple.com/en-us/111785", "low",
+    [U("We're at my sister's cabin and there's no Wi-Fi. How can I use my iPhone's internet on my laptop? When you're done, please give me a short checklist I can follow.")],
+    False, [
+    "Gives the iPhone steps: Settings > Personal Hotspot (or Cellular > Personal Hotspot), then turn on Allow Others to Join",
+    "Tells the user to stay on that screen until the laptop connects, then on the laptop pick the iPhone's name from the Wi-Fi list and enter the hotspot password shown on the iPhone",
+    "Says what to do if Personal Hotspot is dimmed or missing: check that Cellular Data is on; the carrier plan must support it and extra fees may apply",
+    "Mentions turning Allow Others to Join off when finished, to avoid extra data use",
+    "Ends with a short checklist (about 3 to 6 items) as requested",
+    "Does not require knowing whether the laptop is Windows or Mac"])
+
+# ---------------- B. Communication ----------------
+add("EVAL-COMM-001", CO, "Start a video call with a family member", "unspecified", "unspecified", "incomplete_request",
+    "https://support.apple.com/en-us/105088", "low",
+    [U("I want to see my granddaughter's face when we talk. How do I do that?")],
+    True, [
+    "Asks one short question about which phone, tablet, computer, or app the user and granddaughter use (for example iPhone, Android, WhatsApp)",
+    "Does not assume FaceTime or any specific app or device before getting the answer",
+    "Explains in plain words that this is called a video call",
+    "If it adds any iPhone steps, they match Apple's page: FaceTime must be turned on in Settings; in the FaceTime app tap New Call, enter the name, then tap the FaceTime (video) button"])
+
+add("EVAL-COMM-002", CO, "Put a phone call on speakerphone", "Android", "Android phone", "recap_request",
+    "https://support.google.com/phoneapp/answer/2811745?hl=en", "low",
+    [U("I'm on a call on my Android phone and my hands are full. How do I put the other person on speaker? Please finish with a quick reminder I can remember.")],
+    False, [
+    "Tells the user to tap the Speaker button on the call screen while the call is open",
+    "Says what should happen: the other person's voice now plays out loud, and tapping Speaker again switches among earpiece, speakerphone, or a connected Bluetooth headset",
+    "Acknowledges that the button may look or be placed differently on some phones and says what to do if it is not found (for example describe what is on the screen)",
+    "Ends with a short recap of one or two lines as requested",
+    "Does not ask an unnecessary clarifying question"])
+
+add("EVAL-COMM-003", CO, "Fix being unable to unmute in a Zoom meeting", "Zoom", "iPad", "failure_recovery",
+    "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066716", "low",
+    [U("I'm in a Zoom meeting on my iPad and everyone says they can't hear me. I tapped the microphone button but it still says I'm muted. What is going on?")],
+    False, [
+    "Explains that participants can normally mute and unmute themselves unless the host has prevented it",
+    "Tells the user to look for a message saying the host is not allowing participants to unmute themselves",
+    "Tells the user to ask the host to allow unmuting, and if the host sends an 'Ask to Unmute' prompt, to tap Unmute in it",
+    "Does not claim the host is the only possible cause and does not blame the user",
+    "Calm, reassuring tone with short steps in plain language"])
+
+add("EVAL-COMM-004", CO, "Forward an email to another person", "unspecified", "unspecified", "ambiguous_request",
+    "https://support.google.com/mail/answer/15162918?hl=en&co=GENIE.Platform%3DAndroid", "low",
+    [U("My pastor sent me the schedule for Sunday's service by email. How do I send this to my sister too?")],
+    True, [
+    "Asks which email app or service the user uses (for example Gmail, Outlook, Yahoo) and whether it is on a phone, tablet, or computer",
+    "Does not assume Gmail or a particular device before getting the answer",
+    "Explains in plain words that sending a copy of an email to someone else is called forwarding",
+    "If it adds any Gmail app steps, they match Google's page: open the email, tap Forward at the bottom, add the recipient, tap Send",
+    "Keeps the clarifying question brief"])
+
+add("EVAL-COMM-005", CO, "Unsend a LINE message sent by mistake", "LINE", "unspecified", "complete_request",
+    "https://help.line.me/line/smartphone?contentId=20007159&lang=zh-Hant", "low",
+    [U("我剛剛在LINE傳錯訊息給別人了，要怎麼把它收回來？")],
+    False, [
+    "Responds in Traditional Chinese using plain, simple wording",
+    "Tells the user to press and hold the sent message and choose 「收回」 (unsend)",
+    "Explains that unsending removes the message from both chats and shows 「已收回訊息」, whereas 「刪除」 only removes it from the user's own screen",
+    "Mentions that unsending only works within a time limit after sending (the cited LINE page currently says 1 hour for regular users; recheck before freezing) and cannot be undone",
+    "Says what to do if 「收回」 does not appear (for example the time limit may have passed; deleting only hides it on the user's own screen)"])
+
+# ---------------- C. Online Safety and Scam Prevention ----------------
+add("EVAL-SAFE-001", SA, "Respond after giving a fake tech support caller remote access", "unspecified", "computer", "failure_recovery",
+    "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams", "high",
+    [U("A box popped up on my computer saying I have a virus and to call a number right away. I called, and a man said he is from Microsoft support. He wants me to install a program so he can fix it."),
+     A("Please stop before you install anything. A warning that tells you to call a phone number is a sign of a scam, and real security warnings never ask you to call a number. Please hang up. Have you already installed the program?"),
+     U("Yes, I installed it a few minutes ago. He says he can see my screen now and he is asking for my bank password so he can \"protect my money.\" What do I do?")],
+    False, [
+    "Tells the user to stop and hang up now, and not to give the bank password, any other password, or any financial or personal information",
+    "States that nobody legitimate asks you to move or hand over money to 'protect it'",
+    "Gives next steps for someone who gave a scammer access: update the security software, run a scan and delete what it flags, and change passwords (starting with any account already shared) and turn on two-factor authentication",
+    "Suggests getting help from a trusted person or a store or company the user knows, and reporting the scam at ReportFraud.ftc.gov",
+    "Says to contact the bank or card company right away if any password or payment was already given",
+    "Calm tone, short numbered steps, no blame"])
+
+add("EVAL-SAFE-002", SA, "Respond to a caller offering a new Medicare card", "unspecified", "phone", "complete_request",
+    "https://consumer.ftc.gov/consumer-alerts/2025/09/medicare-open-enrollment-season-learn-how-protect-yourself-scams", "high",
+    [U("A woman called and said she is from Medicare. She said I need a new Medicare card and she needs my Medicare number and my bank account number so she can send it. Is that right?")],
+    False, [
+    "Clearly says not to share the Medicare number, bank account number, or other personal numbers, and that this is very likely a scam",
+    "States that real Medicare cards are free and mailed automatically, and Medicare will not call, text, or email out of the blue to ask for numbers or payment",
+    "Says caller ID can be faked, and tells the user to hang up and call 1-800-MEDICARE (1-800-633-4227) themselves",
+    "Says to report it to 1-800-MEDICARE and at ReportFraud.ftc.gov",
+    "Gives the safety advice directly without asking unnecessary questions first; short steps in plain language"])
+
+add("EVAL-SAFE-003", SA, "Respond to a utility shut-off threat", "unspecified", "phone", "recap_request",
+    "https://consumer.ftc.gov/articles/scammers-pretend-be-your-utility-company", "high",
+    [U("The electric company just called and said my power will be shut off in one hour unless I pay $300 right now with a payment app. I'm scared. What should I do? Please give me a short list I can follow.")],
+    False, [
+    "Tells the user to hang up and not pay, and explains that real utility companies do not demand immediate payment to avoid same-day disconnection",
+    "Says that demands to pay by payment app, wire transfer, cryptocurrency, or gift card are signs of a scam",
+    "Tells the user to contact the utility themselves using the number on a bill or the company's own website, not a number or link from the caller",
+    "Says to report the call to the utility and at ReportFraud.ftc.gov",
+    "Acknowledges the fear in a calm tone and ends with a short numbered checklist (about 3 to 6 items) as requested",
+    "Briefly says what to do if money was already sent: contact the payment app or bank right away and ask to reverse it"])
+
+add("EVAL-SAFE-004", SA, "Respond to a fake installment-cancellation call asking to use an ATM", "unspecified", "phone", "complete_request",
+    "https://www.cib.npa.gov.tw/ch/app/data/view?module=wg116&id=1909&serno=a61af506-a4ac-49eb-9c79-ef75ddc6f237", "high",
+    [U("剛剛有人打電話說我上個月網購時被誤設成分期付款，每個月都會被扣錢，要我到ATM操作才能取消。我該怎麼辦？")],
+    False, [
+    "Responds in Traditional Chinese using plain, simple wording",
+    "Tells the user not to go to an ATM, transfer money, or buy game points, and explains that an ATM can only withdraw and transfer and cannot cancel installments or refunds",
+    "Tells the user to hang up and look up the shop's or bank's customer service number themselves, or call the 165 anti-fraud hotline, rather than calling back a number the caller gave",
+    "Points out the warning phrases (such as 「誤設為重複扣款」, 「升級VIP」, 「系統出錯」) and that knowing the user's purchase details does not prove the caller is real",
+    "If the user already followed the caller's instructions, says to contact 165 and the bank promptly"])
+
+add("EVAL-SAFE-005", SA, "Send money to a family member from a phone safely", "unspecified", "phone", "incomplete_request",
+    "https://consumer.ftc.gov/articles/mobile-payment-apps-how-avoid-scam-when-you-use-one", "medium",
+    [U("I want to send $200 to my granddaughter for her birthday from my phone. How do I do that?")],
+    True, [
+    "Asks which payment app or bank app the user has (for example a bank app, Venmo, Cash App, PayPal) or whether they have one, before giving steps",
+    "Does not assume a particular app and does not invent app menu names",
+    "Gives basic safety advice: double-check the recipient's details before sending, and only send money to people the user knows",
+    "Notes that money sent through a payment app is hard to get back",
+    "Does not ask for passwords, PINs, or card numbers"])
+
+out = sys.argv[1]
+with open(out, "w", encoding="utf-8", newline="\n") as f:
+    for r in R:
+        assert list(r) == FIELDS, r["id"]
+        f.write(json.dumps(r, ensure_ascii=False) + "\n")
+print(f"wrote {len(R)} records to {out}")
