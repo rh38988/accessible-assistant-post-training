@@ -68,7 +68,7 @@ For an actual generation run, replace `--dry-run` with a distinct `--out eval/ou
 
 `adapter` is null for `original`/`prompt` and the supplied path for `sft`. The Slurm entry point uses `eval_v1.jsonl`, runs the same three conditions, and shares one `MAX_NEW_TOKENS` value (default 768).
 
-**Downstream scope:** `make_rating_sheet.py` and `analyze.py` still read the legacy scenario fields. Their rating/analysis workflow below needs a separate native-schema update before use with `eval_v1.jsonl`. The old `schema_v1_adapter.py` proposal is not part of generation or validation.
+**Downstream scope:** `make_rating_sheet.py` and `analyze.py` still read the legacy scenario fields. Their rating/analysis workflow below needs a separate native-schema update before use with `eval_v1.jsonl`. Native schema_v1 support replaced the removed schema adapter; generation and validation use `eval_v1.jsonl` directly. See the [historical migration note](schema_compat_note_v1.md).
 
 ## Rubric
 
