@@ -5,7 +5,7 @@ Owner: **Evaluation Lead** (scenarios, rubric, ratings, analysis)
 ## Pipeline
 
 ```
-scenarios/*.jsonl ──> generate.py (x5 conditions) ──> outputs/*.jsonl
+scenarios/eval_v1.jsonl ──> generate.py (x3 conditions) ──> outputs/*.jsonl
                                                           │
                                        make_rating_sheet.py (blinded, shuffled)
                                                           │
@@ -24,33 +24,51 @@ Don't paste training examples into scenarios, and don't reuse a training task's 
 
 ## Scenario schema
 
-Same fields as training examples, except `turns` replaces `messages` and **ends with a user turn** (the one the model answers). Add `notes_for_raters` to say what a good answer looks like.
+Generation reads `eval/scenarios/eval_v1.jsonl` directly in **schema_v1**. There is no conversion step or compatibility file. The 13 fields are `id`, `split`, `task_family`, `task`, `platform`, `device`, `scenario_type`, `source_url`, `access_date`, `risk_level`, `prompt`, `clarification_required`, and `expected_elements`.
+
+`prompt` is a role/content array, alternating user/assistant, starting and ending with a user turn. All earlier assistant replies and user turns are preserved verbatim and in order. The model writes only the next assistant reply. Only these role/content pairs enter the model, with the accessibility system prompt prepended for the `prompt` condition. `expected_elements`, `source_url`, `risk_level`, and all other evaluation metadata stay outside model input; `id` becomes `scenario_id` in the output.
 
 ```bash
-python scripts/validate_data.py --kind scenario eval/scenarios/sample.jsonl
+python -B scripts/validate_data.py --kind scenario eval/scenarios/eval_v1.jsonl
+python -B eval/tools/validate_eval_v1.py eval/scenarios/eval_v1.jsonl
+python -B -m unittest discover -s eval -p "test_*.py" -v
 ```
 
-- About 40% `underspecified`, matching the training data
+- The standalone validator also checks this frozen set's 15 records, five per task family, language coverage, and multi-turn coverage.
+- `clarification_required` records whether the user must supply another detail before an answer is possible.
 - Multi-turn: earlier turns are fixed, so every condition answers the same context
 - Never reuse a training task as a scenario
 
 ## Conditions
 
-| Condition | System prompt | Demonstrations | Retrieved docs | LoRA adapter |
-|---|---|---|---|---|
-| `prompt` | yes | | | |
-| `fewshot` | yes | yes | | |
-| `rag` | yes | | yes | |
-| `sft` | | | | yes |
-| `sft_rag` | | | yes | yes |
+| Condition | Model | Accessibility system prompt | LoRA adapter |
+|---|---|---|---|
+| `original` | Base Qwen | none | none |
+| `prompt` | Base Qwen | `eval/prompts/system_prompt.txt` | none |
+| `sft` | Base Qwen | none | supplied with `--adapter` |
 
-`rag` and `sft_rag` receive identical retrieved text. In `sft_rag` the docs are the only content of the system message, which slightly differs from training (no system message); note this when interpreting results.
+All three use `Qwen/Qwen2.5-3B-Instruct` by default and greedy decoding (`do_sample=False`). The shared `--max-new-tokens` default is 768; use the same value for every condition. There is no prompt truncation in the generation script. Qwen's chat template may insert its built-in generic system message for `original` and `sft`, matching the training template; neither receives the accessibility instructions.
 
-Check exactly what each condition sends, without a GPU:
+Check exactly what each condition sends, without loading a tokenizer/model or generating replies. From the repository root in PowerShell:
 
-```bash
-python eval/generate.py --condition rag --scenarios eval/scenarios/sample.jsonl --out /dev/null --dry-run
+```powershell
+$adapterDir = "checkpoints/<your-completed-pilot-run>"
+.\.venv\Scripts\python.exe -B eval/generate.py --condition original --scenarios eval/scenarios/eval_v1.jsonl --max-new-tokens 768 --dry-run
+.\.venv\Scripts\python.exe -B eval/generate.py --condition prompt --scenarios eval/scenarios/eval_v1.jsonl --max-new-tokens 768 --dry-run
+.\.venv\Scripts\python.exe -B eval/generate.py --condition sft --adapter "$adapterDir" --scenarios eval/scenarios/eval_v1.jsonl --max-new-tokens 768 --dry-run
 ```
+
+Each dry-run line displays `scenario_id`, `condition`, `adapter`, `model`, `max_new_tokens`, `do_sample`, `message_count`, `roles`, and `messages`. `--out` is optional in dry-run mode and is never written, even if supplied. Dry-run records the supplied adapter path without opening it or checking its weights. `--adapter` is required for `sft`, including dry-run, and rejected for base-model conditions.
+
+For an actual generation run, replace `--dry-run` with a distinct `--out eval/outputs/<condition>.jsonl`. Output has exactly one record per scenario, in source order, with these fields:
+
+```json
+{"scenario_id": "EVAL-PHONE-001", "condition": "original", "adapter": null, "response": "..."}
+```
+
+`adapter` is null for `original`/`prompt` and the supplied path for `sft`. The Slurm entry point uses `eval_v1.jsonl`, runs the same three conditions, and shares one `MAX_NEW_TOKENS` value (default 768).
+
+**Downstream scope:** `make_rating_sheet.py` and `analyze.py` still read the legacy scenario fields. Their rating/analysis workflow below needs a separate native-schema update before use with `eval_v1.jsonl`. The old `schema_v1_adapter.py` proposal is not part of generation or validation.
 
 ## Rubric
 

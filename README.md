@@ -16,11 +16,9 @@ Does post-training beat strong prompting baselines at giving accessible tech gui
 
 | Condition | What it is |
 |---|---|
-| `prompt` | Accessibility system prompt (baseline 1) |
-| `fewshot` | Prompt + demonstrations (baseline 2) |
-| `rag` | Prompt + retrieved support docs (baseline 3) |
+| `original` | Base Qwen model, no accessibility system prompt |
+| `prompt` | Base Qwen model + accessibility system prompt |
 | `sft` | LoRA fine-tuned model, no system prompt |
-| `sft_rag` | Fine-tuned model + the same retrieved docs |
 
 ## Repository layout
 
@@ -77,10 +75,10 @@ The data validator, retriever, rating-sheet builder, and analysis script use onl
 ## Workflow
 
 1. **Data:** write examples in `data/pilot/`, then `python scripts/validate_data.py --kind train data/pilot/*.jsonl`
-2. **Scenarios:** write held-out scenarios in `eval/scenarios/`, validate with `--kind scenario`
-3. **Inspect prompts:** `python eval/generate.py --condition rag --scenarios eval/scenarios/sample.jsonl --out /dev/null --dry-run`
+2. **Scenarios:** use native schema_v1 in `eval/scenarios/eval_v1.jsonl`; validate with `python scripts/validate_data.py --kind scenario eval/scenarios/eval_v1.jsonl`
+3. **Inspect prompts:** `python eval/generate.py --condition original --scenarios eval/scenarios/eval_v1.jsonl --dry-run` (see `eval/README.md` for all three conditions)
 4. **Train:** `sbatch slurm/train_sft.slurm`
-5. **Generate:** `sbatch slurm/generate.slurm` (all five conditions)
+5. **Generate:** `sbatch --export=ALL,ADAPTER=<completed-adapter-path> slurm/generate.slurm` (original, prompt, sft)
 6. **Rate:** `python eval/make_rating_sheet.py --scenarios ...`, two raters fill in copies
 7. **Analyze:** `python eval/analyze.py ...` (see `eval/README.md`)
 

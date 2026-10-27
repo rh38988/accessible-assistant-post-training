@@ -1,5 +1,7 @@
 # schema_v1 compatibility note (for Shirley and the team)
 
+**Update (2026-10-27):** Generation and `scripts/validate_data.py --kind scenario` now read schema_v1 directly. `slurm/generate.slurm` defaults to `eval/scenarios/eval_v1.jsonl` and the `original`, `prompt`, and `sft` conditions. Follow `eval/README.md`; do not use the proposed adapter or create a compatibility file. Rating-sheet construction and analysis still need their own native-schema update. The remaining text is the historical assessment and superseded proposal from 2026-10-26.
+
 2026-10-26. **Short answer: the current pipeline cannot load `eval/scenarios/eval_v1.jsonl` as it stands.** Nothing in the shared repo was modified. The proposals below are untested against the real scripts except where stated.
 
 ## 1. What was run, and what was only read
