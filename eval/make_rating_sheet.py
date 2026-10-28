@@ -4,6 +4,7 @@ Reads native schema_v1 and only eval_v1-{original,prompt,sft}.jsonl. No model
 generation or scoring is performed. Install openpyxl from requirements.txt first.
 
     python -B eval/make_rating_sheet.py --seed 42
+    python -B eval/make_rating_sheet.py --pilot --replace-blank --seed 42
 
 Share ratings_rater1.xlsx and ratings_rater2.xlsx; keep key.csv private.
 """
@@ -11,11 +12,13 @@ import argparse
 import csv
 import json
 import random
-import shutil
 import sys
+from collections import Counter
+from io import BytesIO, StringIO
+from itertools import combinations
 from pathlib import Path
 
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -38,6 +41,41 @@ KEY_HEADERS = ("item_id", "scenario_id", "candidate", "condition")
 FILENAMES = ("ratings_rater1.xlsx", "ratings_rater2.xlsx", "key.csv")
 
 
+def select_checkpoint_scenarios(scenarios, seed=42):
+    """Choose five using metadata only, in a canonical, seeded combination order.
+
+    Native schema_v1 has no language field: the two zh-TW IDs are specified by
+    rubric_v1. Only prompt length is inspected for multi-turn coverage, never
+    prompt text, expected elements, or any candidate response.
+    """
+    metadata = sorted(({
+        "id": sc["id"], "task_family": sc["task_family"],
+        "zh_tw": sc["id"] in ZH_TW_IDS,
+        "multiturn": len(sc["prompt"]) > 1,
+        "clarification": sc["clarification_required"],
+        "risk_level": sc["risk_level"],
+    } for sc in scenarios), key=lambda row: row["id"])
+    if len({row["id"] for row in metadata}) != len(metadata):
+        raise ValueError("Checkpoint selection requires unique scenario IDs")
+    families = {row["task_family"] for row in metadata}
+    eligible = []
+    for group in combinations(metadata, 5):
+        counts = Counter(row["task_family"] for row in group)
+        if (len(families) == 3 and set(counts) == families
+                and sorted(counts.values()) == [1, 2, 2]
+                and any(row["zh_tw"] for row in group)
+                and any(row["multiturn"] for row in group)
+                and any(row["clarification"] for row in group)
+                and any(row["task_family"] == "Online Safety and Scam Prevention"
+                        and row["risk_level"] in {"medium", "high"} for row in group)):
+            eligible.append(tuple(row["id"] for row in group))
+    if not eligible:
+        raise ValueError("No five-scenario checkpoint satisfies the metadata requirements")
+    selected_ids = random.Random(seed).choice(eligible)
+    by_id = {sc["id"]: sc for sc in scenarios}
+    return [by_id[sid] for sid in selected_ids]
+
+
 def load_outputs(directory):
     """Use the three completed files explicitly, never a wildcard of outputs."""
     outputs = {}
@@ -48,7 +86,7 @@ def load_outputs(directory):
     return outputs
 
 
-def build_items(scenarios, outputs, seed=42):
+def build_items(scenarios, outputs, seed=42, selected_ids=None):
     """Validate complete paired inputs, then blind independently per scenario."""
     scenario_ids = [sc["id"] for sc in scenarios]
     if len(scenario_ids) != 15 or len(set(scenario_ids)) != 15:
@@ -75,10 +113,19 @@ def build_items(scenarios, outputs, seed=42):
             raise ValueError("Output scenario IDs must match all 15 scenarios in each file")
         indexed[condition] = seen
 
+    if selected_ids is None:
+        selected = scenarios
+    else:
+        selected_ids = list(selected_ids)
+        if (len(selected_ids) != 5 or len(set(selected_ids)) != 5
+                or not set(selected_ids) <= set(scenario_ids)):
+            raise ValueError("Checkpoint requires five unique IDs from eval_v1")
+        selected = [sc for sc in scenarios if sc["id"] in selected_ids]
+
     rng = random.Random(seed)
     items, key = [], []
     # Canonical order makes assignment independent of input file row order.
-    for sc in sorted(scenarios, key=lambda sc: sc["id"]):
+    for sc in sorted(selected, key=lambda sc: sc["id"]):
         conditions = list(CONDITIONS)
         rng.shuffle(conditions)  # Fresh permutation for each scenario, not one global map.
         for candidate, condition in zip(CANDIDATES, conditions):
@@ -117,7 +164,7 @@ def append_literal(ws, values):
             cell.data_type = "s"
 
 
-def make_workbook(items, rubric_path):
+def make_workbook(items, rubric_path, selection=None, seed=42):
     wb = Workbook()
     wb.properties.creator = ""
     wb.properties.lastModifiedBy = ""
@@ -176,25 +223,72 @@ def make_workbook(items, rubric_path):
     instructions.column_dimensions["A"].width = 120
     for row in instructions:
         row[0].alignment = Alignment(vertical="top", wrap_text=True)
+    if selection is not None:
+        record = wb.create_sheet("Selection")
+        append_literal(record, ("selector", "metadata-combinations-v1"))
+        append_literal(record, ("selection_seed", seed))
+        append_literal(record, ("randomization_seed", seed))
+        append_literal(record, ("allocation", "2/2/1 across the three task families"))
+        append_literal(record, ("scenario_id", "task_family"))
+        for sc in selection:
+            append_literal(record, (sc["id"], sc["task_family"]))
+        record.column_dimensions["A"].width = 28
+        record.column_dimensions["B"].width = 55
     return wb
 
 
-def generate(scenarios_path, outputs_dir, ratings_dir, seed=42):
-    scenarios = load_scenarios(scenarios_path)
-    items, key = build_items(scenarios, load_outputs(outputs_dir), seed)
-    wb = make_workbook(items, REPO / "eval/rubric_v1.md")
+def verify_blank_workbooks(paths):
+    """Fail closed before replacing either rater workbook or the private key."""
+    if not all(path.is_file() for path in paths):
+        raise ValueError("Replacement requires both existing rater workbooks and key.csv")
+    for path in paths[:2]:
+        # Keep formulas visible: a formula with an empty cached result is entered data.
+        wb = load_workbook(BytesIO(path.read_bytes()), data_only=False)
+        try:
+            if "Ratings" not in wb.sheetnames:
+                raise ValueError("Abort replacement: missing Ratings sheet")
+            ws = wb["Ratings"]
+            if tuple(cell.value for cell in ws[1]) != HEADERS:
+                raise ValueError("Abort replacement: unrecognized rating fields")
+            for field in (*SCORES, *CHECKS, "notes"):
+                column = HEADERS.index(field) + 1
+                if any(ws.cell(row, column).value is not None
+                       for row in range(2, ws.max_row + 1)):
+                    raise ValueError(f"Abort replacement: entered ratings or notes in {path.name}")
+        finally:
+            wb.close()
+
+
+def generate(scenarios_path, outputs_dir, ratings_dir, seed=42, pilot=False,
+             replace_blank=False):
     out_dir = Path(ratings_dir)
     paths = tuple(out_dir / name for name in FILENAMES)
-    if any(path.exists() for path in paths):
+    if replace_blank:
+        verify_blank_workbooks(paths)
+    elif any(path.exists() for path in paths):
         raise ValueError("Rating artifacts already exist; choose a new --ratings-dir")
-    out_dir.mkdir(parents=True, exist_ok=True)
-    wb.save(paths[0])
+    scenarios = load_scenarios(scenarios_path)
+    selection = select_checkpoint_scenarios(scenarios, seed) if pilot else None
+    selected_ids = [sc["id"] for sc in selection] if selection is not None else None
+    items, key = build_items(scenarios, load_outputs(outputs_dir), seed, selected_ids)
+    wb = make_workbook(items, REPO / "eval/rubric_v1.md", selection, seed)
+    # Serialize all three artifacts before touching existing workbooks.
+    buffer = BytesIO()
+    wb.save(buffer)
     wb.close()
-    shutil.copyfile(paths[0], paths[1])  # Byte-identical, including XLSX metadata.
-    with paths[2].open("x", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=KEY_HEADERS)
-        writer.writeheader()
-        writer.writerows(key)
+    workbook_bytes = buffer.getvalue()
+    key_buffer = StringIO(newline="")
+    writer = csv.DictWriter(key_buffer, fieldnames=KEY_HEADERS)
+    writer.writeheader()
+    writer.writerows(key)
+    if replace_blank:
+        verify_blank_workbooks(paths)  # Recheck immediately before the first write.
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for path in paths[:2]:
+        with path.open("wb" if replace_blank else "xb") as stream:
+            stream.write(workbook_bytes)
+    with paths[2].open("w" if replace_blank else "x", newline="", encoding="utf-8") as stream:
+        stream.write(key_buffer.getvalue())
     return paths
 
 
@@ -204,12 +298,20 @@ def main(argv=None):
     parser.add_argument("--outputs", default=str(REPO / "eval/outputs"))
     parser.add_argument("--ratings-dir", default=str(REPO / "eval/ratings"))
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--pilot", action="store_true", help="Select five scenarios by metadata")
+    parser.add_argument("--replace-blank", action="store_true",
+                        help="Replace existing artifacts only if both raters are entirely blank")
     args = parser.parse_args(argv)
     try:
-        paths = generate(args.scenarios, args.outputs, args.ratings_dir, args.seed)
+        paths = generate(args.scenarios, args.outputs, args.ratings_dir, args.seed,
+                         args.pilot, args.replace_blank)
     except (OSError, ValueError) as exc:
         parser.exit(1, f"{exc}\n")
-    print("Created two identical anonymous workbooks, 45 rating rows each.")
+    print(f"Created two identical anonymous workbooks, {15 if args.pilot else 45} rating rows each.")
+    if args.pilot:
+        selection = select_checkpoint_scenarios(load_scenarios(args.scenarios), args.seed)
+        print(f"Selection and randomization seed: {args.seed}")
+        print("Selected scenario IDs: " + ", ".join(sc["id"] for sc in selection))
     for path in paths[:2]:
         print(f"Rater workbook: {path}")
     print(f"Private key (do not share): {paths[2]}")

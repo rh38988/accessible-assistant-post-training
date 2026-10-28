@@ -1,4 +1,4 @@
-"""CPU-only checks for blinded rating artifacts; never score or generate replies.
+r"""CPU-only checks for blinded rating artifacts; never score or generate replies.
 
 Run: .\.venv\Scripts\python.exe -B -m unittest discover -s eval -p "test_*.py" -v
 """
@@ -113,13 +113,14 @@ class RatingSheetTests(unittest.TestCase):
             for row in rows:
                 row["adapter"] = "PRIVATE_ADAPTER_METADATA_DO_NOT_EXPORT"
                 row["response"] = "A candidate answer without identity metadata."
-        items, _ = rating.build_items(self.scenarios, outputs)
-        wb = rating.make_workbook(items, rating.REPO / "eval/rubric_v1.md")
+        selection = rating.select_checkpoint_scenarios(self.scenarios, 42)
+        items, _ = rating.build_items(self.scenarios, outputs, 42, [sc["id"] for sc in selection])
+        wb = rating.make_workbook(items, rating.REPO / "eval/rubric_v1.md", selection, 42)
         path = self.root / "anonymous.xlsx"
         wb.save(path)
         wb.close()
         loaded = self.workbook(path)
-        self.assertEqual(loaded.sheetnames, ["Ratings", "Rubric"])
+        self.assertEqual(loaded.sheetnames, ["Ratings", "Rubric", "Selection"])
         self.assertFalse(loaded.defined_names)
         self.assertFalse(loaded.properties.creator)
         self.assertFalse(loaded.properties.lastModifiedBy)
@@ -216,6 +217,138 @@ class RatingSheetTests(unittest.TestCase):
         cell = loaded["Ratings"].cell(2, rating.HEADERS.index("response") + 1)
         self.assertEqual(cell.value, items[0]["response"])
         self.assertEqual(cell.data_type, "s")
+
+    def test_five_selected_scenarios_have_all_required_metadata_coverage(self):
+        selected = rating.select_checkpoint_scenarios(self.scenarios, 42)
+        self.assertEqual(len(selected), 5)
+        self.assertEqual(len({sc["id"] for sc in selected}), 5)
+        counts = Counter(sc["task_family"] for sc in selected)
+        self.assertEqual(set(counts), {sc["task_family"] for sc in self.scenarios})
+        self.assertEqual(sorted(counts.values()), [1, 2, 2])
+        self.assertTrue(any(sc["id"] in rating.ZH_TW_IDS for sc in selected))
+        self.assertTrue(any(len(sc["prompt"]) > 1 for sc in selected))
+        self.assertTrue(any(sc["clarification_required"] for sc in selected))
+        self.assertTrue(any(sc["task_family"] == "Online Safety and Scam Prevention"
+                            and sc["risk_level"] in {"medium", "high"} for sc in selected))
+
+    def test_checkpoint_selection_is_deterministic_and_ignores_text_and_input_order(self):
+        def ids(scenarios, seed=42):
+            return [sc["id"] for sc in rating.select_checkpoint_scenarios(scenarios, seed)]
+
+        expected = ids(self.scenarios)
+        self.assertEqual(ids(self.scenarios), expected)
+        self.assertEqual(ids(list(reversed(self.scenarios))), expected)
+        changed = copy.deepcopy(self.scenarios)
+        for sc in changed:
+            for turn in sc["prompt"]:
+                turn["content"] = "Arbitrary text that must not affect selection."
+            sc["expected_elements"] = ["Ignored"]
+            sc["source_url"] = "https://example.invalid/ignored"
+            sc["response"] = "Injected response content must never affect selection."
+            sc["adapter"] = "Injected adapter must never affect selection."
+        self.assertEqual(ids(changed), expected)
+        self.assertNotEqual(ids(self.scenarios, 43), expected)
+        impossible = copy.deepcopy(self.scenarios)
+        for sc in impossible:
+            sc["clarification_required"] = False
+        with self.assertRaises(ValueError):
+            rating.select_checkpoint_scenarios(impossible)
+
+    def test_pilot_has_15_rows_identical_workbooks_matching_ids_and_recorded_seed(self):
+        paths = rating.generate(self.scenario_path, self.outputs_dir, self.root / "pilot", 42, pilot=True)
+        first, second, key_path = paths
+        self.assertTrue(first.read_bytes() == second.read_bytes())
+        wb = self.workbook(first)
+        ws = wb["Ratings"]
+        self.assertEqual(ws.max_row - 1, 15)
+        rows = [dict(zip(rating.HEADERS, row)) for row in ws.iter_rows(min_row=2, values_only=True)]
+        selected = rating.select_checkpoint_scenarios(self.scenarios, 42)
+        selected_ids = {sc["id"] for sc in selected}
+        self.assertEqual(Counter(row["scenario_id"] for row in rows), Counter({sid: 3 for sid in selected_ids}))
+        for sid in selected_ids:
+            self.assertEqual({row["candidate"] for row in rows if row["scenario_id"] == sid}, {"A", "B", "C"})
+        self.assertTrue(all(row[field] is None for row in rows for field in (*rating.SCORES, *rating.CHECKS, "notes")))
+        with key_path.open(encoding="utf-8", newline="") as stream:
+            key = list(csv.DictReader(stream))
+        self.assertEqual(len(key), 15)
+        self.assertTrue({row["item_id"] for row in key} == {row["item_id"] for row in rows})
+        self.assertTrue(all({row["condition"] for row in key if row["scenario_id"] == sid}
+                            == set(rating.CONDITIONS) for sid in selected_ids))
+        lookup = {row["item_id"]: row for row in key}
+        outputs = {c: {row["scenario_id"]: row for row in values} for c, values in self.outputs.items()}
+        for row in rows:
+            private = lookup[row["item_id"]]
+            self.assertTrue(row["response"] == outputs[private["condition"]][row["scenario_id"]]["response"])
+        record = list(wb["Selection"].values)
+        self.assertEqual(record[0], ("selector", "metadata-combinations-v1"))
+        self.assertEqual(record[1], ("selection_seed", 42))
+        self.assertEqual(record[2], ("randomization_seed", 42))
+        self.assertEqual({row[0] for row in record[5:]}, selected_ids)
+        again = rating.generate(self.scenario_path, self.outputs_dir, self.root / "again", 42, pilot=True)
+        other = self.workbook(again[0])
+        self.assertTrue(list(ws.values) == list(other["Ratings"].values))
+        self.assertEqual(record, list(other["Selection"].values))
+
+    def test_replace_blank_45_rows_with_pilot_only_overwrites_three_artifacts(self):
+        paths = self.generate("replace")
+        directory = paths[0].parent
+        unrelated = directory / "leave_me.txt"
+        unrelated.write_text("preserved", encoding="utf-8")
+        before_names = {path.name for path in directory.iterdir()}
+        sources = [self.scenario_path, rating.REPO / "eval/rubric_v1.md"] + [
+            self.outputs_dir / f"eval_v1-{condition}.jsonl" for condition in rating.CONDITIONS]
+        hashes = {p: hashlib.sha256(p.read_bytes()).digest() for p in sources}
+        with patch("sys.stdout", new_callable=io.StringIO) as stdout:
+            rating.main(["--ratings-dir", str(directory), "--pilot", "--replace-blank", "--seed", "42"])
+        self.assertIn("15 rating rows each", stdout.getvalue())
+        self.assertIn("seed: 42", stdout.getvalue())
+        for sc in rating.select_checkpoint_scenarios(self.scenarios, 42):
+            self.assertIn(sc["id"], stdout.getvalue())
+        self.assertNotIn("original", stdout.getvalue())
+        self.assertNotIn("sft", stdout.getvalue())
+        self.assertEqual(self.workbook(paths[0])["Ratings"].max_row - 1, 15)
+        self.assertTrue(paths[0].read_bytes() == paths[1].read_bytes())
+        self.assertEqual({path.name for path in directory.iterdir()}, before_names)
+        self.assertEqual(unrelated.read_text(encoding="utf-8"), "preserved")
+        self.assertTrue(hashes == {p: hashlib.sha256(p.read_bytes()).digest() for p in sources})
+
+    def test_replace_aborts_without_changing_any_artifact_if_either_rater_has_any_entry(self):
+        paths = self.generate("guard")
+        originals = [path.read_bytes() for path in paths]
+        fields = (*rating.SCORES, *rating.CHECKS, "notes")
+        for rater in (0, 1):
+            for field in fields:
+                with self.subTest(rater=rater + 1, field=field):
+                    wb = load_workbook(io.BytesIO(originals[rater]))
+                    # Includes numeric zero; truthiness must not treat it as blank.
+                    wb["Ratings"].cell(2, rating.HEADERS.index(field) + 1, 0)
+                    wb.save(paths[rater])
+                    wb.close()
+                    before = [hashlib.sha256(path.read_bytes()).digest() for path in paths]
+                    with self.assertRaisesRegex(ValueError, "entered ratings or notes"):
+                        rating.generate(self.scenario_path, self.outputs_dir, paths[0].parent,
+                                        42, pilot=True, replace_blank=True)
+                    self.assertTrue(before == [hashlib.sha256(path.read_bytes()).digest() for path in paths])
+                    paths[rater].write_bytes(originals[rater])
+
+    def test_replace_guard_rejects_formulas_missing_fields_and_missing_files(self):
+        paths = self.generate("fail_closed")
+        original = paths[1].read_bytes()
+        for case in ("formula", "missing_fields"):
+            with self.subTest(case=case):
+                wb = load_workbook(io.BytesIO(original))
+                cell = "M2" if case == "formula" else "M1"
+                wb["Ratings"][cell] = '=IF(1=1,"",0)' if case == "formula" else "unknown"
+                wb.save(paths[1])
+                wb.close()
+                before = [hashlib.sha256(path.read_bytes()).digest() for path in paths]
+                with self.assertRaises(ValueError):
+                    rating.generate(self.scenario_path, self.outputs_dir, paths[0].parent,
+                                    42, pilot=True, replace_blank=True)
+                self.assertTrue(before == [hashlib.sha256(path.read_bytes()).digest() for path in paths])
+        with self.assertRaises(ValueError):
+            rating.generate(self.scenario_path, self.outputs_dir, self.root / "missing",
+                            42, pilot=True, replace_blank=True)
 
 
 if __name__ == "__main__":
