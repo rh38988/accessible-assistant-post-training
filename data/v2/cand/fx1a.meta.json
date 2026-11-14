@@ -1,0 +1,272 @@
+{
+ "tr001-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": false
+ },
+ "tr001-b": {
+  "batch": "fx1a",
+  "scenario": "missing_info",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": false
+ },
+ "tr001-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": false
+ },
+ "tr001-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": false
+ },
+ "tr001-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": false
+ },
+ "tr002-a": {
+  "batch": "fx1a",
+  "scenario": "direct",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr002-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr002-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr002-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr002-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr003-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": false
+ },
+ "tr003-b": {
+  "batch": "fx1a",
+  "scenario": "missing_info",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": false
+ },
+ "tr003-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": false
+ },
+ "tr003-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": false
+ },
+ "tr003-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": false
+ },
+ "tr004-a": {
+  "batch": "fx1a",
+  "scenario": "direct",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": false
+ },
+ "tr004-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": false
+ },
+ "tr004-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": false
+ },
+ "tr004-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": false
+ },
+ "tr004-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": false
+ },
+ "tr005-a": {
+  "batch": "fx1a",
+  "scenario": "direct",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": false
+ },
+ "tr005-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": false
+ },
+ "tr005-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": false
+ },
+ "tr005-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": false
+ },
+ "tr005-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": false
+ },
+ "tr006-a": {
+  "batch": "fx1a",
+  "scenario": "direct",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": false
+ },
+ "tr006-c": {
+  "batch": "fx1a",
+  "scenario": "direct_messy",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": false
+ },
+ "tr006-d": {
+  "batch": "fx1a",
+  "scenario": "followup",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": false
+ },
+ "tr006-e": {
+  "batch": "fx1a",
+  "scenario": "constraint",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": false
+ },
+ "tr006-r": {
+  "batch": "fx1a",
+  "scenario": "failure_recovery",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": false
+ }
+}

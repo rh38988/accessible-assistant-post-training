@@ -1,0 +1,380 @@
+{
+ "tr121-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr121-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr121-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr121-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr121-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr121-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/102500",
+  "existing": false
+ },
+ "tr122-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr122-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr122-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr122-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr122-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr122-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Update the Mac's software (macOS)",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/108382",
+  "existing": false
+ },
+ "tr123-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr123-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr123-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr123-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr123-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr123-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/guide/mac-help/mchlp1180",
+  "existing": false
+ },
+ "tr124-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr124-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr124-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr124-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr124-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr124-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "delete_app",
+  "task": "Delete (uninstall) an app",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102610",
+  "existing": false
+ },
+ "tr125-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr125-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr125-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr125-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr125-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr125-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102624",
+  "existing": false
+ },
+ "tr126-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr126-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr126-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr126-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr126-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr126-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "battery_saver",
+  "task": "Turn on Low Power Mode",
+  "task_platform": "Mac laptop",
+  "source_url": "https://support.apple.com/101613",
+  "existing": false
+ },
+ "tr127-a": {
+  "batch": "ny1a",
+  "scenario": "direct",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ },
+ "tr127-c": {
+  "batch": "ny1a",
+  "scenario": "direct_messy",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ },
+ "tr127-b": {
+  "batch": "ny1a",
+  "scenario": "missing_info",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ },
+ "tr127-d": {
+  "batch": "ny1a",
+  "scenario": "followup",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ },
+ "tr127-e": {
+  "batch": "ny1a",
+  "scenario": "constraint",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ },
+ "tr127-r": {
+  "batch": "ny1a",
+  "scenario": "failure_recovery",
+  "task_type": "backup_computer",
+  "task": "Back up the Mac with Time Machine",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/104984",
+  "existing": false
+ }
+}

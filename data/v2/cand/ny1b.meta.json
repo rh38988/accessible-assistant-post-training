@@ -1,0 +1,326 @@
+{
+ "tr128-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr128-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr128-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr128-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr128-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr128-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory such as headphones or a speaker",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/HT204091",
+  "existing": false
+ },
+ "tr129-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr129-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr129-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr129-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr129-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr129-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "bluetooth_pair",
+  "task": "Connect a Bluetooth device",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/guide/mac-help/blth1004/mac",
+  "existing": false
+ },
+ "tr130-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr130-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr130-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr130-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr130-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr130-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "two_step_verification",
+  "task": "Turn on two-factor authentication for the Apple Account",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102660",
+  "existing": false
+ },
+ "tr131-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr131-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr131-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr131-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr131-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr131-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "password_manager",
+  "task": "Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/104955",
+  "existing": false
+ },
+ "tr132-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr132-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr132-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr132-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr132-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr132-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "force_restart",
+  "task": "iPad is frozen or will not respond",
+  "task_platform": "iPad",
+  "source_url": "https://support.apple.com/kb/HT212017",
+  "existing": false
+ },
+ "tr133-a": {
+  "batch": "ny1b",
+  "scenario": "direct",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ },
+ "tr133-c": {
+  "batch": "ny1b",
+  "scenario": "direct_messy",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ },
+ "tr133-b": {
+  "batch": "ny1b",
+  "scenario": "missing_info",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ },
+ "tr133-d": {
+  "batch": "ny1b",
+  "scenario": "followup",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ },
+ "tr133-e": {
+  "batch": "ny1b",
+  "scenario": "constraint",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ },
+ "tr133-r": {
+  "batch": "ny1b",
+  "scenario": "failure_recovery",
+  "task_type": "report_spam_text",
+  "task": "Report and block junk text messages",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+  "existing": false
+ }
+}

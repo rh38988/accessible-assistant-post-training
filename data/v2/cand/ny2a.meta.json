@@ -1,0 +1,380 @@
+{
+ "tr134-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr134-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr134-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr134-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr134-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr134-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "email_not_working",
+  "task": "Cannot send or receive email in the Mail app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102578",
+  "existing": false
+ },
+ "tr135-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr135-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr135-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr135-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr135-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr135-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118433",
+  "existing": false
+ },
+ "tr136-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr136-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr136-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr136-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr136-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr136-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "no_service",
+  "task": "Phone shows No Service or SOS",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120000",
+  "existing": false
+ },
+ "tr137-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr137-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr137-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr137-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr137-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr137-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "touchscreen_unresponsive",
+  "task": "The screen is too sensitive or only responds to touch some of the time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102567",
+  "existing": false
+ },
+ "tr138-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr138-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr138-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr138-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr138-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr138-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "overheating",
+  "task": "The phone is too hot or shows a temperature warning",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118431",
+  "existing": false
+ },
+ "tr139-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr139-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr139-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr139-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr139-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr139-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101619",
+  "existing": false
+ },
+ "tr140-a": {
+  "batch": "ny2a",
+  "scenario": "direct",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ },
+ "tr140-c": {
+  "batch": "ny2a",
+  "scenario": "direct_messy",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ },
+ "tr140-b": {
+  "batch": "ny2a",
+  "scenario": "missing_info",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ },
+ "tr140-d": {
+  "batch": "ny2a",
+  "scenario": "followup",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ },
+ "tr140-e": {
+  "batch": "ny2a",
+  "scenario": "constraint",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ },
+ "tr140-r": {
+  "batch": "ny2a",
+  "scenario": "failure_recovery",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/109351",
+  "existing": false
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "tr206-a": {
+  "batch": "ny7b",
+  "scenario": "direct",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ },
+ "tr206-c": {
+  "batch": "ny7b",
+  "scenario": "direct_messy",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ },
+ "tr206-b": {
+  "batch": "ny7b",
+  "scenario": "missing_info",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ },
+ "tr206-d": {
+  "batch": "ny7b",
+  "scenario": "followup",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ },
+ "tr206-e": {
+  "batch": "ny7b",
+  "scenario": "constraint",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ },
+ "tr206-r": {
+  "batch": "ny7b",
+  "scenario": "failure_recovery",
+  "task_type": "video_captions",
+  "task": "Turn on captions in a meeting",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+  "existing": false
+ }
+}

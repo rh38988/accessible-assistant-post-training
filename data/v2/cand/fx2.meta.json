@@ -1,0 +1,290 @@
+{
+ "tr014-c": {
+  "batch": "fx2",
+  "scenario": "direct_messy",
+  "task_type": "family_emergency_scam",
+  "task": "Caller claims to be grandchild needing gift cards",
+  "task_platform": "any",
+  "source_url": "https://www.ftc.gov/node/54353",
+  "existing": false
+ },
+ "tr014-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "family_emergency_scam",
+  "task": "Caller claims to be grandchild needing gift cards",
+  "task_platform": "any",
+  "source_url": "https://www.ftc.gov/node/54353",
+  "existing": false
+ },
+ "tr014-r": {
+  "batch": "fx2",
+  "scenario": "already_acted",
+  "task_type": "family_emergency_scam",
+  "task": "Caller claims to be grandchild needing gift cards",
+  "task_platform": "any",
+  "source_url": "https://www.ftc.gov/node/54353",
+  "existing": false
+ },
+ "tr014-f": {
+  "batch": "fx2",
+  "scenario": "helper",
+  "task_type": "family_emergency_scam",
+  "task": "Caller claims to be grandchild needing gift cards",
+  "task_platform": "any",
+  "source_url": "https://www.ftc.gov/node/54353",
+  "existing": false
+ },
+ "tr014-g": {
+  "batch": "fx2",
+  "scenario": "prevention",
+  "task_type": "family_emergency_scam",
+  "task": "Caller claims to be grandchild needing gift cards",
+  "task_platform": "any",
+  "source_url": "https://www.ftc.gov/node/54353",
+  "existing": false
+ },
+ "tr015-c": {
+  "batch": "fx2",
+  "scenario": "direct_messy",
+  "task_type": "verification_code_scam",
+  "task": "Stranger asks for a verification code",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/84809",
+  "existing": false
+ },
+ "tr015-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "verification_code_scam",
+  "task": "Stranger asks for a verification code",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/84809",
+  "existing": false
+ },
+ "tr015-r": {
+  "batch": "fx2",
+  "scenario": "already_acted",
+  "task_type": "verification_code_scam",
+  "task": "Stranger asks for a verification code",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/84809",
+  "existing": false
+ },
+ "tr015-f": {
+  "batch": "fx2",
+  "scenario": "helper",
+  "task_type": "verification_code_scam",
+  "task": "Stranger asks for a verification code",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/84809",
+  "existing": false
+ },
+ "tr015-g": {
+  "batch": "fx2",
+  "scenario": "prevention",
+  "task_type": "verification_code_scam",
+  "task": "Stranger asks for a verification code",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/84809",
+  "existing": false
+ },
+ "tr016-d": {
+  "batch": "fx2",
+  "scenario": "followup",
+  "task_type": "online_payment_safety",
+  "task": "Is it safe to pay online?",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay",
+  "existing": false
+ },
+ "tr016-c": {
+  "batch": "fx2",
+  "scenario": "direct_messy",
+  "task_type": "online_payment_safety",
+  "task": "Is it safe to pay online?",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay",
+  "existing": false
+ },
+ "tr016-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "online_payment_safety",
+  "task": "Is it safe to pay online?",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay",
+  "existing": false
+ },
+ "tr016-r": {
+  "batch": "fx2",
+  "scenario": "already_acted",
+  "task_type": "online_payment_safety",
+  "task": "Is it safe to pay online?",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay",
+  "existing": false
+ },
+ "tr016-g": {
+  "batch": "fx2",
+  "scenario": "prevention",
+  "task_type": "online_payment_safety",
+  "task": "Is it safe to pay online?",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2026/07/way-spot-scams-how-someone-asks-you-pay",
+  "existing": false
+ },
+ "tr021-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102453",
+  "existing": false
+ },
+ "tr022-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/accessibility/android/answer/11183305?hl=en",
+  "existing": false
+ },
+ "tr022-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/accessibility/android/answer/11183305?hl=en",
+  "existing": false
+ },
+ "tr024-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "ring_volume",
+  "task": "Turn up ringer volume",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": false
+ },
+ "tr024-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "ring_volume",
+  "task": "Turn up ringer volume",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": false
+ },
+ "tr025-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr025-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": false
+ },
+ "tr026-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "wifi_calling",
+  "task": "Turn on Wi-Fi Calling",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108066",
+  "existing": false
+ },
+ "tr026-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_calling",
+  "task": "Turn on Wi-Fi Calling",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108066",
+  "existing": false
+ },
+ "tr027-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9075928?hl=en",
+  "existing": false
+ },
+ "tr027-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9075928?hl=en",
+  "existing": false
+ },
+ "tr028-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+  "existing": false
+ },
+ "tr028-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+  "existing": false
+ },
+ "tr030-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9075847?hl=en",
+  "existing": false
+ },
+ "tr030-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9075847?hl=en",
+  "existing": false
+ },
+ "tr031-e": {
+  "batch": "fx2",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-wi-fi-network-in-windows",
+  "existing": false
+ },
+ "tr031-r": {
+  "batch": "fx2",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-wi-fi-network-in-windows",
+  "existing": false
+ }
+}

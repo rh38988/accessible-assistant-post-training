@@ -1,0 +1,326 @@
+{
+ "tr167-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr167-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr167-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr167-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr167-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr167-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "battery_saver",
+  "task": "Turn on power saving mode",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002534",
+  "existing": false
+ },
+ "tr168-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr168-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr168-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr168-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr168-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr168-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/10474268?hl=en",
+  "existing": false
+ },
+ "tr169-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr169-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr169-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr169-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr169-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr169-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/1047420?hl=en",
+  "existing": false
+ },
+ "tr170-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr170-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr170-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr170-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr170-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr170-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Update the Chromebook",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/177889?hl=en",
+  "existing": false
+ },
+ "tr171-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr171-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr171-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr171-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr171-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr171-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "magnifier",
+  "task": "Zoom in or magnify the screen",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/6320705?hl=en",
+  "existing": false
+ },
+ "tr172-a": {
+  "batch": "ny4b",
+  "scenario": "direct",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ },
+ "tr172-c": {
+  "batch": "ny4b",
+  "scenario": "direct_messy",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ },
+ "tr172-b": {
+  "batch": "ny4b",
+  "scenario": "missing_info",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ },
+ "tr172-d": {
+  "batch": "ny4b",
+  "scenario": "followup",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ },
+ "tr172-e": {
+  "batch": "ny4b",
+  "scenario": "constraint",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ },
+ "tr172-r": {
+  "batch": "ny4b",
+  "scenario": "failure_recovery",
+  "task_type": "read_aloud",
+  "task": "Have text read aloud (Select-to-speak)",
+  "task_platform": "Chromebook",
+  "source_url": "https://support.google.com/chromebook/answer/9032490?hl=en",
+  "existing": false
+ }
+}

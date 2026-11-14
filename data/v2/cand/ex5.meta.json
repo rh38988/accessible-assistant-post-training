@@ -1,0 +1,470 @@
+{
+ "tr062-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7431795?hl=en",
+  "existing": true
+ },
+ "tr062-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7431795?hl=en",
+  "existing": true
+ },
+ "tr062-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7431795?hl=en",
+  "existing": true
+ },
+ "tr062-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7431795?hl=en",
+  "existing": true
+ },
+ "tr063-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105001",
+  "existing": true
+ },
+ "tr063-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105001",
+  "existing": true
+ },
+ "tr063-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105001",
+  "existing": true
+ },
+ "tr063-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105001",
+  "existing": true
+ },
+ "tr064-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9083864?hl=en",
+  "existing": true
+ },
+ "tr064-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9083864?hl=en",
+  "existing": true
+ },
+ "tr064-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9083864?hl=en",
+  "existing": true
+ },
+ "tr064-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "flashlight",
+  "task": "Turn on the flashlight",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9083864?hl=en",
+  "existing": true
+ },
+ "tr066-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118444",
+  "existing": true
+ },
+ "tr066-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118444",
+  "existing": true
+ },
+ "tr066-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118444",
+  "existing": true
+ },
+ "tr066-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118444",
+  "existing": true
+ },
+ "tr067-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "Android (Clock)",
+  "source_url": "https://support.google.com/android/answer/2840926?hl=en",
+  "existing": true
+ },
+ "tr067-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "Android (Clock)",
+  "source_url": "https://support.google.com/android/answer/2840926?hl=en",
+  "existing": true
+ },
+ "tr067-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "Android (Clock)",
+  "source_url": "https://support.google.com/android/answer/2840926?hl=en",
+  "existing": true
+ },
+ "tr067-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "alarm",
+  "task": "Set an alarm",
+  "task_platform": "Android (Clock)",
+  "source_url": "https://support.google.com/android/answer/2840926?hl=en",
+  "existing": true
+ },
+ "tr068-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair hearing aids or Bluetooth headphones",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108780",
+  "existing": true
+ },
+ "tr068-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair hearing aids or Bluetooth headphones",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108780",
+  "existing": true
+ },
+ "tr068-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair hearing aids or Bluetooth headphones",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108780",
+  "existing": true
+ },
+ "tr068-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair hearing aids or Bluetooth headphones",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108780",
+  "existing": true
+ },
+ "tr069-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair Bluetooth headphones",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604?hl=en",
+  "existing": true
+ },
+ "tr069-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair Bluetooth headphones",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604?hl=en",
+  "existing": true
+ },
+ "tr069-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair Bluetooth headphones",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604?hl=en",
+  "existing": true
+ },
+ "tr069-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "hearing_bluetooth",
+  "task": "Pair Bluetooth headphones",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604?hl=en",
+  "existing": true
+ },
+ "tr070-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101604",
+  "existing": true
+ },
+ "tr070-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101604",
+  "existing": true
+ },
+ "tr070-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101604",
+  "existing": true
+ },
+ "tr070-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101604",
+  "existing": true
+ },
+ "tr071-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664692?hl=en",
+  "existing": true
+ },
+ "tr071-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664692?hl=en",
+  "existing": true
+ },
+ "tr071-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664692?hl=en",
+  "existing": true
+ },
+ "tr071-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saving mode",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664692?hl=en",
+  "existing": true
+ },
+ "tr072-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Update apps",
+  "task_platform": "iPhone (App Store)",
+  "source_url": "https://support.apple.com/en-us/102629",
+  "existing": true
+ },
+ "tr072-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Update apps",
+  "task_platform": "iPhone (App Store)",
+  "source_url": "https://support.apple.com/en-us/102629",
+  "existing": true
+ },
+ "tr072-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Update apps",
+  "task_platform": "iPhone (App Store)",
+  "source_url": "https://support.apple.com/en-us/102629",
+  "existing": true
+ },
+ "tr072-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Update apps",
+  "task_platform": "iPhone (App Store)",
+  "source_url": "https://support.apple.com/en-us/102629",
+  "existing": true
+ },
+ "tr073-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "magnifier",
+  "task": "Zoom in on the screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006949?hl=en",
+  "existing": true
+ },
+ "tr073-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "magnifier",
+  "task": "Zoom in on the screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006949?hl=en",
+  "existing": true
+ },
+ "tr073-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "magnifier",
+  "task": "Zoom in on the screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006949?hl=en",
+  "existing": true
+ },
+ "tr073-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "magnifier",
+  "task": "Zoom in on the screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006949?hl=en",
+  "existing": true
+ },
+ "tr074-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/101593",
+  "existing": true
+ },
+ "tr074-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/101593",
+  "existing": true
+ },
+ "tr074-c": {
+  "batch": "ex5",
+  "scenario": "direct_messy",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/101593",
+  "existing": true
+ },
+ "tr074-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/101593",
+  "existing": true
+ },
+ "tr075-a": {
+  "batch": "ex5",
+  "scenario": "direct",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accounts/answer/6160491?hl=en",
+  "existing": true
+ },
+ "tr075-b": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accounts/answer/6160491?hl=en",
+  "existing": true
+ },
+ "tr075-c": {
+  "batch": "ex5",
+  "scenario": "missing_info",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accounts/answer/6160491?hl=en",
+  "existing": true
+ },
+ "tr075-d": {
+  "batch": "ex5",
+  "scenario": "followup",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accounts/answer/6160491?hl=en",
+  "existing": true
+ }
+}

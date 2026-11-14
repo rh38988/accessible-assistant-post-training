@@ -1,0 +1,236 @@
+{
+ "tr076-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "scan_qr",
+  "task": "Scan a QR code",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102680",
+  "existing": false
+ },
+ "tr076-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "scan_qr",
+  "task": "Scan a QR code",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102680",
+  "existing": false
+ },
+ "tr077-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "scan_qr",
+  "task": "Scan a QR code",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/camerafromgoogle/answer/12033278?hl=en",
+  "existing": false
+ },
+ "tr077-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "scan_qr",
+  "task": "Scan a QR code",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/camerafromgoogle/answer/12033278?hl=en",
+  "existing": false
+ },
+ "tr078-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "emergency_info",
+  "task": "Set up emergency medical info",
+  "task_platform": "iPhone (Medical ID)",
+  "source_url": "https://support.apple.com/en-us/105072",
+  "existing": false
+ },
+ "tr078-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "emergency_info",
+  "task": "Set up emergency medical info",
+  "task_platform": "iPhone (Medical ID)",
+  "source_url": "https://support.apple.com/en-us/105072",
+  "existing": false
+ },
+ "tr079-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "emergency_info",
+  "task": "Add emergency information",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9319337?hl=en",
+  "existing": false
+ },
+ "tr079-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "emergency_info",
+  "task": "Add emergency information",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9319337?hl=en",
+  "existing": false
+ },
+ "tr080-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120681",
+  "existing": false
+ },
+ "tr080-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120681",
+  "existing": false
+ },
+ "tr081-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9079661?hl=en",
+  "existing": false
+ },
+ "tr081-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9079661?hl=en",
+  "existing": false
+ },
+ "tr082-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "browser_zoom",
+  "task": "Make a web page bigger",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr082-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "browser_zoom",
+  "task": "Make a web page bigger",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr083-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "find_downloads",
+  "task": "Find a downloaded file",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8",
+  "existing": false
+ },
+ "tr083-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "find_downloads",
+  "task": "Find a downloaded file",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8",
+  "existing": false
+ },
+ "tr084-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "mouse_pointer_size",
+  "task": "Make the mouse pointer bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/accessibility/windows/make-windows-easier-to-see",
+  "existing": false
+ },
+ "tr084-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "mouse_pointer_size",
+  "task": "Make the mouse pointer bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/accessibility/windows/make-windows-easier-to-see",
+  "existing": false
+ },
+ "tr085-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "two_step_verification",
+  "task": "Turn on 2-Step Verification",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr085-r": {
+  "batch": "fx6",
+  "scenario": "failure_recovery",
+  "task_type": "two_step_verification",
+  "task": "Turn on 2-Step Verification",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr086-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "phishing_email",
+  "task": "Is this email asking me to log in real?",
+  "task_platform": "email",
+  "source_url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+  "existing": false
+ },
+ "tr086-r": {
+  "batch": "fx6",
+  "scenario": "already_acted",
+  "task_type": "phishing_email",
+  "task": "Is this email asking me to log in real?",
+  "task_platform": "email",
+  "source_url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+  "existing": false
+ },
+ "tr087-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "report_spam_text",
+  "task": "Report a spam text message",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages",
+  "existing": false
+ },
+ "tr087-r": {
+  "batch": "fx6",
+  "scenario": "already_acted",
+  "task_type": "report_spam_text",
+  "task": "Report a spam text message",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages",
+  "existing": false
+ },
+ "tr088-e": {
+  "batch": "fx6",
+  "scenario": "constraint",
+  "task_type": "romance_scam",
+  "task": "Online friend asks for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+  "existing": false
+ },
+ "tr088-r": {
+  "batch": "fx6",
+  "scenario": "already_acted",
+  "task_type": "romance_scam",
+  "task": "Online friend asks for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+  "existing": false
+ }
+}

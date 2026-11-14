@@ -1,0 +1,326 @@
+{
+ "tr141-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr141-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr141-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr141-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr141-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr141-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "voicemail",
+  "task": "Set up and listen to voicemail",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0",
+  "existing": false
+ },
+ "tr142-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr142-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr142-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr142-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr142-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr142-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "call_forwarding",
+  "task": "Forward calls to another number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/guide/iphone/iph7405291c4/ios",
+  "existing": false
+ },
+ "tr143-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr143-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr143-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr143-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr143-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr143-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "flash_alerts",
+  "task": "Make the light flash for alerts",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111774",
+  "existing": false
+ },
+ "tr144-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr144-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr144-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr144-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr144-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr144-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "find_model",
+  "task": "Find the model number of the iPhone to identify which model it is",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/106343",
+  "existing": false
+ },
+ "tr145-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr145-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr145-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr145-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr145-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr145-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "scan_document",
+  "task": "Scan a paper document with the phone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108963",
+  "existing": false
+ },
+ "tr146-a": {
+  "batch": "ny2b",
+  "scenario": "direct",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ },
+ "tr146-c": {
+  "batch": "ny2b",
+  "scenario": "direct_messy",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ },
+ "tr146-b": {
+  "batch": "ny2b",
+  "scenario": "missing_info",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ },
+ "tr146-d": {
+  "batch": "ny2b",
+  "scenario": "followup",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ },
+ "tr146-e": {
+  "batch": "ny2b",
+  "scenario": "constraint",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ },
+ "tr146-r": {
+  "batch": "ny2b",
+  "scenario": "failure_recovery",
+  "task_type": "home_screen_organize",
+  "task": "Move apps and organize the Home Screen",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108307",
+  "existing": false
+ }
+}

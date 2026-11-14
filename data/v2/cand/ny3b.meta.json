@@ -1,0 +1,326 @@
+{
+ "tr154-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr154-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr154-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr154-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr154-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr154-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth accessory",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9417604",
+  "existing": false
+ },
+ "tr155-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr155-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr155-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr155-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr155-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr155-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/pixelphone/answer/6111557",
+  "existing": false
+ },
+ "tr156-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr156-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr156-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr156-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr156-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr156-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2841106",
+  "existing": false
+ },
+ "tr157-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr157-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr157-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr157-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr157-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr157-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "home_screen_organize",
+  "task": "Add and move apps on the Home screen",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9450271",
+  "existing": false
+ },
+ "tr158-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr158-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr158-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr158-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr158-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr158-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on theft protection",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/15146908",
+  "existing": false
+ },
+ "tr159-a": {
+  "batch": "ny3b",
+  "scenario": "direct",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ },
+ "tr159-c": {
+  "batch": "ny3b",
+  "scenario": "direct_messy",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ },
+ "tr159-b": {
+  "batch": "ny3b",
+  "scenario": "missing_info",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ },
+ "tr159-d": {
+  "batch": "ny3b",
+  "scenario": "followup",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ },
+ "tr159-e": {
+  "batch": "ny3b",
+  "scenario": "constraint",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ },
+ "tr159-r": {
+  "batch": "ny3b",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_calling",
+  "task": "Make calls over Wi-Fi",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/2811843",
+  "existing": false
+ }
+}

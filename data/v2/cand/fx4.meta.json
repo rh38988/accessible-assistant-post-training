@@ -1,0 +1,236 @@
+{
+ "tr048-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "silence_unknown_callers",
+  "task": "Silence calls from unknown numbers",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111106",
+  "existing": false
+ },
+ "tr048-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "silence_unknown_callers",
+  "task": "Silence calls from unknown numbers",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111106",
+  "existing": false
+ },
+ "tr049-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "spam_call_filter",
+  "task": "Filter spam calls",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/phoneapp/answer/3459196?hl=en",
+  "existing": false
+ },
+ "tr049-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "spam_call_filter",
+  "task": "Filter spam calls",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/phoneapp/answer/3459196?hl=en",
+  "existing": false
+ },
+ "tr050-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "battery_health",
+  "task": "Check battery health",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101575",
+  "existing": false
+ },
+ "tr050-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "battery_health",
+  "task": "Check battery health",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101575",
+  "existing": false
+ },
+ "tr051-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "group_text",
+  "task": "Start a group text",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118236",
+  "existing": false
+ },
+ "tr051-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "group_text",
+  "task": "Start a group text",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118236",
+  "existing": false
+ },
+ "tr052-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "browser_zoom",
+  "task": "Make every web page bigger by default",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr052-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "browser_zoom",
+  "task": "Make every web page bigger by default",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr054-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "share_location",
+  "task": "Share location with family",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/105104",
+  "existing": false
+ },
+ "tr054-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "share_location",
+  "task": "Share location with family",
+  "task_platform": "iPhone (Find My)",
+  "source_url": "https://support.apple.com/en-us/105104",
+  "existing": false
+ },
+ "tr055-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "share_location",
+  "task": "Share location with family",
+  "task_platform": "Android (Google Maps)",
+  "source_url": "https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr055-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "share_location",
+  "task": "Share location with family",
+  "task_platform": "Android (Google Maps)",
+  "source_url": "https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr056-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "install_app",
+  "task": "Install an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102590",
+  "existing": false
+ },
+ "tr056-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "install_app",
+  "task": "Install an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102590",
+  "existing": false
+ },
+ "tr057-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "install_app",
+  "task": "Install an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9457058?hl=en",
+  "existing": false
+ },
+ "tr057-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "install_app",
+  "task": "Install an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/9457058?hl=en",
+  "existing": false
+ },
+ "tr058-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "delete_app",
+  "task": "Delete an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101550",
+  "existing": false
+ },
+ "tr058-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "delete_app",
+  "task": "Delete an app",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/101550",
+  "existing": false
+ },
+ "tr059-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "delete_app",
+  "task": "Delete an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/googleplay/answer/13627402?hl=en",
+  "existing": false
+ },
+ "tr059-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "delete_app",
+  "task": "Delete an app",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/googleplay/answer/13627402?hl=en",
+  "existing": false
+ },
+ "tr060-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "delete_app",
+  "task": "Uninstall a program",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+  "existing": false
+ },
+ "tr060-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "delete_app",
+  "task": "Uninstall a program",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+  "existing": false
+ },
+ "tr061-e": {
+  "batch": "fx4",
+  "scenario": "constraint",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108429",
+  "existing": false
+ },
+ "tr061-r": {
+  "batch": "fx4",
+  "scenario": "failure_recovery",
+  "task_type": "free_storage",
+  "task": "Free up storage space",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108429",
+  "existing": false
+ }
+}

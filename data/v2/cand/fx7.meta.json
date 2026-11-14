@@ -1,0 +1,236 @@
+{
+ "tr089-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": false
+ },
+ "tr089-r": {
+  "batch": "fx7",
+  "scenario": "already_acted",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": false
+ },
+ "tr090-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": false
+ },
+ "tr090-r": {
+  "batch": "fx7",
+  "scenario": "already_acted",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": false
+ },
+ "tr091-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr091-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr093-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": false
+ },
+ "tr093-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": false
+ },
+ "tr094-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr094-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr095-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": false
+ },
+ "tr095-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": false
+ },
+ "tr096-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": false
+ },
+ "tr096-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": false
+ },
+ "tr097-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": false
+ },
+ "tr097-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": false
+ },
+ "tr098-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr098-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr099-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": false
+ },
+ "tr099-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": false
+ },
+ "tr101-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": false
+ },
+ "tr101-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": false
+ },
+ "tr102-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": false
+ },
+ "tr102-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": false
+ },
+ "tr103-e": {
+  "batch": "fx7",
+  "scenario": "constraint",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": false
+ },
+ "tr103-r": {
+  "batch": "fx7",
+  "scenario": "failure_recovery",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": false
+ }
+}

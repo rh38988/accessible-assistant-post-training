@@ -1,0 +1,308 @@
+{
+ "tr007-a": {
+  "batch": "fx1b",
+  "scenario": "direct",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": false
+ },
+ "tr007-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": false
+ },
+ "tr007-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": false
+ },
+ "tr007-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": false
+ },
+ "tr008-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr008-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr008-c": {
+  "batch": "fx1b",
+  "scenario": "direct_messy",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr008-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr008-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": false
+ },
+ "tr009-a": {
+  "batch": "fx1b",
+  "scenario": "direct",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": false
+ },
+ "tr009-c": {
+  "batch": "fx1b",
+  "scenario": "direct_messy",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": false
+ },
+ "tr009-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": false
+ },
+ "tr009-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": false
+ },
+ "tr009-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": false
+ },
+ "tr010-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": false
+ },
+ "tr010-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": false
+ },
+ "tr010-c": {
+  "batch": "fx1b",
+  "scenario": "direct_messy",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": false
+ },
+ "tr010-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": false
+ },
+ "tr010-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": false
+ },
+ "tr011-a": {
+  "batch": "fx1b",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": false
+ },
+ "tr011-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": false
+ },
+ "tr011-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": false
+ },
+ "tr011-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": false
+ },
+ "tr011-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": false
+ },
+ "tr012-a": {
+  "batch": "fx1b",
+  "scenario": "direct",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": false
+ },
+ "tr012-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": false
+ },
+ "tr012-d": {
+  "batch": "fx1b",
+  "scenario": "followup",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": false
+ },
+ "tr012-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": false
+ },
+ "tr012-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": false
+ },
+ "tr013-a": {
+  "batch": "fx1b",
+  "scenario": "direct",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": false
+ },
+ "tr013-b": {
+  "batch": "fx1b",
+  "scenario": "missing_info",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": false
+ },
+ "tr013-c": {
+  "batch": "fx1b",
+  "scenario": "direct_messy",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": false
+ },
+ "tr013-e": {
+  "batch": "fx1b",
+  "scenario": "constraint",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": false
+ },
+ "tr013-r": {
+  "batch": "fx1b",
+  "scenario": "failure_recovery",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": false
+ }
+}

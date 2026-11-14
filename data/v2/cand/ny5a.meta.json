@@ -1,0 +1,380 @@
+{
+ "tr173-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr173-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr173-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr173-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr173-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr173-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "free_storage",
+  "task": "Free up drive space",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/free-up-drive-space-in-windows-85529ccb-c365-490d-b548-831022bc9b32",
+  "existing": false
+ },
+ "tr174-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr174-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr174-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr174-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr174-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr174-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "battery_saver",
+  "task": "Turn on battery saver (energy saver)",
+  "task_platform": "Windows 11 laptop",
+  "source_url": "https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99",
+  "existing": false
+ },
+ "tr175-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr175-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr175-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr175-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr175-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr175-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "bluetooth_pair",
+  "task": "Pair a Bluetooth device",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242",
+  "existing": false
+ },
+ "tr176-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr176-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr176-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr176-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr176-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr176-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "app_notifications_off",
+  "task": "Turn off notifications from an app",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/notifications-and-do-not-disturb-in-windows-feeca47f-0baf-5680-16f0-8801db1a8466",
+  "existing": false
+ },
+ "tr177-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr177-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr177-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr177-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr177-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr177-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "magnifier",
+  "task": "Use Magnifier to make things on screen bigger (keyboard shortcuts)",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
+  "existing": false
+ },
+ "tr178-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr178-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr178-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr178-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr178-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr178-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df",
+  "existing": false
+ },
+ "tr179-a": {
+  "batch": "ny5a",
+  "scenario": "direct",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ },
+ "tr179-c": {
+  "batch": "ny5a",
+  "scenario": "direct_messy",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ },
+ "tr179-b": {
+  "batch": "ny5a",
+  "scenario": "missing_info",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ },
+ "tr179-d": {
+  "batch": "ny5a",
+  "scenario": "followup",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ },
+ "tr179-e": {
+  "batch": "ny5a",
+  "scenario": "constraint",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ },
+ "tr179-r": {
+  "batch": "ny5a",
+  "scenario": "failure_recovery",
+  "task_type": "brightness",
+  "task": "Make the screen brighter or dimmer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4026946",
+  "existing": false
+ }
+}

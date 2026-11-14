@@ -1,0 +1,380 @@
+{
+ "tr160-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr160-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr160-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr160-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr160-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr160-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002500/",
+  "existing": false
+ },
+ "tr161-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr161-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr161-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr161-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr161-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr161-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Update the phone's software",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002027/",
+  "existing": false
+ },
+ "tr162-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr162-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr162-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr162-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr162-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr162-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ca/support/mobile-devices/connect-your-samsung-galaxy-to-the-internet/",
+  "existing": false
+ },
+ "tr163-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr163-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr163-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr163-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr163-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr163-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10002869/",
+  "existing": false
+ },
+ "tr164-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr164-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr164-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr164-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr164-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr164-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "flashlight",
+  "task": "Turn the flashlight on and off",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS10003351/",
+  "existing": false
+ },
+ "tr165-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr165-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr165-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr165-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr165-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr165-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "easy_mode",
+  "task": "Turn on Easy mode for bigger icons and a simpler screen",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone",
+  "existing": false
+ },
+ "tr166-a": {
+  "batch": "ny4a",
+  "scenario": "direct",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ },
+ "tr166-c": {
+  "batch": "ny4a",
+  "scenario": "direct_messy",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ },
+ "tr166-b": {
+  "batch": "ny4a",
+  "scenario": "missing_info",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ },
+ "tr166-d": {
+  "batch": "ny4a",
+  "scenario": "followup",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ },
+ "tr166-e": {
+  "batch": "ny4a",
+  "scenario": "constraint",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ },
+ "tr166-r": {
+  "batch": "ny4a",
+  "scenario": "failure_recovery",
+  "task_type": "find_lost_phone",
+  "task": "Find a lost phone",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/us/support/answer/ANS00080182",
+  "existing": false
+ }
+}

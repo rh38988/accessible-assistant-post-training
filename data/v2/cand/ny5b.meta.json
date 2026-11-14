@@ -1,0 +1,326 @@
+{
+ "tr180-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr180-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr180-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr180-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr180-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr180-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "date_time",
+  "task": "Fix the wrong date or time",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/dfaa7122-479f-5b98-2a7b-fa0b6e01b261",
+  "existing": false
+ },
+ "tr181-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr181-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr181-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr181-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr181-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr181-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "organize_files",
+  "task": "Create a folder and move files into it",
+  "task_platform": "Windows 11 (File Explorer)",
+  "source_url": "https://www.microsoft.com/en-us/windows/learning-center/create-new-folders-to-organize-files",
+  "existing": false
+ },
+ "tr182-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr182-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr182-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr182-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr182-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr182-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "mouse_settings",
+  "task": "Change mouse settings such as speed",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+  "existing": false
+ },
+ "tr183-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr183-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr183-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr183-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr183-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr183-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "virus_scan",
+  "task": "Run a virus scan with Windows Security",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/virus-and-threat-protection-in-the-windows-security-app-1362f4cd-d71a-b52a-0b66-c2820032b65e",
+  "existing": false
+ },
+ "tr184-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr184-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr184-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr184-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr184-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr184-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "backup_photos",
+  "task": "Back up photos and folders with OneDrive",
+  "task_platform": "Windows 11 (OneDrive)",
+  "source_url": "https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057",
+  "existing": false
+ },
+ "tr185-a": {
+  "batch": "ny5b",
+  "scenario": "direct",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ },
+ "tr185-c": {
+  "batch": "ny5b",
+  "scenario": "direct_messy",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ },
+ "tr185-b": {
+  "batch": "ny5b",
+  "scenario": "missing_info",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ },
+ "tr185-d": {
+  "batch": "ny5b",
+  "scenario": "followup",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ },
+ "tr185-e": {
+  "batch": "ny5b",
+  "scenario": "constraint",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ },
+ "tr185-r": {
+  "batch": "ny5b",
+  "scenario": "failure_recovery",
+  "task_type": "account_password_reset",
+  "task": "Reset a forgotten Microsoft account password",
+  "task_platform": "Microsoft account",
+  "source_url": "https://support.microsoft.com/help/4026971",
+  "existing": false
+ }
+}

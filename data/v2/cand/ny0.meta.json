@@ -1,0 +1,191 @@
+{
+ "tr117-a": {
+  "batch": "ny0",
+  "scenario": "direct",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr117-c": {
+  "batch": "ny0",
+  "scenario": "direct_messy",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr117-b": {
+  "batch": "ny0",
+  "scenario": "missing_info",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr117-d": {
+  "batch": "ny0",
+  "scenario": "followup",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr117-e": {
+  "batch": "ny0",
+  "scenario": "constraint",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr117-r": {
+  "batch": "ny0",
+  "scenario": "failure_recovery",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "Mac",
+  "source_url": "https://support.apple.com/en-us/102646",
+  "existing": false
+ },
+ "tr118-a": {
+  "batch": "ny0",
+  "scenario": "direct",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr118-c": {
+  "batch": "ny0",
+  "scenario": "direct_messy",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr118-b": {
+  "batch": "ny0",
+  "scenario": "missing_info",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr118-d": {
+  "batch": "ny0",
+  "scenario": "followup",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr118-e": {
+  "batch": "ny0",
+  "scenario": "constraint",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr118-r": {
+  "batch": "ny0",
+  "scenario": "failure_recovery",
+  "task_type": "backup_phone",
+  "task": "Back up the phone",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2819582?hl=en",
+  "existing": false
+ },
+ "tr119-c": {
+  "batch": "ny0",
+  "scenario": "direct_messy",
+  "task_type": "install_app",
+  "task": "Install an app from the Microsoft Store",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4479732/get-apps-from-microsoft-store-on-windows-10-pc",
+  "existing": false
+ },
+ "tr119-b": {
+  "batch": "ny0",
+  "scenario": "missing_info",
+  "task_type": "install_app",
+  "task": "Install an app from the Microsoft Store",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4479732/get-apps-from-microsoft-store-on-windows-10-pc",
+  "existing": false
+ },
+ "tr119-e": {
+  "batch": "ny0",
+  "scenario": "constraint",
+  "task_type": "install_app",
+  "task": "Install an app from the Microsoft Store",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/help/4479732/get-apps-from-microsoft-store-on-windows-10-pc",
+  "existing": false
+ },
+ "tr120-a": {
+  "batch": "ny0",
+  "scenario": "direct",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ },
+ "tr120-c": {
+  "batch": "ny0",
+  "scenario": "direct_messy",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ },
+ "tr120-e": {
+  "batch": "ny0",
+  "scenario": "constraint",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ },
+ "tr120-r": {
+  "batch": "ny0",
+  "scenario": "already_acted",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ },
+ "tr120-f": {
+  "batch": "ny0",
+  "scenario": "helper",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ },
+ "tr120-g": {
+  "batch": "ny0",
+  "scenario": "prevention",
+  "task_type": "crypto_investment_scam",
+  "task": "Someone urges the user to invest or pay with cryptocurrency",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams",
+  "existing": false
+ }
+}

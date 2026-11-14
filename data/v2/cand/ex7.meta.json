@@ -1,0 +1,470 @@
+{
+ "tr089-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": true
+ },
+ "tr089-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": true
+ },
+ "tr089-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": true
+ },
+ "tr089-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "government_impersonation",
+  "task": "Caller claims to be from Social Security",
+  "task_platform": "phone",
+  "source_url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+  "existing": true
+ },
+ "tr090-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": true
+ },
+ "tr090-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": true
+ },
+ "tr090-c": {
+  "batch": "ex7",
+  "scenario": "direct_messy",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": true
+ },
+ "tr090-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "strong_passwords",
+  "task": "Make a strong password",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts",
+  "existing": true
+ },
+ "tr091-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr091-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr091-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr091-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "maps_directions",
+  "task": "Get directions",
+  "task_platform": "Google Maps (phone)",
+  "source_url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr093-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": true
+ },
+ "tr093-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": true
+ },
+ "tr093-c": {
+  "batch": "ex7",
+  "scenario": "direct_messy",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": true
+ },
+ "tr093-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "join_video_meeting",
+  "task": "Join a Zoom meeting from a link",
+  "task_platform": "Zoom",
+  "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180",
+  "existing": true
+ },
+ "tr094-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr094-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr094-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr094-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "video_captions",
+  "task": "Turn on captions",
+  "task_platform": "YouTube",
+  "source_url": "https://support.google.com/youtube/answer/100078?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr095-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": true
+ },
+ "tr095-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": true
+ },
+ "tr095-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": true
+ },
+ "tr095-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "backup_phone",
+  "task": "Back up the whole phone",
+  "task_platform": "iPhone (iCloud Backup)",
+  "source_url": "https://support.apple.com/en-us/108366",
+  "existing": true
+ },
+ "tr096-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": true
+ },
+ "tr096-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": true
+ },
+ "tr096-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": true
+ },
+ "tr096-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "stolen_device_protection",
+  "task": "Turn on Stolen Device Protection",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/120340",
+  "existing": true
+ },
+ "tr097-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": true
+ },
+ "tr097-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": true
+ },
+ "tr097-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": true
+ },
+ "tr097-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "live_captions",
+  "task": "Turn on live captions",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/9350862?hl=en",
+  "existing": true
+ },
+ "tr098-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": true
+ },
+ "tr098-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": true
+ },
+ "tr098-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": true
+ },
+ "tr098-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": true
+ },
+ "tr099-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": true
+ },
+ "tr099-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": true
+ },
+ "tr099-c": {
+  "batch": "ex7",
+  "scenario": "direct_messy",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": true
+ },
+ "tr099-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "phone_not_charging",
+  "task": "iPhone stops charging at 80%",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": true
+ },
+ "tr101-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": true
+ },
+ "tr101-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": true
+ },
+ "tr101-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": true
+ },
+ "tr101-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "ring_volume",
+  "task": "Phone only vibrates, does not ring",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/105103",
+  "existing": true
+ },
+ "tr102-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": true
+ },
+ "tr102-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": true
+ },
+ "tr102-c": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": true
+ },
+ "tr102-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "read_aloud",
+  "task": "Have the phone read the screen aloud",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/7349565?hl=en",
+  "existing": true
+ },
+ "tr103-a": {
+  "batch": "ex7",
+  "scenario": "direct",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": true
+ },
+ "tr103-b": {
+  "batch": "ex7",
+  "scenario": "missing_info",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": true
+ },
+ "tr103-c": {
+  "batch": "ex7",
+  "scenario": "direct_messy",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": true
+ },
+ "tr103-d": {
+  "batch": "ex7",
+  "scenario": "followup",
+  "task_type": "reminders",
+  "task": "Set a reminder",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/102484",
+  "existing": true
+ }
+}

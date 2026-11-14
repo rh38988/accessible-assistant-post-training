@@ -1,0 +1,128 @@
+{
+ "pilot-001": {
+  "batch": "ex1",
+  "scenario": "direct",
+  "task_type": "text_size",
+  "task": "Make text bigger",
+  "task_platform": "Samsung Galaxy",
+  "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/how-to-adjust-the-font-size-and-style-on-your-galaxy-phone/",
+  "existing": true
+ },
+ "pilot-002": {
+  "batch": "ex1",
+  "scenario": "missing_info",
+  "task_type": "ring_volume",
+  "task": "Turn up ring volume (device unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/android/answer/9082609?hl=en",
+  "existing": true
+ },
+ "pilot-003": {
+  "batch": "ex1",
+  "scenario": "direct",
+  "task_type": "send_photo_text",
+  "task": "Send a photo by text message",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/6159880?hl=en",
+  "existing": true
+ },
+ "pilot-004": {
+  "batch": "ex1",
+  "scenario": "missing_info",
+  "task_type": "screenshot",
+  "task": "Take a screenshot",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/102616",
+  "existing": true
+ },
+ "pilot-005": {
+  "batch": "ex1",
+  "scenario": "missing_info",
+  "task_type": "email_not_working",
+  "task": "Email stopped working (details unknown)",
+  "task_platform": "unknown",
+  "source_url": "https://support.google.com/mail/answer/7074871?hl=en",
+  "existing": true
+ },
+ "pilot-006": {
+  "batch": "ex1",
+  "scenario": "missing_info",
+  "task_type": "printer_not_printing",
+  "task": "Printer will not print",
+  "task_platform": "unknown",
+  "source_url": "https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73",
+  "existing": true
+ },
+ "pilot-007": {
+  "batch": "ex1",
+  "scenario": "direct_messy",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": true
+ },
+ "tr007-r": {
+  "batch": "ex1",
+  "scenario": "failure_recovery",
+  "task_type": "wifi_connect",
+  "task": "Connect to a Wi-Fi network",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-au/111107",
+  "existing": true
+ },
+ "pilot-008": {
+  "batch": "ex1",
+  "scenario": "direct",
+  "task_type": "display_scale",
+  "task": "Make everything on screen bigger",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+  "existing": true
+ },
+ "pilot-009": {
+  "batch": "ex1",
+  "scenario": "missing_info",
+  "task_type": "internet_not_working",
+  "task": "Internet not working (message cut off)",
+  "task_platform": "unknown",
+  "source_url": "https://support.apple.com/en-euro/111786",
+  "existing": true
+ },
+ "pilot-010": {
+  "batch": "ex1",
+  "scenario": "direct",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Apple Account password",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-mz/101567",
+  "existing": true
+ },
+ "pilot-011": {
+  "batch": "ex1",
+  "scenario": "direct_messy",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ie/118575",
+  "existing": true
+ },
+ "pilot-012": {
+  "batch": "ex1",
+  "scenario": "direct_messy",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/6584",
+  "existing": true
+ },
+ "pilot-013": {
+  "batch": "ex1",
+  "scenario": "followup",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "iPhone (iCloud Photos)",
+  "source_url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+  "existing": true
+ }
+}

@@ -1,0 +1,380 @@
+{
+ "tr212-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr212-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr212-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr212-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr212-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr212-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "fake_check_scam",
+  "task": "Someone sends a check and asks the user to send part of the money back",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/fakechecks",
+  "existing": false
+ },
+ "tr213-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr213-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr213-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr213-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr213-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr213-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "home_improvement_scam",
+  "task": "A contractor at the door pushes for a quick repair deal and upfront payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/how-avoid-home-improvement-scam",
+  "existing": false
+ },
+ "tr214-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr214-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr214-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr214-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr214-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr214-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "fake_debt_collector",
+  "task": "A caller demands payment for a debt the user does not recognize",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/articles/debt-collection-faqs",
+  "existing": false
+ },
+ "tr215-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr215-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr215-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr215-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr215-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr215-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "toll_text_scam",
+  "task": "A text says the user owes an unpaid road toll",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+  "existing": false
+ },
+ "tr216-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr216-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr216-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr216-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr216-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr216-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "government_impersonation",
+  "task": "A call or message claims to be the IRS and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298362",
+  "existing": false
+ },
+ "tr217-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr217-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr217-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr217-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr217-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr217-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "government_impersonation",
+  "task": "A caller says the user missed jury duty and must pay a fine",
+  "task_platform": "any",
+  "source_url": "https://www.uscourts.gov/node/14024",
+  "existing": false
+ },
+ "tr218-a": {
+  "batch": "ny8a",
+  "scenario": "direct",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ },
+ "tr218-c": {
+  "batch": "ny8a",
+  "scenario": "direct_messy",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ },
+ "tr218-e": {
+  "batch": "ny8a",
+  "scenario": "constraint",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ },
+ "tr218-r": {
+  "batch": "ny8a",
+  "scenario": "already_acted",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ },
+ "tr218-f": {
+  "batch": "ny8a",
+  "scenario": "helper",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ },
+ "tr218-g": {
+  "batch": "ny8a",
+  "scenario": "prevention",
+  "task_type": "extortion_email_scam",
+  "task": "An email claims to have embarrassing video or a password and demands payment",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail",
+  "existing": false
+ }
+}

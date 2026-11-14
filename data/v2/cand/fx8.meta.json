@@ -1,0 +1,146 @@
+{
+ "tr104-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "bookmark_site",
+  "task": "Bookmark a website",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr104-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "bookmark_site",
+  "task": "Bookmark a website",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr105-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "unsubscribe_email",
+  "task": "Unsubscribe from emails",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/15433283?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr105-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "unsubscribe_email",
+  "task": "Unsubscribe from emails",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/15433283?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr106-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "recover_deleted_email",
+  "task": "Get back a deleted email",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/7401?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr106-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "recover_deleted_email",
+  "task": "Get back a deleted email",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/7401?hl=en&co=GENIE.Platform%3DDesktop",
+  "existing": false
+ },
+ "tr107-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "mark_spam_email",
+  "task": "Mark an email as spam",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/1366858/mark-or-unmark-spam-in-gmail-computer",
+  "existing": false
+ },
+ "tr107-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "mark_spam_email",
+  "task": "Mark an email as spam",
+  "task_platform": "Gmail",
+  "source_url": "https://support.google.com/mail/answer/1366858/mark-or-unmark-spam-in-gmail-computer",
+  "existing": false
+ },
+ "tr108-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "rotation_lock",
+  "task": "Stop the screen from turning sideways",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118226",
+  "existing": false
+ },
+ "tr108-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "rotation_lock",
+  "task": "Stop the screen from turning sideways",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/118226",
+  "existing": false
+ },
+ "tr109-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "rotation_lock",
+  "task": "Stop the screen from turning sideways",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006961?hl=en",
+  "existing": false
+ },
+ "tr109-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "rotation_lock",
+  "task": "Stop the screen from turning sideways",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/accessibility/android/answer/6006961?hl=en",
+  "existing": false
+ },
+ "tr110-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "force_restart",
+  "task": "Restart a frozen iPhone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/116940",
+  "existing": false
+ },
+ "tr110-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "force_restart",
+  "task": "Restart a frozen iPhone",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/116940",
+  "existing": false
+ },
+ "tr111-e": {
+  "batch": "fx8",
+  "scenario": "constraint",
+  "task_type": "phone_not_charging",
+  "task": "Phone is not charging",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": false
+ },
+ "tr111-r": {
+  "batch": "fx8",
+  "scenario": "failure_recovery",
+  "task_type": "phone_not_charging",
+  "task": "Phone is not charging",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-ca/108805",
+  "existing": false
+ }
+}

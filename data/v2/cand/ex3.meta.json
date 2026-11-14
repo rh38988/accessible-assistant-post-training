@@ -1,0 +1,479 @@
+{
+ "tr033-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": true
+ },
+ "tr033-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": true
+ },
+ "tr033-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": true
+ },
+ "tr033-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": true
+ },
+ "tr034-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": true
+ },
+ "tr034-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": true
+ },
+ "tr034-c": {
+  "batch": "ex3",
+  "scenario": "direct_messy",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": true
+ },
+ "tr034-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": true
+ },
+ "tr035-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr035-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr035-c": {
+  "batch": "ex3",
+  "scenario": "direct_messy",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr035-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr036-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": true
+ },
+ "tr036-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": true
+ },
+ "tr036-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": true
+ },
+ "tr036-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": true
+ },
+ "tr037-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr037-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr037-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr037-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr038-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": true
+ },
+ "tr038-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": true
+ },
+ "tr038-c": {
+  "batch": "ex3",
+  "scenario": "direct_messy",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": true
+ },
+ "tr038-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": true
+ },
+ "tr039-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": true
+ },
+ "tr039-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": true
+ },
+ "tr039-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": true
+ },
+ "tr039-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": true
+ },
+ "tr040-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": true
+ },
+ "tr040-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": true
+ },
+ "tr040-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": true
+ },
+ "tr040-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": true
+ },
+ "tr041-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": true
+ },
+ "tr041-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": true
+ },
+ "tr041-c": {
+  "batch": "ex3",
+  "scenario": "direct_messy",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": true
+ },
+ "tr041-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": true
+ },
+ "tr041-r": {
+  "batch": "ex3",
+  "scenario": "failure_recovery",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": true
+ },
+ "tr042-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": true
+ },
+ "tr042-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": true
+ },
+ "tr042-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": true
+ },
+ "tr042-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": true
+ },
+ "tr043-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr043-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr043-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr043-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": true
+ },
+ "tr045-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": true
+ },
+ "tr045-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": true
+ },
+ "tr045-c": {
+  "batch": "ex3",
+  "scenario": "direct_messy",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": true
+ },
+ "tr045-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": true
+ },
+ "tr046-a": {
+  "batch": "ex3",
+  "scenario": "direct",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": true
+ },
+ "tr046-b": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": true
+ },
+ "tr046-c": {
+  "batch": "ex3",
+  "scenario": "missing_info",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": true
+ },
+ "tr046-d": {
+  "batch": "ex3",
+  "scenario": "followup",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": true
+ }
+}

@@ -1,0 +1,380 @@
+{
+ "tr147-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr147-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr147-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr147-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr147-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr147-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "force_restart",
+  "task": "The phone is frozen or will not respond",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7664998",
+  "existing": false
+ },
+ "tr148-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr148-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr148-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr148-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr148-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr148-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "phone_not_charging",
+  "task": "The phone will not charge",
+  "task_platform": "Android (Pixel)",
+  "source_url": "https://support.google.com/pixelphone/answer/7167687",
+  "existing": false
+ },
+ "tr149-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr149-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr149-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr149-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr149-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr149-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "internet_not_working",
+  "task": "The phone cannot connect to the internet",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/2651367",
+  "existing": false
+ },
+ "tr150-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr150-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr150-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr150-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr150-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr150-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "messages_not_sending",
+  "task": "Text messages will not send or arrive",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9077245",
+  "existing": false
+ },
+ "tr151-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr151-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr151-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr151-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr151-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr151-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "group_text",
+  "task": "Send a group text",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9367099",
+  "existing": false
+ },
+ "tr152-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr152-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr152-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr152-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr152-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr152-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "report_spam_text",
+  "task": "Report and block spam texts",
+  "task_platform": "Android (Google Messages)",
+  "source_url": "https://support.google.com/messages/answer/9061432",
+  "existing": false
+ },
+ "tr153-a": {
+  "batch": "ny3a",
+  "scenario": "direct",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ },
+ "tr153-c": {
+  "batch": "ny3a",
+  "scenario": "direct_messy",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ },
+ "tr153-b": {
+  "batch": "ny3a",
+  "scenario": "missing_info",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ },
+ "tr153-d": {
+  "batch": "ny3a",
+  "scenario": "followup",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ },
+ "tr153-e": {
+  "batch": "ny3a",
+  "scenario": "constraint",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ },
+ "tr153-r": {
+  "batch": "ny3a",
+  "scenario": "failure_recovery",
+  "task_type": "voicemail",
+  "task": "Check voicemail and turn on visual voicemail",
+  "task_platform": "Android (Phone app)",
+  "source_url": "https://support.google.com/phoneapp/answer/2811844",
+  "existing": false
+ }
+}

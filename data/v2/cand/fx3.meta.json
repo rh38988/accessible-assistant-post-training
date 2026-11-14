@@ -1,0 +1,227 @@
+{
+ "tr033-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": false
+ },
+ "tr033-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Install a software update",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/android/answer/7680439?hl=en",
+  "existing": false
+ },
+ "tr034-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": false
+ },
+ "tr034-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "software_update",
+  "task": "Install Windows updates",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+  "existing": false
+ },
+ "tr035-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr035-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "backup_photos",
+  "task": "Back up photos",
+  "task_platform": "Android (Google Photos)",
+  "source_url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr036-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": false
+ },
+ "tr036-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "add_printer",
+  "task": "Add a printer",
+  "task_platform": "Windows 11",
+  "source_url": "https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows",
+  "existing": false
+ },
+ "tr037-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr037-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "email_attach",
+  "task": "Attach a photo to an email",
+  "task_platform": "Gmail app (phone)",
+  "source_url": "https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr038-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": false
+ },
+ "tr038-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "account_password_reset",
+  "task": "Reset forgotten Google Account password",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/7682439?hl=en",
+  "existing": false
+ },
+ "tr039-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": false
+ },
+ "tr039-r": {
+  "batch": "fx3",
+  "scenario": "already_acted",
+  "task_type": "family_emergency_scam",
+  "task": "Call that sounds like a family member's voice asking for money",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+  "existing": false
+ },
+ "tr040-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": false
+ },
+ "tr040-r": {
+  "batch": "fx3",
+  "scenario": "already_acted",
+  "task_type": "package_text_scam",
+  "task": "Text says package could not be delivered",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+  "existing": false
+ },
+ "tr041-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "gift_card_scam",
+  "task": "Someone asks to be paid with gift cards",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+  "existing": false
+ },
+ "tr042-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": false
+ },
+ "tr042-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "family_sharing",
+  "task": "Set up Family Sharing",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/108380",
+  "existing": false
+ },
+ "tr043-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr043-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+  "existing": false
+ },
+ "tr045-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": false
+ },
+ "tr045-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "iPhone",
+  "source_url": "https://support.apple.com/en-us/111104",
+  "existing": false
+ },
+ "tr046-e": {
+  "batch": "fx3",
+  "scenario": "constraint",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": false
+ },
+ "tr046-r": {
+  "batch": "fx3",
+  "scenario": "failure_recovery",
+  "task_type": "block_number",
+  "task": "Block a phone number",
+  "task_platform": "Android",
+  "source_url": "https://support.google.com/phoneapp/answer/6325463?hl=en",
+  "existing": false
+ }
+}
