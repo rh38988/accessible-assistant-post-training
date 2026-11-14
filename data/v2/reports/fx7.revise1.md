@@ -1,0 +1,4 @@
+# fx7 revise1
+Fixed: tr091-e, tr093-r (see below), tr099-e (second source 108055, removed unsupported sentence), tr099-r (second source 108055; slider to 100%, wear warning, Charge Now kept), tr103-e (requirements first, Alarms permission, Find My device note, tap reminder then Info), tr103-r (My Card tied to Siri).
+Cannot fix: none fully. Follow-ups touched: none.
+Page contradicted reviewer: tr093-r. Zoom KB0070429 does NOT give steps to enable the launcher plug-in (it only covers a Chrome "zoommtg" preferences fix). Instead I removed the vague plug-in step and used KB0060732 (added as second source): Cancel the pop-up, click "join from your browser", Allow, enter name, Join, with the note that the host may need to enable that link. The plug-in cause sentence and the Safari note are kept.

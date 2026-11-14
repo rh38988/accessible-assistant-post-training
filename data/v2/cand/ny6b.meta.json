@@ -1,0 +1,326 @@
+{
+ "tr193-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr193-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr193-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr193-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr193-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr193-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "app_notifications_off",
+  "task": "Stop a website from sending notifications",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/3220216",
+  "existing": false
+ },
+ "tr194-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr194-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr194-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr194-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr194-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr194-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "live_captions",
+  "task": "Turn on Live Caption",
+  "task_platform": "Chrome (computer)",
+  "source_url": "https://support.google.com/chrome/answer/10538231",
+  "existing": false
+ },
+ "tr195-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr195-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr195-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr195-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr195-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr195-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "sign_out",
+  "task": "Sign out of a Google Account on a shared computer or another device (from the account's devices page)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/3067630",
+  "existing": false
+ },
+ "tr196-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr196-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr196-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr196-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr196-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr196-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "recovery_info",
+  "task": "Add a recovery phone number or email to a Google Account (computer)",
+  "task_platform": "Google Account",
+  "source_url": "https://support.google.com/accounts/answer/183723",
+  "existing": false
+ },
+ "tr197-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr197-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr197-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr197-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr197-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr197-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "free_storage",
+  "task": "Free up Google account storage (Storage Manager on a computer; Android Google One WhatsApp backup)",
+  "task_platform": "Google Account (Drive, Gmail, Photos)",
+  "source_url": "https://support.google.com/googleone/answer/9776477",
+  "existing": false
+ },
+ "tr198-a": {
+  "batch": "ny6b",
+  "scenario": "direct",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ },
+ "tr198-c": {
+  "batch": "ny6b",
+  "scenario": "direct_messy",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ },
+ "tr198-b": {
+  "batch": "ny6b",
+  "scenario": "missing_info",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ },
+ "tr198-d": {
+  "batch": "ny6b",
+  "scenario": "followup",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ },
+ "tr198-e": {
+  "batch": "ny6b",
+  "scenario": "constraint",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ },
+ "tr198-r": {
+  "batch": "ny6b",
+  "scenario": "failure_recovery",
+  "task_type": "maps_directions",
+  "task": "Get directions on a computer",
+  "task_platform": "Google Maps (computer)",
+  "source_url": "https://support.google.com/maps/answer/144339",
+  "existing": false
+ }
+}

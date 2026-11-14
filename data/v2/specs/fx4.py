@@ -129,9 +129,7 @@ Ways to take care of the battery:
                  """That message means the iPhone could not confirm that it has a genuine Apple battery. The battery health information on that screen may not be accurate.
 
 1. Don't rely on the numbers shown there.
-2. Get the battery checked.
-
-Your phone is not broken just because of this message.""",
+2. Get service for the battery through Apple Support, Apple's support website, to have it checked.""",
              ]},
         ],
     },
@@ -177,9 +175,7 @@ Because one person uses Android, go to **Settings**, then **Messages**, and turn
                  """When that option is missing, the next step is to check with your carrier.
 
 1. Contact your phone carrier.
-2. Ask whether your plan supports Group MMS Messaging.
-
-Once your plan supports it, **MMS Messaging** can be turned on in **Settings**, then **Messages**.""",
+2. Ask whether group MMS is included in your plan.""",
              ]},
         ],
     },
@@ -355,9 +351,11 @@ Some free apps offer in-app purchases and subscriptions, but those are optional.
                  """Let's look for it.
 
 1. Swipe down from the middle of your Home Screen and search for **App Store**.
-2. If it still doesn't appear, **Content & Privacy Restrictions** may be turned on. Adjust the **iTunes & App Store Purchases** settings and set **Installing Apps** to **Allow**.
+2. If it still doesn't appear, **Content & Privacy Restrictions** may be turned on.
+3. Adjust your **iTunes & App Store Purchases** settings so **Installing Apps** is set to **Allow**.
+4. If you did not set this up, ask the person who manages your phone.
 
-The App Store should then reappear.""",
+The App Store should reappear on your device.""",
              ]},
         ],
     },
@@ -395,7 +393,7 @@ When the install is done, the app is on your phone.""",
                  """A price means it is a paid app. Free apps show **Install**.
 
 1. If you only want a free app, don't tap the price. Go back and look for a different weather app that shows **Install**.
-2. If you do want this paid app, tap the price.""",
+2. Tapping the price is how you buy the app, so only tap it if you mean to pay for it.""",
              ]},
         ],
     },

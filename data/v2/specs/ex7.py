@@ -12,7 +12,7 @@ TASKS = [
                 "sources": [{'title': 'FTC Consumer Advice: How To Avoid a Government Impersonation Scam', 'url': 'https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     "A caller said he's from Social Security and my number has been suspended because of a crime. He wants me to buy gift cards to fix it. What should I do?",
-                    """Please **hang up and don't pay anything**. This is a scam. The real Social Security Administration **won't threaten you, won't suspend your Social Security number, and won't ask you to pay with gift cards**. Your benefits are not being cut off.
+                    """Please **hang up and don't pay anything**. This is a scam. The real Social Security Administration **won't threaten you, won't suspend your Social Security number, and won't ask you to pay with gift cards**.
 
 **What to do:**
 1. **Hang up.** Don't share any personal or bank information.
@@ -30,7 +30,7 @@ If you already shared your Social Security number or bank details, go to **Ident
                 "sources": [{'title': 'FTC Consumer Advice: How To Avoid a Government Impersonation Scam', 'url': 'https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Got a call from the government saying I owe money. Is that real?',
-                    "Let's check before you do anything. **Which agency did they say they were from, and how did they want you to pay?**",
+                    "Please don't pay or share any personal information yet, and don't call back any number they gave you. **Which agency did the caller say they were from?**",
                 ],
             },
             {
@@ -52,11 +52,11 @@ If you already shared your Social Security number or bank details, go to **Ident
                 "sources": [{'title': 'FTC Consumer Advice: How To Avoid a Government Impersonation Scam', 'url': 'https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Got a call from the government saying I owe money. Is that real?',
-                    "Let's check before you do anything. **Which agency did they say they were from, and how did they want you to pay?**",
+                    "Please don't pay or share any personal information yet, and don't call back any number they gave you. **Which agency did the caller say they were from?**",
                     'Social Security. They said I need to buy gift cards or my number will be suspended.',
-                    """Thank you. That's a scam.
+                    """Thank you.
 
-Please **hang up and don't pay anything**. This is a scam. The real Social Security Administration **won't threaten you, won't suspend your Social Security number, and won't ask you to pay with gift cards**. Your benefits are not being cut off.
+Please **hang up and don't pay anything**. This is a scam. The real Social Security Administration **won't threaten you, won't suspend your Social Security number, and won't ask you to pay with gift cards**.
 
 **What to do:**
 1. **Hang up.** Don't share any personal or bank information.
@@ -81,16 +81,16 @@ If you already shared your Social Security number or bank details, go to **Ident
                 "sources": [{'title': 'FTC Consumer Advice: Creating Strong Passwords and Other Ways To Protect Your Accounts', 'url': 'https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I make a strong password that I can actually remember?',
-                    """A good trick is to use a **passphrase**: several random words strung together. It's long, which makes it strong, but it's easier to remember than a jumble of symbols.
+                    """You may find it easier to use a **passphrase**: a series of random words separated by spaces. It may be easier to remember.
 
 **Tips for a strong password:**
-1. **Make it long**, at least 12 characters. Several random words work well.
-2. **Use a different password for each account**, so if one is stolen, the others stay safe.
-3. **Avoid famous quotes or song lyrics**, because hacking programs can guess them.
-4. **Consider a password manager.** It can create and remember strong passwords for you, and many web browsers have one built in.
-5. **Turn on two-step verification** where you can, so a stolen password alone isn't enough to get in.
+1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
+2. **If you used the same or a similar password on other sites, change it there too.**
+3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
+4. **A password manager, or your web browser,** can create strong passwords and save them for you.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
 
-Your **email** password is the most important one to protect, since password reset links usually go there.""",
+Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
             },
             {
@@ -110,18 +110,18 @@ Your **email** password is the most important one to protect, since password res
                 "sources": [{'title': 'FTC Consumer Advice: Creating Strong Passwords and Other Ways To Protect Your Accounts', 'url': 'https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I use my dog's name and my birthday for everything because that's the only way I remember. My grandson says that's not safe. What should I do instead?",
-                    """Your grandson is right that one easy-to-guess password everywhere is risky. The good news is there are safer options that are still easy to remember.
+                    """Your grandson has a good point. Since you use the same password everywhere, you should change it on every site. Here are some tips for new ones.
 
-A good trick is to use a **passphrase**: several random words strung together. It's long, which makes it strong, but it's easier to remember than a jumble of symbols.
+You may find it easier to use a **passphrase**: a series of random words separated by spaces. It may be easier to remember.
 
 **Tips for a strong password:**
-1. **Make it long**, at least 12 characters. Several random words work well.
-2. **Use a different password for each account**, so if one is stolen, the others stay safe.
-3. **Avoid famous quotes or song lyrics**, because hacking programs can guess them.
-4. **Consider a password manager.** It can create and remember strong passwords for you, and many web browsers have one built in.
-5. **Turn on two-step verification** where you can, so a stolen password alone isn't enough to get in.
+1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
+2. **If you used the same or a similar password on other sites, change it there too.**
+3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
+4. **A password manager, or your web browser,** can create strong passwords and save them for you.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
 
-Your **email** password is the most important one to protect, since password reset links usually go there.""",
+Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
             },
             {
@@ -135,16 +135,16 @@ Your **email** password is the most important one to protect, since password res
                     'Making a strong new one that I can remember.',
                     """Sure.
 
-A good trick is to use a **passphrase**: several random words strung together. It's long, which makes it strong, but it's easier to remember than a jumble of symbols.
+You may find it easier to use a **passphrase**: a series of random words separated by spaces. It may be easier to remember.
 
 **Tips for a strong password:**
-1. **Make it long**, at least 12 characters. Several random words work well.
-2. **Use a different password for each account**, so if one is stolen, the others stay safe.
-3. **Avoid famous quotes or song lyrics**, because hacking programs can guess them.
-4. **Consider a password manager.** It can create and remember strong passwords for you, and many web browsers have one built in.
-5. **Turn on two-step verification** where you can, so a stolen password alone isn't enough to get in.
+1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
+2. **If you used the same or a similar password on other sites, change it there too.**
+3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
+4. **A password manager, or your web browser,** can create strong passwords and save them for you.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
 
-Your **email** password is the most important one to protect, since password reset links usually go there.""",
+Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
             },
         ],
@@ -170,7 +170,7 @@ Your **email** password is the most important one to protect, since password res
 5. Choose how you're traveling: **driving**, **transit**, or **walking**.
 6. Pick a route. The best route is shown in **blue**, and other options are gray.
 
-If you're starting from where you are now, Maps can give turn-by-turn directions as you go. To see the list of turns before you leave, tap **Preview**.""",
+To see the list of steps, swipe up on the route panel. To see a turn-by-turn preview, tap **Preview**.""",
                 ],
             },
             {
@@ -180,7 +180,7 @@ If you're starting from where you are now, Maps can give turn-by-turn directions
                 "sources": [{'title': 'Google Maps Help: Get directions & show routes (Android)', 'url': 'https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I find my way to a new place',
-                    'I can help. Do you have **Google Maps** or another maps app on your phone? And is your phone an **iPhone** or an **Android** phone?',
+                    'I can help. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -190,7 +190,7 @@ If you're starting from where you are now, Maps can give turn-by-turn directions
                 "sources": [{'title': 'Google Maps Help: Get directions & show routes (Android)', 'url': 'https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'directions to',
-                    'It looks like your message got cut off. **Where would you like to go?** And will you be driving, taking transit, or walking?',
+                    'It looks like your message got cut off. Are you using an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -200,8 +200,8 @@ If you're starting from where you are now, Maps can give turn-by-turn directions
                 "sources": [{'title': 'Google Maps Help: Get directions & show routes (Android)', 'url': 'https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I find my way to a new place',
-                    'I can help. Do you have **Google Maps** or another maps app on your phone? And is your phone an **iPhone** or an **Android** phone?',
-                    'Android, Google Maps',
+                    'I can help. Is your phone an **iPhone** or an **Android** phone?',
+                    'Android, and I use Google Maps',
                     """Great.
 
 Here's how. It takes about a minute.
@@ -213,7 +213,7 @@ Here's how. It takes about a minute.
 5. Choose how you're traveling: **driving**, **transit**, or **walking**.
 6. Pick a route. The best route is shown in **blue**, and other options are gray.
 
-If you're starting from where you are now, Maps can give turn-by-turn directions as you go. To see the list of turns before you leave, tap **Preview**.""",
+To see the list of steps, swipe up on the route panel. To see a turn-by-turn preview, tap **Preview**.""",
                 ],
             },
         ],
@@ -230,11 +230,11 @@ If you're starting from where you are now, Maps can give turn-by-turn directions
                 "sources": [{'title': 'Zoom Support: Joining a meeting with the invite link', 'url': 'https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180', 'accessed': '2026-10-24'}],
                 "messages": [
                     'My book club meets on Zoom now and they emailed me a link. How do I join from my computer?',
-                    """Joining with a link is pretty simple. The first time, give yourself 5 to 10 minutes before the meeting starts.
+                    """Joining with a link is pretty simple.
 
 1. Open the email and **click the Zoom link**.
-2. Your web browser will open a page asking if you want to **open Zoom Meetings**.
-3. Click the button to open it. Depending on your computer, it may say **Open Zoom Meetings**, **Allow**, or **Open zoom.us**.
+2. Your web browser opens a page, and a small box (pop-up) asks whether you want to open **Zoom Meetings**.
+3. Click **Open**. Depending on your browser, the button may read **Allow** or **Open zoom.us**.
 4. The Zoom app will open and take you into the meeting.
 
 If the link already includes the passcode, you won't need to type one.
@@ -249,7 +249,7 @@ If Zoom doesn't open, or you don't have the Zoom app yet, tell me what you see o
                 "sources": [{'title': 'Zoom Support: Joining a meeting with the invite link', 'url': 'https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I get on a zoom call',
-                    'Happy to help. Do you have a **link** to the meeting, maybe in an email or text? And will you join from a **computer**, **phone**, or **tablet**?',
+                    'Happy to help. Did someone send you a **link** to the meeting, in an email or a text?',
                 ],
             },
             {
@@ -261,11 +261,11 @@ If Zoom doesn't open, or you don't have the Zoom app yet, tell me what you see o
                     "Since my knees got bad I can't drive to my book club anymore, so the ladies started doing it on Zoom. My friend emailed me the link for Thursday but I've never done a Zoom before and I'm nervous I'll mess it up.",
                     """You won't mess it up, and it's lovely that your book club found a way to keep you in. Here's what to do on Thursday:
 
-Joining with a link is pretty simple. The first time, give yourself 5 to 10 minutes before the meeting starts.
+Joining with a link is pretty simple.
 
 1. Open the email and **click the Zoom link**.
-2. Your web browser will open a page asking if you want to **open Zoom Meetings**.
-3. Click the button to open it. Depending on your computer, it may say **Open Zoom Meetings**, **Allow**, or **Open zoom.us**.
+2. Your web browser opens a page, and a small box (pop-up) asks whether you want to open **Zoom Meetings**.
+3. Click **Open**. Depending on your browser, the button may read **Allow** or **Open zoom.us**.
 4. The Zoom app will open and take you into the meeting.
 
 If the link already includes the passcode, you won't need to type one.
@@ -280,15 +280,15 @@ If Zoom doesn't open, or you don't have the Zoom app yet, tell me what you see o
                 "sources": [{'title': 'Zoom Support: Joining a meeting with the invite link', 'url': 'https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I get on a zoom call',
-                    'Happy to help. Do you have a **link** to the meeting, maybe in an email or text? And will you join from a **computer**, **phone**, or **tablet**?',
-                    "I have a link in my email. I'll use my laptop.",
+                    'Happy to help. Did someone send you a **link** to the meeting, in an email or a text?',
+                    "Yes, I have a link in my email.",
                     """Great, having the link makes it easy.
 
-Joining with a link is pretty simple. The first time, give yourself 5 to 10 minutes before the meeting starts.
+Joining with a link is pretty simple.
 
 1. Open the email and **click the Zoom link**.
-2. Your web browser will open a page asking if you want to **open Zoom Meetings**.
-3. Click the button to open it. Depending on your computer, it may say **Open Zoom Meetings**, **Allow**, or **Open zoom.us**.
+2. Your web browser opens a page, and a small box (pop-up) asks whether you want to open **Zoom Meetings**.
+3. Click **Open**. Depending on your browser, the button may read **Allow** or **Open zoom.us**.
 4. The Zoom app will open and take you into the meeting.
 
 If the link already includes the passcode, you won't need to type one.
@@ -378,7 +378,7 @@ If you don't see a **CC** button, that video doesn't have captions available."""
                     """Here's how to make a full backup. Do this on Wi-Fi. The first backup can take a while.
 
 1. Connect your iPhone to **Wi-Fi**.
-2. Open **Settings** and tap **your name** at the top.
+2. Open **Settings** and tap **your name**.
 3. Tap **iCloud**.
 4. Tap **iCloud Backup**.
 5. Make sure **Back Up This iPhone** is turned on.
@@ -426,7 +426,7 @@ If you see a message about not enough iCloud storage, you'll need more storage b
 Here's how to make a full backup. Do this on Wi-Fi. The first backup can take a while.
 
 1. Connect your iPhone to **Wi-Fi**.
-2. Open **Settings** and tap **your name** at the top.
+2. Open **Settings** and tap **your name**.
 3. Tap **iCloud**.
 4. Tap **iCloud Backup**.
 5. Make sure **Back Up This iPhone** is turned on.
@@ -462,7 +462,7 @@ If you see a message about not enough iCloud storage, you'll need more storage b
 
 It may already be on, so check first.
 
-It needs a few things to work: a passcode, Face ID or Touch ID, two-factor authentication on your Apple Account, **Find My** turned on, and **Significant Locations** turned on in Location Services.""",
+It needs a few things to work: an iPhone updated to **iOS 17.3 or later**, a passcode, Face ID or Touch ID, two-factor authentication on your Apple Account, **Find My** turned on, and **Significant Locations** turned on in Location Services.""",
                 ],
             },
             {
@@ -471,8 +471,8 @@ It needs a few things to work: a passcode, Face ID or Touch ID, two-factor authe
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'GrandGuard',
                 "sources": [{'title': 'Apple Support: About Stolen Device Protection for iPhone', 'url': 'https://support.apple.com/en-us/120340', 'accessed': '2026-10-24'}],
                 "messages": [
-                    'how do I protect my iPhone if it gets stolen',
-                    "Good thing to set up ahead of time. Are you asking about **protecting it before** anything happens, or **what to do now** because it's already been stolen?",
+                    'how do I protect my phone if it gets stolen',
+                    "Good thing to set up ahead of time. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -482,7 +482,7 @@ It needs a few things to work: a passcode, Face ID or Touch ID, two-factor authe
                 "sources": [{'title': 'Apple Support: About Stolen Device Protection for iPhone', 'url': 'https://support.apple.com/en-us/120340', 'accessed': '2026-10-24'}],
                 "messages": [
                     'stolen device',
-                    "Do you mean **Stolen Device Protection**, the iPhone setting that protects your phone if it's stolen? Or has your phone **been stolen**? Let me know so I can help with the right thing.",
+                    "Do you want to turn on **Stolen Device Protection**, the iPhone setting that helps protect your phone if it is stolen?",
                 ],
             },
             {
@@ -491,10 +491,10 @@ It needs a few things to work: a passcode, Face ID or Touch ID, two-factor authe
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'GrandGuard',
                 "sources": [{'title': 'Apple Support: About Stolen Device Protection for iPhone', 'url': 'https://support.apple.com/en-us/120340', 'accessed': '2026-10-24'}],
                 "messages": [
-                    'how do I protect my iPhone if it gets stolen',
-                    "Good thing to set up ahead of time. Are you asking about **protecting it before** anything happens, or **what to do now** because it's already been stolen?",
-                    'Before, just in case',
-                    """Great. One of the best protections is called Stolen Device Protection.
+                    'how do I protect my phone if it gets stolen',
+                    "Good thing to set up ahead of time. Is your phone an **iPhone** or an **Android** phone?",
+                    'iPhone',
+                    """Great. A helpful setting is called Stolen Device Protection.
 
 Stolen Device Protection adds extra security if someone steals your iPhone **and** knows your passcode. When your phone is away from familiar places like home or work, it requires **Face ID or Touch ID** for things like using saved passwords, and it adds a **one-hour wait** before important changes, like changing your Apple Account password.
 
@@ -506,7 +506,7 @@ Stolen Device Protection adds extra security if someone steals your iPhone **and
 
 It may already be on, so check first.
 
-It needs a few things to work: a passcode, Face ID or Touch ID, two-factor authentication on your Apple Account, **Find My** turned on, and **Significant Locations** turned on in Location Services.""",
+It needs a few things to work: an iPhone updated to **iOS 17.3 or later**, a passcode, Face ID or Touch ID, two-factor authentication on your Apple Account, **Find My** turned on, and **Significant Locations** turned on in Location Services.""",
                 ],
             },
         ],
@@ -626,7 +626,7 @@ If you want everything bigger, including pictures and buttons, there's a separat
                 "sources": [{'title': 'Microsoft Support: Make text and apps bigger', 'url': 'https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64', 'accessed': '2026-10-24'}],
                 "messages": [
                     'the writing on my computer is too small',
-                    'I can help you make it bigger. Is your computer a **Windows** computer or a **Mac**? And do you want **just the text** bigger, or **everything** on the screen?',
+                    'I can help you make it bigger. Is your computer a **Windows** computer or a **Mac**?',
                 ],
             },
             {
@@ -636,7 +636,7 @@ If you want everything bigger, including pictures and buttons, there's a separat
                 "sources": [{'title': 'Microsoft Support: Make text and apps bigger', 'url': 'https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64', 'accessed': '2026-10-24'}],
                 "messages": [
                     'make text',
-                    'It looks like your message got cut off. Do you want to **make text bigger**? If so, on which device: a computer or a phone?',
+                    'It looks like your message got cut off. Do you want to make the text bigger on a **computer** or on a **phone**?',
                 ],
             },
             {
@@ -646,7 +646,7 @@ If you want everything bigger, including pictures and buttons, there's a separat
                 "sources": [{'title': 'Microsoft Support: Make text and apps bigger', 'url': 'https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64', 'accessed': '2026-10-24'}],
                 "messages": [
                     'the writing on my computer is too small',
-                    'I can help you make it bigger. Is your computer a **Windows** computer or a **Mac**? And do you want **just the text** bigger, or **everything** on the screen?',
+                    'I can help you make it bigger. Is your computer a **Windows** computer or a **Mac**?',
                     'Windows 11, just the text',
                     """Got it.
 
@@ -695,7 +695,7 @@ If you need a full charge right away, tell me and I'll walk you through it.""",
                 "sources": [{'title': "Apple Support: If your iPhone or iPod touch won't charge", 'url': 'https://support.apple.com/en-ca/108805', 'accessed': '2026-10-24'}],
                 "messages": [
                     "my phone won't charge all the way",
-                    "Let's figure out why. Is your phone an **iPhone** or an **Android** phone? And does it stop at a certain number, like **80%**?",
+                    "Let's figure out why. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -723,7 +723,7 @@ If you need a full charge right away, tell me and I'll walk you through it.""",
                 "sources": [{'title': "Apple Support: If your iPhone or iPod touch won't charge", 'url': 'https://support.apple.com/en-ca/108805', 'accessed': '2026-10-24'}],
                 "messages": [
                     "my phone won't charge all the way",
-                    "Let's figure out why. Is your phone an **iPhone** or an **Android** phone? And does it stop at a certain number, like **80%**?",
+                    "Let's figure out why. Is your phone an **iPhone** or an **Android** phone?",
                     'iPhone, it always stops at 80%',
                     """Thanks, that detail helps.
 
@@ -779,7 +779,7 @@ Once Silent mode is off, your phone will ring again. If it's still too quiet, pr
                 "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}],
                 "messages": [
                     'phone wont ring just',
-                    'It sounds like your phone only **vibrates** or stays **silent** when someone calls. Is that right? And is it an iPhone or an Android phone?',
+                    'It sounds like your phone only vibrates when someone calls. Is it an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -791,16 +791,12 @@ Once Silent mode is off, your phone will ring again. If it's still too quiet, pr
                     "my phone isn't ringing, only buzzing",
                     'That usually means a silent setting is on. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone 13',
-                    """Thanks. On an iPhone 13, it's usually the switch on the side.
+                    """Thanks.
 
 Your iPhone is probably in **Silent mode**. Here's how to check.
 
-**If your iPhone has a small switch on the side** (above the volume buttons):
-1. Look at the switch. If you see **orange**, Silent mode is on.
+1. Look at the switch on the side of your iPhone. If you see **orange**, Silent mode is on.
 2. Flip the switch so the orange no longer shows.
-
-**If your iPhone has an Action button instead** (iPhone 15 Pro and newer):
-1. Press the **Action button**. By default, it turns Silent mode on and off. If it's been set to do something else, tell me and we'll check another way.
 
 Once Silent mode is off, your phone will ring again. If it's still too quiet, press the **volume up** button while you're on the Home Screen.""",
                 ],
@@ -830,7 +826,7 @@ Once Silent mode is off, your phone will ring again. If it's still too quiet, pr
 If you don't see **Select to Speak**, update the **Android Accessibility Suite** app in the Play Store.
 
 **Use it:**
-1. Start it with the shortcut: swipe up from the bottom of the screen with **two fingers**, or tap the **Accessibility button**.
+1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**. If TalkBack is on, use a **three-finger** swipe up instead.
 2. Tap any text you want to hear.
 3. To hear everything on the screen, tap **Play**.""",
                 ],
@@ -879,7 +875,7 @@ Yes, with a feature called **Select to Speak**. Setting it up takes a couple of 
 If you don't see **Select to Speak**, update the **Android Accessibility Suite** app in the Play Store.
 
 **Use it:**
-1. Start it with the shortcut: swipe up from the bottom of the screen with **two fingers**, or tap the **Accessibility button**.
+1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**. If TalkBack is on, use a **three-finger** swipe up instead.
 2. Tap any text you want to hear.
 3. To hear everything on the screen, tap **Play**.""",
                 ],
@@ -903,10 +899,8 @@ If you don't see **Select to Speak**, update the **Android Accessibility Suite**
 1. Open the **Reminders** app.
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
-4. Tap the **info** button (a small "i") next to it.
-5. Tap **Date and Time**.
-6. Choose **Custom**, pick tomorrow's date, and set the time to **10:00 AM**.
-7. Tap **Done**.
+4. Tap the **Date and Time** button.
+5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 
@@ -920,7 +914,7 @@ If you set a date without a time, the reminder comes at 9:00 AM by default.""",
                 "sources": [{'title': 'Apple Support: Use Reminders on your iPhone, iPad, or iPod touch', 'url': 'https://support.apple.com/en-us/102484', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I get my phone to remind me to do something',
-                    'Sure. Is your phone an **iPhone** or an **Android** phone? And what would you like to be reminded about, and when?',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -937,10 +931,8 @@ You can use the **Reminders** app. It takes about a minute.
 1. Open the **Reminders** app.
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
-4. Tap the **info** button (a small "i") next to it.
-5. Tap **Date and Time**.
-6. Choose **Custom**, pick tomorrow's date, and set the time to **10:00 AM**.
-7. Tap **Done**.
+4. Tap the **Date and Time** button.
+5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 
@@ -954,7 +946,7 @@ If you set a date without a time, the reminder comes at 9:00 AM by default.""",
                 "sources": [{'title': 'Apple Support: Use Reminders on your iPhone, iPad, or iPod touch', 'url': 'https://support.apple.com/en-us/102484', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I get my phone to remind me to do something',
-                    'Sure. Is your phone an **iPhone** or an **Android** phone? And what would you like to be reminded about, and when?',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone. Call the pharmacy tomorrow at 10.',
                     """Got it.
 
@@ -963,10 +955,8 @@ You can use the **Reminders** app. It takes about a minute.
 1. Open the **Reminders** app.
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
-4. Tap the **info** button (a small "i") next to it.
-5. Tap **Date and Time**.
-6. Choose **Custom**, pick tomorrow's date, and set the time to **10:00 AM**.
-7. Tap **Done**.
+4. Tap the **Date and Time** button.
+5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 

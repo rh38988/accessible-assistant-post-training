@@ -1,0 +1,326 @@
+{
+ "tr219-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr219-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr219-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr219-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr219-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr219-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "public_wifi_safety",
+  "task": "Is it safe to use public Wi-Fi (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+  "existing": false
+ },
+ "tr220-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr220-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr220-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr220-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr220-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr220-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "unordered_package_scam",
+  "task": "A package arrives that the user never ordered (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam",
+  "existing": false
+ },
+ "tr221-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr221-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr221-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr221-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr221-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr221-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "timeshare_resale_scam",
+  "task": "A company promises to sell the user's timeshare for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/node/298260",
+  "existing": false
+ },
+ "tr222-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr222-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr222-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr222-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr222-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr222-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "money_mule_scam",
+  "task": "Someone asks the user to receive money and forward it (FTC)",
+  "task_platform": "any",
+  "source_url": "https://www.consumer.ftc.gov/blog/2021/12/avoiding-money-mule-scam",
+  "existing": false
+ },
+ "tr223-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr223-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr223-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr223-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr223-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr223-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "rental_listing_scam",
+  "task": "A rental listing asks for a deposit before any viewing (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "existing": false
+ },
+ "tr224-a": {
+  "batch": "ny8b",
+  "scenario": "direct",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ },
+ "tr224-c": {
+  "batch": "ny8b",
+  "scenario": "direct_messy",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ },
+ "tr224-e": {
+  "batch": "ny8b",
+  "scenario": "constraint",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ },
+ "tr224-r": {
+  "batch": "ny8b",
+  "scenario": "already_acted",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ },
+ "tr224-f": {
+  "batch": "ny8b",
+  "scenario": "helper",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ },
+ "tr224-g": {
+  "batch": "ny8b",
+  "scenario": "prevention",
+  "task_type": "mortgage_relief_scam",
+  "task": "A company promises to stop foreclosure for an upfront fee (FTC)",
+  "task_platform": "any",
+  "source_url": "https://consumer.ftc.gov/articles/mortgage-relief-scams",
+  "existing": false
+ }
+}

@@ -188,7 +188,7 @@ def main():
         for rid in reserve:
             f.write(json.dumps(recs[rid], ensure_ascii=False) + "\n")
     file_hash = hashlib.sha256(out.read_bytes()).hexdigest()
-    manifest = {"name": "train_v2_en", "version": "v2.0", "created": "2026-11-13", "language": "en",
+    manifest = {"name": "train_v2_en", "version": "v2.0-interim", "created": "2026-11-13", "language": "en",
                 "count": len(final), "file": "data/v2/train_v2_en.jsonl", "sha256": file_hash,
                 "label": "AI-screened, with human spot checks",
                 "human_reviewed_count": sum(recs[i]["reviewed"] for i in final),
@@ -242,7 +242,7 @@ def main():
              f"| Candidates reviewed | {len(recs)} ({origin['existing']} existing English drafts, {origin['new']} new) |",
              f"| Kept by the independent AI review | {sum(1 for i in recs if reviews.get(i, {}).get('decision') == 'keep')} |",
              f"| Rejected by the reviewer | {st['rejected']} |",
-             f"| Still not acceptable after two revision rounds | {st['dropped_unresolved']} |",
+             f"| Flagged for revision, not yet resolved | {st['dropped_unresolved']} |",
              f"| Dropped by code checks (duplicates, length, overlap) | {st['dropped_code_check']} |",
              f"| Not reviewed | {st['not_reviewed']} |",
              f"| Kept but held in reserve | {st['reserve']} |",

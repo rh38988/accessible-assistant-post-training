@@ -70,6 +70,7 @@ If updates are available, you don't have to do anything more right now. The **Do
 When you do install them, Windows may ask you to restart to finish. Save your work first.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
+             "sources": [{'title': 'Microsoft Support: Install Windows Updates', 'url': 'https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates', 'accessed': '2026-11-13'}, {'title': 'Microsoft Support: Troubleshoot problems updating Windows', 'url': 'https://support.microsoft.com/en-us/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c', 'accessed': '2026-11-13'}],
              "messages": [
                  "Can you walk me through updating my Windows 11 PC? I've never done it before.",
                  """Sure, it only takes a few clicks.
@@ -87,7 +88,7 @@ Save your work before restarting.""",
 1. Click **Start**, then **Settings**, then **System**, then **Troubleshoot**, then **Other troubleshooters**.
 2. Click **Run** next to **Windows Update**.
 3. Make sure you're online: go to **Start**, **Settings**, **Network & Internet**, **Wi-Fi**, and reconnect if needed.
-4. Go back to **Settings**, **Windows Update**, and click **Check for updates** again.
+4. Go back to **Settings**, **Windows Update**, and click **Check for Windows updates** again.
 
 If you still get an error, write down the error code and tell me what it says.""",
              ]},
@@ -292,6 +293,7 @@ Asking you to wire money, send cryptocurrency, or buy gift cards are warning sig
 You can report the call at **ReportFraud.ftc.gov**.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
+             "sources": [{'title': 'FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes', 'url': 'https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes', 'accessed': '2026-11-13'}, {'title': 'FTC Consumer Advice: What To Do if You Were Scammed', 'url': 'https://consumer.ftc.gov/articles/what-do-if-you-were-scammed', 'accessed': '2026-11-13'}],
              "messages": [
                  "A call came in that sounded just like my granddaughter saying she was in trouble. I wired $2,500 through Western Union an hour ago, and now I can't reach her and I'm afraid it was a scam.",
                  """I'm sorry, this happens to careful people. Please don't send any more money, and contact the wire transfer company right away.
@@ -324,6 +326,7 @@ The page does not cover what to do after clicking or paying. For the r example I
 4. You can also report it at **ReportFraud.ftc.gov**.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
+             "sources": [{'title': 'FTC Consumer Alert: Think that text message is from USPS? It could be a scam', 'url': 'https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam', 'accessed': '2026-11-13'}, {'title': 'FTC Consumer Advice: What To Do if You Were Scammed', 'url': 'https://consumer.ftc.gov/articles/what-do-if-you-were-scammed', 'accessed': '2026-11-13'}],
              "messages": [
                  "I got a text from USPS about a missed delivery. I clicked the link and typed in my credit card number to pay a $1.99 fee, then got suspicious. What do I do?",
                  """I'm sorry, these texts look very real and fool many people. Contact your credit card company right away.
@@ -353,7 +356,7 @@ Family or friends: scammers may use voice cloning. Contact the relative directly
 2. **Reach your nephew through a number you already know is his**, not the new number that texted you. Scammers may also use voice cloning, so check with him directly.
 3. **Report the text** at **ReportFraud.ftc.gov**.
 
-If you've already bought cards or shared the numbers, report it to the gift card company right away and ask for your money back. Keep the cards and the receipt.""",
+If you've already bought cards or shared the numbers, report it to the gift card company right away and ask for your money back. Keep a copy of the gift card and the store receipt.""",
              ]},
         ],
     },
@@ -425,7 +428,7 @@ Not covered: adding from a call or message, choosing account when creating, trou
 4. Type her email address.
 5. Tap **Save**.
 
-If you want to add more details later, such as a street address or notes, open her contact and tap the field to edit it, or tap **Add fields**.""",
+If you want to add more details, such as a street address or notes, tap **Add fields** before you tap **Save**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android",
              "messages": [

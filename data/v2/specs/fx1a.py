@@ -15,7 +15,7 @@ Troubleshooting: Device screenshots and menu may vary depending on device model 
              """Hello, my daughter gave me her old Samsung Galaxy phone last month and I am still getting used to it. My eyes are not what they were since the cataract surgery and I cannot read the recipes my friends send me, the writing is just too small. Could the words be made larger, and maybe darker too?""",
              """Yes, you can make the words larger and bolder in the Settings. It takes about a minute.
 
-1. Open the **Settings** app. Its icon looks like a gear.
+1. Open the **Settings** app.
 2. Tap **Display**.
 3. Tap **Font size and style**.
 4. On that screen, adjust the options to make the font bigger. You can also choose to make it bold, which makes the letters darker and thicker.
@@ -34,7 +34,7 @@ Try one change at a time so you can see what suits your eyes. Menu names can loo
              "its a samsung galaxy",
              """Good, here is how to make the writing bigger on a Samsung Galaxy.
 
-1. Open the **Settings** app. Its icon looks like a gear.
+1. Open the **Settings** app.
 2. Tap **Display**.
 3. Tap **Font size and style**.
 4. On that screen, adjust the options to make the font bigger. You can also make it bold.
@@ -46,7 +46,7 @@ If you don't see **Font size and style**, the menus can be a little different on
              """I have a Samsung Galaxy and the print is too small for me. My grandson told me I could download special fonts but I do not want to download anything or pay for anything, I just want the same letters to look bigger. What do I do?""",
              """You don't need to download anything. The size can be changed right in your settings, and it's free.
 
-1. Open the **Settings** app. Its icon looks like a gear.
+1. Open the **Settings** app.
 2. Tap **Display**.
 3. Tap **Font size and style**.
 4. On that screen, adjust the options to make the font bigger. Leave **Font style** alone, because that is the part that downloads new fonts.
@@ -58,18 +58,14 @@ Your letters will keep the same look, just bigger.""",
              "How do I make the writing bigger on my Samsung Galaxy phone?",
              """Here is how to make the writing bigger on your Samsung Galaxy.
 
-1. Open the **Settings** app. Its icon looks like a gear.
+1. Open the **Settings** app.
 2. Tap **Display**.
 3. Tap **Font size and style**.
 4. On that screen, adjust the options to make the font bigger. You can also make it bold.
 
 The menus can look a little different depending on your phone model and software version.""",
              "I tapped Display but I do not see anything called Font size and style.",
-             """That can happen, because the menus differ between models and software versions. Let's try this.
-
-1. Stay on the **Display** screen and look through the whole list for any choice about the font or the size of the writing.
-2. If you find one, tap it and make the font bigger there.
-3. If you can't find anything like that, Samsung Support can help you directly. They offer Live Chat, Call, Email, and Service Centers.""",
+             """That can happen, because the menus can look different depending on the phone model and software version. Samsung Support can help you directly. You can use Live Chat or Email, or use Find a Support Center to visit someone in person.""",
          ]},
     ],
 })
@@ -90,8 +86,10 @@ Troubleshooting: some steps require Android 12 or later; if you can't find Setti
              """You can turn the ringer up with the buttons on the side of your phone.
 
 1. Press one of the **volume buttons** on the side of your phone.
-2. A small volume bar appears on the screen. Tap the **Menu** icon at the right. It may say **More**.
+2. A small volume bar appears on the screen. Tap the **Menu** icon at the right.
 3. Find **Ring Volume** and slide it up to make the ring louder.
+
+If you don't see a **Menu** icon, your phone has older software. Tap the **Down arrow** at the right instead, then slide **Ring**.
 
 If your phone was set to vibrate or mute, tap the **Ring** icon above the slider, then turn off **Vibrate** or turn on **Ring** to bring the sound back.""",
          ]},
@@ -118,7 +116,7 @@ If you're not sure, look at the back of the phone. An iPhone has an apple logo o
              """Thank you. A Pixel is an Android phone, so here is how to make the ringing louder.
 
 1. Press one of the **volume buttons** on the side of your phone.
-2. Tap the **Menu** icon at the right of the volume bar. It may say **More**.
+2. Tap the **Menu** icon at the right of the volume bar.
 3. Find **Ring Volume** and slide it up.
 
 If your phone was set to vibrate or mute, tap the **Ring** icon above the slider and turn off **Vibrate** or turn on **Ring**.""",
@@ -129,7 +127,7 @@ If your phone was set to vibrate or mute, tap the **Ring** icon above the slider
              """Yes, you can do it without opening the Settings app.
 
 1. Press one of the **volume buttons** on the side of your phone.
-2. Tap the **Menu** icon at the right of the volume bar. It may say **More**.
+2. Tap the **Menu** icon at the right of the volume bar.
 3. Find **Ring Volume** and slide it up to make the ring louder.
 
 If you don't see a **Menu** icon, your phone may be an older version. Tell me and I'll give you the steps for that.""",
@@ -140,7 +138,7 @@ If you don't see a **Menu** icon, your phone may be an older version. Tell me an
              """You can turn the ring up with the buttons on the side of your phone.
 
 1. Press one of the **volume buttons** on the side of your phone.
-2. Tap the **Menu** icon at the right of the volume bar. It may say **More**.
+2. Tap the **Menu** icon at the right of the volume bar.
 3. Find **Ring Volume** and slide it up.
 
 If you don't see the **Menu** icon, your phone may be an older version, and I can give you different steps.""",
@@ -169,7 +167,7 @@ Notes: Messages needs permission to send/receive files. Use RCS rather than MMS 
 
 1. Open the **Messages** app.
 2. Open your conversation with your son. If you haven't texted him before, start a new conversation with him.
-3. Tap **Gallery**. Your photos will appear.
+3. Tap **Gallery**.
 4. Tap the picture of you and your grandson.
 5. Look at the preview of the picture. You can leave the quality as it is.
 6. Tap **Send**.
@@ -190,7 +188,7 @@ You will see the picture in your conversation once it has gone through.""",
 
 1. Open the **Messages** app.
 2. Open your conversation with your daughter. If you haven't texted her before, start a new conversation with her.
-3. Tap **Gallery**. Your photos will appear.
+3. Tap **Gallery**.
 4. Tap the picture of the baby.
 5. Tap **Send**.
 
@@ -217,7 +215,7 @@ Your phone remembers the choice for your next pictures, and you can change it ag
 
 1. Open the **Messages** app.
 2. Open your conversation with Carol. If you haven't texted her before, start a new conversation with her.
-3. Tap **Gallery**. Your photos will appear.
+3. Tap **Gallery**.
 4. Tap the photo of your puppy.
 5. Tap **Send**.
 
@@ -225,10 +223,11 @@ You'll see the photo in your conversation once it's sent.""",
              "It went through but Carol says the picture looks blurry. Can I send it better?",
              """Yes. Messages can send the picture in its full original quality. Send it again like this.
 
-1. Open your conversation with Carol and tap **Gallery**.
-2. Tap the photo of your puppy.
-3. On the preview, tap **HD** and choose **HD+**, which says "Original quality".
-4. Tap **Send**.
+1. Open your conversation with Carol.
+2. Tap **Gallery**.
+3. Tap the photo of your puppy.
+4. On the preview, tap **HD** and choose **HD+**, which says "Original quality".
+5. Tap **Send**.
 
 Pictures sent as old-style picture messages (called MMS) get squeezed by phone companies, which makes them blurrier. Messages that go through as RCS chats come out clearer.""",
          ]},
@@ -273,10 +272,8 @@ Your recipe is now saved as a picture. You can find it in **Photos**. Tap **Coll
         {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "iPhone (Home button)",
          "messages": [
              "How do I take a picture of what's on my iPhone screen? My grandson wants me to send him a screenshot.",
-             """Happy to help. The buttons you press depend on your iPhone model, so one quick question first:
-
-Does your iPhone have a **round button below the screen** (called the Home button)? Just answer yes or no.""",
-             "yes it does",
+             """Happy to help. The buttons you press depend on your iPhone model, so one quick question first: is the button that wakes your iPhone on the **top edge** or on the **right side**?""",
+             "its on the right side, and there is a round button under the screen too",
              """Thank you. Here is how to take the screenshot on your iPhone.
 
 1. Open the screen you want to send to your grandson.
@@ -334,7 +331,7 @@ Try another device: Gmail may not load in browsers on older devices; try another
 1. Make sure your browser is up to date. Update it to the latest version.
 2. Open Gmail again.
 3. If it still will not load, try a different browser and open Gmail there.
-4. Clear your browser's cache and cookies, then open Gmail again.
+4. Clear your browser's saved website data (called cache and cookies), then open Gmail again.
 
 If Gmail still will not load, tell me and we'll check your internet connection next.""",
          ]},
@@ -353,11 +350,11 @@ If you turn off an extension and Gmail loads, that extension was the cause.""",
          ]},
         {"suffix": "d", "scenario": "followup", "style": "verbose", "specification": "fully_specified", "platform": "Gmail (computer browser)",
          "messages": [
-             "Good morning. I hope you can help me. My husband always took care of these things. Since about Tuesday my email is not working right. I used to get messages from my church group every day and now nothing. I tried turning it off and on.",
+             "Good morning. I hope you can help me. My husband always took care of these things. Since about Tuesday the Gmail page will not open for me, it just sits there. I tried turning it off and on.",
              """Good morning. I'm glad you asked, and we can figure this out together. Turning it off and on was a good first try.
 
-So I can give you the right steps: **where do you usually read your email** (a computer, a phone, or a tablet), and **what comes after the @ sign in your email address**? For example, @gmail.com or @yahoo.com.""",
-             "I read it on my computer in the browser and the address ends in @gmail.com",
+So I can give you the right steps, **do you open Gmail in a web browser on a computer**, or in an app on a phone or tablet?""",
+             "i open it in the browser on my computer",
              """Thank you, that helps. Here are some things to try for Gmail on your computer.
 
 1. Update your browser to the latest version, then open Gmail again.
@@ -431,17 +428,21 @@ If it still does not print, tell me and we'll try the next step.""",
              """We got a wireless printer a few years ago and I use it with my Windows 11 laptop from the sunroom. Last week the internet company sent a little box to make the Wi-Fi reach the back of the house and since then the printer will not print anything. I have a tax form to print. The printer lights are on. Please explain it simply, I am not very good with this.""",
              """The new Wi-Fi box could be the reason. Let's check the printer's wireless first.
 
-1. Look for the wireless setting on your printer. It may be a blue wireless icon or a menu option. Make sure the wireless option is turned on.
-2. Run the printer's built-in wireless test. If the test passes but it still will not print, check that your laptop is online.
-3. Make sure your laptop is on the same Wi-Fi network as the printer. With a Wi-Fi box like the new one, the laptop can end up on a different network from the printer.
-4. Try printing again.
+1. Turn off the printer and unplug it.
+2. Wait 30 seconds.
+3. Plug it back in and turn it on.
+4. Look for a button on the printer that shows a blue wireless icon. Use it to make sure wireless is on.
+5. Run the printer's built-in wireless test. Many printers have a menu option for it.
+6. If the test passes but it still will not print, make sure your laptop is online.
+7. Make sure your laptop is on the same Wi-Fi network as the printer. With a Wi-Fi box like the new one, the laptop can end up on a different network from the printer.
+8. Try printing again.
 
 If it still does not print, tell me what happens and we'll try the next step.""",
          ]},
         {"suffix": "d", "scenario": "followup", "style": "verbose", "specification": "fully_specified", "platform": "Windows",
          "messages": [
              "My printer won't print anything and I need to print my boarding pass for Thursday. It worked fine last month. The little green light is on.",
-             """Let's get that boarding pass printed. The green light is a good sign: it means the printer has power.
+             """Let's get that boarding pass printed.
 
 The next steps depend on what you're printing from. **Are you printing from a computer or from a phone?** If it's a computer, do you know if it's a Windows computer or a Mac?""",
              "its a windows computer",
@@ -451,7 +452,7 @@ The next steps depend on what you're printing from. **Are you printing from a co
 2. Wait 30 seconds.
 3. Plug it back in and turn it on.
 4. If it connects with a USB cable, make sure the cable is firmly connected at both ends.
-5. If it connects wirelessly, make sure the printer's wireless option is turned on. Look for a blue wireless icon or a menu option.
+5. If it connects wirelessly, make sure the printer's wireless option is turned on. Look for a button on the printer that shows a blue wireless icon.
 6. Try printing your boarding pass again.
 
 If it still does not print, tell me and we'll try the next step.""",
@@ -479,7 +480,7 @@ If that does not help, the next steps are on the computer, so you may want to as
 2. Wait 30 seconds.
 3. Plug it back in and turn it on.
 4. If it uses a USB cable, make sure the cable is firmly connected at both ends.
-5. If it connects wirelessly, make sure the printer's wireless option is on. Look for a blue wireless icon or a menu option.
+5. If it connects wirelessly, make sure the printer's wireless option is on. Look for a button on the printer that shows a blue wireless icon.
 6. Try printing again.""",
              "I did all that and it still won't print",
              """Next, let's remove the printer from your computer and add it again.
@@ -487,8 +488,13 @@ If that does not help, the next steps are on the computer, so you may want to as
 1. Click **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.
 2. Click your printer, then click **Remove**, then click **Yes**.
 3. Make sure the printer is on and connected. On the same page, click **Add device**.
-4. Wait while Windows searches. When your printer appears, click **Add device** next to it. If it does not appear, click **Add manually**.
-5. Print a test page to see if it works.""",
+4. Wait while Windows searches. When your printer appears, click **Add device** next to it.
+5. If it does not appear, click **Add manually**.
+6. Click **Add a local printer or network printer with manual settings**, then click **Next**.
+7. Click **Use an existing port**, pick the port your printer uses, then click **Next**.
+8. Choose your printer's maker and model, then click **Next**.
+9. Type a name, click **Next**, and choose **Do not share this printer**.
+10. Click **Print a test page**, then click **Finish**.""",
          ]},
     ],
 })

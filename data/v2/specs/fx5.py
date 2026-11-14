@@ -33,11 +33,13 @@ Your backed-up pictures still show in the **Google Photos** app when you are onl
 5. Select the files you don't need.
 6. Tap **Move files to Trash**.""",
                  "I got to Free up space and found the category but there is no Select files button.",
-                 """That happens when a category is not listed the usual way. Try this instead:
+                 """Your phone may show it a little differently. Try this instead:
 
-1. Tap **Browse**.
+1. Look for **Browse** and tap it.
 2. Select the files you want to delete. You can also select all of them.
-3. Tap **Move files to Trash**.""",
+3. Tap **Move files to Trash**.
+
+Menu names can differ a little between phones, and some steps need Android 14 or newer.""",
              ]},
         ],
     },
@@ -62,7 +64,7 @@ Troubleshooting: if Flashlight button is missing from Control Center, go to Sett
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
-                 "iPhone 11 here, the one with the round button at the bottom. How can I turn on the light on the back?",
+                 "iPhone SE here, the one with the round button at the bottom. How can I turn on the light on the back?",
                  """Here is the quickest way.
 
 1. **Swipe up from the bottom edge** of the screen to open Control Center.
@@ -73,7 +75,7 @@ Troubleshooting: if Flashlight button is missing from Control Center, go to Sett
 
 1. Open **Settings**.
 2. Tap **Control Center**.
-3. Add **Flashlight**.
+3. In the list of controls, tap **Flashlight**.
 4. Swipe up from the bottom again and tap the **Flashlight** button.""",
              ]},
         ],
@@ -226,7 +228,7 @@ Troubleshooting not appearing: confirm compatibility and pairing mode; restart t
                  """For hearing aids with no switch, pairing mode means taking them out of the charger.
 
 1. Make sure your iPhone has the latest software update.
-2. Take both hearing aids **out of the charger**.
+2. Take both hearing aids **out of the charger**. Keep them close to your iPhone.
 3. On your iPhone, open **Settings**.
 4. Tap **Accessibility**, then tap **Hearing Devices**.
 5. Tap **Pair MFi Hearing Device** and follow the instructions on the screen.
@@ -355,12 +357,14 @@ Fix battery problems that won't go away: restart (hold power button about 30 sec
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Android",
              "messages": [
                  "I don't want my Android phone stuck in battery saving mode all day because it slows everything down. I only need it in the evenings when I'm out. Can it switch on and off by itself on a timetable?",
-                 """Yes, Battery Saver has a schedule.
+                 """Yes, Battery Saver lets you choose a schedule, or have it turn off automatically.
 
 1. Open the **Settings** app.
 2. Tap **Battery**.
 3. Tap **Battery Saver**.
-4. Choose a **Schedule** for when it should run. You can also set it to turn off automatically.
+4. Look for the option to set a schedule or to turn it off automatically, and choose what fits you.
+
+The choices can look a little different on some phones.
 
 While it is on, it switches the screen to a dark theme and limits background activity, so some apps may be a little slower.""",
              ]},
@@ -443,9 +447,10 @@ Some steps need Android 13 or later; Magnifier Settings panel needs Android 14 o
 1. Open **Settings**.
 2. Tap **Accessibility**, then tap **Magnification**.
 3. Tap **Magnification type** and choose **partial screen**.
-4. Turn on **Magnification shortcut**, and pick **Accessibility button** if you are asked how to start it.
-5. Tap the **Accessibility button**.
-6. **Drag with two fingers** to move the zoom window, and **pinch** to change how much it zooms.
+4. Turn on **Magnification shortcut**.
+5. Tap **Magnification shortcut** and choose **Accessibility button**.
+6. Tap the **Accessibility** icon at the bottom of the screen. Its exact spot depends on how your phone is set up.
+7. **Drag with two fingers** to move the zoom window, and **pinch** to change how much it zooms.
 
 Some of these steps need Android 13 or later.""",
              ]},
@@ -465,7 +470,9 @@ To zoom, quickly tap the screen 3 times and hold. Use two fingers to pinch and t
 
 1. Open **Settings**, then **Accessibility**, then **Magnification**.
 2. Tap **Magnification shortcut**.
-3. Choose **Accessibility button** or **Hold volume keys**.""",
+3. Choose **Accessibility button** or **Hold volume keys**.
+
+With **Accessibility button**, tap the Accessibility icon at the bottom of the screen. With **Hold volume keys**, hold both volume buttons together.""",
              ]},
         ],
     },
@@ -498,21 +505,21 @@ Apple will never contact you to say your iPhone has been found, so do not share 
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone (Find My)",
              "messages": [
                  "My iPhone is missing since this morning. My wife has an iPad. What should I do on it?",
-                 """Use the **Find My** app on her iPad.
+                 """Use the web browser on her iPad.
 
-1. Open the **Find My** app and sign in with your Apple Account.
-2. Tap the **Devices** tab.
-3. Select your iPhone.
-4. Tap the **More** button, scroll down, and turn on **Lost Mode**.
+1. Go to **icloud.com/find**.
+2. Sign in with your Apple Account.
+3. Open **All Devices** and tap your iPhone.
+4. Choose to mark it as lost.
 
-You can also play a sound or look at the map from here.""",
+You can also play a sound from here.""",
                  "It shows my phone as offline, no location at all.",
-                 """That means it is off or not on Wi-Fi or cellular. Until it reconnects, it won't show as online or in Lost Mode. You can set up Lost Mode now:
+                 """That means it is off or not on Wi-Fi or cellular. Until it reconnects, it won't show as online or in Lost Mode. You can still mark it as lost now:
 
-1. In **Find My**, select your iPhone.
-2. Tap the **More** button, then scroll to the **Lost** section and turn on **Lost Mode**.
-3. If prompted, add your contact information.
-4. Tap **Activate**.""",
+1. On her iPad, go to **icloud.com/find** in the web browser.
+2. Sign in with your Apple Account if you are asked.
+3. Open **All Devices** and tap your iPhone.
+4. Choose to mark it as lost.""",
              ]},
         ],
     },
@@ -552,7 +559,7 @@ Skip **Factory reset**, since that permanently deletes the data. This works if y
 
 From there you can tap **Play sound** to ring it at full volume.""",
                  "The map shows a pin in my house but I walked there and still can't see the phone.",
-                 """The location can be off by a few meters, especially indoors. Try this:
+                 """The location can be off by roughly 20 meters, and it is less reliable indoors. Try this:
 
 1. Tap **Play sound**. It rings at full volume for 5 minutes, even on silent.
 2. Walk toward the sound.

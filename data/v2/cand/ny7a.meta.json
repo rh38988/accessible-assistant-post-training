@@ -1,0 +1,380 @@
+{
+ "tr199-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr199-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr199-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr199-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr199-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr199-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "email_attach",
+  "task": "Attach a file or photo to an email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
+  "existing": false
+ },
+ "tr200-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr200-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr200-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr200-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr200-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr200-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "email_not_working",
+  "task": "Email is not arriving or syncing",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642",
+  "existing": false
+ },
+ "tr201-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr201-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr201-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr201-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr201-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr201-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "recover_deleted_email",
+  "task": "Recover a deleted email",
+  "task_platform": "Outlook.com",
+  "source_url": "https://support.microsoft.com/office/c70b4a9a-caa5-4e8c-a88a-3372215af25e",
+  "existing": false
+ },
+ "tr202-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr202-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr202-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr202-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr202-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr202-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "email_labels",
+  "task": "Organize email with labels",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/118708?hl=en",
+  "existing": false
+ },
+ "tr203-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr203-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr203-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr203-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr203-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr203-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "auto_reply",
+  "task": "Set an out-of-office (vacation) reply",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/25922?hl=en",
+  "existing": false
+ },
+ "tr204-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr204-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr204-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr204-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr204-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr204-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "print_email",
+  "task": "Print an email",
+  "task_platform": "Gmail (computer)",
+  "source_url": "https://support.google.com/mail/answer/8255?co=GENIE.Platform%3DDesktop&hl=en",
+  "existing": false
+ },
+ "tr205-a": {
+  "batch": "ny7a",
+  "scenario": "direct",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ },
+ "tr205-c": {
+  "batch": "ny7a",
+  "scenario": "direct_messy",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ },
+ "tr205-b": {
+  "batch": "ny7a",
+  "scenario": "missing_info",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ },
+ "tr205-d": {
+  "batch": "ny7a",
+  "scenario": "followup",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ },
+ "tr205-e": {
+  "batch": "ny7a",
+  "scenario": "constraint",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ },
+ "tr205-r": {
+  "batch": "ny7a",
+  "scenario": "failure_recovery",
+  "task_type": "add_contact",
+  "task": "Add a contact",
+  "task_platform": "Google Contacts (computer)",
+  "source_url": "https://support.google.com/contacts/answer/1069522?hl=en",
+  "existing": false
+ }
+}

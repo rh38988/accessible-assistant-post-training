@@ -19,12 +19,12 @@ Troubleshooting: no caption option means host hasn't enabled or has restricted c
                  "I'm in a Zoom meeting on my laptop and I'd like to see captions of what people are saying. How do I turn them on?",
                  """Here is how to show captions in the Zoom app on your computer.
 
-1. In the bar of buttons at the bottom of the meeting, click the **Show captions** icon. It is the closed-captions icon.
+1. In the bar of buttons at the bottom of the meeting, click the **Show captions** icon.
 2. If you do not see it, click **More** in that bar, then click **Show captions**.
 
 The words people say will appear above the meeting buttons, with each speaker's name in front.
 
-If you cannot turn captions on, the host may have restricted them. Click **More**, then **Request captions**, then click **Send**.""",
+If you cannot turn captions on, the host may have restricted them. Click **More**, then **Request captions**, then click **Send**. The host or a co-host has to approve your request before captions appear.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Zoom on phone",
              "messages": [
@@ -36,7 +36,7 @@ If you cannot turn captions on, the host may have restricted them. Click **More*
 
 The words people say will appear above the meeting buttons.
 
-If you do not see **Show CC**, the host may have limited captions. Tap **More**, then **Request captions**, then **Send**.""",
+If you do not see **Show CC**, the host may have limited captions. Tap **More**, then **Request captions**, then **Send**. The host or a co-host has to approve your request.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -65,9 +65,9 @@ If you do not see **Show CC**, tap **More**, then **Request captions**, then **S
 1. Click the **Show captions** icon in the buttons at the bottom of the meeting. If you do not see it, click **More**, then **Show captions**.
 2. Move your mouse over the captions and click the gear icon.
 3. Click **Caption settings**. A panel called **Accessibility** opens on the right.
-4. Drag the **Font size** slider toward the large end.
+4. Drag the **Font size** slider to make the letters bigger.
 
-If nothing happens when you click **Show captions**, the host may have restricted them. Click **More**, then **Request captions**.""",
+If nothing happens when you click **Show captions**, the host may have restricted them. Click **More**, then **Request captions**, then **Send**. The host or a co-host has to approve your request.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Zoom on computer",
              "messages": [
@@ -79,13 +79,15 @@ If nothing happens when you click **Show captions**, the host may have restricte
 
 The words people say will appear above the meeting buttons.""",
                  "I clicked on it but no captions came up.",
-                 """The host may have turned captions off or limited them. You can ask for them.
+                 """The host may have limited captions. You can ask for them.
 
 1. Click **More** in the bottom buttons.
 2. Click **Request captions**.
 3. Click **Send**.
 
-The host or a co-host has to approve your request before captions appear.""",
+The host or a co-host has to approve your request before captions appear.
+
+If you do not see **Request captions** under **More**, the host may have turned captions off, so ask the host to turn them on.""",
              ]},
         ],
     },

@@ -52,17 +52,17 @@ To find it later, open **Photos**, tap **Collections**, swipe up, tap **Media Ty
 2. Quickly let go of both buttons.
 3. A small picture of the screenshot shows in the lower-left corner for a moment. Tap it to open the screenshot, or swipe it left to dismiss it.
 
-You will find the saved picture in **Photos**, under **Collections**, then **Media Types**, then **Screenshots**.""",
+To find it later, open **Photos**, tap **Collections**, swipe up, tap **Media Types**, then tap **Screenshots**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPad",
              "messages": [
                  "My hands are stiff from arthritis and I just cannot press two buttons at the same time on my iPad. I do have an Apple Pencil that came with it. Is there another way to take a screenshot using the Pencil?",
                  """Yes, if your iPad works with the Apple Pencil, you can use it instead of the buttons.
 
-1. Hold your Apple Pencil.
-2. Swipe it from a bottom corner of the screen. Either the left or the right corner works.
+1. Swipe your Apple Pencil from a bottom corner of the screen. Either the left or the right corner works.
+2. A small picture of the screenshot shows in the lower-left corner for a moment. Tap it to open the screenshot, or swipe it left to dismiss it.
 
-The screenshot is saved for you. To find it, open **Photos**, tap **Collections**, swipe up, tap **Media Types**, then tap **Screenshots**.""",
+Here is where to look for it afterward. Open **Photos**, tap **Collections**, swipe up, tap **Media Types**, then tap **Screenshots**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPad",
              "messages": [
@@ -134,7 +134,7 @@ Before installing, it is wise to back up your Mac.""",
                  "it says i need to update my apple thing. what do i do",
                  "I can help with that. Which device is it: a **Mac**, an **iPhone**, or an **iPad**?",
                  "its my mac",
-                 """Thank you. Here is how to update your Mac.
+                 """Thank you. Here is how to update your Mac. Before you install anything, it is a good idea to back up your Mac.
 
 1. Click the **Apple** menu at the top left of the screen and choose **System Settings**.
 2. Click **General** in the sidebar.
@@ -190,7 +190,7 @@ No System Settings steps on the page. No steps for a missing Wi-Fi icon.""",
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Mac",
              "messages": [
                  "How do I connect my MacBook to the Wi-Fi at my house?",
-                 """Here is how to join a Wi-Fi network on your Mac. Have the Wi-Fi password ready.
+                 """Here is how to join a Wi-Fi network on your Mac. Make sure Wi-Fi is turned on and have the Wi-Fi password ready.
 
 1. Click the **Wi-Fi status menu** in the menu bar at the top of the screen. It is the Wi-Fi icon.
 2. Click the name of your network in the list.
@@ -201,7 +201,7 @@ If you do not see your network in the list, click **Other Networks** to show the
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Mac",
              "messages": [
                  "My son set up a new router for me and he told me the network is hidden so my neighbors cannot see it. He wrote the network name and the password on a sticky note. Now my iMac will not find it anywhere in the list. How do I connect my iMac to a hidden network?",
-                 """For a hidden network, you type the name yourself.
+                 """For a hidden network, you type the name yourself. Make sure Wi-Fi is turned on, and have the network name, security type, and password from the sticky note ready.
 
 1. Click the **Wi-Fi status menu** in the menu bar at the top of the screen.
 2. Click **Other Networks**.
@@ -220,7 +220,7 @@ If you do not see your network in the list, click **Other Networks** to show the
                  "my laptop is not on the internet, how do i get it on the wifi",
                  "I can help with that. Is your laptop a **Mac** (MacBook) or a **Windows** laptop?",
                  "macbook",
-                 """Thank you. Here is how to join a Wi-Fi network on your MacBook. Have the Wi-Fi password ready.
+                 """Thank you. Here is how to join a Wi-Fi network on your MacBook. Make sure Wi-Fi is turned on and have the Wi-Fi password ready.
 
 1. Click the **Wi-Fi status menu** in the menu bar at the top of the screen. It is the Wi-Fi icon.
 2. Click the name of your network in the list.
@@ -231,11 +231,11 @@ If you do not see your network, click **Other Networks** to show the nearby netw
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Mac",
              "messages": [
                  "I am at the library with my MacBook and I do not want to dig around in settings, I get lost in there. Just tell me the quickest way to connect to the library Wi-Fi from the top of the screen.",
-                 """You can do it from the top of the screen, no settings needed.
+                 """You can do it from the top of the screen, no settings needed. Make sure Wi-Fi is turned on.
 
 1. Click the **Wi-Fi status menu** in the menu bar at the top of the screen. It is the Wi-Fi icon.
 2. Click the library network in the list.
-3. If it asks for a password, type it and click **Join**. If it shows terms and conditions, accept them.
+3. If it asks for a password, type it and click **Join**.
 
 If you do not see the library network, click **Other Networks** to show the nearby networks.""",
              ]},
@@ -328,6 +328,7 @@ Notes: deleting an app does not remove documents or files you created with it, b
 Deleting an app also does not cancel any subscription you bought through it.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Mac",
+             "sources": [{'title': 'Apple Support: Uninstall apps on your Mac', 'url': 'https://support.apple.com/en-us/102610', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Start up your Mac in safe mode', 'url': 'https://support.apple.com/en-us/116946', 'accessed': '2026-11-13'}],
              "messages": [
                  "How do I delete an app from my Mac?",
                  """Here is how to delete an app on your Mac.
@@ -343,7 +344,9 @@ Deleting an app also does not cancel any subscription you bought through it.""",
 
 1. Make sure the app is not open. Quit it.
 2. Try to delete it again.
-3. If it still will not delete, restart your Mac, or start it up in Safe Mode, then try again.""",
+3. If it still will not delete, restart your Mac and try again.
+
+If that does not work, Apple has a guide called start up in Safe Mode: https://support.apple.com/en-us/116946.""",
              ]},
         ],
     },
@@ -375,8 +378,7 @@ Deleting an app also does not cancel any subscription you bought through it.""",
 1. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage**. This shows what is using your space.
 2. Open your **Downloads** folder from the Dock and delete what you do not need.
 3. Delete apps you no longer use.
-4. Delete old iPhone or iPad backups, if your Mac stores any.
-5. Empty the **Trash**. Space from trashed files is not freed until you do.
+4. Empty the **Trash**. Space from trashed files is not freed until you do.
 
 The Storage screen updates as you free up space.""",
              ]},
@@ -411,15 +413,14 @@ The Storage screen updates as you free up space.""",
 4. Empty the **Trash**. Space from trashed files is not freed until you do.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Mac",
+             "sources": [{'title': 'Apple Support: Free up storage space on your Mac', 'url': 'https://support.apple.com/en-us/102624', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Move your Photos library to save space on your Mac', 'url': 'https://support.apple.com/en-us/108345', 'accessed': '2026-11-13'}],
              "messages": [
                  "My Mac is full because of my grandchildren's photos and videos, and I refuse to delete any of them. I have a spare external hard drive in my drawer though. What can I do to free up space without throwing away a single photo?",
                  """You can move them to the external drive instead of deleting them. Photos and videos are some of the best things to move.
 
 1. Plug your external drive into your Mac.
-2. Move the photos and videos you want to keep onto the drive.
-3. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage** to check how much space you now have.
-
-Apple has a separate guide for moving a Photos library, so check that guide before you move yours.""",
+2. Move your Photos library to the external drive by following Apple's guide Move your Photos library to save space on your Mac: https://support.apple.com/en-us/108345.
+3. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage** to check how much space you now have.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Mac",
              "messages": [
@@ -497,7 +498,7 @@ To check, click the battery icon in the menu bar. It shows whether a power mode 
 3. Under **Energy Mode**, open the **On battery** pop-up menu.
 4. Choose **Low Power Mode**.
 
-If your Mac says System Preferences instead of System Settings, choose that.""",
+If your Apple menu says System Preferences instead of System Settings, tell me and I will give you the steps for that.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Mac laptop",
              "messages": [
@@ -554,7 +555,7 @@ Notes: hourly backups for past 24 hours, daily for the past month, weekly for ea
 4. Click **Add Backup Disk**.
 5. Select your drive, then click **Set Up Disk**.
 
-Your Mac may ask whether to erase the drive. After setup, it starts backing up right away.""",
+If your Mac asks whether to erase the drive, erasing wipes everything on it. Erase only if you do not need anything on it, or choose a different backup disk instead. After setup, it starts backing up right away.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Mac",
              "messages": [
@@ -584,6 +585,8 @@ You can use the same menu to see the progress, or to stop or skip a backup. It a
 4. Click **Add Backup Disk**.
 5. Select your drive, then click **Set Up Disk**.
 
+If your Mac asks whether to erase the drive, erasing wipes everything on it. Erase only if you do not need anything on it, or choose a different backup disk instead.
+
 After setup, your Mac starts backing up right away.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Mac",
@@ -596,6 +599,8 @@ After setup, your Mac starts backing up right away.""",
 3. Click **Add Backup Disk**.
 4. Select your drive, then click **Set Up Disk**.
 5. During setup, turn on **Encrypt Backup**, then create a backup password.
+
+If your Mac asks whether to erase the drive, erasing wipes everything on it. Erase only if you do not need anything on it, or choose a different backup disk instead.
 
 Keep that password safe. You will need it to restore your files later. After setup, your Mac starts backing up right away.""",
              ]},

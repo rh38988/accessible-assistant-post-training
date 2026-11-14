@@ -92,9 +92,10 @@ Troubleshooting: if you only see a preview, check that the starting point is you
 2. Search for your sister's address and tap it.
 3. At the bottom left, tap **Directions**.
 4. Choose **Driving**.
-5. Tap **More** (the three dots), then tap **Edit stops**.
-6. Add the pharmacy as a stop.
-7. Tap **Done**.
+5. At the top right, tap **More**, then tap **Edit stops**.
+6. Add the pharmacy as a stop (you can add up to 9 stops including the final destination).
+7. If the pharmacy is listed after your sister's house, press and hold the **Reorder** icon next to it and drag it above.
+8. Tap **Done**.
 
 Maps will show the route with your stop in it. The best route is **blue** and other routes are gray.""",
              ]},
@@ -141,6 +142,7 @@ Troubleshooting: the Zoom Launcher plug-in may be not activated, disabled, incor
 That checkbox only shows up on some browsers. If you don't see it, your browser doesn't offer it, and you will need to click through the pop-up each time. If you use Safari, you have to choose to launch Zoom each time you join.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Zoom",
+             "sources": [{'title': 'Zoom Support: Joining a meeting with the invite link', 'url': 'https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065180', 'accessed': '2026-11-13'}, {'title': 'Zoom Support: Additional ways to join a meeting', 'url': 'https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060732', 'accessed': '2026-11-13'}],
              "messages": [
                  "My daughter sent me a Zoom link by email for a family call tonight. I'm on my computer. What do I do to get in?",
                  """Here is how.
@@ -154,8 +156,15 @@ If the link already includes the passcode, you can join more quickly.""",
                  "I clicked the link and a page came up, but the Zoom app never opened. What now?",
                  """That can happen when the **Zoom Launcher plug-in** in your browser is turned off, set up wrong, or failed to run.
 
-1. Check whether the plug-in is turned on in your browser. If it is turned off, turn it back on.
-2. Then click the link in your email again.
+If you can't get the app to open, you can join from your web browser instead.
+
+1. Click the link in your email again.
+2. In the pop-up that asks you to open or download the app, click **Cancel**.
+3. At the bottom of the page, click **join from your browser**.
+4. Click **Allow** so Zoom can use your microphone and camera.
+5. Type your name, then click **Join**.
+
+If you don't see **join from your browser**, the meeting host may need to turn that link on.
 
 If you use Safari, it no longer supports most plug-ins, so you have to choose to launch Zoom each time you join.""",
              ]},
@@ -387,6 +396,7 @@ Most changes happen right away. If an app still looks the same, you may need to 
 Charge to 100% for the day: if Optimized Battery Charging is active, touch and hold its Lock Screen notification, then tap Charge Now. On iPhone 15 and later you can also set the charge limit to 100%. Notification shows when the iPhone will be fully charged. It needs at least 14 days to learn habits, delays past 80% only when it predicts a long charging session.""",
         "examples": [
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{'title': "Apple Support: If your iPhone or iPod touch won't charge", 'url': 'https://support.apple.com/en-ca/108805', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Charging your iPhone (Optimized Battery Charging and charge limit)', 'url': 'https://support.apple.com/en-ca/108055', 'accessed': '2026-11-13'}],
              "messages": [
                  """My iPhone has been sitting at 80% since last night and I'm leaving for the airport in a half hour and I need it full. I don't want to go digging through settings or change anything for good. It's just for today. What can I tap?""",
                  """You can charge it fully just for today, without changing any settings.
@@ -395,9 +405,10 @@ Charge to 100% for the day: if Optimized Battery Charging is active, touch and h
 2. **Touch and hold** the notification from **Optimized Battery Charging**. It says when your iPhone will be fully charged.
 3. Tap **Charge Now**.
 
-Your iPhone will keep charging past 80%. Optimized Battery Charging stays on for other days.""",
+Your iPhone will keep charging past 80%.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{'title': "Apple Support: If your iPhone or iPod touch won't charge", 'url': 'https://support.apple.com/en-ca/108805', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Charging your iPhone (Optimized Battery Charging and charge limit)', 'url': 'https://support.apple.com/en-ca/108055', 'accessed': '2026-11-13'}],
              "messages": [
                  "I have an iPhone 14. I want to switch off whatever makes it wait at 80% when it's charging. Where is it?",
                  """It is probably **Optimized Battery Charging**. Here is how to turn it off.
@@ -412,7 +423,9 @@ Turning it off can make the battery wear out faster.""",
 
 1. Open **Settings** and tap **Battery**.
 2. Tap **Charging**.
-3. Choose an option on the slider for the charge limit. Optimized Battery Charging can only be on when the limit is 100%, so set it **below 100%** to turn it off.
+3. On the slider, if the limit is below 100%, move it to 100% so the phone can charge fully.
+
+You can choose a limit between 80 and 100 percent, in 5 percent steps. Even at 100%, Optimized Battery Charging may still delay charging past 80% in some situations. Turning off charging optimizations can wear the battery out faster.
 
 For just one day, you can also touch and hold the Optimized Battery Charging notification on your Lock Screen and tap **Charge Now**.""",
              ]},
@@ -510,15 +523,16 @@ Troubleshooting: location reminders don't work: turn on Location Services under 
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
                  """My iPhone is on silent almost all the time because I can't stand the noise. But I have a heart pill I must take at noon and I need the reminder to actually make a sound anyway. Can a reminder be loud even on silent? I want one for today at noon.""",
-                 """Yes, if your iPhone has **iOS 26.2 or later**, you can mark a reminder as **Urgent**. Urgent alarms sound even when your iPhone is silenced.
+                 """Yes, you can mark a reminder as **Urgent**. Urgent alarms sound even when your iPhone is silenced. This needs **iOS 26.2 or later** and iCloud Reminders turned on.
 
 1. Open the **Reminders** app.
 2. Tap **+ New Reminder** and type **Take heart pill**.
 3. Tap the **Date and Time** button, then tap **Custom** and choose today at **12:00 PM**.
-4. Tap the **Info** button.
+4. Tap the reminder, then tap **Info**.
 5. Turn on **Urgent** under **Date & Time**.
+6. Then open **Settings**, tap **Apps**, tap **Reminders**, and under **Allow Reminders to Access** turn on **Alarms**.
 
-You also need iCloud Reminders set up to mark a reminder urgent.""",
+Urgent alarms only sound on the iPhone that Find My uses as your location.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -538,7 +552,7 @@ Your iPhone reminds you when you leave that place.""",
 1. Open **Settings** and tap **Privacy & Security**.
 2. Turn on **Location Services**.
 
-If you picked your home or work, also make sure that address is on your card. Open **Contacts**, tap **My Card**, tap **Edit**, add the address, and tap **Done**.""",
+If you set the reminder by asking Siri for your home or work, your address must be on My Card: open **Contacts**, tap **My Card**, tap **Edit**, add the address, and tap **Done**.""",
              ]},
         ],
     },

@@ -34,7 +34,7 @@ If no small picture appears, the screenshot was saved on your desktop.""",
 3. Drag to cover the part with your appointment time.
 4. Let go of the button to take the screenshot.
 
-The picture is saved on your desktop unless a small picture appears in the corner, which you can click to edit it.
+A small picture may appear in the corner of the screen. You can click it to edit the screenshot, or wait and the screenshot is saved on your desktop.
 
 If you change your mind, press **Esc** before you let go and nothing is saved.""",
              ]},
@@ -214,15 +214,13 @@ If you do not see the icon, select **Start**, then select **Microsoft Store**.""
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
                  "I got an app from the Microsoft Store last year on my old computer and now I have a new Windows 11 PC. I don't want to buy it again. How do I put it on this one?",
-                 """You can install it again from your Library, with no new purchase.
+                 """You can look for it in your Library and download it again.
 
 1. Select the **Microsoft Store** icon on the taskbar.
 2. Select **More info** next to your account picture.
 3. Select **My Library**.
 4. Find your app. If it has a **Download** icon next to it, it has not been downloaded on this PC yet.
 5. Select the **Download** icon.
-
-Make sure you are signed in with the same Microsoft account you used before.
 
 If you do not see the app, look in **Order history** for apps you have not installed.""",
              ]},

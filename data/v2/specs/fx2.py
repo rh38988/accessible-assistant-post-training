@@ -187,13 +187,13 @@ Your nephew is right to be careful. If you want to report the website, you can d
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "any",
              "messages": [
                  """I don't have a credit card, only a debit card and some cash. A person selling concert tickets online says they only take a payment app like Zelle, and that tickets are going fast. Is that okay? I really can't use a credit card.""",
-                 """**Please be careful.** When a seller says a payment app is the only way to pay, that is a warning sign of a scam.
+                 """**Please don't pay this seller with Zelle.** A seller who says you can only pay with a payment app is probably a scammer. Tickets going fast is the kind of pressure scammers use.
 
 1. Don't send money to anyone who says you can only pay one specific way, whatever reason they give.
 2. Search online for the seller's name with words like "review," "scam," or "complaint."
-3. Paying by credit card is safest, because it lets you dispute charges. I don't have advice on other payment methods, so if you can't use a credit card, it's safer to skip a seller who insists on a payment app.
+3. The FTC suggests a credit card when possible because it lets you dispute charges. Since you can't use one, the safe choice is to skip a seller who insists on a payment app.
 
-For more tips, you can visit **ftc.gov/scams**.""",
+You can report the seller at **ReportFraud.ftc.gov**. For more tips, you can visit **ftc.gov/scams**.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -307,7 +307,7 @@ Not covered: Control Center volume.""",
                  """That happens because the volume buttons change **media volume** while you are watching videos, listening to music, or playing games. They change the ringer volume only when you aren't using other apps.
 
 1. Close the video app and go to your Home Screen, so no other app is in use.
-2. Press the **volume up** button on the side of the phone a few times.
+2. Press the **volume up** button a few times.
 
 Now the buttons raise the ringer volume. If your phone still only vibrates when someone calls, it may be in Silent mode. Tell me and I'll show you how to check.""",
              ]},
@@ -323,7 +323,7 @@ When no other app is in use, these buttons change the ringer volume. If your pho
                  "I did that but it still only buzzes when someone calls. I see something orange on the side of the phone.",
                  """The orange means your iPhone is in **Silent mode**. In Silent mode it vibrates for calls instead of ringing.
 
-1. Find the small **Ring/Silent switch** above the volume buttons.
+1. Find the **Ring/Silent switch**, where you see the orange.
 2. Flip it so the orange is no longer showing.
 3. Press the **volume up** button a few times.
 
@@ -345,9 +345,9 @@ To silence an incoming call's ring press a volume button. Some steps need Androi
                  """On older Android phones you use the small arrow.
 
 1. Press a **volume button** on the side of the phone.
-2. Tap the **Down arrow** that appears next to the slider.
+2. At the right, tap the **Down arrow**.
 3. Find **Ring** in the list.
-4. Slide it to the right to make the ring louder.
+4. Slide the **Ring** level to where you want it.
 
 The Down arrow is where older versions show Media, Ring, and Alarm.""",
              ]},
@@ -365,9 +365,9 @@ If you don't see the **Menu** icon, tell me what you see and I'll help you find 
                  """That's normal on older Android versions. Use the arrow instead.
 
 1. Press a **volume button** again.
-2. Tap the **Down arrow**.
+2. At the right, tap the **Down arrow**.
 3. Choose **Ring**.
-4. Slide it to the right to make it louder.""",
+4. Slide the **Ring** level to where you want it.""",
              ]},
         ],
     },
@@ -407,14 +407,15 @@ You may be asked to enter or confirm your address for emergency services. Wi-Fi 
 
 You may be asked to enter or confirm an address for emergency services. Your carrier must offer Wi-Fi Calling.""",
                  "I tried but I can't get it to turn on.",
-                 """Let's check the basics first.
+                 """Let's try these in order.
 
-1. Make sure your carrier offers Wi-Fi Calling.
-2. Make sure your iPhone software is up to date.
-3. If it still won't turn on, contact your carrier.
-4. If your carrier can't fix it, restart your iPhone, try a different Wi-Fi network, and then turn Wi-Fi Calling off and on again.
+1. Check that your carrier offers Wi-Fi Calling and that your iPhone software is up to date.
+2. Open **Settings**, tap **Cellular**, tap **Wi-Fi Calling**, and make sure **Wi-Fi Calling on This iPhone** is on.
+3. Restart your iPhone.
+4. Connect to a different Wi-Fi network, because some networks don't work with Wi-Fi Calling.
+5. Turn Wi-Fi Calling off, then on again.
 
-Some Wi-Fi networks don't work with Wi-Fi Calling.""",
+Wait about two minutes between steps. If it still won't turn on, contact your carrier.""",
              ]},
         ],
     },
@@ -479,6 +480,7 @@ Saving: snips save automatically to the Screenshots folder; to change it select 
 The snip saves automatically to your **Screenshots** folder. A faster way next time is to press the **Windows logo key + Shift + S**, which opens the snip overlay.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
+             "sources": [{'title': 'Microsoft Support: Use Snipping Tool to capture screenshots', 'url': 'https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots', 'accessed': '2026-11-13'}, {'title': 'Microsoft Support: Keyboard shortcut for Print Screen', 'url': 'https://support.microsoft.com/en-us/windows/experience/keyboard-shortcut-for-print-screen', 'accessed': '2026-11-13'}],
              "messages": [
                  "How can I take a picture of my whole screen on my Windows 11 computer?",
                  """You can use **Snipping Tool**.
@@ -491,8 +493,9 @@ It captures the whole screen right away.""",
                  "OK it took the picture but I can't tell where it went. How do I find it?",
                  """Snips are saved automatically in your **Screenshots** folder.
 
-1. Look in your **Screenshots** folder.
-2. If you want another copy somewhere else, select **Save as** in Snipping Tool, choose a location and a name, then select **Save**.
+1. Open **File Explorer** from the taskbar.
+2. On the left side, select the **Pictures** folder, then select **Screenshots**.
+3. If you want another copy somewhere else, select **Save as** in Snipping Tool, choose a location and a name, then select **Save**.
 
 To change where snips are saved, select **See More** in Snipping Tool, then **Settings**.""",
              ]},
@@ -515,7 +518,7 @@ Troubleshooting: network not listed, wait for the list to reload. Reset connecti
 2. Tap **Network & internet**, then **Internet**.
 3. At the bottom of the list, tap **Add network**.
 4. Type the network name your son gave you.
-5. Enter the security details if asked.
+5. Enter the security details your son gave you, including the password.
 6. Tap **Advanced options**, and under **Hidden Network** select **Yes**.
 7. Tap **Save**.
 
@@ -533,11 +536,13 @@ Once connected, the network is labeled **Saved**, and your phone joins it automa
 
 When you're connected, the network shows as **Saved**.""",
                  "I don't see her network in the list at all.",
-                 """Try this.
+                 """Her network may be hidden. Ask her for the network name and the password.
 
-1. Wait a few seconds for the list to reload.
-2. If it still isn't there, her network may be hidden. Ask her for the network name, then at the bottom of the list tap **Add network** and enter the name.
-3. Tap **Save**.""",
+1. Open the **Settings** app, tap **Network & internet**, then tap **Internet**.
+2. Scroll to the bottom of the list and tap **Add network**.
+3. Type the network name, then enter the security details (the password).
+4. Tap **Advanced options**, and under **Hidden Network** select **Yes**.
+5. Tap **Save**.""",
              ]},
         ],
     },
