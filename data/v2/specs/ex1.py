@@ -61,11 +61,11 @@ If you're not sure, tell me the name on the phone or box.""",
 
 1. Open the **Messages** app.
 2. Tap your conversation with your sister. If you haven't texted her before, start a new conversation with her.
-3. Tap the **Gallery** icon.
+3. Tap **Gallery**.
 4. Tap the picture of your garden.
-5. Tap the **Send** icon, the paper-plane shaped button.
+5. Tap **Send**.
 
-If you don't see a Gallery icon, your phone may use a different messaging app. Tell me what icons you see next to the typing box and I'll guide you from there.""",
+If you don't see **Gallery**, tell me what you see on the screen and I'll guide you from there.""",
                 ],
             },
         ],
@@ -146,7 +146,6 @@ The next steps depend on your computer. **Are you printing from a Windows comput
 3. Make sure Wi-Fi is turned on.
 4. Tap **SmithHome** in the list.
 5. Type the password from the card if it asks.
-6. Confirm the connection.
 
 When you're connected, you'll see a blue tick next to **SmithHome**, and the Wi-Fi icon at the top corner of the screen.
 
@@ -167,7 +166,6 @@ If you don't see SmithHome in the list, move closer to the internet box in her h
 3. Make sure Wi-Fi is turned on.
 4. Tap **SmithHome** in the list.
 5. Type the password from the card if it asks.
-6. Confirm the connection.
 
 When you're connected, you'll see a blue tick next to **SmithHome**, and the Wi-Fi icon at the top corner of the screen.
 
@@ -202,8 +200,8 @@ If SmithHome still doesn't show up, tell me which network names you do see.""",
                     'Everything on my laptop screen is too small. It has Windows 11. How do I make it all bigger?',
                     """You can make everything on the screen bigger in Settings. It takes about two minutes, and you can change it back anytime.
 
-1. Click the **Start** button (the Windows logo).
-2. Click **Settings**. Its icon is a gear.
+1. Click the **Start** button.
+2. Click **Settings**.
 3. Click **Display**.
 4. Under **Scale & layout**, open the **Scale** dropdown.
 5. Choose a bigger percentage.
@@ -243,10 +241,10 @@ If only the **words** are too small, there's another setting just for text. Tell
                 "existing": True, "id": 'pilot-010', "suffix": 'p', "scenario": 'direct',
                 "style": 'plain', "specification": 'fully_specified', "platform": 'iOS',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'OATS',
-                "sources": [{'title': 'Apple Support: Change your Apple Account password', 'url': 'https://support.apple.com/en-mz/101567', 'accessed': '2026-10-24'}, {'title': 'Apple Support: If you forgot your Apple Account password', 'url': 'https://support.apple.com/en-us/ht201487', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Apple Support: Change your Apple Account password', 'url': 'https://support.apple.com/en-mz/101567', 'accessed': '2026-10-24'}, {'title': 'Apple Support: If you forgot your Apple Account password', 'url': 'https://support.apple.com/en-us/ht201487', 'accessed': '2026-10-24'}, {'title': 'Apple Support: Recognize and avoid social engineering schemes including phishing messages, phony support calls, and other scams', 'url': 'https://support.apple.com/en-us/102568', 'accessed': '2026-11-13'}],
                 "messages": [
                     'I forgot my Apple ID password. I can still open my iPhone with my passcode. How do I make a new password?',
-                    """Good news: because you can still open your iPhone, you can make a new password right on the phone. (Apple calls this your Apple Account.)
+                    """Good news: you can make a new password right on your iPhone if it is already signed in to your Apple Account with two-factor authentication. (Apple calls this your Apple Account.)
 
 1. Open the **Settings** app.
 2. Tap **your name**.
@@ -257,7 +255,7 @@ If only the **words** are too small, there's another setting just for text. Tell
 
 You may have to wait one hour before you can change it.
 
-Write the new password down and keep it somewhere safe at home. Never give it to anyone who calls or texts you offering help with your account.
+Never give it to anyone who calls or texts you offering help with your account.
 
 If **Change Password** doesn't appear, tell me what you see and I'll help with another way.""",
                 ],
@@ -313,7 +311,7 @@ If it says there isn't enough space, tap **Continue** to let it remove some apps
 2. Select the photo **birthday.jpg**. It is in your Pictures folder.
 3. Click **Open**.
 
-You'll see the file appear in your email. If the photo is bigger than 25 MB, Gmail puts a Google Drive link in the email instead.""",
+You'll see the file appear in your email. In a personal Gmail account, if the attachments are bigger than 25 MB in total, Gmail adds a Google Drive link to the email instead of the file.""",
                 ],
             },
         ],
@@ -335,7 +333,7 @@ You'll see the file appear in your email. If the photo is bigger than 25 MB, Gma
                     """Great. Your iPhone can save your photos to iCloud, Apple's online storage, so they're safe even if the phone is lost or broken.
 
 1. Open the **Settings** app.
-2. Tap **your name** at the top.
+2. Tap **your name**.
 3. Tap **iCloud**.
 4. Tap **Photos**.
 5. Turn on the switch next to **Sync this iPhone**.

@@ -138,7 +138,7 @@ Only open QR codes you trust. If a QR code asks you to pay or sign in, double-ch
 2. Point the lens at the code so the whole code is on the screen. You don't need to take a photo.
 3. Wait a moment for a bubble or link to appear, then tap it.
 
-If nothing appears, tap the **Settings** icon in Camera, tap **More settings**, and make sure **Camera scan suggestions** is on.
+If nothing appears, tap **Settings** in Camera, tap **More settings**, and make sure **Camera scan suggestions** is on.
 
 You can also swipe down from the top and tap **Scan QR code**.
 
@@ -159,7 +159,7 @@ Only open QR codes you trust. If a QR code asks you to pay or sign in, double-ch
                 "sources": [{'title': 'Apple Support: Set up your Medical ID in the Health app on your iPhone', 'url': 'https://support.apple.com/en-us/105072', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I set up Medical ID on my iPhone so paramedics can see my allergies?',
-                    """Medical ID lets first responders see your important health information from the Lock Screen, without your passcode. It takes about five minutes.
+                    """Medical ID lets first responders see your important health information from the Lock Screen, without your passcode.
 
 1. Open the **Health** app.
 2. Tap **Summary**.
@@ -207,7 +207,7 @@ Keep in mind that anyone holding your phone can see this information, so only ad
                     'iPhone',
                     """Thanks. On iPhone, this is called Medical ID.
 
-Medical ID lets first responders see your important health information from the Lock Screen, without your passcode. It takes about five minutes.
+Medical ID lets first responders see your important health information from the Lock Screen, without your passcode.
 
 1. Open the **Health** app.
 2. Tap **Summary**.
@@ -416,7 +416,7 @@ If you don't see **Notifications** for that app, the app may not be able to send
 **Option 2, from a notification:**
 1. When a notification from the app shows up, swipe down from the top of the screen.
 2. Press and hold the notification, then tap the settings icon.
-3. Turn off notifications.
+3. Turn off **All notifications**.
 
 Menu names can vary a little on different phones.""",
                 ],
@@ -463,7 +463,7 @@ You can turn them off for just that app. It takes less than a minute.
 **Option 2, from a notification:**
 1. When a notification from the app shows up, swipe down from the top of the screen.
 2. Press and hold the notification, then tap the settings icon.
-3. Turn off notifications.
+3. Turn off **All notifications**.
 
 Menu names can vary a little on different phones.""",
                 ],
@@ -486,7 +486,7 @@ Menu names can vary a little on different phones.""",
 
 **With the mouse:**
 1. At the top right of Chrome, click **More**.
-2. Next to **Zoom**, click **+** to make the page bigger. Click **-** to make it smaller.
+2. Next to **Zoom**, click **Zoom in** to make the page bigger. Click **Zoom out** to make it smaller.
 
 **With the keyboard:**
 - Hold **Ctrl** and press **+** to zoom in, or **-** to zoom out. (On a Mac, use **Command** instead of Ctrl.)
@@ -529,7 +529,7 @@ You can zoom in on the page. It takes a few seconds.
 
 **With the mouse:**
 1. At the top right of Chrome, click **More**.
-2. Next to **Zoom**, click **+** to make the page bigger. Click **-** to make it smaller.
+2. Next to **Zoom**, click **Zoom in** to make the page bigger. Click **Zoom out** to make it smaller.
 
 **With the keyboard:**
 - Hold **Ctrl** and press **+** to zoom in, or **-** to zoom out. (On a Mac, use **Command** instead of Ctrl.)
@@ -551,9 +551,9 @@ If you want every website bigger from now on, click **More**, then **Settings**,
                 "sources": [{'title': 'Microsoft Support: Find my downloads in Windows', 'url': 'https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I downloaded a form from a website on my Windows computer. Where did it go?',
-                    """Files you download usually go to your **Downloads** folder. Here's how to find it.
+                    """Here's how to open your **Downloads** folder.
 
-1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+1. Open **File Explorer** from the Start menu or the taskbar.
 2. In the list on the left, click **Downloads** (under **Quick access**).
 3. Your downloaded form should be in the list.
 
@@ -577,9 +577,9 @@ If you don't see **Downloads**, click **Home** on the left, click the up arrow, 
                 "sources": [{'title': 'Microsoft Support: Find my downloads in Windows', 'url': 'https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8', 'accessed': '2026-10-24'}],
                 "messages": [
                     "My insurance company emailed me a link to download my card as a PDF and I clicked it and something happened at the bottom of the screen but then it disappeared and now I have no idea where the card is. It's a Windows computer.",
-                    """It's most likely in your **Downloads** folder. Here's how to find it.
+                    """Here's how to open your **Downloads** folder.
 
-1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+1. Open **File Explorer** from the Start menu or the taskbar.
 2. In the list on the left, click **Downloads** (under **Quick access**).
 3. Your downloaded insurance card PDF should be in the list.
 
@@ -597,9 +597,9 @@ If you don't see **Downloads**, click **Home** on the left, click the up arrow, 
                     'Windows computer',
                     """Thanks.
 
-Files you download usually go to your **Downloads** folder. Here's how to find it.
+Here's how to open your **Downloads** folder.
 
-1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+1. Open **File Explorer** from the Start menu or the taskbar.
 2. In the list on the left, click **Downloads** (under **Quick access**).
 3. Your downloaded file should be in the list.
 
@@ -625,8 +625,8 @@ If you don't see **Downloads**, click **Home** on the left, click the up arrow, 
 1. Click the **Start** button, then **Settings**.
 2. Click **Accessibility**.
 3. Click **Mouse pointer & touch**.
-4. Change the **size** to make the pointer bigger.
-5. You can also change the pointer's **color** so it stands out more.
+4. Change the size of the mouse pointer to make it bigger.
+5. You can also change the color of the mouse pointer so it stands out more.
 
 Try a few sizes until it's easy to find.""",
                 ],
@@ -667,8 +667,8 @@ You can make the pointer bigger and easier to spot. It takes about a minute.
 1. Click the **Start** button, then **Settings**.
 2. Click **Accessibility**.
 3. Click **Mouse pointer & touch**.
-4. Change the **size** to make the pointer bigger.
-5. You can also change the pointer's **color** so it stands out more.
+4. Change the size of the mouse pointer to make it bigger.
+5. You can also change the color of the mouse pointer so it stands out more.
 
 Try a few sizes until it's easy to find.""",
                 ],
@@ -687,7 +687,7 @@ Try a few sizes until it's easy to find.""",
                 "sources": [{'title': 'Google Account Help: Turn on 2-Step Verification (computer)', 'url': 'https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}, {'title': 'Google Account Help: How to recover your Google Account or Gmail', 'url': 'https://support.google.com/accounts/answer/7682439?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I turn on 2-Step Verification for my Google account on my computer?',
-                    """2-Step Verification adds a second check when you sign in, so a password alone isn't enough to get into your account. Setting it up takes about five minutes.
+                    """2-Step Verification adds a second check when you sign in, so a password alone isn't enough to get into your account.
 
 1. Go to **myaccount.google.com** and sign in.
 2. Click **Security & sign-in**.
@@ -730,11 +730,11 @@ If you use a work or school account, your administrator may control this setting
                 "sources": [{'title': 'Google Account Help: Turn on 2-Step Verification (computer)', 'url': 'https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}, {'title': 'Google Account Help: How to recover your Google Account or Gmail', 'url': 'https://support.google.com/accounts/answer/7682439?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I make my email account more secure',
-                    'Good question. Which email do you use, for example **Gmail**? And are you on a **computer** or a **phone**?',
+                    'Good question. Which email do you use, for example **Gmail**, **Outlook**, or **Yahoo**?',
                     'Gmail, on my computer',
                     """Thanks. A strong next step for Gmail is turning on 2-Step Verification.
 
-2-Step Verification adds a second check when you sign in, so a password alone isn't enough to get into your account. Setting it up takes about five minutes.
+2-Step Verification adds a second check when you sign in, so a password alone isn't enough to get into your account.
 
 1. Go to **myaccount.google.com** and sign in.
 2. Click **Security & sign-in**.
@@ -765,7 +765,7 @@ If you use a work or school account, your administrator may control this setting
                     """Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but a link can carry malware.
 
 **Warning signs:**
-- It says your account is **locked** or has a **problem**.
+- It says there is a **problem** with your account.
 - It pushes you to **click a link** or update your information.
 - It uses a **general greeting** like "Dear Customer" instead of your name.
 
@@ -812,7 +812,7 @@ If you already clicked a link or opened an attachment, update your computer's se
 Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but a link can carry malware.
 
 **Warning signs:**
-- It says your account is **locked** or has a **problem**.
+- It says there is a **problem** with your account.
 - It pushes you to **click a link** or update your information.
 - It uses a **general greeting** like "Dear Customer" instead of your name.
 
@@ -841,8 +841,8 @@ If you already clicked a link or opened an attachment, update your computer's se
                     'I keep getting spam text messages. How do I report them?',
                     """Reporting spam texts helps your phone company block similar messages. Here's how.
 
-1. **Use your phone's report option.** Most phones have a way to mark a text as **junk** or **spam** right in the messaging app.
-2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
+1. **Use your phone's report option.** Look for the option to report **junk** or **spam**.
+2. **Or forward it to 7726.** Copy the message and send it to **7726**. Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
 
 **While you're at it:**
@@ -870,8 +870,8 @@ If you already clicked a link or opened an attachment, update your computer's se
                     'Every few days I get a text saying my toll bill is overdue or my account needs verifying. I never click them but I want to do something so they stop.',
                     """Good for you for not clicking. Reporting them helps your phone company block more of these. Here's how:
 
-1. **Use your phone's report option.** Most phones have a way to mark a text as **junk** or **spam** right in the messaging app.
-2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
+1. **Use your phone's report option.** Look for the option to report **junk** or **spam**.
+2. **Or forward it to 7726.** Copy the message and send it to **7726**. Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
 
 **While you're at it:**
@@ -893,8 +893,8 @@ If you already clicked a link or opened an attachment, update your computer's se
 
 Reporting spam texts helps your phone company block similar messages. Here's how.
 
-1. **Use your phone's report option.** Most phones have a way to mark a text as **junk** or **spam** right in the messaging app.
-2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
+1. **Use your phone's report option.** Look for the option to report **junk** or **spam**.
+2. **Or forward it to 7726.** Copy the message and send it to **7726**. Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
 
 **While you're at it:**

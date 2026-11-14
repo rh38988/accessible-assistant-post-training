@@ -48,7 +48,7 @@ Banks must make deposited funds available quickly, so seeing the money in your a
 3. Do not send any of the money back, no matter how urgent the texts sound.
 4. Report it to the Federal Trade Commission at reportfraud.ftc.gov.
 
-If you want to know more about the check, you do not need anyone's permission to report it.""",
+Even if you see the funds in your account, that does not mean the check is good.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -60,7 +60,7 @@ If you want to know more about the check, you do not need anyone's permission to
 3. Tell the store where you bought the cards.
 4. Report it to the Federal Trade Commission at reportfraud.ftc.gov.
 
-Because the check was fake, you may have to repay the bank, so it is worth telling them what happened.""",
+Because the check was fake, you may have to repay the bank.""",
              ]},
             {"suffix": "f", "scenario": "helper", "style": "plain", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -145,7 +145,7 @@ Never transfer your deed to anyone without first talking to an attorney or someo
                  "I already signed a contract at my kitchen table with a door to door contractor and gave him a deposit. Now I think he was pushy and I'm worried. What can I do?",
                  """You still have steps you can take.
 
-1. Look in your contract for a written statement of your right to cancel within three business days. A contract signed in your home should include one.
+1. Look in your contract for a written statement of your right to cancel. A contract signed in your home should include one, and you have three business days to cancel, so act quickly.
 2. Try to settle the problem with the contractor directly.
 3. Follow up any phone call with a letter by certified mail, and ask for a return receipt.
 4. Keep notes and copies of all letters and documents.
@@ -159,7 +159,7 @@ Do not pay anything more until the work is finished and you are satisfied.""",
                  """Here is what to share with her, kindly and simply.
 
 1. She does not have to decide right away. Pressure for an immediate decision is a sign of a scam.
-2. Do not pay the full cost up front, and never make the final payment until the work is finished and she is satisfied.
+2. Do not pay the full cost up front, and never make the final payment until the work is finished and she is satisfied. Some states limit how much a contractor can ask for as a down payment, so check the rules with your state or local consumer agency before she pays any deposit.
 3. Use only a licensed and insured contractor. Help her confirm the license with the state or county, and ask for proof of insurance.
 4. Get recommendations from people she knows and trusts, and more than one written estimate.
 
@@ -174,7 +174,7 @@ If something goes wrong, her state attorney general or local consumer protection
 2. Ask people you know and trust for recommendations.
 3. Check with your local Home Builders Association and consumer protection officials for complaints. Search the company name with "scam," "review," or "complaint."
 4. Get several written estimates. Do not automatically pick the lowest one.
-5. Read the contract carefully. It should show the contractor's name, address, phone, license number, and start and finish dates. Write in any spoken promises and fill in all blank spaces.
+5. Read the contract carefully. It should show the contractor's name, address, phone, license number, start and finish dates, and a written statement of your right to cancel. Write in any spoken promises and fill in all blank spaces.
 
 Do not pay everything up front.""",
              ]},
@@ -210,13 +210,14 @@ Once the collector gets your dispute, it must stop trying to collect until it se
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "any",
              "messages": [
                  "A man keeps calling me at 7 in the morning and again at night, six times this week, about some credit card I don't have. He says if I don't pay he will have me arrested. I'm scared. I don't know whose debt this is and I don't want to just pay to make it stop. What are my rights?",
-                 """You do not have to pay, and a collector is not allowed to treat you this way.
+                 """A collector is not allowed to treat you this way, and you can dispute a debt you do not recognize.
 
 1. Collectors cannot threaten arrest or legal action they will not take, and cannot call before 8 a.m. or after 9 p.m. unless you agree.
 2. They also cannot harass you or call more than seven times in seven days.
 3. Do not share personal or financial information until you get validation information in writing.
 4. Send a letter within 30 days of getting it saying you do not owe the money, by certified mail with a return receipt.
-5. Report the calls to the FTC at reportfraud.ftc.gov or the CFPB at cfpb.gov/complaint.""",
+5. If you want the calls to stop, mail the collector a letter asking it to stop contacting you. Keep a copy and send it by certified mail with a return receipt.
+6. Report the calls to the FTC at reportfraud.ftc.gov or the CFPB at cfpb.gov/complaint.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -247,7 +248,7 @@ Once they receive your dispute, they must stop collecting until they send writte
                  "A debt collector called my mother's friend and also called her daughter and talked about the debt. The friend says she doesn't owe it. How can I help her?",
                  """Help her avoid paying until the debt is proven, and know that a collector may not discuss her debt with her daughter.
 
-1. A collector cannot discuss a debt with anyone other than her or her spouse.
+1. A collector generally cannot discuss a debt with anyone other than her or her spouse.
 2. Help her ask for a written validation notice.
 3. Within 30 days of getting it, help her send a dispute letter by certified mail with a return receipt, saying she does not owe the money and asking for verification. Keep a copy.
 4. Report the collector to the FTC at reportfraud.ftc.gov, the CFPB at cfpb.gov/complaint, or her state attorney general.
@@ -262,7 +263,7 @@ She should not share personal information until the validation notice arrives.""
 1. Harass or threaten you, or use obscene or profane language.
 2. Call more than seven times in seven days, or contact you before 8 a.m. or after 9 p.m. unless you agree.
 3. Lie about the amount owed, pretend to be an attorney or a government representative, or threaten arrest or legal action they will not take.
-4. Reveal your debt publicly, or discuss it with anyone other than you or your spouse.
+4. Reveal your debt publicly, or generally discuss it with anyone other than you or your spouse.
 
 To report one, go to the FTC at reportfraud.ftc.gov, the CFPB at cfpb.gov/complaint, or your state attorney general's office.""",
              ]},
@@ -314,7 +315,7 @@ If the agency says you owe something, you can sort it out with them directly."""
                  """I would not tap it, even once. Driving on a toll road does not make the text real.
 
 1. Do not click links in unexpected texts or respond to them.
-2. Find your state's tolling agency yourself, with a phone number or website you know is real, not the one in the text. A quick search on your phone is fine.
+2. Find your state's tolling agency yourself, with a phone number or website you know is real, not the one in the text.
 3. Ask the agency whether you owe a toll.
 4. Report the text with "report junk," or forward it to 7726 (SPAM), then delete it.
 
@@ -410,14 +411,18 @@ It is normal to feel nervous, but you did the right thing by asking.""",
 Please tell your family. Letting friends and family know about IRS imposters helps keep everyone safe.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
+             "sources": [{"title": "FTC Consumer Advice: Those (not really) IRS calls", "url": "https://consumer.ftc.gov/node/298362", "accessed": "2026-11-13"}, {"title": "FTC Consumer Advice: What to know about identity theft", "url": "https://consumer.ftc.gov/articles/what-know-about-identity-theft", "accessed": "2026-11-13"}],
              "messages": [
                  "A person claiming to be from the IRS called, and I gave them my Social Security number and bank name before I got suspicious. What do I do now?",
                  """Stop talking to them and do not give anything more.
 
 1. Hang up if they call again. Do not give more personal or financial information.
 2. Do not send money by wire transfer, prepaid card, or gift card.
-3. If you are in doubt, call the IRS directly at 1-800-829-1040.
-4. Report the call to TIGTA at tigta.gov and to the FTC at ftc.gov/complaint.
+3. Go to IdentityTheft.gov to report it to the Federal Trade Commission. You will get a free personal recovery plan with next steps.
+4. Contact one of the three credit bureaus to place a free, one-year fraud alert. That company must tell the other two.
+5. Check your bank account statement for withdrawals you did not make, since those could be a sign of identity theft.
+6. Get your free credit reports to monitor your credit.
+7. Report the call to TIGTA at tigta.gov and to the FTC at ftc.gov/complaint.
 
 For more on stopping imposter scams, visit ftc.gov/imposters.""",
              ]},
@@ -482,7 +487,7 @@ Jurors who miss jury duty are usually contacted by the court Clerk's Office, and
 2. Contact your local court clerk's office or U.S. Marshals Service office yourself. Find court contact information at uscourts.gov/court-locator.
 3. Tell the Clerk of Court's office of the U.S. District Court in your area about the message.
 
-Scammers use names and hearing times to seem real, so those details do not prove anything.""",
+Scammers use specific names and designated court hearing times.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -491,22 +496,24 @@ Scammers use names and hearing times to seem real, so those details do not prove
 
 1. Do not send money or give him the information he wants.
 2. Find your local court's real contact information at uscourts.gov/court-locator.
-3. Contact your local court clerk's office or U.S. Marshals Service office.
-4. Tell the Clerk of Court's office of the U.S. District Court in your area.
+3. Contact your local court clerk's office or U.S. Marshals Service office, and tell the Clerk of Court's office of the U.S. District Court in your area about the call.
 
 Knowing your name and a hearing time is how scammers seem credible. A judge, not a caller, decides any fine.""",
              ]},
             {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "any",
+             "sources": [{"title": "U.S. Courts: Court Scams Affect Citizens Nationwide", "url": "https://www.uscourts.gov/node/14024", "accessed": "2026-11-13"}, {"title": "FTC Consumer Advice: What to do if you were scammed", "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed", "accessed": "2026-11-13"}],
              "messages": [
                  "I already wired money to a man who said I missed jury duty. Now I think it was a scam. What do I do?",
                  """I am sorry. Please act right away.
 
-1. Contact your local court clerk's office or U.S. Marshals Service office right away and tell them what happened.
-2. Find the court's contact information at uscourts.gov/court-locator.
-3. Notify the Clerk of Court's office of the U.S. District Court in your area.
-4. If he calls again, hang up and do not give him any information.
+1. Report it to the wire transfer company immediately, such as Western Union or MoneyGram, and ask them to refund your money.
+2. Contact your local court clerk's office or U.S. Marshals Service office right away and tell them what happened.
+3. Find the court's contact information at uscourts.gov/court-locator.
+4. Notify the Clerk of Court's office of the U.S. District Court in your area.
+5. Report it to the FTC at ReportFraud.ftc.gov.
+6. If he calls again, hang up and do not give him any information.
 
-A federal court will never demand immediate payment by telephone or money wire service.""",
+Your money might be gone already, but it is always worth asking the company if there is a way to get it back. A federal court will never demand immediate payment by telephone or money wire service.""",
              ]},
             {"suffix": "f", "scenario": "helper", "style": "plain", "specification": "fully_specified", "platform": "any",
              "messages": [
@@ -553,7 +560,7 @@ The page does not address what to do if you already paid.""",
                  "I got an email saying the sender hacked my computer and recorded me on adult websites. They will send the video to my family unless I pay in Bitcoin. What do I do?",
                  """Do not pay anything. This is a scam, and the claims are all talk.
 
-1. Do not pay, and do not reply.
+1. Do not pay anything.
 2. Delete the message.
 3. Report it to the FTC at ReportFraud.ftc.gov.
 
@@ -587,10 +594,9 @@ A threat to send something within hours is meant to rush you.""",
                  "I already sent some Bitcoin after an email said it had a video of me, and now they are asking for more. What do I do?",
                  """I am sorry. Please stop here and do not pay anything more. It is a scam.
 
-1. Do not send any more money, and do not reply.
+1. Do not send any more money.
 2. Delete the message.
-3. Change the password on the account named in the message, and consider updating your other passwords too.
-4. Report it to the FTC at ReportFraud.ftc.gov.
+3. Report it to the FTC at ReportFraud.ftc.gov.
 
 Their claims about a video and access to your computer or webcam are all talk, so there is nothing more to gain from paying.""",
              ]},
@@ -600,7 +606,7 @@ Their claims about a video and access to your computer or webcam are all talk, s
                  """Tell him not to pay. It is a scam, and he is not in trouble.
 
 1. Explain that the claims about a video and access to his computer or webcam are all talk.
-2. Have him delete the message and not reply.
+2. Have him delete the message.
 3. If it includes a password, help him change the password on that account, and consider updating his other passwords too.
 4. Help him report the message to the FTC at ReportFraud.ftc.gov.
 

@@ -72,7 +72,7 @@ Please note that this removes the Windows.old folder, so you will not be able to
 5. Open the USB drive in **File Explorer**.
 6. Select **Paste**.
 
-You can still use the files when the drive is connected, but they will not take up space on your computer.""",
+You can still use the files when the drive is connected, but they will not take up space on your PC.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -173,7 +173,7 @@ It stays on until you next plug in the laptop.""",
 3. Expand **Energy saver**.
 4. Set **Always use energy saver** to **On**.
 
-If that does not help, restart the laptop. Then go to **Settings**, **System**, **Troubleshoot**, **Other troubleshooters**, and next to **Power** select **Run**.""",
+If that does not help, restart the laptop. Select **Start**, then **Power**, then **Restart**. Then go to **Settings**, **System**, **Troubleshoot**, **Other troubleshooters**, and next to **Power** select **Run**.""",
              ]},
         ],
     },
@@ -189,7 +189,7 @@ If that does not help, restart the laptop. Then go to **Settings**, **System**, 
 General device (keyboard, mouse, headphones, phone): 1 Make the device discoverable (depends on device, check manual or maker's site). 2 Select the Network, Sound, or Battery icon on taskbar. 3 Select the chevron next to the Bluetooth quick setting labeled "Manage Bluetooth devices". 4 Under "New devices" select your device; if you do not see it, scroll through "Your devices". 5 Follow any extra prompts, then select Done.
 Printer or scanner: make discoverable; Start > Settings > Bluetooth & devices > Printers & scanners; next to "Add a printer or scanner" select Add device; wait while Windows searches (can take a few minutes); select Add device next to the printer or scanner you want.
 Swift Pair: turn on compatible device and make discoverable; first time select Yes when asked to allow; when notification about new device appears, select Connect.
-Troubleshooting: device not listed: set "Bluetooth devices discovery" to "Advanced". Device not supported: check PC has Bluetooth; if not, a USB Bluetooth adapter can add it.
+Troubleshooting: device not listed: set "Bluetooth devices discovery" to "Advanced". Device not supported: check the product specifications to make sure it has Bluetooth capabilities. Some devices don't have Bluetooth.
 What user sees: Bluetooth tile highlighted when on; shows Connected, Not connected, or device name. After pairing, devices reconnect automatically when Bluetooth is on and in range.""",
         "examples": [
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Windows 11",
@@ -251,6 +251,10 @@ After this, they reconnect by themselves whenever Bluetooth is on and they are i
 6. Follow any extra prompts, then select **Done**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
+             "sources": [
+                 {"title": "Microsoft Support: Pair a Bluetooth device in Windows", "url": "https://support.microsoft.com/en-US/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242", "accessed": "2026-11-13"},
+                 {"title": "Microsoft Support: Fix Bluetooth problems in Windows", "url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows", "accessed": "2026-11-13"},
+             ],
              "messages": [
                  "Show me how to pair my Bluetooth keyboard with my Windows 11 computer.",
                  """Here is how to pair it:
@@ -268,7 +272,7 @@ After this, they reconnect by themselves whenever Bluetooth is on and they are i
 3. Check that Bluetooth is on. Select **Start**, then **Settings**, then **Bluetooth & devices**, and make sure the **Bluetooth** switch is **On**.
 4. Select **Devices**. Under **Device settings**, set **Bluetooth devices discovery** to **Advanced**.
 
-If it still does not show, make sure your computer has Bluetooth. If it does not, a USB Bluetooth adapter can add it.""",
+If it still does not show, check the product specifications to make sure your computer has Bluetooth capabilities.""",
              ]},
         ],
     },
@@ -372,7 +376,7 @@ Neither page has troubleshooting or on-screen toolbar steps.""",
                  """Yes. Use the keyboard:
 
 1. Press the **Windows key + Plus sign (+)**. This turns Magnifier on.
-2. Press **Windows key + Plus sign (+)** again to zoom in more. Each press makes things on the screen larger.""",
+2. Press **Windows key + Plus sign (+)** again to zoom in more.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -401,6 +405,10 @@ Neither page has troubleshooting or on-screen toolbar steps.""",
 3. To make things smaller again, press the **Windows key + Minus sign (-)**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Windows 11",
+             "sources": [
+                 {"title": "Microsoft Support: How to quickly change the zoom level for Magnifier (and Keyboard shortcuts for Magnifier)", "url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier", "accessed": "2026-11-13"},
+                 {"title": "Microsoft Support: Keyboard shortcuts for Magnifier", "url": "https://support.microsoft.com/en-us/accessibility/windows/magnifier/keyboard-shortcuts-for-magnifier", "accessed": "2026-11-13"},
+             ],
              "messages": [
                  "I use Magnifier on my Windows 11 PC, but I do not want the whole screen to get big, I only want a part of it magnified like a lens. Is that possible, and how do I switch to it?",
                  """Yes, Magnifier has a Lens view:
@@ -408,7 +416,7 @@ Neither page has troubleshooting or on-screen toolbar steps.""",
 1. If Magnifier is not on yet, press the **Windows key + Plus sign (+)**.
 2. Press **Ctrl + Alt + L**. This switches to Lens view.
 
-To go back to the whole screen, press **Ctrl + Alt + F**.""",
+To switch back to **Full screen view**, press **Ctrl + Alt + F**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -486,6 +494,10 @@ Captions then appear for speech in what your computer plays.""",
 The first time, follow the prompts. Windows asks for your consent to process voice on your device and may download language files.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
+             "sources": [
+                 {"title": "Microsoft Support: Use live captions to better understand audio", "url": "https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df", "accessed": "2026-11-13"},
+                 {"title": "Microsoft Support: Fix sound or audio problems in Windows", "url": "https://support.microsoft.com/en-us/windows/hardware/audio/fix-sound-or-audio-problems-in-windows", "accessed": "2026-11-13"},
+             ],
              "messages": [
                  "How do I turn on live captions in Windows 11?",
                  """Use the keyboard:
@@ -497,7 +509,7 @@ The first time, follow the prompts. Windows asks for your consent to process voi
 
 1. Select **Start**, then **Settings**.
 2. Select **System**, then **Sound**.
-3. Check which output device is chosen as your default. If it is not the headset you are using, change the default output device to your headset.
+3. Under **Output**, check which device is chosen. If it is not the headset you are using, select your headset. Selecting it makes it your default output device.
 4. Play the video again and check that captions show.""",
              ]},
         ],

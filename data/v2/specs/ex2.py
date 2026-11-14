@@ -20,11 +20,11 @@ TASKS = [
 
 Here's what to do:
 
-1. Don't buy anything and don't read out any numbers, however upsetting the story is.
+1. Don't buy anything right away. Resist the urge to act immediately, no matter how dramatic the story may be.
 2. Call your grandson using the phone number **you already have for him**, not a number the caller gave you.
 3. Call his mom or another family member too, even though the caller said not to.
 
-If it really was him, your family can help sort it out. If it was a scammer, you can report it at **ReportFraud.ftc.gov**.
+If it really was him, your family can help sort it out. If it was a scammer, you can report it at **www.ftc.gov/complaint**.
 
 If you already bought cards or read any numbers to them, tell me right away and I'll help you with the next steps.""",
                 ],
@@ -48,11 +48,11 @@ If you already bought cards or read any numbers to them, tell me right away and 
 Here's what to do:
 
 1. Don't reply to the text.
-2. Block the number if you know how. If not, just ignore it.
+2. Block their number and stop texting them.
 3. If you're worried about your account, call your bank using a phone number from your bank statement or your bank's app. Don't use any number from the text.
 4. You can report the text at **ReportFraud.ftc.gov**.
 
-If you already sent the code, call your bank right away using a phone number from your bank statement or your bank's app and tell them what happened.""",
+If you already sent the code, contact your bank using a phone number from your bank statement or your bank's app.""",
                 ],
             },
         ],
@@ -73,7 +73,7 @@ If you already sent the code, call your bank right away using a phone number fro
 
 1. Pay by credit card when you can. If a charge is wrong, you can dispute it. Call your card company right away, and send a letter so it reaches them within 60 days of the date the first bill showing the error was mailed.
 2. Don't buy from a seller who insists you can only pay with **gift cards, wire transfers, payment apps, or cryptocurrency**. Scammers like those ways of paying because it is hard to get your money back.
-3. Look for **https** at the start of the website address. The "s" only means the connection is private. Scammers can use it too, so it doesn't prove the seller is honest.""",
+3. Look for **https** at the start of the website address. The "s" only means the connection is encrypted. Scammers can use it too, so it doesn't prove the seller is honest.""",
                 ],
             },
         ],
@@ -281,19 +281,13 @@ If you can't find **Font size**, tell me what you see after searching and I'll h
                 "existing": True, "id": 'tr024-a', "suffix": 'a', "scenario": 'direct',
                 "style": 'plain', "specification": 'fully_specified', "platform": 'iPhone',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}, {'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I make my iPhone ring louder when someone calls?',
-                    """There are two quick ways. Both take less than a minute.
+                    """Here is a quick way to do it. It takes less than a minute.
 
-**Quick way:**
 1. Go to your Home Screen so you're not inside an app.
 2. Press the **volume up** button a few times. When you are not using other apps, the buttons change the ringer volume.
-
-**In Settings:**
-1. Open the **Settings** app.
-2. Tap **Sounds & Haptics**.
-3. Under **Ringtone and Alerts**, drag the slider to the right.
 
 If your phone still only vibrates, it may be in Silent mode. Tell me and I'll show you how to check.""",
                 ],
@@ -312,21 +306,15 @@ If your phone still only vibrates, it may be in Silent mode. Tell me and I'll sh
                 "existing": True, "id": 'tr024-c', "suffix": 'c', "scenario": 'direct_messy',
                 "style": 'verbose', "specification": 'fully_specified', "platform": 'iPhone',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'OATS',
-                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}, {'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I keep missing calls from my son because I don't hear my iPhone ring when I'm in the kitchen cooking. He gets worried. Can I make the ringing louder?",
                     """Yes, you can, and that should help your son reach you.
 
-There are two quick ways. Both take less than a minute.
+Here is a quick way to do it. It takes less than a minute.
 
-**Quick way:**
 1. Go to your Home Screen so you're not inside an app.
 2. Press the **volume up** button a few times. When you are not using other apps, the buttons change the ringer volume.
-
-**In Settings:**
-1. Open the **Settings** app.
-2. Tap **Sounds & Haptics**.
-3. Under **Ringtone and Alerts**, drag the slider to the right.
 
 If your phone still only vibrates, it may be in Silent mode. Tell me and I'll show you how to check.""",
                 ],
@@ -335,23 +323,15 @@ If your phone still only vibrates, it may be in Silent mode. Tell me and I'll sh
                 "existing": True, "id": 'tr024-d', "suffix": 'd', "scenario": 'followup',
                 "style": 'under_specified', "specification": 'fully_specified', "platform": 'iPhone',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}, {'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Apple Support: Use the volume buttons, side button, and other controls on your iPhone', 'url': 'https://support.apple.com/en-us/105103', 'accessed': '2026-10-24'}],
                 "messages": [
                     'My phone is too quiet when it rings.',
                     "Let's fix that so you don't miss calls. Is your phone an **iPhone**, or another kind of phone like a Samsung or Google Pixel?",
                     'iPhone 13',
-                    """Thanks. Here's how on your iPhone.
+                    """Thanks. Here's how on your iPhone. It takes less than a minute.
 
-There are two quick ways. Both take less than a minute.
-
-**Quick way:**
 1. Go to your Home Screen so you're not inside an app.
 2. Press the **volume up** button a few times. When you are not using other apps, the buttons change the ringer volume.
-
-**In Settings:**
-1. Open the **Settings** app.
-2. Tap **Sounds & Haptics**.
-3. Under **Ringtone and Alerts**, drag the slider to the right.
 
 If your phone still only vibrates, it may be in Silent mode. Tell me and I'll show you how to check.""",
                 ],
@@ -416,7 +396,7 @@ Some of these steps work only on Android 12 and up. On older versions of Android
                     'how do I make the ringing louder',
                     'Happy to help. Is your phone an **iPhone** or an **Android** phone (like Samsung or Google Pixel)?',
                     "android, it's a samsung",
-                    """Thanks. Samsung screens can look a little different, so I've included what to look for.
+                    """Thanks. Phone screens can look a little different, so here is what to look for.
 
 You can do this with the volume buttons. It takes a few seconds.
 
@@ -443,7 +423,7 @@ If neither of these matches what you see, tell me and I'll help you find it.""",
                 "sources": [{'title': 'Apple Support: Make a call with Wi-Fi Calling', 'url': 'https://support.apple.com/en-us/108066', 'accessed': '2026-10-24'}],
                 "messages": [
                     'My iPhone has no signal in my basement apartment but I have Wi-Fi. Can I make calls using the Wi-Fi?',
-                    """iPhone has a feature called **Wi-Fi Calling** that uses your Wi-Fi for calls when the cell signal is weak. Turning it on takes about a minute.
+                    """iPhone has a feature called **Wi-Fi Calling** that lets you make calls over Wi-Fi when there is little or no cellular coverage. Turning it on takes about a minute.
 
 1. Open the **Settings** app.
 2. Tap **Cellular**.
@@ -501,7 +481,7 @@ If you don't see **Wi-Fi Calling** in that menu, your phone company may not offe
                     "It's an iPhone 12.",
                     """Thanks. This should help.
 
-iPhone has a feature called **Wi-Fi Calling** that uses your Wi-Fi for calls when the cell signal is weak. Turning it on takes about a minute.
+iPhone has a feature called **Wi-Fi Calling** that lets you make calls over Wi-Fi when there is little or no cellular coverage. Turning it on takes about a minute.
 
 1. Open the **Settings** app.
 2. Tap **Cellular**.
@@ -580,7 +560,7 @@ If pressing both buttons doesn't work, hold the **Power** button for a few secon
 
 You'll see a small preview of the screenshot in the bottom-left corner.
 
-**To find it later:** open the **Photos** app, tap **Collections** at the bottom, then **On this device**, then **Screenshots**. If your phone uses a **Gallery** app instead, look for the **Screenshots** album there.
+**To find it later:** open the **Photos** app, tap **Collections** at the bottom, then **On this device**, then **Screenshots**. If your phone uses a **Gallery** app instead, open it, tap **Album view**, then tap **Screenshots folder**.
 
 If pressing both buttons doesn't work, hold the **Power** button for a few seconds and tap **Screenshot**.""",
                 ],

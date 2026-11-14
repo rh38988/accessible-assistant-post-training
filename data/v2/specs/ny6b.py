@@ -60,8 +60,9 @@ You can also just swipe the box away, and that blocks it too.""",
 
 1. Open **Chrome**, then select the **More** icon at the top right and select **Settings**.
 2. Select **Privacy and security**, then **Site Settings**, then **Notifications**.
-3. Under the default setting, choose the option that lets sites ask for notifications.
-4. Select **Use quieter messaging**.
+3. Select **Allow quieter notification prompts**.
+4. Choose **Allow sites to ask to send notifications**.
+5. Select **Use quieter messaging**.
 
 Sites can still ask, but no pop-up box appears. You will see a bell icon next to the address bar, and you can select it if you ever want to allow that site.""",
              ]},
@@ -80,7 +81,9 @@ Sites can still ask, but no pop-up box appears. You will see a bell icon next to
 
 1. Go to **Privacy and security**, then **Site Settings**, then **Pop-ups and redirects**.
 2. Find the site under **Allowed to send pop-ups and use redirects**.
-3. Select **More**, then select **Block**.""",
+3. Select **More**, then select **Block**.
+
+If you do not see the site in that list, select **Add** next to **Not allowed to send pop-ups or use redirects**, type the site's web address, then select **Add**.""",
              ]},
         ],
     },
@@ -113,15 +116,17 @@ Captions will show up in a bubble when a video plays sound.""",
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
                  "My husband and I watch lots of Spanish language shows in Chrome on our Mac and neither of us hears so well anymore. Someone said Chrome can write out the words for us. Can you show me how to turn that on and have it show Spanish?",
-                 """Yes, Chrome can do that. Here is how:
+                 """Chrome can show captions in a language other than English. Here is how:
 
 1. Open **Chrome**.
 2. At the top right, select the **More** icon, then select **Settings**, then **Accessibility**.
 3. Turn **Live Caption** on.
-4. Next to **Manage languages**, select **Add languages** and choose Spanish. Chrome downloads the language pack by itself.
-5. Next to **Preferred caption language**, open the down arrow and choose Spanish.
+4. Next to **Manage languages**, select **Add languages**.
+5. Choose the language you want from the list. Chrome downloads the language pack by itself.
+6. Next to **Preferred caption language**, select the down arrow.
+7. Choose the same language.
 
-The words will appear in a bubble while the show plays.""",
+The words will appear in a bubble while the show plays. This page does not say whether Spanish is in the list, so if it is not there, Live Caption may not support Spanish.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -409,7 +414,9 @@ Deleting a backup does not turn off future backups.""",
 3. Under **Clean up by service**, choose **Google Photos**.
 4. Select the photos you want to remove.
 5. Click **Download** to keep copies on your computer.
-6. Click **Delete** at the top right, then click **Move to trash**.""",
+6. Click **Delete** at the top right.
+7. If a box asks you to confirm, read the wording and check the box to continue.
+8. Click **Move to trash**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Google Account (Drive, Gmail, Photos)",
              "messages": [
@@ -424,7 +431,9 @@ Deleting a backup does not turn off future backups.""",
 6. Read the wording, then check the box to continue.
 7. Click **Permanently delete**.""",
                  "I deleted a lot of stuff but it still says my storage is full.",
-                 """The total can take 48 to 72 hours to update after a large deletion, so please wait that long first. If it is still full after that, your photo backup may be filling the space again. Check your **Google Photos** backup settings.""",
+                 """The total can take 48 to 72 hours to update after a large deletion, so please wait that long first.
+
+If it is still full after 48 to 72 hours, some photos and videos may be set to back up automatically. Automatic backup can be turned off, and then files waiting to be backed up will stop using the free space.""",
              ]},
         ],
     },
@@ -456,13 +465,18 @@ Troubleshooting: no transit option means the city's transit agency may not have 
 The best route shows in blue, and other routes show in gray. Under the route, click **Details** to see the steps.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Google Maps (computer)",
+             "sources": [{'title': 'Google Maps Help: Get directions and show routes', 'url': 'https://support.google.com/maps/answer/144339', 'accessed': '2026-11-13'}, {'title': 'Google Maps Help: Share, send or print directions from Google Maps, Computer', 'url': 'https://support.google.com/maps/answer/7101463', 'accessed': '2026-11-13'}],
              "messages": [
                  "I'm going to walk to my sister's house on Saturday and I want to print out the route first. I'm at my desktop computer in the browser, on Google Maps. How do I get the walking directions from my house to hers?",
-                 """Here is how to get walking directions:
+                 """Here is how to get walking directions and print them:
 
 1. Open Google Maps in your browser, then click **Directions**.
 2. Enter your house as the starting point and your sister's address as the destination.
 3. Choose **Walking**.
+4. Pick the route you want.
+5. Click the printer icon.
+6. In the pop-up, select **Print including maps** or **Print text only**.
+7. Click **Print**.
 
 Under the route, click **Details** to see the step by step directions.""",
              ]},
@@ -493,7 +507,7 @@ Under the route, click **Details** to see the steps.""",
 2. Enter a starting point and a destination.
 3. Choose **Driving**.
 4. Click **Options**.
-5. Under **Avoid tolls & highways**, check **Tolls**.""",
+5. Check the box next to **Tolls**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Google Maps (computer)",
              "messages": [

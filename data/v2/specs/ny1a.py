@@ -371,14 +371,15 @@ If that does not work, Apple has a guide called start up in Safe Mode: https://s
 11 Empty the Trash: space from trashed files is not freed until you empty it.""",
         "examples": [
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Mac",
+             "sources": [{'title': 'Apple Support: Free up storage space on your Mac', 'url': 'https://support.apple.com/en-us/102624', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Uninstall apps on your Mac', 'url': 'https://support.apple.com/en-us/102610', 'accessed': '2026-11-13'}],
              "messages": [
                  "My MacBook is almost full. How can I free up some space?",
                  """Here are some good ways to free up space.
 
 1. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage**. This shows what is using your space.
 2. Open your **Downloads** folder from the Dock and delete what you do not need.
-3. Delete apps you no longer use.
-4. Empty the **Trash**. Space from trashed files is not freed until you do.
+3. Open a Finder window, click **Applications** in the sidebar, then drag an app you no longer use to the **Trash**.
+4. Click **Finder** in the menu bar at the top, then choose **Empty Trash**. Space from trashed files is not freed until you do.
 
 The Storage screen updates as you free up space.""",
              ]},
@@ -416,11 +417,19 @@ The Storage screen updates as you free up space.""",
              "sources": [{'title': 'Apple Support: Free up storage space on your Mac', 'url': 'https://support.apple.com/en-us/102624', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Move your Photos library to save space on your Mac', 'url': 'https://support.apple.com/en-us/108345', 'accessed': '2026-11-13'}],
              "messages": [
                  "My Mac is full because of my grandchildren's photos and videos, and I refuse to delete any of them. I have a spare external hard drive in my drawer though. What can I do to free up space without throwing away a single photo?",
-                 """You can move them to the external drive instead of deleting them. Photos and videos are some of the best things to move.
+                 """You can move them to the external drive instead of deleting them. Moving the Photos library keeps your photos.
 
-1. Plug your external drive into your Mac.
-2. Move your Photos library to the external drive by following Apple's guide Move your Photos library to save space on your Mac: https://support.apple.com/en-us/108345.
-3. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage** to check how much space you now have.""",
+1. Make sure the drive is formatted as **APFS** or **Mac OS Extended (Journaled)**. Do not use a drive that holds Time Machine backups, an SD card, or a USB flash drive.
+2. Quit **Photos**.
+3. Open a Finder window and open the **Pictures** folder in your home folder, where **Photos Library** is.
+4. Drag **Photos Library** onto the external drive.
+5. When the move finishes, double-click **Photos Library** on the drive to open it. Check that your photos are there.
+6. Optional: to free space on your Mac, drag the old **Photos Library** from the Pictures folder to the **Trash**, then choose **Finder** > **Empty Trash**. Your library stays on the drive.
+7. Click the **Apple** menu, choose **System Settings**, click **General**, then click **Storage** to check how much space you now have.
+
+Keep the drive plugged in and turned on before you open Photos, or Photos will create a new empty library in your Pictures folder.
+
+More help: https://support.apple.com/en-us/108345""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Mac",
              "messages": [

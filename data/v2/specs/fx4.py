@@ -126,10 +126,9 @@ Ways to take care of the battery:
 3. Tap **Battery Health**.
 4. Look at **Maximum Capacity**. It compares your battery now to when it was new.""",
                  "I did that, but there's no capacity number. It says Unable to verify this iPhone has a genuine Apple battery. What does that mean?",
-                 """That message means the iPhone could not confirm that it has a genuine Apple battery. The battery health information on that screen may not be accurate.
+                 """That message means the iPhone could not confirm that it has a genuine Apple battery. The battery health information on that screen might not be accurate, so don't rely on the numbers shown there.
 
-1. Don't rely on the numbers shown there.
-2. Get service for the battery through Apple Support, Apple's support website, to have it checked.""",
+To have the battery checked, follow the link **To have your battery checked, get service** on Apple's battery page. It goes to getsupport.apple.com.""",
              ]},
         ],
     },
@@ -172,10 +171,10 @@ If someone in the group doesn't use an iPhone, go to **Settings**, then **Messag
 
 Because one person uses Android, go to **Settings**, then **Messages**, and turn on **MMS Messaging**.""",
                  "I went to Settings, then Messages, but there is no MMS Messaging switch. My cousin with the Android didn't get anything.",
-                 """When that option is missing, the next step is to check with your carrier.
+                 """Group texts to people who don't use iMessage, like your cousin with the Android, use group MMS, and that needs **MMS Messaging** turned on. If you don't see that option, the next step is to check with your carrier.
 
 1. Contact your phone carrier.
-2. Ask whether group MMS is included in your plan.""",
+2. Ask whether your plan supports **Group MMS Messaging**.""",
              ]},
         ],
     },

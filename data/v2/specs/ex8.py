@@ -583,9 +583,7 @@ If none of this works, it may need service from Apple.
    On an older iPhone, tell me the model and I'll give you those steps.
 7. **Charge it for another half hour.**
 
-If none of this works, it may need service from Apple.
-
-**If it stops at 80%:** that's usually a battery-saving feature, not a problem.""",
+If none of this works, it may need service from Apple.""",
                 ],
             },
         ],

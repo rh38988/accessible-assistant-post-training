@@ -353,11 +353,12 @@ Family or friends: scammers may use voice cloning. Contact the relative directly
                  """Please **don't buy the gift cards**. Scammers say it's urgent so you'll rush, so slow down and don't pay. No real business or government agency will ever tell you to buy a gift card to pay them, and gift cards are for gifts only.
 
 1. **Don't reply** and don't send any codes or photos of cards.
-2. **Reach your nephew through a number you already know is his**, not the new number that texted you. Scammers may also use voice cloning, so check with him directly.
+2. **Reach your nephew through a number you already know is his**, not the new number that texted you. Scammers may also use voice cloning, so check with him directly. If his phone stays off, ask another family member or his friends to check on him.
 3. **Report the text** at **ReportFraud.ftc.gov**.
 
-If you've already bought cards or shared the numbers, report it to the gift card company right away and ask for your money back. Keep a copy of the gift card and the store receipt.""",
-             ]},
+If you've already bought cards or shared the numbers, report it to the gift card company right away and ask for your money back. Keep a copy of the gift card and your store receipt by taking a picture of each with your phone.""",
+             ],
+             "sources": [{'title': 'FTC Consumer Advice: Avoiding and Reporting Gift Card Scams', 'url': 'https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams', 'accessed': '2026-11-13'}, {'title': 'FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes', 'url': 'https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes', 'accessed': '2026-11-13'}]},
         ],
     },
     {

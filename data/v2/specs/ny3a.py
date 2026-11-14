@@ -148,8 +148,11 @@ If there is still no response after 25 minutes, the phone needs to be repaired."
 3. Push the cable in firmly at both ends.
 4. Look in the phone's charging port for dust or lint.
 5. Test the wall outlet with another device, such as a lamp.
-6. Plug it in and wait one minute. A battery icon on the screen means the phone is off and charging.
-7. Press and hold the **Power** button for 5 to 7 seconds.""",
+6. Plug it in and wait one minute. If you see a battery icon on the screen, the phone is powered off and charging.
+7. Press and hold the **Power** button for 5 to 7 seconds.
+8. If there is still no battery icon, press and hold the **Power** button for about 35 seconds to reboot. Wait about 2 minutes, then call the phone from another phone to see if it rings.
+
+A **Check charging accessory** notification means the cable or adapter may be damaged or unsupported. A Google 30 W adapter works, and other USB PD adapters should be rated 15 W or more. A very low battery may need at least 10 more minutes of charging before the screen turns on.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android (Pixel)",
              "messages": [
@@ -241,9 +244,11 @@ If this happens often, contact your mobile service provider.""",
 
 1. Restart your phone.
 2. Open **Settings** and tap **Network & internet** (or **Connections**).
-3. Turn Wi-Fi off and mobile data on, and see if things load. Then turn mobile data off and Wi-Fi on, and check again.
-4. Turn **Airplane mode** on, wait 10 seconds, then turn it off.
-5. Make sure **Wi-Fi** is on, then look at the Wi-Fi symbol at the top of the screen. If no bars are filled, move closer to where the router is.
+3. Turn Wi-Fi off and mobile data on, and see if things load.
+4. Look at the top of the screen for 2G, 3G, 4G, or H next to the signal bars. If none shows, move to a different area or go outside, then check again.
+5. If nothing changes, turn mobile data off and Wi-Fi on, and check again.
+6. Turn **Airplane mode** on, wait 10 seconds, then turn it off.
+7. Make sure **Wi-Fi** is on, then look at the Wi-Fi symbol at the top of the screen. If the symbol is missing, or no bars are filled, you may be out of range. Move closer to where the router is.
 
 If the Wi-Fi still has problems, the person who runs that network can help.""",
              ]},
@@ -374,7 +379,7 @@ Supporting page 16287429 (Create RCS groups): open Messages, tap Start chat, the
 4. Tap **Next**.
 5. Write your message and send it.
 
-Contacts without the **RCS** tag will get a regular group text (an MMS group chat), which still works.""",
+A contact without the **RCS** tag gets a regular group text, called an MMS group chat.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}],
              "messages": [
@@ -387,7 +392,7 @@ Contacts without the **RCS** tag will get a regular group text (an MMS group cha
 4. Tap **Next**.
 5. Write your message and send it.
 
-If your group members have RCS chats turned on, iPhone contacts can show the **RCS** tag too. Contacts without the tag get an MMS group chat instead.""",
+If your group members have RCS chats turned on, iPhone contacts can show the **RCS** tag too. A contact without the tag gets a regular group text, called an MMS group chat.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "Android",
              "messages": [
@@ -415,7 +420,7 @@ If your group members have RCS chats turned on, iPhone contacts can show the **R
 1. Open **Google Messages**.
 2. At the top right, tap your **profile picture** or **initials**, then tap **Messages settings**, then **Advanced**.
 3. Tap **Group messaging**.
-4. Choose **mass text** as your default.
+4. Choose **Send an SMS reply to all recipients and get individual replies (mass text)** as your default.
 5. Go back to the main screen.
 6. Tap **Start chat**, then **Create group**.
 7. Pick your choir members, then tap **Next**.

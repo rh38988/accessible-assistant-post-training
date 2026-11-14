@@ -102,7 +102,7 @@ Not mentioned: a "Mobile bookmarks" folder.""",
                  """Here is how to bookmark a page in Chrome on your Android phone:
 
 1. Open Chrome and go to the page you want to save.
-2. Next to the address bar, tap **More** (the three dots).
+2. To the right of the address bar, tap **More**.
 3. Tap **Add to bookmarks**.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Chrome (Android)",
@@ -111,14 +111,15 @@ Not mentioned: a "Mobile bookmarks" folder.""",
                  """You can bookmark it now and open it from your bookmarks tomorrow.
 
 To save it:
-1. With the weather site open, tap **More** (the three dots) next to the address bar.
+1. With the weather site open, tap **More**, to the right of the address bar.
 2. Tap **Add to bookmarks**.
 
 To open it again:
 1. Open Chrome.
 2. Tap **More** at the top right.
 3. Tap **Bookmarks**.
-4. Tap the bookmark.""",
+4. Tap a folder.
+5. Tap the bookmark.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -133,7 +134,7 @@ To open it again:
                  """Thanks. To bookmark a site in Chrome on your Android phone:
 
 1. Open Chrome and go to the website.
-2. Tap **More** (the three dots) next to the address bar.
+2. To the right of the address bar, tap **More**.
 3. Tap **Add to bookmarks**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Chrome (Android)",
@@ -142,7 +143,7 @@ To open it again:
                  """You can do both with the bar at the bottom.
 
 To save the recipe:
-1. Tap **More** (the three dots) next to the address bar.
+1. To the right of the address bar, tap **More**.
 2. Tap **Add to bookmarks**.
 
 To find it later:
@@ -157,14 +158,14 @@ To find it later:
                  """Yes. Here is how:
 
 1. Open Chrome and go to the page.
-2. Tap **More** (the three dots) next to the address bar.
+2. To the right of the address bar, tap **More**.
 3. Tap **Add to bookmarks**.""",
                  "ok I did that. but now how do I get back to it? I can't find where it went",
                  """Your bookmark is saved. To open it:
 
 1. Open Chrome.
 2. At the top right, tap **More**, then tap **Bookmarks**.
-3. Tap a folder. Recently opened folders show first.
+3. Tap a folder. If you recently opened a folder, you will see that same folder. To see other folders, tap **Back** at the top left.
 4. Tap the bookmark.
 
 If your address bar is at the bottom, swipe up on it and tap **Bookmarks** instead. You can also type in the **Search your bookmarks** bar at the top.""",
@@ -189,11 +190,9 @@ No menu path given for reset; Ctrl and 0 resets. No Mac steps on the page.""",
                  "The writing on websites is too small in Edge on my computer. How do I make it bigger?",
                  """You can zoom in on the page you are looking at:
 
-1. Select **Settings and more** (the three dots menu).
-2. Select **Zoom in** (the plus sign).
-3. Select **Zoom in** again until the page is the size you like.
-
-You can also hold the **Ctrl** key and press the **plus sign** key.""",
+1. Select **Settings and more**.
+2. Select **Zoom in**.
+3. Select **Zoom in** again until the page is the size you like.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Microsoft Edge (computer)",
              "messages": [
@@ -219,8 +218,8 @@ Or, with the mouse:
                  "Edge on my computer",
                  """Thanks. To make the page you are on bigger in Edge:
 
-1. Select **Settings and more** (the three dots menu).
-2. Select **Zoom in** (the plus sign).
+1. Select **Settings and more**.
+2. Select **Zoom in**.
 3. Select **Zoom in** again until the page is big enough.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Microsoft Edge (computer)",
@@ -228,7 +227,7 @@ Or, with the mouse:
                  "I use Microsoft Edge on my computer and I keep making each website bigger one at a time. That is a lot of work. Can I set it once so that every website is bigger from now on, without doing it for each page?",
                  """Yes. You can set one zoom level for all websites:
 
-1. Select **Settings and more** (the three dots menu).
+1. Select **Settings and more**.
 2. Select **Settings**.
 3. Select **Accessibility**.
 4. Under **Visibility**, open the **Page zoom** drop-down.
@@ -239,13 +238,13 @@ Or, with the mouse:
                  "How can I make a web page bigger in Edge on my computer?",
                  """Here is how to zoom in:
 
-1. Select **Settings and more** (the three dots menu).
-2. Select **Zoom in** (the plus sign).
+1. Select **Settings and more**.
+2. Select **Zoom in**.
 3. Select **Zoom in** again until the page is the size you like.""",
                  "I pressed it too many times and now the page is huge. How do I put it back to normal?",
-                 """You can put it back in one step. Hold down the **Ctrl** key and press the **0** key. That resets the page to the default size.
+                 """You can put it back in one step. On Windows, hold down the **Ctrl** key and press the **0** key. That resets the page to the default size.
 
-Or you can go back to **Settings and more** and select **Zoom out** (the minus sign) until it looks right.""",
+Or you can go back to **Settings and more** and select **Zoom out** until it looks right.""",
              ]},
         ],
     },
@@ -305,7 +304,9 @@ Troubleshooting: still seeing pop-ups: site may have notification permission; go
 2. Click **Privacy and security**, then **Site Settings**.
 3. Click **Pop-ups and redirects**.
 4. Under **Allowed to send pop-ups and use redirects**, find the shopping site.
-5. To the right of it, click **More**, then **Block**.""",
+5. To the right of it, click **More**, then **Block**.
+
+If you do not see the site in that list, click **Add** next to **Not allowed to send pop-ups or use redirects**, type the address of the shopping site, then click **Add** again.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
@@ -326,8 +327,8 @@ Troubleshooting: still seeing pop-ups: site may have notification permission; go
                  """The site may have permission to send notifications. Try this:
 
 1. Go to that site.
-2. Click **View site information** in the address bar.
-3. Find **Notifications** and set it to **Block**.""",
+2. Click **View site information**.
+3. Next to **Notifications**, choose **Block**.""",
              ]},
         ],
     },
@@ -355,7 +356,8 @@ Troubleshooting: Chrome links still open elsewhere: check the "Set default file 
 3. Click **Apps**, then **Default apps**.
 4. Under **Set defaults for applications**, type **Chrome** in the search box.
 5. Select **Google Chrome**.
-6. At the top, click **Set default** next to **Make Google Chrome your default browser**.""",
+6. At the top, click **Set default** next to **Make Google Chrome your default browser**.
+7. Review the list under **Set default file types or link types** and check that Chrome is chosen for the types you need.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Chrome (Windows computer)",
              "messages": [
@@ -384,7 +386,8 @@ Troubleshooting: Chrome links still open elsewhere: check the "Set default file 
 2. Open **Settings**, then click **Apps**, then **Default apps**.
 3. Under **Set defaults for applications**, type **Chrome** in the search box.
 4. Select **Google Chrome**.
-5. At the top, click **Set default** next to **Make Google Chrome your default browser**.""",
+5. At the top, click **Set default** next to **Make Google Chrome your default browser**.
+6. Review the list under **Set default file types or link types** and check that Chrome is chosen for the types you need.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Chrome (Windows computer)",
              "messages": [
@@ -395,7 +398,8 @@ Troubleshooting: Chrome links still open elsewhere: check the "Set default file 
 2. Click **Apps**, then **Default apps**.
 3. Type **Chrome** in the search box under **Set defaults for applications**.
 4. Select **Google Chrome**.
-5. At the top, click **Set default**.""",
+5. At the top, click **Set default** next to **Make Google Chrome your default browser**.
+6. Review the list under **Set default file types or link types** and check that Chrome is chosen for the types you need.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Chrome (Windows computer)",
              "messages": [
@@ -431,7 +435,7 @@ Troubleshooting: No Download tray: click More, then Downloads to see all downloa
                  "I downloaded a file with Chrome on my computer but I can't find it. Where did it go?",
                  """Chrome keeps a list of your downloads. To see it:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right of Chrome, click **More**.
 2. Click **Downloads**.
 3. Click the file name to open the file.
 
@@ -444,7 +448,7 @@ Unless the setting was changed, Chrome saves downloads in the **Downloads** fold
 
 To open it from Chrome:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right of Chrome, click **More**.
 2. Click **Downloads**.
 3. Click the file name. It opens in your Mac's usual program for PDF files.""",
              ]},
@@ -460,7 +464,7 @@ To open it from Chrome:
                  "chrome, on my computer",
                  """Thanks. In Chrome you can see all your downloads:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right of Chrome, click **More**.
 2. Click **Downloads**.
 3. Click the file name to open the file.""",
              ]},
@@ -477,11 +481,11 @@ That opens the folder where the file is saved, and you can move it from there.""
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
                  "Where do I find the file I just downloaded in Chrome on my computer?",
-                 """After a download finishes, Chrome opens a small download box at the top right, next to the address bar. Your file is listed there. Click the file to open it.""",
+                 """After a download finishes, Chrome opens the **Download tray**. Recently downloaded files appear to the right of the address bar, and your file is listed there. Click the file to open it.""",
                  "I don't see any box at the top. It's not there.",
                  """That is fine. You can see all your downloads another way:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right of Chrome, click **More**.
 2. Click **Downloads**.
 3. Click the file name to open the file.""",
              ]},
@@ -497,9 +501,9 @@ That opens the folder where the file is saved, and you can move it from there.""
         "source": {"title": "Chrome Help: Manage passwords in Chrome", "url": "https://support.google.com/chrome/answer/95606?hl=en"},
         "source_notes": """Save automatically: 1 On computer open Chrome, go to the site's sign-up or sign-in page. 2 Enter username and password, submit the form. 3 When Chrome asks to save the password, select Save. 4 To review first, select the Preview icon; if wrong, edit fields before selecting Save.
 Save manually: 1 Select More (three dots top right), then Passwords and autofill, then Google Password Manager. 2 Select Add. 3 Enter website, username, password. 4 Select Save.
-View/find: 1 More > Passwords and autofill > Google Password Manager. 2 Under "Passwords" select the site. 3 Select the Show password icon to reveal the password. Also passwords.google.com.
+View/find: 1 More > Passwords and autofill > Google Password Manager. 2 Under "Passwords" select the password. 3 Select the Show password icon to reveal the password. Also passwords.google.com.
 Turn saving on/off: Google Password Manager > Settings (left) > "Offer to save passwords and passkeys".
-Verification: off by default. Google Password Manager > Settings, turn on Windows: "Use Windows Hello when filling passwords"; Mac: "Use your screen lock when filling passwords"; follow on-screen instructions. Then Chrome asks to verify identity before you can reveal, copy, or edit a password.
+Verification: off by default. Google Password Manager > Settings, turn on Windows: "Use Windows Hello when filling passwords"; Mac: "Use your screen lock when filling passwords"; follow on-screen instructions. Biometric checks are off by default and optional; when on, they can also apply to revealing, copying, or editing a password.
 Troubleshooting: Chrome doesn't offer to save: confirm "Offer to save passwords and passkeys" is on. Previously declined a site: Google Password Manager > Settings > under "Declined sites and apps" remove the site; Chrome can then offer to save again. If signed in to Chrome, passwords save to your Google Account; if not signed in, only on the device.""",
         "examples": [
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Chrome (computer)",
@@ -512,17 +516,17 @@ Troubleshooting: Chrome doesn't offer to save: confirm "Offer to save passwords 
 3. When Chrome asks to save the password, select **Save**.
 
 To find it later:
-1. Click **More** (the three dots at the top right).
+1. At the top right, click **More**.
 2. Click **Passwords and autofill**, then **Google Password Manager**.
-3. Under **Passwords**, select the site.
-4. Select the **Show password** icon.""",
+3. Under **Passwords**, select the password.
+4. On the right of your password, select **Show password**.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
                  "I keep all my website passwords written in a little notebook next to my computer and my son says Chrome can hold them for me instead. I use Chrome on my Windows computer. Chrome has never offered to save any of them. Can I type one in myself so Chrome has it, without waiting for it to ask me?",
                  """Yes, you can add a password yourself:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right, click **More**.
 2. Click **Passwords and autofill**, then **Google Password Manager**.
 3. Select **Add**.
 4. Enter the website, your username, and your password.
@@ -547,23 +551,23 @@ Repeat these steps for each password in your notebook.""",
 3. When Chrome asks to save the password, select **Save**.
 
 To see it again later:
-1. Click **More** (the three dots at the top right).
+1. At the top right, click **More**.
 2. Click **Passwords and autofill**, then **Google Password Manager**.
-3. Under **Passwords**, select the site.
-4. Select the **Show password** icon.""",
+3. Under **Passwords**, select the password.
+4. On the right of your password, select **Show password**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
                  "My husband and I share one Windows computer and Chrome has my passwords saved. I don't want him to be able to just click and see them. Can I make Chrome check that it is really me before it shows a saved password?",
                  """Yes. On Windows, you can turn on a check:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right, click **More**.
 2. Click **Passwords and autofill**, then **Google Password Manager**.
 3. Select **Settings**.
 4. Turn on **Use Windows Hello when filling passwords**.
 5. Follow the on-screen instructions to confirm.
 
-After that, Chrome asks you to verify who you are before it lets anyone reveal, copy, or edit a password.""",
+Once it is on, Windows Hello is used when Chrome fills in a saved password, and this check can also cover revealing, copying, or editing a password. The setting is optional and off by default, so it stays off until you turn it on.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Chrome (computer)",
              "messages": [
@@ -576,7 +580,7 @@ After that, Chrome asks you to verify who you are before it lets anyone reveal, 
                  "Chrome never asks me to save anything. I sign in and no question comes up.",
                  """Let's check the setting:
 
-1. Click **More** (the three dots at the top right).
+1. At the top right, click **More**.
 2. Click **Passwords and autofill**, then **Google Password Manager**.
 3. Select **Settings** on the left.
 4. Make sure **Offer to save passwords and passkeys** is turned on.

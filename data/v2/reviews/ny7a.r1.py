@@ -108,3 +108,61 @@ REVIEWS += [
  {"id": "tr203-e", "required_actions": ["Settings, See all settings, General, Vacation responder on (critical)", "Enter date range, subject, message (critical)", "Check the box under the message to send replies only to contacts (critical)", "Save Changes (critical)"], "covered": [True]*4, "needs_clarification": False, **_NC},
  {"id": "tr203-r", "required_actions": ["Open inbox; banner across the top (critical)", "Click End now (critical)"], "covered": [True, True], "needs_clarification": False, **_NC},
 ]
+
+# ---- Page 4: Gmail print a single email or conversation (tr204), support.google.com/mail/answer/8255 ----
+_RA204 = ["Open Gmail on the computer (critical)", "Open the email (critical)",
+          "Click More at the top right of the email, the three-dot icon (critical)", "Click Print (critical)"]
+_RA204C = ["Open Gmail on the computer (critical)", "Open the conversation (critical)",
+           "Click Print all at the top right (critical)"]
+REVIEWS += [
+ {"id": "tr204-a", "required_actions": _RA204, "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr204-c", "required_actions": _RA204C, "covered": [True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr204-b", "required_actions": [], "covered": [], "needs_clarification": True,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(steps="NA"), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr204-d", "required_actions": _RA204, "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr204-e", "required_actions": ["Open only the landlord email (critical)",
+                                        "Click More at the top right of that email (critical)",
+                                        "Click Print (critical)",
+                                        "Do not use Print all, which prints every email in the conversation (non-critical)"],
+  "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr204-r", "required_actions": ["Say the email is likely in confidential mode, which blocks printing message text and attachments (critical)",
+                                        "Say it cannot be printed the normal way (critical)"],
+  "covered": [True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+]
+
+# ---- Page 5: Google Contacts add a contact (tr205), support.google.com/contacts/answer/1069522 ----
+_RA205 = ["Go to contacts.google.com (critical)", "Click Create contact at the top left (critical)",
+          "Choose Create a contact (critical)", "Enter name, email address, and phone number (critical)",
+          "Click Save (critical)"]
+_RA205D = ["Click Create contact at the top left (critical)", "Choose Create a contact (critical)",
+           "Enter the name and phone number (critical)", "Click Save (critical)"]
+REVIEWS += [
+ {"id": "tr205-a", "required_actions": _RA205, "covered": [True, True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr205-c", "required_actions": _RA205D, "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr205-b", "required_actions": [], "covered": [], "needs_clarification": True,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(steps="NA"), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr205-d", "required_actions": ["Go to contacts.google.com (critical)", "Click Create contact, then Create a contact (critical)",
+                                        "Enter the neighbor's name and phone number (critical)", "Click Save (critical)"],
+  "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+ {"id": "tr205-e", "required_actions": ["Go to contacts.google.com (critical)", "Click Create contact, then Create a contact (critical)",
+                                        "Enter the name and phone number (critical)", "Click Save (critical)",
+                                        "Tell the user whether an email address is required to save a contact (critical for the question asked)"],
+  "covered": [True, True, True, True, False], "needs_clarification": False,
+  "gates": gs(source="fail"),
+  "unsupported_claims": ["'You do not need an email address.' -> the page says only 'You can save names, email addresses, phone numbers, and more in Google Contacts' and states that it does not say whether an email address is required (checked twice); the answer to the user's question is not supported by the source."],
+  "scores": sc(ask_or_answer=1), "decision": "revise",
+  "reasons": "The direct answer to 'do I have to have an email for him?' is not on the cited page and was added from memory (G1). The four steps themselves are supported.",
+  "fix": "Delete the sentence 'You do not need an email address.' Replace it with 'Google Contacts can save names, email addresses, phone numbers, and more.' Keep steps 1 to 4 unchanged. Then add one sentence saying that the help page does not say whether an email address is required, so the user can save the plumber's name and phone number now. Do not state a yes or no answer unless a second official Google Contacts page confirms it; if one does, cite it and then give the direct answer."},
+ {"id": "tr205-r", "required_actions": ["Go to contacts.google.com (critical)", "Click Other contacts at the left (critical)",
+                                        "Look for Linda there (critical)", "Say that addresses of people you emailed but did not add are saved under Other contacts (critical)"],
+  "covered": [True, True, True, True], "needs_clarification": False,
+  "gates": gs(), "unsupported_claims": [], "scores": sc(), "decision": "keep", "reasons": "", "fix": ""},
+]

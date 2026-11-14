@@ -18,7 +18,9 @@ Troubleshooting: Device screenshots and menu may vary depending on device model 
 1. Open the **Settings** app.
 2. Tap **Display**.
 3. Tap **Font size and style**.
-4. On that screen, adjust the options to make the font bigger. You can also choose to make it bold, which makes the letters darker and thicker.
+4. On that screen, adjust the options to make the font bigger. You can also turn on bold on that screen.
+
+To make the words stand out more from the background, open **Settings**, tap **Accessibility**, tap **Visibility enhancements**, and turn on the switch next to **high contrast fonts**. This adds an outline around all the text so it stands out.
 
 Try one change at a time so you can see what suits your eyes. Menu names can look a little different depending on the phone model and software version.""",
          ]},
@@ -118,6 +120,8 @@ If you're not sure, look at the back of the phone. An iPhone has an apple logo o
 1. Press one of the **volume buttons** on the side of your phone.
 2. Tap the **Menu** icon at the right of the volume bar.
 3. Find **Ring Volume** and slide it up.
+
+If you don't see the **Menu** icon, or you can't find **Settings** under it, your phone has older software. Tap the **Down arrow** at the right instead, then slide **Ring**.
 
 If your phone was set to vibrate or mute, tap the **Ring** icon above the slider and turn off **Vibrate** or turn on **Ring**.""",
          ]},
@@ -280,6 +284,8 @@ Your recipe is now saved as a picture. You can find it in **Photos**. Tap **Coll
 2. Press the **side button** and the **Home button** (the round button) at the same time.
 3. Let go of both buttons quickly.
 
+The screenshot appears on the screen right away. On iOS 26 you can draw on it, crop it, or send it to apps or contacts. On older iOS versions a small picture shows in the lower-left corner for a moment, and you can tap it to open the screenshot.
+
 You can find it later in **Photos**. Tap **Collections**, then **Media Types**, then **Screenshots**.""",
          ]},
         {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone (Face ID)",
@@ -328,12 +334,19 @@ Try another device: Gmail may not load in browsers on older devices; try another
              "I read my Gmail in a web browser on my computer and the page will not load today. What should I try?",
              """Let's try a few things, starting with the easiest.
 
-1. Make sure your browser is up to date. Update it to the latest version.
-2. Open Gmail again.
+1. Check whether Gmail has a known problem. Open the **Google Workspace Status Dashboard**.
+2. Update your browser to the latest version, then open Gmail again.
 3. If it still will not load, try a different browser and open Gmail there.
-4. Clear your browser's saved website data (called cache and cookies), then open Gmail again.
+4. Turn off one browser extension at a time, opening Gmail again after each one.
+5. Clear your browser's cache and cookies, then open Gmail again.
+
+You can also try a private window, if your browser has one (it may be called incognito). In Chrome, to clear cache and cookies, select the **More** icon at the top right, choose **Delete browsing data**, pick a time range such as **All time**, select **Cookies and other site data**, and then select **Delete data**.
 
 If Gmail still will not load, tell me and we'll check your internet connection next.""",
+         ],
+         "sources": [
+             {"title": "Gmail Help: Gmail won't load", "url": "https://support.google.com/mail/answer/7074871?hl=en", "accessed": "2026-11-13"},
+             {"title": "Google Account Help: Clear cache & cookies (Chrome)", "url": "https://support.google.com/accounts/answer/32050", "accessed": "2026-11-13"},
          ]},
         {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Gmail (computer browser)",
          "messages": [
@@ -359,8 +372,9 @@ So I can give you the right steps, **do you open Gmail in a web browser on a com
 
 1. Update your browser to the latest version, then open Gmail again.
 2. If it still does not load, try a different browser.
-3. Restart your computer and open Gmail again.
-4. Turn your Wi-Fi off, then back on, and open Gmail again.
+3. Clear your browser's cache and cookies, then open Gmail again.
+4. Turn off one browser extension at a time, opening Gmail again after each one.
+5. Turn your Wi-Fi off, then back on, and open Gmail again.
 
 If none of that works, tell me what happens and we'll try the next step.""",
          ]},
@@ -426,15 +440,15 @@ If it still does not print, tell me and we'll try the next step.""",
         {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Windows 11 (wireless printer)",
          "messages": [
              """We got a wireless printer a few years ago and I use it with my Windows 11 laptop from the sunroom. Last week the internet company sent a little box to make the Wi-Fi reach the back of the house and since then the printer will not print anything. I have a tax form to print. The printer lights are on. Please explain it simply, I am not very good with this.""",
-             """The new Wi-Fi box could be the reason. Let's check the printer's wireless first.
+             """The new Wi-Fi box could be the reason. Let's start with the Windows 11 troubleshooter, then check the printer's wireless.
 
-1. Turn off the printer and unplug it.
-2. Wait 30 seconds.
-3. Plug it back in and turn it on.
-4. Look for a button on the printer that shows a blue wireless icon. Use it to make sure wireless is on.
-5. Run the printer's built-in wireless test. Many printers have a menu option for it.
-6. If the test passes but it still will not print, make sure your laptop is online.
-7. Make sure your laptop is on the same Wi-Fi network as the printer. With a Wi-Fi box like the new one, the laptop can end up on a different network from the printer.
+1. Open the **Get Help** app and run the printer troubleshooter.
+2. Turn off the printer and unplug it.
+3. Wait 30 seconds.
+4. Plug it back in and turn it on.
+5. Make sure the printer's wireless is on. Many printers have a button with a blue wireless icon.
+6. Run the printer's wireless connectivity test.
+7. If you use an extender or more than one Wi-Fi router, make sure your laptop is connected to the same network as the printer.
 8. Try printing again.
 
 If it still does not print, tell me what happens and we'll try the next step.""",
@@ -453,7 +467,9 @@ The next steps depend on what you're printing from. **Are you printing from a co
 3. Plug it back in and turn it on.
 4. If it connects with a USB cable, make sure the cable is firmly connected at both ends.
 5. If it connects wirelessly, make sure the printer's wireless option is turned on. Look for a button on the printer that shows a blue wireless icon.
-6. Try printing your boarding pass again.
+6. If it connects wirelessly, run the printer's wireless connectivity test.
+7. Make sure your computer is connected to the same Wi-Fi network as the printer.
+8. Try printing your boarding pass again.
 
 If it still does not print, tell me and we'll try the next step.""",
          ]},
@@ -492,9 +508,11 @@ If that does not help, the next steps are on the computer, so you may want to as
 5. If it does not appear, click **Add manually**.
 6. Click **Add a local printer or network printer with manual settings**, then click **Next**.
 7. Click **Use an existing port**, pick the port your printer uses, then click **Next**.
-8. Choose your printer's maker and model, then click **Next**.
-9. Type a name, click **Next**, and choose **Do not share this printer**.
-10. Click **Print a test page**, then click **Finish**.""",
+8. If the printer came with a disc that has the driver, click **Have Disk**. Otherwise, click **Windows Update**.
+9. Choose your printer's maker on the left and its model on the right, then click **Next**.
+10. Type a name for the printer, then click **Next**.
+11. Choose **Do not share this printer**, then click **Next**.
+12. Click **Print a test page**, then click **Finish**.""",
          ]},
     ],
 })

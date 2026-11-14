@@ -3,90 +3,93 @@ TASKS = [
         "task_id": "TR-199",
         "task_type": "email_attach",
         "task": "Attach a file or photo to an email",
-        "platform": "Outlook.com",
+        "platform": "New Outlook for Windows",
         "category": "communication",
         "sensitive": False,
         "source": {"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab"},
-        "source_notes": """Attach a file from your computer: 1. Start a reply, forward, or new email. 2. Select Attach, then select Browse this computer. 3. Choose the file and select Open. To attach several files, hold CTRL (Command on a Mac) while selecting them.
-You can also drag files from the computer into the message; a drop hint appears as you drag over the message.
-Attach a OneDrive file as a link: start a reply, forward, or new email; select Attach, then Browse cloud locations; choose the file and select Next (hold CTRL or Command to pick several). To restrict editing on a OneDrive attachment, select More actions, then Manage access. Other cloud storage such as Box, Dropbox, or Google Drive can be added under Storage account settings.
-Page gives no size limit and no specific troubleshooting.""",
+        "source_notes": """Read pages cover New Outlook for Windows only. The Outlook.com (web) and classic Outlook attachment steps could not be read, so this batch uses New Outlook for Windows.
+Attach a file from your computer (New Outlook): start a new message, reply, or forward. Select the Insert tab, then select Attach file. Select Browse this computer. This opens a File Explorer window where you choose a file from your computer. Select the file in File Explorer.
+Attach a OneDrive file as a link: select Insert, then Attach file, then OneDrive. Select the file and press Enter. A link to the file is added to the message.
+If a recipient cannot view a linked file, a warning appears. Select Manage access to resolve the warning message.
+Not on the readable pages: holding CTRL or Command to select several files, and dragging files from the computer into the message. No size limit and no troubleshooting on the readable pages.""",
         "examples": [
-            {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Outlook.com",
+            {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "New Outlook for Windows",
+             "sources": [{"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab", "accessed": "2026-11-13"},
+                         {"title": "Microsoft Support: Basic tasks using a screen reader with email in Outlook", "url": "https://support.microsoft.com/en-us/accessibility/outlook/basic-tasks-using-a-screen-reader-with-email-in-outlook?ad=us&rs=en-us&ui=en-us", "accessed": "2026-11-13"}],
              "messages": [
-                 "I'm writing an email in Outlook.com and want to attach a Word file that is saved on my computer. How?",
-                 """Here is how to attach a file from your computer in Outlook.com.
+                 "I'm writing an email in the new Outlook app on my Windows computer and want to attach a Word file that is saved on my computer. How?",
+                 """Here is how to attach a file from your computer in the new Outlook app.
 
-1. In your new email, select **Attach**.
-2. Select **Browse this computer**.
-3. In the window that opens, click the file you want.
-4. Select **Open**.
-
-If you want to attach more than one file, hold the CTRL key while you click each file before you select **Open**.""",
+1. Start a new email, or open a reply or forward.
+2. Select the **Insert** tab.
+3. Select **Attach file**.
+4. Select **Browse this computer**.
+5. In the File Explorer window that opens, select the file you want.""",
              ]},
-            {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Outlook.com",
+            {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "New Outlook for Windows",
+             "sources": [{"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab", "accessed": "2026-11-13"},
+                         {"title": "Microsoft Support: Basic tasks using a screen reader with email in Outlook", "url": "https://support.microsoft.com/en-us/accessibility/outlook/basic-tasks-using-a-screen-reader-with-email-in-outlook?ad=us&rs=en-us&ui=en-us", "accessed": "2026-11-13"}],
              "messages": [
-                 "ok so my granddaughter sent me her school pictures and I saved four of them on my Mac and now I'm in Outlook.com writing to my sister and I'd like to put all four pictures on the email but I don't know how to get more than one on there. I'm using a Mac. Can you help",
-                 """Yes, you can attach all four at once.
+                 "ok so my granddaughter sent me her school pictures and I saved four of them on my Windows computer and now I'm in the new Outlook app writing to my sister and I'd like to put all four pictures on the email but I don't know how to get more than one on there. Can you help",
+                 """I could not find a way to pick several pictures at once, so add them one at a time.
 
-1. In your email, select **Attach**.
-2. Select **Browse this computer**.
-3. Click the first picture.
-4. Hold down the Command key, then click each of the other three pictures.
-5. Select **Open**.
-
-All four pictures are added to your email together.""",
+1. Select the **Insert** tab.
+2. Select **Attach file**, then **Browse this computer**.
+3. In the File Explorer window, select the first picture.
+4. Repeat steps 1 to 3 for each of the other three pictures.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
-                 "how do i put a document on my outlook.com email",
+                 "how do i put a document on my outlook email",
                  "I can help with that. Is the document saved on your computer, or is it in OneDrive?",
              ]},
-            {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "Outlook.com",
+            {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "New Outlook for Windows",
+             "sources": [{"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab", "accessed": "2026-11-13"},
+                         {"title": "Microsoft Support: Basic tasks using a screen reader with email in Outlook", "url": "https://support.microsoft.com/en-us/accessibility/outlook/basic-tasks-using-a-screen-reader-with-email-in-outlook?ad=us&rs=en-us&ui=en-us", "accessed": "2026-11-13"}],
              "messages": [
-                 "how do i put a document on my outlook.com email",
+                 "how do i put a document on my outlook email",
                  "I can help with that. Is the document saved on your computer, or is it in OneDrive?",
-                 "it's on my computer",
+                 "it's on my computer, and I use the new Outlook app on Windows",
                  """Thanks. Here is how to attach it.
 
 1. Start a new email, or open a reply.
-2. Select **Attach**.
-3. Select **Browse this computer**.
-4. Click your document.
-5. Select **Open**.
-
-If you would rather not use the menu, you can also drag the document from your computer into the message.""",
+2. Select the **Insert** tab.
+3. Select **Attach file**.
+4. Select **Browse this computer**.
+5. In the File Explorer window, select your document.""",
              ]},
-            {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Outlook.com",
+            {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "New Outlook for Windows",
+             "sources": [{"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab", "accessed": "2026-11-13"},
+                         {"title": "Microsoft Support: Basic tasks using a screen reader with email in Outlook", "url": "https://support.microsoft.com/en-us/accessibility/outlook/basic-tasks-using-a-screen-reader-with-email-in-outlook?ad=us&rs=en-us&ui=en-us", "accessed": "2026-11-13"}],
              "messages": [
-                 "My tax papers are stored in OneDrive. I'm writing an Outlook.com email on my computer. I don't want to download them to my computer first, I just want to send them from OneDrive. Is that possible?",
-                 """Yes. You can attach a OneDrive file straight from your email, without downloading it.
+                 "My tax papers are stored in OneDrive. I'm writing an email in the new Outlook app on my Windows computer. I don't want to download them to my computer first, I just want to send them from OneDrive. Is that possible?",
+                 """Yes. You can attach a OneDrive file as a link, so you do not need to download it first.
 
-1. In your email, select **Attach**.
-2. Select **Browse cloud locations**.
-3. Click the file you want.
-4. Select **Next**.
+1. In your email, select the **Insert** tab.
+2. Select **Attach file**.
+3. Select **OneDrive**.
+4. Select the file you want. A link to the file is added to your email.
 
-The file is attached as a link. To limit what people can do with it, select **More actions**, then **Manage access**.""",
+If you see a warning that a person cannot view the linked file, select **Manage access** to resolve it.""",
              ]},
-            {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Outlook.com",
+            {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "New Outlook for Windows",
+             "sources": [{"title": "Microsoft Support: Add pictures or attach files in Outlook.com on Outlook on the web", "url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab", "accessed": "2026-11-13"},
+                         {"title": "Microsoft Support: Basic tasks using a screen reader with email in Outlook", "url": "https://support.microsoft.com/en-us/accessibility/outlook/basic-tasks-using-a-screen-reader-with-email-in-outlook?ad=us&rs=en-us&ui=en-us", "accessed": "2026-11-13"}],
              "messages": [
-                 "How do I attach a picture from my computer to an Outlook.com email?",
+                 "How do I attach a picture from my computer to an email in the new Outlook app on Windows?",
                  """Here is how to attach a picture from your computer.
 
-1. In your email, select **Attach**.
-2. Select **Browse this computer**.
-3. Click the picture you want.
-4. Select **Open**.""",
+1. Start a new email, or open a reply or forward.
+2. Select the **Insert** tab.
+3. Select **Attach file**.
+4. Select **Browse this computer**.
+5. In the File Explorer window, select the picture you want.""",
                  "that worked but I have 3 more pictures to add and when I did it again it only let me pick one at a time",
-                 """You can pick several at once.
+                 """The steps for attaching a file let you pick one file at a time, so repeat these steps for each picture.
 
-1. Select **Attach**, then **Browse this computer**.
-2. Hold down the CTRL key (the Command key on a Mac).
-3. While holding it, click each picture you want.
-4. Select **Open**.
-
-You can also drag the pictures from your computer into the message.""",
+1. Select the **Insert** tab.
+2. Select **Attach file**, then **Browse this computer**.
+3. In the File Explorer window, select the picture.""",
              ]},
         ],
     },
@@ -99,9 +102,9 @@ You can also drag the pictures from your computer into the message.""",
         "sensitive": False,
         "source": {"title": "Microsoft Support: Can't send or receive email in Outlook.com", "url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642"},
         "source_notes": """(Replaced the junk/block topic: the Outlook.com junk page could not be read at step level.)
-Step 1 Check storage: if your Microsoft cloud storage is full you cannot send or receive email. Messages sent to you while it was full bounce back to the sender and cannot be recovered. Open the mailbox storage page to see what is using space, free some up, then continue.
+Step 1 Check storage: if your Microsoft cloud storage is full you cannot send or receive email. Messages sent to you while it was full bounce back to the sender and cannot be recovered. Storage path (verified): Settings, then Account, then Storage, which shows how much space each folder uses and lets you permanently delete all items in a folder or only items older than 3, 6, or 12 months. When storage is full, email cannot be sent or received, and incoming messages are returned to the sender, who must resend them once you are under quota.
 Step 2 Check account: if you changed your password recently, update it. If you see a message that your account is temporarily blocked, follow the unblock guidance for Outlook.com (can happen after unusual sign-in activity). If you cannot sign in at all, use the Microsoft account sign-in helper.
-Step 3 Receiving problems: Other tab: look for filters that hide messages, confirm you can see all messages. Junk Email: check the Junk Email settings and folder; for legitimate messages, right-click each one and select Mark as not junk to move it to the Inbox. Message order: if messages seem out of place, select Filter, then Sort, then Date to restore chronological order. Forwarding: check whether email forwarding is turned on. Rules: check for email rules that could block or redirect the message. Third-party mail needs modern authentication and IMAP; if IMAP or POP is active, disable both and test again. Specific missing email with no error: ask the sender to review Sender Support in Outlook.com.
+Step 3 Receiving problems: Other tab: look for filters that hide messages, confirm you can see all messages. Junk Email: check the Junk Email settings and folder; for legitimate messages, right-click each one and select Mark as not junk to move it to the Inbox. Message order: if messages seem out of place, select Filter, then Sort, then Date to restore chronological order. Forwarding (verified): Settings icon, then Mail, then Forwarding. Forwarding is on when Enable forwarding is selected; clear it and select Save to turn it off. Rules: check for email rules that could block or redirect the message. Third-party mail needs modern authentication and IMAP; if IMAP or POP is active, disable both and test again. Specific missing email with no error: ask the sender to review Sender Support in Outlook.com.
 Step 4 Sending problems: attachments over 25 MB will not send; bounce messages; new account has a temporary low sending limit; remove signature and resend; recipient may add you to Safe Senders; add recipients to Contacts.
 Step 6 run the interactive troubleshooter (Start). Step 7 Select Help on the menu bar in Outlook.com and enter your query.""",
         "examples": [
@@ -117,15 +120,16 @@ Step 6 run the interactive troubleshooter (Start). Step 7 Select Help on the men
 If it is in neither place, check whether email forwarding is turned on, and whether you have any email rules that could redirect it.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Outlook.com",
+             "sources": [{"title": "Microsoft Support: Can't send or receive email in Outlook.com", "url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642", "accessed": "2026-11-13"}, {"title": "Microsoft Support: Storage limits in Outlook.com", "url": "https://support.microsoft.com/office/storage-limits-in-outlook-com-7ac99134-69e5-4619-ac0b-2d313bba5e9e", "accessed": "2026-11-13"}],
              "messages": [
                  "Hello, for about a week now no new mail has come into my Outlook.com account, not from my church group, not from my pharmacy, nothing, and this morning I saw a message at the top saying my Microsoft storage is full. My neighbor said that might be the reason. Is it?",
                  """Yes, that can be the reason. When your Microsoft cloud storage is full, you cannot send or receive email.
 
-1. Open your mailbox storage page to see what is using the space.
-2. Free up some space.
+1. Select **Settings**, then **Account**, then **Storage** to see how much space each folder uses.
+2. Free up some space. On that page you can permanently delete all items in a folder, or only the items older than 3, 6, or 12 months.
 3. Check your inbox again for new mail.
 
-Messages people sent while your storage was full bounced back to them and cannot be recovered, so you may need to ask them to send again.""",
+Messages people sent while your storage was full were returned to them, so they may need to send those messages again.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "incomplete", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -133,16 +137,17 @@ Messages people sent while your storage was full bounced back to them and cannot
                  "I can help with that. Which email do you use: **Outlook.com**, **Gmail**, or something else?",
              ]},
             {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "Outlook.com",
+             "sources": [{"title": "Microsoft Support: Can't send or receive email in Outlook.com", "url": "https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642", "accessed": "2026-11-13"}, {"title": "Microsoft Support: Turn on or off automatic forwarding in Outlook.com", "url": "https://support.microsoft.com/en-us/office/turn-on-or-off-automatic-forwarding-in-outlook-com-6246987c-6c8f-4144-b255-14fc07007dad", "accessed": "2026-11-13"}, {"title": "Microsoft Support: Storage limits in Outlook.com", "url": "https://support.microsoft.com/office/storage-limits-in-outlook-com-7ac99134-69e5-4619-ac0b-2d313bba5e9e", "accessed": "2026-11-13"}],
              "messages": [
                  "my emails stopped coming in",
                  "I can help with that. Which email do you use: **Outlook.com**, **Gmail**, or something else?",
                  "outlook.com",
                  """Thanks. Try these checks for Outlook.com.
 
-1. Open the **Junk Email** folder. If good mail is there, right-click it and select **Mark as not junk**.
-2. Check whether email forwarding is turned on, since that could send your mail somewhere else.
-3. Check for email rules that could block or redirect messages.
-4. If your Microsoft cloud storage is full, free some space, because a full mailbox cannot receive email.
+1. Check the **Other** tab, and make sure no filters are keeping you from seeing all your messages.
+2. Open the **Junk Email** folder. If good mail is there, right-click it and select **Mark as not junk**.
+3. Select the **Settings** icon, then **Mail**, then **Forwarding**. Forwarding is on when **Enable forwarding** is checked. If it is checked, clear it and select **Save**.
+4. Select **Settings**, then **Account**, then **Storage** to see how much space each folder uses. If your Microsoft cloud storage is full, free up some space, because a full mailbox cannot receive email.
 
 If a message from one person is still missing, ask that person to review Sender Support in Outlook.com.""",
              ]},
@@ -151,11 +156,11 @@ If a message from one person is still missing, ask that person to review Sender 
                  "My Outlook.com isn't showing an email from my doctor's office. I'm nervous about breaking something, so I don't want to change any settings or rules. Is there anything I can just look at?",
                  """Yes, you can find it just by looking.
 
-1. Click the **Other** tab and look through it. Make sure you can see all of your messages.
+1. Click the **Other** tab and look through it for the message.
 2. Open the **Junk Email** folder and look for the message.
-3. If you find it in Junk Email, right-click it and select **Mark as not junk**. This only moves that one message to your Inbox.
+3. If you find it in Junk Email, right-click it and select **Mark as not junk**. This moves it back to your inbox.
 
-None of these steps changes your settings or rules.""",
+If you notice a filter has been applied on the Other tab, tell me before you change anything.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Outlook.com",
              "messages": [
@@ -270,10 +275,10 @@ If it is not there either, it may be past the 30 days that removed items can be 
         "category": "communication",
         "sensitive": False,
         "source": {"title": "Gmail Help: Create & manage labels in Gmail", "url": "https://support.google.com/mail/answer/118708?hl=en"},
-        "source_notes": """Create a label (computer): 1. Open Gmail. 2. On the left, next to Labels, click Create new label (the plus icon). 3. Type a name. 4. Optional: to put it inside another label, check Nest label under and choose the parent. 5. Click Create.
+        "source_notes": """Create a label (computer): 1. Open Gmail. 2. On the left, next to Labels, click Create new label. 3. Type a name. 4. Optional: to put it inside another label, check Nest label under and choose the parent. 5. Click Create.
 Add an email to a label: check the box next to the email, click Labels at the top, select the label. For a new email being written: Compose, then at bottom right More options, then Label.
 Move an email to a different label: check the box next to the email, click Labels at the top, uncheck the current label, select the new one.
-Show or hide labels in the sidebar: click Settings (gear icon) at top right, then See all settings, then the Labels tab at the top, then next to a label click Show or Hide.
+Show or hide labels in the sidebar: click Settings at top right, then See all settings, then the Labels tab at the top, then next to a label click Show or Hide.
 Troubleshooting: missing label in the sidebar may be set to hidden, check the Labels tab. With conversation view on a label applies only to existing messages in the conversation; deleting an email removes it from all labels and the inbox. Up to 5,000 labels.""",
         "examples": [
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Gmail (computer)",
@@ -282,7 +287,7 @@ Troubleshooting: missing label in the sidebar may be set to hidden, check the La
                  """Here is how to make a label called Taxes.
 
 1. Open Gmail on your computer.
-2. On the left, next to **Labels**, click **Create new label**. It looks like a plus icon.
+2. On the left, next to **Labels**, click **Create new label**.
 3. Type **Taxes** as the name.
 4. Click **Create**.
 
@@ -340,7 +345,7 @@ Repeat steps 3 to 5 for any other emails.""",
                  "I did that but I can't see Bills on the left side anywhere",
                  """The label may be set to hidden. Here is how to show it.
 
-1. At the top right, click **Settings**, the gear icon, then **See all settings**.
+1. At the top right, click **Settings**, then **See all settings**.
 2. Click the **Labels** tab at the top.
 3. Find **Bills** and click **Show** next to it.""",
              ]},
@@ -566,7 +571,7 @@ The contact is saved to your Google Account.""",
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Google Contacts (computer)",
              "messages": [
                  "My new plumber only gave me his phone number, no email address. I'm on my computer and want to add him to Google Contacts. Is that okay, or do I have to have an email for him?",
-                 """You do not need an email address. Contacts can hold names, phone numbers, and more.
+                 """Google Contacts can save names, email addresses, phone numbers, and more. The help page I checked does not say whether an email address is required. The steps below save his name and phone number.
 
 1. Go to contacts.google.com.
 2. At the top left, click **Create contact**, then **Create a contact**.

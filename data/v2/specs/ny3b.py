@@ -73,7 +73,7 @@ If you don't see **Pair new device**, look under **Available devices**, or tap t
 2. Touch and hold the **Bluetooth** icon.
 3. Tap **Pair new device**.
 4. Tap the name of your keyboard.
-5. Follow the on-screen prompts.
+5. Follow the on-screen prompts. If the keyboard asks for a passcode and you don't have one, try 0000 or 1234.
 
 When it works, the keyboard shows as **Connected**.
 
@@ -548,9 +548,9 @@ If you don't see **Wi-Fi calling**, your carrier doesn't support it.""",
 5. Tap **Wi-Fi calling**.
 6. Turn on **Wi-Fi calling**.
 
-Then make calls as you normally would while you are connected to her Wi-Fi.
+When you are connected to the internet, the notification screen shows **Internet Call** or **Wi-Fi calling**. Then make calls as you normally would while you are connected to her Wi-Fi.
 
-If you don't see **Wi-Fi calling**, your carrier doesn't support it. Whether this works without a plan depends on your carrier, so ask your carrier to confirm.""",
+If you don't see **Wi-Fi calling**, your carrier doesn't support it. Whether this works without a plan depends on your carrier, so ask your carrier to confirm. You may incur additional charges for calls over Wi-Fi, so check with your mobile service provider for details.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android",
              "messages": [

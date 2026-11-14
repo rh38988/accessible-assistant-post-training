@@ -85,10 +85,10 @@ If you already shared your Social Security number or bank details, go to **Ident
 
 **Tips for a strong password:**
 1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
-2. **If you used the same or a similar password on other sites, change it there too.**
+2. **If a company tells you it lost your password in a data breach, change it right away.** If you used the same or a similar password on other sites, change it there too.
 3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
 4. **A password manager, or your web browser,** can create strong passwords and save them for you.
-5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step. Text or email codes are the least secure type, so an authenticator app or security key is better if you can use one.
 
 Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
@@ -110,16 +110,16 @@ Protect your **email** account with a strong password, because a hacker who take
                 "sources": [{'title': 'FTC Consumer Advice: Creating Strong Passwords and Other Ways To Protect Your Accounts', 'url': 'https://consumer.ftc.gov/articles/creating-strong-passwords-and-other-ways-protect-your-accounts', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I use my dog's name and my birthday for everything because that's the only way I remember. My grandson says that's not safe. What should I do instead?",
-                    """Your grandson has a good point. Since you use the same password everywhere, you should change it on every site. Here are some tips for new ones.
+                    """A long passphrase of random words can be strong and still easy to remember. Here are some tips for choosing a new one.
 
 You may find it easier to use a **passphrase**: a series of random words separated by spaces. It may be easier to remember.
 
 **Tips for a strong password:**
 1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
-2. **If you used the same or a similar password on other sites, change it there too.**
+2. **If a company tells you it lost your password in a data breach, change it right away.** If you used the same or a similar password on other sites, change it there too.
 3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
 4. **A password manager, or your web browser,** can create strong passwords and save them for you.
-5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step. Text or email codes are the least secure type, so an authenticator app or security key is better if you can use one.
 
 Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
@@ -139,10 +139,10 @@ You may find it easier to use a **passphrase**: a series of random words separat
 
 **Tips for a strong password:**
 1. **Make it long**, at least 12 characters. Make sure the words in a passphrase are random.
-2. **If you used the same or a similar password on other sites, change it there too.**
+2. **If a company tells you it lost your password in a data breach, change it right away.** If you used the same or a similar password on other sites, change it there too.
 3. **Avoid common phrases, song lyrics, or movie quotes**, because hacking programs can guess them.
 4. **A password manager, or your web browser,** can create strong passwords and save them for you.
-5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step.
+5. **Turn on two-factor authentication** where you can. Then a hacker who steals your password still can't log in without another step. Text or email codes are the least secure type, so an authenticator app or security key is better if you can use one.
 
 Protect your **email** account with a strong password, because a hacker who takes it over can get password reset links for your other accounts.""",
                 ],
@@ -164,11 +164,10 @@ Protect your **email** account with a strong password, because a hacker who take
                     """Here's how. It takes about a minute.
 
 1. Open the **Google Maps** app.
-2. Tap the search bar and type the address or name of the place.
-3. Tap the correct result.
-4. Tap **Directions** at the bottom left.
-5. Choose how you're traveling: **driving**, **transit**, or **walking**.
-6. Pick a route. The best route is shown in **blue**, and other options are gray.
+2. Search for your destination, or tap it on the map.
+3. Tap **Directions** at the bottom left.
+4. Choose how you're traveling: **driving**, **transit**, or **walking**.
+5. Pick a route. The best route is shown in **blue**, and other options are gray.
 
 To see the list of steps, swipe up on the route panel. To see a turn-by-turn preview, tap **Preview**.""",
                 ],
@@ -207,11 +206,10 @@ To see the list of steps, swipe up on the route panel. To see a turn-by-turn pre
 Here's how. It takes about a minute.
 
 1. Open the **Google Maps** app.
-2. Tap the search bar and type the address or name of the place.
-3. Tap the correct result.
-4. Tap **Directions** at the bottom left.
-5. Choose how you're traveling: **driving**, **transit**, or **walking**.
-6. Pick a route. The best route is shown in **blue**, and other options are gray.
+2. Search for your destination, or tap it on the map.
+3. Tap **Directions** at the bottom left.
+4. Choose how you're traveling: **driving**, **transit**, or **walking**.
+5. Pick a route. The best route is shown in **blue**, and other options are gray.
 
 To see the list of steps, swipe up on the route panel. To see a turn-by-turn preview, tap **Preview**.""",
                 ],
@@ -826,7 +824,7 @@ Once Silent mode is off, your phone will ring again. If it's still too quiet, pr
 If you don't see **Select to Speak**, update the **Android Accessibility Suite** app in the Play Store.
 
 **Use it:**
-1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**. If TalkBack is on, use a **three-finger** swipe up instead.
+1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**.
 2. Tap any text you want to hear.
 3. To hear everything on the screen, tap **Play**.""",
                 ],
@@ -875,7 +873,7 @@ Yes, with a feature called **Select to Speak**. Setting it up takes a couple of 
 If you don't see **Select to Speak**, update the **Android Accessibility Suite** app in the Play Store.
 
 **Use it:**
-1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**. If TalkBack is on, use a **three-finger** swipe up instead.
+1. Start it with the shortcut: swipe up with **two fingers**, or tap the **Accessibility button**.
 2. Tap any text you want to hear.
 3. To hear everything on the screen, tap **Play**.""",
                 ],
@@ -900,7 +898,9 @@ If you don't see **Select to Speak**, update the **Android Accessibility Suite**
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
 4. Tap the **Date and Time** button.
-5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
+5. To set your own day and time, tap **Custom**.
+6. Choose tomorrow's date.
+7. Set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 
@@ -932,7 +932,9 @@ You can use the **Reminders** app. It takes about a minute.
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
 4. Tap the **Date and Time** button.
-5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
+5. To set your own day and time, tap **Custom**.
+6. Choose tomorrow's date.
+7. Set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 
@@ -956,7 +958,9 @@ You can use the **Reminders** app. It takes about a minute.
 2. Tap **New Reminder**.
 3. Type what you want to remember, like **Call the pharmacy**.
 4. Tap the **Date and Time** button.
-5. To set your own day and time, tap **Custom**, then pick tomorrow's date and set the time to **10:00 AM**.
+5. To set your own day and time, tap **Custom**.
+6. Choose tomorrow's date.
+7. Set the time to **10:00 AM**.
 
 Your iPhone will show a reminder at that time.
 

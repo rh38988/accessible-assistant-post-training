@@ -599,7 +599,7 @@ Your phone needs to be turned on and connected to a network for this to work."""
 5. Tap the **Ring** icon.
 6. To stop the ringing, swipe **Dismiss** on the phone, or tap **Stop** on the watch.
 
-The watch must be connected to the phone by Bluetooth, Wi-Fi, or LTE. If the watch cannot find the phone, you would need to use the Samsung Find or SmartThings Find website instead.""",
+The watch must be connected to the phone by Bluetooth, Wi-Fi, or LTE. The phone must be turned on and have a network connection. If the watch cannot find the phone, you would need to use the Samsung Find or SmartThings Find website instead.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Samsung Galaxy",
              "messages": [

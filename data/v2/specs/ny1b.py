@@ -61,14 +61,14 @@ If it asks for a PIN or passcode, check the earbuds' manual or online instructio
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
                  "I am trying to connect a Bluetooth speaker to my iPhone and it is asking me for a PIN. I threw away the paper manual a long time ago and I have no idea what the number is. Where can I find it?",
-                 """You do not need the paper manual. The speaker's online instructions also give the code.
+                 """The speaker may ask for a PIN or passcode, and you can enter it at the pairing prompt.
 
-1. Look up your speaker's online instructions, and find the PIN or passcode.
+1. Look for the PIN or passcode. If you need help, check the speaker's manual or its online instructions.
 2. Go back to the pairing prompt on your iPhone and enter the PIN or passcode.
 
 If the prompt has closed, open **Settings**, tap **Bluetooth**, tap your speaker's name under **My Devices**, and enter the code.
 
-If the code does not work, check the online instructions again for the right one.""",
+If the code does not work, check the speaker's manual or its online instructions again.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "sources": [{"title": 'Apple Support: Pair a third-party Bluetooth accessory with your iPhone or iPad', "url": 'https://support.apple.com/en-us/HT204091', "accessed": "2026-11-13"},
@@ -271,13 +271,15 @@ If you still want to turn it on:
 4. Tap **Turn on two-factor authentication**.
 5. Follow the instructions on the screen.""",
                  "I went there but I do not see Turn on two-factor authentication anywhere.",
-                 """Most accounts already use two-factor authentication, so you may not need to turn it on. To check:
+                 """Most accounts already use two-factor authentication, so you may not need to turn it on. If you want to look again:
 
 1. Open **Settings**.
 2. Tap your name at the top.
 3. Tap **Sign-In & Security**.
 
-If your account was created with two-factor authentication, Apple says this extra protection can't be removed.""",
+If your account was created with two-factor authentication, this extra protection can't be removed.
+
+If you still do not see the option at all, go to account.apple.com, sign in to your Apple Account, select Upgrade Account Security, and follow the on-screen steps.""",
              ]},
         ],
     },
@@ -477,7 +479,7 @@ Check or unblock: Settings, Privacy & Security, Blocked Contacts. Swipe left on 
 
 1. Open the **Messages** app.
 2. Swipe left on the junk message.
-3. Tap the **Delete** button.
+3. Tap the Delete button. It appears as an icon, not a word.
 4. Tap **Delete and Report Spam**.
 
 Reporting does not stop the sender from texting you. To stop them, block the contact.""",
@@ -489,7 +491,7 @@ Reporting does not stop the sender from texting you. To stop them, block the con
 
 1. Open the **Messages** app.
 2. In the **Messages** list, swipe left on the message.
-3. Tap the **Delete** button.
+3. Tap the Delete button. It appears as an icon, not a word.
 4. Tap **Delete and Report Spam**.
 
 Now block them.
@@ -508,14 +510,14 @@ Now block them.
                  "how do i report and block junk texts",
                  "I can help with that. Is your phone an **iPhone** or an **Android** phone?",
                  "iphone",
-                 """On an iPhone, reporting does not stop the sender, so report first and block them afterwards.
+                 """On an iPhone, reporting does not stop the sender, so you also need to block them.
 
 1. Open the **Messages** app.
 2. In the **Messages** list, swipe left on the message.
-3. Tap the **Delete** button.
+3. Tap the Delete button. It appears as an icon, not a word.
 4. Tap **Delete and Report Spam**.
 
-If you already opened it, open the message, tap **Report Spam** at the bottom, then tap **Delete and Report Spam**.
+If you already opened it, open the message, tap **Report Spam** at the bottom (this link appears on messages from unknown senders), then tap **Delete and Report Spam**.
 
 Now block them.
 

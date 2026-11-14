@@ -1,6 +1,6 @@
 # train_v2 handoff (Data Lead: Ryan Hsieh)
 
-Status 2026-11-13: **interim freeze, 575 examples, English only.** Review of the remaining candidates continues; this file is updated when the final set is frozen.
+Status 2026-11-13: **frozen, 1,000 examples, English only (v2.0, "AI-screened, with human spot checks").** 17 examples were human-read; spot_check_v2.csv lists 50 more for you to read. 57 reserve examples are in train_v2_reserve.jsonl.
 
 ## Files
 - `data/v2/train_v2_en.jsonl`: training file (existing schema; `training/train_sft.py` reads `messages` and trains on the last assistant turn)

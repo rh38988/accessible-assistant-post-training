@@ -236,9 +236,9 @@ If you see a message that your battery's health is **significantly degraded**, i
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get your message.
+If a recipient is not using iMessage, the message is sent as an MMS or SMS.
 
-If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
+To send a group MMS message on your iPhone, go to **Settings**, then **Messages**, and turn on **MMS Messaging**. If you don't see that option, contact your carrier to check whether your plan supports Group MMS Messaging.""",
                 ],
             },
             {
@@ -258,7 +258,7 @@ If one of your kids has an Android phone and the message won't send, go to **Set
                 "sources": [{'title': 'Apple Support: Send a group text message on your iPhone or iPad', 'url': 'https://support.apple.com/en-us/118236', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I want to tell my three children about our Thanksgiving plans but typing the same message three times is a pain and I always forget someone. I have an iPhone.',
-                    """A group text will send it to all three at once, so no one gets left out. It takes about a minute. Here's how:
+                    """You can send one group text from Messages to all three of them. It takes about a minute. Here's how:
 
 1. Open the **Messages** app.
 2. Tap the **Compose** button (a square with a pencil) at the top.
@@ -266,9 +266,9 @@ If one of your kids has an Android phone and the message won't send, go to **Set
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get your message.
+If a recipient is not using iMessage, the message is sent as an MMS or SMS.
 
-If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
+To send a group MMS message on your iPhone, go to **Settings**, then **Messages**, and turn on **MMS Messaging**. If you don't see that option, contact your carrier to check whether your plan supports Group MMS Messaging.""",
                 ],
             },
             {
@@ -290,9 +290,9 @@ You can start a group text. It takes about a minute.
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get your message.
+If a recipient is not using iMessage, the message is sent as an MMS or SMS.
 
-If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
+To send a group MMS message on your iPhone, go to **Settings**, then **Messages**, and turn on **MMS Messaging**. If you don't see that option, contact your carrier to check whether your plan supports Group MMS Messaging.""",
                 ],
             },
         ],
@@ -318,7 +318,7 @@ If one of your kids has an Android phone and the message won't send, go to **Set
 
 Every website will now open at that size.
 
-To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, use the **Command** key instead).""",
+To zoom in with the keyboard, press **Ctrl** and **+** (on a Mac, press **Command** and **+**).""",
                 ],
             },
             {
@@ -359,7 +359,7 @@ To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, us
 
 Every website will now open at that size.
 
-To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, use the **Command** key instead).""",
+To zoom in with the keyboard, press **Ctrl** and **+** (on a Mac, press **Command** and **+**).""",
                 ],
             },
         ],
@@ -448,7 +448,7 @@ Only share your location with people you trust.""",
                 "sources": [{'title': 'Google Maps Help: Share your real-time location with others (Android)', 'url': 'https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I share my location with my son using Google Maps on my Android phone?',
-                    """Here's how. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
+                    """Here's how. It takes about two minutes. If he uses Gmail, save his Gmail address in your contacts.
 
 1. Open **Google Maps** and make sure you're signed in.
 2. Tap your **profile picture or initial**.
@@ -460,7 +460,7 @@ Only share your location with people you trust.""",
 
 Your location will be shared for the time you picked.
 
-If he doesn't use Gmail, you can share a **link** instead, which works for up to 24 hours. Only share your location with people you trust.""",
+If he doesn't use Gmail, skip steps 6 and 7. Instead, tap **Copy to clipboard**, then paste the link into a text or email to him. Anyone with the link can see your real-time location for up to 24 hours. Only share your location with people you trust.""",
                 ],
             },
             {
@@ -480,7 +480,7 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
                 "sources": [{'title': 'Google Maps Help: Share your real-time location with others (Android)', 'url': 'https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I drive to my sister's house two hours away every weekend and my son always wants me to text him when I get there but I forget. He said there's a way in Google Maps so he can just see. I have an Android.",
-                    """Yes, then he won't have to wait for your text. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
+                    """Yes, then he won't have to wait for your text. It takes about two minutes. If he uses Gmail, save his Gmail address in your contacts.
 
 1. Open **Google Maps** and make sure you're signed in.
 2. Tap your **profile picture or initial**.
@@ -492,7 +492,7 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
 
 Your location will be shared for the time you picked.
 
-If he doesn't use Gmail, you can share a **link** instead, which works for up to 24 hours. Only share your location with people you trust.""",
+If he doesn't use Gmail, skip steps 6 and 7. Instead, tap **Copy to clipboard**, then paste the link into a text or email to him. Anyone with the link can see your real-time location for up to 24 hours. Only share your location with people you trust.""",
                 ],
             },
             {
@@ -757,7 +757,7 @@ Deleting an app does **not** cancel any paid subscriptions inside it. If you pay
                 "sources": [{'title': 'Google Play Help: Delete apps on your Android device', 'url': 'https://support.google.com/googleplay/answer/13627402?hl=en', 'accessed': '2026-10-24'}, {'title': 'Android Help: Free up storage on your Android device', 'url': 'https://support.google.com/android/answer/7431795?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Disable apps that came with your Android device', 'url': 'https://support.google.com/googleplay/answer/13627571?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'How do I uninstall an app on my Android phone?',
-                    """You can remove it through the Play Store. It takes about a minute.
+                    """You can remove it through the Play Store. It takes about a minute. Some of these steps work only on Android 13 and up.
 
 1. Open the **Play Store** app.
 2. Tap your **profile icon** at the top right.
@@ -788,7 +788,7 @@ If you change your mind later, you can reinstall it from the Play Store without 
                 "sources": [{'title': 'Google Play Help: Delete apps on your Android device', 'url': 'https://support.google.com/googleplay/answer/13627402?hl=en', 'accessed': '2026-10-24'}, {'title': 'Android Help: Free up storage on your Android device', 'url': 'https://support.google.com/android/answer/7431795?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Disable apps that came with your Android device', 'url': 'https://support.google.com/googleplay/answer/13627571?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "When I bought my Android phone the store guy put a bunch of games and things on it that I'll never use, and they keep sending me notifications. How do I take them off?",
-                    """You can remove most of them. Some apps that came built into the phone can only be turned off, not deleted, but most apps can be removed through the **Play Store** like this. It takes about a minute:
+                    """Some apps that came with the phone can't be removed. On some phones you can turn them off instead. Other apps can be uninstalled through the **Play Store** like this, though some of these steps work only on Android 13 and up. It takes about a minute:
 
 1. Open the **Play Store** app.
 2. Tap your **profile icon** at the top right.
@@ -809,7 +809,7 @@ If you change your mind later, you can reinstall it from the Play Store without 
                     'my phone has apps I never use, can I get rid of them',
                     'Yes, you can remove them. Is your phone an **iPhone** or an **Android** phone?',
                     'Android',
-                    """Thanks. Here's one way that works on most Android phones.
+                    """Thanks. Here's one way to do it. Some of these steps work only on Android 13 and up.
 
 You can remove it through the Play Store. It takes about a minute.
 
@@ -847,6 +847,8 @@ If you change your mind later, you can reinstall it from the Play Store without 
 4. Find the program in the list.
 5. Click **More** next to it, then click **Uninstall**.
 6. Follow any directions that appear on the screen.
+
+If the program can't be uninstalled here, type **Control Panel** in the search box on the taskbar and open it. Click **Programs**, then **Programs and Features**. Right-click the program, choose **Uninstall** or **Uninstall/Change**, and follow the directions on the screen.
 
 **Another way:** click **Start**, then **All apps**, right-click the program, and choose **Uninstall**.""",
                 ],
@@ -905,6 +907,8 @@ Here's how. It takes a minute or two.
 5. Click **More** next to it, then click **Uninstall**.
 6. Follow any directions that appear on the screen.
 
+If the program can't be uninstalled here, type **Control Panel** in the search box on the taskbar and open it. Click **Programs**, then **Programs and Features**. Right-click the program, choose **Uninstall** or **Uninstall/Change**, and follow the directions on the screen.
+
 **Another way:** click **Start**, then **All apps**, right-click the program, and choose **Uninstall**.""",
                 ],
             },
@@ -928,7 +932,7 @@ Here's how. It takes a minute or two.
 2. Tap **General**.
 3. Tap **iPhone Storage**.
 4. You'll see recommendations and a list of your apps with how much space each uses. You can tap **Show All** to see more recommendations.
-5. Tap an app's name, then choose to offload or delete it. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
+5. Tap an app's name. In the detailed view, you can offload the app or delete the app. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
                 ],
             },
             {
@@ -970,7 +974,7 @@ Let's see what's using the space first. This takes a few minutes.
 2. Tap **General**.
 3. Tap **iPhone Storage**.
 4. You'll see recommendations and a list of your apps with how much space each uses. You can tap **Show All** to see more recommendations.
-5. Tap an app's name, then choose to offload or delete it. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
+5. Tap an app's name. In the detailed view, you can offload the app or delete the app. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
                 ],
             },
         ],

@@ -216,6 +216,8 @@ If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **
 4. Select the coffee shop's network.
 5. Select **Connect**.
 
+Since this network has no password, your info is available to other people on it.
+
 If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**. If a sign-in page opens in your browser, finish it to complete the connection.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
@@ -273,7 +275,7 @@ If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **
 1. Select the time at the bottom right, then select **Settings**.
 2. Select **Network**.
 3. Select **Add connection**, then **Add Wi-Fi**.
-4. Enter the network information.
+4. In the box that appears, type the network name and the password you already know.
 5. Select **Connect**.""",
              ]},
         ],
@@ -359,8 +361,8 @@ If an update is found, you will get an alert showing how much data it needs. You
                  """Try these in order, and test after each one:
 
 1. Turn your Chromebook off, then back on.
-2. If you ever use your phone's connection, switch to Wi-Fi or Ethernet instead.
-3. If it still will not download, the next step is a reset. A reset does not delete your personal files.
+2. If you have trouble with your phone or mobile data connection while updating, disconnect it and connect to Wi-Fi or Ethernet instead.
+3. If it still will not download, the next step is a reset. You can reset your Chromebook without deleting your personal files.
 4. If that does not work, recovery is the last step. Recovery permanently erases everything on the drive, including downloads, so back up your files first if you can.""",
              ]},
         ],

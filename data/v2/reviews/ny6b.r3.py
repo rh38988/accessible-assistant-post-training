@@ -1,0 +1,46 @@
+REVIEWS = [
+    {
+        "id": "tr194-c",
+        "required_actions": [
+            "Open Chrome on the computer (critical)",
+            "Select More at the top right, then Settings, then Accessibility (critical)",
+            "Turn on Live Caption (critical)",
+            "Select Add languages next to Manage languages for a language other than English (critical for Spanish)",
+            "Chrome downloads the language pack automatically (informational)",
+            "Select the down arrow next to Preferred caption language and choose the language (critical)",
+            "Captions appear in a bubble that can be dragged (what the user sees)",
+        ],
+        "covered": [True, True, True, True, True, True, True],
+        "needs_clarification": False,
+        "gates": {"source": "pass", "safety": "pass", "duplicate": "pass"},
+        "unsupported_claims": [],
+        "scores": {"steps": 2, "ask_or_answer": 2, "constraints": 2, "actionable": 2, "plain": 2, "realistic_user": 2},
+        "decision": "keep",
+        "reasons": "",
+        "fix": "",
+    },
+    {
+        "id": "tr197-r",
+        "required_actions": [
+            "Wait up to 48 to 72 hours after a large deletion for the storage total to update (non-critical)",
+            "If still full, check whether photos and videos are set to back up automatically (critical)",
+            "Turn off automatic backup on the user's computer, with a starting point and path (critical)",
+        ],
+        "covered": [True, True, False],
+        "needs_clarification": False,
+        "gates": {"source": "pass", "safety": "pass", "duplicate": "pass"},
+        "unsupported_claims": [],
+        "scores": {"steps": 1, "ask_or_answer": 2, "constraints": 1, "actionable": 1, "plain": 2, "realistic_user": 2},
+        "decision": "reject",
+        "reasons": (
+            "The user said they are on a computer. The last assistant turn names the fix, 'Automatic backup can be turned off', "
+            "but gives no starting point or path for doing it on a computer, so the turn-off action is named and not actionable (S1 1, S4 1). "
+            "The cited Storage Manager page (support.google.com/googleone/answer/9776477) says it does not state whether backup can be turned off on a computer or where, "
+            "and only refers to a separate article. The second official page checked (support.google.com/photos/answer/6193313) gives turn-off steps only for Android phones and tablets, "
+            "and does not say what happens to queued files when backup is turned off. "
+            "Nothing in the sources can complete this step for a computer, and round 3 is the last allowed re-review, so the example is rejected. "
+            "The Storage Manager steps (one.google.com, Storage, Clean up space, Delete, Permanently delete) and the 48 to 72 hour wait are supported and were not the problem."
+        ),
+        "fix": "",
+    },
+]

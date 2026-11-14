@@ -5,7 +5,7 @@ TASKS.append({
     "task_id": 'TR-076', "task_type": 'scan_qr', "task": 'Scan a QR code',
     "platform": 'iPhone', "category": 'technical_support', "sensitive": False,
     "source": {"title": 'Apple Support: Scan a QR code with your iPhone or iPad', "url": 'https://support.apple.com/en-us/102680'},
-    "source_notes": """Camera app method: open Camera app from Home Screen, Lock Screen, or Control Center (supported models can also use Camera Control). Hold device so QR code is in view; a tappable link appears over the code; tap the link to open the content.
+    "source_notes": """Camera app method: open Camera app from Home Screen, Lock Screen, or Control Center (supported models can also use Camera Control). Hold device so that the QR code appears, then tap the link to open the content. The page gives no position for the link on screen.
 Control Center method: open Control Center, tap the Scan Code button (QR viewfinder icon), hold device so the code is in view, tap the link.
 Setup for method 2: Scan Code shows in Control Center only after adding it. Open Control Center, touch and hold the background of the screen, tap Add a Control, in the gallery tap Scan Code, then tap anywhere on the screen to return to Control Center.
 No troubleshooting section on the page.""",
@@ -17,7 +17,7 @@ No troubleshooting section on the page.""",
 
 1. Open the **Camera** from the Lock Screen.
 2. Hold your iPhone so the QR code is in view.
-3. Tap the **link** that appears over the code.
+3. Tap the **link**.
 
 The link or content from the code will open.
 
@@ -175,7 +175,7 @@ Do not turn on **Show when locked** under **Emergency info access**. Anyone hold
              """Here are a few things that can explain it.
 
 1. In your list of apps it is called **Safety**. In the Play Store and in **Settings** it is called **Personal Safety**, so look for that name there.
-2. If you or someone else turned the app off (disabled it), it will not show in your app list.
+2. If the app has been turned off (disabled), it will not show in your app list.
 3. This app is only on some Android phones, so yours may not have it.
 4. On Android 12 and earlier without the app, you can still sign in with your Google Account, add emergency contacts, and list medical information.""",
          ]},
@@ -327,7 +327,9 @@ Page does not cover Edge downloads, Ctrl+J, or changing download location.""",
 
 1. Press the **Windows logo key** and **E** together to open File Explorer.
 2. Select **Home** in the left pane.
-3. In **Home**, search for the part of the name you remember, such as **W2**. Matching files on your PC will be listed.
+3. In **Home**, search for the file by the name you remember.
+
+The search looks for relevant files on your PC and in your cloud accounts.
 
 On Windows 11 version 22H2 or later, **Downloads** is pinned under **Quick access** on **Home**, so you can open it too.""",
          ]},
@@ -445,7 +447,7 @@ TASKS.append({
     "source_notes": """Signs: unexpected messages that look like they are from a company you know; scammers may claim a problem with your account or payment info; generic greetings, billing problem notices, invitations to click a link to update payment details. Legitimate companies won't email or text with a link to update your payment information.
 What to do: ask whether you have an account with the company or know the sender. If not, it could be phishing: review warning signs, report it, delete it. If so, contact the company using a phone number or website you know is real, not the info in the message. Attachments and links might install harmful malware.
 Protect: security software set to update automatically; phone software automatic updates; multi-factor authentication; back up data.
-If you responded or clicked: if you gave sensitive info (Social Security, credit card, bank account numbers) go to IdentityTheft.gov for steps based on what you lost. If you clicked a link or opened an attachment that may have installed harmful software, update your security software, run a scan, remove anything it flags.
+If you responded or clicked: credit card payments go to the card issuer (use the number on the back of the card; ask for a refund). If a scammer used your Social Security number, go to IdentityTheft.gov to report it. If you gave a scammer access to your computer or phone, update your security software, run a scan, and delete anything it identifies as a problem.
 Report: phishing email forward to reportphishing@apwg.org (Anti-Phishing Working Group); phishing text forward to SPAM (7726); report to the FTC at ReportFraud.ftc.gov.""",
     "examples": [
         {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "email",
@@ -453,8 +455,8 @@ Report: phishing email forward to reportphishing@apwg.org (Anti-Phishing Working
              "An email says my payment info for my streaming service is out of date and my account will be closed in 24 hours unless I click the link. I can't call anyone until Monday, it's Saturday. Should I just click it to be safe?",
              """Please don't click the link. Real companies won't email you a link to update your payment information.
 
-1. Leave the email alone for now. You don't have to do anything about it today.
-2. On Monday, if you want to check your account, contact the company using a phone number or website you know is real, not anything in the email.
+1. Do not click anything in the email. Report it now, as in step 3.
+2. To check your streaming account, contact the company using a website or phone number you already know is real, not anything in the email.
 3. Forward the email to **reportphishing@apwg.org**, and report it at **ReportFraud.ftc.gov**.
 4. Delete the email.
 
@@ -468,8 +470,8 @@ Links and attachments in a scam email can also install harmful software.""",
              """Thank you for telling me. Please act on this right away, starting with your credit card company.
 
 1. Call your credit card company right away, using the number on the back of your card, and tell them you gave your card number to a scammer. Ask them to refund any charges.
-2. Go to **IdentityTheft.gov**. It gives steps based on what information you gave away.
-3. Because you clicked a link, update your security software, run a scan, and remove anything it flags.
+2. If a scammer used your Social Security number, go to **IdentityTheft.gov** to report it.
+3. If you gave a scammer access to your computer or phone, update your security software to make sure you have the latest protections. Then run a scan and delete anything it identifies as a problem.
 4. Report the email at **ReportFraud.ftc.gov**, and forward it to **reportphishing@apwg.org**.""",
          ]},
     ],
@@ -515,7 +517,7 @@ TASKS.append({
     "platform": 'any', "category": 'online_services', "sensitive": True,
     "source": {"title": 'FTC Consumer Advice: What You Need to Know About Romance Scams', "url": 'https://consumer.ftc.gov/articles/what-know-about-romance-scams'},
     "source_notes": """Signs: they want to move off the platform quickly (email, call, message off the platform); say they live far away often for work or military; declare strong feelings early; chat often to build trust; ask for money, often urgent.
-If you suspect: stop communicating right away; talk to a trusted friend or family member and listen if they voice concerns; search online for the person's job plus scammer; reverse image search their profile photo.
+If you suspect: talk to someone you trust; reverse image search the person's profile picture (page gives no meaning for the result); search online for the person's job plus scammer.
 How they ask for payment: claim they can't meet in person; ask for money for medical bills, plane tickets, visas, fees, or crypto investing; hard to reverse methods: wire transfers (Western Union, MoneyGram), gift cards with PIN codes, money transfer apps, cryptocurrency; push for fast payment.
 Already paid: contact the company or your bank right away, say you paid a scammer, ask for a refund (same instruction for gift card, wire transfer, credit/debit card, crypto).
 Report: ReportFraud.ftc.gov; notify the social networking site or app where you met the scammer. No phone numbers on page.
@@ -528,10 +530,9 @@ Avoid: never send money or gifts to a sweetheart you haven't met in person.""",
 
 What you describe matches signs of a romance scam: asking to move off the site and asking for money for a visa.
 
-1. Stop communicating with him right away.
-2. Talk to a trusted friend or family member, including your kids, and listen if they voice concerns.
-3. Do a reverse image search on his profile photo to see if it is linked to other names.
-4. Report it at **ReportFraud.ftc.gov**, and tell the dating site.
+1. Talk to someone you trust about what is happening.
+2. Do a reverse image search of his profile photo. This is a search that finds other places online where the same photo appears.
+3. Report it at **ReportFraud.ftc.gov**, and tell the dating site.
 
 I know this is hard when you care about someone.""",
          ]},

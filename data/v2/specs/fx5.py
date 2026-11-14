@@ -33,13 +33,14 @@ Your backed-up pictures still show in the **Google Photos** app when you are onl
 5. Select the files you don't need.
 6. Tap **Move files to Trash**.""",
                  "I got to Free up space and found the category but there is no Select files button.",
-                 """Your phone may show it a little differently. Try this instead:
+                 """The help page only gives **Browse** for a category that isn't listed, so it has no other option for a missing **Select files** button. Some of these steps only work on Android 14 and up, so check whether your phone is on that version or newer.
 
-1. Look for **Browse** and tap it.
-2. Select the files you want to delete. You can also select all of them.
+If you can see **Select files**, use it:
+1. Tap **Select files**.
+2. Select the files you don't need.
 3. Tap **Move files to Trash**.
 
-Menu names can differ a little between phones, and some steps need Android 14 or newer.""",
+Menu names can differ a little between phones.""",
              ]},
         ],
     },
@@ -466,11 +467,12 @@ Some of these steps need Android 13 or later.""",
 
 To zoom, quickly tap the screen 3 times and hold. Use two fingers to pinch and to move around. Use the shortcut again to stop.""",
                  "It zooms, but now my phone feels slow and my taps are delayed.",
-                 """The triple-tap shortcut can slow your phone, and single taps take slightly longer while zoom is on. Switch to a different shortcut:
+                 """The triple-tap shortcut can slow your phone, and single taps take slightly longer while zoom is on. Stop the zoom first, then switch to a different shortcut:
 
-1. Open **Settings**, then **Accessibility**, then **Magnification**.
-2. Tap **Magnification shortcut**.
-3. Choose **Accessibility button** or **Hold volume keys**.
+1. To stop the zoom now, use your magnification shortcut again: quickly tap the screen 3 times and hold.
+2. Open **Settings**, then **Accessibility**, then **Magnification**.
+3. Tap **Magnification shortcut**.
+4. Choose **Accessibility button** or **Hold volume keys**.
 
 With **Accessibility button**, tap the Accessibility icon at the bottom of the screen. With **Hold volume keys**, hold both volume buttons together.""",
              ]},
@@ -508,7 +510,7 @@ Apple will never contact you to say your iPhone has been found, so do not share 
                  """Use the web browser on her iPad.
 
 1. Go to **icloud.com/find**.
-2. Sign in with your Apple Account.
+2. Sign in to **icloud.com/find**.
 3. Open **All Devices** and tap your iPhone.
 4. Choose to mark it as lost.
 
@@ -517,7 +519,7 @@ You can also play a sound from here.""",
                  """That means it is off or not on Wi-Fi or cellular. Until it reconnects, it won't show as online or in Lost Mode. You can still mark it as lost now:
 
 1. On her iPad, go to **icloud.com/find** in the web browser.
-2. Sign in with your Apple Account if you are asked.
+2. Sign in to **icloud.com/find**. If you are asked for a verification code, select the **Find Devices** button instead.
 3. Open **All Devices** and tap your iPhone.
 4. Choose to mark it as lost.""",
              ]},

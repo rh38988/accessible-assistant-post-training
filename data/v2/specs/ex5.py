@@ -785,7 +785,7 @@ It can zoom up to 8 times.""",
                 "sources": [{'title': 'Android Accessibility Help: Use magnification on your screen', 'url': 'https://support.google.com/accessibility/android/answer/6006949?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'The print on my medicine reminder app is so tiny, and making the text bigger messes up how the app looks. My Android phone is a Pixel.',
-                    """Magnification is a good fit for that: it zooms in only when you need it and doesn't change how the app looks the rest of the time.
+                    """Magnification can help with that. It zooms in on the whole screen, and you turn it on and off with your shortcut.
 
 Android has a **Magnification** feature. Setting it up takes a couple of minutes.
 
@@ -852,7 +852,7 @@ It can zoom up to 8 times.""",
 
 **Option 1: another Apple device**
 1. Open the **Find My** app and tap **Devices**.
-2. Select your iPhone to see it on a map.
+2. Select your iPhone to locate it.
 (A family member's iPhone also works if you're in the same Family Sharing group.)
 3. To protect it, tap **More**.
 4. Scroll down and turn on **Lost Mode**.
@@ -890,7 +890,7 @@ Let's try to find it. You'll need another device or a computer.
 
 **Option 1: another Apple device**
 1. Open the **Find My** app and tap **Devices**.
-2. Select your iPhone to see it on a map.
+2. Select your iPhone to locate it.
 (A family member's iPhone also works if you're in the same Family Sharing group.)
 3. To protect it, tap **More**.
 4. Scroll down and turn on **Lost Mode**.
@@ -937,11 +937,11 @@ Stay safe: Apple will never contact you to say your iPhone has been found. Don't
                 "sources": [{'title': 'Google Account Help: Find, secure, or erase a lost Android device', 'url': 'https://support.google.com/accounts/answer/6160491?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I lost my Android phone. How can I find it?',
-                    """You can look for it with **Find Hub** from another device. It works if your phone is on and connected to the internet.
+                    """You can look for it with **Find Hub** from another device. If its current location can't be found, you may still see its last known location, if available.
 
 1. On another Android phone, open the **Find Hub** app. On a computer, go to **google.com/android/find**.
 2. Sign in with your Google Account.
-3. Select your lost phone. If asked, enter your lock screen PIN or password. You'll see where it is on a map.
+3. Select your lost phone. If asked, enter your lock screen PIN. If the phone has no PIN, or runs Android 8 or lower, you may be asked for your Google password.
 
 Then choose what to do:
 - **Play sound:** your phone rings loudly for 5 minutes, even if it's on silent.
@@ -980,11 +980,11 @@ Then choose what to do:
                     "Android. I can use my husband's phone.",
                     """Good, your husband's phone will work.
 
-You can look for it with **Find Hub** from another device. It works if your phone is on and connected to the internet.
+You can look for it with **Find Hub** from another device. If its current location can't be found, you may still see its last known location, if available.
 
 1. On another Android phone, open the **Find Hub** app. If your husband's phone isn't an Android phone, open a web browser on it and go to **google.com/android/find**.
 2. Sign in with your Google Account.
-3. Select your lost phone. If asked, enter your lock screen PIN or password. You'll see where it is on a map.
+3. Select your lost phone. If asked, enter your lock screen PIN. If the phone has no PIN, or runs Android 8 or lower, you may be asked for your Google password.
 
 Then choose what to do:
 - **Play sound:** your phone rings loudly for 5 minutes, even if it's on silent.

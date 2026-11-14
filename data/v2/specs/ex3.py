@@ -21,7 +21,7 @@ TASKS = [
 
 Your phone may restart during the update. On Google Pixel phones, the update installs in the background and finishes when you restart.
 
-If it says there isn't enough space, tell me and I'll help you free some up first.""",
+If you get a 'not enough space available' notification, tell me and I'll help you free up some storage first.""",
                 ],
             },
             {
@@ -66,7 +66,7 @@ First, **is your phone an iPhone or an Android phone** (like Samsung or Google P
 
 Your phone may restart during the update. On Google Pixel phones, the update installs in the background and finishes when you restart.
 
-If it says there isn't enough space, tell me and I'll help you free some up first.""",
+If you get a 'not enough space available' notification, tell me and I'll help you free up some storage first.""",
                 ],
             },
         ],
@@ -159,7 +159,7 @@ If you see an error message, write it down or take a picture of it, and tell me 
                 "sources": [{'title': 'Google Photos Help: Back up photos & videos (Android)', 'url': 'https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "How do I back up my photos on my Android phone so I don't lose them?",
-                    """You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
+                    """You can use the **Google Photos** app to save copies of your photos to your Google Account. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -190,7 +190,7 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
                 "sources": [{'title': 'Google Photos Help: Back up photos & videos (Android)', 'url': 'https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I dropped my old phone in the lake last summer and lost all the pictures of my granddaughter's first year. I have a new Android phone now and I don't want that to happen again.",
-                    """I'm sorry about those pictures. Let's make sure your new ones are kept safe. You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
+                    """I'm sorry about those pictures. Let's make sure your new ones are kept safe. You can use the **Google Photos** app to save copies of your photos to your Google Account. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -213,7 +213,7 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
                     "how can I save my pictures so I don't lose them if I lose my phone",
                     "That's a smart thing to set up. Is your phone an **iPhone** or an **Android** phone (like Samsung or Google Pixel)?",
                     'android',
-                    """Great. On Android you can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
+                    """Great. On Android you can use the **Google Photos** app to save copies of your photos to your Google Account. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -249,7 +249,7 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
 2. Click **Bluetooth & devices**.
 3. Click **Printers & scanners**.
 4. Look at the list of printers. If your printer is already there, you're finished.
-5. If it isn't, next to **Add a printer & scanner**, click **Add device**.
+5. If it isn't, click **Add a printer & scanner**, then click **Add device**.
 6. Wait a few minutes while the computer searches.
 7. When your printer appears, click **Add device** next to it.
 
@@ -293,7 +293,7 @@ If your printer doesn't show up, look for **The printer that I want isn't listed
 2. Click **Bluetooth & devices**.
 3. Click **Printers & scanners**.
 4. Look at the list of printers. If your printer is already there, you're finished.
-5. If it isn't, next to **Add a printer & scanner**, click **Add device**.
+5. If it isn't, click **Add a printer & scanner**, then click **Add device**.
 6. Wait a few minutes while the computer searches.
 7. When your printer appears, click **Add device** next to it.
 
@@ -366,7 +366,7 @@ If you added the wrong photo, tap the close icon (**X**) next to its name to rem
 
 Then add the email address and your message as usual, and send it.
 
-If you added the wrong photo, tap **Close** to the right of its name to remove it. If the attachments are over 25 MB, Gmail adds them as a Google Drive link instead.""",
+If you added the wrong photo, tap **Close** to the right of its name to remove it. If the attachments are over 25 MB on a personal Gmail account, Gmail adds them as a Google Drive link instead. Work and school accounts can have a different limit set by their administrator.""",
                 ],
             },
         ],
@@ -597,7 +597,7 @@ If you already clicked and typed in your card number, call your bank right away 
                 "sources": [{'title': 'FTC Consumer Advice: Avoiding and Reporting Gift Card Scams', 'url': 'https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I got an email from my pastor asking me to buy five $100 gift cards for church members and send him the numbers on the back. He said he's in a meeting and can't talk. Should I do it?",
-                    """Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, the money is very hard to get back.
+                    """Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, report it to the gift card company right away, because some companies might give your money back.
 
 Here's what to do:
 
@@ -653,7 +653,7 @@ For you: please **don't buy the gift cards**. This is a common scam. Real busine
 
 **Have you already bought or sent any gift cards?**""",
                     "It's an email from my pastor. I haven't bought anything yet.",
-                    """Good, you haven't lost anything. Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, the money is very hard to get back.
+                    """Good, you haven't lost anything. Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, report it to the gift card company right away, because some companies might give your money back.
 
 Here's what to do:
 
@@ -787,14 +787,14 @@ Once she accepts, she'll be part of your family group. If she doesn't see the in
                     """Here's how to save the number. It takes about a minute.
 
 1. Open the **Contacts** app.
-2. Tap the **Add** icon at the bottom right.
+2. Tap **Add** at the bottom right.
 3. Type a name, like **Dr. Smith's Office**.
 4. Type the phone number.
 5. Tap **Save**.
 
 Now you can find the number in Contacts.
 
-If your phone uses a different contacts app and you don't see an **Add** icon, tell me what you see.""",
+If your phone uses a different contacts app and you don't see **Add**, tell me what you see.""",
                 ],
             },
             {
@@ -831,14 +831,14 @@ If your phone uses a different contacts app and you don't see an **Add** icon, t
 Here's how to save the number. It takes about a minute.
 
 1. Open the **Contacts** app.
-2. Tap the **Add** icon at the bottom right.
+2. Tap **Add** at the bottom right.
 3. Type a name, like **Mom** or **Dr. Smith's Office**.
 4. Type the phone number.
 5. Tap **Save**.
 
 Now you can find the number in Contacts.
 
-If your phone uses a different contacts app and you don't see an **Add** icon, tell me what you see.""",
+If your phone uses a different contacts app and you don't see **Add**, tell me what you see.""",
                 ],
             },
         ],
@@ -862,7 +862,7 @@ If your phone uses a different contacts app and you don't see an **Add** icon, t
 3. Tap the number you want to block. (In Classic view, tap the **Info** button instead.)
 4. Scroll down and tap **Block Caller**.
 
-After that, calls from that number won't ring your phone, and the caller won't be told they're blocked. If they leave a voicemail, it's saved, but you won't get a notification.""",
+The caller won't be told they're blocked. If they leave a voicemail, you won't get a notification.""",
                 ],
             },
             {
@@ -909,7 +909,7 @@ After that, calls from that number won't ring your phone, and the caller won't b
 3. Tap the number you want to block. (In Classic view, tap the **Info** button instead.)
 4. Scroll down and tap **Block Caller**.
 
-After that, calls from that number won't ring your phone, and the caller won't be told they're blocked. If they leave a voicemail, it's saved, but you won't get a notification.""",
+The caller won't be told they're blocked. If they leave a voicemail, you won't get a notification.""",
                 ],
             },
         ],
@@ -967,7 +967,7 @@ These steps are for Google's Phone app. If your Phone app looks different, tell 
                     'a spam number keeps calling',
                     "That's annoying. I can show you how to block it. Is your phone an **iPhone** or an **Android** phone?",
                     'Android, Pixel 6',
-                    """Thanks, here's how on your Pixel. It takes less than a minute.
+                    """Thanks, here's how in Google's Phone app. It takes less than a minute.
 
 1. Open the **Phone** app.
 2. Tap **More**, then choose **Call history**.

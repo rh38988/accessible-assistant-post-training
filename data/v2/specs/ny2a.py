@@ -63,12 +63,15 @@ If it still will not send, make sure your iPhone is connected to the internet, a
 1. Make sure your iPhone is connected to the internet.
 2. Check your email provider's status page, or contact them, to see if there is an outage.
 3. In a web browser, sign in to your provider's website to confirm your email address and password.
-4. Open **Settings**, then tap **Apps**.
-5. Tap **Mail**, then tap **Mail Accounts**.
-6. Tap **Fetch New Data**.
-7. Tap **Automatically** (or **Manually**, or pick a schedule).
+4. Ask your provider whether two-step verification or another security feature is turned on. If it is, you may need a special password from them to use email on your iPhone.
+5. Open **Settings**, then tap **Apps**.
+6. Tap **Mail**, then tap **Mail Accounts**.
+7. Tap **Fetch New Data**.
+8. Tap **Automatically** (or **Manually**, or pick a schedule).
 
-With **Automatically**, the iPhone fetches new mail in the background only when it is charging and on Wi-Fi.""",
+With **Automatically**, the iPhone fetches new mail in the background only when it is charging and on Wi-Fi.
+
+If it still does not work, contact your email provider or system administrator.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -81,8 +84,9 @@ With **Automatically**, the iPhone fetches new mail in the background only when 
 4. In a web browser, sign in to your provider's website to confirm your email address and password.
 5. Ask your provider if two-step verification or other security features are on. You may need a special password from them to use email on your iPhone.
 6. Ask your provider to confirm that your account settings are correct.
+7. If none of these work, contact your email provider.
 
-Deleting the account is the last step on the list, and it can remove emails already downloaded to the phone, so you can leave it alone for now.""",
+Removing the account is not on this list. It can delete emails already downloaded to the phone, so do not remove it unless you have first confirmed on your provider's website that all your email is saved somewhere else.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -138,8 +142,9 @@ If it still says Not Delivered after that, contact your carrier.""",
 2. Open **Settings**, then tap **Apps**.
 3. Tap **Messages**.
 4. Look for **Send Photo Previews** or **Low Quality Image Mode** and turn on whichever one you see.
+5. Restart your iPhone.
 
-Some carriers limit the size of attachments on regular text messages, and these settings help with that.
+Your carrier may limit the size of picture messages. Turning on Send Photo Previews or Low Quality Image Mode lets you send pictures at a lower quality when full-size pictures will not go through.
 
 If pictures still will not go through, ask your carrier whether it supports MMS (picture messages) for your plan.""",
              ]},
@@ -173,7 +178,7 @@ If your phone number does not appear, link your iPhone number to your Apple Acco
 
 A blue bubble message goes over Wi-Fi or cellular data, so it does not need a text-messaging plan.
 
-If it still will not send, **Send as Text Message** is another option, but messaging rates may apply. If you do not want that, contact Apple Support for blue bubble (iMessage) problems.""",
+If it still will not send, tap the red exclamation point again, then tap **Send as Text Message**, but only if you are fine with messaging rates. Messaging rates may apply. If you do not want that, contact Apple Support for blue bubble (iMessage) problems.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -225,7 +230,10 @@ Step 8 3G network: iPhone 6 or later: update iOS, Settings, Cellular, Cellular D
 5. Contact your carrier. Ask them to check that your account is active, that you are in a coverage area with no outage, and that your device is not blocked and has the correct data plan.
 6. Plug in your iPhone and connect to Wi-Fi.
 7. Open **Settings**, tap **General**, then tap **Software Update**.
-8. If an update is available, tap **Download and Install** and follow the instructions on the screen.""",
+8. If an update is available, tap **Download and Install** and follow the instructions on the screen.
+9. Make sure your iPhone is connected to Wi-Fi.
+10. Open **Settings**, tap **General**, then tap **About**.
+11. If an update is available, you will see an option to update your carrier settings. Tap it.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -259,7 +267,9 @@ To get your service back:
 2. Turn on **Airplane Mode** for at least 15 seconds, then turn it off.
 3. Restart your iPhone.
 4. Contact your carrier to check your account and coverage.
-5. If it still says SOS, update your iPhone. Plug it in and connect to Wi-Fi, open **Settings**, tap **General**, then tap **Software Update**. If an update is shown, tap **Download and Install**.""",
+5. If it still says SOS, update your iPhone. Plug it in and connect to Wi-Fi, open **Settings**, tap **General**, then tap **Software Update**. If an update is shown, tap **Download and Install**.
+6. Make sure your iPhone is connected to Wi-Fi, then open **Settings**, tap **General**, then tap **About**.
+7. If an update is available, you will see an option to update your carrier settings. Tap it.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "sources": [{"title": 'Apple Support: If you see SOS, No Service, or Searching on your iPhone or iPad', "url": 'https://support.apple.com/en-us/120000', "accessed": "2026-11-13"}, {"title": 'Apple Support: Update your iPhone or iPad', "url": 'https://support.apple.com/en-us/118575', "accessed": "2026-11-13"}],
@@ -269,7 +279,7 @@ To get your service back:
 
 1. Stay connected to Wi-Fi, open **Settings**, tap **General**, then tap **About**.
 2. If an update is available, you will see an option to update your carrier settings. Tap it. If no update shows, there is nothing more to do here.
-3. Turn on **Airplane Mode** and wait at least 15 seconds, then turn it off. This may pause your download, so you may prefer to do it after the download finishes.
+3. Turn on **Airplane Mode** and wait at least 15 seconds, then turn it off.
 4. If you still see No Service, contact your carrier to check your account, coverage, and that your device is not blocked.
 5. When your download is done, plug in your iPhone, open **Settings**, tap **General**, then tap **Software Update**. If an update is available, tap **Download and Install**.
 
@@ -439,11 +449,11 @@ If a temperature warning does appear:
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
                  "My iPhone is showing a temperature warning, but I am waiting on an important call from the hospital and I do not want to turn it off. Is there another way to cool it down?",
-                 """The usual steps for a temperature warning start with turning the iPhone off, and I cannot offer another way to cool it. The closest option is this:
+                 """Apple's steps for this warning are to turn the iPhone off, move it to a cooler place away from direct sunlight, and let it cool down. I know you want to keep it on, so here is the step you can do with it on:
 
-1. Move your iPhone to a cooler place, away from direct sunlight.
+1. If you keep it on, move it to a cooler place away from direct sunlight.
 
-Apple says to let the iPhone cool down before using it again, so I cannot promise it will work for your call. If the call is important, it may be safer to turn it off and let it cool, or ask the hospital for another number to call.""",
+Apple says to let the iPhone cool down before using it again, so I cannot promise it will work for your call. If the call is important, ask the hospital for another number to call.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -553,9 +563,9 @@ If the time zone is still wrong, open **Settings**, tap **Privacy & Security**, 
                  "The switch is gray and I cannot turn it on.",
                  """A gray switch means the setting is dimmed. It can happen for a few reasons, and each has a next step.
 
-1. Someone may have set a Screen Time passcode on this iPhone. Ask the person who set it up, or enter the passcode if you know it.
-2. The iPhone may have a corporate profile with device restrictions. Ask whoever manages it, such as your workplace's IT help.
-3. With some carriers, or in some countries and regions, the option is not available. You cannot turn it on, so set the time by hand instead. Open **Settings**, tap **General**, tap **Date & Time**, and if **Set Automatically** is not locked, turn it off. Then tap **Time Zone**, or tap the date.""",
+1. Someone may have set a Screen Time passcode on this iPhone. Ask the person who set it up.
+2. The iPhone may have a corporate profile with device restrictions. Ask whoever manages it.
+3. With some carriers, or in some countries and regions, the option is not available. You cannot turn it on, so set the time by hand instead. Open **Settings**, tap **General**, tap **Date & Time**, and if **Set Automatically** is not locked, turn it off. (This is the same setting as **Set Time Automatically** shown earlier.) Then tap **Time Zone** and enter a city in the time zone you need, or tap the date to change the date and time.""",
              ]},
         ],
     },

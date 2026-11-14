@@ -187,7 +187,7 @@ Your nephew is right to be careful. If you want to report the website, you can d
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "any",
              "messages": [
                  """I don't have a credit card, only a debit card and some cash. A person selling concert tickets online says they only take a payment app like Zelle, and that tickets are going fast. Is that okay? I really can't use a credit card.""",
-                 """**Please don't pay this seller with Zelle.** A seller who says you can only pay with a payment app is probably a scammer. Tickets going fast is the kind of pressure scammers use.
+                 """**Please don't pay this seller with Zelle.** A seller who says you can only pay with a payment app is probably a scammer.
 
 1. Don't send money to anyone who says you can only pay one specific way, whatever reason they give.
 2. Search online for the seller's name with words like "review," "scam," or "complaint."
@@ -325,9 +325,7 @@ When no other app is in use, these buttons change the ringer volume. If your pho
 
 1. Find the **Ring/Silent switch**, where you see the orange.
 2. Flip it so the orange is no longer showing.
-3. Press the **volume up** button a few times.
-
-If you have an iPhone 15 Pro or a newer model, there is no switch. The **Action button** toggles Silent mode by default. Calls from your favorite contacts still ring in Silent mode.""",
+3. Press the **volume up** button a few times.""",
              ]},
         ],
     },
@@ -409,11 +407,13 @@ You may be asked to enter or confirm an address for emergency services. Your car
                  "I tried but I can't get it to turn on.",
                  """Let's try these in order.
 
-1. Check that your carrier offers Wi-Fi Calling and that your iPhone software is up to date.
-2. Open **Settings**, tap **Cellular**, tap **Wi-Fi Calling**, and make sure **Wi-Fi Calling on This iPhone** is on.
-3. Restart your iPhone.
-4. Connect to a different Wi-Fi network, because some networks don't work with Wi-Fi Calling.
-5. Turn Wi-Fi Calling off, then on again.
+1. Make sure your carrier offers Wi-Fi Calling. The carrier can confirm this.
+2. Make sure your iPhone has the latest software.
+3. Open **Settings**, tap **Cellular**, tap **Wi-Fi Calling**, and make sure **Wi-Fi Calling on This iPhone** is on.
+4. Restart your iPhone.
+5. Connect to a different Wi-Fi network, because some networks don't work with Wi-Fi Calling.
+6. Turn Wi-Fi Calling off, then on again.
+7. Open **Settings**, tap **General**, tap **Transfer or Reset iPhone**, tap **Reset**, then tap **Reset Network Settings**.
 
 Wait about two minutes between steps. If it still won't turn on, contact your carrier.""",
              ]},
@@ -536,13 +536,14 @@ Once connected, the network is labeled **Saved**, and your phone joins it automa
 
 When you're connected, the network shows as **Saved**.""",
                  "I don't see her network in the list at all.",
-                 """Her network may be hidden. Ask her for the network name and the password.
+                 """Ask her for the network name and the password. Then check the list first.
 
 1. Open the **Settings** app, tap **Network & internet**, then tap **Internet**.
-2. Scroll to the bottom of the list and tap **Add network**.
-3. Type the network name, then enter the security details (the password).
-4. Tap **Advanced options**, and under **Hidden Network** select **Yes**.
-5. Tap **Save**.""",
+2. Wait for the list to refresh. If her network is nearby but still not listed, it may be hidden.
+3. Scroll to the bottom of the list and tap **Add network**.
+4. Type the network name, then enter the security details (the password).
+5. Tap **Advanced options**, and under **Hidden Network** select **Yes**.
+6. Tap **Save**.""",
              ]},
         ],
     },

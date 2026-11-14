@@ -4,7 +4,7 @@
   "scenario": "direct",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },
@@ -13,7 +13,7 @@
   "scenario": "direct_messy",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },
@@ -22,7 +22,7 @@
   "scenario": "missing_info",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },
@@ -31,7 +31,7 @@
   "scenario": "followup",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },
@@ -40,7 +40,7 @@
   "scenario": "constraint",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },
@@ -49,7 +49,7 @@
   "scenario": "failure_recovery",
   "task_type": "email_attach",
   "task": "Attach a file or photo to an email",
-  "task_platform": "Outlook.com",
+  "task_platform": "New Outlook for Windows",
   "source_url": "https://support.microsoft.com/office/8d7c1ea7-4e5f-44ce-bb6e-c5fcc92ba9ab",
   "existing": false
  },

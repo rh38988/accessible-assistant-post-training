@@ -93,7 +93,7 @@ Troubleshooting: if you only see a preview, check that the starting point is you
 3. At the bottom left, tap **Directions**.
 4. Choose **Driving**.
 5. At the top right, tap **More**, then tap **Edit stops**.
-6. Add the pharmacy as a stop (you can add up to 9 stops including the final destination).
+6. Search for the pharmacy along your route and add it as a stop. You can add up to 9 stops, including the final destination.
 7. If the pharmacy is listed after your sister's house, press and hold the **Reorder** icon next to it and drag it above.
 8. Tap **Done**.
 
@@ -399,7 +399,7 @@ Charge to 100% for the day: if Optimized Battery Charging is active, touch and h
              "sources": [{'title': "Apple Support: If your iPhone or iPod touch won't charge", 'url': 'https://support.apple.com/en-ca/108805', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Charging your iPhone (Optimized Battery Charging and charge limit)', 'url': 'https://support.apple.com/en-ca/108055', 'accessed': '2026-11-13'}],
              "messages": [
                  """My iPhone has been sitting at 80% since last night and I'm leaving for the airport in a half hour and I need it full. I don't want to go digging through settings or change anything for good. It's just for today. What can I tap?""",
-                 """You can charge it fully just for today, without changing any settings.
+                 """You can have your iPhone charged fully sooner from the Lock Screen.
 
 1. Wake your iPhone and look at its **Lock Screen**.
 2. **Touch and hold** the notification from **Optimized Battery Charging**. It says when your iPhone will be fully charged.
@@ -427,7 +427,7 @@ Turning it off can make the battery wear out faster.""",
 
 You can choose a limit between 80 and 100 percent, in 5 percent steps. Even at 100%, Optimized Battery Charging may still delay charging past 80% in some situations. Turning off charging optimizations can wear the battery out faster.
 
-For just one day, you can also touch and hold the Optimized Battery Charging notification on your Lock Screen and tap **Charge Now**.""",
+You can also touch and hold the Optimized Battery Charging notification on your Lock Screen and tap **Charge Now** to get your iPhone fully charged sooner.""",
              ]},
         ],
     },
@@ -550,9 +550,7 @@ Your iPhone reminds you when you leave that place.""",
                  """Location reminders need **Location Services** turned on.
 
 1. Open **Settings** and tap **Privacy & Security**.
-2. Turn on **Location Services**.
-
-If you set the reminder by asking Siri for your home or work, your address must be on My Card: open **Contacts**, tap **My Card**, tap **Edit**, add the address, and tap **Done**.""",
+2. Tap **Location Services**, then turn it on.""",
              ]},
         ],
     },

@@ -70,7 +70,9 @@ If you do not see **Set Up Now**, tap **Voicemail** and follow the instructions 
 2. Then say something like "Do I have any new voicemail?"
 3. Or say "Play the voicemail from" and then the name of the person, for example "Play the voicemail from Eliza."
 
-Siri will answer or play the message for you. If Siri does not answer when you say "Hey Siri", that phrase may not be turned on yet. Someone can help you open **Settings**, tap **Siri**, and tap **Turn On Siri**. If you ever want to tap instead, open the **Phone** app, tap **Voicemail**, then tap a message and tap the **Play** button.""",
+Siri will answer or play the message for you. If Siri does not answer when you say "Hey Siri", that phrase may not be turned on yet. Someone can help you open **Settings**, tap **Siri**, and tap **Turn On Siri**. If you ever want to tap instead, open the **Phone** app, tap **Voicemail**, then tap a message and tap the **Play** button.
+
+If voicemail was never set up on this phone, ask a helper to open the **Phone** app, tap **Voicemail**, tap **Set Up Now**, create a voicemail password, and choose a greeting.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -142,7 +144,7 @@ You will see a Call Forwarding icon at the top of the screen while it is on. You
 8. Type in your son's number.
 9. Tap **Back**.
 
-A Call Forwarding icon shows at the top of the screen while it is on. Your phone must be in range of the cellular network when you set it up, or calls will not forward. Call forwarding works on GSM networks. If you use a CDMA network, contact your carrier.""",
+A Call Forwarding icon shows at the top of the screen while it is on. Your phone must be in range of the cellular network when you set it up, or calls will not forward. If your phone service uses a CDMA network, ask your carrier for setup information.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -287,7 +289,7 @@ The light next to the camera lens blinks when you get a notification while the p
                  "I turned it on but I was holding the phone and reading it, and the light never blinked when a message came.",
                  """That is expected. **LED Flash for Alerts** only works when your phone is locked.
 
-1. Put the phone down and let the screen go dark so it is locked.
+1. Put the phone down and lock it.
 2. Wait for the next notification. The light next to the camera lens should blink.
 
 If you are still not seeing it, go back to **Settings**, **Accessibility**, **Audio/Visual** and check that **LED Flash for Alerts** is on.""",
