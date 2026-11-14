@@ -1,14 +1,14 @@
 id,task,platform,scenario,sensitive,source_url,reviewer,steps_match_source,decision,notes
-tr012-e,Attach a photo to an email,Gmail (computer),constraint,False,https://support.google.com/mail/answer/6584,,,,
-tr014-r,Caller claims to be grandchild needing gift cards,any,already_acted,True,https://www.ftc.gov/node/54353,,,,
-tr025-e,Turn up ring volume,Android,constraint,False,https://support.google.com/android/answer/9082609?hl=en,,,,
-tr028-r,Take a screenshot,Windows 11,failure_recovery,False,https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots,,,,
-tr035-e,Back up photos,Android (Google Photos),constraint,False,https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid,,,,
-tr038-c,Reset forgotten Google Account password,Google Account,direct_messy,True,https://support.google.com/accounts/answer/7682439?hl=en,,,,
-tr040-e,Text says package could not be delivered,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam,,,,
-tr048-a,Silence calls from unknown numbers,iPhone,direct,False,https://support.apple.com/en-us/111106,,,,
-tr048-d,Silence calls from unknown numbers,iPhone,followup,False,https://support.apple.com/en-us/111106,,,,
-tr049-a,Filter spam calls,Android (Pixel),direct,False,https://support.google.com/phoneapp/answer/3459196?hl=en,,,,
+tr012-e,Attach a photo to an email,Gmail (computer),constraint,False,https://support.google.com/mail/answer/6584,Ryan,partial,keep,Image drag is on the page. Folder-to-email drag steps go beyond the page; Ryan passed it.
+tr014-r,Caller claims to be grandchild needing gift cards,any,already_acted,True,https://www.ftc.gov/node/54353,Ryan,yes,keep,Ryan passed it. Page supports report and no-emergency-money rule; no code word or money recovery on page.
+tr025-e,Turn up ring volume,Android,constraint,False,https://support.google.com/android/answer/9082609?hl=en,Ryan,yes,keep,"Page supports Down arrow, Media/Ring/Alarm."
+tr028-r,Take a screenshot,Windows 11,failure_recovery,False,https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots,Ryan,partly,fix,"Page says Screenshots folder, not inside Pictures. Remove ""Pictures""."
+tr035-e,Back up photos,Android (Google Photos),constraint,False,https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid,Ryan,yes,keep,"Page supports daily limit, Mobile data usage, videos and roaming options."
+tr038-c,Reset forgotten Google Account password,Google Account,direct_messy,True,https://support.google.com/accounts/answer/7682439?hl=en,Ryan,partly,fix,"Page gives no recovery duration. Remove ""It usually takes a few minutes."""
+tr040-e,Text says package could not be delivered,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam,Ryan,yes,keep,"Page supports forward to 7726, ReportFraud.ftc.gov, and checking the store account."
+tr048-a,Silence calls from unknown numbers,iPhone,direct,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Page gives no about-a-minute duration. Contacts-ring claim not stated; soften.
+tr048-d,Silence calls from unknown numbers,iPhone,followup,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Same fixes as tr048-a.
+tr049-a,Filter spam calls,Android (Pixel),direct,False,https://support.google.com/phoneapp/answer/3459196?hl=en,Ryan,yes,fix,"Page gives no about-a-minute duration. Remove ""It takes about a minute to turn on."""
 tr050-a,Check battery health,iPhone,direct,False,https://support.apple.com/en-us/101575,,,,
 tr054-c,Share location with family,iPhone (Find My),missing_info,True,https://support.apple.com/en-us/105104,,,,
 tr054-r,Share location with family,iPhone (Find My),failure_recovery,True,https://support.apple.com/en-us/105104,,,,

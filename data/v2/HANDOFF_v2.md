@@ -25,3 +25,8 @@ python data/v2/tools/assemble.py --target 1000   # rebuild the frozen set from t
 - Human spot check of `spot_check_v2.csv` (Ryan), then report the pass rate.
 - 768-token cap was enforced as 2,200 characters; confirm with the Qwen tokenizer.
 - Topics dropped because their official pages block automated reading: WhatsApp, Facebook (one older Facebook pilot task has a single example).
+
+## Human spot check log (Ryan, 2026-11-13)
+- 10 examples human-annotated so far, recorded in `spot_check_v2.csv` (reviewer = Ryan): keep tr012-e, tr014-r, tr025-e, tr035-e, tr040-e; fix tr028-r, tr038-c, tr048-a, tr048-d, tr049-a.
+- The 5 fixes are not yet applied to `train_v2_en.jsonl`. The frozen file is unchanged.
+- Target is 15 to 20 spot-checked examples across families, so 5 to 10 more are needed.
