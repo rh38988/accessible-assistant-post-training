@@ -14,12 +14,10 @@ TASKS = [
                     'the letters on my samsung phone are so tiny i cant read my messages. how do i make them bigger',
                     """You can make the letters bigger in your phone's settings. It takes about a minute, and you can change it back anytime.
 
-1. Find the **Settings** app and tap it. Its icon looks like a gear.
+1. Find the **Settings** app and tap it.
 2. Tap **Display**.
 3. Tap **Font size and style**.
-4. Find the font size slider and slide it to the right to make the letters bigger.
-
-The sample words on the screen change size as you slide, so you can stop when they are easy to read. Your messages will use the bigger size too.
+4. Adjust the options on that screen until the letters are easy to read.
 
 Menu names can be a little different on some Samsung models. If you don't see **Font size and style** after tapping **Display**, tell me what you see and I'll help you find it.""",
                 ],
@@ -38,11 +36,11 @@ Menu names can be a little different on some Samsung models. If you don't see **
                 "sources": [{'title': 'Android Help: Change volume, sound & vibrate settings', 'url': 'https://support.google.com/android/answer/9082609?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "My phone hardly makes any sound when someone calls and I keep missing calls from my doctor's office.",
-                    """I'm sorry you've been missing those calls. I can help you make the ringing louder.
+                    """I'm sorry you've been missing those calls. I can help make the ringing louder.
 
-First, one quick question: is your phone an **iPhone**, or another kind of phone, like a Samsung or Google Pixel?
+Is your phone an **iPhone**, or another kind, like a Samsung or Google Pixel?
 
-If you're not sure, look at the back of the phone. An iPhone has an apple logo on the back.""",
+If you're not sure, tell me the name on the phone or box.""",
                 ],
             },
         ],
@@ -63,11 +61,9 @@ If you're not sure, look at the back of the phone. An iPhone has an apple logo o
 
 1. Open the **Messages** app.
 2. Tap your conversation with your sister. If you haven't texted her before, start a new conversation with her.
-3. Next to the box where you type, tap the **Gallery** icon. It looks like a small picture. Your photos will appear.
+3. Tap the **Gallery** icon.
 4. Tap the picture of your garden.
-5. Tap the **Send** button. It looks like an arrow.
-
-You'll see the picture appear in your conversation once it's sent.
+5. Tap the **Send** icon, the paper-plane shaped button.
 
 If you don't see a Gallery icon, your phone may use a different messaging app. Tell me what icons you see next to the typing box and I'll guide you from there.""",
                 ],
@@ -88,7 +84,7 @@ If you don't see a Gallery icon, your phone may use a different messaging app. T
                     "How do I take a picture of what's on my iPhone screen? My grandson wants me to send him a screenshot.",
                     """Happy to help. The buttons you press depend on your iPhone model, so one quick question first:
 
-Does your iPhone have a **round button below the screen** (called the Home button)? Just answer yes or no.""",
+Do you know which iPhone model you have, for example **iPhone 8** or **iPhone 13**?""",
                 ],
             },
         ],
@@ -107,7 +103,7 @@ Does your iPhone have a **round button below the screen** (called the Home butto
                     'Good morning. I hope you can help me. My husband always took care of these things. Since about Tuesday my email is not working right. I used to get messages from my church group every day and now nothing. I tried turning it off and on.',
                     """Good morning. I'm glad you asked, and we can figure this out together. Turning it off and on was a good first try.
 
-So I can give you the right steps: **where do you usually read your email** (a computer, a phone, or a tablet), and **what comes after the @ sign in your email address**? For example, @gmail.com or @yahoo.com.""",
+So I can give you the right steps: **what is at the end of your email address**, for example @gmail.com or @yahoo.com?""",
                 ],
             },
         ],
@@ -124,9 +120,9 @@ So I can give you the right steps: **where do you usually read your email** (a c
                 "sources": [{'title': 'Microsoft Support: Fix printer connection and printing problems in Windows', 'url': 'https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73', 'accessed': '2026-10-24'}],
                 "messages": [
                     "My printer won't print anything and I need to print my boarding pass for Thursday. It worked fine last month. The little green light is on.",
-                    """Let's get that boarding pass printed. The green light is a good sign: it means the printer has power.
+                    """Let's get that boarding pass printed. I'm glad the light is on.
 
-The next steps depend on what you're printing from. **Are you printing from a computer or from a phone?** If it's a computer, do you know if it's a Windows computer or a Mac?""",
+The next steps depend on your computer. **Are you printing from a Windows computer?**""",
                 ],
             },
         ],
@@ -145,16 +141,16 @@ The next steps depend on what you're printing from. **Are you printing from a co
                     "I'm staying at my daughter's house this weekend. She wrote the Wi-Fi name and password on a card for me. The network is called SmithHome. I have an iPhone 13 with the latest update. How do I get my phone on her internet?",
                     """Here's how to connect your iPhone to SmithHome. Keep the card with the password nearby. This takes about two minutes.
 
-1. Open the **Settings** app. Its icon is a gray gear.
-2. Tap **Wi-Fi** near the top.
-3. Make sure the switch next to **Wi-Fi** is on (green).
-4. Wait a moment for a list of networks to appear. Tap **SmithHome**.
-5. Type the password from the card. Capital and small letters must match exactly.
-6. Tap **Join**.
+1. Open the **Settings** app.
+2. Tap **Wi-Fi**.
+3. Make sure Wi-Fi is turned on.
+4. Tap **SmithHome** in the list.
+5. Type the password from the card if it asks.
+6. Confirm the connection.
 
-When you're connected, you'll see a blue checkmark next to **SmithHome**, and a Wi-Fi symbol (it looks like a fan) at the top of your screen.
+When you're connected, you'll see a blue tick next to **SmithHome**, and the Wi-Fi icon at the top corner of the screen.
 
-If it says the password is incorrect, tap **SmithHome** again and retype it slowly. If you don't see SmithHome in the list, move closer to the internet box in her home and check again.""",
+If you don't see SmithHome in the list, move closer to the internet box in her home and check again.""",
                 ],
             },
             {
@@ -166,16 +162,16 @@ If it says the password is incorrect, tap **SmithHome** again and retype it slow
                     "I'm staying at my daughter's house this weekend. She wrote the Wi-Fi name and password on a card for me. The network is called SmithHome. I have an iPhone 13 with the latest update. How do I get my phone on her internet?",
                     """Here's how to connect your iPhone to SmithHome. Keep the card with the password nearby. This takes about two minutes.
 
-1. Open the **Settings** app. Its icon is a gray gear.
-2. Tap **Wi-Fi** near the top.
-3. Make sure the switch next to **Wi-Fi** is on (green).
-4. Wait a moment for a list of networks to appear. Tap **SmithHome**.
-5. Type the password from the card. Capital and small letters must match exactly.
-6. Tap **Join**.
+1. Open the **Settings** app.
+2. Tap **Wi-Fi**.
+3. Make sure Wi-Fi is turned on.
+4. Tap **SmithHome** in the list.
+5. Type the password from the card if it asks.
+6. Confirm the connection.
 
-When you're connected, you'll see a blue checkmark next to **SmithHome**, and a Wi-Fi symbol (it looks like a fan) at the top of your screen.
+When you're connected, you'll see a blue tick next to **SmithHome**, and the Wi-Fi icon at the top corner of the screen.
 
-If it says the password is incorrect, tap **SmithHome** again and retype it slowly. If you don't see SmithHome in the list, move closer to the internet box in her home and check again.""",
+If you don't see SmithHome in the list, move closer to the internet box in her home and check again.""",
                     "I don't see SmithHome in the list at all.",
                     """Let's check a few things. Try them in order, and stop as soon as **SmithHome** appears in the list.
 
@@ -206,15 +202,15 @@ If SmithHome still doesn't show up, tell me which network names you do see.""",
                     'Everything on my laptop screen is too small. It has Windows 11. How do I make it all bigger?',
                     """You can make everything on the screen bigger in Settings. It takes about two minutes, and you can change it back anytime.
 
-1. Click the **Start** button (the Windows logo) at the bottom of the screen.
+1. Click the **Start** button (the Windows logo).
 2. Click **Settings**. Its icon is a gear.
 3. Click **Display**.
-4. Find **Scale & layout**. Next to **Scale**, click the box with a percentage in it, such as 100%.
-5. Choose a bigger number, like 125% or 150%.
+4. Under **Scale & layout**, open the **Scale** dropdown.
+5. Choose a bigger percentage.
 
 The screen will change size right away. Try a number, and if things are still too small, pick a bigger one.
 
-If only the **words** are too small, there's another setting just for text. Tell me and I'll walk you through it. Some programs may look right only after you restart the computer.""",
+If only the **words** are too small, there's another setting just for text. Tell me and I'll walk you through it. Some programs may look right only after you sign out and back in.""",
                 ],
             },
         ],
@@ -233,7 +229,7 @@ If only the **words** are too small, there's another setting just for text. Tell
                     'the internet on my',
                     """It looks like your message got cut off, but I'd be glad to help with your internet.
 
-**Which device is having trouble** (for example your phone, computer, or TV), and **what happens when you try to go online?**""",
+**Which device is having trouble with the internet**, for example your phone, computer, or TV?""",
                 ],
             },
         ],
@@ -250,16 +246,16 @@ If only the **words** are too small, there's another setting just for text. Tell
                 "sources": [{'title': 'Apple Support: Change your Apple Account password', 'url': 'https://support.apple.com/en-mz/101567', 'accessed': '2026-10-24'}, {'title': 'Apple Support: If you forgot your Apple Account password', 'url': 'https://support.apple.com/en-us/ht201487', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I forgot my Apple ID password. I can still open my iPhone with my passcode. How do I make a new password?',
-                    """Good news: because you can still open your iPhone, you can make a new password right on the phone. (Apple now calls the Apple ID an **Apple Account**.)
+                    """Good news: because you can still open your iPhone, you can make a new password right on the phone. (Apple calls this your Apple Account.)
 
 1. Open the **Settings** app.
-2. Tap **your name** at the very top.
+2. Tap **your name**.
 3. Tap **Sign-In & Security**.
 4. Tap **Change Password**.
-5. Follow the instructions on the screen. If it asks for a passcode, use the one you use to unlock your iPhone.
-6. Type your new password twice, then confirm.
+5. Follow the instructions on the screen to set your new password.
+6. If it asks, choose **Remove Other Devices** (other devices must sign in again) or **Keep All Devices Signed In**.
 
-Your iPhone may ask you to wait about an hour before the change finishes. This is a security feature, not a problem.
+You may have to wait one hour before you can change it.
 
 Write the new password down and keep it somewhere safe at home. Never give it to anyone who calls or texts you offering help with your account.
 
@@ -292,11 +288,9 @@ If **Change Password** doesn't appear, tell me what you see and I'll help with a
 5. Tap **General**.
 6. Tap **Software Update**.
 7. Tap **Download and Install** (the button may say **Update Now**).
-8. Enter your iPhone passcode if asked.
+8. Follow the instructions on the screen (it may ask for your passcode).
 
-The update can take a while, and your iPhone will turn off and back on by itself. Start when you won't need your phone for a bit.
-
-If it says there isn't enough space, you can let it remove some apps temporarily. They come back by themselves after the update.""",
+If it says there isn't enough space, tap **Continue** to let it remove some apps for now. They come back by themselves after the update.""",
                 ],
             },
         ],
@@ -315,14 +309,11 @@ If it says there isn't enough space, you can let it remove some apps temporarily
                     "I have a Dell computer with Windows 11 and I use Google Chrome to read my Gmail. I have a photo saved in my Pictures folder called birthday.jpg that I want to email to my son. I already know how to write the email, I just don't know how to add the photo.",
                     """Since you already know how to write the email, here's just the part for adding the photo:
 
-1. In your new email, look at the bottom of the message window. Click the **paperclip** icon.
-2. A window opens showing your files. On the left side, click **Pictures**.
-3. Click **birthday.jpg** once.
-4. Click **Open**.
+1. At the bottom of the message window, click the **Attach** icon.
+2. Select the photo **birthday.jpg**. It is in your Pictures folder.
+3. Click **Open**.
 
-You'll see **birthday.jpg** appear near the bottom of your email. Wait until it finishes loading, then click **Send**.
-
-If the photo is very large, Gmail may add it as a link instead of an attachment. That's fine: your son can still open it.""",
+You'll see the file appear in your email. If the photo is bigger than 25 MB, Gmail puts a Google Drive link in the email instead.""",
                 ],
             },
         ],
@@ -347,11 +338,9 @@ If the photo is very large, Gmail may add it as a link instead of an attachment.
 2. Tap **your name** at the top.
 3. Tap **iCloud**.
 4. Tap **Photos**.
-5. Turn on the switch next to **Sync this iPhone** so it turns green.
+5. Turn on the switch next to **Sync this iPhone**.
 
-Your photos will start saving to iCloud on their own. If you have a lot of photos, this can take a while, so it's best to leave your phone connected to Wi-Fi and charging.
-
-If your iCloud storage fills up, your iPhone will let you know. Tell me if you see that message and we can look at your options together.""",
+Your photos will start saving to iCloud on their own. To see your photos in iCloud, open the **Photos** app and tap **Library**.""",
                 ],
             },
         ],

@@ -19,9 +19,9 @@ No troubleshooting section on the page.""",
 2. Hold your iPhone so the QR code is in view.
 3. Tap the **link** that appears over the code.
 
-The recipe page will open.
+The link or content from the code will open.
 
-Some newer iPhone models also have a **Camera Control** button you can use to open the camera.""",
+You can also open the camera from **Control Center**. On supported iPhone models you can also open the camera with the **Camera Control** button.""",
          ]},
         {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
          "messages": [
@@ -172,11 +172,12 @@ Do not turn on **Show when locked** under **Emergency info access**. Anyone hold
 4. Go back and tap **Emergency contacts**.
 5. Tap **Add contact** and choose someone.""",
              "I can't find an app called Safety on my phone.",
-             """Some phones call it something else, and some don't have it.
+             """Here are a few things that can explain it.
 
-1. Look for **Personal Safety**. That is the name used in the Play Store and in Settings.
-2. If you can't find it, your phone may not include that app.
-3. Open **Settings** and check your Android version. Some of these steps need Android 12 or later.""",
+1. In your list of apps it is called **Safety**. In the Play Store and in **Settings** it is called **Personal Safety**, so look for that name there.
+2. If you or someone else turned the app off (disabled it), it will not show in your app list.
+3. This app is only on some Android phones, so yours may not have it.
+4. On Android 12 and earlier without the app, you can still sign in with your Google Account, add emergency contacts, and list medical information.""",
          ]},
     ],
 })
@@ -326,11 +327,9 @@ Page does not cover Edge downloads, Ctrl+J, or changing download location.""",
 
 1. Press the **Windows logo key** and **E** together to open File Explorer.
 2. Select **Home** in the left pane.
-3. Search from **Home** for the part of the name you remember, like W2.
+3. In **Home**, search for the part of the name you remember, such as **W2**. Matching files on your PC will be listed.
 
-You can also look in **Downloads**, which is pinned under **Quick access** on **Home**.
-
-If the file is saved in a cloud account, sign in to it from **Start**, then **Settings**, then **Accounts**, so it can be included in the search.""",
+On Windows 11 version 22H2 or later, **Downloads** is pinned under **Quick access** on **Home**, so you can open it too.""",
          ]},
         {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
          "messages": [
@@ -452,7 +451,7 @@ Report: phishing email forward to reportphishing@apwg.org (Anti-Phishing Working
         {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "email",
          "messages": [
              "An email says my payment info for my streaming service is out of date and my account will be closed in 24 hours unless I click the link. I can't call anyone until Monday, it's Saturday. Should I just click it to be safe?",
-             """Please don't click the link. Real companies don't email a link to update your payment information, and the rush is a common trick.
+             """Please don't click the link. Real companies won't email you a link to update your payment information.
 
 1. Leave the email alone for now. You don't have to do anything about it today.
 2. On Monday, if you want to check your account, contact the company using a phone number or website you know is real, not anything in the email.
@@ -462,13 +461,16 @@ Report: phishing email forward to reportphishing@apwg.org (Anti-Phishing Working
 Links and attachments in a scam email can also install harmful software.""",
          ]},
         {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "email",
+         "sources": [{"title": 'FTC Consumer Advice: How to Recognize and Avoid Phishing Scams', "url": 'https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams', "accessed": '2026-11-13'},
+                     {"title": 'FTC Consumer Advice: What To Do if You Were Scammed', "url": 'https://consumer.ftc.gov/articles/what-do-if-you-were-scammed', "accessed": '2026-11-13'}],
          "messages": [
              "I clicked the link in an email that said it was from my bank, and I typed in my credit card number. Now I think it was fake. What do I do?",
-             """Thank you for telling me. Go to **IdentityTheft.gov** now. It gives you steps based on what information you gave away.
+             """Thank you for telling me. Please act on this right away, starting with your credit card company.
 
-1. Go to **IdentityTheft.gov** and follow the steps for a lost credit card number.
-2. Because you clicked a link, update your security software, run a scan, and remove anything it flags.
-3. Report the email at **ReportFraud.ftc.gov**, and forward it to **reportphishing@apwg.org**.""",
+1. Call your credit card company right away, using the number on the back of your card, and tell them you gave your card number to a scammer. Ask them to refund any charges.
+2. Go to **IdentityTheft.gov**. It gives steps based on what information you gave away.
+3. Because you clicked a link, update your security software, run a scan, and remove anything it flags.
+4. Report the email at **ReportFraud.ftc.gov**, and forward it to **reportphishing@apwg.org**.""",
          ]},
     ],
 })
@@ -489,7 +491,7 @@ If you already clicked or replied: page doesn't give steps; warns links can lead
              """Yes. You do not have to copy and forward the text. Please don't click any link in it.
 
 1. Open the text in your messaging app and look for an option to **report junk or spam**.
-2. You can also report it at **ReportFraud.ftc.gov**.
+2. If you are able to open web pages on your phone, you can also report it at **ReportFraud.ftc.gov**.
 3. Ask your phone company about tools that block unwanted texts.
 
 Real delivery companies don't ask for your account information by text. If you think a delivery might be real, contact the company using a phone number or website you know is real, not the one in the text.""",
@@ -497,7 +499,7 @@ Real delivery companies don't ask for your account information by text. If you t
         {"suffix": "r", "scenario": "already_acted", "style": "failure_recovery", "specification": "fully_specified", "platform": "phone",
          "messages": [
              "I tapped the link in a text that said my package was delayed. A page came up asking me to log in, so I closed it right away without typing anything. Did I do something bad?",
-             """You did the right thing by closing it. Please don't open that link again, and don't reply to the text.
+             """You did the right thing by closing it. Please don't open that link again.
 
 1. Don't type any information into that page if you open it again by accident.
 2. If you think the package could be real, contact the company using a phone number or website you know is real, not the details in the text.
@@ -524,7 +526,7 @@ Avoid: never send money or gifts to a sweetheart you haven't met in person.""",
              "A man I met on a dating site wants me to move our chats to email, and now he says he needs money for a visa so he can visit me. He asked me not to tell my kids because they won't understand. I really do care about him. What should I do?",
              """Please don't send him any money. Never send money or gifts to someone you haven't met in person.
 
-What you describe matches signs of a romance scam: asking to move off the site and asking for money, which is often framed as urgent.
+What you describe matches signs of a romance scam: asking to move off the site and asking for money for a visa.
 
 1. Stop communicating with him right away.
 2. Talk to a trusted friend or family member, including your kids, and listen if they voice concerns.

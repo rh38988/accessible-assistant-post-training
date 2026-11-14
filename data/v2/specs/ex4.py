@@ -55,9 +55,7 @@ Tip: save important numbers, like your doctor and pharmacy, to your contacts so 
                     'How do I stop spam calls?',
                     'There are a few ways to cut down on them. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone',
-                    """Thanks. One helpful option on iPhone is to silence calls from numbers you don't know.
-
-iPhone can silence calls from numbers that aren't in your contacts and send them to voicemail. It takes about a minute.
+                    """Thanks. iPhone can silence calls from numbers that aren't in your contacts and send them to voicemail. It takes about a minute.
 
 1. Open the **Settings** app.
 2. Tap **Apps**, then **Phone**.
@@ -86,13 +84,13 @@ Tip: save important numbers, like your doctor and pharmacy, to your contacts so 
                     """The Phone app on your Pixel can filter spam calls. It takes about a minute to turn on.
 
 1. Open the **Phone** app.
-2. Tap the **More options** menu (three dots).
+2. Tap **More options**.
 3. Tap **Settings**.
 4. Tap **Caller ID and spam**.
 5. Make sure **See caller ID & spam** is on.
 6. Turn on **Filter spam calls**.
 
-Filtered calls won't ring or notify you, but they still appear in your call history.
+You won't get missed call or voicemail notifications for filtered calls, but they still show in your call history, and you can still check your voicemail.
 
 If you don't see **Filter spam calls**, your phone may use **Call Screen** instead, where spam blocking is one of the options. Tell me and I'll walk you through it.""",
                 ],
@@ -104,7 +102,7 @@ If you don't see **Filter spam calls**, your phone may use **Call Screen** inste
                 "sources": [{'title': 'Phone app Help: Use caller ID & spam protection', 'url': 'https://support.google.com/phoneapp/answer/3459196?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'too many robocalls, can my phone block them?',
-                    "Many phones can filter them. Is yours an **iPhone** or an **Android** phone? If it's Android, which brand?",
+                    "I can help with that. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -114,18 +112,16 @@ If you don't see **Filter spam calls**, your phone may use **Call Screen** inste
                 "sources": [{'title': 'Phone app Help: Use caller ID & spam protection', 'url': 'https://support.google.com/phoneapp/answer/3459196?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "Pixel 8, using the default Google Phone app. Caller ID shows 'Suspected spam' but they still ring. How do I make those not ring at all?",
-                    """Since your phone already labels them, you just need to turn on filtering:
-
-The Phone app on your Pixel can filter spam calls. It takes about a minute to turn on.
+                    """Since your phone already labels them, you just need to turn on **Filter spam calls**. It takes about a minute.
 
 1. Open the **Phone** app.
-2. Tap the **More options** menu (three dots).
+2. Tap **More options**.
 3. Tap **Settings**.
 4. Tap **Caller ID and spam**.
 5. Make sure **See caller ID & spam** is on.
 6. Turn on **Filter spam calls**.
 
-Filtered calls won't ring or notify you, but they still appear in your call history.
+Filtered calls are handled by the filter. You won't get missed call or voicemail notifications for filtered calls, but they still show in your call history, and you can still check your voicemail.
 
 If you don't see **Filter spam calls**, your phone may use **Call Screen** instead, where spam blocking is one of the options. Tell me and I'll walk you through it.""",
                 ],
@@ -137,20 +133,18 @@ If you don't see **Filter spam calls**, your phone may use **Call Screen** inste
                 "sources": [{'title': 'Phone app Help: Use caller ID & spam protection', 'url': 'https://support.google.com/phoneapp/answer/3459196?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'too many robocalls, can my phone block them?',
-                    "Many phones can filter them. Is yours an **iPhone** or an **Android** phone? If it's Android, which brand?",
-                    'Google Pixel 7a',
-                    """Thanks. The Pixel has a built-in spam filter.
-
-The Phone app on your Pixel can filter spam calls. It takes about a minute to turn on.
+                    "I can help with that. Is your phone an **iPhone** or an **Android** phone?",
+                    'Android, a Google Pixel 7a',
+                    """Thanks. The Phone app on your Pixel can filter spam calls. It takes about a minute to turn on.
 
 1. Open the **Phone** app.
-2. Tap the **More options** menu (three dots).
+2. Tap **More options**.
 3. Tap **Settings**.
 4. Tap **Caller ID and spam**.
 5. Make sure **See caller ID & spam** is on.
 6. Turn on **Filter spam calls**.
 
-Filtered calls won't ring or notify you, but they still appear in your call history.
+You won't get missed call or voicemail notifications for filtered calls, but they still show in your call history, and you can still check your voicemail.
 
 If you don't see **Filter spam calls**, your phone may use **Call Screen** instead, where spam blocking is one of the options. Tell me and I'll walk you through it.""",
                 ],
@@ -186,7 +180,7 @@ If you see a message that your battery's health is **significantly degraded**, i
                 "sources": [{'title': 'Apple Support: iPhone battery and performance', 'url': 'https://support.apple.com/en-us/101575', 'accessed': '2026-10-24'}],
                 "messages": [
                     'my battery dies so fast',
-                    "That's annoying. I can help you check what's going on. Is your phone an **iPhone** or an **Android** phone, and about how old is it?",
+                    "That's annoying. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -196,7 +190,7 @@ If you see a message that your battery's health is **significantly degraded**, i
                 "sources": [{'title': 'Apple Support: iPhone battery and performance', 'url': 'https://support.apple.com/en-us/101575', 'accessed': '2026-10-24'}],
                 "messages": [
                     'battery health',
-                    "Sure. Do you want to **check your battery's health**? If so, is your phone an iPhone or an Android phone?",
+                    "Sure. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -206,7 +200,7 @@ If you see a message that your battery's health is **significantly degraded**, i
                 "sources": [{'title': 'Apple Support: iPhone battery and performance', 'url': 'https://support.apple.com/en-us/101575', 'accessed': '2026-10-24'}],
                 "messages": [
                     'my battery dies so fast',
-                    "That's annoying. I can help you check what's going on. Is your phone an **iPhone** or an **Android** phone, and about how old is it?",
+                    "That's annoying. Is your phone an **iPhone** or an **Android** phone?",
                     'iPhone, about 4 years old',
                     """Thanks. At four years old, the battery may be worn. Let's check:
 
@@ -242,7 +236,7 @@ If you see a message that your battery's health is **significantly degraded**, i
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get the message, and when anyone replies, everyone in the group sees it.
+All three will get your message.
 
 If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
                 ],
@@ -264,9 +258,7 @@ If one of your kids has an Android phone and the message won't send, go to **Set
                 "sources": [{'title': 'Apple Support: Send a group text message on your iPhone or iPad', 'url': 'https://support.apple.com/en-us/118236', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I want to tell my three children about our Thanksgiving plans but typing the same message three times is a pain and I always forget someone. I have an iPhone.',
-                    """A group text will send it to all three at once, so no one gets left out. Here's how:
-
-You can start a group text. It takes about a minute.
+                    """A group text will send it to all three at once, so no one gets left out. It takes about a minute. Here's how:
 
 1. Open the **Messages** app.
 2. Tap the **Compose** button (a square with a pencil) at the top.
@@ -274,7 +266,7 @@ You can start a group text. It takes about a minute.
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get the message, and when anyone replies, everyone in the group sees it.
+All three will get your message.
 
 If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
                 ],
@@ -298,7 +290,7 @@ You can start a group text. It takes about a minute.
 4. Type your message.
 5. Tap the **Send** button (the up arrow).
 
-All three will get the message, and when anyone replies, everyone in the group sees it.
+All three will get your message.
 
 If one of your kids has an Android phone and the message won't send, go to **Settings**, then **Messages**, and make sure **MMS Messaging** is turned on.""",
                 ],
@@ -319,10 +311,10 @@ If one of your kids has an Android phone and the message won't send, go to **Set
                     "Is there a way to make every website bigger in Chrome on my computer, so I don't have to zoom in each time?",
                     """You can change Chrome's default zoom so every website opens bigger. It takes about a minute.
 
-1. Click the **More** menu (three dots) at the top right of Chrome.
+1. Click **More** at the top right of Chrome.
 2. Click **Settings**.
 3. Click **Appearance**.
-4. Find **Page zoom** and choose a bigger number, like **125%** or **150%**.
+4. Find **Page zoom**, click the down arrow next to it, and pick a bigger zoom level from the list.
 
 Every website will now open at that size.
 
@@ -346,7 +338,7 @@ To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, us
                 "sources": [{'title': 'Google Chrome Help: Change text, image & video sizes (zoom), computer', 'url': 'https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}],
                 "messages": [
                     'make websites bigger',
-                    'Sure. Do you want to make **one website** bigger right now, or make **every website** bigger from now on? And which browser do you use, such as Chrome or Safari?',
+                    'Sure. Which web browser do you use, such as **Chrome**, **Edge**, or **Safari**?',
                 ],
             },
             {
@@ -358,14 +350,12 @@ To zoom in on just one page, hold the **Ctrl** key and press **+** (on a Mac, us
                     'websites are too small on my computer',
                     "I can help you make them bigger. Which web browser do you use, for example **Chrome**, **Edge**, or **Safari**? If you're not sure, tell me what the icon you click looks like.",
                     'Chrome',
-                    """Thanks. Chrome lets you set a bigger size for every website.
+                    """Thanks. You can change Chrome's default zoom so every website opens bigger. It takes about a minute.
 
-You can change Chrome's default zoom so every website opens bigger. It takes about a minute.
-
-1. Click the **More** menu (three dots) at the top right of Chrome.
+1. Click **More** at the top right of Chrome.
 2. Click **Settings**.
 3. Click **Appearance**.
-4. Find **Page zoom** and choose a bigger number, like **125%** or **150%**.
+4. Find **Page zoom**, click the down arrow next to it, and pick a bigger zoom level from the list.
 
 Every website will now open at that size.
 
@@ -407,7 +397,7 @@ Only share your location with people you trust.""",
                 "sources": [{'title': 'Apple Support: Share your location with iPhone', 'url': 'https://support.apple.com/en-us/105104', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how can my daughter see where I am',
-                    "That's a nice way to give her peace of mind. Is your phone an **iPhone** or an **Android** phone? And does your daughter have an iPhone or Android?",
+                    "That's a nice way to give her peace of mind. Do you and your daughter both use **iPhones**?",
                 ],
             },
             {
@@ -417,7 +407,7 @@ Only share your location with people you trust.""",
                 "sources": [{'title': 'Apple Support: Share your location with iPhone', 'url': 'https://support.apple.com/en-us/105104', 'accessed': '2026-10-24'}],
                 "messages": [
                     'share location',
-                    'Sure. **Who would you like to share your location with**, and is your phone an **iPhone** or an **Android** phone?',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -427,8 +417,8 @@ Only share your location with people you trust.""",
                 "sources": [{'title': 'Apple Support: Share your location with iPhone', 'url': 'https://support.apple.com/en-us/105104', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how can my daughter see where I am',
-                    "That's a nice way to give her peace of mind. Is your phone an **iPhone** or an **Android** phone? And does your daughter have an iPhone or Android?",
-                    'We both have iPhones',
+                    "That's a nice way to give her peace of mind. Do you and your daughter both use **iPhones**?",
+                    'Yes, we both have iPhones',
                     """Great. Since you both have iPhones, you can do this in the **Find My** app. It takes about two minutes. You and your daughter both need iPhones with a recent software update.
 
 1. Open the **Find My** app.
@@ -461,14 +451,14 @@ Only share your location with people you trust.""",
                     """Here's how. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
 
 1. Open **Google Maps** and make sure you're signed in.
-2. Tap your **profile picture or initial** at the top.
+2. Tap your **profile picture or initial**.
 3. Tap **Location sharing**.
 4. Tap **New share**.
 5. Choose how long to share your location.
 6. Choose your son. If Maps asks to see your contacts, allow it.
 7. Tap **Share**.
 
-Your son can then see where you are in Google Maps.
+Your location will be shared for the time you picked.
 
 If he doesn't use Gmail, you can share a **link** instead, which works for up to 24 hours. Only share your location with people you trust.""",
                 ],
@@ -480,7 +470,7 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
                 "sources": [{'title': 'Google Maps Help: Share your real-time location with others (Android)', 'url': 'https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I want my son to be able to see where I am when I drive',
-                    "That's a good safety idea. Is your phone an **iPhone** or an **Android** phone? And does your son use Gmail?",
+                    "That's a good safety idea. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -490,19 +480,17 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
                 "sources": [{'title': 'Google Maps Help: Share your real-time location with others (Android)', 'url': 'https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I drive to my sister's house two hours away every weekend and my son always wants me to text him when I get there but I forget. He said there's a way in Google Maps so he can just see. I have an Android.",
-                    """Yes, then he won't have to wait for your text. Here's how:
-
-Here's how. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
+                    """Yes, then he won't have to wait for your text. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
 
 1. Open **Google Maps** and make sure you're signed in.
-2. Tap your **profile picture or initial** at the top.
+2. Tap your **profile picture or initial**.
 3. Tap **Location sharing**.
 4. Tap **New share**.
 5. Choose how long to share your location.
 6. Choose your son. If Maps asks to see your contacts, allow it.
 7. Tap **Share**.
 
-Your son can then see where you are in Google Maps.
+Your location will be shared for the time you picked.
 
 If he doesn't use Gmail, you can share a **link** instead, which works for up to 24 hours. Only share your location with people you trust.""",
                 ],
@@ -514,23 +502,21 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
                 "sources": [{'title': 'Google Maps Help: Share your real-time location with others (Android)', 'url': 'https://support.google.com/maps/answer/15437054?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I want my son to be able to see where I am when I drive',
-                    "That's a good safety idea. Is your phone an **iPhone** or an **Android** phone? And does your son use Gmail?",
+                    "That's a good safety idea. Is your phone an **iPhone** or an **Android** phone?",
                     'Android, and yes he uses Gmail',
-                    """Great. Google Maps can do this.
-
-Here's how. It takes about two minutes. Your son needs a Gmail address, saved in your contacts.
+                    """Great. Google Maps can do this. It takes about two minutes, and your son's Gmail address needs to be saved in your contacts.
 
 1. Open **Google Maps** and make sure you're signed in.
-2. Tap your **profile picture or initial** at the top.
+2. Tap your **profile picture or initial**.
 3. Tap **Location sharing**.
 4. Tap **New share**.
 5. Choose how long to share your location.
 6. Choose your son. If Maps asks to see your contacts, allow it.
 7. Tap **Share**.
 
-Your son can then see where you are in Google Maps.
+Your location will be shared for the time you picked.
 
-If he doesn't use Gmail, you can share a **link** instead, which works for up to 24 hours. Only share your location with people you trust.""",
+Only share your location with people you trust.""",
                 ],
             },
         ],
@@ -551,13 +537,11 @@ If he doesn't use Gmail, you can share a **link** instead, which works for up to
 
 1. Open the **App Store** app.
 2. Tap **Search** at the bottom.
-3. Type **WhatsApp** and tap the search button.
+3. Type **WhatsApp** to search.
 4. Find the right app and tap **Get** next to it.
-5. To confirm, double-click the **side button**. If your iPhone has Face ID, look at the screen. If it has Touch ID, rest your finger on the Home button. You may also be asked for your Apple Account password.
+5. To confirm, double-click the **side button**. If your iPhone has Face ID, look at the screen. If it has Touch ID, rest your finger on the **Touch ID** button. You may also be asked for your Apple Account password.
 
-When the download finishes, the button changes to **Open** and the app appears on your Home Screen.
-
-Tip: check the app's name and maker before tapping **Get**, so you get the real app and not a lookalike.""",
+When it's done, you'll see **Open** instead of **Get**.""",
                 ],
             },
             {
@@ -567,7 +551,7 @@ Tip: check the app's name and maker before tapping **Get**, so you get the real 
                 "sources": [{'title': 'Apple Support: Download apps on your iPhone or iPad', 'url': 'https://support.apple.com/en-us/102590', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I download an app',
-                    'I can walk you through it. Is your phone an **iPhone** or an **Android** phone? And which app would you like to get?',
+                    'I can walk you through it. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -577,7 +561,7 @@ Tip: check the app's name and maker before tapping **Get**, so you get the real 
                 "sources": [{'title': 'Apple Support: Download apps on your iPhone or iPad', 'url': 'https://support.apple.com/en-us/102590', 'accessed': '2026-10-24'}],
                 "messages": [
                     'app store download',
-                    'Sure, I can help you download an app from the App Store. **Which app would you like to get?**',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -587,7 +571,7 @@ Tip: check the app's name and maker before tapping **Get**, so you get the real 
                 "sources": [{'title': 'Apple Support: Download apps on your iPhone or iPad', 'url': 'https://support.apple.com/en-us/102590', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I download an app',
-                    'I can walk you through it. Is your phone an **iPhone** or an **Android** phone? And which app would you like to get?',
+                    'I can walk you through it. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone, I want WhatsApp',
                     """Great, here's how to get WhatsApp.
 
@@ -595,13 +579,11 @@ You can get it from the **App Store**. It takes a couple of minutes.
 
 1. Open the **App Store** app.
 2. Tap **Search** at the bottom.
-3. Type **WhatsApp** and tap the search button.
+3. Type **WhatsApp** to search.
 4. Find the right app and tap **Get** next to it.
-5. To confirm, double-click the **side button**. If your iPhone has Face ID, look at the screen. If it has Touch ID, rest your finger on the Home button. You may also be asked for your Apple Account password.
+5. To confirm, double-click the **side button**. If your iPhone has Face ID, look at the screen. If it has Touch ID, rest your finger on the **Touch ID** button. You may also be asked for your Apple Account password.
 
-When the download finishes, the button changes to **Open** and the app appears on your Home Screen.
-
-Tip: check the app's name and maker before tapping **Get**, so you get the real app and not a lookalike.""",
+When it's done, you'll see **Open** instead of **Get**.""",
                 ],
             },
         ],
@@ -615,18 +597,17 @@ Tip: check the app's name and maker before tapping **Get**, so you get the real 
                 "existing": True, "id": 'tr057-a', "suffix": 'a', "scenario": 'direct',
                 "style": 'plain', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Download and install apps from Google Play', 'url': 'https://support.google.com/googleplay/answer/113409', 'accessed': '2026-11-13'}],
                 "messages": [
                     "How do I install an app on my Android phone? My doctor's office wants me to download their app.",
                     """You can get it from the **Play Store**. It takes a couple of minutes.
 
 1. Open the **Play Store** app.
-2. Tap the search bar and type the app's name.
-3. Tap the app in the results. Check that the name and maker are what you expected. The star rating and number of downloads are shown under the title.
+2. Search for the app by name, or browse.
+3. Tap the app, then check the star ratings and the number of downloads under its title.
 4. Tap **Install**. (If you see a price instead, it's a paid app.)
-5. When it's finished, open the app from the Play Store or find it with your other apps.
 
-It's safest to get apps from the Play Store, because Google checks them for harmful software. Avoid installing apps from links in texts or emails.""",
+It's safest to get apps from Google Play. Google Play Protect checks for harmful apps, and apps from unknown sources can put your phone and personal information at risk.""",
                 ],
             },
             {
@@ -636,14 +617,14 @@ It's safest to get apps from the Play Store, because Google checks them for harm
                 "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I get an app on my phone',
-                    'I can help. Is your phone an **iPhone** or an **Android** phone? And which app are you looking for?',
+                    'I can help. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
                 "existing": True, "id": 'tr057-c', "suffix": 'c', "scenario": 'direct_messy',
                 "style": 'verbose', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'OATS',
-                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Download and install apps from Google Play', 'url': 'https://support.google.com/googleplay/answer/113409', 'accessed': '2026-11-13'}],
                 "messages": [
                     "My neighbor told me there's an app that shows when the bus is coming, and I'd like to try it. I've never downloaded an app myself. My phone is a Samsung Galaxy.",
                     """That sounds handy. Ask your neighbor for the app's exact name, then follow these steps:
@@ -651,34 +632,32 @@ It's safest to get apps from the Play Store, because Google checks them for harm
 You can get it from the **Play Store**. It takes a couple of minutes.
 
 1. Open the **Play Store** app.
-2. Tap the search bar and type the app's name.
-3. Tap the app in the results. Check that the name and maker are what you expected. The star rating and number of downloads are shown under the title.
+2. Search for the app by name, or browse.
+3. Tap the app, then check the star ratings and the number of downloads under its title.
 4. Tap **Install**. (If you see a price instead, it's a paid app.)
-5. When it's finished, open the app from the Play Store or find it with your other apps.
 
-It's safest to get apps from the Play Store, because Google checks them for harmful software. Avoid installing apps from links in texts or emails.""",
+It's safest to get apps from Google Play. Google Play Protect checks for harmful apps, and apps from unknown sources can put your phone and personal information at risk.""",
                 ],
             },
             {
                 "existing": True, "id": 'tr057-d', "suffix": 'd', "scenario": 'followup',
                 "style": 'under_specified', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Android Help: Download apps to your Android device', 'url': 'https://support.google.com/android/answer/9457058?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Download and install apps from Google Play', 'url': 'https://support.google.com/googleplay/answer/113409', 'accessed': '2026-11-13'}],
                 "messages": [
                     'how do I get an app on my phone',
-                    'I can help. Is your phone an **iPhone** or an **Android** phone? And which app are you looking for?',
+                    'I can help. Is your phone an **iPhone** or an **Android** phone?',
                     "Android. It's the app for my doctor's office.",
                     """Thanks. If you don't have the app's exact name, ask the office for it. Then:
 
 You can get it from the **Play Store**. It takes a couple of minutes.
 
 1. Open the **Play Store** app.
-2. Tap the search bar and type the app's name.
-3. Tap the app in the results. Check that the name and maker are what you expected. The star rating and number of downloads are shown under the title.
+2. Search for the app by name, or browse.
+3. Tap the app, then check the star ratings and the number of downloads under its title.
 4. Tap **Install**. (If you see a price instead, it's a paid app.)
-5. When it's finished, open the app from the Play Store or find it with your other apps.
 
-It's safest to get apps from the Play Store, because Google checks them for harmful software. Avoid installing apps from links in texts or emails.""",
+It's safest to get apps from Google Play. Google Play Protect checks for harmful apps, and apps from unknown sources can put your phone and personal information at risk.""",
                 ],
             },
         ],
@@ -709,7 +688,7 @@ If the icons start to jiggle instead of showing a menu:
 3. Tap **Delete**.
 4. Tap **Done** at the top of the screen.
 
-Deleting an app also removes its data from your phone. If you might want it later, you can download it again from the App Store.
+Deleting an app also removes its data from your phone.
 
 Deleting an app does **not** cancel any paid subscriptions inside it. If you pay for the app every month, cancel the subscription first.""",
                 ],
@@ -782,10 +761,12 @@ Deleting an app does **not** cancel any paid subscriptions inside it. If you pay
 
 1. Open the **Play Store** app.
 2. Tap your **profile icon** at the top right.
-3. Tap **Manage apps & device**.
+3. Tap **Manage apps & devices**.
 4. Tap **Manage**.
 5. Tap the app you want to remove.
 6. Tap **Uninstall**.
+
+Some apps that came with the phone can't be deleted. On some phones you can turn them off instead.
 
 If you change your mind later, you can reinstall it from the Play Store without paying again.""",
                 ],
@@ -807,13 +788,11 @@ If you change your mind later, you can reinstall it from the Play Store without 
                 "sources": [{'title': 'Google Play Help: Delete apps on your Android device', 'url': 'https://support.google.com/googleplay/answer/13627402?hl=en', 'accessed': '2026-10-24'}, {'title': 'Android Help: Free up storage on your Android device', 'url': 'https://support.google.com/android/answer/7431795?hl=en', 'accessed': '2026-10-24'}, {'title': 'Google Play Help: Disable apps that came with your Android device', 'url': 'https://support.google.com/googleplay/answer/13627571?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "When I bought my Android phone the store guy put a bunch of games and things on it that I'll never use, and they keep sending me notifications. How do I take them off?",
-                    """You can remove most of them. Some apps that came built into the phone can only be turned off, not deleted, but most apps can be removed like this:
-
-You can remove it through the Play Store. It takes about a minute.
+                    """You can remove most of them. Some apps that came built into the phone can only be turned off, not deleted, but most apps can be removed through the **Play Store** like this. It takes about a minute:
 
 1. Open the **Play Store** app.
 2. Tap your **profile icon** at the top right.
-3. Tap **Manage apps & device**.
+3. Tap **Manage apps & devices**.
 4. Tap **Manage**.
 5. Tap the app you want to remove.
 6. Tap **Uninstall**.
@@ -836,10 +815,12 @@ You can remove it through the Play Store. It takes about a minute.
 
 1. Open the **Play Store** app.
 2. Tap your **profile icon** at the top right.
-3. Tap **Manage apps & device**.
+3. Tap **Manage apps & devices**.
 4. Tap **Manage**.
 5. Tap the app you want to remove.
 6. Tap **Uninstall**.
+
+Some apps that came with the phone can't be deleted. On some phones you can turn them off instead.
 
 If you change your mind later, you can reinstall it from the Play Store without paying again.""",
                 ],
@@ -864,8 +845,8 @@ If you change your mind later, you can reinstall it from the Play Store without 
 2. Click **Apps**.
 3. Click **Installed apps**.
 4. Find the program in the list.
-5. Click the **three dots** next to it, then click **Uninstall**.
-6. Confirm, and follow any instructions that appear.
+5. Click **More** next to it, then click **Uninstall**.
+6. Follow any directions that appear on the screen.
 
 **Another way:** click **Start**, then **All apps**, right-click the program, and choose **Uninstall**.""",
                 ],
@@ -887,18 +868,21 @@ If you change your mind later, you can reinstall it from the Play Store without 
                 "sources": [{'title': 'Microsoft Support: Uninstall or remove apps and programs in Windows', 'url': 'https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98', 'accessed': '2026-10-24'}],
                 "messages": [
                     "Windows 11 Home, HP laptop. There's an old program called PhotoEasy that came preinstalled. I want it gone. Settings or Control Panel?",
-                    """Settings is the easiest place on Windows 11. If PhotoEasy doesn't appear there, open **Control Panel** and use **Programs and Features** instead.
-
-Here's how. It takes a minute or two.
+                    """You can start in Settings. It takes a minute or two.
 
 1. Click the **Start** button, then click **Settings**.
 2. Click **Apps**.
 3. Click **Installed apps**.
 4. Find the program in the list.
-5. Click the **three dots** next to it, then click **Uninstall**.
-6. Confirm, and follow any instructions that appear.
+5. Click **More** next to it, then click **Uninstall**.
+6. Follow any directions that appear on the screen.
 
-**Another way:** click **Start**, then **All apps**, right-click the program, and choose **Uninstall**.""",
+If PhotoEasy is not in the list, use Control Panel:
+
+1. Type **Control Panel** in the search box on the taskbar and open it.
+2. Click **Programs**, then **Programs and Features**.
+3. Right-click PhotoEasy and choose **Uninstall** (or **Uninstall/Change**).
+4. Follow any directions that appear on the screen.""",
                 ],
             },
             {
@@ -918,8 +902,8 @@ Here's how. It takes a minute or two.
 2. Click **Apps**.
 3. Click **Installed apps**.
 4. Find the program in the list.
-5. Click the **three dots** next to it, then click **Uninstall**.
-6. Confirm, and follow any instructions that appear.
+5. Click **More** next to it, then click **Uninstall**.
+6. Follow any directions that appear on the screen.
 
 **Another way:** click **Start**, then **All apps**, right-click the program, and choose **Uninstall**.""",
                 ],
@@ -943,12 +927,8 @@ Here's how. It takes a minute or two.
 1. Open the **Settings** app.
 2. Tap **General**.
 3. Tap **iPhone Storage**.
-4. At the top, look at the **recommendations**. Tap one to see what it would remove, or tap **Show All** to see more.
-5. Below that is a list of your apps. Tap an app to see your choices:
-   - **Offload App** removes the app but keeps your documents and data, so nothing is lost if you reinstall it.
-   - **Delete App** removes the app and its data.
-
-Offloading apps you rarely use is a safe place to start.""",
+4. You'll see recommendations and a list of your apps with how much space each uses. You can tap **Show All** to see more recommendations.
+5. Tap an app's name, then choose to offload or delete it. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
                 ],
             },
             {
@@ -989,12 +969,8 @@ Let's see what's using the space first. This takes a few minutes.
 1. Open the **Settings** app.
 2. Tap **General**.
 3. Tap **iPhone Storage**.
-4. At the top, look at the **recommendations**. Tap one to see what it would remove, or tap **Show All** to see more.
-5. Below that is a list of your apps. Tap an app to see your choices:
-   - **Offload App** removes the app but keeps your documents and data, so nothing is lost if you reinstall it.
-   - **Delete App** removes the app and its data.
-
-Offloading apps you rarely use is a safe place to start.""",
+4. You'll see recommendations and a list of your apps with how much space each uses. You can tap **Show All** to see more recommendations.
+5. Tap an app's name, then choose to offload or delete it. Offloading frees up space but keeps the app's documents and data. Deleting removes the app and its related data.""",
                 ],
             },
         ],

@@ -116,18 +116,17 @@ Troubleshooting: if the network drops mid-update the update may fail; reconnect 
 2. Tap the **Settings** icon.
 3. Swipe to **Software update** and tap it. On some phones it is called **System updates**.
 4. Tap **Download and install**. On some phones you may need to tap **Download now**.
-5. When the download finishes, follow the instructions on the screen to install it.
-
-If the name is different on your phone, look for **System updates** instead.""",
+5. When the download finishes, follow the instructions on the screen to install it.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Samsung Galaxy",
              "messages": [
                  "My grandson keeps telling me my Samsung Galaxy is out of date and that I need to get the latest software. I have a laptop here that I use for email, and I would rather do it with the laptop and the cable that came in the box if that works. What should I do?",
                  """Yes, you can update with a computer by using a program called Smart Switch.
 
-1. Plug your Galaxy into the computer with the USB cable from the box. Some computers need a USB adapter.
-2. Open **Smart Switch** on the computer and let it find your phone.
-3. If an update is available, click **Update** and follow the prompts.
+1. Make sure the Smart Switch program is installed on your computer. If it is not, you can get it from Samsung's Smart Switch page: https://www.samsung.com/us/support/owners/app/smart-switch
+2. Plug your Galaxy into the computer with the USB cable from the box. Some computers need a USB adapter.
+3. Open **Smart Switch** on the computer and let it find your phone.
+4. If an update is available, click **Update** and follow the prompts.
 
 Keep the cable plugged in and do not use the phone until it finishes. The phone will restart by itself.""",
              ]},
@@ -387,9 +386,7 @@ Brightness: swipe down from top right to open Quick settings panel, tap and hold
 
 1. Swipe down from the top right of the screen to open the **Quick settings** panel.
 2. Tap the **Flashlight** icon. The light comes on.
-3. To turn it off, tap the **Flashlight** icon again.
-
-The icon looks highlighted while the light is on.""",
+3. To turn it off, tap the **Flashlight** icon again.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Samsung Galaxy",
              "messages": [
@@ -596,9 +593,11 @@ Your phone needs to be turned on and connected to a network for this to work."""
                  """Yes, you can make the phone ring from the watch.
 
 1. Press the **Home** button on the watch.
-2. Open **Samsung Find**.
-3. Select your phone.
-4. Tap the **Ring** icon.
+2. Swipe to and tap **Samsung Find**.
+3. If asked, tap **Continue** and allow the permissions.
+4. Select your phone.
+5. Tap the **Ring** icon.
+6. To stop the ringing, swipe **Dismiss** on the phone, or tap **Stop** on the watch.
 
 The watch must be connected to the phone by Bluetooth, Wi-Fi, or LTE. If the watch cannot find the phone, you would need to use the Samsung Find or SmartThings Find website instead.""",
              ]},

@@ -19,7 +19,7 @@
  },
  "pilot-016": {
   "batch": "ex2",
-  "scenario": "missing_info",
+  "scenario": "direct",
   "task_type": "online_payment_safety",
   "task": "Is it safe to pay online?",
   "task_platform": "any",
@@ -172,7 +172,7 @@
  },
  "tr025-c": {
   "batch": "ex2",
-  "scenario": "missing_info",
+  "scenario": "direct_messy",
   "task_type": "ring_volume",
   "task": "Turn up ring volume",
   "task_platform": "Android",

@@ -61,14 +61,16 @@ Messages stay saved until you delete them. If you delete one by mistake, tap **D
 If you do not see **Set Up Now**, tap **Voicemail** and follow the instructions on the screen.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{"title": 'Apple Support: iPhone User Guide, Set up voicemail / Check voicemail', "url": 'https://support.apple.com/en-kz/guide/iphone/check-voicemail-iph3c99490e/14.0', "accessed": "2026-11-13"}, {"title": 'Apple Support: iPhone User Guide, Turn on and activate Siri', "url": 'https://support.apple.com/guide/iphone/turn-on-and-activate-siri-iph83aad8922/ios', "accessed": "2026-11-13"}],
              "messages": [
                  "I have an iPhone and my fingers shake so I really struggle to tap the little buttons in the Phone app. Is there any way to find out if I have new voicemail without tapping through all the screens? I can talk to the phone fine.",
-                 """Yes, you can ask Siri instead of tapping. Use your voice to say things like:
+                 """Yes, you can ask Siri instead of tapping. Use your voice:
 
-1. "Do I have any new voicemail?"
-2. "Play the voicemail from" and then the name of the person, for example "Play the voicemail from Eliza."
+1. Say "Hey Siri" to wake Siri.
+2. Then say something like "Do I have any new voicemail?"
+3. Or say "Play the voicemail from" and then the name of the person, for example "Play the voicemail from Eliza."
 
-Siri will answer or play the message for you. If you ever want to tap instead, open the **Phone** app, tap **Voicemail**, then tap a message and tap the **Play** button.""",
+Siri will answer or play the message for you. If Siri does not answer when you say "Hey Siri", that phrase may not be turned on yet. Someone can help you open **Settings**, tap **Siri**, and tap **Turn On Siri**. If you ever want to tap instead, open the **Phone** app, tap **Voicemail**, then tap a message and tap the **Play** button.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -135,11 +137,12 @@ You will see a Call Forwarding icon at the top of the screen while it is on. You
 3. Tap **Phone**.
 4. Tap **Call Forwarding**.
 5. Turn on **Call Forwarding**.
-6. Tap **Forward To** and type in your son's number.
-7. Because your iPhone has two SIMs, choose the line you want to forward.
-8. Tap **Back**.
+6. Because your iPhone has Dual SIM, choose a line under **SIMs**.
+7. Tap **Forward To**.
+8. Type in your son's number.
+9. Tap **Back**.
 
-A Call Forwarding icon shows at the top of the screen while it is on. Your phone must be in range of the cellular network when you set it up, or calls will not forward.""",
+A Call Forwarding icon shows at the top of the screen while it is on. Your phone must be in range of the cellular network when you set it up, or calls will not forward. Call forwarding works on GSM networks. If you use a CDMA network, contact your carrier.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -284,7 +287,7 @@ The light next to the camera lens blinks when you get a notification while the p
                  "I turned it on but I was holding the phone and reading it, and the light never blinked when a message came.",
                  """That is expected. **LED Flash for Alerts** only works when your phone is locked.
 
-1. Press the side button to lock the phone, or put it down and let the screen go dark.
+1. Put the phone down and let the screen go dark so it is locked.
 2. Wait for the next notification. The light next to the camera lens should blink.
 
 If you are still not seeing it, go back to **Settings**, **Accessibility**, **Audio/Visual** and check that **LED Flash for Alerts** is on.""",
@@ -315,7 +318,7 @@ Supplement from the companion page 108044 (Identify your iPhone model): model nu
 4. Find **Model Number**. The part number is shown to its right.
 5. Tap that part number and it changes to the model number.
 
-The model number starts with the letter A and four digits. You can match it against Apple's list of iPhone models to see which model you have.""",
+Use that number when you sell the phone.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -323,9 +326,7 @@ The model number starts with the letter A and four digits. You can match it agai
                  """Yes. On an iPhone 7 or earlier, the model number is on the back of the phone.
 
 1. Turn the phone over so the back faces you.
-2. Look at the writing on the back and find the model number.
-
-You do not need to turn the phone on. The model number starts with the letter A and four digits.""",
+2. Look at the writing on the back and find the model number.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -345,18 +346,16 @@ You do not need to turn the phone on. The model number starts with the letter A 
 4. Find **Model Number**. A part number is shown to its right.
 5. Tap that part number and it changes to the model number.
 
-The model number starts with the letter A and four digits. You can tell the store that number.""",
+You can tell the store that number.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
                  "I forgot the passcode on my iPhone 8 so I can't open Settings, and I do not want to try guessing it. It has a SIM tray on the side. Can I still find the model number some other way?",
-                 """Yes, you do not need to unlock the phone.
+                 """Yes. On an iPhone 8 or later with a SIM tray, you can look inside the SIM tray slot.
 
 1. Remove the SIM tray from the side of the phone.
 2. Hold the tray slot under bright overhead light and look inside the slot.
-3. Look on the upper side of the slot, the side with the display. The model number is there.
-
-The model number starts with the letter A and four digits.""",
+3. Look on the upper side of the slot, the side with the display. The model number is there.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
              "messages": [

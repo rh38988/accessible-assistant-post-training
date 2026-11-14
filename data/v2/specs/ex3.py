@@ -16,7 +16,7 @@ TASKS = [
 
 1. Open the **Settings** app.
 2. Tap **System**.
-3. Tap **Software updates**. On some phones this is called **System update** or is in a different spot.
+3. Tap **Software updates**. The update status appears there. Names can be a little different on some phones.
 4. Follow the instructions on the screen to download and install the update.
 
 Your phone may restart during the update. On Google Pixel phones, the update installs in the background and finishes when you restart.
@@ -57,13 +57,11 @@ First, **is your phone an iPhone or an Android phone** (like Samsung or Google P
                     "my phone says there's an update, should I do it?",
                     'Updates are usually a good idea because they fix problems and help keep your phone secure. So I can show you the right steps: is your phone an **iPhone** or an **Android** phone (like Samsung or Google Pixel)?',
                     'Android',
-                    """Thanks. If you still see the update notification, you can tap it. Otherwise, follow these steps.
-
-Here's how to check for an update. Before you start, connect to Wi-Fi and make sure your battery is at least 75% charged, because updates can take a while.
+                    """Thanks. If you still see the update notification, you can tap it, then tap its update button. Otherwise, before you start, connect to Wi-Fi and charge the battery to at least 75%, because updates can take a while.
 
 1. Open the **Settings** app.
 2. Tap **System**.
-3. Tap **Software updates**. On some phones this is called **System update** or is in a different spot.
+3. Tap **Software updates**. The update status appears there. Names can be a little different on some phones.
 4. Follow the instructions on the screen to download and install the update.
 
 Your phone may restart during the update. On Google Pixel phones, the update installs in the background and finishes when you restart.
@@ -90,7 +88,7 @@ If it says there isn't enough space, tell me and I'll help you free some up firs
 1. Click the **Start** button (the Windows logo).
 2. Click **Settings**.
 3. Click **Windows Update**.
-4. Click **Check for updates**.
+4. Click **Check for Windows updates**.
 5. If updates are found, click **Download & install**.
 
 If Windows asks you to restart, save anything you're working on first, then restart to finish the update.
@@ -115,19 +113,14 @@ If you see an error message, write it down or take a picture of it, and tell me 
                 "sources": [{'title': 'Microsoft Support: Install Windows Updates', 'url': 'https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates', 'accessed': '2026-10-24'}],
                 "messages": [
                     "Dell Inspiron, Windows 11 Home. The little icon by the clock says updates are available. I'm comfortable with Settings, just tell me where to go.",
-                    """Sure, here's the path:
+                    """Sure, here's the path.
 
-Here's how to check for updates and install them. It can take a while, so do it when you won't need the computer for a bit.
+1. Click **Start**, then **Settings**.
+2. Click **Windows Update**.
+3. Click **Check for Windows updates**.
+4. If it finds updates, click **Download & install**.
 
-1. Click the **Start** button (the Windows logo).
-2. Click **Settings**.
-3. Click **Windows Update**.
-4. Click **Check for updates**.
-5. If updates are found, click **Download & install**.
-
-If Windows asks you to restart, save anything you're working on first, then restart to finish the update.
-
-If you see an error message, write it down or take a picture of it, and tell me what it says.""",
+If Windows asks you to restart, do that to finish the update.""",
                 ],
             },
             {
@@ -139,14 +132,12 @@ If you see an error message, write it down or take a picture of it, and tell me 
                     'my computer keeps saying it needs to update',
                     'Updates help keep your computer working well and safe. Is your computer a **Windows** computer or a **Mac**?',
                     'Windows 11',
-                    """Thanks. Here's how to install the updates.
-
-Here's how to check for updates and install them. It can take a while, so do it when you won't need the computer for a bit.
+                    """Thanks. Here's how to check for updates and install them. It can take a while, so do it when you won't need the computer for a bit.
 
 1. Click the **Start** button (the Windows logo).
 2. Click **Settings**.
 3. Click **Windows Update**.
-4. Click **Check for updates**.
+4. Click **Check for Windows updates**.
 5. If updates are found, click **Download & install**.
 
 If Windows asks you to restart, save anything you're working on first, then restart to finish the update.
@@ -168,7 +159,7 @@ If you see an error message, write it down or take a picture of it, and tell me 
                 "sources": [{'title': 'Google Photos Help: Back up photos & videos (Android)', 'url': 'https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "How do I back up my photos on my Android phone so I don't lose them?",
-                    """You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on.
+                    """You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -177,7 +168,7 @@ If you see an error message, write it down or take a picture of it, and tell me 
 5. Tap **Backup**.
 6. Turn **Backup** on.
 
-Your photos will start saving to your Google Account. This can take a while if you have many photos.
+Your photos will start saving to your Google Account. At the top of your library you should see the backup status, such as **Backing up photos** and later **Backup complete**. This can take a while if you have many photos.
 
 Your Google storage is shared with Gmail and Google Drive, and backup stops if it fills up. Tell me if you see a storage message and we'll look at the options.""",
                 ],
@@ -199,9 +190,7 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
                 "sources": [{'title': 'Google Photos Help: Back up photos & videos (Android)', 'url': 'https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I dropped my old phone in the lake last summer and lost all the pictures of my granddaughter's first year. I have a new Android phone now and I don't want that to happen again.",
-                    """I'm sorry about those pictures. Let's make sure your new ones are kept safe. Google Photos can save a copy online:
-
-You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on.
+                    """I'm sorry about those pictures. Let's make sure your new ones are kept safe. You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -210,7 +199,7 @@ You can use the **Google Photos** app to save copies of your photos to your Goog
 5. Tap **Backup**.
 6. Turn **Backup** on.
 
-Your photos will start saving to your Google Account. This can take a while if you have many photos.
+Your photos will start saving to your Google Account. At the top of your library you should see the backup status, such as **Backing up photos** and later **Backup complete**. This can take a while if you have many photos.
 
 Your Google storage is shared with Gmail and Google Drive, and backup stops if it fills up. Tell me if you see a storage message and we'll look at the options.""",
                 ],
@@ -224,9 +213,7 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
                     "how can I save my pictures so I don't lose them if I lose my phone",
                     "That's a smart thing to set up. Is your phone an **iPhone** or an **Android** phone (like Samsung or Google Pixel)?",
                     'android',
-                    """Great. On Android, Google Photos can do this for you.
-
-You can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on.
+                    """Great. On Android you can use the **Google Photos** app to save copies of your photos to your Google Account. It takes a couple of minutes to turn on. Make sure you have a good internet connection first.
 
 1. Open the **Google Photos** app.
 2. Sign in to your Google Account if it asks.
@@ -235,7 +222,7 @@ You can use the **Google Photos** app to save copies of your photos to your Goog
 5. Tap **Backup**.
 6. Turn **Backup** on.
 
-Your photos will start saving to your Google Account. This can take a while if you have many photos.
+Your photos will start saving to your Google Account. At the top of your library you should see the backup status, such as **Backing up photos** and later **Backup complete**. This can take a while if you have many photos.
 
 Your Google storage is shared with Gmail and Google Drive, and backup stops if it fills up. Tell me if you see a storage message and we'll look at the options.""",
                 ],
@@ -254,18 +241,17 @@ Your Google storage is shared with Gmail and Google Drive, and backup stops if i
                 "sources": [{'title': 'Microsoft Support: Add or install a printer in Windows', 'url': 'https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I just bought a new printer. How do I add it to my Windows 11 computer?',
-                    """Here's how to add your new printer. It takes about five minutes.
+                    """Here's how to add your new printer. It can take a few minutes.
 
-**First:** turn the printer on. If it uses a cable, plug it into the computer. If it's wireless, make sure it's on the same Wi-Fi network as your computer.
+**First:** turn the printer on. If it uses a cable, plug it into the computer. Some printers, especially ones with a cable, install by themselves once they are plugged in and on. If it's wireless, make sure it's on the same Wi-Fi network as your computer.
 
 1. Click **Start**, then **Settings**.
 2. Click **Bluetooth & devices**.
 3. Click **Printers & scanners**.
-4. Next to **Add a printer & scanner**, click **Add device**.
-5. Wait a few minutes while the computer searches.
-6. When your printer appears, click **Add device** next to it.
-
-Some printers install by themselves after step 4.
+4. Look at the list of printers. If your printer is already there, you're finished.
+5. If it isn't, next to **Add a printer & scanner**, click **Add device**.
+6. Wait a few minutes while the computer searches.
+7. When your printer appears, click **Add device** next to it.
 
 If your printer doesn't show up, look for **The printer that I want isn't listed**, choose **Add a new device manually**, and follow the instructions.""",
                 ],
@@ -287,7 +273,7 @@ If your printer doesn't show up, look for **The printer that I want isn't listed
                 "sources": [{'title': 'Microsoft Support: Add or install a printer in Windows', 'url': 'https://support.microsoft.com/en-us/windows/hardware/printer/add-or-install-a-printer-in-windows', 'accessed': '2026-10-24'}],
                 "messages": [
                     'new printer wont',
-                    "It sounds like your message got cut off. What won't the new printer do: **turn on**, **connect**, or **print**? And what are you printing from, a computer or a phone?",
+                    'It looks like your message got cut off. What happens when you try to set up the new printer: does it not **turn on**, not **connect**, or not **print**?',
                 ],
             },
             {
@@ -299,20 +285,17 @@ If your printer doesn't show up, look for **The printer that I want isn't listed
                     'how do I set up my new printer',
                     'Congratulations on the new printer. What will you print from: a **Windows computer**, a **Mac**, or a **phone**?',
                     'My Windows 11 laptop',
-                    """Great, here's how to add it to your Windows 11 laptop.
+                    """Great, here's how to add the printer to your Windows 11 laptop. It can take a few minutes.
 
-Here's how to add your new printer. It takes about five minutes.
-
-**First:** turn the printer on. If it uses a cable, plug it into the computer. If it's wireless, make sure it's on the same Wi-Fi network as your computer.
+**First:** turn the printer on. If it uses a cable, plug it into the computer. Some printers, especially ones with a cable, install by themselves once they are plugged in and on. If it's wireless, make sure it's on the same Wi-Fi network as your computer.
 
 1. Click **Start**, then **Settings**.
 2. Click **Bluetooth & devices**.
 3. Click **Printers & scanners**.
-4. Next to **Add a printer & scanner**, click **Add device**.
-5. Wait a few minutes while the computer searches.
-6. When your printer appears, click **Add device** next to it.
-
-Some printers install by themselves after step 4.
+4. Look at the list of printers. If your printer is already there, you're finished.
+5. If it isn't, next to **Add a printer & scanner**, click **Add device**.
+6. Wait a few minutes while the computer searches.
+7. When your printer appears, click **Add device** next to it.
 
 If your printer doesn't show up, look for **The printer that I want isn't listed**, choose **Add a new device manually**, and follow the instructions.""",
                 ],
@@ -351,7 +334,7 @@ If you added the wrong photo, tap the close icon (**X**) next to its name to rem
                 "sources": [{'title': 'Gmail Help: Send attachments with your Gmail message (Android)', 'url': 'https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I send a picture in an email',
-                    'I can help. Do you use email on a **phone** or a **computer**, and which email app, for example **Gmail**?',
+                    'I can help. Which email app are you using, for example **Gmail** on your phone?',
                 ],
             },
             {
@@ -361,7 +344,7 @@ If you added the wrong photo, tap the close icon (**X**) next to its name to rem
                 "sources": [{'title': 'Gmail Help: Send attachments with your Gmail message (Android)', 'url': 'https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how to attach',
-                    'Happy to help you attach something. **What would you like to attach** (a photo, a document?), and **where**: in an email, a text message, or somewhere else?',
+                    'Happy to help. **Where do you want to attach something**: in an email, in a text message, or somewhere else?',
                 ],
             },
             {
@@ -371,11 +354,9 @@ If you added the wrong photo, tap the close icon (**X**) next to its name to rem
                 "sources": [{'title': 'Gmail Help: Send attachments with your Gmail message (Android)', 'url': 'https://support.google.com/mail/answer/6584?hl=en&co=GENIE.Platform%3DAndroid', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I send a picture in an email',
-                    'I can help. Do you use email on a **phone** or a **computer**, and which email app, for example **Gmail**?',
+                    'I can help. Which email app are you using, for example **Gmail** on your phone?',
                     'Gmail app on my Android phone',
-                    """Thanks, here's how in the Gmail app.
-
-Here's how. It takes about a minute.
+                    """Thanks, here's how in the Gmail app. It takes about a minute.
 
 1. Open the **Gmail** app.
 2. Tap **Compose** at the bottom right to start a new email.
@@ -385,7 +366,7 @@ Here's how. It takes about a minute.
 
 Then add the email address and your message as usual, and send it.
 
-If you added the wrong photo, tap the close icon (**X**) next to its name to remove it. Very large files are added as a Google Drive link instead, which the person can still open.""",
+If you added the wrong photo, tap **Close** to the right of its name to remove it. If the attachments are over 25 MB, Gmail adds them as a Google Drive link instead.""",
                 ],
             },
         ],
@@ -404,16 +385,15 @@ If you added the wrong photo, tap the close icon (**X**) next to its name to rem
                     "I forgot my Gmail password and can't sign in. How do I get back into my account?",
                     """You can get back in through Google's account recovery. It usually takes a few minutes.
 
-1. Go to Google's **account recovery** page.
-2. Enter the details it asks for, starting with your Gmail address.
-3. Answer the questions as best you can. If you're not sure of an answer, make your best guess. A wrong guess doesn't lock you out, and you can try again.
-4. When asked, create a **new password** that you haven't used for this account before.
+1. Go to **accounts.google.com/signin/recovery** (Google's account recovery page).
+2. Answer the questions it asks to show the account is yours. Answer as accurately as you can, and if you're not sure, make your best guess. A wrong guess doesn't end the process, and you can try again.
+3. When asked, create a **new password** that you haven't used for this account before.
 
 **Stay safe while you do this:**
 - Google staff can't help you sign in over the phone, so ignore anyone who calls or messages offering to recover your account.
 - Never share your password or any verification code with anyone.
 
-If it doesn't work right away, wait a few days and try again.""",
+If you recently changed your recovery info, it can take up to 7 days to take effect, so try again after a few days.""",
                 ],
             },
             {
@@ -423,7 +403,7 @@ If it doesn't work right away, wait a few days and try again.""",
                 "sources": [{'title': 'Google Account Help: How to recover your Google Account or Gmail', 'url': 'https://support.google.com/accounts/answer/7682439?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I can't get into my email",
-                    "That's stressful, but it can usually be fixed. **Which email do you use** (for example Gmail, which ends in @gmail.com), and **what's going wrong**, such as a forgotten password or an error message?",
+                    "That's stressful, but it can usually be fixed. **Which email do you use**, for example Gmail, which ends in @gmail.com?",
                 ],
             },
             {
@@ -433,20 +413,17 @@ If it doesn't work right away, wait a few days and try again.""",
                 "sources": [{'title': 'Google Account Help: How to recover your Google Account or Gmail', 'url': 'https://support.google.com/accounts/answer/7682439?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I haven't used my Gmail on the computer in ages because my phone just stays logged in, but my phone broke and now the new one is asking for the password and I have no idea what it is.",
-                    """That happens a lot when a phone stays signed in for years. You can reset the password:
+                    """That happens a lot when a phone stays signed in for years. You can get back in through Google's account recovery. It usually takes a few minutes.
 
-You can get back in through Google's account recovery. It usually takes a few minutes.
-
-1. Go to Google's **account recovery** page.
-2. Enter the details it asks for, starting with your Gmail address.
-3. Answer the questions as best you can. If you're not sure of an answer, make your best guess. A wrong guess doesn't lock you out, and you can try again.
-4. When asked, create a **new password** that you haven't used for this account before.
+1. Go to **accounts.google.com/signin/recovery** (Google's account recovery page).
+2. Answer the questions it asks to show the account is yours. Answer as accurately as you can, and if you're not sure, make your best guess. A wrong guess doesn't end the process, and you can try again.
+3. When asked, create a **new password** that you haven't used for this account before.
 
 **Stay safe while you do this:**
 - Google staff can't help you sign in over the phone, so ignore anyone who calls or messages offering to recover your account.
 - Never share your password or any verification code with anyone.
 
-If it doesn't work right away, wait a few days and try again.""",
+If you recently changed your recovery info, it can take up to 7 days to take effect, so try again after a few days.""",
                 ],
             },
             {
@@ -456,22 +433,19 @@ If it doesn't work right away, wait a few days and try again.""",
                 "sources": [{'title': 'Google Account Help: How to recover your Google Account or Gmail', 'url': 'https://support.google.com/accounts/answer/7682439?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I can't get into my email",
-                    "That's stressful, but it can usually be fixed. **Which email do you use** (for example Gmail, which ends in @gmail.com), and **what's going wrong**, such as a forgotten password or an error message?",
+                    "That's stressful, but it can usually be fixed. **Which email do you use**, for example Gmail, which ends in @gmail.com?",
                     'Gmail, I forgot the password',
-                    """Thanks. You can reset it through Google's account recovery.
+                    """Thanks. You can get back in through Google's account recovery. It usually takes a few minutes.
 
-You can get back in through Google's account recovery. It usually takes a few minutes.
-
-1. Go to Google's **account recovery** page.
-2. Enter the details it asks for, starting with your Gmail address.
-3. Answer the questions as best you can. If you're not sure of an answer, make your best guess. A wrong guess doesn't lock you out, and you can try again.
-4. When asked, create a **new password** that you haven't used for this account before.
+1. Go to **accounts.google.com/signin/recovery** (Google's account recovery page).
+2. Answer the questions it asks to show the account is yours. Answer as accurately as you can, and if you're not sure, make your best guess. A wrong guess doesn't end the process, and you can try again.
+3. When asked, create a **new password** that you haven't used for this account before.
 
 **Stay safe while you do this:**
 - Google staff can't help you sign in over the phone, so ignore anyone who calls or messages offering to recover your account.
 - Never share your password or any verification code with anyone.
 
-If it doesn't work right away, wait a few days and try again.""",
+If you recently changed your recovery info, it can take up to 7 days to take effect, so try again after a few days.""",
                 ],
             },
         ],
@@ -492,11 +466,10 @@ If it doesn't work right away, wait a few days and try again.""",
 
 Here's what to do:
 
-1. **Hang up.** You don't need to argue or explain.
-2. **Call your granddaughter** at the phone number you already have for her, not a number from the call.
-3. If you can't reach her, **call another family member** or one of her friends to check.
+1. **Don't trust the voice**, even if it sounds like her. Call your granddaughter on a phone number you know is hers, not a number from the call.
+2. If you can't reach her, try another family member or her friends.
 
-**Warning signs of this scam:** an urgent emergency, pressure to act fast, and a request to **wire money, send cryptocurrency, or buy gift cards**. Those payments are very hard to get back.
+**Warning sign:** Scammers ask you to pay in ways that make it hard to get your money back: wire money, cryptocurrency, or gift cards.
 
 If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If you already sent money, tell me right away and we'll work out the next steps.""",
                 ],
@@ -508,7 +481,7 @@ If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If y
                 "sources": [{'title': 'FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes', 'url': 'https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Someone called and said my granddaughter needs money, what should I do?',
-                    "I'm glad you asked before doing anything. To help you check: **what exactly did they ask you to do, and how did they want the money sent?** For example, did they ask for a wire transfer or gift cards?",
+                    "I'm glad you asked before doing anything. **Please don't send any money yet.** Have you already sent anything, or are you still deciding?",
                 ],
             },
             {
@@ -518,7 +491,7 @@ If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If y
                 "sources": [{'title': 'FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes', 'url': 'https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Got a strange call last night. Not sure what to make of it.',
-                    "I'm happy to help you figure it out. **What did the caller say, and did they ask you for money or personal information?**",
+                    "I'm happy to help you figure it out. Please don't send money or share any codes or personal details until we check. **What did the caller say?**",
                 ],
             },
             {
@@ -528,19 +501,18 @@ If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If y
                 "sources": [{'title': 'FTC Consumer Alert: Scammers use AI to enhance their family emergency schemes', 'url': 'https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Someone called and said my granddaughter needs money, what should I do?',
-                    "I'm glad you asked before doing anything. To help you check: **what exactly did they ask you to do, and how did they want the money sent?** For example, did they ask for a wire transfer or gift cards?",
-                    'They wanted me to wire $3,000. The voice sounded just like her.',
-                    """Thank you for telling me. A request to wire money in an emergency is a common warning sign, even when the voice sounds right.
+                    "I'm glad you asked before doing anything. **Please don't send any money yet.** Have you already sent anything, or are you still deciding?",
+                    "I haven't sent anything. They wanted me to wire $3,000, and the voice sounded just like her.",
+                    """Thank you for telling me, and I'm glad you haven't sent anything. A request to wire money is a warning sign, even when the voice sounds right.
 
 Please **don't send any money yet**. Scammers can now copy a person's voice from a short recording, like a video posted online, so a call can sound exactly like someone you love.
 
 Here's what to do:
 
-1. **Hang up.** You don't need to argue or explain.
-2. **Call your granddaughter** at the phone number you already have for her, not a number from the call.
-3. If you can't reach her, **call another family member** or one of her friends to check.
+1. **Don't trust the voice**, even if it sounds like her. Call your granddaughter on a phone number you know is hers, not a number from the call.
+2. If you can't reach her, try another family member or her friends.
 
-**Warning signs of this scam:** an urgent emergency, pressure to act fast, and a request to **wire money, send cryptocurrency, or buy gift cards**. Those payments are very hard to get back.
+**Warning sign:** Scammers ask you to pay in ways that make it hard to get your money back: wire money, cryptocurrency, or gift cards.
 
 If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If you already sent money, tell me right away and we'll work out the next steps.""",
                 ],
@@ -563,12 +535,11 @@ If it turns out to be a scam, you can report it at **ReportFraud.ftc.gov**. If y
 
 Instead:
 
-1. **Don't click** the link or reply.
+1. **Don't click** the link or give any information.
 2. Check on your package using the website or app of the **store where you bought it**. Go there directly, not through the text.
-3. **Report the text.** Use your phone's **junk** or **spam** reporting option if you see one, or forward the text to **7726**.
-4. Then delete it.
+3. **Report the text.** Use your messaging app's **junk** or **spam** report option. If there isn't one, forward the text to **7726**. You can also tell the FTC at **ReportFraud.ftc.gov**.
 
-If you already clicked and typed in your card number, call your bank right away using the number on the back of your card.""",
+If you already clicked the link or typed in any information, tell me and we'll look at what to do next.""",
                 ],
             },
             {
@@ -578,7 +549,7 @@ If you already clicked and typed in your card number, call your bank right away 
                 "sources": [{'title': 'FTC Consumer Alert: Think that text message is from USPS? It could be a scam', 'url': 'https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I got a text about a package, is it real?',
-                    "Let's check it together. **What does the text ask you to do?** For example, does it have a link to click, or ask you to pay a fee or update your address?",
+                    "Let's check it together. For now, **please don't click any link or give any information** in that text. **What does the text ask you to do?**",
                 ],
             },
             {
@@ -588,7 +559,7 @@ If you already clicked and typed in your card number, call your bank right away 
                 "sources": [{'title': 'FTC Consumer Alert: Think that text message is from USPS? It could be a scam', 'url': 'https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     'usps text link',
-                    "Do you mean you got a text that looks like it's from **USPS** with a link in it? If so, please don't click the link yet. **What does the text ask you to do?**",
+                    "If you got a text that looks like it's from **USPS** with a link in it, please **don't click the link** yet. **What does the text ask you to do?**",
                 ],
             },
             {
@@ -598,7 +569,7 @@ If you already clicked and typed in your card number, call your bank right away 
                 "sources": [{'title': 'FTC Consumer Alert: Think that text message is from USPS? It could be a scam', 'url': 'https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I got a text about a package, is it real?',
-                    "Let's check it together. **What does the text ask you to do?** For example, does it have a link to click, or ask you to pay a fee or update your address?",
+                    "Let's check it together. For now, **please don't click any link or give any information** in that text. **What does the text ask you to do?**",
                     'It has a link and says I need to pay $1.99 for redelivery.',
                     """Thanks. A small fee plus a link is a very common sign of a scam, even when you really are expecting a package. Please **don't click the link**. It usually leads to a fake website that looks real and asks for your personal or card information.
 
@@ -626,7 +597,7 @@ If you already clicked and typed in your card number, call your bank right away 
                 "sources": [{'title': 'FTC Consumer Advice: Avoiding and Reporting Gift Card Scams', 'url': 'https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I got an email from my pastor asking me to buy five $100 gift cards for church members and send him the numbers on the back. He said he's in a meeting and can't talk. Should I do it?",
-                    """Please **don't buy the gift cards**. This is a common scam. Real businesses, government agencies, and people you know don't ask to be paid with gift card numbers, and once you share the numbers, the money is very hard to get back.
+                    """Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, the money is very hard to get back.
 
 Here's what to do:
 
@@ -636,7 +607,8 @@ Here's what to do:
 
 **If you already bought cards and shared the numbers:**
 - Call the **gift card company** right away and ask for your money back. Sometimes they can freeze what's left on the card.
-- Keep the cards and the store receipt.
+- Keep the cards and the store receipt. The number on the card and the receipt help you report it to the company.
+- The FTC's gift card scam page lists phone numbers for major gift card companies. If yours isn't listed, look on the card or search online for the company that issued it.
 - Report it at **ReportFraud.ftc.gov**.""",
                 ],
             },
@@ -649,7 +621,7 @@ Here's what to do:
                     'someone wants me to pay with gift cards, is that normal?',
                     """**Please don't buy any gift cards yet.** Being asked to pay with gift cards is a common sign of a scam.
 
-**Who is asking, and have you already bought or sent any cards?**""",
+**Have you already bought or sent any gift cards?**""",
                 ],
             },
             {
@@ -659,20 +631,15 @@ Here's what to do:
                 "sources": [{'title': 'FTC Consumer Advice: Avoiding and Reporting Gift Card Scams', 'url': 'https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     "Our church secretary forwarded a weird email to everyone saying Pastor needs gift cards for a surprise and to text him the codes. My friend already bought some. I don't want to be rude to Pastor if it's real.",
-                    """You're not being rude by checking, and a real pastor would understand. The steps for your friend are at the end.
+                    """You're not being rude by checking, and a real pastor would understand. Your friend should act first. They should **contact the gift card company right away**, tell them the cards were used in a scam, ask for the money back, and ask if they can freeze it. Your friend should keep the cards and the store receipt, because the number on the card and the receipt help with the report. They can also report it at **ReportFraud.ftc.gov**.
 
-Please **don't buy the gift cards**. This is a common scam. Real businesses, government agencies, and people you know don't ask to be paid with gift card numbers, and once you share the numbers, the money is very hard to get back.
+The FTC's gift card scam page lists phone numbers for major gift card companies. If your friend's isn't listed, they can look on the card or search online for the company that issued it.
 
-Here's what to do:
+For you: please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know.
 
 1. **Don't reply** to the email.
 2. **Call your pastor** using a phone number you already have, or call the church office, and ask if he really sent it.
-3. If it's fake, you can report it at **ReportFraud.ftc.gov**.
-
-**If you already bought cards and shared the numbers:**
-- Call the **gift card company** right away and ask for your money back. Sometimes they can freeze what's left on the card.
-- Keep the cards and the store receipt.
-- Report it at **ReportFraud.ftc.gov**.""",
+3. If it's fake, you can report it at **ReportFraud.ftc.gov**.""",
                 ],
             },
             {
@@ -684,11 +651,9 @@ Here's what to do:
                     'someone wants me to pay with gift cards, is that normal?',
                     """**Please don't buy any gift cards yet.** Being asked to pay with gift cards is a common sign of a scam.
 
-**Who is asking, and have you already bought or sent any cards?**""",
+**Have you already bought or sent any gift cards?**""",
                     "It's an email from my pastor. I haven't bought anything yet.",
-                    """Good, you haven't lost anything. Here's what to do:
-
-Please **don't buy the gift cards**. This is a common scam. Real businesses, government agencies, and people you know don't ask to be paid with gift card numbers, and once you share the numbers, the money is very hard to get back.
+                    """Good, you haven't lost anything. Please **don't buy the gift cards**. This is a common scam. Real businesses and government agencies never ask to be paid with gift cards, and scammers often pretend to be someone you know. Once you share the numbers, the money is very hard to get back.
 
 Here's what to do:
 
@@ -696,10 +661,7 @@ Here's what to do:
 2. **Call your pastor** using a phone number you already have, or call the church office, and ask if he really sent it.
 3. If it's fake, you can report it at **ReportFraud.ftc.gov**.
 
-**If you already bought cards and shared the numbers:**
-- Call the **gift card company** right away and ask for your money back. Sometimes they can freeze what's left on the card.
-- Keep the cards and the store receipt.
-- Report it at **ReportFraud.ftc.gov**.""",
+If you ever do share card numbers, tell me right away and call the gift card company.""",
                 ],
             },
             {
@@ -750,13 +712,13 @@ Do you have the cards and the receipt with you? If so, we can look at step 1 tog
                     """Here's how to start a family group and invite your daughter. It takes a few minutes.
 
 **Create the group:**
-1. Open **Settings** and tap **your name** at the top.
-2. Tap **Family**.
-3. Follow the instructions on the screen to set up your family group.
+1. Open **Settings** and tap **your name**.
+2. Tap **Family**, then tap **Continue**.
+3. Follow the instructions on the screen to set up your family group and invite members.
 
-**Invite your daughter:**
+**To invite your daughter later, or if you skipped that:**
 4. Go to **Settings**, then **Family**.
-5. Tap the **add member** button (it has a plus sign).
+5. Tap the **Add Member** button.
 6. Tap **Invite Others** and follow the steps to send her an invitation.
 
 Once she accepts, she'll be part of your family group. If she doesn't see the invitation, go to **Settings**, then **Family**, tap her name, and choose **Resend Invitation**.""",
@@ -769,7 +731,7 @@ Once she accepts, she'll be part of your family group. If she doesn't see the in
                 "sources": [{'title': 'Apple Support: How to set up Family Sharing on your iPhone, iPad, or Mac', 'url': 'https://support.apple.com/en-us/108380', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I share things with my family on my phone',
-                    'There are a few ways to do that. **What would you like to share** (for example photos, your location, or app purchases), and is your phone an **iPhone** or an Android phone?',
+                    'There are a few ways to do that. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -789,20 +751,20 @@ Once she accepts, she'll be part of your family group. If she doesn't see the in
                 "sources": [{'title': 'Apple Support: How to set up Family Sharing on your iPhone, iPad, or Mac', 'url': 'https://support.apple.com/en-us/108380', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I share things with my family on my phone',
-                    'There are a few ways to do that. **What would you like to share** (for example photos, your location, or app purchases), and is your phone an **iPhone** or an Android phone?',
+                    'There are a few ways to do that. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone. My daughter said to set up Family Sharing so we can share stuff.',
                     """Got it. Family Sharing is a good choice for that.
 
 Here's how to start a family group and invite your daughter. It takes a few minutes.
 
 **Create the group:**
-1. Open **Settings** and tap **your name** at the top.
-2. Tap **Family**.
-3. Follow the instructions on the screen to set up your family group.
+1. Open **Settings** and tap **your name**.
+2. Tap **Family**, then tap **Continue**.
+3. Follow the instructions on the screen to set up your family group and invite members.
 
-**Invite your daughter:**
+**To invite your daughter later, or if you skipped that:**
 4. Go to **Settings**, then **Family**.
-5. Tap the **add member** button (it has a plus sign).
+5. Tap the **Add Member** button.
 6. Tap **Invite Others** and follow the steps to send her an invitation.
 
 Once she accepts, she'll be part of your family group. If she doesn't see the invitation, go to **Settings**, then **Family**, tap her name, and choose **Resend Invitation**.""",
@@ -830,7 +792,7 @@ Once she accepts, she'll be part of your family group. If she doesn't see the in
 4. Type the phone number.
 5. Tap **Save**.
 
-Now the name will show up when the office calls you, and you can find the number in Contacts.
+Now you can find the number in Contacts.
 
 If your phone uses a different contacts app and you don't see an **Add** icon, tell me what you see.""",
                 ],
@@ -870,11 +832,11 @@ Here's how to save the number. It takes about a minute.
 
 1. Open the **Contacts** app.
 2. Tap the **Add** icon at the bottom right.
-3. Type a name, like **Dr. Smith's Office**.
+3. Type a name, like **Mom** or **Dr. Smith's Office**.
 4. Type the phone number.
 5. Tap **Save**.
 
-Now the name will show up when the office calls you, and you can find the number in Contacts.
+Now you can find the number in Contacts.
 
 If your phone uses a different contacts app and you don't see an **Add** icon, tell me what you see.""",
                 ],
@@ -897,9 +859,8 @@ If your phone uses a different contacts app and you don't see an **Add** icon, t
 
 1. Open the **Phone** app.
 2. Tap **Recents**.
-3. Find the number and tap it. (If you see a small **"i"** in a circle next to the number, tap that instead.)
+3. Tap the number you want to block. (In Classic view, tap the **Info** button instead.)
 4. Scroll down and tap **Block Caller**.
-5. Confirm if asked.
 
 After that, calls from that number won't ring your phone, and the caller won't be told they're blocked. If they leave a voicemail, it's saved, but you won't get a notification.""",
                 ],
@@ -941,15 +902,12 @@ After that, calls from that number won't ring your phone, and the caller won't b
                     'how do I stop a number from calling me',
                     'You can block it. Is your phone an **iPhone** or an **Android** phone (like Samsung or Google Pixel)?',
                     'iPhone',
-                    """Thanks. Here's how to block it on your iPhone.
-
-You can block that number from your list of recent calls. It takes less than a minute.
+                    """Thanks. You can block that number from your list of recent calls. It takes less than a minute.
 
 1. Open the **Phone** app.
 2. Tap **Recents**.
-3. Find the number and tap it. (If you see a small **"i"** in a circle next to the number, tap that instead.)
+3. Tap the number you want to block. (In Classic view, tap the **Info** button instead.)
 4. Scroll down and tap **Block Caller**.
-5. Confirm if asked.
 
 After that, calls from that number won't ring your phone, and the caller won't be told they're blocked. If they leave a voicemail, it's saved, but you won't get a notification.""",
                 ],
@@ -971,10 +929,9 @@ After that, calls from that number won't ring your phone, and the caller won't b
                     """You can block it from your call history in the **Phone** app. It takes less than a minute.
 
 1. Open the **Phone** app.
-2. Tap the **More** menu (three dots) and choose **Call history**.
+2. Tap **More**, then choose **Call history**.
 3. Tap a call from the number you want to block.
 4. Tap **Block / report spam**.
-5. Confirm if asked.
 
 Blocked callers can't ring through, and if you use visual voicemail, they can't leave voicemails either.
 
@@ -998,7 +955,7 @@ These steps are for Google's Phone app. If your Phone app looks different, tell 
                 "sources": [{'title': 'Phone app Help: Block or unblock a phone number', 'url': 'https://support.google.com/phoneapp/answer/6325463?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'block this number',
-                    "Sure, I can help you block it. Is it a number that's been **calling** you or **texting** you? And is your phone an iPhone or an Android phone?",
+                    'Sure, I can help you block it. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -1010,15 +967,12 @@ These steps are for Google's Phone app. If your Phone app looks different, tell 
                     'a spam number keeps calling',
                     "That's annoying. I can show you how to block it. Is your phone an **iPhone** or an **Android** phone?",
                     'Android, Pixel 6',
-                    """Thanks, here's how on your Pixel.
-
-You can block it from your call history in the **Phone** app. It takes less than a minute.
+                    """Thanks, here's how on your Pixel. It takes less than a minute.
 
 1. Open the **Phone** app.
-2. Tap the **More** menu (three dots) and choose **Call history**.
+2. Tap **More**, then choose **Call history**.
 3. Tap a call from the number you want to block.
 4. Tap **Block / report spam**.
-5. Confirm if asked.
 
 Blocked callers can't ring through, and if you use visual voicemail, they can't leave voicemails either.
 

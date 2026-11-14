@@ -42,9 +42,7 @@ Only open QR codes you trust, like ones printed on the restaurant's own menu or 
                 "sources": [{'title': 'Apple Support: Scan a QR code with your iPhone or iPad', 'url': 'https://support.apple.com/en-us/102680', 'accessed': '2026-10-24'}],
                 "messages": [
                     "We went to lunch and there were no paper menus, just a little black and white square on the table. My friend scanned it with her phone but I didn't know how. I have an iPhone 12.",
-                    """That square is a QR code, and your iPhone can read it with the camera. Next time, try this:
-
-Your iPhone camera can read QR codes. It takes a few seconds.
+                    """That square is a QR code, and your iPhone can read it with the Camera app.
 
 1. Open the **Camera** app.
 2. Point the camera at the QR code so it shows on the screen.
@@ -52,7 +50,7 @@ Your iPhone camera can read QR codes. It takes a few seconds.
 
 The restaurant's menu will open.
 
-You can also open **Control Center** and tap **Scan Code**.
+You can also open **Control Center** and tap **Scan Code**. If you don't see **Scan Code** in Control Center, touch and hold the background of Control Center, tap **Add a Control**, then tap **Scan Code**.
 
 Only open QR codes you trust, like ones printed on the restaurant's own menu or table.""",
                 ],
@@ -66,19 +64,17 @@ Only open QR codes you trust, like ones printed on the restaurant's own menu or 
                     'how do i scan a QR code',
                     'Sure. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone',
-                    """Thanks.
-
-Your iPhone camera can read QR codes. It takes a few seconds.
+                    """Your iPhone camera can read QR codes. It takes a few seconds.
 
 1. Open the **Camera** app.
 2. Point the camera at the QR code so it shows on the screen.
 3. Tap the **link** that appears on the screen.
 
-The restaurant's menu will open.
+The page or app that the code is for will open.
 
 You can also open **Control Center** and tap **Scan Code**.
 
-Only open QR codes you trust, like ones printed on the restaurant's own menu or table.""",
+Only open QR codes you trust, like ones printed by a business you know.""",
                 ],
             },
         ],
@@ -124,28 +120,27 @@ Only open QR codes you trust. If a QR code asks you to pay or sign in, double-ch
                 "sources": [{'title': 'Camera from Google Help: Scan QR codes', 'url': 'https://support.google.com/camerafromgoogle/answer/12033278?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'qr code wont',
-                    "It looks like your message got cut off. Is the QR code **not scanning**, or is it **opening something you didn't expect**? And is your phone an iPhone or an Android phone?",
+                    "It looks like your message got cut off. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
                 "existing": True, "id": 'tr077-d', "suffix": 'd', "scenario": 'followup',
                 "style": 'under_specified', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Camera from Google Help: Scan QR codes', 'url': 'https://support.google.com/camerafromgoogle/answer/12033278?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Camera from Google Help: Scan QR codes', 'url': 'https://support.google.com/camerafromgoogle/answer/12033278?hl=en', 'accessed': '2026-10-24'}, {'title': 'Pixel Phone Help: Scan a QR code', 'url': 'https://support.google.com/pixelphone/answer/16561572?hl=en', 'accessed': '2026-11-13'}],
                 "messages": [
                     'how do I read one of those square codes with my phone',
                     'Those are called **QR codes**, and most phones can read them with the camera. Is your phone an **iPhone** or an **Android** phone?',
                     'Android, Pixel',
-                    """Thanks. Your Pixel's camera can do it.
-
-Many Android phones can read QR codes with the camera. It takes a few seconds.
+                    """Thanks. Your Pixel's camera can read QR codes. It takes a few seconds.
 
 1. Open the **Camera** app.
-2. Make sure it's in regular **photo** mode. QR scanning doesn't work in video or portrait mode. Some phones also have a **QR** option you can tap.
-3. Point the camera at the QR code.
-4. When a banner appears on the screen, tap it to open the link.
+2. Point the lens at the code so the whole code is on the screen. You don't need to take a photo.
+3. Wait a moment for a bubble or link to appear, then tap it.
 
-These steps are for Google's Camera app. Other phone brands work in a similar way but may look different. If nothing appears, tell me your phone's brand and I'll help.
+If nothing appears, tap the **Settings** icon in Camera, tap **More settings**, and make sure **Camera scan suggestions** is on.
+
+You can also swipe down from the top and tap **Scan QR code**.
 
 Only open QR codes you trust. If a QR code asks you to pay or sign in, double-check that it's from the real business first.""",
                 ],
@@ -167,15 +162,14 @@ Only open QR codes you trust. If a QR code asks you to pay or sign in, double-ch
                     """Medical ID lets first responders see your important health information from the Lock Screen, without your passcode. It takes about five minutes.
 
 1. Open the **Health** app.
-2. Tap **Summary** at the bottom.
-3. Tap your **profile picture** at the top.
+2. Tap **Summary**.
+3. Tap your **profile picture** in the upper corner.
 4. Tap **Medical ID**.
-5. Tap **Edit**.
-6. Turn on **Show When Locked** so it can be seen from the Lock Screen.
-7. Tap **Add** next to a section, like **Allergies**, and type your information.
-8. Tap **Done**.
+5. Turn on **Show When Locked** so it can be seen from the Lock Screen.
+6. Tap **Add** next to a section, like **Allergies**, and type your information.
+7. Tap **Done**.
 
-**Add emergency contacts:** in Medical ID, tap **Edit** next to **Emergency Contacts**, tap the **plus** button, choose a contact, and pick how they're related to you.
+**Add emergency contacts:** in Medical ID, tap **Edit** next to **Emergency Contacts**, tap the **plus** button next to **Add Emergency Contact**, choose a contact, and enter how they're related to you. Then tap **Done**.
 
 Keep in mind that anyone holding your phone can see this information, so only add what you're comfortable sharing.""",
                 ],
@@ -216,15 +210,14 @@ Keep in mind that anyone holding your phone can see this information, so only ad
 Medical ID lets first responders see your important health information from the Lock Screen, without your passcode. It takes about five minutes.
 
 1. Open the **Health** app.
-2. Tap **Summary** at the bottom.
-3. Tap your **profile picture** at the top.
+2. Tap **Summary**.
+3. Tap your **profile picture** in the upper corner.
 4. Tap **Medical ID**.
-5. Tap **Edit**.
-6. Turn on **Show When Locked** so it can be seen from the Lock Screen.
-7. Tap **Add** next to a section, like **Allergies**, and type your information.
-8. Tap **Done**.
+5. Turn on **Show When Locked** so it can be seen from the Lock Screen.
+6. Tap **Add** next to a section, like **Allergies**, and type your information.
+7. Tap **Done**.
 
-**Add emergency contacts:** in Medical ID, tap **Edit** next to **Emergency Contacts**, tap the **plus** button, choose a contact, and pick how they're related to you.
+**Add emergency contacts:** in Medical ID, tap **Edit** next to **Emergency Contacts**, tap the **plus** button next to **Add Emergency Contact**, choose a contact, and enter how they're related to you. Then tap **Done**.
 
 Keep in mind that anyone holding your phone can see this information, so only add what you're comfortable sharing.""",
                 ],
@@ -351,7 +344,7 @@ Anyone who picks up your phone can see this information, so only add what you're
 
 The game will still work. It just won't send you alerts anymore.
 
-If you don't see **Notifications** for that app, it means the app can't send notifications.""",
+If you don't see **Notifications** for that app, the app may not be able to send notifications.""",
                 ],
             },
             {
@@ -361,7 +354,7 @@ If you don't see **Notifications** for that app, it means the app can't send not
                 "sources": [{'title': 'Apple Support: Turn notifications on or off for a specific app on your iPhone', 'url': 'https://support.apple.com/en-us/120681', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I stop all these pop-ups on my phone',
-                    'I can help. **Which app is sending them** (for example a game, a store, or the news)? And is your phone an **iPhone** or an **Android** phone?',
+                    'I can help with that. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -371,7 +364,7 @@ If you don't see **Notifications** for that app, it means the app can't send not
                 "sources": [{'title': 'Apple Support: Turn notifications on or off for a specific app on your iPhone', 'url': 'https://support.apple.com/en-us/120681', 'accessed': '2026-10-24'}],
                 "messages": [
                     'notifications keep',
-                    'It looks like your message got cut off. Are notifications **popping up too often**, or have they **stopped showing up**? And which app is it?',
+                    'It looks like your message got cut off. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -381,7 +374,7 @@ If you don't see **Notifications** for that app, it means the app can't send not
                 "sources": [{'title': 'Apple Support: Turn notifications on or off for a specific app on your iPhone', 'url': 'https://support.apple.com/en-us/120681', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I stop all these pop-ups on my phone',
-                    'I can help. **Which app is sending them** (for example a game, a store, or the news)? And is your phone an **iPhone** or an **Android** phone?',
+                    'I can help with that. Is your phone an **iPhone** or an **Android** phone?',
                     "It's a solitaire game. iPhone.",
                     """Thanks. Here's how to turn off notifications for the solitaire game.
 
@@ -395,7 +388,7 @@ You can turn off notifications for just that app. It takes less than a minute.
 
 The game will still work. It just won't send you alerts anymore.
 
-If you don't see **Notifications** for that app, it means the app can't send notifications.""",
+If you don't see **Notifications** for that app, the app may not be able to send notifications.""",
                 ],
             },
         ],
@@ -417,7 +410,7 @@ If you don't see **Notifications** for that app, it means the app can't send not
 **Option 1, from Settings:**
 1. Open **Settings**.
 2. Tap **Notifications**, then **App notifications**.
-3. Find the shopping app. If it's not in the list, open the menu at the top and choose all apps.
+3. Find the shopping app. If it's not in the list, open the dropdown and tap **All apps**.
 4. Tap the app and turn its notifications off.
 
 **Option 2, from a notification:**
@@ -435,7 +428,7 @@ Menu names can vary a little on different phones.""",
                 "sources": [{'title': 'Android Help: Control notifications on Android', 'url': 'https://support.google.com/android/answer/9079661?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'can I make an app stop bugging me',
-                    'Yes, you can turn off its notifications. Which app is it, and is your phone an **iPhone** or an **Android** phone?',
+                    'Yes, you can turn off an app\'s notifications. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -445,9 +438,7 @@ Menu names can vary a little on different phones.""",
                 "sources": [{'title': 'Android Help: Control notifications on Android', 'url': 'https://support.google.com/android/answer/9079661?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Ever since I bought shoes online, my phone buzzes all day with sales and coupons. I just want it to stop.',
-                    """That sounds tiring. You can usually turn off alerts from just that store.
-
-**Are the alerts coming from an app on your phone, or are they emails or texts?** And is your phone an iPhone or an Android phone?""",
+                    'That sounds tiring. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -457,7 +448,7 @@ Menu names can vary a little on different phones.""",
                 "sources": [{'title': 'Android Help: Control notifications on Android', 'url': 'https://support.google.com/android/answer/9079661?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'can I make an app stop bugging me',
-                    'Yes, you can turn off its notifications. Which app is it, and is your phone an **iPhone** or an **Android** phone?',
+                    'Yes, you can turn off an app\'s notifications. Is your phone an **iPhone** or an **Android** phone?',
                     'A shopping app on my Android',
                     """Thanks.
 
@@ -466,7 +457,7 @@ You can turn them off for just that app. It takes less than a minute.
 **Option 1, from Settings:**
 1. Open **Settings**.
 2. Tap **Notifications**, then **App notifications**.
-3. Find the shopping app. If it's not in the list, open the menu at the top and choose all apps.
+3. Find the shopping app. If it's not in the list, open the dropdown and tap **All apps**.
 4. Tap the app and turn its notifications off.
 
 **Option 2, from a notification:**
@@ -494,13 +485,13 @@ Menu names can vary a little on different phones.""",
                     """You can zoom in on the page. It takes a few seconds.
 
 **With the mouse:**
-1. Click the **More** menu (three dots) at the top right of Chrome.
+1. At the top right of Chrome, click **More**.
 2. Next to **Zoom**, click **+** to make the page bigger. Click **-** to make it smaller.
 
 **With the keyboard:**
 - Hold **Ctrl** and press **+** to zoom in, or **-** to zoom out. (On a Mac, use **Command** instead of Ctrl.)
 
-If you want every website bigger from now on, change the default size in **Settings**, then **Appearance**, then **Page zoom**.""",
+If you want every website bigger from now on, click **More**, then **Settings**, then **Appearance**, then next to **Page zoom** pick a size.""",
                 ],
             },
             {
@@ -510,7 +501,7 @@ If you want every website bigger from now on, change the default size in **Setti
                 "sources": [{'title': 'Google Chrome Help: Change text, image & video sizes (zoom), computer', 'url': 'https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}],
                 "messages": [
                     'the words on this website are too small',
-                    "I can help you make them bigger. Are you on a **computer**, **phone**, or **tablet**? And if it's a computer, which browser do you use, like Chrome?",
+                    'I can help you make them bigger. Are you on a **computer**, a **phone**, or a **tablet**?',
                 ],
             },
             {
@@ -520,7 +511,7 @@ If you want every website bigger from now on, change the default size in **Setti
                 "sources": [{'title': 'Google Chrome Help: Change text, image & video sizes (zoom), computer', 'url': 'https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}],
                 "messages": [
                     'chrome zoom',
-                    'Sure. Do you want to make **just this page** bigger, or **every website** bigger from now on?',
+                    'Sure. Are you using Chrome on a **computer**, a **phone**, or a **tablet**?',
                 ],
             },
             {
@@ -530,20 +521,20 @@ If you want every website bigger from now on, change the default size in **Setti
                 "sources": [{'title': 'Google Chrome Help: Change text, image & video sizes (zoom), computer', 'url': 'https://support.google.com/chrome/answer/96810?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-10-24'}],
                 "messages": [
                     'the words on this website are too small',
-                    "I can help you make them bigger. Are you on a **computer**, **phone**, or **tablet**? And if it's a computer, which browser do you use, like Chrome?",
+                    'I can help you make them bigger. Are you on a **computer**, a **phone**, or a **tablet**?',
                     'Computer, Chrome',
                     """Thanks.
 
 You can zoom in on the page. It takes a few seconds.
 
 **With the mouse:**
-1. Click the **More** menu (three dots) at the top right of Chrome.
+1. At the top right of Chrome, click **More**.
 2. Next to **Zoom**, click **+** to make the page bigger. Click **-** to make it smaller.
 
 **With the keyboard:**
 - Hold **Ctrl** and press **+** to zoom in, or **-** to zoom out. (On a Mac, use **Command** instead of Ctrl.)
 
-If you want every website bigger from now on, change the default size in **Settings**, then **Appearance**, then **Page zoom**.""",
+If you want every website bigger from now on, click **More**, then **Settings**, then **Appearance**, then next to **Page zoom** pick a size.""",
                 ],
             },
         ],
@@ -562,11 +553,11 @@ If you want every website bigger from now on, change the default size in **Setti
                     'I downloaded a form from a website on my Windows computer. Where did it go?',
                     """Files you download usually go to your **Downloads** folder. Here's how to find it.
 
-1. Open **File Explorer**. Click the folder icon on the taskbar, or hold the **Windows logo key** and press **E**.
-2. On the left side, click **Downloads**. You can also find it under **This PC**.
-3. Look for your form. If the folder is sorted by date, your newest download will be near the top.
+1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+2. In the list on the left, click **Downloads** (under **Quick access**).
+3. Your downloaded form should be in the list.
 
-If you don't see it, tell me what the form is called or what website it came from, and we'll look together.""",
+If you don't see **Downloads**, click **Home** on the left, click the up arrow, right-click **Downloads**, and choose **Pin to Quick access**.""",
                 ],
             },
             {
@@ -576,7 +567,7 @@ If you don't see it, tell me what the form is called or what website it came fro
                 "sources": [{'title': 'Microsoft Support: Find my downloads in Windows', 'url': 'https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I can't find something I downloaded",
-                    "Let's find it. Did you download it on a **computer** or a **phone**? If it's a computer, is it **Windows** or a **Mac**?",
+                    "Let's find it. Is this on a **Windows computer**, a **Mac**, or a **phone**?",
                 ],
             },
             {
@@ -586,15 +577,13 @@ If you don't see it, tell me what the form is called or what website it came fro
                 "sources": [{'title': 'Microsoft Support: Find my downloads in Windows', 'url': 'https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8', 'accessed': '2026-10-24'}],
                 "messages": [
                     "My insurance company emailed me a link to download my card as a PDF and I clicked it and something happened at the bottom of the screen but then it disappeared and now I have no idea where the card is. It's a Windows computer.",
-                    """It's most likely in your Downloads folder. Here's how to find it:
+                    """It's most likely in your **Downloads** folder. Here's how to find it.
 
-Files you download usually go to your **Downloads** folder. Here's how to find it.
+1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+2. In the list on the left, click **Downloads** (under **Quick access**).
+3. Your downloaded insurance card PDF should be in the list.
 
-1. Open **File Explorer**. Click the folder icon on the taskbar, or hold the **Windows logo key** and press **E**.
-2. On the left side, click **Downloads**. You can also find it under **This PC**.
-3. Look for your form. If the folder is sorted by date, your newest download will be near the top.
-
-If you don't see it, tell me what the form is called or what website it came from, and we'll look together.""",
+If you don't see **Downloads**, click **Home** on the left, click the up arrow, right-click **Downloads**, and choose **Pin to Quick access**.""",
                 ],
             },
             {
@@ -604,17 +593,17 @@ If you don't see it, tell me what the form is called or what website it came fro
                 "sources": [{'title': 'Microsoft Support: Find my downloads in Windows', 'url': 'https://support.microsoft.com/en-us/windows/find-my-downloads-in-windows-10-de903ee9-7d37-256b-9145-f0f016c5aed8', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I can't find something I downloaded",
-                    "Let's find it. Did you download it on a **computer** or a **phone**? If it's a computer, is it **Windows** or a **Mac**?",
+                    "Let's find it. Is this on a **Windows computer**, a **Mac**, or a **phone**?",
                     'Windows computer',
                     """Thanks.
 
 Files you download usually go to your **Downloads** folder. Here's how to find it.
 
-1. Open **File Explorer**. Click the folder icon on the taskbar, or hold the **Windows logo key** and press **E**.
-2. On the left side, click **Downloads**. You can also find it under **This PC**.
-3. Look for your form. If the folder is sorted by date, your newest download will be near the top.
+1. Open **File Explorer** from the taskbar, or hold the **Windows logo key** and press **E**.
+2. In the list on the left, click **Downloads** (under **Quick access**).
+3. Your downloaded file should be in the list.
 
-If you don't see it, tell me what the form is called or what website it came from, and we'll look together.""",
+If you don't see **Downloads**, click **Home** on the left, click the up arrow, right-click **Downloads**, and choose **Pin to Quick access**.""",
                 ],
             },
         ],
@@ -637,7 +626,7 @@ If you don't see it, tell me what the form is called or what website it came fro
 2. Click **Accessibility**.
 3. Click **Mouse pointer & touch**.
 4. Change the **size** to make the pointer bigger.
-5. You can also change the **style** or color so it stands out more.
+5. You can also change the pointer's **color** so it stands out more.
 
 Try a few sizes until it's easy to find.""",
                 ],
@@ -679,7 +668,7 @@ You can make the pointer bigger and easier to spot. It takes about a minute.
 2. Click **Accessibility**.
 3. Click **Mouse pointer & touch**.
 4. Change the **size** to make the pointer bigger.
-5. You can also change the **style** or color so it stands out more.
+5. You can also change the pointer's **color** so it stands out more.
 
 Try a few sizes until it's easy to find.""",
                 ],
@@ -705,9 +694,9 @@ Try a few sizes until it's easy to find.""",
 3. Under **How you sign in to Google**, click **Turn on 2-Step Verification**.
 4. Follow the steps on the screen.
 
-After it's on, Google may ask you to confirm with your phone when you sign in on a new device.
+After it's on, when you sign in Google will ask for a second step as well as your password, such as tapping Yes on a prompt on your phone.
 
-**Never share these codes with anyone**, even if they say they're from Google.
+**Never share a verification code with anyone.** Google will not call you to ask for one.
 
 If you use a work or school account, your administrator may control this setting.""",
                 ],
@@ -752,9 +741,9 @@ If you use a work or school account, your administrator may control this setting
 3. Under **How you sign in to Google**, click **Turn on 2-Step Verification**.
 4. Follow the steps on the screen.
 
-After it's on, Google may ask you to confirm with your phone when you sign in on a new device.
+After it's on, when you sign in Google will ask for a second step as well as your password, such as tapping Yes on a prompt on your phone.
 
-**Never share these codes with anyone**, even if they say they're from Google.
+**Never share a verification code with anyone.** Google will not call you to ask for one.
 
 If you use a work or school account, your administrator may control this setting.""",
                 ],
@@ -773,7 +762,7 @@ If you use a work or school account, your administrator may control this setting
                 "sources": [{'title': 'FTC Consumer Advice: How To Recognize and Avoid Phishing Scams', 'url': 'https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I got an email that looks like it's from my bank saying my account is locked and I need to click a link to log in and fix it. Is it real?",
-                    """Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but the link can lead to a fake website that steals your password.
+                    """Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but a link can carry malware.
 
 **Warning signs:**
 - It says your account is **locked** or has a **problem**.
@@ -782,11 +771,11 @@ If you use a work or school account, your administrator may control this setting
 
 **What to do:**
 1. **Don't click** any links or open attachments in the email.
-2. To check your account, call your bank using the number on the **back of your card**, or go to the bank's website by typing the address yourself.
+2. To check your account, contact your bank using a phone number or website you already know is real, not anything from the email.
 3. Forward the email to **reportphishing@apwg.org**, and report it at **ReportFraud.ftc.gov**.
 4. Delete the email.
 
-If you already clicked and typed your password, call your bank right away and change your password.""",
+If you already clicked a link or opened an attachment, update your computer's security software, run a scan, and remove anything it finds. If you gave out personal information, go to **IdentityTheft.gov** for next steps.""",
                 ],
             },
             {
@@ -796,7 +785,7 @@ If you already clicked and typed your password, call your bank right away and ch
                 "sources": [{'title': 'FTC Consumer Advice: How To Recognize and Avoid Phishing Scams', 'url': 'https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I got a weird email, should I click on it?',
-                    "Good thinking to check first. Please don't click anything yet. **Who does the email say it's from, and what is it asking you to do?**",
+                    "Good thinking to check first. Please don't click anything yet. **Who does the email say it's from?**",
                 ],
             },
             {
@@ -806,7 +795,7 @@ If you already clicked and typed your password, call your bank right away and ch
                 "sources": [{'title': 'FTC Consumer Advice: How To Recognize and Avoid Phishing Scams', 'url': 'https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     'is this email from',
-                    "It looks like your message got cut off. **Who does the email say it's from?** And please don't click any links in it until we check.",
+                    "It looks like your message got cut off. Please don't click any links in it until we check. **Who does the email say it's from?**",
                 ],
             },
             {
@@ -820,7 +809,7 @@ If you already clicked and typed your password, call your bank right away and ch
                     "It says it's from my bank and my account is locked, and there's a link to log in.",
                     """Thank you. That's a very common scam pattern.
 
-Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but the link can lead to a fake website that steals your password.
+Please **don't click the link**. This is a common type of scam called phishing. These emails often look real, even with the bank's logo, but a link can carry malware.
 
 **Warning signs:**
 - It says your account is **locked** or has a **problem**.
@@ -829,11 +818,11 @@ Please **don't click the link**. This is a common type of scam called phishing. 
 
 **What to do:**
 1. **Don't click** any links or open attachments in the email.
-2. To check your account, call your bank using the number on the **back of your card**, or go to the bank's website by typing the address yourself.
+2. To check your account, contact your bank using a phone number or website you already know is real, not anything from the email.
 3. Forward the email to **reportphishing@apwg.org**, and report it at **ReportFraud.ftc.gov**.
 4. Delete the email.
 
-If you already clicked and typed your password, call your bank right away and change your password.""",
+If you already clicked a link or opened an attachment, update your computer's security software, run a scan, and remove anything it finds. If you gave out personal information, go to **IdentityTheft.gov** for next steps.""",
                 ],
             },
         ],
@@ -856,8 +845,6 @@ If you already clicked and typed your password, call your bank right away and ch
 2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
 
-Then delete the text.
-
 **While you're at it:**
 - **Don't click links** in unexpected texts.
 - **Don't reply** with any personal information.
@@ -871,7 +858,7 @@ Then delete the text.
                 "sources": [{'title': 'FTC Consumer Advice: How to Recognize and Report Spam Text Messages', 'url': 'https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages', 'accessed': '2026-10-24'}],
                 "messages": [
                     'what do I do about junk texts',
-                    'There are a couple of things you can do. Would you like to **report** them, **block** the sender, or both? And is your phone an **iPhone** or an **Android** phone?',
+                    'There are a couple of things you can do about junk texts. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -881,15 +868,11 @@ Then delete the text.
                 "sources": [{'title': 'FTC Consumer Advice: How to Recognize and Report Spam Text Messages', 'url': 'https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages', 'accessed': '2026-10-24'}],
                 "messages": [
                     'Every few days I get a text saying my toll bill is overdue or my account needs verifying. I never click them but I want to do something so they stop.',
-                    """Good for you for not clicking. Reporting them helps your phone company block more of these:
-
-Reporting spam texts helps your phone company block similar messages. Here's how.
+                    """Good for you for not clicking. Reporting them helps your phone company block more of these. Here's how:
 
 1. **Use your phone's report option.** Most phones have a way to mark a text as **junk** or **spam** right in the messaging app.
 2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
-
-Then delete the text.
 
 **While you're at it:**
 - **Don't click links** in unexpected texts.
@@ -904,7 +887,7 @@ Then delete the text.
                 "sources": [{'title': 'FTC Consumer Advice: How to Recognize and Report Spam Text Messages', 'url': 'https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages', 'accessed': '2026-10-24'}],
                 "messages": [
                     'what do I do about junk texts',
-                    'There are a couple of things you can do. Would you like to **report** them, **block** the sender, or both? And is your phone an **iPhone** or an **Android** phone?',
+                    'There are a couple of things you can do about junk texts. Is your phone an **iPhone** or an **Android** phone?',
                     'I want to report them. Android phone.',
                     """Thanks. Reporting is a great idea.
 
@@ -913,8 +896,6 @@ Reporting spam texts helps your phone company block similar messages. Here's how
 1. **Use your phone's report option.** Most phones have a way to mark a text as **junk** or **spam** right in the messaging app.
 2. **Or forward it to 7726.** Copy the message and send it to **7726** (it spells SPAM on the keypad). Your phone company uses these reports.
 3. **Report it to the FTC** at **ReportFraud.ftc.gov** if it's a scam.
-
-Then delete the text.
 
 **While you're at it:**
 - **Don't click links** in unexpected texts.
@@ -959,7 +940,7 @@ If you've already sent money, contact your bank or the payment company right awa
                 "sources": [{'title': 'FTC Consumer Advice: What To Know About Romance Scams', 'url': 'https://consumer.ftc.gov/articles/what-know-about-romance-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     'my online friend needs money for an emergency, should I help?',
-                    "I'm glad you asked first. A couple of questions will help me give you good advice: **Have you met this person in person?** And **how are they asking you to send the money?**",
+                    "I'm glad you asked first. Please don't send any money or gift cards yet. **Have you met this person in person?**",
                 ],
             },
             {
@@ -969,7 +950,7 @@ If you've already sent money, contact your bank or the payment company right awa
                 "sources": [{'title': 'FTC Consumer Advice: What To Know About Romance Scams', 'url': 'https://consumer.ftc.gov/articles/what-know-about-romance-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I've been talking to someone special online and he's asking me for help. I don't know what to do.",
-                    'Thank you for trusting me with this. **What kind of help is he asking for?** And have the two of you met in person?',
+                    'Thank you for trusting me with this. Please don\'t send money or gift cards to someone you haven\'t met in person. **What kind of help is he asking for?**',
                 ],
             },
             {
@@ -979,7 +960,7 @@ If you've already sent money, contact your bank or the payment company right awa
                 "sources": [{'title': 'FTC Consumer Advice: What To Know About Romance Scams', 'url': 'https://consumer.ftc.gov/articles/what-know-about-romance-scams', 'accessed': '2026-10-24'}],
                 "messages": [
                     'my online friend needs money for an emergency, should I help?',
-                    "I'm glad you asked first. A couple of questions will help me give you good advice: **Have you met this person in person?** And **how are they asking you to send the money?**",
+                    "I'm glad you asked first. Please don't send any money or gift cards yet. **Have you met this person in person?**",
                     "No, we've only talked online for three months. He wants me to wire $2,000 for a plane ticket.",
                     """Thank you for telling me.
 
@@ -987,14 +968,13 @@ I'm glad you asked before sending anything. Please **don't send the money**. Wha
 
 **Warning signs:**
 - The person can't meet in person, often saying they work far away, like on an **oil rig** or in the military.
-- Strong feelings grow quickly through lots of messages.
-- Now there's a **need for money**, like travel costs or an emergency.
+- After lots of friendly messages, they ask for **money** for emergencies, travel, or fees.
 
 **What to do:**
 1. **Don't send money or gift cards** to someone you haven't met in person.
 2. **Talk to a friend or family member** you trust. People close to you can often spot things that are hard to see from the inside.
 3. You can **search his photo** online to see if it appears under other names. I can show you how.
-4. If it's a scam, stop contact and report it at **ReportFraud.ftc.gov** and to the website or app where you met.
+4. Stop talking to him, then report it at **ReportFraud.ftc.gov** and to the website or app where you met.
 
 If you've already sent money, contact your bank or the payment company right away and ask for a refund.""",
                 ],

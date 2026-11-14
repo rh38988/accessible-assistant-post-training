@@ -63,7 +63,7 @@ Please note that this removes the Windows.old folder, so you will not be able to
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
                  "I have a Windows 11 PC full of old family photos and videos in the Pictures and Videos folders. I do not want to delete any of them, but I need room. I have a USB drive here. Can I move them instead?",
-                 """Yes, you can move them to the USB drive and keep them safe:
+                 """Yes, you can move them to the USB drive instead of deleting them:
 
 1. Plug the USB drive into the computer.
 2. Open **File Explorer** from the taskbar.
@@ -72,7 +72,7 @@ Please note that this removes the Windows.old folder, so you will not be able to
 5. Open the USB drive in **File Explorer**.
 6. Select **Paste**.
 
-Once the files are copied over, your computer has more room. The files will only open while the USB drive is plugged in.""",
+You can still use the files when the drive is connected, but they will not take up space on your computer.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -166,13 +166,14 @@ It stays on until you next plug in the laptop.""",
 1. Select the **battery icon** in the notification area, near the clock.
 2. Select the **Energy saver** quick setting.""",
                  "I did that but Energy saver still does not turn on.",
-                 """Let us try this:
+                 """Let us try the Settings route instead:
 
-1. Restart the laptop.
-2. Select **Start**, then **Settings**.
-3. Select **System**, then **Troubleshoot**, then **Other troubleshooters**.
-4. Next to **Power**, select **Run**.
-5. Follow the prompts, then try the **Energy saver** quick setting again.""",
+1. Select **Start**, then **Settings**.
+2. Select **System**, then **Power & battery**.
+3. Expand **Energy saver**.
+4. Set **Always use energy saver** to **On**.
+
+If that does not help, restart the laptop. Then go to **Settings**, **System**, **Troubleshoot**, **Other troubleshooters**, and next to **Power** select **Run**.""",
              ]},
         ],
     },
@@ -196,25 +197,27 @@ What user sees: Bluetooth tile highlighted when on; shows Connected, Not connect
                  "I just got wireless headphones and want to hook them up to my Windows 11 PC through Bluetooth. Where do I start?",
                  """Here is how to pair them:
 
-1. Put the headphones in pairing mode so the computer can find them. The way to do this depends on the headphones, so check their manual.
-2. Select the **Network**, **Sound**, or **Battery** icon on the taskbar, near the clock.
-3. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
-4. Under **New devices**, select your headphones.
-5. Follow any extra prompts, then select **Done**.
+1. Make sure Bluetooth is turned on. Select the **Network**, **Sound**, or **Battery** icon near the clock and check that the **Bluetooth** tile is on.
+2. Put the headphones in pairing mode so the computer can find them. The way to do this depends on the headphones, so check their manual.
+3. Select the **Network**, **Sound**, or **Battery** icon on the taskbar again.
+4. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
+5. Under **New devices**, select your headphones.
+6. Follow any extra prompts, then select **Done**.
 
 After this, they reconnect by themselves whenever Bluetooth is on and they are in range.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
                  "My daughter bought me a little Bluetooth printer for my Windows 11 computer so I can stop using that long cable. It is turned on and the light is blinking. I have never done this before and I do not want to mess up my settings. How do I connect it?",
-                 """A blinking light usually means it is ready to be found. Here is how to add it:
+                 """Here is how to add it:
 
 1. Make sure the printer is discoverable. Your printer's manual shows how.
 2. Select **Start**, then **Settings**.
-3. Select **Bluetooth & devices**, then **Printers & scanners**.
-4. Next to **Add a printer or scanner**, select **Add device**.
-5. Wait while Windows searches. This can take a few minutes.
-6. When your printer appears, select **Add device** next to it.""",
+3. Select **Bluetooth & devices**, and check that the **Bluetooth** switch is **On**.
+4. Select **Printers & scanners**.
+5. Next to **Add a printer or scanner**, select **Add device**.
+6. Wait while Windows searches. This can take a few minutes.
+7. When your printer appears, select **Add device** next to it.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -228,22 +231,24 @@ After this, they reconnect by themselves whenever Bluetooth is on and they are i
                  "its a windows 11 pc",
                  """Here is how to pair the speaker:
 
-1. Put the speaker in pairing mode. Check its manual for how.
-2. Select the **Network**, **Sound**, or **Battery** icon on the taskbar.
-3. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
-4. Under **New devices**, select your speaker.
-5. Follow any extra prompts, then select **Done**.""",
+1. Make sure Bluetooth is turned on. Select the **Network**, **Sound**, or **Battery** icon near the clock and check that the **Bluetooth** tile is on.
+2. Put the speaker in pairing mode. Check its manual for how.
+3. Select the **Network**, **Sound**, or **Battery** icon on the taskbar again.
+4. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
+5. Under **New devices**, select your speaker.
+6. Follow any extra prompts, then select **Done**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
                  "I would like to connect my Bluetooth mouse to my Windows 11 laptop but I do not want to go digging through the Settings app, it confuses me. Is there a quicker way from the bottom of the screen?",
                  """Yes, you can do it from the taskbar:
 
-1. Put the mouse in pairing mode. Check its manual for how.
-2. Select the **Network**, **Sound**, or **Battery** icon on the taskbar, near the clock.
-3. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
-4. Under **New devices**, select your mouse. If you do not see it, look through **Your devices**.
-5. Follow any extra prompts, then select **Done**.""",
+1. Select the **Network**, **Sound**, or **Battery** icon on the taskbar, near the clock, and make sure the **Bluetooth** tile is on.
+2. Put the mouse in pairing mode. Check its manual for how.
+3. Select the **Network**, **Sound**, or **Battery** icon again.
+4. Select the small arrow next to the Bluetooth quick setting, labeled **Manage Bluetooth devices**.
+5. Under **New devices**, select your mouse. If you do not see it, look through **Your devices**.
+6. Follow any extra prompts, then select **Done**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -261,6 +266,7 @@ After this, they reconnect by themselves whenever Bluetooth is on and they are i
 1. Put the keyboard in pairing mode again, using its manual.
 2. Look through **Your devices** in the same list, as well as **New devices**.
 3. Check that Bluetooth is on. Select **Start**, then **Settings**, then **Bluetooth & devices**, and make sure the **Bluetooth** switch is **On**.
+4. Select **Devices**. Under **Device settings**, set **Bluetooth devices discovery** to **Advanced**.
 
 If it still does not show, make sure your computer has Bluetooth. If it does not, a USB Bluetooth adapter can add it.""",
              ]},
@@ -363,7 +369,7 @@ Neither page has troubleshooting or on-screen toolbar steps.""",
             {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
                  "The words on my Windows 11 computer are too small to read. Can I make them bigger with Magnifier?",
-                 """Yes. Magnifier is already built into Windows. Use the keyboard:
+                 """Yes. Use the keyboard:
 
 1. Press the **Windows key + Plus sign (+)**. This turns Magnifier on.
 2. Press **Windows key + Plus sign (+)** again to zoom in more. Each press makes things on the screen larger.""",
@@ -442,7 +448,7 @@ Captions only appear for audio sent to default output device (Settings > System 
 2. The first time, Windows asks for your consent to process voice on your device. Follow the prompts.
 3. If asked, let it download the language files it needs.
 
-Captions then appear for the sound your computer plays.""",
+Captions then appear for speech in what your computer plays.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Windows 11",
              "messages": [
@@ -491,7 +497,8 @@ The first time, follow the prompts. Windows asks for your consent to process voi
 
 1. Select **Start**, then **Settings**.
 2. Select **System**, then **Sound**.
-3. Check which output device is chosen as your default, and make sure it is the headset or speaker you are using.""",
+3. Check which output device is chosen as your default. If it is not the headset you are using, change the default output device to your headset.
+4. Play the video again and check that captions show.""",
              ]},
         ],
     },

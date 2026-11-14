@@ -20,7 +20,7 @@ Edit/delete/folders/sort exist. Deleted bookmarks can't be recovered. Page has n
                  """Yes, you can search your bookmarks from the address bar. It takes a few seconds.
 
 1. Open **Chrome** on your computer.
-2. Click the address bar at the top.
+2. Click the address bar.
 3. Type **@bookmarks**, then press **Tab** or **Space**.
 4. Type a word from the site's name, like "recipe".
 5. Click the bookmark in the list that appears.
@@ -77,6 +77,7 @@ Some senders require you to unsubscribe on their own website. For those, you wil
 After you unsubscribe, emails may keep arriving for a few days.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Gmail",
+             "sources": [{'title': 'Gmail Help: Unsubscribe from an email (computer)', 'url': 'https://support.google.com/mail/answer/15433283?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-11-13'}, {'title': 'Gmail Help: Manage subscriptions (computer)', 'url': 'https://support.google.com/mail/answer/15621070?hl=en&co=GENIE.Platform%3DDesktop', 'accessed': '2026-11-13'}],
              "messages": [
                  "Gmail on my computer. How do I stop the emails from a clothing store?",
                  """Gmail can do it in a few clicks.
@@ -93,7 +94,9 @@ If you see **Go to website** instead, that sender needs you to unsubscribe on th
 1. Go to **mail.google.com**.
 2. On the left, click **More**.
 3. Click **Manage subscriptions**.
-4. Check it for the store's other lists.""",
+4. Find the store in the list. On the right, next to the number of recent emails from the store, click **Unsubscribe**.
+
+It can take a few days for the emails to stop.""",
              ]},
         ],
     },
@@ -182,24 +185,26 @@ Reporting sends Google a copy of the email, which it may analyze.""",
 Control Center page (105001, also cited): iPhone with Face ID: swipe down from the upper-right corner. iPhone with a Home button: swipe up from the bottom edge of the screen.""",
         "examples": [
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{'title': 'Apple Support: Rotate the screen on your iPhone or iPod touch', 'url': 'https://support.apple.com/en-us/118226', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Use Control Center on your iPhone or iPod touch', 'url': 'https://support.apple.com/en-us/108330', 'accessed': '2026-11-13'}],
              "messages": [
                  "I have an older iPhone 8 with the round Home button. I read in bed and want the page to stay upright, but later I'll want it to turn sideways again for photos. Can I do both?",
                  """Yes, you can lock it now and turn the lock off later. This takes a few seconds.
 
 1. Swipe up from the bottom edge of the screen to open **Control Center**.
 2. Tap the **Portrait Orientation Lock** button.
-3. Close Control Center.
+3. Tap the top of the screen or press the Home button to close Control Center.
 
 When you want the screen to turn sideways again:
 
 1. Open **Control Center** again.
 2. Tap the **Portrait Orientation Lock** button to make sure it's off.
-3. Close Control Center.
+3. Tap the top of the screen or press the Home button to close it.
 4. Turn the iPhone sideways.
 
 Some apps don't support turning sideways, so the screen may stay upright in those even with the lock off.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{'title': 'Apple Support: Rotate the screen on your iPhone or iPod touch', 'url': 'https://support.apple.com/en-us/118226', 'accessed': '2026-11-13'}, {'title': 'Apple Support: Use Control Center on your iPhone or iPod touch', 'url': 'https://support.apple.com/en-us/108330', 'accessed': '2026-11-13'}],
              "messages": [
                  "iPhone 13 here. The screen keeps flipping sideways while I read. Help?",
                  """You can lock the screen so it stays upright.
@@ -246,7 +251,9 @@ Page has no other troubleshooting, no Quick Settings route, no per-phone differe
                  "I opened Settings but there is no Display & touch on my phone.",
                  """I'm sorry about that. The steps I have use **Display & touch**, and I can't confirm another place for this setting on your phone.
 
-For more accessibility help, you can contact the Disability Support team.""",
+For more accessibility help, you can reach the Disability Support team here: https://support.google.com/accessibility/answer/7641084
+
+Tell me what you see in Settings and I'll try to help.""",
              ]},
         ],
     },

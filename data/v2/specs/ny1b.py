@@ -63,15 +63,16 @@ If it asks for a PIN or passcode, check the earbuds' manual or online instructio
                  "I am trying to connect a Bluetooth speaker to my iPhone and it is asking me for a PIN. I threw away the paper manual a long time ago and I have no idea what the number is. Where can I find it?",
                  """You do not need the paper manual. The speaker's online instructions also give the code.
 
-1. Look up your speaker's instructions online, and find the PIN or passcode.
-2. On your iPhone, open **Settings**.
-3. Tap **Bluetooth**.
-4. Under **My Devices**, tap your speaker's name.
-5. Enter the PIN or passcode when it asks.
+1. Look up your speaker's online instructions, and find the PIN or passcode.
+2. Go back to the pairing prompt on your iPhone and enter the PIN or passcode.
+
+If the prompt has closed, open **Settings**, tap **Bluetooth**, tap your speaker's name under **My Devices**, and enter the code.
 
 If the code does not work, check the online instructions again for the right one.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{"title": 'Apple Support: Pair a third-party Bluetooth accessory with your iPhone or iPad', "url": 'https://support.apple.com/en-us/HT204091', "accessed": "2026-11-13"},
+                         {"title": "Apple Support: If you can't pair a Bluetooth accessory with your iPhone or iPad", "url": 'https://support.apple.com/en-us/111804', "accessed": "2026-11-13"}],
              "messages": [
                  "Could you tell me the way to pair some Bluetooth headphones with an iPhone?",
                  """Here is how to pair them.
@@ -86,7 +87,7 @@ If it asks for a PIN or passcode, check the headphone manual for the code.""",
                  "I did all that but my headphones are not showing up in the list under My Devices.",
                  """That usually means the headphones are not ready to be found yet. Try this.
 
-1. Make sure the headphones are turned on and charged.
+1. Make sure the headphones are turned on and charged, and keep them close to your iPhone.
 2. Put them in discoverable (pairing) mode again. The headphone manual or online instructions explain how.
 3. Go back to **Settings**, then **Bluetooth**, and look under **My Devices** again.
 4. Tap their name when it appears.""",
@@ -114,7 +115,7 @@ Troubleshooting: if the device does not appear in the list, make sure it is on a
                  """Here is how to connect them to your Mac.
 
 1. Turn your headphones on and make them discoverable. The headphone manual explains how.
-2. Click the **Apple menu** at the top left of the screen, then choose **System Settings**.
+2. Click the **Apple menu**, then choose **System Settings**.
 3. In the sidebar, click **Bluetooth**. You may need to scroll down to find it.
 4. Point at your headphones in the list and click **Connect**.
 5. If a prompt appears, click **Accept**, or type the numbers it shows and press Enter.
@@ -155,7 +156,7 @@ Now your music should play through the speaker.""",
 4. Point at your mouse in the list and click **Connect**.
 5. If a prompt appears, click **Accept**, or type the numbers it shows and press Enter.
 
-If your mouse is an Apple Magic Mouse, you can instead plug it into your Mac with its cable and turn it on. It pairs by itself, and a notification tells you when to unplug it.""",
+If your mouse is an Apple Magic Mouse, you can use a cable instead: plug it into your Mac's USB-C port (you may need an adapter), turn the mouse on and check that its power switch shows green. When a notification appears, you can unplug the cable and use the mouse wirelessly.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Mac",
              "messages": [
@@ -211,7 +212,7 @@ Notes: Most accounts already use two-factor authentication, so you may not need 
 4. Tap **Turn on two-factor authentication**.
 5. Follow the instructions on the screen.
 
-If you do not see that option, your account may already use it. Most accounts do.""",
+Most accounts already use two-factor authentication, so you may not need to do this.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -270,13 +271,13 @@ If you still want to turn it on:
 4. Tap **Turn on two-factor authentication**.
 5. Follow the instructions on the screen.""",
                  "I went there but I do not see Turn on two-factor authentication anywhere.",
-                 """That is likely because you do not need it. Most accounts already use two-factor authentication, so the option may not appear.
+                 """Most accounts already use two-factor authentication, so you may not need to turn it on. To check:
 
 1. Open **Settings**.
 2. Tap your name at the top.
 3. Tap **Sign-In & Security**.
 
-If your account was created with two-factor authentication, it is already on, and Apple says this extra protection can't be removed.""",
+If your account was created with two-factor authentication, Apple says this extra protection can't be removed.""",
              ]},
         ],
     },
@@ -303,9 +304,7 @@ Supplement from Apple Support 120758 (Use the Passwords app...): when creating a
 1. Open the **Passwords** app.
 2. Unlock it with Face ID, Touch ID, or your passcode.
 3. Tap **All**, or choose another category.
-4. Tap the website or app you want. Your password appears.
-
-If your iPhone is on iOS 17 or earlier, open **Settings**, scroll down, and tap **Passwords** instead.""",
+4. Tap the website or app you want. Your password appears.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
@@ -339,6 +338,8 @@ If you cannot find it, check that you are looking at the main **Passwords** list
 If your iPhone is on iOS 17 or earlier, open **Settings**, scroll down, and tap **Passwords** instead.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{"title": 'Apple Support: Find saved passwords and passkeys on your iPhone', "url": 'https://support.apple.com/en-us/104955', "accessed": "2026-11-13"},
+                         {"title": 'Apple Support: Set up iCloud Keychain (Passwords)', "url": 'https://support.apple.com/en-us/109016', "accessed": "2026-11-13"}],
              "messages": [
                  "I have an iPhone and an iPad. My passwords show up on my iPad but not on my iPhone, and I do not want to type them all in again by hand. How do I get them onto my iPhone?",
                  """You can let them sync with iCloud Keychain. Do this on your iPhone.
@@ -346,12 +347,14 @@ If your iPhone is on iOS 17 or earlier, open **Settings**, scroll down, and tap 
 1. Open **Settings**.
 2. Tap your name at the top.
 3. Tap **iCloud**.
-4. Tap **Passwords and Keychain**.
-5. Turn on **iCloud Keychain**.
+4. Under **Saved to iCloud**, tap **Passwords**. On iOS 17 or earlier, tap **Passwords and Keychain**.
+5. Turn on **Sync this iPhone**. You may need your passcode or Apple Account password.
 
-Also check that iCloud Keychain is on the same way on your iPad. If your iPhone is a newer device, you may need to approve it first, using iCloud Keychain or the passcode of your old device.""",
+Do the same on your iPad. Two-factor authentication must also be on for your Apple Account.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "iPhone",
+             "sources": [{"title": 'Apple Support: Find saved passwords and passkeys on your iPhone', "url": 'https://support.apple.com/en-us/104955', "accessed": "2026-11-13"},
+                         {"title": 'Apple Support: Set up iCloud Keychain (Passwords)', "url": 'https://support.apple.com/en-us/109016', "accessed": "2026-11-13"}],
              "messages": [
                  "How do I find a saved password on my iPhone? It is on iOS 18.",
                  """Here is how to find it.
@@ -365,7 +368,7 @@ Also check that iCloud Keychain is on the same way on your iPad. If your iPhone 
 
 1. In the Passwords app, tap **All**, so you are looking at everything.
 2. Tap **Deleted**, in case the password was removed.
-3. If you use more than one Apple device, open **Settings**, tap your name, tap **iCloud**, tap **Passwords and Keychain**, and make sure **iCloud Keychain** is on.
+3. If you use more than one Apple device, open **Settings**, tap your name, tap **iCloud**, and under **Saved to iCloud** tap **Passwords**. Make sure **Sync this iPhone** is on.
 
 If the password was moved to a Shared Group, your iPhone needs iOS 17 or later to see it.""",
              ]},
@@ -474,7 +477,7 @@ Check or unblock: Settings, Privacy & Security, Blocked Contacts. Swipe left on 
 
 1. Open the **Messages** app.
 2. Swipe left on the junk message.
-3. Tap the **Delete** button, the trash can icon.
+3. Tap the **Delete** button.
 4. Tap **Delete and Report Spam**.
 
 Reporting does not stop the sender from texting you. To stop them, block the contact.""",
@@ -482,18 +485,18 @@ Reporting does not stop the sender from texting you. To stop them, block the con
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "iPhone",
              "messages": [
                  "Every day I get texts on my iPhone from some random number trying to sell me things and I am sick of it. I have not opened the latest one. I want to report it and also make them stop. What exactly do I tap?",
-                 """Reporting alone will not stop them, so do both. First, block the sender.
+                 """Reporting alone will not stop them, so do both. First, report the message.
 
 1. Open the **Messages** app.
-2. Open the conversation with the sender and tap the person's icon at the top.
-3. Tap **Info**.
-4. Scroll down and tap **Block Contact**.
+2. In the **Messages** list, swipe left on the message.
+3. Tap the **Delete** button.
+4. Tap **Delete and Report Spam**.
 
-Then report the message.
+Now block them.
 
-1. In the **Messages** list, swipe left on the message.
-2. Tap the **Delete** button, the trash can icon.
-3. Tap **Delete and Report Spam**.""",
+1. Open the conversation with the sender and tap the person's icon at the top.
+2. Tap **Info**.
+3. Scroll down and tap **Block Contact**.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -505,18 +508,20 @@ Then report the message.
                  "how do i report and block junk texts",
                  "I can help with that. Is your phone an **iPhone** or an **Android** phone?",
                  "iphone",
-                 """On an iPhone, block first so the sender cannot text you again.
+                 """On an iPhone, reporting does not stop the sender, so report first and block them afterwards.
 
 1. Open the **Messages** app.
-2. Open the conversation with the sender and tap the person's icon at the top.
-3. Tap **Info**.
-4. Scroll down and tap **Block Contact**.
+2. In the **Messages** list, swipe left on the message.
+3. Tap the **Delete** button.
+4. Tap **Delete and Report Spam**.
 
-Then report it.
+If you already opened it, open the message, tap **Report Spam** at the bottom, then tap **Delete and Report Spam**.
 
-1. In the **Messages** list, swipe left on the message.
-2. Tap the **Delete** button, the trash can icon.
-3. Tap **Delete and Report Spam**.""",
+Now block them.
+
+1. Open the conversation with the sender and tap the person's icon at the top.
+2. Tap **Info**.
+3. Scroll down and tap **Block Contact**.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "iPhone",
              "messages": [

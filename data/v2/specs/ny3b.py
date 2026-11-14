@@ -77,7 +77,7 @@ If you don't see **Pair new device**, look under **Available devices**, or tap t
 
 When it works, the keyboard shows as **Connected**.
 
-If the **Bluetooth** icon is off, tap it once to turn Bluetooth on. Bluetooth stays off while Airplane mode is on, so turn that off first.""",
+Bluetooth is off while Airplane mode is on, so turn Airplane mode off before you pair.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android",
              "messages": [
@@ -441,7 +441,14 @@ Set a screen lock first, because the setting won't turn on without one.""",
 
 If it says your number isn't verified, tap **Verify number**, then turn on **Automatically verify phone numbers**.
 
-To lock the phone later, go to android.com/lock on your laptop, enter your phone number, complete the reCAPTCHA, and request a lock.""",
+To lock the phone later, use your laptop:
+
+1. Go to android.com/lock.
+2. Enter your phone number.
+3. Complete the security check (reCaptcha) that appears.
+4. Request the lock.
+
+The phone screen locks shortly after.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android",
              "messages": [
@@ -543,7 +550,7 @@ If you don't see **Wi-Fi calling**, your carrier doesn't support it.""",
 
 Then make calls as you normally would while you are connected to her Wi-Fi.
 
-If you don't see **Wi-Fi calling**, your carrier doesn't support it.""",
+If you don't see **Wi-Fi calling**, your carrier doesn't support it. Whether this works without a plan depends on your carrier, so ask your carrier to confirm.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android",
              "messages": [

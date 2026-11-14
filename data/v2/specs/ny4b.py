@@ -198,13 +198,12 @@ Troubleshooting: administrator may have hidden the network so details must be en
 
 1. Select the time at the bottom right of the screen.
 2. Select **Settings**.
-3. Select **Not Connected**.
-4. Turn on **Wi-Fi** if it is off.
-5. Select your network from the list.
-6. Type the password.
-7. Select **Connect**.
+3. Select **Network**, then **Wi-Fi**.
+4. Select your network.
+5. Type the password.
+6. Select **Connect**.
 
-When it works, your network name and signal strength show in the Wi-Fi panel.""",
+If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**. Then do the steps above.""",
              ]},
             {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Chromebook",
              "messages": [
@@ -213,12 +212,11 @@ When it works, your network name and signal strength show in the Wi-Fi panel."""
 
 1. Select the time at the bottom right of the screen.
 2. Select **Settings**.
-3. Select **Not Connected**.
-4. Turn on **Wi-Fi** if it is off.
-5. Select the coffee shop's network from the list.
-6. Select **Connect**.
+3. Select **Network**, then **Wi-Fi**.
+4. Select the coffee shop's network.
+5. Select **Connect**.
 
-If a sign-in page opens in your browser, finish it to complete the connection.""",
+If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**. If a sign-in page opens in your browser, finish it to complete the connection.""",
              ]},
             {"suffix": "b", "scenario": "missing_info", "style": "under_specified", "specification": "underspecified", "platform": "unknown",
              "messages": [
@@ -234,25 +232,27 @@ If a sign-in page opens in your browser, finish it to complete the connection.""
 
 1. Select the time at the bottom right of the screen.
 2. Select **Settings**.
-3. Select **Not Connected**.
-4. Turn on **Wi-Fi** if it is off.
-5. Select your network from the list.
-6. If it asks, type the password.
-7. Select **Connect**.
+3. Select **Network**, then **Wi-Fi**.
+4. Select your network.
+5. If it asks, type the password.
+6. Select **Connect**.
 
-When it works, your network name and signal strength show in the Wi-Fi panel.""",
+If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**. Then do the steps above.""",
              ]},
             {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Chromebook",
              "messages": [
                  "My Chromebook keeps forgetting my Wi-Fi and I am tired of typing the password. I am connecting at my house right now. Is there a way to connect and have it reconnect by itself next time?",
                  """Yes. First connect, then turn on automatic reconnecting:
 
-1. Select the time at the bottom right, then select **Settings**.
-2. Select **Not Connected**, and turn on **Wi-Fi** if it is off.
-3. Select your network, type the password, and select **Connect**.
-4. Go back to your network's settings and turn on **Automatically connect to this network**.
+1. Select the time at the bottom right of the screen.
+2. Select **Settings**.
+3. Select **Network**, then **Wi-Fi**.
+4. Select your network.
+5. Type the password.
+6. Select **Connect**.
+7. Select your network again in the Wi-Fi list, then turn on **Automatically connect to this network**.
 
-If you have several networks around, you can also turn on **Prefer this network** for your home one.""",
+If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Chromebook",
              "messages": [
@@ -261,20 +261,20 @@ If you have several networks around, you can also turn on **Prefer this network*
 
 1. Select the time at the bottom right of the screen.
 2. Select **Settings**.
-3. Select **Not Connected**.
-4. Turn on **Wi-Fi** if it is off.
-5. Select your network from the list.
-6. Type the password.
-7. Select **Connect**.""",
-                 "My network name is not in the list at all. The router is right next to me.",
-                 """The network may be hidden. You can add it by hand:
+3. Select **Network**, then **Wi-Fi**.
+4. Select your network.
+5. Type the password.
+6. Select **Connect**.
 
-1. In the Wi-Fi panel, select **Add connection**.
-2. Select **Add Wi-Fi**.
-3. Type in the network details.
-4. Select **Connect**.
+If Wi-Fi is off, first select the time, select **Not Connected**, and turn on **Wi-Fi**.""",
+                 "My network name is not shown because the router is set to hide its name, but I know the name and password.",
+                 """You can add the network by hand:
 
-If you do not know the details, ask the person who set up the network.""",
+1. Select the time at the bottom right, then select **Settings**.
+2. Select **Network**.
+3. Select **Add connection**, then **Add Wi-Fi**.
+4. Enter the network information.
+5. Select **Connect**.""",
              ]},
         ],
     },
@@ -359,8 +359,9 @@ If an update is found, you will get an alert showing how much data it needs. You
                  """Try these in order, and test after each one:
 
 1. Turn your Chromebook off, then back on.
-2. If you are using mobile data or a phone connection, switch to Wi-Fi or Ethernet instead.
-3. If it still will not download, the next options are a reset or a recovery. A recovery erases everything on the drive, so back up your files first.""",
+2. If you ever use your phone's connection, switch to Wi-Fi or Ethernet instead.
+3. If it still will not download, the next step is a reset. A reset does not delete your personal files.
+4. If that does not work, recovery is the last step. Recovery permanently erases everything on the drive, including downloads, so back up your files first if you can.""",
              ]},
         ],
     },
@@ -436,17 +437,15 @@ Do not use the shortcuts with **Shift** added. Those change the whole screen, in
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Chromebook",
              "messages": [
                  "Is there a keyboard shortcut for the full screen magnifier on a Chromebook?",
-                 """Yes. Press **Ctrl + Search + m** to turn it on or off. If your keyboard has a Launcher key instead of a Search key, press **Ctrl + Launcher + m**.
+                 """Yes. Press **Ctrl + Search + m** to magnify your whole screen. If your keyboard has a Launcher key instead of a Search key, press **Ctrl + Launcher + m**.
 
 To make it bigger or smaller, press **Ctrl + Alt** and the brightness up or down key.""",
                  "I pressed it and nothing happened.",
-                 """The shortcut only works once the magnifier is turned on in Settings. Do this once:
+                 """I am not sure why that happened. You can turn the magnifier on from Settings instead:
 
 1. Select the time at the bottom right of the screen.
 2. Select **Settings**, then **Accessibility**.
-3. Under **Display**, turn on **Full screen magnifier**.
-
-After that, the shortcut should work.""",
+3. Under **Display**, turn on **Full screen magnifier**.""",
              ]},
         ],
     },

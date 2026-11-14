@@ -15,9 +15,9 @@ TASKS = [
                     """Here's how to see what's using space and clear some out. It takes a few minutes.
 
 1. Open the **Settings** app.
-2. Tap **Storage**. You'll see which kinds of files use the most space.
+2. Tap **Storage**.
 3. Tap **Free up space**.
-4. Choose a category, then tap **Select files**.
+4. Scroll to a category, then tap **Select files**. If you don't see the category, tap **Browse**.
 5. Select the files you don't need.
 6. Tap **Move files to Trash**.
 
@@ -57,14 +57,12 @@ Menu names vary between phones, and some of these steps need a newer version of 
                     'phone says storage full',
                     'I can help you clear some space. Is your phone an **iPhone** or an **Android** phone?',
                     'Android, Samsung',
-                    """Thanks. Samsung menus can look a little different, so tell me if something doesn't match.
-
-Here's how to see what's using space and clear some out. It takes a few minutes.
+                    """Thanks. Here's how to see what's using space and clear some out. It takes a few minutes.
 
 1. Open the **Settings** app.
-2. Tap **Storage**. You'll see which kinds of files use the most space.
+2. Tap **Storage**.
 3. Tap **Free up space**.
-4. Choose a category, then tap **Select files**.
+4. Scroll to a category, then tap **Select files**. If you don't see the category, tap **Browse**.
 5. Select the files you don't need.
 6. Tap **Move files to Trash**.
 
@@ -98,8 +96,8 @@ Menu names vary between phones, and some of these steps need a newer version of 
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
                 "sources": [{'title': 'Apple Support: Turn the flashlight on or off on your iPhone or iPad Pro', 'url': 'https://support.apple.com/en-us/105001', 'accessed': '2026-10-24'}],
                 "messages": [
-                    'how do I turn on the light on my phone',
-                    'Do you mean the **flashlight**? Sure. Is your phone an **iPhone** or an **Android** phone?',
+                    'my phone is dark and I need some light, where is it',
+                    'I can help with the flashlight. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -120,9 +118,9 @@ Menu names vary between phones, and some of these steps need a newer version of 
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
                 "sources": [{'title': 'Apple Support: Turn the flashlight on or off on your iPhone or iPad Pro', 'url': 'https://support.apple.com/en-us/105001', 'accessed': '2026-10-24'}],
                 "messages": [
-                    'how do I turn on the light on my phone',
-                    'Do you mean the **flashlight**? Sure. Is your phone an **iPhone** or an **Android** phone?',
-                    'Yes the flashlight. iPhone.',
+                    'my phone is dark and I need some light, where is it',
+                    'I can help with the flashlight. Is your phone an **iPhone** or an **Android** phone?',
+                    'iPhone',
                     'Got it.\n\nThere are a few quick ways.\n\n**From Control Center:**\n1. If your iPhone has Face ID (no Home button), **swipe down from the top-right corner** of the screen. If it has a Home button, **swipe up from the bottom edge**.\n2. Tap the **Flashlight** button.\n3. Tap it again to turn it off.\n\n**From the Lock Screen:** press and hold the **Flashlight** button in the bottom-left corner.\n\n**With Siri:** say "Hey Siri, turn on my flashlight."',
                 ],
             },
@@ -225,12 +223,11 @@ Here's the quickest way.
                     'How do I set an alarm on my iPhone for 6:30 in the morning?',
                     """Here's how. It takes about a minute.
 
-1. Open the **Clock** app.
-2. Tap **Alarms** at the bottom.
-3. Tap the **plus (+)** button.
-4. Set the time to **6:30 AM**.
-5. If you want it every day, tap **Repeat** and choose the days.
-6. Tap **Save** (on some versions, **Done**).
+1. Open the **Clock** app, then tap the **Alarms** tab.
+2. Tap the **Add** button.
+3. Set the time to **6:30 AM**.
+4. Only if you want it to repeat, tap **Repeat** and choose the days.
+5. Tap **Done**.
 
 The alarm will ring even if your phone is on Silent or Do Not Disturb.
 
@@ -244,7 +241,7 @@ If the alarm is too quiet, go to **Settings**, then **Sounds & Haptics**, and dr
                 "sources": [{'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I set an alarm to wake me up',
-                    'Sure. Is your phone an **iPhone** or an **Android** phone, and what time would you like to wake up?',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -254,16 +251,13 @@ If the alarm is too quiet, go to **Settings**, then **Sounds & Haptics**, and dr
                 "sources": [{'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
                 "messages": [
                     "I have a doctor's appointment early tomorrow and I'm worried I'll oversleep. I usually wake up on my own but I can't risk it. I need to be up at 6:30. I have an iPhone.",
-                    """Good idea to set one. Here's how to make sure you're up at 6:30:
+                    """Good idea to set one. Here's how to make sure you're up at 6:30.
 
-Here's how. It takes about a minute.
-
-1. Open the **Clock** app.
-2. Tap **Alarms** at the bottom.
-3. Tap the **plus (+)** button.
-4. Set the time to **6:30 AM**.
-5. If you want it every day, tap **Repeat** and choose the days.
-6. Tap **Save** (on some versions, **Done**).
+1. Open the **Clock** app, then tap the **Alarms** tab.
+2. Tap the **Add** button.
+3. Set the time to **6:30 AM**.
+4. Only if you want it to repeat, tap **Repeat** and choose the days.
+5. Tap **Done**.
 
 The alarm will ring even if your phone is on Silent or Do Not Disturb.
 
@@ -277,18 +271,15 @@ If the alarm is too quiet, go to **Settings**, then **Sounds & Haptics**, and dr
                 "sources": [{'title': 'Apple Support: How to set and change alarms on your iPhone', 'url': 'https://support.apple.com/en-us/118444', 'accessed': '2026-10-24'}],
                 "messages": [
                     'how do I set an alarm to wake me up',
-                    'Sure. Is your phone an **iPhone** or an **Android** phone, and what time would you like to wake up?',
-                    'iPhone, 6:30 in the morning',
-                    """Got it. Here's how to set it for 6:30.
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
+                    'iPhone',
+                    """Thanks. Here's how to set an alarm.
 
-Here's how. It takes about a minute.
-
-1. Open the **Clock** app.
-2. Tap **Alarms** at the bottom.
-3. Tap the **plus (+)** button.
-4. Set the time to **6:30 AM**.
-5. If you want it every day, tap **Repeat** and choose the days.
-6. Tap **Save** (on some versions, **Done**).
+1. Open the **Clock** app, then tap the **Alarms** tab.
+2. Tap the **Add** button.
+3. Set the time you want to wake up.
+4. Only if you want it to repeat, tap **Repeat** and choose the days.
+5. Tap **Done**.
 
 The alarm will ring even if your phone is on Silent or Do Not Disturb.
 
@@ -339,7 +330,7 @@ If you set more than one alarm, leave at least 5 minutes between them.""",
                 "sources": [{'title': 'Android Help: Set, cancel, or snooze alarms on your Android device', 'url': 'https://support.google.com/android/answer/2840926?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'alarm for 7',
-                    'Sure. Do you mean **7 in the morning** or **7 in the evening**? And is your phone an iPhone or an Android phone?',
+                    'Sure. Is your phone an **iPhone** or an **Android** phone?',
                 ],
             },
             {
@@ -387,9 +378,12 @@ If you set more than one alarm, leave at least 5 minutes between them.""",
 3. On your iPhone, open **Settings**.
 4. Tap **Accessibility**.
 5. Tap **Hearing Devices**.
-6. Tap **Pair MFi Hearing Device** if you see it, or tap your hearing aids' name when it appears. Then tap **Pair**.
+6. Tap **Pair MFi Hearing Device** and follow the steps on the screen.
+7. Select your hearing aids, then tap **Pair**.
 
-If you don't see them, put them back in pairing mode and try again. Your audiologist can also help.""",
+If you don't see **Pair MFi Hearing Device**, tap your hearing aids' name when it appears under **Hearing Devices**, then tap **Pair**.
+
+If they don't appear, check that they're in pairing mode, restart your iPhone, and look in your hearing aids' user guide or the maker's app.""",
                 ],
             },
             {
@@ -409,18 +403,19 @@ If you don't see them, put them back in pairing mode and try again. Your audiolo
                 "sources": [{'title': 'Apple Support: Use Made for iPhone hearing devices', 'url': 'https://support.apple.com/en-us/108780', 'accessed': '2026-10-24'}],
                 "messages": [
                     'My audiologist set up my new hearing aids in the office but she said I could connect them to my iPhone so phone calls go straight into my ears. I forgot to ask her how.',
-                    """That's a great feature. Here's how to connect them:
-
-Here's how to pair them. It takes a few minutes.
+                    """That's a great feature. Here's how to pair them. It takes a few minutes.
 
 1. Make sure your iPhone has the latest software update.
 2. Put your hearing aids in **pairing mode**. Depending on the model, you might open and close the battery doors, turn them off and on, or take them out of the charger. Your hearing aid instructions will say which.
 3. On your iPhone, open **Settings**.
 4. Tap **Accessibility**.
 5. Tap **Hearing Devices**.
-6. Tap **Pair MFi Hearing Device** if you see it, or tap your hearing aids' name when it appears. Then tap **Pair**.
+6. Tap **Pair MFi Hearing Device** and follow the steps on the screen.
+7. Select your hearing aids, then tap **Pair**.
 
-If you don't see them, put them back in pairing mode and try again. Your audiologist can also help.""",
+If you don't see **Pair MFi Hearing Device**, tap your hearing aids' name when it appears under **Hearing Devices**, then tap **Pair**.
+
+If they don't appear, check that they're in pairing mode, restart your iPhone, and look in your hearing aids' user guide or the maker's app.""",
                 ],
             },
             {
@@ -441,9 +436,12 @@ Here's how to pair them. It takes a few minutes.
 3. On your iPhone, open **Settings**.
 4. Tap **Accessibility**.
 5. Tap **Hearing Devices**.
-6. Tap **Pair MFi Hearing Device** if you see it, or tap your hearing aids' name when it appears. Then tap **Pair**.
+6. Tap **Pair MFi Hearing Device** and follow the steps on the screen.
+7. Select your hearing aids, then tap **Pair**.
 
-If you don't see them, put them back in pairing mode and try again. Your audiologist can also help.""",
+If you don't see **Pair MFi Hearing Device**, tap your hearing aids' name when it appears under **Hearing Devices**, then tap **Pair**.
+
+If they don't appear, check that they're in pairing mode, restart your iPhone, and look in your hearing aids' user guide or the maker's app.""",
                 ],
             },
         ],
@@ -457,19 +455,19 @@ If you don't see them, put them back in pairing mode and try again. Your audiolo
                 "existing": True, "id": 'tr069-a', "suffix": 'a', "scenario": 'direct',
                 "style": 'plain', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Android Help: Find & set up Bluetooth devices near your Android device', 'url': 'https://support.google.com/android/answer/9417604?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Android Help: Find & set up Bluetooth devices near your Android device', 'url': 'https://support.google.com/android/answer/9417604?hl=en', 'accessed': '2026-10-24'}, {'title': 'Android Help: Fix Bluetooth problems on Android', 'url': 'https://support.google.com/android/answer/9769184?hl=en', 'accessed': '2026-11-13'}],
                 "messages": [
                     'How do I connect my new Bluetooth headphones to my Android phone?',
                     """Here's how. It takes a couple of minutes.
 
-1. Put your headphones in **pairing mode**. Each brand does this differently, so check the instructions that came with them.
+1. Turn on your headphones and make sure they're discoverable and ready to pair. Follow the instructions that came with them.
 2. On your phone, **swipe down** from the top of the screen.
 3. **Press and hold** the **Bluetooth** icon.
 4. Tap **Pair new device**.
 5. Tap the name of your headphones when it appears.
 6. Follow any instructions on the screen.
 
-If your headphones don't appear, check under **Available devices**, or tap **More** and then **Refresh**.
+If you don't see **Pair new device**, check under **Available devices**, or tap **More**, then **Refresh**.
 
 If you're asked for a code and don't have one, try **0000** or **1234**.""",
                 ],
@@ -491,14 +489,14 @@ If you're asked for a code and don't have one, try **0000** or **1234**.""",
                 "sources": [{'title': 'Android Help: Find & set up Bluetooth devices near your Android device', 'url': 'https://support.google.com/android/answer/9417604?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'bluetooth wont',
-                    "It looks like your message got cut off. What won't connect over Bluetooth: **headphones**, a **speaker**, a **car**, or something else? And is your phone an iPhone or an Android phone?",
+                    "It looks like your message got cut off. What won't connect over Bluetooth: **headphones**, a **speaker**, a **car**, or something else?",
                 ],
             },
             {
                 "existing": True, "id": 'tr069-d', "suffix": 'd', "scenario": 'followup',
                 "style": 'under_specified', "specification": 'fully_specified', "platform": 'Android',
                 "author": 'claude-draft', "reviewed": False, "inspired_by": 'ElderBench',
-                "sources": [{'title': 'Android Help: Find & set up Bluetooth devices near your Android device', 'url': 'https://support.google.com/android/answer/9417604?hl=en', 'accessed': '2026-10-24'}],
+                "sources": [{'title': 'Android Help: Find & set up Bluetooth devices near your Android device', 'url': 'https://support.google.com/android/answer/9417604?hl=en', 'accessed': '2026-10-24'}, {'title': 'Android Help: Fix Bluetooth problems on Android', 'url': 'https://support.google.com/android/answer/9769184?hl=en', 'accessed': '2026-11-13'}],
                 "messages": [
                     'how do I connect my earbuds',
                     'Sure. What are you connecting them to: an **iPhone**, an **Android** phone, or a **computer**?',
@@ -507,14 +505,14 @@ If you're asked for a code and don't have one, try **0000** or **1234**.""",
 
 Here's how. It takes a couple of minutes.
 
-1. Put your headphones in **pairing mode**. Each brand does this differently, so check the instructions that came with them.
+1. Turn on your headphones and make sure they're discoverable and ready to pair. Follow the instructions that came with them.
 2. On your phone, **swipe down** from the top of the screen.
 3. **Press and hold** the **Bluetooth** icon.
 4. Tap **Pair new device**.
 5. Tap the name of your headphones when it appears.
 6. Follow any instructions on the screen.
 
-If your headphones don't appear, check under **Available devices**, or tap **More** and then **Refresh**.
+If you don't see **Pair new device**, check under **Available devices**, or tap **More**, then **Refresh**.
 
 If you're asked for a code and don't have one, try **0000** or **1234**.""",
                 ],
@@ -544,7 +542,7 @@ If you're asked for a code and don't have one, try **0000** or **1234**.""",
 
 You'll know it's on when the battery icon at the top of the screen turns **yellow**.
 
-Low Power Mode dims the screen a little and pauses some background activity, like checking for new email. It turns off by itself once you charge above 80%.""",
+Low Power Mode dims the screen a little and pauses some background activity, like checking for new email. It turns off by itself once the battery is charged to 80% or higher.""",
                 ],
             },
             {
@@ -587,11 +585,11 @@ Here's how. It takes a few seconds.
 **In Settings:**
 1. Open **Settings**.
 2. Tap **Battery**.
-3. On iPhone 15 and newer, tap **Power Mode**, then **Low Power Mode**. On older iPhones, turn on **Low Power Mode**.
+3. Turn on **Low Power Mode**.
 
 You'll know it's on when the battery icon at the top of the screen turns **yellow**.
 
-Low Power Mode dims the screen a little and pauses some background activity, like checking for new email. It turns off by itself once you charge above 80%.""",
+Low Power Mode dims the screen a little and pauses some background activity, like checking for new email. It turns off by itself once the battery is charged to 80% or higher.""",
                 ],
             },
         ],
@@ -612,9 +610,7 @@ Low Power Mode dims the screen a little and pauses some background activity, lik
 
 1. Open the **Settings** app.
 2. Tap **Battery**.
-3. Tap **Battery Saver** and turn it on.
-
-You can also set it to turn on by itself on a schedule.
+3. Tap **Battery Saver**, then choose a schedule for it, or choose to have it turn off automatically.
 
 Battery Saver switches the screen to a dark theme and limits what apps do in the background, so your battery lasts longer.
 
@@ -638,15 +634,11 @@ Some phones call this something like **low power mode**. If you don't see **Batt
                 "sources": [{'title': "Android Help: Get the most life from your Android device's battery", 'url': 'https://support.google.com/android/answer/7664692?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "Galaxy S23, battery at 40%, I need it until 10pm tonight. I'd like to turn on whatever the power saving setting is.",
-                    """Here's how to turn it on. Menu names on Samsung phones can differ a little:
-
-Here's how. It takes less than a minute.
+                    """Here's how. Menu names on Samsung phones can differ a little, and it takes less than a minute.
 
 1. Open the **Settings** app.
 2. Tap **Battery**.
-3. Tap **Battery Saver** and turn it on.
-
-You can also set it to turn on by itself on a schedule.
+3. Tap **Battery Saver**, then choose a schedule for it, or choose to have it turn off automatically.
 
 Battery Saver switches the screen to a dark theme and limits what apps do in the background, so your battery lasts longer.
 
@@ -668,9 +660,7 @@ Here's how. It takes less than a minute.
 
 1. Open the **Settings** app.
 2. Tap **Battery**.
-3. Tap **Battery Saver** and turn it on.
-
-You can also set it to turn on by itself on a schedule.
+3. Tap **Battery Saver**, then choose a schedule for it, or choose to have it turn off automatically.
 
 Battery Saver switches the screen to a dark theme and limits what apps do in the background, so your battery lasts longer.
 
@@ -733,14 +723,12 @@ Some phones call this something like **low power mode**. If you don't see **Batt
                     'my banking app says I need to update it',
                     'Updating the app is usually quick. Is your phone an **iPhone** or an **Android** phone?',
                     'iPhone',
-                    """Thanks. Open the App Store from your Home Screen, not from a link in a message, then:
-
-Here's how to update them all at once. It takes a few minutes.
+                    """Thanks. Here's how to update your banking app.
 
 1. Open the **App Store**.
 2. Tap your **profile picture** (or the account icon) at the top of the screen.
 3. Tap **App Updates**.
-4. Tap **Update All**, or tap **Update** next to just one app.
+4. Tap **Update** next to your banking app. If you want to update every app, tap **Update All** instead.
 
 **To have apps update by themselves:**
 1. Open **Settings**.
@@ -768,13 +756,14 @@ Here's how to update them all at once. It takes a few minutes.
 1. Open **Settings**.
 2. Tap **Accessibility**.
 3. Tap **Magnification**.
-4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing both volume keys**, or **triple-tapping** the screen.
+4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing and holding both volume keys**, or **triple-tapping** the screen.
 
 **Use it:**
 1. Start magnification with your shortcut.
-2. **Pinch** with two fingers to zoom in or out.
-3. **Drag with two fingers** to move around.
-4. Use the shortcut again to stop.
+2. Tap anywhere on the screen, except the keyboard or the navigation bar.
+3. **Pinch** with two fingers to zoom in or out.
+4. **Drag with two fingers** to move around.
+5. Use the shortcut again to stop.
 
 It can zoom up to 8 times.""",
                 ],
@@ -804,13 +793,14 @@ Android has a **Magnification** feature. Setting it up takes a couple of minutes
 1. Open **Settings**.
 2. Tap **Accessibility**.
 3. Tap **Magnification**.
-4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing both volume keys**, or **triple-tapping** the screen.
+4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing and holding both volume keys**, or **triple-tapping** the screen.
 
 **Use it:**
 1. Start magnification with your shortcut.
-2. **Pinch** with two fingers to zoom in or out.
-3. **Drag with two fingers** to move around.
-4. Use the shortcut again to stop.
+2. Tap anywhere on the screen, except the keyboard or the navigation bar.
+3. **Pinch** with two fingers to zoom in or out.
+4. **Drag with two fingers** to move around.
+5. Use the shortcut again to stop.
 
 It can zoom up to 8 times.""",
                 ],
@@ -832,13 +822,14 @@ Android has a **Magnification** feature. Setting it up takes a couple of minutes
 1. Open **Settings**.
 2. Tap **Accessibility**.
 3. Tap **Magnification**.
-4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing both volume keys**, or **triple-tapping** the screen.
+4. Turn on the **Magnification shortcut**. You can choose how to start it: the **Accessibility button** on the screen, **pressing and holding both volume keys**, or **triple-tapping** the screen.
 
 **Use it:**
 1. Start magnification with your shortcut.
-2. **Pinch** with two fingers to zoom in or out.
-3. **Drag with two fingers** to move around.
-4. Use the shortcut again to stop.
+2. Tap anywhere on the screen, except the keyboard or the navigation bar.
+3. **Pinch** with two fingers to zoom in or out.
+4. **Drag with two fingers** to move around.
+5. Use the shortcut again to stop.
 
 It can zoom up to 8 times.""",
                 ],
@@ -863,12 +854,15 @@ It can zoom up to 8 times.""",
 1. Open the **Find My** app and tap **Devices**.
 2. Select your iPhone to see it on a map.
 (A family member's iPhone also works if you're in the same Family Sharing group.)
+3. To protect it, tap **More**.
+4. Scroll down and turn on **Lost Mode**.
+5. Follow the steps on the screen to add a phone number and a message.
+6. Tap **Activate**.
 
 **Option 2: a computer**
-1. Go to **icloud.com/find** and sign in with your Apple Account.
+1. Go to **icloud.com/find** and sign in with your Apple Account. If you're asked for a verification code, select **Find Devices** instead.
 2. Select your iPhone under **All Devices**.
-
-From there you can **play a sound** to help find it nearby, or turn on **Lost Mode**. Lost Mode locks your phone and shows a message with a number where you can be reached.
+3. Choose to play a sound to help find it nearby, or mark it as lost.
 
 Stay safe: Apple will never contact you to say your iPhone has been found. Don't share your passcode or any codes with anyone who calls or texts about your phone.""",
                 ],
@@ -880,7 +874,7 @@ Stay safe: Apple will never contact you to say your iPhone has been found. Don't
                 "sources": [{'title': 'Apple Support: How to find your lost iPhone or iPad', 'url': 'https://support.apple.com/en-us/101593', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I lost my phone',
-                    "I'm sorry, that's stressful. Let's try to find it. Is your phone an **iPhone** or an **Android** phone? And do you have another device or a computer you can use right now?",
+                    "I'm sorry, that's stressful. Is your phone an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -898,12 +892,15 @@ Let's try to find it. You'll need another device or a computer.
 1. Open the **Find My** app and tap **Devices**.
 2. Select your iPhone to see it on a map.
 (A family member's iPhone also works if you're in the same Family Sharing group.)
+3. To protect it, tap **More**.
+4. Scroll down and turn on **Lost Mode**.
+5. Follow the steps on the screen to add a phone number and a message.
+6. Tap **Activate**.
 
 **Option 2: a computer**
-1. Go to **icloud.com/find** and sign in with your Apple Account.
+1. Go to **icloud.com/find** and sign in with your Apple Account. If you're asked for a verification code, select **Find Devices** instead.
 2. Select your iPhone under **All Devices**.
-
-From there you can **play a sound** to help find it nearby, or turn on **Lost Mode**. Lost Mode locks your phone and shows a message with a number where you can be reached.
+3. Choose to play a sound to help find it nearby, or mark it as lost.
 
 Stay safe: Apple will never contact you to say your iPhone has been found. Don't share your passcode or any codes with anyone who calls or texts about your phone.""",
                 ],
@@ -915,22 +912,13 @@ Stay safe: Apple will never contact you to say your iPhone has been found. Don't
                 "sources": [{'title': 'Apple Support: How to find your lost iPhone or iPad', 'url': 'https://support.apple.com/en-us/101593', 'accessed': '2026-10-24'}],
                 "messages": [
                     'I lost my phone',
-                    "I'm sorry, that's stressful. Let's try to find it. Is your phone an **iPhone** or an **Android** phone? And do you have another device or a computer you can use right now?",
+                    "I'm sorry, that's stressful. Is your phone an **iPhone** or an **Android** phone?",
                     "iPhone. I'm on my laptop now.",
-                    """Good, your laptop will work.
+                    """Good, your laptop will work. Here's how to look for your iPhone.
 
-Let's try to find it. You'll need another device or a computer.
-
-**Option 1: another Apple device**
-1. Open the **Find My** app and tap **Devices**.
-2. Select your iPhone to see it on a map.
-(A family member's iPhone also works if you're in the same Family Sharing group.)
-
-**Option 2: a computer**
-1. Go to **icloud.com/find** and sign in with your Apple Account.
+1. Go to **icloud.com/find** and sign in with your Apple Account. If you're asked for a verification code, select **Find Devices** instead.
 2. Select your iPhone under **All Devices**.
-
-From there you can **play a sound** to help find it nearby, or turn on **Lost Mode**. Lost Mode locks your phone and shows a message with a number where you can be reached.
+3. Choose to play a sound to help find it nearby, or mark it as lost.
 
 Stay safe: Apple will never contact you to say your iPhone has been found. Don't share your passcode or any codes with anyone who calls or texts about your phone.""",
                 ],
@@ -953,11 +941,11 @@ Stay safe: Apple will never contact you to say your iPhone has been found. Don't
 
 1. On another Android phone, open the **Find Hub** app. On a computer, go to **google.com/android/find**.
 2. Sign in with your Google Account.
-3. Select your lost phone. You'll see where it is on a map.
+3. Select your lost phone. If asked, enter your lock screen PIN or password. You'll see where it is on a map.
 
 Then choose what to do:
 - **Play sound:** your phone rings loudly for 5 minutes, even if it's on silent.
-- **Mark as lost:** locks your phone and lets you show a message and a contact number on the screen.
+- **Mark as lost:** tap **Mark as lost**, then **Next**. Add a message and a phone number, then tap **Mark as lost** again to confirm.
 - **Factory reset:** erases everything on the phone. Only do this if you can't get it back, because afterward you can't find it with Find Hub.""",
                 ],
             },
@@ -968,7 +956,7 @@ Then choose what to do:
                 "sources": [{'title': 'Google Account Help: Find, secure, or erase a lost Android device', 'url': 'https://support.google.com/accounts/answer/6160491?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "can't find my phone anywhere",
-                    "Let's try to find it. Is it an **iPhone** or an **Android** phone? And do you have a computer or another phone you can use right now?",
+                    "Let's try to find it. Is it an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -978,7 +966,7 @@ Then choose what to do:
                 "sources": [{'title': 'Google Account Help: Find, secure, or erase a lost Android device', 'url': 'https://support.google.com/accounts/answer/6160491?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     'lost phone help',
-                    "I'm sorry, let's try to find it. **Is it an iPhone or an Android phone**, and is there a computer or another phone you can use right now?",
+                    "I'm sorry, let's try to find it. Is it an **iPhone** or an **Android** phone?",
                 ],
             },
             {
@@ -988,19 +976,19 @@ Then choose what to do:
                 "sources": [{'title': 'Google Account Help: Find, secure, or erase a lost Android device', 'url': 'https://support.google.com/accounts/answer/6160491?hl=en', 'accessed': '2026-10-24'}],
                 "messages": [
                     "can't find my phone anywhere",
-                    "Let's try to find it. Is it an **iPhone** or an **Android** phone? And do you have a computer or another phone you can use right now?",
+                    "Let's try to find it. Is it an **iPhone** or an **Android** phone?",
                     "Android. I can use my husband's phone.",
                     """Good, your husband's phone will work.
 
 You can look for it with **Find Hub** from another device. It works if your phone is on and connected to the internet.
 
-1. On another Android phone, open the **Find Hub** app. On a computer, go to **google.com/android/find**.
+1. On another Android phone, open the **Find Hub** app. If your husband's phone isn't an Android phone, open a web browser on it and go to **google.com/android/find**.
 2. Sign in with your Google Account.
-3. Select your lost phone. You'll see where it is on a map.
+3. Select your lost phone. If asked, enter your lock screen PIN or password. You'll see where it is on a map.
 
 Then choose what to do:
 - **Play sound:** your phone rings loudly for 5 minutes, even if it's on silent.
-- **Mark as lost:** locks your phone and lets you show a message and a contact number on the screen.
+- **Mark as lost:** tap **Mark as lost**, then **Next**. Add a message and a phone number, then tap **Mark as lost** again to confirm.
 - **Factory reset:** erases everything on the phone. Only do this if you can't get it back, because afterward you can't find it with Find Hub.""",
                 ],
             },

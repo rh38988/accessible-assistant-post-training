@@ -148,7 +148,8 @@ If there is still no response after 25 minutes, the phone needs to be repaired."
 3. Push the cable in firmly at both ends.
 4. Look in the phone's charging port for dust or lint.
 5. Test the wall outlet with another device, such as a lamp.
-6. Charge for a few minutes, then press and hold the **Power** button for 5 to 7 seconds.""",
+6. Plug it in and wait one minute. A battery icon on the screen means the phone is off and charging.
+7. Press and hold the **Power** button for 5 to 7 seconds.""",
              ]},
             {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android (Pixel)",
              "messages": [
@@ -240,9 +241,9 @@ If this happens often, contact your mobile service provider.""",
 
 1. Restart your phone.
 2. Open **Settings** and tap **Network & internet** (or **Connections**).
-3. Turn Wi-Fi off and mobile data on, and check if things load.
+3. Turn Wi-Fi off and mobile data on, and see if things load. Then turn mobile data off and Wi-Fi on, and check again.
 4. Turn **Airplane mode** on, wait 10 seconds, then turn it off.
-5. Open the Wi-Fi settings and check the Wi-Fi symbol at the top of the screen. If no bars are filled, move closer to where the router is.
+5. Make sure **Wi-Fi** is on, then look at the Wi-Fi symbol at the top of the screen. If no bars are filled, move closer to where the router is.
 
 If the Wi-Fi still has problems, the person who runs that network can help.""",
              ]},
@@ -314,7 +315,7 @@ Also check that your carrier supports SMS, MMS, or RCS.""",
                  """For picture messages, try these.
 
 1. Make sure you have a data connection.
-2. In your phone's **Settings** app, reset your APN settings to default.
+2. In your phone's **Settings** app, find the **APN** settings (the settings your phone uses to send picture messages) and choose to reset them to default. The exact menu names are a little different on each phone.
 3. Open **Google Messages**. At the top right, tap your **Profile picture** or **Initials**, then **Messages settings**, then **Advanced**, then **Group messaging**.
 4. Tap **Send an MMS reply to all recipients (group MMS)**.""",
              ]},
@@ -362,7 +363,7 @@ Also check that your carrier supports SMS, MMS, or RCS.""",
 Group messaging default: Messages settings, Advanced, Group messaging, pick mass text or group MMS. Group conversations (group MMS): send an MMS reply to all recipients. Mass text: send an SMS reply to all recipients and get individual replies. Add people: open group, More, Group details, Add people.
 Supporting page 16287429 (Create RCS groups): open Messages, tap Start chat, then Create group, select contacts, tap Next. Supporting page 9077245: top right tap Profile picture or Initials, Messages settings, Advanced, Group messaging, option "Send an MMS reply to all recipients (group MMS)".""",
         "examples": [
-            {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Android (Google Messages)",
+            {"suffix": "a", "scenario": "direct", "style": "plain", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}],
              "messages": [
                  "How do I send one text to my three kids at the same time in Google Messages on my Android phone?",
                  """You can send it as a group text.
@@ -375,7 +376,7 @@ Supporting page 16287429 (Create RCS groups): open Messages, tap Start chat, the
 
 Contacts without the **RCS** tag will get a regular group text (an MMS group chat), which still works.""",
              ]},
-            {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Android (Google Messages)",
+            {"suffix": "c", "scenario": "direct_messy", "style": "verbose", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}],
              "messages": [
                  "I'm planning a birthday dinner for my sister and I need to tell her husband, my brother, and two cousins the time and place all at once. One cousin has an iPhone. I use Google Messages on my Samsung Android phone. Will the iPhone cousin get it too, and how do I start the message?",
                  """Yes, the iPhone cousin can be in the group. Here is how to start it.
@@ -393,7 +394,7 @@ If your group members have RCS chats turned on, iPhone contacts can show the **R
                  "I want to send the same message to a whole bunch of people at once on my Android phone",
                  "I can help with that. Are you using the **Google Messages** app, or a different texting app?",
              ]},
-            {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "Android (Google Messages)",
+            {"suffix": "d", "scenario": "followup", "style": "under_specified", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}],
              "messages": [
                  "I want to send the same message to a whole bunch of people at once on my Android phone",
                  "I can help with that. Are you using the **Google Messages** app, or a different texting app?",
@@ -406,7 +407,7 @@ If your group members have RCS chats turned on, iPhone contacts can show the **R
 4. Tap **Next**.
 5. Write your message and send it.""",
              ]},
-            {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Android (Google Messages)",
+            {"suffix": "e", "scenario": "constraint", "style": "over_specified", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Fix problems sending, receiving, or connecting to messages", "url": "https://support.google.com/messages/answer/9077245", "accessed": "2026-11-13"}],
              "messages": [
                  "I'm sending a text to everyone in my choir in Google Messages on my Android phone, but I don't want their replies going to the whole choir. I just want each person's answer to come back to me separately. Can that be done?",
                  """Yes, use mass text. Replies then come back to you one by one.
@@ -415,10 +416,12 @@ If your group members have RCS chats turned on, iPhone contacts can show the **R
 2. At the top right, tap your **profile picture** or **initials**, then tap **Messages settings**, then **Advanced**.
 3. Tap **Group messaging**.
 4. Choose **mass text** as your default.
-5. Go back, tap **Start chat**, then **Create group**, pick your choir members, and tap **Next**.
-6. Write your message and send it.""",
+5. Go back to the main screen.
+6. Tap **Start chat**, then **Create group**.
+7. Pick your choir members, then tap **Next**.
+8. Write your message and send it.""",
              ]},
-            {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android (Google Messages)",
+            {"suffix": "r", "scenario": "failure_recovery", "style": "failure_recovery", "specification": "fully_specified", "platform": "Android (Google Messages)", "sources": [{"title": "Google Messages Help: Explore group conversations in Google Messages", "url": "https://support.google.com/messages/answer/9367099", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Create RCS groups", "url": "https://support.google.com/messages/answer/16287429", "accessed": "2026-11-13"}, {"title": "Google Messages Help: Fix problems sending, receiving, or connecting to messages", "url": "https://support.google.com/messages/answer/9077245", "accessed": "2026-11-13"}],
              "messages": [
                  "How do I send a group text to my book club in Google Messages on Android?",
                  """Start a group like this.
