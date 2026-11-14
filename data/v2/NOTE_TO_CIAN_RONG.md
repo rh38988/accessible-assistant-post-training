@@ -16,7 +16,7 @@
 - Unreadable source: Facebook help pages (blocked by robots). The pilot-017 example there was rejected.
 
 ## Patterns from the spot check
-- Unsupported durations ("about a minute") and unsupported reassurance ("you won't be charged").
+- Unsupported durations (for example "about a minute") and claims the page doesn't make.
 - Advice the page doesn't give, like "don't send money", written as fact.
 - Steps that bundle two actions.
 
