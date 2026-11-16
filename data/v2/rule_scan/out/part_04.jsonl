@@ -1,0 +1,50 @@
+{"id": "tr038-b", "flags": []}
+{"id": "tr038-d", "flags": []}
+{"id": "tr038-e", "flags": []}
+{"id": "tr038-r", "flags": [{"rule": "R13", "severity": "low", "quote": "there's no limit on tries", "reason": "The claim that there is no limit on attempts is stated as fact with no basis shown in the reply.", "suggestion": "Say the user can try again, and drop the no-limit claim unless Google's page confirms it.", "needs_source_check": true}]}
+{"id": "tr039-a", "flags": []}
+{"id": "tr039-b", "flags": []}
+{"id": "tr039-c", "flags": []}
+{"id": "tr039-d", "flags": []}
+{"id": "tr039-e", "flags": []}
+{"id": "tr039-r", "flags": []}
+{"id": "tr040-a", "flags": []}
+{"id": "tr040-b", "flags": []}
+{"id": "tr040-c", "flags": []}
+{"id": "tr040-d", "flags": []}
+{"id": "tr040-r", "flags": []}
+{"id": "tr041-r", "flags": []}
+{"id": "tr042-a", "flags": [{"rule": "R3", "severity": "medium", "quote": "Go to Settings, then Family.", "reason": "Steps 1 and 2 reach Family through your name at the top of Settings, but step 4 sends the user to Settings then Family, which is a different path.", "suggestion": "Use the same path as steps 1 and 2 (tap your name, then Family) so the user can find the screen.", "needs_source_check": false}]}
+{"id": "tr042-b", "flags": []}
+{"id": "tr042-d", "flags": [{"rule": "R3", "severity": "medium", "quote": "Go to Settings, then Family.", "reason": "Steps 1 and 2 reach Family through your name at the top of Settings, but step 4 sends the user to Settings then Family, which is a different path.", "suggestion": "Use the same path as steps 1 and 2 (tap your name, then Family) so the user can find the screen.", "needs_source_check": false}]}
+{"id": "tr042-e", "flags": [{"rule": "R3", "severity": "medium", "quote": "Go to Settings, then Family.", "reason": "Steps 1 and 2 open Family through your name, but step 4 says to go to Settings, then Family.", "suggestion": "Use the same path as steps 1 and 2 (tap your name, then Family) so the user can find the screen.", "needs_source_check": false}]}
+{"id": "tr042-r", "flags": [{"rule": "R3", "severity": "medium", "quote": "Open Settings, then tap Family.", "reason": "Family is reached through your name at the top of Settings, and this step omits that tap, so the user may not find the screen.", "suggestion": "Say to tap your name at the top of Settings first, then tap Family.", "needs_source_check": false}]}
+{"id": "tr043-a", "flags": []}
+{"id": "tr043-b", "flags": []}
+{"id": "tr043-d", "flags": []}
+{"id": "tr043-e", "flags": []}
+{"id": "tr043-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Open the Contacts app and tap Linda.", "reason": "The steps start on the new phone, where the user said Linda is missing, so the first step cannot be done there.", "suggestion": "First ask whether the old phone is still available, and have the user open Contacts there to move Linda to a Google Account before going further.", "needs_source_check": false}]}
+{"id": "tr045-a", "flags": []}
+{"id": "tr045-b", "flags": []}
+{"id": "tr045-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "blocking it will stop those calls from ringing", "reason": "Blocking this one number stops calls only from that number, and a spam caller can call from other numbers.", "suggestion": "Say blocking this number stops its calls, and that calls from other numbers can still ring.", "needs_source_check": true}]}
+{"id": "tr045-d", "flags": []}
+{"id": "tr045-e", "flags": []}
+{"id": "tr045-r", "flags": [{"rule": "R8", "severity": "low", "quote": "These steps are for the newest iPhone software, iOS 26.", "reason": "The user never said which iPhone software they have, so the version name adds a detail that may confuse them.", "suggestion": "Drop the version name, or say the steps may look slightly different on older software.", "needs_source_check": false}]}
+{"id": "tr046-a", "flags": []}
+{"id": "tr046-b", "flags": []}
+{"id": "tr046-c", "flags": []}
+{"id": "tr046-d", "flags": []}
+{"id": "tr046-e", "flags": []}
+{"id": "tr046-r", "flags": []}
+{"id": "tr048-b", "flags": []}
+{"id": "tr048-c", "flags": []}
+{"id": "tr048-e", "flags": [{"rule": "R13", "severity": "low", "quote": "Calls from numbers saved in your Contacts always come through", "reason": "The word always is a guarantee that may not hold when a Focus or Do Not Disturb setting is on.", "suggestion": "Say calls from saved contacts usually come through, unless a Focus or Do Not Disturb setting is on.", "needs_source_check": true}]}
+{"id": "tr048-r", "flags": [{"rule": "R8", "severity": "low", "quote": "it appears in the Recents tab in Classic view, or the Calls tab in Unified view", "reason": "The Classic and Unified view split is an extra detail the user does not need to finish filtering the list.", "suggestion": "Keep only the step that opens the Unknown Callers list in the Phone app, and drop the view names.", "needs_source_check": false}]}
+{"id": "tr049-b", "flags": []}
+{"id": "tr049-c", "flags": []}
+{"id": "tr049-d", "flags": []}
+{"id": "tr049-e", "flags": [{"rule": "R13", "severity": "low", "quote": "This setting is on by default, so it may already be on.", "reason": "The claim that the setting is on by default is a specific fact with no basis shown in the reply.", "suggestion": "Say to check whether See caller ID & spam is on, and drop the default claim.", "needs_source_check": true}]}
+{"id": "tr049-r", "flags": []}
+{"id": "tr050-b", "flags": []}
+{"id": "tr050-c", "flags": []}
+{"id": "tr050-d", "flags": [{"rule": "R9", "severity": "high", "quote": "it isn't a safety problem", "reason": "A degraded battery can swell or overheat, so saying it is not a safety problem is broader than the reply can support.", "suggestion": "Say a worn battery mainly lasts less time, and that a swollen, hot, or damaged battery should be checked by Apple or a service center right away.", "needs_source_check": true}]}

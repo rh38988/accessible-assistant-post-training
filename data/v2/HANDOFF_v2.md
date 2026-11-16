@@ -35,3 +35,12 @@ python data/v2/tools/assemble.py --target 1000   # rebuild the frozen set from t
 - 15 examples human-checked by Ryan (spot_check_v2.csv): 8 keep, 7 fixed.
 - The 7 fixes are applied to `train_v2_en.jsonl`. The manifest is now v2.1 with the new sha256.
 - Remaining: 0 to 5 more spot checks (target 15 to 20 is met at 15), pilot sign-off with Cian-Rong and Shirley, RAG handoff, token cap check, slide and AI Use Statement wording.
+
+## Update 2026-11-16 (v2.2, after Shirley's spot check)
+- Shirley checked all 50 spot-check examples (35 keep, 15 fix). The 15 fixes are applied: `train_v2_en.jsonl` is now **v2.2** (sha256 `e0ce1fdbe2c545cc...`).
+- Old versions: `versions/train_v2_en.v2.0.jsonl` (AI review freeze) and `versions/train_v2_en.v2.1.jsonl` (Ryan's 7 fixes).
+- Change logs with before/after text and hashes: `human_fixes/changes_v2.1.jsonl`, `human_fixes/changes_v2.2.jsonl`, readable version `human_fixes/changes_v2.2.md`. Fix text lives in `human_fixes/v2_2_fixes.py`; rebuild with `python3 data/v2/tools/apply_human_fixes.py`.
+- Manifest: each example has `sha256` (current text) and `ai_review_sha256` (text the AI review judged). 20 examples are `edited_after_ai_review`; their records in `reviews/` describe the older text.
+- The v2.1 manifest kept stale per-example hashes for the 7 v2.1 fixes. Corrected in v2.2.
+- `assemble.py` now refuses to overwrite a frozen version or a filled-in spot check.
+- Rules from the spot check: `SPOT_CHECK_RULES_v1.md`. Scan of the other 950 examples: `RULE_SCAN_SUMMARY_v2.2.md` and `RULE_SCAN_v2.2.csv` (list only, nothing edited; waiting on evaluation results before deciding what to change).

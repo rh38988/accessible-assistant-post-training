@@ -39,6 +39,8 @@ MAC_CC = src("Mac User Guide: Use Control Center on Mac", "https://support.apple
 APPLE_SPAM = src("iPhone User Guide: Report spam and block senders",
                  "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios")
 CHROME_PW = src("Chrome Help: Use passwords across your devices (Google Password Manager)", "https://support.google.com/chrome/answer/95606?hl=en")
+MS_PIN = src("Microsoft Support: Change or reset your PIN in Windows",
+             "https://support.microsoft.com/en-us/windows/security/change-or-reset-your-pin-in-windows")
 MS_ACCOUNTS = src("Microsoft Support: Manage user accounts in Windows",
                   "https://support.microsoft.com/en-us/windows/manage-user-accounts-in-windows-104dc19f-6430-4b49-6a2b-e4dbd1dcdf32")
 MS_HELLO = src("Microsoft Support: Configure Windows Hello",
@@ -254,7 +256,7 @@ FIXES = [
             a("Yes. Chrome can use **Windows Hello** to check before it fills in a saved password, and the same check can be used to reveal, copy, or edit a password. Windows Hello uses the PIN, face, or fingerprint set up for signing in to Windows. So it only keeps your husband out if he can't use that same sign-in.\n\n"
               "First, make sure the Windows sign-in is yours alone:\n"
               "1. If you both use the same Windows account, give him his own. Open **Settings**, select **Accounts** > **Other users**, then under **Add other user** select **Add account** and follow the instructions.\n"
-              "2. If he knows your PIN, change it. Open **Settings**, select **Accounts** > **Sign-in options**, then select **PIN (Windows Hello)**.\n\n"
+              "2. If he knows your PIN, change it. Open **Settings**, select **Accounts** > **Sign-in options**, then select **PIN (Windows Hello)** > **Change PIN**. You'll need your old PIN to set a new one.\n\n"
               "Then turn on the check in Chrome:\n"
               "3. At the top right, click **More**.\n"
               "4. Click **Passwords and autofill**, then **Google Password Manager**.\n"
@@ -262,9 +264,9 @@ FIXES = [
               "6. Turn on **Use Windows Hello when filling passwords**, and follow the on-screen instructions.\n\n"
               "The check is off until you turn it on."),
         ],
-        "sources": [CHROME_PW, MS_HELLO, MS_ACCOUNTS],
+        "sources": [CHROME_PW, MS_HELLO, MS_ACCOUNTS, MS_PIN],
         "follows": "Explains that the check relies on the Windows sign-in, so it fails if they share an account or PIN. Recommends a separate account for the husband and a private PIN, then gives the Chrome steps. The account is added for him so her saved passwords stay in her own account.",
-        "page_differs": "Microsoft's Windows Hello page gives Settings > Accounts > Sign-in options > PIN (Windows Hello) for setting up a PIN, and links to a separate 'Change your PIN' article that was not read. The reply stops at selecting PIN (Windows Hello).",
+        "page_differs": "",
     },
     {
         "id": "tr214-g",

@@ -1,0 +1,50 @@
+{"id": "tr163-e", "flags": []}
+{"id": "tr163-r", "flags": []}
+{"id": "tr164-a", "flags": []}
+{"id": "tr164-b", "flags": []}
+{"id": "tr164-c", "flags": []}
+{"id": "tr164-d", "flags": []}
+{"id": "tr164-e", "flags": []}
+{"id": "tr164-r", "flags": []}
+{"id": "tr165-b", "flags": []}
+{"id": "tr165-c", "flags": []}
+{"id": "tr165-d", "flags": []}
+{"id": "tr165-e", "flags": []}
+{"id": "tr165-r", "flags": []}
+{"id": "tr166-a", "flags": []}
+{"id": "tr166-c", "flags": [{"rule": "R13", "severity": "low", "quote": "It rings for one minute, even on Mute or Vibrate.", "reason": "The exact ring length and the claim that it rings through Mute or Vibrate are stated as fact without a basis in the conversation.", "suggestion": "Confirm the ring length on the Samsung page, or soften to 'It rings for a short time, even on Mute or Vibrate'.", "needs_source_check": true}]}
+{"id": "tr166-d", "flags": []}
+{"id": "tr166-r", "flags": []}
+{"id": "tr167-a", "flags": []}
+{"id": "tr167-c", "flags": []}
+{"id": "tr167-d", "flags": []}
+{"id": "tr167-e", "flags": []}
+{"id": "tr167-r", "flags": []}
+{"id": "tr168-a", "flags": []}
+{"id": "tr168-b", "flags": []}
+{"id": "tr168-c", "flags": []}
+{"id": "tr168-d", "flags": []}
+{"id": "tr168-e", "flags": []}
+{"id": "tr168-r", "flags": [{"rule": "R8", "severity": "low", "quote": "If you want screenshots to go somewhere else in future:", "reason": "The user only asked where the screenshot went, and the extra steps to change the save folder are not needed to finish the task.", "suggestion": "Drop the change-folder steps, or keep them as one short line at the end.", "needs_source_check": false}]}
+{"id": "tr169-a", "flags": []}
+{"id": "tr169-b", "flags": []}
+{"id": "tr169-d", "flags": []}
+{"id": "tr169-e", "flags": []}
+{"id": "tr170-a", "flags": []}
+{"id": "tr170-b", "flags": []}
+{"id": "tr170-c", "flags": []}
+{"id": "tr170-d", "flags": []}
+{"id": "tr170-e", "flags": [{"rule": "R13", "severity": "low", "quote": "Yes, it will warn you.", "reason": "The absolute promise that a data warning always appears on mobile data is stated as fact with no basis in the conversation.", "suggestion": "Confirm the warning behavior on the Chromebook help page, or soften to 'You may get a warning about how much data the update needs'.", "needs_source_check": true}]}
+{"id": "tr171-a", "flags": []}
+{"id": "tr171-b", "flags": []}
+{"id": "tr171-c", "flags": [{"rule": "R13", "severity": "low", "quote": "It magnifies the top third of the screen.", "reason": "The exact size of the docked magnifier area is a precise claim with no basis in the conversation.", "suggestion": "Confirm the size on the Chromebook help page, or drop the exact fraction and say it magnifies a strip at the top of the screen.", "needs_source_check": true}]}
+{"id": "tr171-d", "flags": []}
+{"id": "tr171-e", "flags": []}
+{"id": "tr171-r", "flags": []}
+{"id": "tr172-a", "flags": []}
+{"id": "tr172-b", "flags": []}
+{"id": "tr172-c", "flags": []}
+{"id": "tr172-d", "flags": []}
+{"id": "tr172-e", "flags": []}
+{"id": "tr173-a", "flags": [{"rule": "R12", "severity": "high", "quote": "Tick the items you want to remove.", "reason": "The reply has the user delete Large or unused files and Files synced to the cloud without warning that these can include personal files or without saying to back up first.", "suggestion": "Add a warning that Large or unused files can include personal photos and documents, suggest a backup first, and say what the cloud-synced option removes from this PC.", "needs_source_check": false}, {"rule": "R9", "severity": "medium", "quote": "Windows has a cleanup tool that shows what you can safely remove.", "reason": "Calling every listed item something you can safely remove is broader than the tool guarantees, since the Large or unused files group can hold the user's own files.", "suggestion": "Change 'what you can safely remove' to 'what you may want to remove, after checking the items'.", "needs_source_check": true}]}
+{"id": "tr173-b", "flags": []}

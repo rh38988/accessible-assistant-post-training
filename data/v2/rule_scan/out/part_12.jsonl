@@ -1,0 +1,50 @@
+{"id": "tr134-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Then the provider needs to look at it.", "reason": "The reply sends the user to the email provider without first asking them to re-enter the password in the Mail app, which would rule out a typo or a stale saved password.", "suggestion": "Ask the user to re-enter the password in Settings, Mail, Accounts before contacting the provider.", "needs_source_check": false}]}
+{"id": "tr135-a", "flags": []}
+{"id": "tr135-c", "flags": []}
+{"id": "tr135-d", "flags": [{"rule": "R4", "severity": "low", "quote": "link your iPhone number to your Apple Account, or set up Text Message Forwarding.", "reason": "Text Message Forwarding and Apple Account are used without any plain explanation for a user who may not know them.", "suggestion": "Add a short explanation, for example 'Text Message Forwarding (a setting that sends texts to your iPad)', or drop the term.", "needs_source_check": false}]}
+{"id": "tr135-e", "flags": []}
+{"id": "tr135-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Restart your iPhone.", "reason": "After both send steps failed, the reply moves straight to a restart and contact checks without asking what the red mark or message says now.", "suggestion": "Ask what the message says now and whether any new error appeared, then give the restart step that fits the answer.", "needs_source_check": false}]}
+{"id": "tr136-a", "flags": []}
+{"id": "tr136-b", "flags": []}
+{"id": "tr136-c", "flags": []}
+{"id": "tr136-r", "flags": []}
+{"id": "tr137-a", "flags": []}
+{"id": "tr137-b", "flags": []}
+{"id": "tr137-c", "flags": []}
+{"id": "tr137-d", "flags": []}
+{"id": "tr137-e", "flags": [{"rule": "R1", "severity": "medium", "quote": "the next step is removing any case or screen protector", "reason": "The user said they do not want to remove the screen protector, yet the reply makes removing it the next step before the service option.", "suggestion": "Present arranging service with Apple as the default next step and describe removing the protector only as an option the user can choose.", "needs_source_check": false}]}
+{"id": "tr137-r", "flags": [{"rule": "R9", "severity": "medium", "quote": "That points to the charger, not the screen.", "reason": "The reply names only the charger, but a damaged cable or the charging port could cause the same jumping, so the claim is stated more firmly than the evidence supports.", "suggestion": "Say that the charger or cable may be the cause and that a damaged charging port is also possible.", "needs_source_check": false}]}
+{"id": "tr138-a", "flags": []}
+{"id": "tr138-b", "flags": []}
+{"id": "tr138-c", "flags": [{"rule": "R14", "severity": "medium", "quote": "The spoken directions keep going, and the screen lights up near a turn.", "reason": "The user says they were driving, and the reply does not mention safety, such as pulling over before the phone is handled.", "suggestion": "Add a line to pull over somewhere safe before touching the phone, and to follow the spoken directions while driving.", "needs_source_check": false}]}
+{"id": "tr138-d", "flags": []}
+{"id": "tr138-r", "flags": []}
+{"id": "tr139-a", "flags": []}
+{"id": "tr139-b", "flags": []}
+{"id": "tr139-c", "flags": []}
+{"id": "tr139-d", "flags": []}
+{"id": "tr139-e", "flags": []}
+{"id": "tr140-a", "flags": []}
+{"id": "tr140-b", "flags": []}
+{"id": "tr140-c", "flags": []}
+{"id": "tr140-d", "flags": []}
+{"id": "tr140-e", "flags": []}
+{"id": "tr140-r", "flags": []}
+{"id": "tr141-a", "flags": []}
+{"id": "tr141-b", "flags": []}
+{"id": "tr141-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "Messages stay saved until you delete them.", "reason": "Carriers can limit how long voicemail is kept, so saying messages stay until deleted is broader than the source may support.", "suggestion": "Say that messages usually stay saved until you delete them, but the carrier may remove old ones.", "needs_source_check": true}]}
+{"id": "tr141-d", "flags": []}
+{"id": "tr141-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Follow the instructions on the screen.", "reason": "The user says the screen shows something different, but the reply repeats the same instructions and offers a fallback without asking what that screen says.", "suggestion": "Ask what the Voicemail screen shows, then give the step that matches it.", "needs_source_check": false}]}
+{"id": "tr142-a", "flags": []}
+{"id": "tr142-b", "flags": []}
+{"id": "tr142-d", "flags": []}
+{"id": "tr142-e", "flags": [{"rule": "R9", "severity": "medium", "quote": "The iPhone steps for call forwarding are for phones on a GSM network.", "reason": "The claim that these steps work only on GSM phones is not in the source and is stated as a firm rule.", "suggestion": "Say that the carrier can confirm whether forwarding is available on this line, and give the steps without tying them only to GSM.", "needs_source_check": true}]}
+{"id": "tr142-r", "flags": [{"rule": "R9", "severity": "medium", "quote": "Call forwarding works on a GSM network.", "reason": "The reply states as a firm rule that forwarding works only on GSM, which the source does not say, and uses it as the cause of the failure.", "suggestion": "Say that forwarding may depend on the network type and that the carrier can confirm whether it is set up on this line.", "needs_source_check": true}]}
+{"id": "tr143-a", "flags": [{"rule": "R13", "severity": "low", "quote": "This only works while the phone is locked.", "reason": "The limit to a locked phone is a precise claim that the conversation does not support, so it needs checking against Apple's page.", "suggestion": "Confirm on Apple's page whether the flash also works when the phone is unlocked, and reword if needed.", "needs_source_check": true}]}
+{"id": "tr143-b", "flags": []}
+{"id": "tr143-c", "flags": [{"rule": "R13", "severity": "low", "quote": "It only blinks while the phone is locked.", "reason": "The limit to a locked phone is a precise claim that the conversation does not support, so it needs checking against Apple's page.", "suggestion": "Confirm on Apple's page whether the flash also works when the phone is unlocked, and reword if needed.", "needs_source_check": true}]}
+{"id": "tr143-d", "flags": [{"rule": "R13", "severity": "low", "quote": "This only works while the phone is locked.", "reason": "The limit to a locked phone is a precise claim that the conversation does not support, so it needs checking against Apple's page.", "suggestion": "Confirm on Apple's page whether the flash also works when the phone is unlocked, and reword if needed.", "needs_source_check": true}]}
+{"id": "tr143-e", "flags": [{"rule": "R13", "severity": "low", "quote": "It only blinks while the phone is locked.", "reason": "The limit to a locked phone is a precise claim that the conversation does not support, so it needs checking against Apple's page.", "suggestion": "Confirm on Apple's page whether the flash also works when the phone is unlocked, and reword if needed.", "needs_source_check": true}]}
+{"id": "tr144-a", "flags": []}
+{"id": "tr144-b", "flags": []}
+{"id": "tr144-c", "flags": []}

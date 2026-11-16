@@ -1,0 +1,50 @@
+{"id": "tr097-a", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute to turn on.", "reason": "The duration is a precise figure with no basis shown in the cited Google page.", "suggestion": "Drop the time estimate or replace it with 'It takes only a moment to turn on.'", "needs_source_check": true}]}
+{"id": "tr097-b", "flags": []}
+{"id": "tr097-d", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute to turn on.", "reason": "The duration is a precise figure with no basis shown in the cited Google page.", "suggestion": "Drop the time estimate or replace it with 'It takes only a moment to turn on.'", "needs_source_check": true}]}
+{"id": "tr097-e", "flags": []}
+{"id": "tr097-r", "flags": []}
+{"id": "tr098-a", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute.", "reason": "The duration is a precise figure with no basis shown in the cited Microsoft page.", "suggestion": "Drop the time estimate or replace it with 'It takes only a moment.'", "needs_source_check": true}]}
+{"id": "tr098-c", "flags": []}
+{"id": "tr098-d", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute.", "reason": "The duration is a precise figure with no basis shown in the cited Microsoft page.", "suggestion": "Drop the time estimate or replace it with 'It takes only a moment.'", "needs_source_check": true}]}
+{"id": "tr098-e", "flags": []}
+{"id": "tr098-r", "flags": []}
+{"id": "tr099-a", "flags": []}
+{"id": "tr099-b", "flags": []}
+{"id": "tr099-c", "flags": []}
+{"id": "tr099-d", "flags": []}
+{"id": "tr101-a", "flags": []}
+{"id": "tr101-c", "flags": []}
+{"id": "tr101-d", "flags": []}
+{"id": "tr101-e", "flags": []}
+{"id": "tr101-r", "flags": [{"rule": "R13", "severity": "low", "quote": "Alarms you set in the Clock app still sound, and calls from favorite contacts still ring.", "reason": "The claim that favorite-contact calls still ring in Silent mode is stated as fact with no clear basis.", "suggestion": "Check this against the Apple page, and if it is not confirmed, keep only the alarm sentence.", "needs_source_check": true}]}
+{"id": "tr102-b", "flags": []}
+{"id": "tr102-e", "flags": []}
+{"id": "tr102-r", "flags": [{"rule": "R6", "severity": "medium", "quote": "Turn on Select to Speak shortcut.", "reason": "The user said the phone is a Samsung, but the steps use generic Android labels and gestures without noting that Samsung menus can differ.", "suggestion": "Note that Samsung menu names can differ and give the Samsung path, or ask which Samsung model the user has.", "needs_source_check": false}]}
+{"id": "tr103-b", "flags": []}
+{"id": "tr103-r", "flags": []}
+{"id": "tr104-a", "flags": []}
+{"id": "tr104-b", "flags": []}
+{"id": "tr104-c", "flags": []}
+{"id": "tr104-e", "flags": []}
+{"id": "tr104-r", "flags": []}
+{"id": "tr105-a", "flags": []}
+{"id": "tr105-b", "flags": []}
+{"id": "tr105-c", "flags": []}
+{"id": "tr105-d", "flags": []}
+{"id": "tr105-e", "flags": []}
+{"id": "tr105-r", "flags": []}
+{"id": "tr106-a", "flags": []}
+{"id": "tr106-b", "flags": []}
+{"id": "tr106-d", "flags": []}
+{"id": "tr106-e", "flags": []}
+{"id": "tr106-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "If it still isn't there, it may have been removed for good.", "reason": "The reply concludes the email may be gone without first checking what the user sees, such as searching All Mail.", "suggestion": "Ask what they see when they search All Mail for the sender or subject before saying it may be permanently deleted.", "needs_source_check": false}]}
+{"id": "tr107-a", "flags": []}
+{"id": "tr107-b", "flags": []}
+{"id": "tr107-c", "flags": []}
+{"id": "tr107-d", "flags": []}
+{"id": "tr107-e", "flags": []}
+{"id": "tr108-a", "flags": []}
+{"id": "tr108-c", "flags": []}
+{"id": "tr108-d", "flags": []}
+{"id": "tr108-e", "flags": []}
+{"id": "tr108-r", "flags": []}

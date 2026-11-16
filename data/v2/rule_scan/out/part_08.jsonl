@@ -1,0 +1,50 @@
+{"id": "tr084-r", "flags": []}
+{"id": "tr085-a", "flags": []}
+{"id": "tr085-b", "flags": []}
+{"id": "tr085-c", "flags": []}
+{"id": "tr085-d", "flags": []}
+{"id": "tr085-e", "flags": []}
+{"id": "tr085-r", "flags": []}
+{"id": "tr086-b", "flags": []}
+{"id": "tr087-b", "flags": []}
+{"id": "tr087-e", "flags": []}
+{"id": "tr087-r", "flags": []}
+{"id": "tr088-a", "flags": []}
+{"id": "tr088-b", "flags": []}
+{"id": "tr088-r", "flags": []}
+{"id": "tr089-a", "flags": []}
+{"id": "tr089-b", "flags": []}
+{"id": "tr089-c", "flags": []}
+{"id": "tr089-d", "flags": []}
+{"id": "tr089-e", "flags": []}
+{"id": "tr089-r", "flags": []}
+{"id": "tr090-b", "flags": []}
+{"id": "tr090-e", "flags": []}
+{"id": "tr090-r", "flags": [{"rule": "R2", "severity": "high", "quote": "change your password right away, starting with the store", "reason": "The store's leaked password is already exposed, and the reused password on the bank and email may work right now, but the reply puts those two accounts after the store.", "suggestion": "Tell the user to change the email and bank passwords first, then the store password, and say why the order matters.", "needs_source_check": false}]}
+{"id": "tr091-b", "flags": []}
+{"id": "tr091-c", "flags": []}
+{"id": "tr091-e", "flags": [{"rule": "R14", "severity": "medium", "quote": "Yes. You can add the pharmacy as a stop on the way.", "reason": "The user says they will be driving tomorrow, and the reply gives phone-tapping steps without saying to set up stops before leaving or to avoid using the phone while driving.", "suggestion": "Add a line saying to set up the stops before starting the drive, and to have a passenger change them or pull over if changes are needed on the road.", "needs_source_check": false}]}
+{"id": "tr091-r", "flags": [{"rule": "R3", "severity": "low", "quote": "Then try again.", "reason": "The reply does not name the Start button the user needs to tap to begin guidance.", "suggestion": "Say to tap Start at the bottom of the screen once the starting point shows your location.", "needs_source_check": false}]}
+{"id": "tr093-a", "flags": []}
+{"id": "tr093-b", "flags": []}
+{"id": "tr093-c", "flags": []}
+{"id": "tr093-d", "flags": []}
+{"id": "tr093-e", "flags": []}
+{"id": "tr093-r", "flags": [{"rule": "R4", "severity": "low", "quote": "the Zoom Launcher plug-in in your browser is turned off", "reason": "The term Zoom Launcher plug-in is used without a plain explanation for a user who may not know what a browser plug-in is.", "suggestion": "Add a short plain explanation, for example 'a small helper in your web browser that opens Zoom apps', or drop the term.", "needs_source_check": false}]}
+{"id": "tr094-a", "flags": []}
+{"id": "tr094-b", "flags": []}
+{"id": "tr094-d", "flags": []}
+{"id": "tr094-e", "flags": []}
+{"id": "tr094-r", "flags": []}
+{"id": "tr095-a", "flags": []}
+{"id": "tr095-b", "flags": []}
+{"id": "tr095-c", "flags": []}
+{"id": "tr095-d", "flags": []}
+{"id": "tr095-e", "flags": []}
+{"id": "tr095-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Follow the steps on the screen to buy more iCloud storage.", "reason": "The reply jumps straight to paying for more storage without first checking what the user sees, even though the earlier turn promised to look at their options.", "suggestion": "Ask what the storage screen shows, and first offer free options such as deleting old backups or large items, noting that buying storage costs money.", "needs_source_check": false}]}
+{"id": "tr096-a", "flags": [{"rule": "R4", "severity": "low", "quote": "Significant Locations turned on in Location Services", "reason": "Two-factor authentication and Significant Locations are named as requirements without a plain explanation for a user who may not know these terms.", "suggestion": "Add a short plain explanation for each, for example 'Significant Locations (a setting that remembers the places you often go)', or drop the detail if the user does not need it yet.", "needs_source_check": false}]}
+{"id": "tr096-b", "flags": []}
+{"id": "tr096-c", "flags": []}
+{"id": "tr096-d", "flags": []}
+{"id": "tr096-e", "flags": [{"rule": "R13", "severity": "low", "quote": "Under Require Security Delay, choose Always.", "reason": "The exact menu label and the Always option are stated as fact, and this could only be confirmed from the Apple source page.", "suggestion": "Check the Apple page for the exact label and option names, and reword the step if they differ.", "needs_source_check": true}]}
+{"id": "tr096-r", "flags": [{"rule": "R3", "severity": "medium", "quote": "Your iPhone has iOS 17.3 or later.", "reason": "The user is told to check the iOS version, two-factor authentication, and Find My without being told where to find any of them.", "suggestion": "Add the path for each, for example Settings, General, then About or Software Update for the iOS version, and Settings, then your name, for two-factor and Find My.", "needs_source_check": false}]}

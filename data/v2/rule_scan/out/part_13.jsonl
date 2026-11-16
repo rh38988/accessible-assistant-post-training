@@ -1,0 +1,50 @@
+{"id": "tr144-d", "flags": []}
+{"id": "tr144-e", "flags": []}
+{"id": "tr144-r", "flags": []}
+{"id": "tr145-a", "flags": []}
+{"id": "tr145-b", "flags": []}
+{"id": "tr145-c", "flags": []}
+{"id": "tr145-d", "flags": []}
+{"id": "tr145-e", "flags": []}
+{"id": "tr145-r", "flags": []}
+{"id": "tr146-a", "flags": []}
+{"id": "tr146-c", "flags": []}
+{"id": "tr146-d", "flags": []}
+{"id": "tr146-e", "flags": []}
+{"id": "tr146-r", "flags": []}
+{"id": "tr147-b", "flags": []}
+{"id": "tr147-c", "flags": [{"rule": "R13", "severity": "low", "quote": "This works when the phone is frozen with the screen on, like yours.", "reason": "The reply presents the 60-second hold as a sure fix with no stated basis.", "suggestion": "Soften it to say this often helps a frozen screen, and keep the 60-second figure only if the source page gives it.", "needs_source_check": true}]}
+{"id": "tr147-d", "flags": [{"rule": "R13", "severity": "low", "quote": "Press and hold the **power button** for about 60 seconds.", "reason": "The exact hold time is stated as fact and may not match the source page.", "suggestion": "Check the 60-second figure against the source page, and keep it only if the page gives it.", "needs_source_check": true}]}
+{"id": "tr147-e", "flags": [{"rule": "R12", "severity": "high", "quote": "A reset that erases everything is the very last thing to try", "reason": "The user is afraid of losing family photos, and the reply raises a full erase without saying to back up first.", "suggestion": "Add a line to confirm that photos are backed up to Google Photos or another cloud copy before any reset.", "needs_source_check": false}, {"rule": "R13", "severity": "low", "quote": "Press and hold the **power button** for about 60 seconds.", "reason": "The exact hold time is stated as fact and may not match the source page.", "suggestion": "Check the 60-second figure against the source page, or describe it as holding the button until the phone restarts.", "needs_source_check": true}]}
+{"id": "tr147-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Open **Settings**, tap **System**, then **Software update**, and follow the steps on the screen.", "reason": "The user reports daily freezes, and the reply jumps to a software update without asking when or where the freezing happens.", "suggestion": "First ask what the phone shows when it freezes and which apps are open, then give the update step if it fits.", "needs_source_check": false}, {"rule": "R13", "severity": "low", "quote": "Problems can start when less than 10% of the storage is free", "reason": "The 10% storage threshold is stated as fact without a basis in the conversation.", "suggestion": "Check the 10% figure against the source page, or say that low storage can slow a phone down.", "needs_source_check": true}]}
+{"id": "tr148-a", "flags": []}
+{"id": "tr148-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "If there is still no response after 25 minutes, the phone needs to be repaired.", "reason": "The reply says repair is required, which is stronger than the softer contact-a-repair-center wording used in another example.", "suggestion": "Say the phone may need a repair, and suggest contacting an authorized repair center.", "needs_source_check": true}, {"rule": "R13", "severity": "low", "quote": "no screen response for up to 25 minutes", "reason": "The 25-minute window is a precise figure with no basis in the conversation.", "suggestion": "Check the 25-minute figure against the source page, or describe it as a wait of several minutes.", "needs_source_check": true}]}
+{"id": "tr148-d", "flags": []}
+{"id": "tr148-r", "flags": [{"rule": "R4", "severity": "low", "quote": "use the **Find Hub** app", "reason": "Find Hub is a product name that a low-confidence user may not recognize, and it is not explained.", "suggestion": "Add a short explanation, for example 'the Find Hub app (Google's app for locating your phone)'.", "needs_source_check": false}, {"rule": "R13", "severity": "low", "quote": "Press and hold the **Power** button for about 35 seconds to reboot.", "reason": "The 35-second hold is stated as a precise figure with no basis in the conversation.", "suggestion": "Check the 35-second figure against the source page, or describe it as holding the button until the phone restarts.", "needs_source_check": true}]}
+{"id": "tr149-a", "flags": []}
+{"id": "tr149-b", "flags": []}
+{"id": "tr149-c", "flags": [{"rule": "R5", "severity": "medium", "quote": "If it is missing or has no bars filled, you may be out of range.", "reason": "The user already sees the Wi-Fi symbol and says the tablet works, but the reply gives the missing-symbol branch and a router restart that do not fit.", "suggestion": "Ask what the phone shows for Wi-Fi and whether the tablet uses the same network, then pick the branch that matches.", "needs_source_check": false}]}
+{"id": "tr149-d", "flags": []}
+{"id": "tr149-r", "flags": []}
+{"id": "tr150-a", "flags": [{"rule": "R4", "severity": "low", "quote": "Also check that your carrier supports SMS, MMS, or RCS.", "reason": "RCS, SMS, and MMS are abbreviations that a low-confidence user may not know, and none is explained.", "suggestion": "Add a plain explanation, for example 'RCS (a newer kind of text message)', or say 'picture and group texts' instead.", "needs_source_check": false}]}
+{"id": "tr150-b", "flags": []}
+{"id": "tr150-c", "flags": []}
+{"id": "tr150-d", "flags": []}
+{"id": "tr150-e", "flags": [{"rule": "R4", "severity": "low", "quote": "Confirm your carrier supports SMS, MMS, or RCS.", "reason": "RCS, SMS, and MMS are abbreviations that a low-confidence user may not know, and none is explained.", "suggestion": "Add a plain explanation, for example 'RCS (a newer kind of text message)', or say 'picture and group texts' instead.", "needs_source_check": false}]}
+{"id": "tr150-r", "flags": [{"rule": "R4", "severity": "low", "quote": "That message means your carrier does not currently support RCS chats.", "reason": "RCS chats is used without saying what it is, although the user quoted it from the screen.", "suggestion": "Add a plain explanation, for example 'RCS chats (a newer kind of text message)'.", "needs_source_check": false}]}
+{"id": "tr151-d", "flags": []}
+{"id": "tr151-r", "flags": []}
+{"id": "tr152-a", "flags": []}
+{"id": "tr152-b", "flags": []}
+{"id": "tr152-c", "flags": []}
+{"id": "tr152-d", "flags": []}
+{"id": "tr152-e", "flags": [{"rule": "R9", "severity": "high", "quote": "the spammer cannot see your report or know about it.", "reason": "The reply states as certain that the spammer can never learn of the report and that the user is not linked to the messages, which the conversation does not support.", "suggestion": "Limit the reply to what the source says about who sees the report, and drop the absolute wording about name links.", "needs_source_check": true}]}
+{"id": "tr152-r", "flags": []}
+{"id": "tr153-a", "flags": []}
+{"id": "tr153-b", "flags": []}
+{"id": "tr153-c", "flags": []}
+{"id": "tr153-d", "flags": []}
+{"id": "tr153-e", "flags": []}
+{"id": "tr153-r", "flags": []}
+{"id": "tr154-a", "flags": []}
+{"id": "tr154-b", "flags": []}

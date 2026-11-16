@@ -1,0 +1,50 @@
+{"id": "tr123-r", "flags": []}
+{"id": "tr124-a", "flags": []}
+{"id": "tr124-b", "flags": []}
+{"id": "tr124-c", "flags": []}
+{"id": "tr124-d", "flags": []}
+{"id": "tr124-e", "flags": [{"rule": "R12", "severity": "high", "quote": "No, deleting the app does not delete the letters or files you made with it.", "reason": "The user says they want to keep old letters, but the reply tells them the letters are safe without first asking them to check where the letters are saved or copy them somewhere safe before the app is deleted.", "suggestion": "Add a step to first confirm where the letters are saved and copy them to a safe place before deleting the app.", "needs_source_check": false}, {"rule": "R9", "severity": "medium", "quote": "No, deleting the app does not delete the letters or files you made with it.", "reason": "The claim is broader than what is certain, since some apps keep their data in other places that can be affected by removing the app.", "suggestion": "Say that letters saved in Documents or iCloud are usually kept, and that the user should check where their letters are saved first.", "needs_source_check": false}]}
+{"id": "tr124-r", "flags": [{"rule": "R4", "severity": "low", "quote": "Apple has a guide called start up in Safe Mode", "reason": "Safe Mode is named without saying what it is or what it does, which a low-confidence user may not know.", "suggestion": "Add a short plain explanation, for example 'Safe Mode (a way to start your Mac with only the basic software)', or drop the term.", "needs_source_check": false}]}
+{"id": "tr125-c", "flags": [{"rule": "R12", "severity": "high", "quote": "Delete things you do not need, such as files in your Downloads folder", "reason": "The user says they cannot save their family pictures, but the reply tells them to delete files without first saying to copy the family photos somewhere safe or check a backup.", "suggestion": "Add a line to copy the family pictures to another drive or cloud storage first, and to check each file before deleting it.", "needs_source_check": false}]}
+{"id": "tr125-d", "flags": []}
+{"id": "tr125-r", "flags": []}
+{"id": "tr126-a", "flags": []}
+{"id": "tr126-b", "flags": []}
+{"id": "tr126-c", "flags": [{"rule": "R6", "severity": "medium", "quote": "From the Energy Mode pop-up menu, choose Low Power.", "reason": "The user names an older Monterey Mac, but the steps use the Energy Mode menu and Low Power label that appear in newer macOS, so the reply may not match what this user sees.", "suggestion": "Check the Monterey steps against Apple's page and give the exact Monterey menu names, or say that the option may not be on Monterey.", "needs_source_check": true}]}
+{"id": "tr126-d", "flags": []}
+{"id": "tr126-e", "flags": []}
+{"id": "tr127-a", "flags": [{"rule": "R13", "severity": "low", "quote": "Use a drive that is at least twice the size of your Mac's storage", "reason": "The size rule is a precise figure stated as fact with no basis in the conversation.", "suggestion": "Confirm the size rule on Apple's page, or soften it to a general suggestion that the drive should be large enough for the Mac's storage.", "needs_source_check": true}]}
+{"id": "tr127-b", "flags": []}
+{"id": "tr127-c", "flags": []}
+{"id": "tr127-d", "flags": [{"rule": "R13", "severity": "low", "quote": "Use a drive at least twice the size of your Mac's storage, only for backups.", "reason": "The size rule is a precise figure stated as fact with no basis in the conversation.", "suggestion": "Confirm the size rule on Apple's page, or soften it to a general suggestion that the drive should be large enough for the Mac's storage.", "needs_source_check": true}]}
+{"id": "tr127-e", "flags": []}
+{"id": "tr127-r", "flags": [{"rule": "R9", "severity": "medium", "quote": "Your Mac lets you pick a different drive instead.", "reason": "The user has only one drive plugged in, so this assumes another drive is available and gives no fallback if it is not.", "suggestion": "Add that if there is no second drive, the user should buy or borrow one, or copy the family photos to a safe place before any erase step.", "needs_source_check": false}]}
+{"id": "tr128-a", "flags": []}
+{"id": "tr128-b", "flags": []}
+{"id": "tr128-c", "flags": []}
+{"id": "tr128-d", "flags": []}
+{"id": "tr128-r", "flags": []}
+{"id": "tr129-a", "flags": []}
+{"id": "tr129-b", "flags": []}
+{"id": "tr129-c", "flags": []}
+{"id": "tr129-d", "flags": [{"rule": "R8", "severity": "low", "quote": "If your mouse is an Apple Magic Mouse, you can use a cable instead", "reason": "The Magic Mouse cable detail is an edge case for a mouse brand the user never named and adds steps they do not need.", "suggestion": "Drop the Magic Mouse paragraph, or keep it to one short line at the end.", "needs_source_check": false}]}
+{"id": "tr129-r", "flags": []}
+{"id": "tr130-a", "flags": [{"rule": "R13", "severity": "low", "quote": "Most accounts already use two-factor authentication, so you may not need to do this.", "reason": "The claim that most accounts already have two-factor authentication is stated as fact with no basis in the conversation.", "suggestion": "Remove the claim, or say that the user can check the Sign-In & Security screen to see whether it is already on.", "needs_source_check": true}]}
+{"id": "tr130-c", "flags": [{"rule": "R13", "severity": "low", "quote": "Many accounts already have it turned on, so you may not need to do this.", "reason": "The claim that many accounts already have it turned on is stated as fact with no basis in the conversation.", "suggestion": "Remove the claim, or say that the user can check the Sign-In & Security screen to see whether it is already on.", "needs_source_check": true}]}
+{"id": "tr130-e", "flags": [{"rule": "R13", "severity": "low", "quote": "you can lower your account security within two weeks of enrollment", "reason": "The two-week window is a precise figure stated as fact with no basis in the conversation.", "suggestion": "Confirm the two-week window on Apple's page before stating it, or say that there is a short window after turning it on.", "needs_source_check": true}]}
+{"id": "tr131-a", "flags": []}
+{"id": "tr131-b", "flags": []}
+{"id": "tr131-c", "flags": []}
+{"id": "tr131-d", "flags": []}
+{"id": "tr132-a", "flags": []}
+{"id": "tr132-b", "flags": []}
+{"id": "tr132-c", "flags": []}
+{"id": "tr132-d", "flags": []}
+{"id": "tr132-e", "flags": []}
+{"id": "tr132-r", "flags": []}
+{"id": "tr133-b", "flags": []}
+{"id": "tr133-r", "flags": [{"rule": "R4", "severity": "low", "quote": "For SMS, MMS, or RCS messages without this option, contact your carrier.", "reason": "The terms SMS, MMS and RCS are used without saying what they are, which a low-confidence user may not know.", "suggestion": "Add a short plain explanation, for example 'text messages that come through your phone company (called SMS, MMS, or RCS)', or drop the terms.", "needs_source_check": false}]}
+{"id": "tr134-a", "flags": []}
+{"id": "tr134-b", "flags": []}
+{"id": "tr134-d", "flags": [{"rule": "R13", "severity": "low", "quote": "the iPhone fetches new mail in the background only when it is charging and on Wi-Fi", "reason": "The statement that mail is fetched only when charging and on Wi-Fi is a precise condition stated as fact with no basis in the conversation.", "suggestion": "Confirm this condition on Apple's page, or soften it to say that the iPhone checks for new mail on its own schedule.", "needs_source_check": true}]}
+{"id": "tr134-e", "flags": []}

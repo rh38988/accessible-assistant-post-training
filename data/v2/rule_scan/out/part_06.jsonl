@@ -1,0 +1,50 @@
+{"id": "tr061-e", "flags": []}
+{"id": "tr061-r", "flags": []}
+{"id": "tr062-a", "flags": [{"rule": "R12", "severity": "high", "quote": "Uninstall apps you don't use.", "reason": "Uninstalling an app can delete the data saved inside it, and the reply does not warn about that, while the iPhone reply on this topic does.", "suggestion": "Add a warning that uninstalling can remove the app's saved data, and suggest checking that the app syncs or backs up first.", "needs_source_check": true}, {"rule": "R13", "severity": "low", "quote": "You can reinstall them later without paying again.", "reason": "The guarantee that uninstalled apps can be reinstalled without paying again is stated as fact with no basis shown.", "suggestion": "Say that apps bought from the Play Store can usually be reinstalled free, and suggest checking the account first.", "needs_source_check": true}]}
+{"id": "tr062-b", "flags": []}
+{"id": "tr062-e", "flags": []}
+{"id": "tr063-a", "flags": []}
+{"id": "tr063-r", "flags": []}
+{"id": "tr064-b", "flags": []}
+{"id": "tr064-e", "flags": [{"rule": "R1", "severity": "medium", "quote": "Tap and drag the Flashlight button to the front of the list", "reason": "The user says their hands are stiff, but the main step depends on a two-finger style drag that needs fine hand control.", "suggestion": "Offer an easier route, such as asking Google Assistant to turn on the flashlight, or a fallback that does not need dragging.", "needs_source_check": false}]}
+{"id": "tr064-r", "flags": []}
+{"id": "tr066-a", "flags": []}
+{"id": "tr066-b", "flags": []}
+{"id": "tr066-c", "flags": []}
+{"id": "tr066-d", "flags": []}
+{"id": "tr066-e", "flags": []}
+{"id": "tr066-r", "flags": []}
+{"id": "tr067-a", "flags": [{"rule": "R13", "severity": "low", "quote": "Below about 30%, you might not hear it.", "reason": "The volume threshold is a precise figure stated as fact with no basis shown.", "suggestion": "Drop the 30 percent figure and say to raise the volume until the alarm is clearly audible, or confirm the figure on the source page.", "needs_source_check": true}, {"rule": "R13", "severity": "low", "quote": "If you set more than one alarm, leave at least 5 minutes between them.", "reason": "The 5-minute spacing rule is stated as fact with no basis shown.", "suggestion": "Confirm the 5-minute rule on the source page, or soften it to say that alarms set close together may conflict.", "needs_source_check": true}]}
+{"id": "tr067-c", "flags": []}
+{"id": "tr067-d", "flags": [{"rule": "R13", "severity": "low", "quote": "Below about 30%, you might not hear it.", "reason": "The volume threshold is a precise figure stated as fact with no basis shown.", "suggestion": "Drop the 30 percent figure and say to raise the volume until the alarm is clearly audible, or confirm the figure on the source page.", "needs_source_check": true}, {"rule": "R13", "severity": "low", "quote": "If you set more than one alarm, leave at least 5 minutes between them.", "reason": "The 5-minute spacing rule is stated as fact with no basis shown.", "suggestion": "Confirm the 5-minute rule on the source page, or soften it to say that alarms set close together may conflict.", "needs_source_check": true}]}
+{"id": "tr067-e", "flags": []}
+{"id": "tr067-r", "flags": [{"rule": "R13", "severity": "low", "quote": "Alarms set within 5 minutes of each other can cancel one another.", "reason": "The claim that alarms cancel each other within a 5-minute window is a precise cause stated as fact with no basis shown.", "suggestion": "Confirm the 5-minute cause on the source page, or say that close alarms may not both ring and suggest checking the second alarm's on switch and sound first.", "needs_source_check": true}]}
+{"id": "tr068-a", "flags": []}
+{"id": "tr068-c", "flags": []}
+{"id": "tr068-d", "flags": []}
+{"id": "tr068-e", "flags": [{"rule": "R9", "severity": "medium", "quote": "For hearing aids with no switch, pairing mode means taking them out of the charger.", "reason": "The reply states as a general rule that hearing aids with no switch enter pairing mode when taken out of the charger, which may not hold for every model.", "suggestion": "Say this is how many rechargeable models work, and tell the user to check the hearing aid's instructions if it does not match.", "needs_source_check": true}]}
+{"id": "tr068-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Restart your iPhone.", "reason": "The user says the hearing aids never show up, and the reply jumps to restarting the phone without first checking what the user sees under Hearing Devices.", "suggestion": "Ask what appears under Hearing Devices and whether the hearing aids show pairing mode before suggesting a restart.", "needs_source_check": false}]}
+{"id": "tr069-a", "flags": []}
+{"id": "tr069-b", "flags": []}
+{"id": "tr069-c", "flags": []}
+{"id": "tr069-d", "flags": []}
+{"id": "tr069-e", "flags": []}
+{"id": "tr069-r", "flags": []}
+{"id": "tr070-a", "flags": []}
+{"id": "tr070-b", "flags": []}
+{"id": "tr070-d", "flags": []}
+{"id": "tr070-e", "flags": []}
+{"id": "tr070-r", "flags": []}
+{"id": "tr071-a", "flags": []}
+{"id": "tr071-b", "flags": []}
+{"id": "tr071-c", "flags": [{"rule": "R6", "severity": "medium", "quote": "Menu names on Samsung phones can differ a little", "reason": "The user named a Galaxy S23, but the steps use generic Android labels and only say that menu names can differ.", "suggestion": "Give the Samsung path, for example Settings, then Battery and device care, then Battery, then Power mode, and say to check the exact names on the phone.", "needs_source_check": false}]}
+{"id": "tr071-d", "flags": []}
+{"id": "tr071-e", "flags": []}
+{"id": "tr071-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Restart the phone. Hold the power button for about 30 seconds, then tap Restart if it appears.", "reason": "After the user says Battery Saver did not help, the reply jumps to generic fixes (restart, update, update apps) without first checking what the user sees about battery use.", "suggestion": "Ask which apps the user sees under Battery usage or what they notice, before suggesting generic fixes.", "needs_source_check": false}]}
+{"id": "tr072-a", "flags": []}
+{"id": "tr072-b", "flags": []}
+{"id": "tr072-c", "flags": []}
+{"id": "tr072-d", "flags": []}
+{"id": "tr072-e", "flags": []}
+{"id": "tr072-r", "flags": []}
+{"id": "tr073-a", "flags": [{"rule": "R13", "severity": "low", "quote": "It can zoom up to 8 times.", "reason": "The exact maximum zoom level is a precise figure stated as fact with no basis shown.", "suggestion": "Confirm the 8x limit on the source page, or describe the zoom as strong without the number.", "needs_source_check": true}]}

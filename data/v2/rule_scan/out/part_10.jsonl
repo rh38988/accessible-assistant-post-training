@@ -1,0 +1,50 @@
+{"id": "tr109-a", "flags": []}
+{"id": "tr109-c", "flags": []}
+{"id": "tr109-d", "flags": []}
+{"id": "tr109-e", "flags": [{"rule": "R3", "severity": "medium", "quote": "Tap Display & touch.", "reason": "The user has poor eyesight and the reply gives no way to reach the setting if Display & touch is not on their phone.", "suggestion": "Add a fallback line such as: If you don't see Display & touch, search Settings for 'rotate' or tell me what you see.", "needs_source_check": false}, {"rule": "R9", "severity": "medium", "quote": "If you use TalkBack, auto-rotate must be off", "reason": "The reply states as a requirement that TalkBack users must turn auto-rotate off, which is broader than the setting's purpose.", "suggestion": "Say that turning auto-rotate off stops the screen from turning, and that this is a good choice with TalkBack, without saying it must be off.", "needs_source_check": true}]}
+{"id": "tr109-r", "flags": [{"rule": "R3", "severity": "medium", "quote": "I can't confirm another place for this setting on your phone.", "reason": "After the user reports that Display & touch is missing, the reply gives no other way to find auto-rotate and sends them only to a support link.", "suggestion": "Add a fallback before the support link, such as searching Settings for 'rotate' or using an Auto-rotate tile in Quick Settings if the phone has one.", "needs_source_check": false}]}
+{"id": "tr110-a", "flags": []}
+{"id": "tr110-b", "flags": []}
+{"id": "tr110-c", "flags": []}
+{"id": "tr110-d", "flags": []}
+{"id": "tr110-e", "flags": []}
+{"id": "tr110-r", "flags": []}
+{"id": "tr111-a", "flags": []}
+{"id": "tr111-b", "flags": []}
+{"id": "tr111-c", "flags": []}
+{"id": "tr111-e", "flags": []}
+{"id": "tr111-r", "flags": []}
+{"id": "tr117-a", "flags": []}
+{"id": "tr117-c", "flags": []}
+{"id": "tr117-d", "flags": []}
+{"id": "tr117-e", "flags": []}
+{"id": "tr117-r", "flags": [{"rule": "R13", "severity": "low", "quote": "Look on your desktop for a file named Screen Shot, followed by the date and time.", "reason": "The exact file name is stated as fact, and newer macOS versions may name screenshots 'Screenshot' instead.", "suggestion": "Say the file starts with Screenshot (or Screen Shot on older Macs), followed by the date and time.", "needs_source_check": true}]}
+{"id": "tr118-a", "flags": []}
+{"id": "tr118-b", "flags": []}
+{"id": "tr118-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "If you cannot find Backup, your phone may be a work phone, and backup does not work on those.", "reason": "One case, a managed work phone, is turned into a rule that backup never works on any work phone.", "suggestion": "Say that some work phones may not allow backup, and suggest asking the IT department if Backup is missing.", "needs_source_check": true}]}
+{"id": "tr118-d", "flags": [{"rule": "R9", "severity": "medium", "quote": "your phone may be a work phone, and backup does not work on those.", "reason": "One case, a managed work phone, is turned into a rule that backup never works on any work phone.", "suggestion": "Say that some work phones may not allow backup, and suggest asking the IT department if Backup is missing.", "needs_source_check": true}]}
+{"id": "tr118-e", "flags": [{"rule": "R4", "severity": "low", "quote": "Leave Device data unselected.", "reason": "The user's goal of skipping apps and contacts depends on knowing what Device data includes, and the term is not explained.", "suggestion": "Explain it inline, for example: Leave Device data (your apps, contacts, and settings) unselected.", "needs_source_check": false}]}
+{"id": "tr118-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "It may just need more time.", "reason": "The user says the steps were done and On does not show, but the reply recommends waiting before asking what the Backup screen displays.", "suggestion": "First ask what the Backup screen shows (whether Backup is on and whether a last backup time appears), then give the wait advice only if the backup is on.", "needs_source_check": false}]}
+{"id": "tr119-c", "flags": []}
+{"id": "tr119-e", "flags": []}
+{"id": "tr120-a", "flags": []}
+{"id": "tr120-c", "flags": [{"rule": "R11", "severity": "high", "quote": "Do not pay, and do not click the link in that text.", "reason": "The user may have a real power bill, and 'do not pay' could be read as stopping regular payments that keep the power on.", "suggestion": "Say not to buy or send crypto or click the link, and that a real bill should be checked against the number on the bill and paid the usual way.", "needs_source_check": false}, {"rule": "R9", "severity": "high", "quote": "Only scammers demand payment in cryptocurrency.", "reason": "The word 'only' turns a common scam pattern into an absolute claim about every crypto payment request.", "suggestion": "Say that scammers often demand payment in cryptocurrency, and that a request for crypto from an unexpected caller is a warning sign.", "needs_source_check": true}]}
+{"id": "tr120-e", "flags": [{"rule": "R2", "severity": "high", "quote": "If you sent crypto already, contact the exchange you used.", "reason": "The user has already put in money and cannot withdraw it, yet the time-sensitive exchange step is a conditional last item after the reporting steps.", "suggestion": "Make contacting the exchange the first step, worded as a direct instruction to ask right away whether the transfer can be stopped.", "needs_source_check": false}]}
+{"id": "tr120-f", "flags": []}
+{"id": "tr120-g", "flags": [{"rule": "R9", "severity": "high", "quote": "Only scammers demand payment in cryptocurrency.", "reason": "The word 'only' turns a common scam pattern into an absolute claim about every crypto payment request.", "suggestion": "Say that scammers often demand payment in cryptocurrency, so any unexpected request for crypto is a warning sign.", "needs_source_check": true}]}
+{"id": "tr120-r", "flags": []}
+{"id": "tr121-a", "flags": []}
+{"id": "tr121-c", "flags": []}
+{"id": "tr121-d", "flags": []}
+{"id": "tr121-r", "flags": []}
+{"id": "tr122-a", "flags": []}
+{"id": "tr122-b", "flags": []}
+{"id": "tr122-c", "flags": []}
+{"id": "tr122-d", "flags": []}
+{"id": "tr122-e", "flags": []}
+{"id": "tr122-r", "flags": []}
+{"id": "tr123-a", "flags": []}
+{"id": "tr123-b", "flags": []}
+{"id": "tr123-c", "flags": []}
+{"id": "tr123-d", "flags": []}
+{"id": "tr123-e", "flags": []}

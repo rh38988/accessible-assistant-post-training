@@ -1,0 +1,50 @@
+{"id": "tr189-b", "flags": []}
+{"id": "tr189-c", "flags": []}
+{"id": "tr189-d", "flags": []}
+{"id": "tr189-e", "flags": []}
+{"id": "tr189-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "The site may have permission to send notifications.", "reason": "The user says pop-up windows still appear, but the reply jumps to a notifications fix without first checking what the user sees.", "suggestion": "Ask what the pop-up windows look like or where they appear, then give the setting that matches their answer.", "needs_source_check": false}]}
+{"id": "tr190-a", "flags": []}
+{"id": "tr190-b", "flags": []}
+{"id": "tr190-c", "flags": []}
+{"id": "tr190-d", "flags": []}
+{"id": "tr190-e", "flags": []}
+{"id": "tr190-r", "flags": []}
+{"id": "tr191-a", "flags": []}
+{"id": "tr191-b", "flags": []}
+{"id": "tr191-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "Since you have not changed any settings", "reason": "The user said they had not changed settings that they know of, but the reply states it as certain.", "suggestion": "Say 'Since you do not remember changing any settings' instead.", "needs_source_check": false}]}
+{"id": "tr191-d", "flags": []}
+{"id": "tr191-e", "flags": []}
+{"id": "tr191-r", "flags": [{"rule": "R4", "severity": "low", "quote": "Chrome opens the Download tray.", "reason": "The term Download tray is used without saying what it is, and the user could not find it on screen.", "suggestion": "Add a short plain description, for example 'the small download box that appears at the top right', or drop the term.", "needs_source_check": false}]}
+{"id": "tr192-a", "flags": []}
+{"id": "tr192-c", "flags": []}
+{"id": "tr193-a", "flags": []}
+{"id": "tr193-b", "flags": []}
+{"id": "tr193-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "You can also just swipe the box away, and that blocks it too.", "reason": "Closing the prompt without choosing Don't allow is not clearly the same as blocking the site, so the claim is broader than the source appears to support.", "suggestion": "Say that swiping the box away only closes it, and use Don't allow if they want to block the site.", "needs_source_check": true}]}
+{"id": "tr193-d", "flags": []}
+{"id": "tr193-e", "flags": []}
+{"id": "tr193-r", "flags": []}
+{"id": "tr194-a", "flags": []}
+{"id": "tr194-b", "flags": []}
+{"id": "tr194-c", "flags": []}
+{"id": "tr194-d", "flags": []}
+{"id": "tr194-e", "flags": []}
+{"id": "tr194-r", "flags": []}
+{"id": "tr195-a", "flags": [{"rule": "R14", "severity": "medium", "quote": "Select the device you want to remove, then select Sign out.", "reason": "The user left their account open on a computer they do not own, and the reply does not address the risk or mention changing the password.", "suggestion": "Add a line advising the user to change their Google password and check recent activity after signing out.", "needs_source_check": false}]}
+{"id": "tr195-b", "flags": []}
+{"id": "tr195-c", "flags": [{"rule": "R14", "severity": "medium", "quote": "Select the library computer in the list, then select Sign out.", "reason": "The account was left signed in on a public computer, and the reply does not address the risk or mention changing the password.", "suggestion": "Add a line advising the user to change their Google password and check recent activity after signing out.", "needs_source_check": false}]}
+{"id": "tr195-d", "flags": [{"rule": "R14", "severity": "medium", "quote": "Select the computer you left it on, then select Sign out.", "reason": "The account was left open on a computer the user does not own, and the reply does not address the risk or mention changing the password.", "suggestion": "Add a line advising the user to change their Google password and check recent activity after signing out.", "needs_source_check": false}]}
+{"id": "tr196-a", "flags": []}
+{"id": "tr196-b", "flags": []}
+{"id": "tr196-c", "flags": []}
+{"id": "tr196-d", "flags": []}
+{"id": "tr196-e", "flags": [{"rule": "R13", "severity": "low", "quote": "Google does not let you add recovery info while you are locked out or in the account recovery process.", "reason": "This is a flat rule stated as fact with no basis shown, so the claim needs checking against Google's page.", "suggestion": "Confirm the wording against the Google Account Help page, or soften it to say recovery info may not be addable during account recovery.", "needs_source_check": true}]}
+{"id": "tr196-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Try again from a device you normally use to sign in.", "reason": "The user says the change gets stuck, but the reply gives generic retry branches without first asking what the user sees.", "suggestion": "First ask what message or screen appears when it gets stuck, then give the step that matches.", "needs_source_check": false}]}
+{"id": "tr197-a", "flags": [{"rule": "R12", "severity": "high", "quote": "Click Permanently delete.", "reason": "The steps permanently delete files with no reminder to back up or download anything the user may want to keep first.", "suggestion": "Add a step to download any files the user wants to keep, and say that permanent deletion cannot be undone.", "needs_source_check": false}, {"rule": "R13", "severity": "low", "quote": "The storage total can take 48 to 72 hours to update after a big deletion.", "reason": "The specific 48 to 72 hour timing is stated as fact and needs checking against the Google One page.", "suggestion": "Say the total may take a few days to update, or confirm the timing on the Google One page.", "needs_source_check": true}]}
+{"id": "tr197-b", "flags": []}
+{"id": "tr197-c", "flags": []}
+{"id": "tr197-d", "flags": [{"rule": "R12", "severity": "high", "quote": "Click Permanently delete.", "reason": "The user only asked what to do about full storage, yet the steps permanently delete files with no check for a backup or download first.", "suggestion": "Ask what the user wants to remove, and add a step to download anything they want to keep before permanent deletion.", "needs_source_check": false}]}
+{"id": "tr197-e", "flags": []}
+{"id": "tr198-a", "flags": []}
+{"id": "tr198-c", "flags": []}
+{"id": "tr198-d", "flags": []}
+{"id": "tr198-e", "flags": []}

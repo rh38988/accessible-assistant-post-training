@@ -1,0 +1,50 @@
+{"id": "pilot-001", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute", "reason": "The reply gives a specific time for the task with no basis shown.", "suggestion": "Drop the time or say 'This takes only a moment'.", "needs_source_check": false}]}
+{"id": "tr001-b", "flags": []}
+{"id": "tr001-d", "flags": []}
+{"id": "tr001-e", "flags": []}
+{"id": "tr001-r", "flags": []}
+{"id": "pilot-002", "flags": []}
+{"id": "tr002-a", "flags": []}
+{"id": "tr002-c", "flags": []}
+{"id": "tr002-e", "flags": []}
+{"id": "tr002-r", "flags": []}
+{"id": "pilot-003", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes less than a minute.", "reason": "The reply gives a specific time for the task with no basis shown.", "suggestion": "Drop the time or say 'This is quick'.", "needs_source_check": false}]}
+{"id": "tr003-b", "flags": []}
+{"id": "tr003-c", "flags": []}
+{"id": "tr003-d", "flags": []}
+{"id": "tr003-e", "flags": []}
+{"id": "tr003-r", "flags": [{"rule": "R4", "severity": "low", "quote": "Messages that go through as RCS chats come out clearer.", "reason": "The term RCS is used without an explanation.", "suggestion": "Add a short plain explanation, for example 'RCS chats (a newer kind of text message) come out clearer', or drop the term.", "needs_source_check": false}]}
+{"id": "pilot-004", "flags": []}
+{"id": "tr004-a", "flags": [{"rule": "R8", "severity": "low", "quote": "On iOS 18 or earlier, a small picture of your screenshot appears in the lower-left corner", "reason": "The split by iOS version adds detail that does not help this user take the screenshot.", "suggestion": "Drop the version split and say a small preview may appear briefly in the lower-left corner.", "needs_source_check": false}]}
+{"id": "tr004-c", "flags": []}
+{"id": "tr004-e", "flags": [{"rule": "R1", "severity": "medium", "quote": "Press the side button and the volume up button at the same time.", "reason": "The user said pressing two buttons together is hard for them, and the main steps still require it.", "suggestion": "Offer a one-touch option if the Apple source confirms one, or say plainly which steps need two buttons and what to try first.", "needs_source_check": false}, {"rule": "R9", "severity": "medium", "quote": "the only way I can give you is the two-button way", "reason": "Saying it is the only way is broader than what the reply has checked, since other built-in options may exist.", "suggestion": "Replace it with 'the two-button way is the standard method' and check the Apple page for any one-handed option.", "needs_source_check": true}]}
+{"id": "tr004-r", "flags": []}
+{"id": "pilot-005", "flags": []}
+{"id": "tr005-c", "flags": []}
+{"id": "tr005-e", "flags": []}
+{"id": "tr005-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Your husband is right, the router is the next thing to try.", "reason": "The reply moves to a router restart without first checking what the user sees in Gmail or whether other websites load.", "suggestion": "Ask what the browser shows (an error, a blank page, or a spinning circle) and whether other websites load before suggesting a router restart.", "needs_source_check": false}]}
+{"id": "pilot-006", "flags": []}
+{"id": "tr006-a", "flags": []}
+{"id": "tr006-e", "flags": []}
+{"id": "pilot-007", "flags": [{"rule": "R13", "severity": "low", "quote": "This takes about two minutes.", "reason": "The reply gives a specific time for the task with no basis shown.", "suggestion": "Drop the time or say 'This takes a few minutes'.", "needs_source_check": false}]}
+{"id": "tr007-a", "flags": []}
+{"id": "tr007-d", "flags": []}
+{"id": "tr007-e", "flags": []}
+{"id": "tr007-r", "flags": []}
+{"id": "pilot-008", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about two minutes", "reason": "The reply gives a specific time for the task with no basis shown.", "suggestion": "Drop the time or say 'This takes only a few minutes'.", "needs_source_check": false}]}
+{"id": "tr008-b", "flags": []}
+{"id": "tr008-c", "flags": []}
+{"id": "tr008-d", "flags": []}
+{"id": "tr008-e", "flags": []}
+{"id": "tr008-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "Some programs only show the change after you sign out and sign back in.", "reason": "The reply moves to signing out without first asking which program still looks small.", "suggestion": "Ask which program still looks small and whether it is an older app before suggesting a sign-out.", "needs_source_check": false}]}
+{"id": "tr009-a", "flags": [{"rule": "R4", "severity": "low", "quote": "make sure Connectivity Assist is off.", "reason": "The feature name Connectivity Assist is used without any plain explanation.", "suggestion": "Add a short plain explanation of what the setting does, or drop the step if the reply cannot confirm the name.", "needs_source_check": false}]}
+{"id": "tr009-c", "flags": []}
+{"id": "tr009-d", "flags": [{"rule": "R4", "severity": "low", "quote": "make sure Connectivity Assist is off.", "reason": "The feature name Connectivity Assist is used without any plain explanation.", "suggestion": "Add a short plain explanation of what the setting does, or drop the step if the reply cannot confirm the name.", "needs_source_check": false}]}
+{"id": "tr009-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "When the Wi-Fi setting is grayed out, the fix is to restart your iPhone.", "reason": "A restart is offered first without asking whether Airplane Mode or a restriction could be causing the gray setting.", "suggestion": "Ask what the user sees and suggest checking Airplane Mode and any Screen Time limits before restarting.", "needs_source_check": false}, {"rule": "R9", "severity": "medium", "quote": "When the Wi-Fi setting is grayed out, the fix is to restart your iPhone.", "reason": "Presenting a restart as the fix implies one cause, while a grayed-out Wi-Fi setting can have more than one cause.", "suggestion": "Change it to 'A restart often fixes a grayed-out Wi-Fi setting' and list the other checks.", "needs_source_check": true}]}
+{"id": "pilot-010", "flags": []}
+{"id": "tr010-b", "flags": []}
+{"id": "tr010-c", "flags": [{"rule": "R10", "severity": "high", "quote": "Yes, you can do it on the Apple website.", "reason": "The reply does not warn that signing in on a shared library computer can leave the Apple Account open to the next person.", "suggestion": "Add a line such as 'Only do this on a computer you trust, sign out and close the browser when you finish, and do not save the password on this computer'.", "needs_source_check": false}]}
+{"id": "tr010-d", "flags": []}
+{"id": "tr010-e", "flags": []}
+{"id": "tr010-r", "flags": []}
+{"id": "pilot-011", "flags": [{"rule": "R9", "severity": "medium", "quote": "They come back by themselves after the update.", "reason": "The reply states as certain that removed apps return on their own, which it does not show from the source.", "suggestion": "Say that removed apps keep their documents and that the user can reinstall any missing app from the App Store, after checking the Apple page.", "needs_source_check": true}]}

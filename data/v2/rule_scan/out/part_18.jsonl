@@ -1,0 +1,50 @@
+{"id": "tr198-r", "flags": []}
+{"id": "tr200-a", "flags": []}
+{"id": "tr200-b", "flags": []}
+{"id": "tr200-r", "flags": []}
+{"id": "tr201-a", "flags": []}
+{"id": "tr201-b", "flags": []}
+{"id": "tr201-c", "flags": [{"rule": "R13", "severity": "low", "quote": "Removed items can be recovered for 30 days.", "reason": "The 30-day recovery window is stated as fact and can only be checked against the Microsoft page.", "suggestion": "Confirm the 30-day window on the Microsoft page, or soften it to 'for a limited time' and point to the page.", "needs_source_check": true}]}
+{"id": "tr201-d", "flags": [{"rule": "R13", "severity": "low", "quote": "Removed items can be recovered for 30 days.", "reason": "The 30-day recovery window is stated as fact and can only be checked against the Microsoft page.", "suggestion": "Confirm the 30-day window on the Microsoft page, or soften it to 'for a limited time' and point to the page.", "needs_source_check": true}]}
+{"id": "tr201-e", "flags": []}
+{"id": "tr202-a", "flags": []}
+{"id": "tr202-b", "flags": []}
+{"id": "tr202-c", "flags": []}
+{"id": "tr202-d", "flags": []}
+{"id": "tr202-e", "flags": []}
+{"id": "tr202-r", "flags": []}
+{"id": "tr203-a", "flags": [{"rule": "R13", "severity": "low", "quote": "The reply starts at 12:00 AM on your first date and ends at 11:59 PM on your last date.", "reason": "The exact start and end clock times are stated as fact and need checking against the Gmail page.", "suggestion": "Confirm the times on the Gmail page, or drop the clock times and say the reply runs from the first day to the last day.", "needs_source_check": true}]}
+{"id": "tr203-b", "flags": []}
+{"id": "tr203-c", "flags": [{"rule": "R13", "severity": "low", "quote": "Most people will get your reply only the first time they write to you.", "reason": "The claim about how often repeat senders get the reply has no stated basis.", "suggestion": "Confirm this on the Gmail page or drop the sentence.", "needs_source_check": true}]}
+{"id": "tr203-d", "flags": []}
+{"id": "tr203-e", "flags": [{"rule": "R13", "severity": "low", "quote": "Emails in your spam folder do not get the reply either.", "reason": "A blanket claim about spam mail is stated as fact with no stated basis.", "suggestion": "Confirm this on the Gmail page or drop the sentence.", "needs_source_check": true}]}
+{"id": "tr203-r", "flags": []}
+{"id": "tr204-a", "flags": []}
+{"id": "tr204-b", "flags": []}
+{"id": "tr204-c", "flags": []}
+{"id": "tr204-d", "flags": []}
+{"id": "tr204-e", "flags": []}
+{"id": "tr204-r", "flags": []}
+{"id": "tr205-a", "flags": []}
+{"id": "tr205-b", "flags": []}
+{"id": "tr205-c", "flags": []}
+{"id": "tr205-d", "flags": []}
+{"id": "tr206-a", "flags": []}
+{"id": "tr206-b", "flags": []}
+{"id": "tr206-c", "flags": []}
+{"id": "tr206-d", "flags": []}
+{"id": "tr206-e", "flags": []}
+{"id": "tr206-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "The host may have limited captions. You can ask for them.", "reason": "After the user says no captions came up, the reply jumps to a host restriction without first checking what the user sees on screen.", "suggestion": "First ask what the user sees (for example, whether the captions button is on or a message appeared), then give the host-restriction steps.", "needs_source_check": false}]}
+{"id": "tr212-c", "flags": []}
+{"id": "tr212-e", "flags": []}
+{"id": "tr212-f", "flags": []}
+{"id": "tr212-g", "flags": []}
+{"id": "tr212-r", "flags": []}
+{"id": "tr213-a", "flags": []}
+{"id": "tr213-c", "flags": []}
+{"id": "tr213-e", "flags": []}
+{"id": "tr213-f", "flags": []}
+{"id": "tr213-g", "flags": []}
+{"id": "tr214-a", "flags": [{"rule": "R9", "severity": "high", "quote": "Once the collector gets your dispute, it must stop trying to collect until it sends written verification.", "reason": "This is a U.S. debt-collection rule stated as universal, without the condition that the dispute must be sent within the 30-day window.", "suggestion": "Say that this applies to U.S. debt collectors and to a dispute sent within 30 days of the validation notice.", "needs_source_check": true}]}
+{"id": "tr214-c", "flags": [{"rule": "R9", "severity": "high", "quote": "They also cannot harass you or call more than seven times in seven days.", "reason": "Seven calls in seven days is a U.S. presumption of harassment, not an absolute ban, and the reply does not say it applies only in the U.S.", "suggestion": "Say that more than seven calls in seven days is presumed harassment under U.S. debt-collection rules.", "needs_source_check": true}]}
+{"id": "tr214-e", "flags": []}

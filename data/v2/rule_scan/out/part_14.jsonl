@@ -1,0 +1,50 @@
+{"id": "tr154-c", "flags": []}
+{"id": "tr154-d", "flags": []}
+{"id": "tr154-r", "flags": []}
+{"id": "tr155-a", "flags": []}
+{"id": "tr155-b", "flags": []}
+{"id": "tr155-c", "flags": []}
+{"id": "tr155-d", "flags": []}
+{"id": "tr155-e", "flags": [{"rule": "R1", "severity": "medium", "quote": "If you don't see the brightness setting, tap Advanced first.", "reason": "The user said they did not want to touch any other settings, and this fallback sends them into Advanced, which holds more settings.", "suggestion": "Say that Advanced only shows more options and that nothing has to be changed there, or name the one setting to check first.", "needs_source_check": false}]}
+{"id": "tr155-r", "flags": []}
+{"id": "tr156-a", "flags": []}
+{"id": "tr156-c", "flags": []}
+{"id": "tr156-d", "flags": []}
+{"id": "tr156-e", "flags": []}
+{"id": "tr156-r", "flags": []}
+{"id": "tr157-a", "flags": []}
+{"id": "tr157-b", "flags": []}
+{"id": "tr157-c", "flags": [{"rule": "R8", "severity": "low", "quote": "Some of these steps only work on Android 14 and newer.", "reason": "The note names no step and gives no alternative, so an older phone owner cannot tell what to do.", "suggestion": "Remove the line, or say which step differs on older Android versions and what to do instead.", "needs_source_check": false}]}
+{"id": "tr157-d", "flags": []}
+{"id": "tr157-e", "flags": []}
+{"id": "tr157-r", "flags": []}
+{"id": "tr158-a", "flags": [{"rule": "R9", "severity": "high", "quote": "Once it is on, the screen locks automatically if the phone is taken from you.", "reason": "Theft Detection Lock responds to a snatch-and-run, so saying the screen locks whenever the phone is taken claims more than the feature does.", "suggestion": "Say it locks when the phone detects it was grabbed and run off with, and that other ways of taking the phone may not trigger it.", "needs_source_check": true}]}
+{"id": "tr158-c", "flags": []}
+{"id": "tr158-d", "flags": [{"rule": "R9", "severity": "high", "quote": "Once it is on, the screen locks automatically if the phone is taken from you.", "reason": "Theft Detection Lock responds to a snatch-and-run, so saying the screen locks whenever the phone is taken claims more than the feature does.", "suggestion": "Say it locks when the phone detects it was grabbed and run off with, and that other ways of taking the phone may not trigger it.", "needs_source_check": true}]}
+{"id": "tr158-e", "flags": []}
+{"id": "tr158-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "When it is grayed out, your phone doesn't support that setting.", "reason": "The reply states a cause without first checking the screen lock, which the earlier replies in this family say the setting needs.", "suggestion": "First ask whether a screen lock is set, and only then say the phone may not support the setting.", "needs_source_check": true}]}
+{"id": "tr159-a", "flags": []}
+{"id": "tr159-b", "flags": []}
+{"id": "tr159-c", "flags": []}
+{"id": "tr159-d", "flags": []}
+{"id": "tr159-r", "flags": []}
+{"id": "tr160-a", "flags": []}
+{"id": "tr160-b", "flags": []}
+{"id": "tr160-c", "flags": []}
+{"id": "tr160-d", "flags": []}
+{"id": "tr160-e", "flags": []}
+{"id": "tr160-r", "flags": []}
+{"id": "tr161-a", "flags": []}
+{"id": "tr161-b", "flags": []}
+{"id": "tr161-c", "flags": []}
+{"id": "tr161-d", "flags": []}
+{"id": "tr161-e", "flags": []}
+{"id": "tr161-r", "flags": []}
+{"id": "tr162-a", "flags": []}
+{"id": "tr162-c", "flags": [{"rule": "R13", "severity": "low", "quote": "You will not mess anything up.", "reason": "This is an absolute guarantee with no basis, since a mistyped password or a wrong network step can still cause trouble.", "suggestion": "Say the steps are safe to try and that the user can go back if anything looks wrong.", "needs_source_check": false}]}
+{"id": "tr162-d", "flags": []}
+{"id": "tr162-e", "flags": []}
+{"id": "tr162-r", "flags": []}
+{"id": "tr163-a", "flags": []}
+{"id": "tr163-c", "flags": [{"rule": "R9", "severity": "medium", "quote": "A blocked contact stays in your list but cannot reach you.", "reason": "Blocking one contact or number is stated as if it stops every call and message from this person, but he could call or text from another number.", "suggestion": "Say that blocking stops calls from this saved number, and that he may still reach the user from a different number.", "needs_source_check": false}]}
+{"id": "tr163-d", "flags": []}

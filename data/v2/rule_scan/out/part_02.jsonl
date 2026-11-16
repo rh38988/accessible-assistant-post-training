@@ -1,0 +1,50 @@
+{"id": "tr011-a", "flags": []}
+{"id": "tr011-d", "flags": []}
+{"id": "tr011-e", "flags": []}
+{"id": "tr011-r", "flags": []}
+{"id": "pilot-012", "flags": []}
+{"id": "tr012-a", "flags": []}
+{"id": "tr012-d", "flags": []}
+{"id": "tr012-r", "flags": []}
+{"id": "tr013-a", "flags": []}
+{"id": "tr013-b", "flags": []}
+{"id": "tr013-c", "flags": []}
+{"id": "tr013-e", "flags": []}
+{"id": "tr013-r", "flags": []}
+{"id": "pilot-014", "flags": []}
+{"id": "tr014-c", "flags": []}
+{"id": "tr014-e", "flags": []}
+{"id": "tr014-f", "flags": []}
+{"id": "tr014-g", "flags": []}
+{"id": "pilot-015", "flags": []}
+{"id": "tr015-c", "flags": []}
+{"id": "tr015-e", "flags": []}
+{"id": "tr015-f", "flags": []}
+{"id": "tr015-g", "flags": []}
+{"id": "tr015-r", "flags": []}
+{"id": "tr016-c", "flags": []}
+{"id": "tr016-d", "flags": []}
+{"id": "tr016-g", "flags": []}
+{"id": "tr016-r", "flags": []}
+{"id": "tr021-c", "flags": []}
+{"id": "tr021-d", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute, and you can change it back anytime.", "reason": "A specific time is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr021-e", "flags": []}
+{"id": "tr021-r", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes about a minute, and you can change it back anytime.", "reason": "A specific time is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr022-a", "flags": [{"rule": "R13", "severity": "low", "quote": "You can make the writing larger in Settings. It takes about a minute.", "reason": "A specific time is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr022-b", "flags": []}
+{"id": "tr022-c", "flags": [{"rule": "R13", "severity": "low", "quote": "Yes. You can make the writing larger in Settings. It takes about a minute.", "reason": "A specific time is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr022-d", "flags": [{"rule": "R13", "severity": "low", "quote": "You can make the writing larger in Settings. It takes about a minute.", "reason": "A specific time is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr022-e", "flags": [{"rule": "R13", "severity": "low", "quote": "This adds a **Font Size** tile to Quick Settings.", "reason": "The claim that moving the slider creates a Quick Settings tile is stated as fact with no basis shown in the source.", "suggestion": "Confirm on the source page that the tile is added this way, or give a fallback path for phones where the tile does not appear.", "needs_source_check": true}]}
+{"id": "tr022-r", "flags": []}
+{"id": "tr024-a", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes less than a minute.", "reason": "A specific time limit is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr024-b", "flags": []}
+{"id": "tr024-c", "flags": [{"rule": "R13", "severity": "low", "quote": "It takes less than a minute.", "reason": "A specific time limit is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr024-d", "flags": [{"rule": "R13", "severity": "low", "quote": "Here's how on your iPhone. It takes less than a minute.", "reason": "A specific time limit is stated as fact with no basis shown in the source.", "suggestion": "Drop the time estimate, or replace it with a rough phrase the source supports, such as 'It only takes a moment'.", "needs_source_check": true}]}
+{"id": "tr024-e", "flags": []}
+{"id": "tr025-a", "flags": []}
+{"id": "tr025-b", "flags": []}
+{"id": "tr025-c", "flags": []}
+{"id": "tr025-d", "flags": [{"rule": "R6", "severity": "medium", "quote": "Phone screens can look a little different, so here is what to look for.", "reason": "The user named a Samsung phone, but the steps use generic Android labels such as Menu icon and Ring Volume.", "suggestion": "Give the steps with Samsung's own labels for the volume panel, or say where the Samsung version differs from the generic steps.", "needs_source_check": false}]}
+{"id": "tr025-r", "flags": [{"rule": "R5", "severity": "medium", "quote": "That's normal on older Android versions. Use the arrow instead.", "reason": "The reply assumes an older Android version without first checking the user's phone brand or Android version.", "suggestion": "Ask for the phone brand and Android version, or check Settings, About phone, before choosing the arrow path.", "needs_source_check": false}]}
+{"id": "tr026-a", "flags": [{"rule": "R3", "severity": "medium", "quote": "open Control Center. If Wi-Fi Calling is available, you'll see **Wi-Fi** in the status bar there.", "reason": "The status bar indicator is at the top of the screen, not inside Control Center, so the user is sent to the wrong place to check.", "suggestion": "Tell the user to look at the top of the screen, in the status bar, for the Wi-Fi label, and drop the Control Center step.", "needs_source_check": false}]}
+{"id": "tr026-b", "flags": []}

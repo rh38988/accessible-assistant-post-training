@@ -1,0 +1,50 @@
+{"id": "tr073-b", "flags": []}
+{"id": "tr073-c", "flags": []}
+{"id": "tr073-d", "flags": []}
+{"id": "tr073-e", "flags": []}
+{"id": "tr074-b", "flags": []}
+{"id": "tr074-e", "flags": []}
+{"id": "tr075-b", "flags": []}
+{"id": "tr075-c", "flags": []}
+{"id": "tr075-e", "flags": []}
+{"id": "tr075-r", "flags": [{"rule": "R13", "severity": "low", "quote": "It rings at full volume for 5 minutes, even on silent.", "reason": "The exact five-minute ring length is stated as fact and the source page was not checked for it.", "suggestion": "Confirm the ring duration on the Google help page, or soften it to say the phone rings at full volume for a while.", "needs_source_check": true}]}
+{"id": "tr076-a", "flags": []}
+{"id": "tr076-b", "flags": []}
+{"id": "tr076-c", "flags": []}
+{"id": "tr076-d", "flags": []}
+{"id": "tr076-r", "flags": []}
+{"id": "tr077-a", "flags": []}
+{"id": "tr077-b", "flags": []}
+{"id": "tr077-c", "flags": []}
+{"id": "tr077-e", "flags": []}
+{"id": "tr077-r", "flags": [{"rule": "R9", "severity": "medium", "quote": "If nothing shows up, this feature is only on selected devices, so your phone may not have it.", "reason": "The claim that the feature is limited to selected devices is broader than anything the reply shows it is based on.", "suggestion": "Check the Google help page and either name the devices that support it or say the feature may not be on every phone.", "needs_source_check": true}]}
+{"id": "tr078-a", "flags": []}
+{"id": "tr078-d", "flags": []}
+{"id": "tr078-e", "flags": []}
+{"id": "tr078-r", "flags": [{"rule": "R9", "severity": "high", "quote": "Then your Medical ID is shared when you call or text emergency services from your iPhone.", "reason": "This states that sharing always happens in an emergency, which may not hold in every region or setup and could mislead someone relying on it in a crisis.", "suggestion": "Say it is shared when the setting is on and the call is to emergency services where the feature is supported, and advise checking the setting.", "needs_source_check": true}, {"rule": "R13", "severity": "low", "quote": "If it is off, your Medical ID information won't be shared.", "reason": "The guarantee that nothing is shared when the setting is off is stated as fact without a stated basis.", "suggestion": "Soften to say the information may not be shared if this setting is off, or cite the official page.", "needs_source_check": true}]}
+{"id": "tr079-a", "flags": []}
+{"id": "tr079-b", "flags": []}
+{"id": "tr079-c", "flags": [{"rule": "R6", "severity": "medium", "quote": "On Android, this is in the Safety app.", "reason": "The user said they have a Pixel 7, but the reply uses the generic Safety label without noting that Pixel menus may show it as Personal Safety.", "suggestion": "Add that on Pixel phones the app may be listed as Personal Safety in Settings and the Play Store.", "needs_source_check": false}]}
+{"id": "tr079-d", "flags": []}
+{"id": "tr079-e", "flags": []}
+{"id": "tr079-r", "flags": [{"rule": "R9", "severity": "medium", "quote": "This app is only on some Android phones, so yours may not have it.", "reason": "Saying the app exists only on some phones is a broad claim with no basis shown in the conversation.", "suggestion": "Check the Google help page and name which phones have the app, or say it may not be on every phone.", "needs_source_check": true}]}
+{"id": "tr080-a", "flags": []}
+{"id": "tr080-b", "flags": []}
+{"id": "tr080-c", "flags": []}
+{"id": "tr080-d", "flags": []}
+{"id": "tr080-e", "flags": []}
+{"id": "tr080-r", "flags": []}
+{"id": "tr081-c", "flags": []}
+{"id": "tr081-e", "flags": []}
+{"id": "tr082-a", "flags": []}
+{"id": "tr082-b", "flags": []}
+{"id": "tr082-d", "flags": []}
+{"id": "tr082-e", "flags": []}
+{"id": "tr082-r", "flags": []}
+{"id": "tr083-b", "flags": []}
+{"id": "tr083-r", "flags": [{"rule": "R8", "severity": "low", "quote": "On Windows 11 version 22H2 or later, Downloads is pinned there by default.", "reason": "The version number is a detail the user does not need to finish finding the file and may cause confusion.", "suggestion": "Remove the version note, or keep only 'Downloads is usually pinned here'.", "needs_source_check": false}]}
+{"id": "tr084-a", "flags": []}
+{"id": "tr084-b", "flags": []}
+{"id": "tr084-c", "flags": []}
+{"id": "tr084-d", "flags": []}
+{"id": "tr084-e", "flags": []}
