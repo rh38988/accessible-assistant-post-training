@@ -1,0 +1,24 @@
+{
+  "status": "generated",
+  "created_at_utc": "2026-11-16T03:14:40.450119+00:00",
+  "output": "eval\\outputs\\dev-sft-v2-rag-20261115.jsonl",
+  "output_sha256": "14a8316d5733cbef07b350e00778bb72a645be260506b5c238eeaa576e157509",
+  "plan": "eval\\outputs\\dev-sft-v2-rag-20261115.plan.json",
+  "scenario_count": 15,
+  "max_new_tokens": 768,
+  "hit_length_limit_ids": [],
+  "route_counts": {
+    "answer": 10,
+    "clarify": 5,
+    "insufficient": 0
+  },
+  "protected_outputs_sha256": {
+    "eval\\outputs\\eval_v1-original.jsonl": "8bdbe11aeca46709349e2efaac5a0ba2ae6201a6f669c616feba5dd43cb4608f",
+    "eval\\outputs\\eval_v1-prompt.jsonl": "ad6787c659afb8849ce908d9e2b5ba27ce4d3ac7f25fa3bf22365f1fc90dbcd3",
+    "eval\\outputs\\eval_v1-sft.jsonl": "94ed6cee73359f99b8c1017d8552c2a686513b856ac9caeee25b21433533c573",
+    "eval\\outputs\\eval_v1-rag.jsonl": "f6e650f5b9ea078332d937a38397ec98e5ffeb1dce78a6e184420bc8aeab99f3",
+    "eval\\outputs\\eval_v1-prompt_rag.jsonl": "9592177393d7a5216c7dc706e737c1ed62ca1776313ad4c47acbf47dcae858e8",
+    "eval\\outputs\\dev-sft-v2-fd4787c4a7e34e73a46019b345216f4d.jsonl": "0fb0d870696fcf4ef893ba0ea69829a775bea0cad138af92e5d7bd8d0ee9fd7c"
+  },
+  "corpus_manifest_sha256": "98ba12590680b3f0576083c84187a5570e234111c0f658b38b5b986cafa0e501"
+}
