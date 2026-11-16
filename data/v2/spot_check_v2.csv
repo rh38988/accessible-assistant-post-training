@@ -1,51 +1,753 @@
-id,task,platform,scenario,sensitive,source_url,reviewer,steps_match_source,decision,notes
-tr012-e,Attach a photo to an email,Gmail (computer),constraint,False,https://support.google.com/mail/answer/6584,Ryan,partial,keep,Image drag is on the page. Folder-to-email drag steps go beyond the page; Ryan passed it.
-tr014-r,Caller claims to be grandchild needing gift cards,any,already_acted,True,https://www.ftc.gov/node/54353,Ryan,yes,keep,Ryan passed it. Page supports report and no-emergency-money rule; no code word or money recovery on page.
-tr025-e,Turn up ring volume,Android,constraint,False,https://support.google.com/android/answer/9082609?hl=en,Ryan,yes,keep,"Page supports Down arrow, Media/Ring/Alarm."
-tr028-r,Take a screenshot,Windows 11,failure_recovery,False,https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots,Ryan,partly,fix,"Page says Screenshots folder, not inside Pictures. Removed (applied in v2.1) ""Pictures""."
-tr035-e,Back up photos,Android (Google Photos),constraint,False,https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid,Ryan,yes,keep,"Page supports daily limit, Mobile data usage, videos and roaming options."
-tr038-c,Reset forgotten Google Account password,Google Account,direct_messy,True,https://support.google.com/accounts/answer/7682439?hl=en,Ryan,partly,fix,"Page gives no recovery duration. Removed (applied in v2.1) ""It usually takes a few minutes."""
-tr040-e,Text says package could not be delivered,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam,Ryan,yes,keep,"Page supports forward to 7726, ReportFraud.ftc.gov, and checking the store account."
-tr048-a,Silence calls from unknown numbers,iPhone,direct,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Page gives no about-a-minute duration. Contacts-ring claim not stated; soften.
-tr048-d,Silence calls from unknown numbers,iPhone,followup,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Same fixes as tr048-a.
-tr049-a,Filter spam calls,Android (Pixel),direct,False,https://support.google.com/phoneapp/answer/3459196?hl=en,Ryan,yes,fix,"Page gives no about-a-minute duration. Removed (applied in v2.1) ""It takes about a minute to turn on."""
-tr050-a,Check battery health,iPhone,direct,False,https://support.apple.com/en-us/101575,,,,
-tr054-c,Share location with family,iPhone (Find My),missing_info,True,https://support.apple.com/en-us/105104,,,,
-tr054-r,Share location with family,iPhone (Find My),failure_recovery,True,https://support.apple.com/en-us/105104,,,,
-tr058-r,Delete an app,iPhone,failure_recovery,False,https://support.apple.com/en-us/101550,,,,
-tr062-d,Free up storage space,Android,followup,False,https://support.google.com/android/answer/7431795?hl=en,,,,
-tr063-d,Turn on the flashlight,iPhone,followup,False,https://support.apple.com/en-us/105001,,,,
-tr063-e,Turn on the flashlight,iPhone,constraint,False,https://support.apple.com/en-us/105001,,,,
-tr074-d,Find a lost phone,iPhone (Find My),followup,True,https://support.apple.com/en-us/101593,,,,
-tr081-b,Turn off notifications from an app,Android,missing_info,False,https://support.google.com/android/answer/9079661?hl=en,Ryan,yes,keep,Clarifying question only.
-tr081-r,Turn off notifications from an app,Android,failure_recovery,False,https://support.google.com/android/answer/9079661?hl=en,,,,
-tr088-d,Online friend asks for money,any,followup,True,https://consumer.ftc.gov/articles/what-know-about-romance-scams,,,,
-tr098-b,Make text bigger,Windows 11,missing_info,False,https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64,Ryan,yes,keep,Clarifying question only.
-tr103-e,Set a reminder,iPhone,constraint,False,https://support.apple.com/en-us/102484,Ryan,partly,fix,Applied in v2.1: iOS 26.2 without or later; Custom removed; Settings path marked as troubleshooting.
-tr104-d,Bookmark a website,Chrome (computer),followup,False,https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop,,,,
-tr107-r,Mark an email as spam,Gmail,failure_recovery,True,https://support.google.com/mail/answer/1366858/mark-or-unmark-spam-in-gmail-computer,,,,
-tr126-r,Turn on Low Power Mode,Mac laptop,failure_recovery,False,https://support.apple.com/101613,Ryan,yes,keep,Apple page gives both current and older macOS paths.
-tr129-e,Connect a Bluetooth device,Mac,constraint,False,https://support.apple.com/en-us/guide/mac-help/blth1004/mac,,,,
-tr130-d,Turn on two-factor authentication for the Apple Account,iPhone,followup,True,https://support.apple.com/en-us/102660,,,,
-tr131-e,Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain,iPhone,constraint,True,https://support.apple.com/en-us/104955,,,,
-tr131-r,Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain,iPhone,failure_recovery,True,https://support.apple.com/en-us/104955,,,,
-tr133-e,Report and block junk text messages,iPhone,constraint,True,https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios,,,,
-tr147-a,The phone is frozen or will not respond,Android,direct,False,https://support.google.com/android/answer/7664998,,,,
-tr158-b,Turn on theft protection,Android,missing_info,True,https://support.google.com/android/answer/15146908,,,,
-tr165-a,Turn on Easy mode for bigger icons and a simpler screen,Samsung Galaxy,direct,False,https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone,,,,
-tr174-r,Turn on battery saver (energy saver),Windows 11 laptop,failure_recovery,False,https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99,,,,
-tr179-e,Make the screen brighter or dimmer,Windows 11,constraint,False,https://support.microsoft.com/en-us/help/4026946,,,,
-tr186-c,Save a website as a favorite,Microsoft Edge (computer),direct_messy,False,https://support.microsoft.com/en-us/microsoft-edge/add-a-site-to-my-favorites-in-microsoft-edge-ed39f9ef-0b77-86c5-5cc5-ccf8d33350c7,,,,
-tr192-d,Save and find passwords with Google Password Manager,Chrome (computer),followup,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
-tr192-e,Save and find passwords with Google Password Manager,Chrome (computer),constraint,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
-tr192-r,Save and find passwords with Google Password Manager,Chrome (computer),failure_recovery,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
-tr195-e,Sign out of a Google Account on a shared computer or another device (from the account's devices page),Google Account,constraint,True,https://support.google.com/accounts/answer/3067630,,,,
-tr195-r,Sign out of a Google Account on a shared computer or another device (from the account's devices page),Google Account,failure_recovery,True,https://support.google.com/accounts/answer/3067630,,,,
-tr205-r,Add a contact,Google Contacts (computer),failure_recovery,False,https://support.google.com/contacts/answer/1069522?hl=en,,,,
-tr212-a,Someone sends a check and asks the user to send part of the money back,any,direct,True,https://consumer.ftc.gov/fakechecks,Ryan,partly,fix,Applied in v2.1: page does not say avoid sending back part; reworded as cover story.
-tr214-g,A caller demands payment for a debt the user does not recognize,any,prevention,True,https://www.consumer.ftc.gov/articles/debt-collection-faqs,,,,
-tr215-f,A text says the user owes an unpaid road toll,any,helper,True,https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam,,,,
-tr217-a,A caller says the user missed jury duty and must pay a fine,any,direct,True,https://www.uscourts.gov/node/14024,,,,
-tr218-e,An email claims to have embarrassing video or a password and demands payment,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail,,,,
-tr219-f,Is it safe to use public Wi-Fi (FTC),any,helper,True,https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know,,,,
-tr224-e,A company promises to stop foreclosure for an upfront fee (FTC),any,constraint,True,https://consumer.ftc.gov/articles/mortgage-relief-scams,,,,
+﻿id,conversation_v2_1,shirley_verdict,shirley_notes,revision_suggestion,source_urls_v2_1,task,platform,scenario,sensitive,source_url,reviewer,steps_match_source,decision,notes
+tr012-e,"USER:
+I'm writing an email in Gmail on my computer and my picture is already showing in a folder on the screen next to it. The little buttons at the bottom are hard for me to hit with my shaky hand. Can I just pull the picture over into the email instead of using the button?
+
+ASSISTANT:
+Yes, you can add the picture by dragging it.
+
+1. Click the picture in the folder window and hold the mouse button down.
+2. Drag it into your email window.
+3. Let go of the mouse button.
+
+If dragging is hard, the other way is the **Attach** button at the bottom of the email window.",fix,"Dragging meets the user's request and is supported by the source. However, the fallback recommends the bottom button the user explicitly finds difficult to click.",Specify the body of the message being composed and ask the user to check that the image appears after releasing it. Remove the inaccessible-button fallback; instead ask where dragging becomes difficult.,https://support.google.com/mail/answer/6584,Attach a photo to an email,Gmail (computer),constraint,False,https://support.google.com/mail/answer/6584,Ryan,partial,keep,Image drag is on the page. Folder-to-email drag steps go beyond the page; Ryan passed it.
+tr014-r,"USER:
+Oh no. I think I got scammed. A woman said my grandson was in jail and I mailed $1,500 cash to an address she gave me. Now I called my grandson's real number and he is fine. What do I do now?
+
+ASSISTANT:
+I'm sorry this happened. It is not your fault, and you did the right thing by calling your grandson.
+
+1. **Don't send any more money**, even if the caller contacts you again.
+2. Tell another trusted family member what happened so you have support.
+3. Report it to the FTC at **www.ftc.gov/complaint**.
+
+I don't have steps for getting the cash back. Reporting helps. Agree with your family that no one will ever call with an emergency request for wired money, gift cards, or cash.",fix,"I agree we should calm the user down first. But since the user already mail out money and contact grandson. The response focuses on prevention and reporting but omits a time-sensitive attempt to intercept the cash shipment, which we should focus on. ","Ask which carrier was used and whether delivery is complete, while advising immediate contact with the carrier about interception. For USPS, contact the Postal Inspection Service. Do not promise recovery; then provide ReportFraud.ftc.gov.",https://www.ftc.gov/node/54353,Caller claims to be grandchild needing gift cards,any,already_acted,True,https://www.ftc.gov/node/54353,Ryan,yes,keep,Ryan passed it. Page supports report and no-emergency-money rule; no code word or money recovery on page.
+tr025-e,"USER:
+My Android phone is quite old and I can't update it. When I press the volume button I only see a little slider with a small arrow, no menu thing. How do I make the ring louder on an older phone like that?
+
+ASSISTANT:
+On older Android phones you use the small arrow.
+
+1. Press a **volume button** on the side of the phone.
+2. At the right, tap the **Down arrow**.
+3. Find **Ring** in the list.
+4. Slide the **Ring** level to where you want it.
+
+The Down arrow is where older versions show Media, Ring, and Alarm.",keep,none,none,https://support.google.com/android/answer/9082609?hl=en,Turn up ring volume,Android,constraint,False,https://support.google.com/android/answer/9082609?hl=en,Ryan,yes,keep,"Page supports Down arrow, Media/Ring/Alarm."
+tr028-r,"USER:
+How can I take a picture of my whole screen on my Windows 11 computer?
+
+ASSISTANT:
+You can use **Snipping Tool**.
+
+1. Select **Start**, type **snipping tool**, then select **Snipping Tool**.
+2. Select **Snipping Mode**, then choose **Full screen**.
+3. Select **New**.
+
+It captures the whole screen right away.
+
+USER:
+OK it took the picture but I can't tell where it went. How do I find it?
+
+ASSISTANT:
+Snips are saved automatically in your **Screenshots** folder.
+
+1. Open **File Explorer** from the taskbar.
+2. On the left side, open the **Screenshots** folder.
+3. If you want another copy somewhere else, select **Save as** in Snipping Tool, choose a location and a name, then select **Save**.
+
+To change where snips are saved, select **See More** in Snipping Tool, then **Settings**.",fix, Not Select **Snipping Mode** is called snipping area.  And the evidence does not establish that Screenshots always appears in File Explorer's left sidebar ,"Include button locations and recognizable icons to make the instructions easier to follow. Avoid assuming that a particular folder appears in the sidebar, since layouts can differ. For locating an existing screenshot, provide an alternative such as searching in File Explorer, with a clear search scope and search term.","https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots
+https://support.microsoft.com/en-us/windows/experience/keyboard-shortcut-for-print-screen",Take a screenshot,Windows 11,failure_recovery,False,https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots,Ryan,partly,fix,"Page says Screenshots folder, not inside Pictures. Removed (applied in v2.1) ""Pictures""."
+tr035-e,"USER:
+I have a Samsung phone and a small data plan. I'd like my pictures kept safe in Google Photos, but I don't want the backup eating up my data. Can I set that up with a limit?
+
+ASSISTANT:
+Yes. Turn backup on first, then set limits for mobile data.
+
+1. Open the **Google Photos** app.
+2. Tap your **profile picture or initial** at the top right.
+3. Tap **Photos settings**, then **Backup**.
+4. Turn **Backup** on.
+5. Still in **Backup**, tap **Mobile data usage**.
+6. Set a **daily data limit** for automatic backup.
+7. Turn off **Back up videos over data** so your videos stay off mobile data.
+
+You can also choose whether to turn **Back up while roaming** on or off in the same place.",keep,None,None,https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid,Back up photos,Android (Google Photos),constraint,False,https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid,Ryan,yes,keep,"Page supports daily limit, Mobile data usage, videos and roaming options."
+tr038-c,"USER:
+I haven't used my Gmail on the computer in ages because my phone just stays logged in, but my phone broke and now the new one is asking for the password and I have no idea what it is.
+
+ASSISTANT:
+That happens a lot when a phone stays signed in for years. You can get back in through Google's account recovery.
+
+1. Go to **accounts.google.com/signin/recovery** (Google's account recovery page).
+2. Answer the questions it asks to show the account is yours. Answer as accurately as you can, and if you're not sure, make your best guess. A wrong guess doesn't end the process, and you can try again.
+3. When asked, create a **new password** that you haven't used for this account before.
+
+**Stay safe while you do this:**
+- Google staff can't help you sign in over the phone, so ignore anyone who calls or messages offering to recover your account.
+- Never share your password or any verification code with anyone.
+
+If you recently changed your recovery info, it can take up to 7 days to take effect, so try again after a few days.",keep,None,None,https://support.google.com/accounts/answer/7682439?hl=en,Reset forgotten Google Account password,Google Account,direct_messy,True,https://support.google.com/accounts/answer/7682439?hl=en,Ryan,partly,fix,"Page gives no recovery duration. Removed (applied in v2.1) ""It usually takes a few minutes."""
+tr040-e,"USER:
+I'm expecting about four packages this week from different places, so a text from USPS about a package problem could be real. It wants me to tap a link to confirm my delivery preferences. I don't remember which store each package came from.
+
+ASSISTANT:
+Please **don't tap the link** or give any information, even with several packages on the way. The link usually goes to a look-alike of a real website that asks for personal or payment details, and anything you enter goes to the scammer.
+
+1. **Don't click** the link or reply.
+2. **Check each order where you bought it.** Open the website or account of each store you ordered from, and look up the shipping and tracking information there, not through the text.
+3. **Report the text.** Use your messaging app's junk or spam option, or forward it to **7726**.
+4. You can also report it at **ReportFraud.ftc.gov**.",keep,None,None,https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam,Text says package could not be delivered,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam,Ryan,yes,keep,"Page supports forward to 7726, ReportFraud.ftc.gov, and checking the store account."
+tr048-a,"USER:
+I get a lot of spam calls from numbers I don't know. Can I make my iPhone only ring for people in my contacts?
+
+ASSISTANT:
+iPhone can silence calls from numbers that aren't in your contacts and send them to voicemail.
+
+1. Open the **Settings** app.
+2. Tap **Apps**, then **Phone**.
+3. Scroll to **Screen Unknown Callers** and tap it.
+4. Choose **Silence**.
+
+Numbers saved in your contacts are the ones you always see. Unknown callers go to voicemail, so check your voicemail now and then in case a doctor's office or pharmacy calls from a new number.
+
+Tip: save important numbers, like your doctor and pharmacy, to your contacts so they always ring through.",keep,none," Add helpful navigation cues, such as “Scroll down to find Apps, then tap it,” when accurate for the relevant iOS version, rather than only listing menu names.",https://support.apple.com/en-us/111106,Silence calls from unknown numbers,iPhone,direct,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Page gives no about-a-minute duration. Contacts-ring claim not stated; soften.
+tr048-d,"USER:
+How do I stop spam calls?
+
+ASSISTANT:
+There are a few ways to cut down on them. Is your phone an **iPhone** or an **Android** phone?
+
+USER:
+iPhone
+
+ASSISTANT:
+Thanks. iPhone can silence calls from numbers that aren't in your contacts and send them to voicemail.
+
+1. Open the **Settings** app.
+2. Tap **Apps**, then **Phone**.
+3. Scroll to **Screen Unknown Callers** and tap it.
+4. Choose **Silence**.
+
+Numbers saved in your contacts are the ones you always see. Unknown callers go to voicemail, so check your voicemail now and then in case a doctor's office or pharmacy calls from a new number.
+
+Tip: save important numbers, like your doctor and pharmacy, to your contacts so they always ring through.",keep,none," Add helpful navigation cues, such as “Scroll down to find Apps, then tap it,” when accurate for the relevant iOS version, rather than only listing menu names.",https://support.apple.com/en-us/111106,Silence calls from unknown numbers,iPhone,followup,False,https://support.apple.com/en-us/111106,Ryan,partly,fix,Same fixes as tr048-a.
+tr049-a,"USER:
+Can my Google Pixel phone filter out spam calls automatically?
+
+ASSISTANT:
+The Phone app on your Pixel can filter spam calls.
+
+1. Open the **Phone** app.
+2. Tap **More options**.
+3. Tap **Settings**.
+4. Tap **Caller ID and spam**.
+5. Make sure **See caller ID & spam** is on.
+6. Turn on **Filter spam calls**.
+
+You won't get missed call or voicemail notifications for filtered calls, but they still show in your call history, and you can still check your voicemail.
+
+If you don't see **Filter spam calls**, your phone may use **Call Screen** instead, where spam blocking is one of the options. Tell me and I'll walk you through it.",keep,none,none,https://support.google.com/phoneapp/answer/3459196?hl=en,Filter spam calls,Android (Pixel),direct,False,https://support.google.com/phoneapp/answer/3459196?hl=en,Ryan,yes,fix,"Page gives no about-a-minute duration. Removed (applied in v2.1) ""It takes about a minute to turn on."""
+tr050-a,"USER:
+My iPhone battery seems to die quickly. How do I check the battery health?
+
+ASSISTANT:
+You can check it in Settings. It takes a minute.
+
+1. Open the **Settings** app.
+2. Tap **Battery**.
+3. Tap **Battery Health**. On some versions the name is slightly different.
+4. Look at **Maximum Capacity**. This compares your battery now to when it was new. A lower number means it won't last as long between charges.
+
+If you see a message that your battery's health is **significantly degraded**, it isn't a safety problem, but a new battery would help it last longer. Apple offers battery service, and it may be covered if your phone is still under warranty.",fix,i think the instruction is clear. Maybe we can use plain words to explain some unfamiliar term as well like maxiaum capacity here,i think the instruction is clear. Maybe we can use plain words to explain some unfamiliar term as well like maxiaum capacity here,https://support.apple.com/en-us/101575,Check battery health,iPhone,direct,False,https://support.apple.com/en-us/101575,,,,
+tr054-c,"USER:
+share location
+
+ASSISTANT:
+Sure. Is your phone an **iPhone** or an **Android** phone?",keep,None,"With very little information, asking about the platform is reasonable. Complete location-sharing instructions are not required in this clarification turn.",https://support.apple.com/en-us/105104,Share location with family,iPhone (Find My),missing_info,True,https://support.apple.com/en-us/105104,,,,
+tr054-r,"USER:
+My daughter has an iPhone too. How can I let her see where I am on my iPhone while I drive to her house?
+
+ASSISTANT:
+You can do this in the **Find My** app.
+
+1. Open **Find My**.
+2. Tap the **Me** tab and turn on **Share My Location**.
+3. Tap the **People** tab, tap the **Add** button (a plus icon), then tap **Share My Location**.
+4. Choose your daughter.
+5. Pick how long to share: an hour, until the end of the day, indefinitely, or a custom period.
+
+Only share your location with people you trust.
+
+USER:
+When I tap the plus button I don't see Share My Location at all.
+
+ASSISTANT:
+When a sharing option is missing, update your iPhone.
+
+1. Update your iPhone to the latest software.
+2. Open **Find My** and try the steps again.
+
+Live Location needs both you and your daughter to have an iPhone with iOS 15 or later. Some options need iOS 17.",fix,"The earlier answer adds a custom duration not listed in the source. After failure, it immediately recommends updating without establishing the screen or version.","First ask whether the user is on Find My's People tab and what options appear, then select applicable steps. Set up sharing while safely parked, before driving.",https://support.apple.com/en-us/105104,Share location with family,iPhone (Find My),failure_recovery,True,https://support.apple.com/en-us/105104,,,,
+tr058-r,"USER:
+How can I take the Facebook app off my iPhone? I don't use it anymore.
+
+ASSISTANT:
+You can delete it from the Home Screen.
+
+1. Touch and hold the app.
+2. Tap **Remove App**.
+3. Tap **Delete App**.
+4. Tap **Delete** to confirm.
+
+Deleting an app doesn't cancel subscriptions inside it, so cancel any you don't need first.
+
+USER:
+I held it but there is no Remove App choice, or it won't let me delete it.
+
+ASSISTANT:
+A few things can cause that.
+
+1. Some built-in Apple apps can't be deleted.
+2. If it's not an Apple app, check your parental control settings and make sure deleting apps is set to **Allow**. Then try again.
+3. If your iPhone is managed by a company or school, you may not be able to delete apps. Contact your device administrator.",fix,"Although the app is explicitly Facebook, the recovery answer starts with nonremovable Apple apps. ""Check parental controls"" lacks an actionable navigation path.",Remove the irrelevant built-in-app branch. Ask whether icons jiggle or a removal icon appears after holding the app. Provide version-appropriate restriction steps; refer managed-device restrictions to the administrator.,https://support.apple.com/en-us/101550,Delete an app,iPhone,failure_recovery,False,https://support.apple.com/en-us/101550,,,,
+tr062-d,"USER:
+phone says storage full
+
+ASSISTANT:
+I can help you clear some space. Is your phone an **iPhone** or an **Android** phone?
+
+USER:
+Android, Samsung
+
+ASSISTANT:
+Thanks. Here's how to see what's using space and clear some out. It takes a few minutes.
+
+1. Open the **Settings** app.
+2. Tap **Storage**.
+3. Tap **Free up space**.
+4. Scroll to a category, then tap **Select files**. If you don't see the category, tap **Browse**.
+5. Select the files you don't need.
+6. Tap **Move files to Trash**.
+
+**Other ways to save space:**
+- If your photos are backed up in **Google Photos**, you can delete the copies on your phone. The backed-up copies stay safe in the app.
+- Uninstall apps you don't use. You can reinstall them later without paying again.
+
+Menu names vary between phones, and some of these steps need a newer version of Android. Tell me what you see if something doesn't match.",fix,"The user identifies Samsung, but the answer applies generic Android cleanup navigation. Photo-deletion advice does not distinguish ordinary Google Photos deletion from removing device copies only.","Confirm the Samsung model, One UI version, or current Storage screen. Verify backup completion, then use a verified Free up space or Delete from device workflow instead of generic deletion instructions.",https://support.google.com/android/answer/7431795?hl=en,Free up storage space,Android,followup,False,https://support.google.com/android/answer/7431795?hl=en,,,,
+tr063-d,"USER:
+my phone is dark and I need some light, where is it
+
+ASSISTANT:
+I can help with the flashlight. Is your phone an **iPhone** or an **Android** phone?
+
+USER:
+iPhone
+
+ASSISTANT:
+Got it.
+
+There are a few quick ways.
+
+**From Control Center:**
+1. If your iPhone has Face ID (no Home button), **swipe down from the top-right corner** of the screen. If it has a Home button, **swipe up from the bottom edge**.
+2. Tap the **Flashlight** button.
+3. Tap it again to turn it off.
+
+**From the Lock Screen:** press and hold the **Flashlight** button in the bottom-left corner.
+
+**With Siri:** say ""Hey Siri, turn on my flashlight.""",fix,"user ask my phone is dark and I need some light, where is it. This means they want to light up the device not open the flashlight. ",ask follow up question when not sure,https://support.apple.com/en-us/105001,Turn on the flashlight,iPhone,followup,False,https://support.apple.com/en-us/105001,,,,
+tr063-e,"USER:
+I'm in my dark garage carrying two bags of groceries and my iPhone is in my pocket. I can't use my hands at all right now. Is there any way to get the light on without touching it?
+
+ASSISTANT:
+Yes, you can ask Siri without touching the phone.
+
+1. Say **""Hey Siri, turn on my flashlight.""**
+2. When you are done, say **""Hey Siri, turn off my flashlight.""**",keep,none,none,https://support.apple.com/en-us/105001,Turn on the flashlight,iPhone,constraint,False,https://support.apple.com/en-us/105001,,,,
+tr074-d,"USER:
+I lost my phone
+
+ASSISTANT:
+I'm sorry, that's stressful. Is your phone an **iPhone** or an **Android** phone?
+
+USER:
+iPhone. I'm on my laptop now.
+
+ASSISTANT:
+Good, your laptop will work. Here's how to look for your iPhone.
+
+1. Go to **icloud.com/find** and sign in with your Apple Account. If you're asked for a verification code, select **Find Devices** instead.
+2. Select your iPhone under **All Devices**.
+3. Choose to play a sound to help find it nearby, or mark it as lost.
+
+Stay safe: Apple will never contact you to say your iPhone has been found. Don't share your passcode or any codes with anyone who calls or texts about your phone.",keep,none,none,https://support.apple.com/en-us/101593,Find a lost phone,iPhone (Find My),followup,True,https://support.apple.com/en-us/101593,,,,
+tr081-b,"USER:
+can I make an app stop bugging me
+
+ASSISTANT:
+Yes, you can turn off an app's notifications. Is your phone an **iPhone** or an **Android** phone?",keep,none,none,https://support.google.com/android/answer/9079661?hl=en,Turn off notifications from an app,Android,missing_info,False,https://support.google.com/android/answer/9079661?hl=en,Ryan,yes,keep,Clarifying question only.
+tr081-r,"USER:
+How can I turn off notifications for a weather app on my Android phone?
+
+ASSISTANT:
+You can turn them off for just that app.
+
+1. Open **Settings**.
+2. Tap **Notifications**, then **App notifications**.
+3. Under **Most recent**, tap the weather app.
+4. Turn its notifications off.
+
+USER:
+The weather app isn't in that list.
+
+ASSISTANT:
+The list may only show recent apps. Try this:
+
+1. In **App notifications**, tap the dropdown near the top and choose **All apps**.
+2. Tap the weather app and turn its notifications off.
+
+On an older Android version, there is no recent list. Tap **App notifications**, then choose the app.",keep,none, Ask about brand and visible options if the menu differs; avoid implying every older interface is identical.,https://support.google.com/android/answer/9079661?hl=en,Turn off notifications from an app,Android,failure_recovery,False,https://support.google.com/android/answer/9079661?hl=en,,,,
+tr088-d,"USER:
+my online friend needs money for an emergency, should I help?
+
+ASSISTANT:
+I'm glad you asked first. Please don't send any money or gift cards yet. **Have you met this person in person?**
+
+USER:
+No, we've only talked online for three months. He wants me to wire $2,000 for a plane ticket.
+
+ASSISTANT:
+Thank you for telling me.
+
+I'm glad you asked before sending anything. Please **don't send the money**. What you're describing matches a very common scam called a **romance scam**.
+
+**Warning signs:**
+- The person can't meet in person, often saying they work far away, like on an **oil rig** or in the military.
+- After lots of friendly messages, they ask for **money** for emergencies, travel, or fees.
+
+**What to do:**
+1. **Don't send money or gift cards** to someone you haven't met in person.
+2. **Talk to a friend or family member** you trust. People close to you can often spot things that are hard to see from the inside.
+3. You can **search his photo** online to see if it appears under other names. I can show you how.
+4. Stop talking to him, then report it at **ReportFraud.ftc.gov** and to the website or app where you met.
+
+If you've already sent money, contact your bank or the payment company right away and ask for a refund.",keep,none,none,https://consumer.ftc.gov/articles/what-know-about-romance-scams,Online friend asks for money,any,followup,True,https://consumer.ftc.gov/articles/what-know-about-romance-scams,,,,
+tr098-b,"USER:
+the writing on my computer is too small
+
+ASSISTANT:
+I can help you make it bigger. Is your computer a **Windows** computer or a **Mac**?",keep,none,none,https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64,Make text bigger,Windows 11,missing_info,False,https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64,Ryan,yes,keep,Clarifying question only.
+tr103-e,"USER:
+My iPhone is on silent almost all the time because I can't stand the noise. But I have a heart pill I must take at noon and I need the reminder to actually make a sound anyway. Can a reminder be loud even on silent? I want one for today at noon.
+
+ASSISTANT:
+Yes, you can mark a reminder as **Urgent**. Urgent alarms sound even when your iPhone is silenced. This needs **iOS 26.2** and iCloud Reminders turned on.
+
+1. Open the **Reminders** app.
+2. Tap **+ New Reminder** and type **Take heart pill**.
+3. Set the **Date and Time** to today at **12:00 PM**.
+4. Tap the reminder, then tap **Info**.
+5. Turn on **Urgent** under **Date & Time**.
+6. If urgent alarms don't sound, open **Settings**, tap **Apps**, tap **Reminders**, and under **Allow Reminders to Access** turn on **Alarms**.
+
+Urgent alarms only sound on the iPhone that Find My uses as your location.",fix,"I think it provide some unnecessary info like""This needs **iOS 26.2** and iCloud Reminders turned on."" and ""Urgent alarms only sound on the iPhone that Find My uses as your location""  that might confused the user and didn't help to get the task done","I think it provide some unnecessary info like""This needs **iOS 26.2** and iCloud Reminders turned on."" and ""Urgent alarms only sound on the iPhone that Find My uses as your location""  that might confused the user and didn't help to get the task done",https://support.apple.com/en-us/102484,Set a reminder,iPhone,constraint,False,https://support.apple.com/en-us/102484,Ryan,partly,fix,Applied in v2.1: iOS 26.2 without or later; Custom removed; Settings path marked as troubleshooting.
+tr104-d,"USER:
+how do I save a website so I can find it later
+
+ASSISTANT:
+You can bookmark it. Which browser are you using, like **Chrome**, **Safari**, or **Edge**, and is it on a **computer** or a **phone**?
+
+USER:
+Chrome on my computer
+
+ASSISTANT:
+Thanks.
+
+Here's how to save it. It takes a few seconds.
+
+1. Go to the website you want to save.
+2. Click the **bookmark icon** to the right of the address bar at the top.
+
+**To find it later:**
+- If the **bookmarks bar** is showing, click the bookmark there. To show the bar, click **More** at the top right, then **Bookmarks and lists**, then **Show bookmarks bar**.
+- Or click **More**, then **Bookmarks and lists**, then **Bookmark Manager** to see all your bookmarks.",keep,none,none,https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop,Bookmark a website,Chrome (computer),followup,False,https://support.google.com/chrome/answer/188842?hl=en&co=GENIE.Platform%3DDesktop,,,,
+tr107-r,"USER:
+Gmail on my computer: what do I click to report an email as spam?
+
+ASSISTANT:
+Here's how. It takes a few seconds.
+
+1. Open **Gmail** in your web browser.
+2. Check the box next to the email.
+3. At the top, click the **Report spam** icon.
+
+Reporting sends Google a copy of the email, which it may analyze.
+
+USER:
+Oh no, I just did that to an email from my daughter by mistake.
+
+ASSISTANT:
+That's easy to undo.
+
+1. In **Gmail**, on the left, click **More**, then click **Spam**.
+2. Check the box next to the email from your daughter.
+3. At the top, click **Not spam**.",keep,none,none,https://support.google.com/mail/answer/1366858/mark-or-unmark-spam-in-gmail-computer,Mark an email as spam,Gmail,failure_recovery,True,https://support.google.com/mail/answer/1366858/mark-or-unmark-spam-in-gmail-computer,,,,
+tr126-r,"USER:
+How do I turn on Low Power Mode on my MacBook?
+
+ASSISTANT:
+Here is how to turn it on.
+
+1. Click the **Apple** menu and choose **System Settings**.
+2. Click **Battery**.
+3. Under **Energy Mode**, open the **On battery** pop-up menu.
+4. Choose **Low Power Mode**.
+
+USER:
+My Apple menu does not say System Settings. It says System Preferences.
+
+ASSISTANT:
+That means you have an older macOS. Use these steps.
+
+1. Click the **Apple** menu and choose **System Preferences**.
+2. Click **Battery**.
+3. In the sidebar, click **Battery**, or **Power Adapter** if you want it while plugged in.
+4. From the **Energy Mode** pop-up menu, choose **Low Power**.",keep,none,none,https://support.apple.com/101613,Turn on Low Power Mode,Mac laptop,failure_recovery,False,https://support.apple.com/101613,Ryan,yes,keep,Apple page gives both current and older macOS paths.
+tr129-e,"USER:
+My Bluetooth headphones are already set up on my Mac, they just are not connected right now. I do not want to dig through System Settings every time. Is there a quicker way to connect them?
+
+ASSISTANT:
+Yes, there is a quicker way.
+
+1. Make sure your headphones are on.
+2. Click the **Bluetooth** status icon in Control Center.
+3. Select your headphones from the list.
+
+If you ever want the longer way, open the **Apple menu**, choose **System Settings**, click **Bluetooth**, point at the headphones, and click **Connect**.",fix,did not mention wheres the control center and how to access it,provide navigation of how to access the control center. Do not assume user knows that.,https://support.apple.com/en-us/guide/mac-help/blth1004/mac,Connect a Bluetooth device,Mac,constraint,False,https://support.apple.com/en-us/guide/mac-help/blth1004/mac,,,,
+tr130-d,"USER:
+i want to turn on the extra security thing for my apple account
+
+ASSISTANT:
+I can help with that. Are you using an **iPhone**, an **iPad**, or a **Mac**?
+
+USER:
+iphone
+
+ASSISTANT:
+Here is how to do it on your iPhone.
+
+1. Open **Settings**.
+2. Tap your name at the top.
+3. Tap **Sign-In & Security**.
+4. Tap **Turn on two-factor authentication**.
+5. Follow the instructions on the screen.
+
+Most accounts already use two-factor authentication, so you may not need to do this.",keep,None,None,https://support.apple.com/en-us/102660,Turn on two-factor authentication for the Apple Account,iPhone,followup,True,https://support.apple.com/en-us/102660,,,,
+tr131-e,"USER:
+I have an iPhone and an iPad. My passwords show up on my iPad but not on my iPhone, and I do not want to type them all in again by hand. How do I get them onto my iPhone?
+
+ASSISTANT:
+You can let them sync with iCloud Keychain. Do this on your iPhone.
+
+1. Open **Settings**.
+2. Tap your name at the top.
+3. Tap **iCloud**.
+4. Under **Saved to iCloud**, tap **Passwords**. On iOS 17 or earlier, tap **Passwords and Keychain**.
+5. Turn on **Sync this iPhone**. You may need your passcode or Apple Account password.
+
+Do the same on your iPad. Two-factor authentication must also be on for your Apple Account.",keep,none,axplain a bit what's  Two-factor authentication and what actions are expected to perform,"https://support.apple.com/en-us/104955
+https://support.apple.com/en-us/109016",Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain,iPhone,constraint,True,https://support.apple.com/en-us/104955,,,,
+tr131-r,"USER:
+How do I find a saved password on my iPhone? It is on iOS 18.
+
+ASSISTANT:
+Here is how to find it.
+
+1. Open the **Passwords** app.
+2. Unlock it with Face ID, Touch ID, or your passcode.
+3. Tap **All**, or choose another category.
+4. Tap the website or app you want. Your password appears.
+
+USER:
+I looked but the website I need is not in the list.
+
+ASSISTANT:
+Try these checks.
+
+1. In the Passwords app, tap **All**, so you are looking at everything.
+2. Tap **Deleted**, in case the password was removed.
+3. If you use more than one Apple device, open **Settings**, tap your name, tap **iCloud**, and under **Saved to iCloud** tap **Passwords**. Make sure **Sync this iPhone** is on.
+
+If the password was moved to a Shared Group, your iPhone needs iOS 17 or later to see it.",keep,None,None,"https://support.apple.com/en-us/104955
+https://support.apple.com/en-us/109016",Find saved passwords in the Passwords app and keep them in sync with iCloud Keychain,iPhone,failure_recovery,True,https://support.apple.com/en-us/104955,,,,
+tr133-e,"USER:
+A stranger texted my iPhone and I already wrote back to ask who they were. Now they keep texting. Can I still report them as spam?
+
+ASSISTANT:
+No, you cannot report a message after you have replied to it. You can still block them, which stops their messages from reaching you.
+
+1. Open the **Messages** app.
+2. Open the conversation with the sender and tap the person's icon at the top.
+3. Tap **Info**.
+4. Scroll down and tap **Block Contact**.
+
+The sender does not know they have been blocked.",fix,"Apple supports the limitation on using Report Junk after replying, but the answer generalizes it to all reporting being impossible.","Limit the statement to Messages' built-in Report Junk feature. Keep blocking instructions and, if needed, suggest asking the carrier about other reporting methods. Do not imply that blocking also stops messages from new numbers.",https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios,Report and block junk text messages,iPhone,constraint,True,https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios,,,,
+tr147-a,"USER:
+My Android phone is frozen. The screen is on but nothing happens when I touch it. What do I do?
+
+ASSISTANT:
+Let's restart it by force.
+
+1. Press and hold the **power button** for about 60 seconds.
+2. Keep holding it until the phone restarts.
+
+If it freezes again after it restarts, check for an update. Open **Settings**, tap **System**, then tap **Software update**. Menu names can be a little different on some phones.",keep,None,None,https://support.google.com/android/answer/7664998,The phone is frozen or will not respond,Android,direct,False,https://support.google.com/android/answer/7664998,,,,
+tr158-b,"USER:
+I want to make my phone safer in case somebody steals it. What should I turn on?
+
+ASSISTANT:
+I can help with that. Is your phone an **iPhone** or an **Android** phone?",keep,None,None,https://support.google.com/android/answer/15146908,Turn on theft protection,Android,missing_info,True,https://support.google.com/android/answer/15146908,,,,
+tr165-a,"USER:
+How do I make the icons and writing bigger on my Samsung Galaxy phone? I heard there is an Easy mode.
+
+ASSISTANT:
+Yes, Easy Mode makes the icons and text larger. Here is how to turn it on.
+
+1. Open the **Settings** app.
+2. Tap **Display**.
+3. Tap **Easy Mode**.
+4. Turn on the switch.
+
+Your screen will change to larger icons and text.",keep,None,None,https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone,Turn on Easy mode for bigger icons and a simpler screen,Samsung Galaxy,direct,False,https://www.samsung.com/ae/support/mobile-devices/using-easy-mode-on-my-samsung-phone,,,,
+tr174-r,"USER:
+Please show me how to turn on Energy saver on my Windows 11 laptop.
+
+ASSISTANT:
+Here is the quick way:
+
+1. Select the **battery icon** in the notification area, near the clock.
+2. Select the **Energy saver** quick setting.
+
+USER:
+I did that but Energy saver still does not turn on.
+
+ASSISTANT:
+Let us try the Settings route instead:
+
+1. Select **Start**, then **Settings**.
+2. Select **System**, then **Power & battery**.
+3. Expand **Energy saver**.
+4. Set **Always use energy saver** to **On**.
+
+If that does not help, restart the laptop. Select **Start**, then **Power**, then **Restart**. Then go to **Settings**, **System**, **Troubleshoot**, **Other troubleshooters**, and next to **Power** select **Run**.",keep,None,None,https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99,Turn on battery saver (energy saver),Windows 11 laptop,failure_recovery,False,https://support.microsoft.com/windows/battery-saving-tips-a850d64d-ee8e-c8d2-6c75-8ffe6ea3ea99,,,,
+tr179-e,"USER:
+My Windows 11 laptop is by a window and the light in the room changes all day. I am tired of moving the brightness by hand. Can the laptop change it by itself when the room gets lighter or darker?
+
+ASSISTANT:
+It can on some PCs. Here is how to try:
+
+1. Select **Start**, then **Settings**.
+2. Select **System**, then **Display**.
+3. Select **Brightness**.
+4. Turn on the toggle that changes brightness automatically when lighting changes.
+
+This works only on some PCs. You can still fine-tune the level with the **Brightness** slider.",keep,None,None,https://support.microsoft.com/en-us/help/4026946,Make the screen brighter or dimmer,Windows 11,constraint,False,https://support.microsoft.com/en-us/help/4026946,,,,
+tr186-c,"USER:
+My grandson put Microsoft Edge on my Windows laptop and every morning I type in the address of my crossword site by hand. It is open on the screen right now. I only ever use the three dots menu at the top because I don't trust the little buttons. Is there a way to save this site as a favorite from that menu?
+
+ASSISTANT:
+Yes. You can do it from the menu, since the crossword page is already open:
+
+1. Select **Settings and more**.
+2. Select **Favorites**.
+3. Select **More options**.
+4. Select **Add this page to favorites**.
+
+That saves only the page you are on.",keep,None,None,https://support.microsoft.com/en-us/microsoft-edge/add-a-site-to-my-favorites-in-microsoft-edge-ed39f9ef-0b77-86c5-5cc5-ccf8d33350c7,Save a website as a favorite,Microsoft Edge (computer),direct_messy,False,https://support.microsoft.com/en-us/microsoft-edge/add-a-site-to-my-favorites-in-microsoft-edge-ed39f9ef-0b77-86c5-5cc5-ccf8d33350c7,,,,
+tr192-d,"USER:
+i want chrome to remember my passwords so i dont have to write them down
+
+ASSISTANT:
+I can help with that. Are you using Chrome on a **computer** or on a **phone**?
+
+USER:
+my computer
+
+ASSISTANT:
+Thanks. Chrome can save a password when you sign in to a site:
+
+1. Go to the site's sign-in page.
+2. Enter your username and password, then submit the form.
+3. When Chrome asks to save the password, select **Save**.
+
+To see it again later:
+1. At the top right, click **More**.
+2. Click **Passwords and autofill**, then **Google Password Manager**.
+3. Under **Passwords**, select the password.
+4. On the right of your password, select **Show password**.",keep,None,None,https://support.google.com/chrome/answer/95606?hl=en,Save and find passwords with Google Password Manager,Chrome (computer),followup,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
+tr192-e,"USER:
+My husband and I share one Windows computer and Chrome has my passwords saved. I don't want him to be able to just click and see them. Can I make Chrome check that it is really me before it shows a saved password?
+
+ASSISTANT:
+Yes. On Windows, you can turn on a check:
+
+1. At the top right, click **More**.
+2. Click **Passwords and autofill**, then **Google Password Manager**.
+3. Select **Settings**.
+4. Turn on **Use Windows Hello when filling passwords**.
+5. Follow the on-screen instructions to confirm.
+
+Once it is on, Windows Hello is used when Chrome fills in a saved password, and this check can also cover revealing, copying, or editing a password. The setting is optional and off by default, so it stays off until you turn it on.",fix,"The Windows Hello option is supported, but if both people share the same Windows login and know its PIN, it cannot be presented as identifying only the wife.","Clarify whether they share a Windows account or PIN. Explain that verification relies on that Windows identity. Recommend separate Windows user accounts and private sign-in credentials, then explain the Hello option.",https://support.google.com/chrome/answer/95606?hl=en,Save and find passwords with Google Password Manager,Chrome (computer),constraint,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
+tr192-r,"USER:
+How do I get Chrome on my computer to save a password when I sign in to a website?
+
+ASSISTANT:
+Here is how:
+
+1. Go to the site's sign-in page.
+2. Enter your username and password, then submit the form.
+3. When Chrome asks to save the password, select **Save**.
+
+USER:
+Chrome never asks me to save anything. I sign in and no question comes up.
+
+ASSISTANT:
+Let's check the setting:
+
+1. At the top right, click **More**.
+2. Click **Passwords and autofill**, then **Google Password Manager**.
+3. Select **Settings** on the left.
+4. Make sure **Offer to save passwords and passkeys** is turned on.
+
+If you said no to that site before, find **Declined sites and apps** on the same page and remove the site. Chrome can then offer to save it again.",keep,None,None,https://support.google.com/chrome/answer/95606?hl=en,Save and find passwords with Google Password Manager,Chrome (computer),failure_recovery,True,https://support.google.com/chrome/answer/95606?hl=en,,,,
+tr195-e,"USER:
+My Google Account is still signed in on a hotel business center computer. I'm back in my room and can't go back down there. I only want that one computer signed out, and I want to keep using my phone and laptop as they are. What do I do?
+
+ASSISTANT:
+You can sign out only that computer:
+
+1. Go to your Google Account at myaccount.google.com.
+2. Select **Security & sign-in**.
+3. Under the **Your devices** panel, select **Manage all devices**.
+4. Select the hotel computer in the list, then select **Sign out**.
+
+This ends that one device's access to your account. Only choose the hotel computer in the list.",keep,None,"The sign-out route for one device/session is correct, but promising that one action ends all access from that computer overlooks multiple sessions. And also should remind user the potential issue",https://support.google.com/accounts/answer/3067630,Sign out of a Google Account on a shared computer or another device (from the account's devices page),Google Account,constraint,True,https://support.google.com/accounts/answer/3067630,,,,
+tr195-r,"USER:
+How do I sign my Google Account out of a shared computer I used earlier?
+
+ASSISTANT:
+You can do it from your account page:
+
+1. Go to your Google Account at myaccount.google.com.
+2. Select **Security & sign-in**.
+3. Under the **Your devices** panel, select **Manage all devices**.
+4. Select the shared computer, then select **Sign out**.
+
+USER:
+I see the same computer name listed three times. Which one do I pick?
+
+ASSISTANT:
+The same name can come from one device or from several. To be safe, sign out of all of them:
+
+1. Select the first entry with that name, then select **Sign out**.
+2. Do the same for each of the other entries with that name.",keep,None,None,https://support.google.com/accounts/answer/3067630,Sign out of a Google Account on a shared computer or another device (from the account's devices page),Google Account,failure_recovery,True,https://support.google.com/accounts/answer/3067630,,,,
+tr205-r,"USER:
+How do I add my friend Linda to Google Contacts on my computer?
+
+ASSISTANT:
+Here is how to add Linda.
+
+1. Go to contacts.google.com.
+2. At the top left, click **Create contact**, then **Create a contact**.
+3. Type Linda's details.
+4. Click **Save**.
+
+USER:
+wait, I have emailed Linda before but I never saved her anywhere, and I don't see her in my list of contacts. is she lost?
+
+ASSISTANT:
+She may not be lost. When you email someone you have not added, Google Contacts saves their address automatically under **Other contacts**.
+
+1. Go to contacts.google.com.
+2. On the left, click **Other contacts**.
+3. Look for Linda there.",keep,None,None,https://support.google.com/contacts/answer/1069522?hl=en,Add a contact,Google Contacts (computer),failure_recovery,False,https://support.google.com/contacts/answer/1069522?hl=en,,,,
+tr212-a,"USER:
+I sold my old camera online and the buyer mailed me a check for more than the price. He wants me to send him back the extra. Is that okay?
+
+ASSISTANT:
+Please do not send him anything. This is a common trick: the extra money is the bait, and the check is likely fake.
+
+1. Do not accept a check for more than the selling price.
+2. Scammers often ask you to send back the extra money as a cover story, so do not send any of it.
+3. Fake checks can look real, even to bank workers, and it can take weeks for a bank to find the fraud.
+4. Report it to the Federal Trade Commission at reportfraud.ftc.gov.
+
+If the check was already deposited, remember that seeing the money in your account does not mean the check is good. If it is fake, you may have to repay the bank.",keep,None,None,https://consumer.ftc.gov/fakechecks,Someone sends a check and asks the user to send part of the money back,any,direct,True,https://consumer.ftc.gov/fakechecks,Ryan,partly,fix,Applied in v2.1: page does not say avoid sending back part; reworded as cover story.
+tr214-g,"USER:
+What can a debt collector not do, and where do I report one who breaks the rules?
+
+ASSISTANT:
+Here is what a collector cannot do.
+
+1. Harass or threaten you, or use obscene or profane language.
+2. Call more than seven times in seven days, or contact you before 8 a.m. or after 9 p.m. unless you agree.
+3. Lie about the amount owed, pretend to be an attorney or a government representative, or threaten arrest or legal action they will not take.
+4. Reveal your debt publicly, or generally discuss it with anyone other than you or your spouse.
+
+To report one, go to the FTC at reportfraud.ftc.gov, the CFPB at cfpb.gov/complaint, or your state attorney general's office.",fix,Oversimplifies call-frequency limits without the particular-debt scope or the seven-day restriction after a conversation. It also omits exceptions such as communicating with the consumer's attorney.,"Frame the answer around covered U.S. debt collection, qualify the frequency rules and exceptions, and retain FTC, CFPB, and state attorney-general reporting routes. Do not present it as a worldwide rule.",https://www.consumer.ftc.gov/articles/debt-collection-faqs,A caller demands payment for a debt the user does not recognize,any,prevention,True,https://www.consumer.ftc.gov/articles/debt-collection-faqs,,,,
+tr215-f,"USER:
+My mom just showed me a text saying she owes a toll and there is a link. She is about to tap it. What should I tell her?
+
+ASSISTANT:
+Tell her to stop and not tap the link or reply. It is probably a scam.
+
+1. Explain that scammers want people to react quickly.
+2. Together, contact the state's tolling agency using a phone number or website you know is real, not the info in the text.
+3. Report the text with the ""report junk"" option, or forward it to 7726 (SPAM).
+4. Then delete the text.
+
+If the real agency says she owes a toll, she can handle it with them.",keep,None,None,https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam,A text says the user owes an unpaid road toll,any,helper,True,https://www.consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam,,,,
+tr217-a,"USER:
+A man called and said he is a U.S. Marshal and I missed jury duty, so I have to pay a fine or I will be arrested. Is that real?
+
+ASSISTANT:
+Hang up. Do not give him any of the information he asks for. A federal court will never threaten you or demand immediate payment.
+
+1. Hang up and contact your local court clerk's office or U.S. Marshals Service office.
+2. Find the court's contact information at uscourts.gov/court-locator.
+3. Notify the Clerk of Court's office of the U.S. District Court in your area about the call.
+
+Jurors who miss jury duty are usually contacted by the court Clerk's Office, and any fine is imposed by a judge in open court.",keep,None,None,https://www.uscourts.gov/node/14024,A caller says the user missed jury duty and must pay a fine,any,direct,True,https://www.uscourts.gov/node/14024,,,,
+tr218-e,"USER:
+The email says it will send the video to all of my friends and family within a few hours unless I pay. It says if I tell anyone or report it, it will be sent sooner. I'm so embarrassed I can't tell anyone. Should I just pay to make it go away?
+
+ASSISTANT:
+No, please do not pay. This is a scam, and there is nothing to be embarrassed about.
+
+1. Do not pay anything. Delete the message.
+2. Their claims about access to your computer or webcam are all talk, even if the message includes a real old password.
+3. If it shows a password, change the password on that account, and consider updating other passwords too.
+4. Report the message to the FTC at ReportFraud.ftc.gov.
+
+A threat to send something within hours is meant to rush you.",fix,It overgeneralizes an older article about a particular mass-email scam.,"Keep the no-payment advice and supportive tone, but say this is a common scam and a claim is not proof. Preserve necessary information for reporting before blocking. Treat concrete compromise or video evidence separately, and update any disclosed password that is still used or reused elsewhere.",https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail,An email claims to have embarrassing video or a password and demands payment,any,constraint,True,https://consumer.ftc.gov/consumer-alerts/2020/04/scam-emails-demand-bitcoin-threaten-blackmail,,,,
+tr219-f,"USER:
+My mother uses the library Wi-Fi on her laptop to pay her bills. What should I tell her so she stays safe?
+
+ASSISTANT:
+Tell her that public Wi-Fi is usually safe now, because most websites use encryption. She should check two things.
+
+1. Before she signs in, look for a lock symbol or **https** in the address bar.
+2. Use a strong password and turn on two-factor authentication when it is available.
+
+A lock symbol does not prove the site is the real one, because scammers can build fake websites that use encryption.
+
+Also help her keep her laptop's security software, operating system, and internet browser up to date. Turning on automatic updates will do much of that for her.",keep,None,None,https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know,Is it safe to use public Wi-Fi (FTC),any,helper,True,https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know,,,,
+tr224-e,"USER:
+They told me not to call my lender and not to tell my counselor, or it would ruin the deal. They want a cashier's check today for $1,500. I already got a foreclosure notice and I am scared. What do I do?
+
+ASSISTANT:
+Do not send the cashier's check. Scammers often tell you not to contact your lender or housing counselor, and no company can tell you to stop talking to your lender. Do not pay anything until a company delivers the results you want.
+
+1. Contact your servicer or lender right away. You can do this even if the foreclosure process has already started.
+2. Talk to a certified housing counselor for free. Find a HUD-approved agency at apps.hud.gov/offices/hsg/sfh/hcc/hcs.cfm.
+3. You can also call 1-888-995-HOPE (4673).",fix,"Rejecting the suspicious upfront payment and contacting the lender and HUD assistance are appropriate. However, ""Do not pay anything"" could be understood as stopping normal mortgage payments too.",Specify not paying this company's upfront relief fee. Do not independently stop ordinary mortgage payments; discuss options directly with the servicer or a HUD-approved counselor. Retain the source-supported help routes.,https://consumer.ftc.gov/articles/mortgage-relief-scams,A company promises to stop foreclosure for an upfront fee (FTC),any,constraint,True,https://consumer.ftc.gov/articles/mortgage-relief-scams,,,,
