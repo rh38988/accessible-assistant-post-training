@@ -80,8 +80,20 @@ def main():
     ap.add_argument("--target", type=int, default=1000)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--spot", type=int, default=50)
+    ap.add_argument("--rebuild-frozen", action="store_true",
+                    help="overwrite a frozen version (drops human fixes made after the AI review)")
     args = ap.parse_args()
     rng = random.Random(args.seed)
+
+    # Guard: v2.1 and later carry human fixes made directly on the frozen file
+    # (see data/v2/human_fixes/ and tools/apply_human_fixes.py). Rebuilding from the
+    # review records would silently undo them.
+    man_path = V2 / "train_v2_en.manifest.json"
+    if man_path.exists() and not args.rebuild_frozen:
+        version = json.load(open(man_path, encoding="utf-8")).get("version", "")
+        if not version.endswith("-interim"):
+            sys.exit(f"train_v2_en is frozen at {version}; not overwriting. "
+                     "To change it, edit data/v2/human_fixes/ and run tools/apply_human_fixes.py.")
 
     recs, meta, reviews, rounds = load()
     first_text = revised_ids()
@@ -221,7 +233,10 @@ def main():
         for k in keys:
             if strata[k] and len(sample) < args.spot:
                 sample.append(strata[k].pop())
-    with open(V2 / "spot_check_v2.csv", "w", newline="", encoding="utf-8") as f:
+    spot_path = V2 / "spot_check_v2.csv"
+    if spot_path.exists():
+        spot_path = V2 / "spot_check_v2.new.csv"  # never overwrite a filled-in spot check
+    with open(spot_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["id", "task", "platform", "scenario", "sensitive", "source_url",
                     "reviewer", "steps_match_source", "decision", "notes"])
