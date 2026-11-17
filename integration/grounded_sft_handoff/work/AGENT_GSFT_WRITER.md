@@ -28,6 +28,7 @@ Write `H/work/cards/<task_group>.json`:
 Rules for `model_visible_text` (this exact text is shown to the model):
 - Start with the platform and any version, e.g. "On iPhone:", "On Windows 11:", "On Android 13 and later:".
 - Include every step and condition the page gives for that procedure, with exact on-screen labels. Nothing the page does not say: no durations, no icon descriptions, no extra tips.
+- No double quotes, backslashes or line breaks (use single quotes for labels). The text is stored as JSON and must appear verbatim.
 - At most about 120 words. Split a long page into separate refs (one procedure each).
 - For multi-platform groups, make one ref per platform, so a different platform's ref can serve as a clearly marked inapplicable passage.
 

@@ -1,0 +1,45 @@
+{
+ "candidates": 19,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 5,
+  "constraint": 4,
+  "multiturn": 4
+ },
+ "tags": {
+  "conditional": 7,
+  "distractor": 8,
+  "safety": 6
+ },
+ "per_group": {
+  "battery_saver": 7,
+  "find_downloads": 6,
+  "gift_card_scam": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage"
+ ],
+ "hashes": {
+  "gsft-battery_saver-01": "48a438f10a26de935a988c11cfd2c45a7b7af454672abb669d398e289dfcfe86",
+  "gsft-battery_saver-02": "c8aa8c284ea3d60cfbb4767bbcbb216ca73504c06869ae88a301265cacd94b07",
+  "gsft-battery_saver-03": "3899b7cf8cd745ec068254882283bfc0e914fcec6797c22dfdabc3e25972b018",
+  "gsft-battery_saver-04": "1710d222c890013649263743c2125b791f6a2b89a9df2c1aea847ac424253c3c",
+  "gsft-battery_saver-05": "d2bba8764117493a048c551a7bf6d39e519446e535d69cbc12e6a7cceacb73ad",
+  "gsft-battery_saver-06": "3a35f5a62973de1b5c7ddd8451b85c447a6cf4cb14693ebccbcbe07a348cc648",
+  "gsft-battery_saver-07": "d786cd1637900cd7ac84cd2e2af7ffe161da93487f9825e2750a7e51b809a643",
+  "gsft-find_downloads-01": "e2799051156195d8e0752f383d3ee58ad3853fbb4bfc09fe0b4456116df6cc8d",
+  "gsft-find_downloads-02": "b1fbb09cd1188f0c6769e644ec5f4e7a66bb867b0a0963bd7112c90f852fcb0e",
+  "gsft-find_downloads-03": "2cfec7c48c333f07487e003191ccd80949cd8f37ae66c2f0e196fe3c71715042",
+  "gsft-find_downloads-04": "da38712cd12f951dc62551c3d1a03382122df722a4b176b21a6f47cbf8eb2d92",
+  "gsft-find_downloads-05": "f2d3babe17436e36d641c52d94185ee2c610ef4667c47709f81343708eccbfe8",
+  "gsft-find_downloads-06": "06926fe7520632951882e25836ce9e474874139293812179dce587530db09f45",
+  "gsft-gift_card_scam-01": "74e27040dc1cf9bdb898006daf5c63f8950e7a311c7346378d1eb8c73f0809dd",
+  "gsft-gift_card_scam-02": "e15a568ebb54166a126959285c46fedab10a42953d3d6368f0a719b0b951d263",
+  "gsft-gift_card_scam-03": "1cc8e380c75b968c5afda191f25a793090180abd615283a8b3ed9476eee3d7f7",
+  "gsft-gift_card_scam-04": "f8e505185fc921c5a67cc5549f9815507dfe1eb2eac159a895ccfb34d6783a5a",
+  "gsft-gift_card_scam-05": "25e46e850326310e6bf1d7872c4d1ca151b4c0d1fd6675bf29e1fe44fb4b6c15",
+  "gsft-gift_card_scam-06": "0c325101540a6b0c9f6ac851bab4cac940c8f2eabeaba48671300a6e20d45ed8"
+ }
+}

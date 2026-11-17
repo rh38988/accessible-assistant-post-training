@@ -45,7 +45,7 @@ def sha_messages(messages):
                                      separators=(",", ":")).encode("utf-8")).hexdigest()
 
 
-def load_cards(errors):
+def load_cards(errors, warnings):
     refs, groups = {}, {}
     for p in sorted((WORK / "cards").glob("*.json")):
         card = json.load(open(p, encoding="utf-8"))
@@ -60,6 +60,10 @@ def load_cards(errors):
                 errors.append(f"card {p.name}: duplicate ref_id {r.get('ref_id')}")
             if CJK.search(r.get("model_visible_text", "")):
                 errors.append(f"card {p.name} {r.get('ref_id')}: model-visible text must be English")
+            if re.search(r'["\\\n]', r.get("model_visible_text", "")):
+                # The builder JSON-escapes passages, so these would not appear verbatim in the
+                # system message and validate_grounded.py would reject the mapping.
+                warnings.append(f"card {p.name} {r.get('ref_id')}: double quote, backslash or line break; it cannot be used as an answer passage")
             refs[r["ref_id"]] = {**r, "_group": card["task_group"]}
     return refs, groups
 
@@ -159,6 +163,8 @@ def build_one(c, refs, errors, warnings):
         err(str(e))
         return None
     messages = prompt + [{"role": "assistant", "content": target}]
+    if mode == "answer" and any(sec["text"] not in messages[0]["content"] for sec in sections):
+        err("a passage does not appear verbatim in the system message")
     chars = sum(len(m["content"]) for m in messages)
     if chars / 3.2 > 900:
         warn(f"long: about {int(chars / 3.2)} tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)")
@@ -204,7 +210,7 @@ def main():
     ap.add_argument("--batch")
     a = ap.parse_args()
     errors, warnings = [], []
-    refs, groups = load_cards(errors)
+    refs, groups = load_cards(errors, warnings)
     cands = load_drafts(a.batch)
     records, provs = [], []
     for c in sorted(cands, key=lambda c: c["id"]):
