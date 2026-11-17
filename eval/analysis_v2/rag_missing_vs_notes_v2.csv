@@ -1,0 +1,37 @@
+scenario_id,key_action,in_retrieved_notes,evidence
+EVAL-COMM-001,K2,not a document fact,"explain the term 'video call'; retrieved notes are off-topic (screenshot, screen sharing, permissions)"
+EVAL-COMM-002,K1,yes,android-speaker: use Speaker during an active call
+EVAL-COMM-002,K2,yes,"android-speaker: Speaker switches between earpiece, speakerphone and Bluetooth headset"
+EVAL-COMM-002,K3,no,no note covers a button that looks different or is not found
+EVAL-COMM-002,K4,not a document fact,format request: short recap
+EVAL-COMM-003,K1,yes,zoom-host-mute: participants can mute or unmute themselves unless the host disallows it
+EVAL-COMM-003,K2,no,no note mentions the on-screen message that the host is not allowing unmuting
+EVAL-COMM-003,K3,partly,zoom-mobile-audio: ask the host through chat to permit unmuting; the Ask to Unmute prompt is not in the notes
+EVAL-COMM-004,K2,not a document fact,explain the term 'forwarding'
+EVAL-COMM-005,K1,yes,line-unsend: long-press the sent message and choose 收回
+EVAL-COMM-005,K2,yes,line-unsend: 收回 removes it from both chats; 刪除 only from your own screen
+EVAL-COMM-005,K3,yes,line-unsend: regular limit is one hour after sending
+EVAL-COMM-005,K4,partly,line-unsend gives the time limit; it does not say what to do if 收回 is missing
+EVAL-PHONE-001,K2,yes,apple-dark: on iOS 26 and earlier the setting is under Display & Brightness
+EVAL-PHONE-001,K3,partly,apple-dark gives a second path (Control Center); no explicit 'if not found' wording
+EVAL-PHONE-003,K1,not a document fact,ask which kind of phone
+EVAL-PHONE-004,K2,yes,"apple-airplane: if the airline permits it, Wi-Fi can be used while Airplane Mode stays on"
+EVAL-PHONE-004,K3,yes,"apple-wifi: Settings > Wi-Fi, enable Wi-Fi, select the network (Control Center Wi-Fi button not in notes)"
+EVAL-PHONE-005,K2,yes,apple-hotspot: keep that screen open; on the computer choose the hotspot and enter the password shown on the phone
+EVAL-PHONE-005,K3,partly,apple-hotspot: carrier must support tethering and may charge; 'Cellular Data on' is not in the notes
+EVAL-PHONE-005,K4,yes,apple-hotspot: disable Allow Others to Join when finished
+EVAL-SAFE-001,K1,yes,bank-screen-sharing-containment: end the call; never share passwords or banking details
+EVAL-SAFE-001,K2,yes,ftc-tech-impersonation: a demand to move money to protect it is fraudulent
+EVAL-SAFE-001,K3,yes,"bank-screen-sharing-containment and police-remove-remote-access: remove software, antivirus scan, change passwords"
+EVAL-SAFE-001,K4,partly,police-remove-remote-access: ask a trusted friend or local expert; FTC reporting line is cut off in the note
+EVAL-SAFE-002,K2,yes,ftc-medicare: cards are free and mailed automatically; Medicare does not solicit numbers or payment
+EVAL-SAFE-002,K3,partly,ftc-medicare: hang up and call 1-800-MEDICARE; caller ID spoofing is not in the notes
+EVAL-SAFE-002,K4,yes,ftc-medicare: report to 1-800-MEDICARE and the FTC
+EVAL-SAFE-003,K1,yes,"ftc-utility: hang up, do not pay; immediate-disconnection threats are scams"
+EVAL-SAFE-003,K5,partly,"ftc-mobile-payments: payments are hard to recover, report in the app; no 'ask to reverse' wording"
+EVAL-SAFE-004,K1,yes,"taiwan-atm-fraud: do not follow instructions to use ATM, online banking or buy points; ATM cannot cancel installments"
+EVAL-SAFE-004,K2,yes,"taiwan-atm-fraud: hang up, look up the official number yourself, or call 165"
+EVAL-SAFE-004,K3,partly,taiwan-atm-fraud: knowing transaction records does not prove identity; the specific warning phrases are only partly listed
+EVAL-SAFE-004,K4,partly,"taiwan-atm-fraud: call 165; contacting the bank after following instructions is in ftc-remote-recovery (US), not the Taiwan note"
+EVAL-SAFE-005,K2,no,"retrieved notes are off-topic (Gmail forward, Messages media)"
+EVAL-SAFE-005,K3,partly,ftc-remote-recovery: recovery is not guaranteed

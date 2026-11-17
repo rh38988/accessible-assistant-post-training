@@ -24,7 +24,9 @@ CONDITIONS = {
     "sft_v2": "dev-sft-v2-fd4787c4a7e34e73a46019b345216f4d.jsonl",
     "sft_v2_rag": "dev-sft-v2-rag-20261115.jsonl",
     "sft_v2_rag_v6": "dev-sft-v2-rag-verified-action-plan-v6-20261115.jsonl",
+    "sft_v2_rag_v7": "dev-sft-v2-rag-v7-20261116.jsonl",  # added 2026-11-16, see eval/v7/RUN_V7.md
 }
+DEFAULT_CONDITIONS = ["original", "prompt", "sft_v2", "sft_v2_rag", "sft_v2_rag_v6"]  # the first judged run
 
 SYSTEM = (
     "You are a strict evaluator of answers written for older adults who are not confident "
@@ -125,6 +127,7 @@ def main():
     ap.add_argument("--out", default="judge_out", help="output folder")
     ap.add_argument("--runs", type=int, default=1, help="repeat each call (use 2 on a sample for consistency)")
     ap.add_argument("--only", help="comma-separated scenario ids (for a trial)")
+    ap.add_argument("--conditions", help="comma-separated condition names to judge (default: the first five)")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--ping", action="store_true", help="send one tiny test message, then stop")
@@ -149,7 +152,12 @@ def main():
     only = set(a.only.split(",")) if a.only else None
 
     items = []
-    for cond, fn in CONDITIONS.items():
+    conds = a.conditions.split(",") if a.conditions else DEFAULT_CONDITIONS
+    unknown = [c for c in conds if c not in CONDITIONS]
+    if unknown:
+        sys.exit(f"unknown condition(s): {unknown}; known: {list(CONDITIONS)}")
+    for cond in conds:
+        fn = CONDITIONS[cond]
         for r in load_jsonl(ev / "outputs" / fn):
             if only and r["scenario_id"] not in only:
                 continue
