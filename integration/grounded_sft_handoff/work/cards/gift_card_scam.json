@@ -42,13 +42,13 @@
    "url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Companies and agencies that never ask for gift card payment",
+   "section": "Introduction (first sentence); Common Gift Card Scams (second sentence, page starts it with 'But')",
    "applicability": "Any device",
    "platform": "Any device",
    "app": "none",
    "verified_excerpt": "No real business or government agency will ever tell you to buy a gift card to pay them.",
    "model_visible_text": "No real business or government agency will ever tell you to buy a gift card to pay them. Government agencies won't contact you to demand immediate payment, and they never demand payment by gift card.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; sentences copied from the named section; excerpt quoted exactly"
+   "extraction_method": "WebFetch of the official page on 2026-11-17; sentences copied from the named section; excerpt quoted exactly; 2026-11-17 section label corrected after review pilot r2 (page headings re-read)"
   },
   {
    "ref_id": "gift-card-prize",
@@ -58,13 +58,13 @@
    "url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Common Gift Card Scams (Scammers say you've won a prize)",
+   "section": "Common Gift Card Scams",
    "applicability": "Any device",
    "platform": "Any device",
    "app": "none",
    "verified_excerpt": "No honest business or agency will ever make you buy a gift card to pay them for a prize.",
    "model_visible_text": "No honest business or agency will ever make you buy a gift card to pay them for a prize.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; sentence copied from the named section; excerpt quoted exactly"
+   "extraction_method": "WebFetch of the official page on 2026-11-17; sentence copied from the named section; excerpt quoted exactly; 2026-11-17 section label corrected after review pilot r2 (page headings re-read)"
   },
   {
    "ref_id": "gift-card-report-company",

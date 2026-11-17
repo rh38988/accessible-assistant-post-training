@@ -923,6 +923,175 @@
      "review_id": "review-gsft-gift_card_scam-05-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-find_downloads-02",
+   "candidate_id": "gsft-find_downloads-02-v3",
+   "task_id": "TR-083",
+   "task_group": "find_downloads",
+   "source_group": "microsoft_find_your_files_windows11",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my Windows 11 laptop. Yesterday I saved an attachment from an email, and I think it went into my Downloads folder, but I don't know how to get there. How do I find the Downloads folder and look for the file?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Windows 11 laptop and asks how to reach the Downloads folder, so the Windows 11 File Explorer passages apply. The Chrome passage is the inapplicable distractor. The page says Downloads is one of the known folders in Quick access and that files can be searched from a folder like Downloads. It does not say where email attachments are saved, so the reply does not claim that.",
+   "source_ref_ids": [
+    "find-downloads-win11-taskbar",
+    "find-downloads-win11-quickaccess",
+    "find-downloads-chrome-menu"
+   ],
+   "target": "Here is how to find your Downloads folder on your Windows 11 laptop:\n1. Select **File Explorer** from the taskbar.\n2. In **Quick access**, find **Downloads**. It is one of the main folders shown there.\n3. To find your file, search from the **Downloads** folder.",
+   "author_note": "Must cover opening File Explorer, locating Downloads under Quick access, and searching from Downloads. The page does not give a step to open Downloads from Quick access, so the reply names it without a click path. Source gap: Windows 11 download-specific guidance is limited.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-find_downloads-02-v1",
+     "to_candidate": "gsft-find_downloads-02-v2",
+     "reason": "Review pilot r1: the target claimed the email attachment went to Downloads, which no official page supports. The user turn now says they think it went to Downloads, and the target only shows how to reach and search Downloads.",
+     "changed_fields": [
+      "messages",
+      "source_conversation",
+      "target",
+      "decision_basis",
+      "tags"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v1"
+    },
+    {
+     "from_candidate": "gsft-find_downloads-02-v2",
+     "to_candidate": "gsft-find_downloads-02-v3",
+     "reason": "Review pilot r2: the closing sentence about searching another folder is not in any applicable passage. Removed.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "tags"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-gift_card_scam-02",
+   "candidate_id": "gsft-gift_card_scam-02-v3",
+   "task_id": "TR-041",
+   "task_group": "gift_card_scam",
+   "source_group": "ftc_gift_card_scams",
+   "behavior": "direct",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Any device",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my computer. I got a text saying I won a free prize, but I have to buy Apple gift cards first to cover the shipping fee. Is this real?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user describes a prize-claim gift card payment. The FTC passage says to slow down and not pay, to not share card numbers or a photo, and that no honest business or agency asks for gift card payment for a prize.",
+   "source_ref_ids": [
+    "gift-card-stop",
+    "gift-card-prize",
+    "gift-card-numbers"
+   ],
+   "target": "Don't pay. It's a scam. No honest business or agency will ever make you buy a gift card to pay them for a prize.\n\nIf they ask for gift card numbers, don't give them those numbers or send them a photo of the card.",
+   "author_note": "Protective actions first. Must cover not paying with gift cards, not sharing numbers or a photo, and the prize statement. No gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-gift_card_scam-02-v1",
+     "to_candidate": "gsft-gift_card_scam-02-v2",
+     "reason": "Source passage gift-card-stop had a lead-in sentence not on the FTC page (flagged in pilot r1); passage corrected to page wording. Draft text unchanged.",
+     "changed_fields": [
+      "messages",
+      "source_refs"
+     ],
+     "review_id": "review-gsft-gift_card_scam-02-v1"
+    },
+    {
+     "from_candidate": "gsft-gift_card_scam-02-v2",
+     "to_candidate": "gsft-gift_card_scam-02-v3",
+     "reason": "Owner edit after pilot r2: the opening 'Don't pay' was repeated as step 1. Reworded so each action appears once.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-gift_card_scam-02-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-gift_card_scam-03",
+   "candidate_id": "gsft-gift_card_scam-03-v3",
+   "task_id": "TR-041",
+   "task_group": "gift_card_scam",
+   "source_group": "ftc_gift_card_scams",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Any device",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Someone is on the phone with me right now. They say I must buy gift cards in the next ten minutes or my benefits will stop. I can't stay on the line long and I'm scared. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user is on a live call with a gift card payment demand and has a time limit. The constraint is respected by a short reply that leads with hanging up, followed by the no-numbers rule and the government-demand statement.",
+   "source_ref_ids": [
+    "gift-card-stop",
+    "gift-card-numbers",
+    "gift-card-no-agency"
+   ],
+   "target": "Hang up now. It's a scam.\n\nDon't pay, and don't give them gift card numbers or send them a photo of a card. Government agencies won't contact you to demand immediate payment, and they never demand payment by gift card.",
+   "author_note": "Keep this short because the user cannot stay on the line. Hang up is the first action. No gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-gift_card_scam-03-v1",
+     "to_candidate": "gsft-gift_card_scam-03-v2",
+     "reason": "Source passage gift-card-stop had a lead-in sentence not on the FTC page (flagged in pilot r1); passage corrected to page wording. Draft text unchanged.",
+     "changed_fields": [
+      "messages",
+      "source_refs"
+     ],
+     "review_id": "review-gsft-gift_card_scam-03-v1"
+    },
+    {
+     "from_candidate": "gsft-gift_card_scam-03-v2",
+     "to_candidate": "gsft-gift_card_scam-03-v3",
+     "reason": "Owner edit after pilot r2: the opening 'Hang up' was repeated as step 1. Reworded so each action appears once.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-gift_card_scam-03-v2"
+    }
+   ]
   }
  ]
 }
