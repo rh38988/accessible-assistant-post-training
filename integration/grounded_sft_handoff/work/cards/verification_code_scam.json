@@ -1,0 +1,70 @@
+{
+ "task_group": "verification_code_scam",
+ "source_gaps": "Only one FTC page (consumer.ftc.gov/node/84809) is used. It has no subheadings, so sections are named by the content they cover. The page gives no step for a specific bank or app, so none is stated. The page's curly apostrophes are written as straight apostrophes in the model-visible text.",
+ "source_refs": [
+  {
+   "ref_id": "vc-never-share",
+   "source_group": "ftc_verification_code_scam",
+   "organization": "Federal Trade Commission",
+   "title": "What's a verification code and why would someone ask me for it?",
+   "url": "https://consumer.ftc.gov/node/84809",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Article body (no subheadings): what scammers ask",
+   "applicability": "Any account verification code request",
+   "platform": "any",
+   "app": "Not applicable",
+   "verified_excerpt": "Anyone who asks you for your account verification code is a scammer.",
+   "model_visible_text": "Anyone who asks you for your account verification code is a scammer. Never give your verification code to someone else.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17, re-checked with a narrower question; sentences copied exactly; straight apostrophes used."
+  },
+  {
+   "ref_id": "vc-hang-up",
+   "source_group": "ftc_verification_code_scam",
+   "organization": "Federal Trade Commission",
+   "title": "What's a verification code and why would someone ask me for it?",
+   "url": "https://consumer.ftc.gov/node/84809",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Article body (no subheadings): what to do instead",
+   "applicability": "Any caller who asks for a verification code",
+   "platform": "any",
+   "app": "Not applicable",
+   "verified_excerpt": "If someone asks you for your verification code, don't engage. Hang up. Block their number.",
+   "model_visible_text": "If someone asks you for your verification code, don't engage. Hang up. Block their number.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; sentence copied exactly; curly apostrophe written as straight."
+  },
+  {
+   "ref_id": "vc-contact",
+   "source_group": "ftc_verification_code_scam",
+   "organization": "Federal Trade Commission",
+   "title": "What's a verification code and why would someone ask me for it?",
+   "url": "https://consumer.ftc.gov/node/84809",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Article body (no subheadings): what to do instead",
+   "applicability": "Any caller who asks for a verification code",
+   "platform": "any",
+   "app": "Not applicable",
+   "verified_excerpt": "Use a number you trust, like the one on your statement or in your app.",
+   "model_visible_text": "Use a number you trust, like the one on your statement or in your app. Never use the number the caller gave you; it'll take you to the scammer.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; sentences copied exactly; straight apostrophe used."
+  },
+  {
+   "ref_id": "vc-report",
+   "source_group": "ftc_verification_code_scam",
+   "organization": "Federal Trade Commission",
+   "title": "What's a verification code and why would someone ask me for it?",
+   "url": "https://consumer.ftc.gov/node/84809",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Article body (no subheadings): what to do instead",
+   "applicability": "Any caller who asks for a verification code",
+   "platform": "any",
+   "app": "Not applicable",
+   "verified_excerpt": "Then report them to the FTC at ReportFraud.ftc.gov.",
+   "model_visible_text": "Then report them to the FTC at ReportFraud.ftc.gov.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; sentence copied exactly."
+  }
+ ]
+}

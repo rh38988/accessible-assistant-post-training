@@ -59,16 +59,23 @@ def load_cards(errors, warnings, need=None):
             errors.append(f"card {p.name}: invalid JSON ({e})")
             continue
         groups[card["task_group"]] = card
+        # Content errors in another batch's card are that batch's problem; its own build reports them.
+        own = need is None or card.get("task_group") in need or p.stem in need
+        sink = errors if own else []
         for r in card["source_refs"]:
             missing = [k for k in CARD_KEYS if not r.get(k)]
             if missing:
-                errors.append(f"card {p.name} {r.get('ref_id')}: missing {missing}")
+                sink.append(f"card {p.name} {r.get('ref_id')}: missing {missing}")
             if not str(r.get("url", "")).startswith("https://"):
-                errors.append(f"card {p.name} {r.get('ref_id')}: URL must be https")
+                sink.append(f"card {p.name} {r.get('ref_id')}: URL must be https")
             if r.get("ref_id") in refs:
-                errors.append(f"card {p.name}: duplicate ref_id {r.get('ref_id')}")
+                sink.append(f"card {p.name}: duplicate ref_id {r.get('ref_id')}")
             if CJK.search(r.get("model_visible_text", "")):
-                errors.append(f"card {p.name} {r.get('ref_id')}: model-visible text must be English")
+                sink.append(f"card {p.name} {r.get('ref_id')}: model-visible text must be English")
+            if re.search(r"\b(the|this) (page|article|source) (says|states|notes|recommends|gives|lists|explains)\b|\bthis (page|article)\b|\baccording to\b|webfetch", r.get("model_visible_text", ""), re.I):
+                sink.append(f"card {p.name} {r.get('ref_id')}: model-visible text must not mention the page, source or fetch")
+            if len(r.get("verified_excerpt", "").split()) > 25:
+                warnings.append(f"card {p.name} {r.get('ref_id')}: verified_excerpt over 25 words; fetch tools can only confirm short quotes")
             if re.search(r'["\\\n]', r.get("model_visible_text", "")):
                 # The builder JSON-escapes passages, so these would not appear verbatim in the
                 # system message and validate_grounded.py would reject the mapping.

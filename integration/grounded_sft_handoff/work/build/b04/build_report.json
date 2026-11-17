@@ -1,0 +1,58 @@
+{
+ "candidates": 21,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 9,
+  "constraint": 3,
+  "multiturn": 3
+ },
+ "tags": {
+  "distractor": 3,
+  "safety": 1,
+  "conditional": 4
+ },
+ "per_group": {
+  "account_password_reset": 7,
+  "email_attach": 7,
+  "software_update": 7
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-account_password_reset-01: long: about 917 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)",
+  "gsft-software_update-07: answer has no numbered steps"
+ ],
+ "hashes": {
+  "gsft-account_password_reset-01": "e8e88e78bf8df7ea7d63185f0e1812b6256e73d01139f0a309421b400f48b939",
+  "gsft-account_password_reset-02": "5055a781e50925eb8294bee4e9e30d43b613201af15e08b0fb21763c9fa057c9",
+  "gsft-account_password_reset-03": "4822b28a11648ef0464e6e57f97bfbca4c0e56317d3789d2e60b929fd1f35859",
+  "gsft-account_password_reset-04": "a5dfb3900aeb5839fd19e3df2d948dec7270520fd8e34afec0792faa5661e17f",
+  "gsft-account_password_reset-05": "16dbb0f262bc5197cbf373de36a6772cfcd170f982a04e9cd2cd30fb11dc8c78",
+  "gsft-account_password_reset-06": "59d626cfe7e01d221d34f9a5ca559b1963f44e681923352c2be67e14650ccae0",
+  "gsft-account_password_reset-07": "aeb7b19ebf7bd4b723448db3f347d131299f5561b533f1c90f91b1bd47a9010c",
+  "gsft-email_attach-01": "c852c2b3a7af8a2f24ba074d10cd8982cdb19372dabba98c3c66c81a75ce226e",
+  "gsft-email_attach-02": "79aa323b1ac1990a9a2af2abc23d1a4ad995645d17784d79a314a4c6642d3016",
+  "gsft-email_attach-03": "e2874083f7ab772caba1709766d5d4b1ae6553e94c5a25a0a794157ee68ec48e",
+  "gsft-email_attach-04": "6fca04479ebfc5160694242f168e6217eb495a596c44ed77f140dc723c047ca0",
+  "gsft-email_attach-05": "144954dfe9e26441c01eaa46de0195871df098804aaaf868f156326f128a78be",
+  "gsft-email_attach-06": "9c3c342cc487378d56cf3ccea3e14ac7c5081f91e2cc01e1614d7b9de8001b73",
+  "gsft-email_attach-07": "00b054066d6aed98736eed895545022e6e522bf6743b4056daa0cc7316f890bf",
+  "gsft-software_update-01": "99aa246d5ebcb60ab86c5022b8c1a40d3b4c5bdc9e102fb1e8612470b6a88950",
+  "gsft-software_update-02": "d92d4706759c88e6f92c828b60d0729e99e0bc294610f8b8c6dc6df5a8e43c31",
+  "gsft-software_update-03": "838e77e2929e67d492a9425b75520123b4e71ef3d2bfc5b2b66a005fb628e4be",
+  "gsft-software_update-04": "0625ea9c83d5686615464454c766da9cd9ecb95c1fe6c64a09339d05606f5cbb",
+  "gsft-software_update-05": "6dcb4f220c74d3e3cc5dbef1106e2bba11aedfe4da6c35e09b7441cac3d7c155",
+  "gsft-software_update-06": "462003a4d3644573c182ddefd2189d6b274417d284d98a57f0d2341db2947b7c",
+  "gsft-software_update-07": "0256853171d51a4eb5104eda3b2fd5e9c99f8ea34af24e1e47479833eac875cb"
+ }
+}

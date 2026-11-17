@@ -1,0 +1,52 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 7,
+  "clarify": 6,
+  "constraint": 3,
+  "multiturn": 2
+ },
+ "tags": {
+  "distractor": 5,
+  "conditional": 3
+ },
+ "per_group": {
+  "add_contact": 7,
+  "block_number": 7,
+  "family_sharing": 4
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-add_contact-01": "899acbc1b27f9b54e6deb12e15e4b1f8e42a24f1976935e696e7947caa5146d9",
+  "gsft-add_contact-02": "7e8405630ba4f6e730d24e5d7117dfcbf947c2234ce63353bff845cb90298a63",
+  "gsft-add_contact-03": "823451cf728358fc792a49adb3782cbe36150d1e527c16e066bdd71ca070bb3b",
+  "gsft-add_contact-04": "21d27ec7854b4f2e4d72deadf773e2dec56cd658ea4c7907389d812169baa828",
+  "gsft-add_contact-05": "448831fd62573eea60c0c6ddb3247b64e15f36d773ad8aeb0a0e04272965d6af",
+  "gsft-add_contact-06": "6351e3cd234b2b90b46311d268f290580af9334622decdceecaa6294ab17f4c1",
+  "gsft-add_contact-07": "55c3b014b4b85dc88658a2872baeb1917bce90b20c2ae356200be4d0cb321603",
+  "gsft-block_number-01": "3a36e76184fb0a42e09eb8cc2ce5c5ede81d645ddc01fa04e19c983bd9b7f47f",
+  "gsft-block_number-02": "45c326ff78dda64ab01f18eb3592b4378ee21b76a5cfd42eec4c01dcba7270b6",
+  "gsft-block_number-03": "17216d214ea4b8cf8181517db27a625802fcab37bf96868c4129b135b960d520",
+  "gsft-block_number-04": "517cb14b28e3c2c2c143ab95885a3817ab55ba4f9e953a9073ff5a6dc05d35a8",
+  "gsft-block_number-05": "868a6b895275a89f8d8b47b8f231343bd5c9a58ba1068f85ba8f991f9b8e72dc",
+  "gsft-block_number-06": "eadda4c004c5b62dabf249d6c2b0e4b9ef2c1621aaeab4d4e90ba9da758800be",
+  "gsft-block_number-07": "87f7d55df712da849a267f9e7546b898749367bab353ed66a76503184545eb58",
+  "gsft-family_sharing-01": "639038922e2928e02ac5fcdf771fd8487ccbf6176394d34d8eda8bf688fe892b",
+  "gsft-family_sharing-02": "b4f4193ce8a6fdffb18d22b7f19f74a5b75a48dd9ad39e629a31327ad4a4b209",
+  "gsft-family_sharing-03": "a5d71c82625a3d755d14458e0a8b2f0d093a7e02fc11cd2c8b0d19114bf6d0d2",
+  "gsft-family_sharing-04": "a69fbb4dfbfbc07d2efaa63b1a8dfec93aa8667ed3bc60687be3157cf80ac489"
+ }
+}

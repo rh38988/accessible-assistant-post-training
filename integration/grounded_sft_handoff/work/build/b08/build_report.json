@@ -1,0 +1,44 @@
+{
+ "candidates": 12,
+ "groups": 3,
+ "behavior": {
+  "direct": 9,
+  "constraint": 3
+ },
+ "tags": {
+  "distractor": 4,
+  "conditional": 5
+ },
+ "per_group": {
+  "battery_health": 4,
+  "silence_unknown_callers": 4,
+  "spam_call_filter": 4
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-battery_health-01": "5928dab4b2921b05d05ec675f1ac782824b826a48ef8cab34bd541c8913d575c",
+  "gsft-battery_health-02": "9c26ef485f56208c72551654dd217abef651dc50e1e52415734952a61dcbc2e8",
+  "gsft-battery_health-03": "214e9926ea9e7af5745670f67da0d8d0fe586083fcc946ababf58134a8093466",
+  "gsft-battery_health-04": "62c64cf760bf0c7edb09106e52996d38fbf159653d992f0aedab505f58d6ba18",
+  "gsft-silence_unknown_callers-01": "5bf0ed2b838d162f7a3b3cf7f5bde3b086745af449d4bfd135f148de718714cf",
+  "gsft-silence_unknown_callers-02": "38a9976e7abc225e4ac4d6a4c54502c8ad4cee0bea8c7356d20ebf3c87cacaea",
+  "gsft-silence_unknown_callers-03": "dc46a0512036c02041e9e50bfcc6f14bf10827ea8672924aeebfd921e86716a2",
+  "gsft-silence_unknown_callers-04": "2a55d00d80d1a202c35107eebaa4b86a6ee274da3c99b1b0f2721aab6eb56b95",
+  "gsft-spam_call_filter-01": "33824d5ae317357a5769fe8e40e6818db4ea3527ce33e5b7d0b6cbf3d0fee80d",
+  "gsft-spam_call_filter-02": "b79e30049a6de61229b922b7b2bad4c891d54a34fc03e47a3d713e00bafa5c02",
+  "gsft-spam_call_filter-03": "2fcb41e472d0d5f17f981d41678ac1de4c8390edf9bc2cd66843d25ee2e926a3",
+  "gsft-spam_call_filter-04": "d8db98df205214c2efb80ac91e5710e10eb3dfaea63f6284ef4faf5132d6164a"
+ }
+}

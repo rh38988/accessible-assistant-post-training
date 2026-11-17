@@ -1,0 +1,52 @@
+{
+ "candidates": 17,
+ "groups": 3,
+ "behavior": {
+  "direct": 7,
+  "clarify": 5,
+  "constraint": 3,
+  "multiturn": 2
+ },
+ "tags": {
+  "conditional": 4,
+  "distractor": 5
+ },
+ "per_group": {
+  "app_notifications_off": 7,
+  "emergency_info": 6,
+  "mouse_pointer_size": 4
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-emergency_info-01: long: about 960 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)"
+ ],
+ "hashes": {
+  "gsft-app_notifications_off-01": "09f962d76164a716fb68006762eb02fa1cf13a0bf87603e90ad79ac886e103ab",
+  "gsft-app_notifications_off-02": "2c4778c6f2251668e29b9ac5d4860d0e3eb3a04381ee66304aaefed8bc631e79",
+  "gsft-app_notifications_off-03": "4ed45466a275cd215063022b0134ef6aaf63c0ad6fe17606bf7cc7f78fcd9c6f",
+  "gsft-app_notifications_off-04": "09adbefe2fe4e74e8419734ba49cfb4f4986d04bdc6e0ff009e738b2362dfeb7",
+  "gsft-app_notifications_off-05": "4d9464a7dfa3e4e2e57ff843e0253f31a69eeb4af865dee4e4768eb67072f75b",
+  "gsft-app_notifications_off-06": "1b2cfb8166ff2d0968cbe9397af80705bb1c4dcae10e66a7a678be1ac17d665c",
+  "gsft-app_notifications_off-07": "a33b11d89bbc691b077111734fc3d9ec901be22c1b60c2b55771de562780af68",
+  "gsft-emergency_info-01": "d005355b17bb0783b34507559ef58c536be0d4c265dbe6a862c71f50f733067b",
+  "gsft-emergency_info-02": "3a210181ab258042f94a7ec8577effb4c4d924ab51dc2f54da70ac52549dd369",
+  "gsft-emergency_info-03": "f769306241ca435551f0bf154b39bbbdb8e8bc182853bea96c2dd8272ee9190b",
+  "gsft-emergency_info-04": "a5519c533f333bd56842cbca5fded4172ba189305104bd467c973d797d75bb7a",
+  "gsft-emergency_info-05": "45acdc2379f1b95fb0529bc00a69669d1f8e107fa8cbeee3f59ced68e55d64c9",
+  "gsft-emergency_info-06": "8c959f370d554aac8b374d425f569489a7490761acd0b31901ab4a8cb0b63d5d",
+  "gsft-mouse_pointer_size-01": "8db86f40c6c0b8603e885a468781b1196fad829eb5e0a32c9f999c8756eef149",
+  "gsft-mouse_pointer_size-02": "66a324af268f5f07e86ad92bc8f782af98b2fe5170eafa19c7665bec4512f924",
+  "gsft-mouse_pointer_size-03": "f85fecd6c0e10077b33faa45841a11d77a3b0938f111745124de25ecf258f862",
+  "gsft-mouse_pointer_size-04": "ac7f5b18ac5b7759f879f523d05c0d3fbf9829d79300393169cf8a51c6607f81"
+ }
+}

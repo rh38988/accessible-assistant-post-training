@@ -1,0 +1,20 @@
+{"task_group": "alarm",
+ "source_gaps": "Apple: the page has no separate turn-on step for an alarm; the iOS 27 alarm-volume note is not used because it does not describe setting an alarm. Android: the page covers Android devices, Pixel phones and Pixel Tablets generally and names no Android version or model; it does not say whether Repeat, Label or Sound options exist, so none are planned on Android. The heading for the iPhone set steps was not captured.",
+ "source_refs": [
+  {"ref_id": "alarm-iphone-set", "source_group": "apple_alarm_clock_iphone",
+   "organization": "Apple", "title": "How to set and change alarms on your iPhone - Apple Support",
+   "url": "https://support.apple.com/en-us/118444", "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Steps to set an alarm (heading not captured)", "applicability": "iPhone; the page names no minimum iOS version for these steps",
+   "platform": "iPhone", "app": "Clock",
+   "verified_excerpt": "Tap the Done button.",
+   "model_visible_text": "On iPhone: 1. Open the Clock app, then tap the Alarms tab. 2. Tap the Add button. 3. Set a time for the alarm. You can also choose one of these options: Repeat: Tap to set up a recurring alarm. Label: Tap to name your alarm. Sound: Tap to pick a sound that plays when the alarm sounds. Snooze: Turn on to see a Snooze option when the alarm sounds and set a Snooze Duration. 4. Tap the Done button.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps and excerpt quoted from a narrower WebFetch of the same section; no wording changed"},
+  {"ref_id": "alarm-android-set", "source_group": "google_alarm_clock_android",
+   "organization": "Google", "title": "Set, cancel, or snooze alarms on your Android device - Android Help",
+   "url": "https://support.google.com/android/answer/2840926?hl=en", "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Set an alarm", "applicability": "Android devices, Pixel phones and Pixel Tablets generally; no Android version or model named",
+   "platform": "Android", "app": "Clock",
+   "verified_excerpt": "To make sure both alarms work, leave a 5-minute window between each alarm.",
+   "model_visible_text": "On Android: 1. Open the Clock app. 2. Tap Alarm. 3. To add an alarm, tap Add. 4. To edit an existing alarm time, tap on its current time. 5. On the analog clock: Slide the hand to the hour you want. Then slide the hand to the minutes you want. 6. On the digital clock: Enter the hour and minutes you want. 7. With the 12-hour format: Tap AM or PM. 8. Tap OK. To make sure both alarms work, leave a 5-minute window between each alarm.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; step labels and sentences quoted from narrower WebFetch results of the same section; the 'Open the Clock app' step follows the page summary of the same section and is not a verbatim quote"}
+ ]}

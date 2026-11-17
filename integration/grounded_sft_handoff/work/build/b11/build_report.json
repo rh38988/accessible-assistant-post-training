@@ -1,0 +1,53 @@
+{
+ "candidates": 19,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 7,
+  "constraint": 3,
+  "multiturn": 3
+ },
+ "tags": {
+  "distractor": 9,
+  "conditional": 12
+ },
+ "per_group": {
+  "alarm": 6,
+  "flashlight": 7,
+  "hearing_bluetooth": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-alarm-01": "e65fd69fece55806ea85ffc24baa5322521167d897ad021176c591a629478ae9",
+  "gsft-alarm-02": "7c69056069c2ddd0d0c1956cc74918f4de3898007ba9a9039515b480119719c7",
+  "gsft-alarm-03": "dde8fce5018f4ac7c4ac9b446dd4e9ab3bb7c39ab682b8890da4bf039c28e7f7",
+  "gsft-alarm-04": "05b61270ac85366c3ac0dc84ab6c43f2c1df405b7b6094b8fd901a5880b82333",
+  "gsft-alarm-05": "ce1e0819810e14a669f6180cef2b6b26013dbc755ad4eaf0fee58543bd1288eb",
+  "gsft-alarm-06": "9fa4e02c456d78cf5f804a9f072d8e6e0e62656d5d0bbcfcdae97779da7ce57e",
+  "gsft-flashlight-01": "fbb11d52953672c9fa859407a4c1e3ab714ce1a92b0e3d7d1e77927a13b90dbb",
+  "gsft-flashlight-02": "065308d11d239da77756aa79227d2642ba96fee9d6f37864d9b0dc9159a1be90",
+  "gsft-flashlight-03": "38370a48d1db0c408e6590926b31c745cbd89898e84f1b08f9b57c8cbfd4e444",
+  "gsft-flashlight-04": "2804ca19d6a99f938cf8a502d30a9d406b1d67505740531a6a9f68c9917c20bf",
+  "gsft-flashlight-05": "92de5897c2568da2e16d65a9304de052fa840f5f3a649469ed81e33c549eda20",
+  "gsft-flashlight-06": "4daa82987270a0bd66c9f2496b4d49882b2c2a1ce7ed278c72d822d2bdbb73bc",
+  "gsft-flashlight-07": "4532057279d180745de0459f40b0fb8bb3deee7e413b05f7c61a587257716cf8",
+  "gsft-hearing_bluetooth-01": "a1c06bda5062dffb6538426bae7b1fb58bc7e2abd26a1dce641c9073884ca5fc",
+  "gsft-hearing_bluetooth-02": "3fbafb80fbddad6d38d20c226e8e98d25fdf6e5170d38a38495de5e3e4517b7b",
+  "gsft-hearing_bluetooth-03": "ceb34128d75ac173359233f098bdbbaeba0fe8bb10c711de77907953a052fef3",
+  "gsft-hearing_bluetooth-04": "dac744bd8db8f24dc089ac685b505acb5ac6c0228ee458174709b922d78f13c3",
+  "gsft-hearing_bluetooth-05": "e12b706b14c1da38b042d881628636ff151f96733538f6002780afbace54a9fd",
+  "gsft-hearing_bluetooth-06": "1e3c7464e5d9b86a1fd1bf12324b579995bbd88982ff9e27d8e3ba0fa80da2bd"
+ }
+}

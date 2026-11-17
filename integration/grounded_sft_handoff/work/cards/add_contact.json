@@ -1,0 +1,22 @@
+{"task_group": "add_contact",
+ "source_gaps": "Pages were read through WebFetch summaries. The Android add steps came from the same Google help article viewed with its Android platform parameter. The Android steps name the Add control as an icon at the bottom right; the text keeps only the label and the position the page states. Exact account choice for a new Android contact is not stated on the page, so no candidate covers it. Titles are the article title as returned by the fetch tool.",
+ "source_refs": [
+  {"ref_id": "add-contact-android-add", "source_group": "google_contacts_android_add",
+   "organization": "Google", "title": "Add or move contacts", "url": "https://support.google.com/contacts/answer/1069522?hl=en&co=GENIE.Platform%3DAndroid",
+   "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Add a contact (Android view)",
+   "applicability": "Android phones with the Contacts app",
+   "platform": "Android", "app": "Contacts",
+   "verified_excerpt": "Contacts saved to your Google Account sync with Google Contacts and your Android devices.",
+   "model_visible_text": "On Android: Open the Contacts app on your Android device. At the bottom right, tap the Add icon. Enter the contact's name and an email address or phone number. To add more name details, tap Add fields, then tap the field type you want. To add a photo, tap Add picture at the top, capture or select a picture, then tap Choose. When you're finished, tap Save. Contacts saved to your Google Account sync with Google Contacts and your Android devices.",
+   "extraction_method": "WebFetch of the official page with the Android platform view on 2026-11-17; steps paraphrased from the section 'Add a contact'; the excerpt is quoted from the fetch result; apostrophes straight; no other edits."},
+  {"ref_id": "add-contact-computer-create", "source_group": "google_contacts_computer_add",
+   "organization": "Google", "title": "Add or move contacts", "url": "https://support.google.com/contacts/answer/1069522?hl=en",
+   "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Add a contact (computer steps)",
+   "applicability": "Google Contacts used in a web browser on a computer",
+   "platform": "Google Contacts (computer)", "app": "Google Contacts",
+   "verified_excerpt": "At the top left, click Create contact",
+   "model_visible_text": "On a computer: Open Google Contacts in a browser. At the top left, click Create contact. Choose Create a contact or Create multiple contacts. Enter the information and click Save.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the section 'Add a contact'; the excerpt is quoted from the fetch result; apostrophes straight; no other edits."}
+ ]}

@@ -10,7 +10,7 @@ Do not open anything under `eval/`, any `judge` file, `H/work/drafts/`, or `H/wo
 
 ## For each candidate, in order
 
-1. **Sources.** WebFetch each cited official URL yourself. Check the named section, the platform/version applicability, the excerpt, and every label, step, contact, number and claim in the model-visible passage. If a claim seems absent, fetch again with a narrower question before calling it unsupported. If a page cannot be read, the source is unverified and the decision cannot be keep.
+1. **Sources.** WebFetch each cited official URL yourself. Check the named section, the platform/version applicability, the excerpt, and every label, step, contact, number and claim in the model-visible passage. If a claim seems absent, fetch again with a narrower question before calling it unsupported. Passages may paraphrase the page (the writer's fetch tool summarizes), but every claim must be on the page. Confirm the verified_excerpt with a fetch asking for the exact words; if it differs, put the page's exact words in that ref's `finding` (a card fix, not by itself a reason to revise). If a page cannot be read, the source is unverified and the decision cannot be keep.
 2. **Required actions, before reading the target.** From the user turns and the applicable passage only, list the necessary actions and conditions. Mark actions the user already completed. Mark inapplicable or distractor passages. For clarify, decide whether the missing device/app really changes the steps.
 3. **Target.** Now read it and check:
    - every critical action covered, none the user already did repeated without reason;

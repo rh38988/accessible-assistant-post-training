@@ -1166,6 +1166,90 @@
      "review_id": "review-gsft-find_downloads-02-v3"
     }
    ]
+  },
+  {
+   "id": "gsft-find_downloads-02",
+   "candidate_id": "gsft-find_downloads-02-v5",
+   "task_id": "TR-083",
+   "task_group": "find_downloads",
+   "source_group": "microsoft_find_your_files_windows11",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my Windows 11 laptop. Yesterday I saved an attachment from an email, and I think it went into my Downloads folder, but I don't know how to get there. How do I find the Downloads folder and look for the file?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Windows 11 laptop and asks how to reach the Downloads folder, so the Windows 11 File Explorer passages apply. The Chrome passage is the inapplicable distractor. The page says Downloads is one of the known folders in Quick access and that files can be searched from a folder like Downloads. It does not say where email attachments are saved, so the reply does not claim that. Microsoft lists the six known folders under 'Restore known folders if you have unpinned them', so Downloads may be missing from Quick access; the restore steps are kept as a condition.",
+   "source_ref_ids": [
+    "find-downloads-win11-taskbar",
+    "find-downloads-win11-quickaccess",
+    "find-downloads-win11-restore",
+    "find-downloads-chrome-menu"
+   ],
+   "target": "Here is how to find your Downloads folder on your Windows 11 laptop:\n1. Select **File Explorer** from the taskbar.\n2. In **Quick access**, look for **Downloads**. It is one of the known Windows folders shown there.\n3. To find your file, search from the **Downloads** folder.\n\nIf Downloads is not in Quick access, and you unpinned it before:\n1. Select **Home** in the left navigation pane.\n2. Select the **Up** arrow to the left of the address bar.\n3. Select and hold (or right-click) **Downloads**.\n4. Select **Pin to Quick access**.",
+   "author_note": "Must cover opening File Explorer, locating Downloads under Quick access, and searching from Downloads. The page does not give a step to open Downloads from Quick access, so the reply names it without a click path. Source gap: Windows 11 download-specific guidance is limited.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-find_downloads-02-v1",
+     "to_candidate": "gsft-find_downloads-02-v2",
+     "reason": "Review pilot r1: the target claimed the email attachment went to Downloads, which no official page supports. The user turn now says they think it went to Downloads, and the target only shows how to reach and search Downloads.",
+     "changed_fields": [
+      "messages",
+      "source_conversation",
+      "target",
+      "decision_basis",
+      "tags"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v1"
+    },
+    {
+     "from_candidate": "gsft-find_downloads-02-v2",
+     "to_candidate": "gsft-find_downloads-02-v3",
+     "reason": "Review pilot r2: the closing sentence about searching another folder is not in any applicable passage. Removed.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "tags"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v2"
+    },
+    {
+     "from_candidate": "gsft-find_downloads-02-v3",
+     "to_candidate": "gsft-find_downloads-02-v4",
+     "reason": "Review pilot r3: 'main folders' was unsupported, and Downloads may be unpinned from Quick access. Removed 'main' and added Microsoft's restore steps as a condition.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "tags",
+      "source_ref_ids",
+      "decision_basis"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v3"
+    },
+    {
+     "from_candidate": "gsft-find_downloads-02-v4",
+     "to_candidate": "gsft-find_downloads-02-v5",
+     "reason": "Review pilot r4: the target stated a cause ('because it was unpinned') the passage does not state, and packed four actions into one step. Reworded the condition and split the restore steps.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-find_downloads-02-v4"
+    }
+   ]
   }
  ]
 }

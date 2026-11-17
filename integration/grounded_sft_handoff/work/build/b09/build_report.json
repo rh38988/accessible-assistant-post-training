@@ -1,0 +1,53 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 6,
+  "constraint": 3,
+  "multiturn": 3
+ },
+ "tags": {
+  "distractor": 6,
+  "conditional": 6,
+  "safety": 3
+ },
+ "per_group": {
+  "browser_zoom": 6,
+  "group_text": 6,
+  "share_location": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-browser_zoom-01": "8377a872fa4ca73f6ef175348acd960cfaa4dfa88c5f41004a9bf07ded05442e",
+  "gsft-browser_zoom-02": "78f6b96ed068bf6cada114417cc8b0c0fb739cf5a4ca3fd0565be31bc7ffd1f3",
+  "gsft-browser_zoom-03": "a8b909b7c2297c17271eb5a2e1c3fe2cafec82d0f149a2c4d82187156cc7e668",
+  "gsft-browser_zoom-04": "6a1264ba8b996279458455bcab7d509934fd0c558f3165c180b0e0e4680eb9ad",
+  "gsft-browser_zoom-05": "81cdeb494746ac94f7940bfef70da88dd5e615a66a2d4231e21a8842b005dc0d",
+  "gsft-browser_zoom-06": "8fd8528051c2b211a8812922d8c28efd8e4004f705baea469acc1810ff94fa93",
+  "gsft-group_text-01": "4c17f15507582131ba3755a2b2f21abd32b3dd9a7ae78046afd6cb6bafbab24f",
+  "gsft-group_text-02": "1030d443ad090fdf977db531e15c0ede5754fbe0f0228a52f777ee0c357f1573",
+  "gsft-group_text-03": "f6381edb984fe18e3eabe3f45410b54177866908ee305cf9400fe0b9660e5713",
+  "gsft-group_text-04": "13a939744a5a8064beb39975edb32588701ed394a723e6f779e1847ece7c65d1",
+  "gsft-group_text-05": "ba620f8be550b33b7b48f5c6b1a9dd1a44632da661d5e4fb84f1996f19ae976a",
+  "gsft-group_text-06": "8dafb7af03fc09f9870843a918df7eefb4b1b21fb56e12d9704222e0c6f0c7ba",
+  "gsft-share_location-01": "172c5afc23a770b11df5efea7f320d26382a0571ece6255850a00dc15a3a7c26",
+  "gsft-share_location-02": "d7b91bed13df7bf093777c3a16b2cc51512f55114e9a4de45f523e6db0dbde6a",
+  "gsft-share_location-03": "1333adc4dc96c755be44c746772451f09e686910d5ee8e03d46cd415761da368",
+  "gsft-share_location-04": "a056f70418b58941099d29d26c210a9ba79d11ca5249007784477ca713c2205e",
+  "gsft-share_location-05": "37ba8374aee07c0963d29203cd76b6384a2b9ed62b9f87129b970397c0e982f0",
+  "gsft-share_location-06": "39f863eae2549ed278242c9916c56cfb887d3a0da166a3b029cdc7921fc223fa"
+ }
+}

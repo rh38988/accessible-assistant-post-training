@@ -1,0 +1,53 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 7,
+  "clarify": 6,
+  "constraint": 3,
+  "multiturn": 2
+ },
+ "tags": {
+  "conditional": 5,
+  "distractor": 4
+ },
+ "per_group": {
+  "email_not_working": 7,
+  "printer_not_printing": 4,
+  "screenshot": 7
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-printer_not_printing-02: long: about 909 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)"
+ ],
+ "hashes": {
+  "gsft-email_not_working-01": "7a3670e6b76567de59bce6200c368dd147b88fdf274ae94aa1e02330ba5d5919",
+  "gsft-email_not_working-02": "aae76da2738ded10d9f44a8d30603698b6677482dc53a8d1d6d9849a0d833829",
+  "gsft-email_not_working-03": "b4473ff49faf7a440b7f51e9cb240eec401bd498271dde08d4f8bff8d202261a",
+  "gsft-email_not_working-04": "1c1d0eef90c82a76262e4de6548228dd3e8f600f48bf1eaf23b7029ab0721962",
+  "gsft-email_not_working-05": "55a56db99df6c434262666cba52a525c3b601a9bedc1287b13676b68551dfa21",
+  "gsft-email_not_working-06": "7984d3641059e248f686c8a0d49ea3b88e3b8223f05114833d71dad429d451d0",
+  "gsft-email_not_working-07": "1882915300c781d95e90839ed23cc0bfb36fc86a23ce9070221e16116ff4e319",
+  "gsft-printer_not_printing-01": "a833940f07a2308c960a0191913037eccf0dc9834997017fe86d115cb36e2793",
+  "gsft-printer_not_printing-02": "c46197ba441709e6602117e8581b70469cd094bff430806e8aae602d3af49a01",
+  "gsft-printer_not_printing-03": "22d02cb5503a9dfdb36c1dbf4058df2a711ae11ddfa5e44695a9d623d9730bcd",
+  "gsft-printer_not_printing-04": "993abfff3e0220b845752b10b635478a2ce40e61a2d7eafd639251c554d3fab1",
+  "gsft-screenshot-01": "7bfb4968a12769be51fddbe89d66c95ca73dcedadbbb4ea05fe40488f6a09ee3",
+  "gsft-screenshot-02": "0d681ff76c739108633ce12d270a5754be72b9a49dfa6ba6b72d14df22082795",
+  "gsft-screenshot-03": "4f36839eea722dd55f78bdfaaaf38db50c2e83edf947ae3a3455f2c6953b6951",
+  "gsft-screenshot-04": "013020cd2d0bc7b118c627fde8048b149259f81e91e5b58875cae06d629f78b0",
+  "gsft-screenshot-05": "acad145ca07c4455e8c2e5313882a8de8079d73c4c18ad9a7d12db78494f142d",
+  "gsft-screenshot-06": "3dafb60c813604de24c3459e5551aa250c04c0a6284c3dec17409d84a0989761",
+  "gsft-screenshot-07": "4f3cf091be8b8a1a4f8e3da5ca67dbe085acef1249dc46a46b8fdc6d354e750a"
+ }
+}

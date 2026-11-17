@@ -1,0 +1,49 @@
+{
+ "candidates": 16,
+ "groups": 3,
+ "behavior": {
+  "direct": 7,
+  "constraint": 5,
+  "multiturn": 4
+ },
+ "tags": {
+  "safety": 16,
+  "conditional": 5
+ },
+ "per_group": {
+  "government_impersonation": 6,
+  "romance_scam": 6,
+  "strong_passwords": 4
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-government_impersonation-01": "f3aab379a96095a944124e22be1e38b56b5a5a1926fafea3c6202b99dadde343",
+  "gsft-government_impersonation-02": "0bc757a0f6cab7342dca2026a0537fc251e34456ca51862809ddf8f0b7c6b469",
+  "gsft-government_impersonation-03": "93304347616a3b588d0292c8281cc28dd47e2f4916f035be3c35b7d09072e487",
+  "gsft-government_impersonation-04": "bd4cf160773e6c61e89f8fb789b83a64c26c324219ccc9e6b1bf5e1c35ba3725",
+  "gsft-government_impersonation-05": "3dc0a82a292775e05584dfc47c5717b7f2ee6cd73e1f550eb9ee3d4444208055",
+  "gsft-government_impersonation-06": "07fefc7c4766c785f5b13f5c6a736ed3e8c5295b1c1350e2022a867ab425c35b",
+  "gsft-romance_scam-01": "a9eb30f6609fe30a4365f1b1725b10ad646c5347d6dc41508e7dd25e5b3ba47f",
+  "gsft-romance_scam-02": "71b12c6c34dc8103395bc69e019f6d4ec490f0903955f60be31d7c3ffdf08fe0",
+  "gsft-romance_scam-03": "ea712c7bc801e4308b1fb7dc6bee8cdcee8aa9dec5471eb561a10b4f87cff1e7",
+  "gsft-romance_scam-04": "072f35fe5d01eb23143a86c4df417160e1914d7ec10298bb895f82036878483b",
+  "gsft-romance_scam-05": "1743bffe483f5c26313a58d1648f3a8072cc059da811f926b6ed86f81a0a8cff",
+  "gsft-romance_scam-06": "daf74fcc5deb762bd4fd68769fd778d5af23ca4d37a3ac7081510bb16dfe7a8a",
+  "gsft-strong_passwords-01": "2c38f0158fbab91fc1baaa5a5f0a0875f1044d23a408633c69c2dfadba67462d",
+  "gsft-strong_passwords-02": "1acb6fdf0af16a0f113616c01bd21f2f402443bf85bb3ffd6f04923d5a55652b",
+  "gsft-strong_passwords-03": "2e30ca1985a374203fc4292aeebd2cfaac14f25de33997d18b1a688e3c45ceb8",
+  "gsft-strong_passwords-04": "f23213defe4dda90977dc411a9d904f4f8f91ec10e20fdf930942440558310a6"
+ }
+}

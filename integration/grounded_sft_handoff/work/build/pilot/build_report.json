@@ -1,0 +1,56 @@
+{
+ "candidates": 19,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 5,
+  "constraint": 4,
+  "multiturn": 4
+ },
+ "tags": {
+  "conditional": 8,
+  "distractor": 8,
+  "safety": 6
+ },
+ "per_group": {
+  "battery_saver": 7,
+  "find_downloads": 6,
+  "gift_card_scam": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-gift_card_scam-02: answer has no numbered steps",
+  "gsft-gift_card_scam-03: answer has no numbered steps"
+ ],
+ "hashes": {
+  "gsft-battery_saver-01": "48a438f10a26de935a988c11cfd2c45a7b7af454672abb669d398e289dfcfe86",
+  "gsft-battery_saver-02": "c8aa8c284ea3d60cfbb4767bbcbb216ca73504c06869ae88a301265cacd94b07",
+  "gsft-battery_saver-03": "3899b7cf8cd745ec068254882283bfc0e914fcec6797c22dfdabc3e25972b018",
+  "gsft-battery_saver-04": "1710d222c890013649263743c2125b791f6a2b89a9df2c1aea847ac424253c3c",
+  "gsft-battery_saver-05": "90b75967b0f58c289489aed46a4bcbb2887d07f17a44977488db9319150b59e9",
+  "gsft-battery_saver-06": "3a35f5a62973de1b5c7ddd8451b85c447a6cf4cb14693ebccbcbe07a348cc648",
+  "gsft-battery_saver-07": "d786cd1637900cd7ac84cd2e2af7ffe161da93487f9825e2750a7e51b809a643",
+  "gsft-find_downloads-01": "e2799051156195d8e0752f383d3ee58ad3853fbb4bfc09fe0b4456116df6cc8d",
+  "gsft-find_downloads-02": "04d2ff26e6571ea6d51d3e4512f9695200f78033972faaeb31a00a783f7af291",
+  "gsft-find_downloads-03": "2cfec7c48c333f07487e003191ccd80949cd8f37ae66c2f0e196fe3c71715042",
+  "gsft-find_downloads-04": "da38712cd12f951dc62551c3d1a03382122df722a4b176b21a6f47cbf8eb2d92",
+  "gsft-find_downloads-05": "f2d3babe17436e36d641c52d94185ee2c610ef4667c47709f81343708eccbfe8",
+  "gsft-find_downloads-06": "06926fe7520632951882e25836ce9e474874139293812179dce587530db09f45",
+  "gsft-gift_card_scam-01": "fed5e6afdc8815dd5c1fa74e0e69bf31e1391db78817ec63d22574a38d0fd5bf",
+  "gsft-gift_card_scam-02": "4bc9809e15b0e099411830684bbda0934aa127a7fdae2b7e6be041e33d2246bf",
+  "gsft-gift_card_scam-03": "cc42f92c656c0f676373fcbc6e8778edcf97ecf5e6783fee4eb445fc5528c4b7",
+  "gsft-gift_card_scam-04": "f8e505185fc921c5a67cc5549f9815507dfe1eb2eac159a895ccfb34d6783a5a",
+  "gsft-gift_card_scam-05": "88d48932aa749c56c04cc6076d818b0755af85fd11e4190f66ca5796540f46ab",
+  "gsft-gift_card_scam-06": "0c325101540a6b0c9f6ac851bab4cac940c8f2eabeaba48671300a6e20d45ed8"
+ }
+}

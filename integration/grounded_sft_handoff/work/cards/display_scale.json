@@ -1,0 +1,20 @@
+{"task_group": "display_scale",
+ "source_gaps": "Pages were read with WebFetch, which returns a processed version of the page, so verified_excerpt values are the wording WebFetch returned and were not checked byte for byte against the raw page. The page does not give a custom scale value, a recommended scale, or a restart requirement, so none is used. The text size steps were confirmed with a narrower second fetch.",
+ "source_refs": [
+  {"ref_id": "display-text-size-windows11", "source_group": "microsoft_make_text_bigger_windows11",
+   "organization": "Microsoft", "title": "Make text and apps bigger", "url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+   "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Make text bigger on your screen", "applicability": "Windows 11; the page gives these steps for text that feels too small while navigating Windows",
+   "platform": "Windows 11", "app": "Settings",
+   "verified_excerpt": "If the text size feels too small when navigating through Windows, you can make the text bigger.",
+   "model_visible_text": "On Windows 11: If the text size feels too small when navigating through Windows, you can make the text bigger. Press the Windows logo key+U, or select Start, then Settings, then Accessibility. Select 'Text size'. Drag the 'Text size' slider to the right to enlarge the sample text. Select 'Apply'. Windows then scales up all text.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17, narrower second fetch of the Make text bigger on your screen section on 2026-11-17; steps paraphrased from that section; labels kept exactly; straight apostrophes used; excerpt quoted as WebFetch returned it"},
+  {"ref_id": "display-scale-windows11", "source_group": "microsoft_scale_bigger_windows11",
+   "organization": "Microsoft", "title": "Make text and apps bigger", "url": "https://support.microsoft.com/en-us/topic/c3095a80-6edd-4779-9282-623c4d721d64",
+   "access_date": "2026-11-17", "page_update_date": null,
+   "section": "Make images and apps bigger on your screen", "applicability": "Windows 11; some changes may require signing out and back in before they appear in certain apps; most changes apply right away",
+   "platform": "Windows 11", "app": "Settings",
+   "verified_excerpt": "In addition to the text size, you can also make everything else on your screen bigger, including images and apps.",
+   "model_visible_text": "On Windows 11: Open Settings with the Windows key + I shortcut, or from Start. Select 'Display'. Under 'Scale & layout', expand the 'Scale' menu and choose the percentage you want. Some changes may require signing out and back in before they appear in certain apps. Most changes apply right away.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the Make images and apps bigger on your screen section; labels kept exactly; straight apostrophes used; excerpt quoted as WebFetch returned it"}
+ ]}

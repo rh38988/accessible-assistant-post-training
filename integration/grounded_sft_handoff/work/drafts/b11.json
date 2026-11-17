@@ -1,0 +1,633 @@
+{
+ "batch": "b11",
+ "candidates": [
+  {
+   "id": "gsft-flashlight-01",
+   "candidate_id": "gsft-flashlight-01-v1",
+   "task_id": "TR-063",
+   "task_group": "flashlight",
+   "source_group": "apple_flashlight_control_center_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an iPhone 14 and I'm not good with phones. How do I turn on the flashlight? Keep it simple please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone 14 and asks how to turn on the flashlight. The Apple page gives the Control Center steps for iPhone, including the Home button condition. The Samsung passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "flashlight-iphone-controlcenter",
+    "flashlight-samsung-onoff"
+   ],
+   "target": "Here is how to turn on the flashlight from Control Center.\n\n1. Swipe down from the upper-right corner to open Control Center on your iPhone or iPad. On an iPhone with a Home button, swipe up from the bottom to open Control Center.\n2. Tap the **Flashlight button**.\n3. To turn off the flashlight, tap the **Flashlight button** again.",
+   "author_note": "Must cover: open Control Center (upper-right swipe down; Home-button iPhones swipe up from bottom), tap Flashlight button, tap again to turn off. No source gap for iPhone."
+  },
+  {
+   "id": "gsft-flashlight-02",
+   "candidate_id": "gsft-flashlight-02-v1",
+   "task_id": "TR-064",
+   "task_group": "flashlight",
+   "source_group": "samsung_flashlight_galaxy",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Samsung Galaxy",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have a Samsung Galaxy S25. How do I switch the flashlight on and off?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Samsung Galaxy S25 and asks to switch the flashlight on and off. The Samsung page gives the Quick settings steps, with the swipe left condition. The iPhone passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "flashlight-samsung-onoff",
+    "flashlight-iphone-controlcenter"
+   ],
+   "target": "Here are the steps to switch the flashlight on or off on your Galaxy phone.\n\n1. Open the **Quick settings** panel by swiping down from the top right of the screen.\n2. Tap the **Flashlight** icon to turn the light on or off.\n\nDepending on your setup, you may need to swipe left to see the **Flashlight** icon.",
+   "author_note": "Must cover: swipe down from top right to open Quick settings, tap Flashlight icon to turn on or off, swipe left note as a condition. Page gives no Android version for these steps."
+  },
+  {
+   "id": "gsft-flashlight-03",
+   "candidate_id": "gsft-flashlight-03-v1",
+   "task_id": "TR-164",
+   "task_group": "flashlight",
+   "source_group": "apple_flashlight_control_center_iphone",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Samsung Galaxy",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I turn on the flashlight on my phone? I'm trying to find my keys in the dark."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user says only my phone. The Apple passage uses Control Center and the Samsung passage uses Quick settings, so the steps differ by device and one question is needed first.",
+   "source_ref_ids": [
+    "flashlight-iphone-controlcenter",
+    "flashlight-samsung-onoff"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify only. Asks iPhone or Android before any steps. No Android-generic steps exist in sources, so the reply after the answer uses the iPhone or Samsung passage only."
+  },
+  {
+   "id": "gsft-flashlight-04",
+   "candidate_id": "gsft-flashlight-04-v1",
+   "task_id": "TR-063",
+   "task_group": "flashlight",
+   "source_group": "apple_flashlight_control_center_iphone",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Samsung Galaxy",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "The flashlight on my phone won't come on when I need it. Can you show me how to switch it on?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you have an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the device. The Apple and Samsung passages give different steps for the flashlight, so one question is needed before answering.",
+   "source_ref_ids": [
+    "flashlight-iphone-controlcenter",
+    "flashlight-samsung-onoff"
+   ],
+   "target": "Do you have an iPhone or an Android phone?",
+   "author_note": "Clarify only. Do not assume the light is broken or that the user tried anything."
+  },
+  {
+   "id": "gsft-flashlight-05",
+   "candidate_id": "gsft-flashlight-05-v1",
+   "task_id": "TR-064",
+   "task_group": "flashlight",
+   "source_group": "samsung_flashlight_galaxy",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Samsung Galaxy",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "need a light fast, how do i get my phone torch on? thanks"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which phone do you have, an iPhone or an Android?"
+   },
+   "decision_basis": "The user asks for the flashlight without naming the phone. The iPhone and Samsung passages show different steps, so the device must be known before giving steps.",
+   "source_ref_ids": [
+    "flashlight-iphone-controlcenter",
+    "flashlight-samsung-onoff"
+   ],
+   "target": "Which phone do you have, an iPhone or an Android?",
+   "author_note": "Clarify only. Short question, no assumptions about the phone brand."
+  },
+  {
+   "id": "gsft-flashlight-06",
+   "candidate_id": "gsft-flashlight-06-v1",
+   "task_id": "TR-164",
+   "task_group": "flashlight",
+   "source_group": "apple_flashlight_control_center_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone is locked and I can't get past the lock screen to open Control Center. Is there any other way to get the light on?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and that Control Center cannot be opened from the locked phone. The Apple page gives a Lock screen method for the flashlight, which respects that limit.",
+   "source_ref_ids": [
+    "flashlight-iphone-lockscreen"
+   ],
+   "target": "Yes, you can turn on the flashlight from the Lock screen without opening Control Center.\n\n1. Press and hold the **Flashlight button**, in the bottom-left corner of the Lock screen.",
+   "author_note": "Must cover: press and hold the Flashlight button in the bottom-left corner of the Lock screen. The reply must not send the user to Control Center."
+  },
+  {
+   "id": "gsft-flashlight-07",
+   "candidate_id": "gsft-flashlight-07-v1",
+   "task_id": "TR-063",
+   "task_group": "flashlight",
+   "source_group": "apple_flashlight_control_center_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Where is the flashlight on my iPhone? I want to switch it on."
+    },
+    {
+     "role": "assistant",
+     "content": "Swipe down from the upper-right corner to open Control Center, then tap the Flashlight button."
+    },
+    {
+     "role": "user",
+     "content": "I turned it on from Control Center on my iPhone, but the light is way too bright for my eyes. How do I change the brightness?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and says the light is already on from Control Center. The Apple brightness steps apply; the Samsung brightness passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "flashlight-iphone-brightness",
+    "flashlight-samsung-brightness"
+   ],
+   "target": "Here is how to change the brightness of the light you already turned on.\n\n1. Press and hold the **Flashlight button** in Control Center.\n2. Drag the slider up or down.",
+   "author_note": "Must cover: press and hold Flashlight button in Control Center, drag the slider. Do not repeat opening Control Center or turning the light on. The page does not say which direction is dimmer, so do not say it. First user turn reworded by the owner before review: it exactly matched a train_v2 user turn (precheck overlap)."
+  },
+  {
+   "id": "gsft-alarm-01",
+   "candidate_id": "gsft-alarm-01-v1",
+   "task_id": "TR-066",
+   "task_group": "alarm",
+   "source_group": "apple_alarm_clock_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I set an alarm for 6:30 on my iPhone 15? I need it for my morning pills."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone 15 and asks to set a 6:30 alarm. The Apple page gives the Clock app steps for iPhone. The Android passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "alarm-iphone-set",
+    "alarm-android-set"
+   ],
+   "target": "Here is how to set a 6:30 alarm in the Clock app.\n\n1. Open the **Clock** app, then tap the **Alarms** tab.\n2. Tap the **Add** button.\n3. Set a time for the alarm to 6:30.\n4. Optional: tap **Repeat** to set up a recurring alarm, **Label** to name it, or **Sound** to pick the sound that plays when the alarm sounds. Turn on **Snooze** to see a Snooze option when the alarm sounds and set a Snooze Duration.\n5. Tap the **Done** button.",
+   "author_note": "Must cover: Clock app, Alarms tab, Add button, set time, optional Repeat/Label/Sound/Snooze, Done button. No Android steps in the reply."
+  },
+  {
+   "id": "gsft-alarm-02",
+   "candidate_id": "gsft-alarm-02-v1",
+   "task_id": "TR-067",
+   "task_group": "alarm",
+   "source_group": "google_alarm_clock_android",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "my android phone, i need an alarm for 7am tomorrow. how do i set it"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone and asks to set a 7am alarm. The Android passage gives the Clock steps and the 5-minute spacing condition for more than one alarm. The iPhone passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "alarm-android-set",
+    "alarm-iphone-set"
+   ],
+   "target": "Here is how to set a 7:00 am alarm on your Android phone.\n\n1. Open the **Clock** app and tap **Alarm**.\n2. Tap **Add** to add an alarm.\n3. Set the time. On the analog clock, slide the hand to the hour you want, then slide the hand to the minutes you want. On the digital clock, enter the hour and minutes you want.\n4. With the 12-hour format, tap **AM** or **PM**.\n5. Tap **OK**.\n\nIf you set more than one alarm, leave a 5-minute window between each alarm.",
+   "author_note": "Must cover: Clock app, Alarm tab, Add, set time (analog or digital branch), AM or PM, OK, and the 5-minute condition for more than one alarm. The page does not say whether a day can be chosen, so do not say it."
+  },
+  {
+   "id": "gsft-alarm-03",
+   "candidate_id": "gsft-alarm-03-v1",
+   "task_id": "TR-066",
+   "task_group": "alarm",
+   "source_group": "apple_alarm_clock_iphone",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Android phone",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Can you help me set a 6:30 alarm? I'm in a hurry and my phone is in my hand."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user asks for an alarm but does not name the phone. The Apple and Android passages show different steps, so one question is needed first.",
+   "source_ref_ids": [
+    "alarm-iphone-set",
+    "alarm-android-set"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify only. Ask iPhone or Android before any steps."
+  },
+  {
+   "id": "gsft-alarm-04",
+   "candidate_id": "gsft-alarm-04-v1",
+   "task_id": "TR-067",
+   "task_group": "alarm",
+   "source_group": "google_alarm_clock_android",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Android phone",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "wake up alarm for work tomorrow, what do i tap"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you have an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user asks which buttons to tap for an alarm without naming the phone. The iPhone and Android passages use different screens, so the device must be known first.",
+   "source_ref_ids": [
+    "alarm-iphone-set",
+    "alarm-android-set"
+   ],
+   "target": "Do you have an iPhone or an Android phone?",
+   "author_note": "Clarify only. Do not guess the device from the request."
+  },
+  {
+   "id": "gsft-alarm-05",
+   "candidate_id": "gsft-alarm-05-v1",
+   "task_id": "TR-067",
+   "task_group": "alarm",
+   "source_group": "google_alarm_clock_android",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an Android phone and my hands shake, so dragging the hands on the clock is really hard. Is there another way to set my alarm time?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone and cannot drag clock hands. The Android page says the digital clock lets the user enter the hour and minutes, so that branch respects the limit.",
+   "source_ref_ids": [
+    "alarm-android-set"
+   ],
+   "target": "Here is how to set the alarm time on a digital clock, without dragging the hands.\n\n1. Open the **Clock** app and tap **Alarm**.\n2. Tap **Add** to add an alarm.\n3. If the clock is digital, enter the hour and minutes you want.\n4. With the 12-hour format, tap **AM** or **PM**.\n5. Tap **OK**.\n\nIf you set more than one alarm, leave a 5-minute window between each alarm.",
+   "author_note": "Must cover: Clock app, Alarm, Add, digital clock entry (the drag branch is omitted because the user cannot drag), AM or PM, OK, and the 5-minute condition. Do not add steps that need dragging."
+  },
+  {
+   "id": "gsft-alarm-06",
+   "candidate_id": "gsft-alarm-06-v1",
+   "task_id": "TR-066",
+   "task_group": "alarm",
+   "source_group": "apple_alarm_clock_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I set an alarm on my iPhone?"
+    },
+    {
+     "role": "assistant",
+     "content": "Open the Clock app, then tap the Alarms tab. Tap the Add button, set a time, then tap Done when you are finished."
+    },
+    {
+     "role": "user",
+     "content": "I opened the Alarms tab, tapped Add and set it to 7:00. Now I want to name it Pills and turn on Snooze before I save it."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and says the alarm is already set to 7:00 and that they want a label and Snooze before saving. The Apple page gives the Label, Snooze and Done steps. The Android passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "alarm-iphone-set",
+    "alarm-android-set"
+   ],
+   "target": "Here are the last steps before you save your alarm.\n\n1. Tap **Label** to name your alarm.\n2. Turn on **Snooze** to see a Snooze option when the alarm sounds and set a Snooze Duration.\n3. Tap the **Done** button.",
+   "author_note": "Must cover: Label, Snooze with Snooze Duration, Done. Do not repeat opening the Alarms tab, Add, or setting the time."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-01",
+   "candidate_id": "gsft-hearing_bluetooth-01-v1",
+   "task_id": "TR-068",
+   "task_group": "hearing_bluetooth",
+   "source_group": "apple_mfi_hearing_devices_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My hearing aids are made for iPhone. How do I pair them with my iPhone? I don't really know where to start."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and Made for iPhone hearing aids. The Apple page gives the Hearing Devices pairing steps, including the condition when Pair MFi Hearing Device is not shown. The Android passage is for another platform and is not used.",
+   "source_ref_ids": [
+    "hearing-iphone-pair",
+    "hearing-android-pair"
+   ],
+   "target": "Here are the steps to pair your Made for iPhone hearing aids.\n\n1. Make sure that iOS or iPadOS is up to date.\n2. Open the **Settings** app.\n3. Tap **Accessibility**, then tap **Hearing Devices**.\n4. Tap **Pair MFi Hearing Device**, then follow the onscreen instructions.\n5. Select your hearing device, then tap **Pair**. If you don't see **Pair MFi Hearing Device**, tap the name of your hearing device when it appears in Hearing Devices settings.\n6. Tap **Pair** when you see one or more Bluetooth pairing requests.",
+   "author_note": "Must cover: iOS or iPadOS up to date, Settings, Accessibility, Hearing Devices, Pair MFi Hearing Device, select device and Pair, the condition for the device name, and Pair on Bluetooth pairing requests. Covers Made for iPhone hearing devices only; AirPods are not covered by the source."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-02",
+   "candidate_id": "gsft-hearing_bluetooth-02-v1",
+   "task_id": "TR-069",
+   "task_group": "hearing_bluetooth",
+   "source_group": "google_bluetooth_pairing_android",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android phone and need to pair new Bluetooth headphones for my hearing. My phone isn't showing them."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone and says new headphones do not show up. The Android pairing steps include the missing-device check and the Android 15 condition. The Apple passage is for another platform and covers only Made for iPhone devices.",
+   "source_ref_ids": [
+    "hearing-android-pair",
+    "hearing-iphone-pair"
+   ],
+   "target": "Here are the steps to pair new Bluetooth headphones on your Android phone.\n\n1. Swipe down from the top of the screen.\n2. Touch and hold the **Bluetooth** icon.\n3. Tap **Pair new device**. If there is no **Pair new device**, check under **Available devices** or tap **More**, then **Refresh**.\n4. Tap the name of the Bluetooth device.\n5. Follow the on-screen instructions. If you are asked for a passcode and don't have it, try 0000 or 1234.\n\nSome of these steps work only on Android 15 and up.",
+   "author_note": "Must cover: swipe down, touch and hold Bluetooth icon, Pair new device with the Available devices / More / Refresh check, tap the device name, on-screen instructions, passcode note, and the Android 15 condition."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-03",
+   "candidate_id": "gsft-hearing_bluetooth-03-v1",
+   "task_id": "TR-068",
+   "task_group": "hearing_bluetooth",
+   "source_group": "apple_mfi_hearing_devices_iphone",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Android phone",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "my new hearing aids keep disconnecting, how do i connect them to my phone?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you use an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone. The Apple page covers Made for iPhone pairing through Settings, while the Android page covers connecting paired devices through Saved devices, so one question is needed first.",
+   "source_ref_ids": [
+    "hearing-iphone-pair",
+    "hearing-android-connect"
+   ],
+   "target": "Do you use an iPhone or an Android phone?",
+   "author_note": "Clarify only. Do not assume a Made for iPhone device or a pairing problem."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-04",
+   "candidate_id": "gsft-hearing_bluetooth-04-v1",
+   "task_id": "TR-069",
+   "task_group": "hearing_bluetooth",
+   "source_group": "google_bluetooth_pairing_android",
+   "behavior": "clarify",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone or Android phone",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I need my Bluetooth hearing headphones paired before my call starts, what do I tap?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user asks which buttons to tap for pairing without naming the phone. The iPhone and Android pairing steps differ, so one question is needed first.",
+   "source_ref_ids": [
+    "hearing-iphone-pair",
+    "hearing-android-pair"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify only. Ask the device before any steps; the call deadline is not a reason to skip the question."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-05",
+   "candidate_id": "gsft-hearing_bluetooth-05-v1",
+   "task_id": "TR-069",
+   "task_group": "hearing_bluetooth",
+   "source_group": "google_bluetooth_pairing_android",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Android and I can't read small print, so please give me the shortest steps to reconnect the headphones I paired last week."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and says the headphones were paired before. The Android page gives the connect steps for an accessory that is already paired, which is the shortest route the source gives.",
+   "source_ref_ids": [
+    "hearing-android-connect"
+   ],
+   "target": "Here are the shortest steps to reconnect headphones you already paired.\n\n1. Make sure the Bluetooth is turned on.\n2. Touch and hold the **Bluetooth** icon.\n3. Under **Saved devices**, select the paired disconnected device.\n4. Wait until the device shows as **Connected**.",
+   "author_note": "Must cover: Bluetooth on, touch and hold Bluetooth icon, Saved devices selection, wait for Connected. Keep the reply to these steps only; the user asked for the shortest route."
+  },
+  {
+   "id": "gsft-hearing_bluetooth-06",
+   "candidate_id": "gsft-hearing_bluetooth-06-v1",
+   "task_id": "TR-069",
+   "task_group": "hearing_bluetooth",
+   "source_group": "google_bluetooth_pairing_android",
+   "behavior": "multiturn",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Can you tell me how to connect new Bluetooth headphones to my Android phone?"
+    },
+    {
+     "role": "assistant",
+     "content": "Swipe down from the top of the screen, touch and hold the Bluetooth icon, then tap Pair new device. Tap the name of the Bluetooth device and follow the on-screen instructions."
+    },
+    {
+     "role": "user",
+     "content": "I paired my headphones last week and they worked fine. Today they're not connected, and my phone lists them under saved devices. How do I reconnect them?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone and says the headphones were already paired and are now disconnected. The Android page gives the connect steps for an accessory that is already paired. The Apple passage is for another platform.",
+   "source_ref_ids": [
+    "hearing-android-connect",
+    "hearing-iphone-pair"
+   ],
+   "target": "Here is how to reconnect headphones that are already paired.\n\n1. Make sure the Bluetooth is turned on.\n2. Touch and hold the **Bluetooth** icon.\n3. Under **Saved devices**, select the paired disconnected device.\n4. Wait until the device shows as **Connected**.",
+   "author_note": "Must cover: Bluetooth on, touch and hold Bluetooth icon, Saved devices selection, wait for Connected. Do not repeat the pairing steps the user already did. First user turn reworded by the owner before review: it exactly matched a train_v2 user turn (precheck overlap)."
+  }
+ ]
+}

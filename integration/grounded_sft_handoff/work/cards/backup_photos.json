@@ -1,0 +1,38 @@
+{
+ "task_group": "backup_photos",
+ "source_gaps": "Apple page gives no version limits or storage notes for the iPhone setup. Google page does not state an Android version for its steps and names no Wi-Fi only setting for the Backup toggle; its connection and storage notes are not in any model-visible text. Samsung or other brands are not named on the Google page. Mac and Windows steps on the Apple page were not used.",
+ "source_refs": [
+  {
+   "ref_id": "bp-iphone-icloud-photos",
+   "source_group": "apple_icloud_photos_iphone",
+   "organization": "Apple",
+   "title": "Set up iCloud Photos on all your devices",
+   "url": "https://support.apple.com/guide/icloud/mm7e90c1ba48",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Set up iCloud Photos on your iPhone or iPad",
+   "applicability": "iPhone; the page gives no version limits for this setup",
+   "platform": "iPhone",
+   "app": "Settings",
+   "verified_excerpt": "Tap Photos, then turn on Sync this [device].",
+   "model_visible_text": "On iPhone: Make sure you're signed in to the same Apple Account on each device. On your iPhone or iPad, go to Settings > [your name] > iCloud. Tap Photos, then turn on Sync this iPhone.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section and the introductory prerequisite sentence; excerpt quoted exactly; [device] filled as iPhone from the page screenshot caption 'Sync this iPhone is turned on'; 'On iPhone:' is the platform prefix; straight apostrophes used."
+  },
+  {
+   "ref_id": "bp-android-google-photos",
+   "source_group": "google_photos_backup_android",
+   "organization": "Google",
+   "title": "Back up photos & videos - Android phone & tablet - Google Photos Help",
+   "url": "https://support.google.com/photos/answer/6193313?hl=en&co=GENIE.Platform%3DAndroid",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Turn backup on or off",
+   "applicability": "Android phone or tablet; the page gives no Android version for these steps",
+   "platform": "Android",
+   "app": "Google Photos",
+   "verified_excerpt": "Turn Backup on or off.",
+   "model_visible_text": "On Android: On your Android phone or tablet, open the Google Photos app. Sign in to your Google Account. At the top right, tap your Profile picture or Initial. Tap Photos settings and then Backup. Turn Backup on or off.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; the ellipsis in 'Tap Photos settings ... and then Backup' is dropped; excerpt quoted exactly; 'On Android:' is the platform prefix; straight apostrophes used."
+  }
+ ]
+}

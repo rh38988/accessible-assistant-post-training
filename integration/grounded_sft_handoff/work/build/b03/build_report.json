@@ -1,0 +1,52 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 7,
+  "constraint": 3,
+  "clarify": 6,
+  "multiturn": 2
+ },
+ "tags": {
+  "conditional": 7,
+  "distractor": 4
+ },
+ "per_group": {
+  "display_scale": 4,
+  "internet_not_working": 7,
+  "wifi_connect": 7
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-display_scale-01": "91615456bfe054aa0301120499cd5a54cb70027d81c2c54f50b74493adbcd9b6",
+  "gsft-display_scale-02": "fee62498033e8779cdabe9dc96d7db06101d604bf02aa7b3b875e1d3a5640c49",
+  "gsft-display_scale-03": "52548a5d50a2bad600afccf4be2dae118edf2816543a726f0c0d4b14c2368ed4",
+  "gsft-display_scale-04": "974355c782e9cf452cd6fd10375cc190685b8895ca72405c747812abe181deda",
+  "gsft-internet_not_working-01": "a875b310f59dfb2b9d5b3d14b219e33b845640578679fcdc8ede74d3a5513d84",
+  "gsft-internet_not_working-02": "59649286d6275d27124cf52ae502c4c3ae2e5976afe37fc0b04b18119a80fc41",
+  "gsft-internet_not_working-03": "414e7c1a4edf1189b9e37436f050505364b1661d0949f56743ac699aef17e3dd",
+  "gsft-internet_not_working-04": "05bec90c01b1f08899dffaf8604d37d0c91bad06023fae40dd03a501786b2e9b",
+  "gsft-internet_not_working-05": "422512ee2e5be745d609563ce21b99dcad9f3302bf27ac26681d0e2c5adc744b",
+  "gsft-internet_not_working-06": "52c5dc100088b35e28c73a0a1e441acaaea5457f985b10367e01bd536b59499a",
+  "gsft-internet_not_working-07": "e57dd84d587cf52a79ce5c9419894ac472bfd775f98ec73d4449285b9afa016c",
+  "gsft-wifi_connect-01": "82bdf43ec04491167748f099d6920f956e57f076635b3e4278c0f18ad2525567",
+  "gsft-wifi_connect-02": "94dfa6728f7dc735447831df865066bbbc9d0c35c09fa74916f28cc2bc91117e",
+  "gsft-wifi_connect-03": "3a9626a28d58e0b8cb7a738e35dceb55cb3d81af228c2ea56bc00b1bf93bd813",
+  "gsft-wifi_connect-04": "1a3738cfd225b7b138c0cc6a0d5d859c1ccb42245989c461913548b78c2409cf",
+  "gsft-wifi_connect-05": "465466e5e7d2fe7cab0ed267653e62c9813c168cf4b8b59fabf56296936c968a",
+  "gsft-wifi_connect-06": "0035831c9359ae09d4d659a24dde167190be7ea6d8487a0ce290992bd8f06a0d",
+  "gsft-wifi_connect-07": "7c1b7c7585997011b8e665cb60c4123ac9ea26e6d53b59bd7658d3c8382efecb"
+ }
+}
