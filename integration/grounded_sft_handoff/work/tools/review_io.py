@@ -26,9 +26,10 @@ def jl(p):
     return [json.loads(l) for l in open(p, encoding="utf-8") if l.strip()]
 
 
-def build():
-    recs = {r["id"]: r for r in jl(WORK / "build/candidates.jsonl")}
-    prov = {p["id"]: p for p in jl(WORK / "build/provenance.jsonl")}
+def build(batch=None):
+    d = WORK / "build" / batch if batch and (WORK / "build" / batch).exists() else WORK / "build"
+    recs = {r["id"]: r for r in jl(d / "candidates.jsonl")}
+    prov = {p["id"]: p for p in jl(d / "provenance.jsonl")}
     return recs, prov
 
 
@@ -45,7 +46,7 @@ def batch_ids(prov, batch):
 
 
 def render(batch, n):
-    recs, prov = build()
+    recs, prov = build(batch)
     done = all_reviews()
     ids = [i for i in batch_ids(prov, batch) if (i, prov[i]["content_sha256"]) not in done]
     lines = [f"# Review input: {batch}, round {n} ({len(ids)} candidates)\n"]
@@ -78,7 +79,7 @@ def render(batch, n):
 
 
 def check(batch, n):
-    recs, prov = build()
+    recs, prov = build(batch)
     ids = json.load(open(WORK / f"reviews/input/{batch}.r{n}.ids.json"))
     path = WORK / f"reviews/{batch}.r{n}.jsonl"
     errs = []

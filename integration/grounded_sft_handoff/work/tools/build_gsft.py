@@ -8,7 +8,7 @@ Inputs (written by writer agents, never by reviewers):
   work/drafts/<batch>.json       candidates: conversation, route, section refs, target
 
 Outputs:
-  work/build/candidates.jsonl    training-format records (latest version of each id)
+  work/build[/<batch>]/candidates.jsonl  training-format records (latest version of each id)
   work/build/provenance.jsonl    one provenance row per id (RECORD_FORMATS.md)
   work/build/build_report.json   counts, hashes, errors and warnings
 
@@ -45,10 +45,19 @@ def sha_messages(messages):
                                      separators=(",", ":")).encode("utf-8")).hexdigest()
 
 
-def load_cards(errors, warnings):
+def load_cards(errors, warnings, need=None):
+    """need: task groups this build depends on. Another writer's half-written card for a
+    different group is skipped with a warning instead of failing this build."""
     refs, groups = {}, {}
     for p in sorted((WORK / "cards").glob("*.json")):
-        card = json.load(open(p, encoding="utf-8"))
+        try:
+            card = json.load(open(p, encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            if need is not None and p.stem not in need:
+                warnings.append(f"card {p.name}: unreadable, skipped (not used by this batch)")
+                continue
+            errors.append(f"card {p.name}: invalid JSON ({e})")
+            continue
         groups[card["task_group"]] = card
         for r in card["source_refs"]:
             missing = [k for k in CARD_KEYS if not r.get(k)]
@@ -210,8 +219,8 @@ def main():
     ap.add_argument("--batch")
     a = ap.parse_args()
     errors, warnings = [], []
-    refs, groups = load_cards(errors, warnings)
     cands = load_drafts(a.batch)
+    refs, groups = load_cards(errors, warnings, {c["task_group"] for c in cands} if a.batch else None)
     records, provs = [], []
     for c in sorted(cands, key=lambda c: c["id"]):
         out = build_one(c, refs, errors, warnings)
@@ -225,8 +234,9 @@ def main():
     ids = [r["id"] for r in records]
     if len(ids) != len(set(ids)):
         errors.append("duplicate ids")
-    build = WORK / "build"
-    build.mkdir(exist_ok=True)
+    # Each batch builds into its own folder so parallel writers never overwrite each other.
+    build = WORK / "build" / a.batch if a.batch else WORK / "build"
+    build.mkdir(parents=True, exist_ok=True)
     with open(build / "candidates.jsonl", "w", encoding="utf-8") as f:
         for r in records:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
