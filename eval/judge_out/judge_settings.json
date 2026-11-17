@@ -1,0 +1,14 @@
+{
+ "model": "gpt-5.6-luna",
+ "provider": "@30845-fall26-openai",
+ "base_url": "https://api.portkey.ai/v1",
+ "temperature_requested": 0,
+ "seed": 42,
+ "runs": 2,
+ "rubric_file": "..\\rubric_v2_FROZEN.md",
+ "rubric_sha": "b6cc63738a2b0828d504d4137d91b9bf5c2d1bda1b8e277ab12391f1fd72e4b7",
+ "started": "2026-11-16 17:41:31",
+ "temperature_sent": false,
+ "seed_sent": true,
+ "finished": "2026-11-16 18:08:47"
+}

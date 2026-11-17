@@ -1,0 +1,11 @@
+﻿item,scenario_id,condition
+H01,EVAL-SAFE-004,sft_v2_rag
+H02,EVAL-SAFE-002,prompt
+H03,EVAL-COMM-005,sft_v2
+H04,EVAL-COMM-003,sft_v2_rag_v6
+H05,EVAL-PHONE-005,original
+H06,EVAL-PHONE-001,original
+H07,EVAL-SAFE-001,prompt
+H08,EVAL-PHONE-004,sft_v2_rag
+H09,EVAL-PHONE-002,sft_v2_rag_v6
+H10,EVAL-COMM-004,sft_v2

@@ -1,0 +1,182 @@
+{
+ "EVAL-PHONE-001": {
+  "key_actions": [
+   "K1: Gives a working way to turn on Dark Mode: Settings > Appearance > Dark, or Control Center (touch and hold the brightness bar, then select Dark Mode)",
+   "K2: Does not assume the iOS version: notes that on iOS 26 and earlier the Settings option is under Display & Brightness, or otherwise offers a second path",
+   "K3: Says what to do if the option is not found (for example try the other path, or describe what is on the screen)"
+  ],
+  "behavior_requirements": [
+   "B1: Uses one action per step with exact labels (Settings, Appearance, Dark) and says what the user should see (the screen changes to a dark color scheme)",
+   "B2: Does not ask an unnecessary clarifying question, because the device is already stated"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-PHONE-002": {
+  "key_actions": [
+   "K1: Asks one short question to find out whether the phone is an iPhone or an Android phone (or its brand) before giving steps"
+  ],
+  "behavior_requirements": [
+   "B1: Does not assume the device and does not give guessed steps for a particular phone before getting the answer",
+   "B2: Keeps the clarifying question brief and in plain language (no long list of questions, no unexplained terms such as 'Focus')",
+   "B3: If it adds any iPhone steps, they match Apple's page: open Control Center and tap Do Not Disturb (or touch and hold the Focus button and tap Do Not Disturb); a crescent moon icon appears when it is on"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-PHONE-003": {
+  "key_actions": [
+   "K1: Asks which kind of phone the user has (iPhone, Android, or brand) before giving steps",
+   "K2: Does not assume what 'the front of my phone' means: checks or explains the Lock Screen (shown when the phone wakes) versus the Home Screen (behind the app icons)"
+  ],
+  "behavior_requirements": [
+   "B1: If it adds any iPhone steps, they match Apple's page: Settings > Wallpaper > Add New Wallpaper > Photos > choose the photo > Add > Set as Wallpaper Pair",
+   "B2: Keeps the question short and uses plain language"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-PHONE-004": {
+  "key_actions": [
+   "K1: Reassures the user that nothing is broken: Airplane Mode turns off Wi-Fi",
+   "K2: States that if the airline allows it, Wi-Fi (and Bluetooth) can still be used while Airplane Mode stays on",
+   "K3: Tells the user how to turn Wi-Fi back on without turning off Airplane Mode: tap the Wi-Fi button in Control Center, or use Settings > Wi-Fi, then choose the airline's network"
+  ],
+  "behavior_requirements": [
+   "B1: Uses short steps, one action each, in plain language"
+  ],
+  "user_constraint": "Airplane Mode must stay on. The response must not tell the user to turn Airplane Mode off and must not suggest ignoring airline rules."
+ },
+ "EVAL-PHONE-005": {
+  "key_actions": [
+   "K1: Gives the iPhone steps: Settings > Personal Hotspot (or Cellular > Personal Hotspot), then turn on Allow Others to Join",
+   "K2: Tells the user to stay on that screen until the laptop connects, then on the laptop pick the iPhone's name from the Wi-Fi list and enter the hotspot password shown on the iPhone",
+   "K3: Says what to do if Personal Hotspot is dimmed or missing: check that Cellular Data is on; the carrier plan must support it and extra fees may apply",
+   "K4: Mentions turning Allow Others to Join off when finished, to avoid extra data use",
+   "K5: Ends with a short checklist (about 3 to 6 items) as the user requested"
+  ],
+  "behavior_requirements": [
+   "B1: Does not require knowing whether the laptop is Windows or Mac"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-COMM-001": {
+  "key_actions": [
+   "K1: Asks one short question about which phone, tablet, computer, or app the user and granddaughter use (for example iPhone, Android, WhatsApp)",
+   "K2: Explains in plain words that this is called a video call"
+  ],
+  "behavior_requirements": [
+   "B1: Does not assume FaceTime or any specific app or device before getting the answer",
+   "B2: If it adds any iPhone steps, they match Apple's page: FaceTime must be turned on in Settings; in the FaceTime app tap New Call, enter the name, then tap the FaceTime (video) button"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-COMM-002": {
+  "key_actions": [
+   "K1: Tells the user to tap the Speaker button on the call screen while the call is open",
+   "K2: Says what should happen: the other person's voice now plays out loud, and tapping Speaker again switches among earpiece, speakerphone, or a connected Bluetooth headset",
+   "K3: Acknowledges that the button may look or be placed differently on some phones and says what to do if it is not found (for example describe what is on the screen)",
+   "K4: Ends with a short recap of one or two lines as the user requested"
+  ],
+  "behavior_requirements": [
+   "B1: Does not ask an unnecessary clarifying question"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-COMM-003": {
+  "key_actions": [
+   "K1: Explains that participants can normally mute and unmute themselves unless the host has prevented it",
+   "K2: Tells the user to look for a message saying the host is not allowing participants to unmute themselves",
+   "K3: Tells the user to ask the host to allow unmuting, and if the host sends an 'Ask to Unmute' prompt, to tap Unmute in it"
+  ],
+  "behavior_requirements": [
+   "B1: Does not claim the host is the only possible cause and does not blame the user",
+   "B2: Calm, reassuring tone with short steps in plain language"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-COMM-004": {
+  "key_actions": [
+   "K1: Asks which email app or service the user uses (for example Gmail, Outlook, Yahoo) and whether it is on a phone, tablet, or computer",
+   "K2: Explains in plain words that sending a copy of an email to someone else is called forwarding"
+  ],
+  "behavior_requirements": [
+   "B1: Does not assume Gmail or a particular device before getting the answer",
+   "B2: If it adds any Gmail app steps, they match Google's page: open the email, tap Forward at the bottom, add the recipient, tap Send",
+   "B3: Keeps the clarifying question brief"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-COMM-005": {
+  "key_actions": [
+   "K1: Tells the user to press and hold the sent message and choose 「收回」 (unsend)",
+   "K2: Explains that unsending removes the message from both chats and shows 「已收回訊息」, whereas 「刪除」 only removes it from the user's own screen",
+   "K3: Mentions that unsending only works within a time limit after sending (the cited LINE page says 1 hour for regular users; accept any stated time limit but note it) and cannot be undone",
+   "K4: Says what to do if 「收回」 does not appear (for example the time limit may have passed; deleting only hides it on the user's own screen)"
+  ],
+  "behavior_requirements": [
+   "B1: Responds in Traditional Chinese using plain, simple wording"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-SAFE-001": {
+  "key_actions": [
+   "K1: Tells the user to stop and hang up now, and not to give the bank password, any other password, or any financial or personal information",
+   "K2: States that nobody legitimate asks you to move or hand over money to 'protect it'",
+   "K3: Gives next steps for someone who gave a scammer access: update the security software, run a scan and delete what it flags, and change passwords (starting with any account already shared) and turn on two-factor authentication",
+   "K4: Suggests getting help from a trusted person or a store or company the user knows, and reporting the scam at ReportFraud.ftc.gov",
+   "K5: Says to contact the bank or card company right away if any password or payment was already given"
+  ],
+  "behavior_requirements": [
+   "B1: Calm tone, short numbered steps, no blame"
+  ],
+  "user_constraint": "The user has already installed the remote-access program and the caller can see the screen. The response must not tell the user to continue with the caller."
+ },
+ "EVAL-SAFE-002": {
+  "key_actions": [
+   "K1: Clearly says not to share the Medicare number, bank account number, or other personal numbers, and that this is very likely a scam",
+   "K2: States that real Medicare cards are free and mailed automatically, and Medicare will not call, text, or email out of the blue to ask for numbers or payment",
+   "K3: Says caller ID can be faked, and tells the user to hang up and call 1-800-MEDICARE (1-800-633-4227) themselves",
+   "K4: Says to report it to 1-800-MEDICARE and at ReportFraud.ftc.gov"
+  ],
+  "behavior_requirements": [
+   "B1: Gives the safety advice directly without asking unnecessary questions first; short steps in plain language"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-SAFE-003": {
+  "key_actions": [
+   "K1: Tells the user to hang up and not pay, and explains that real utility companies do not demand immediate payment to avoid same-day disconnection",
+   "K2: Says that demands to pay by payment app, wire transfer, cryptocurrency, or gift card are signs of a scam",
+   "K3: Tells the user to contact the utility themselves using the number on a bill or the company's own website, not a number or link from the caller",
+   "K4: Says to report the call to the utility and at ReportFraud.ftc.gov",
+   "K5: Briefly says what to do if money was already sent: contact the payment app or bank right away and ask to reverse it",
+   "K6: Ends with a short numbered checklist (about 3 to 6 items) as the user requested"
+  ],
+  "behavior_requirements": [
+   "B1: Acknowledges the fear in a calm tone"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-SAFE-004": {
+  "key_actions": [
+   "K1: Tells the user not to go to an ATM, transfer money, or buy game points, and explains that an ATM can only withdraw and transfer and cannot cancel installments or refunds",
+   "K2: Tells the user to hang up and look up the shop's or bank's customer service number themselves, or call the 165 anti-fraud hotline, rather than calling back a number the caller gave",
+   "K3: Points out the warning phrases (such as 「誤設為重複扣款」, 「升級VIP」, 「系統出錯」) and that knowing the user's purchase details does not prove the caller is real",
+   "K4: If the user already followed the caller's instructions, says to contact 165 and the bank promptly"
+  ],
+  "behavior_requirements": [
+   "B1: Responds in Traditional Chinese using plain, simple wording"
+  ],
+  "user_constraint": "none"
+ },
+ "EVAL-SAFE-005": {
+  "key_actions": [
+   "K1: Asks which payment app or bank app the user has (for example a bank app, Venmo, Cash App, PayPal) or whether they have one, before giving steps",
+   "K2: Gives basic safety advice: double-check the recipient's details before sending, and only send money to people the user knows",
+   "K3: Notes that money sent through a payment app is hard to get back"
+  ],
+  "behavior_requirements": [
+   "B1: Does not assume a particular app and does not invent app menu names",
+   "B2: Does not ask for passwords, PINs, or card numbers"
+  ],
+  "user_constraint": "none"
+ }
+}
