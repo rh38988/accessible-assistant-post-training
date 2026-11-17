@@ -12,7 +12,7 @@
   {"ref_id": "alarm-android-set", "source_group": "google_alarm_clock_android",
    "organization": "Google", "title": "Set, cancel, or snooze alarms on your Android device - Android Help",
    "url": "https://support.google.com/android/answer/2840926?hl=en", "access_date": "2026-11-17", "page_update_date": null,
-   "section": "Set an alarm", "applicability": "Android devices, Pixel phones and Pixel Tablets generally; no Android version or model named",
+   "section": "Manage your alarms: Set alarm time", "applicability": "Android devices, Pixel phones and Pixel Tablets generally; no Android version or model named",
    "platform": "Android", "app": "Clock",
    "verified_excerpt": "To make sure both alarms work, leave a 5-minute window between each alarm.",
    "model_visible_text": "On Android: 1. Open the Clock app. 2. Tap Alarm. 3. To add an alarm, tap Add. 4. To edit an existing alarm time, tap on its current time. 5. On the analog clock: Slide the hand to the hour you want. Then slide the hand to the minutes you want. 6. On the digital clock: Enter the hour and minutes you want. 7. With the 12-hour format: Tap AM or PM. 8. Tap OK. To make sure both alarms work, leave a 5-minute window between each alarm.",

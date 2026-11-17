@@ -4,7 +4,7 @@
   {"ref_id": "hearing-iphone-pair", "source_group": "apple_mfi_hearing_devices_iphone",
    "organization": "Apple", "title": "Use Made for iPhone hearing devices - Apple Support",
    "url": "https://support.apple.com/en-us/108780", "access_date": "2026-11-17", "page_update_date": null,
-   "section": "Pairing with iPhone or iPad", "applicability": "Made for iPhone (MFi) hearing devices on iPhone or iPad; the page gives no iOS version number",
+   "section": "Pair and connect your hearing device: iPhone or iPad", "applicability": "Made for iPhone (MFi) hearing devices on iPhone or iPad; the page gives no iOS version number",
    "platform": "iPhone", "app": "Settings",
    "verified_excerpt": "Tap Pair MFi Hearing Device, then follow the onscreen instructions.",
    "model_visible_text": "On iPhone: 1. Make sure that iOS or iPadOS is up to date. 2. Open the Settings app. 3. Tap Accessibility, then tap Hearing Devices. 4. Tap Pair MFi Hearing Device, then follow the onscreen instructions. You'll be asked to select your available hearing device, then tap Pair. If you don't see Pair MFi Hearing Device, tap the name of your hearing device when it appears in Hearing Devices settings. Then tap Pair when you see one or more Bluetooth pairing requests.",
