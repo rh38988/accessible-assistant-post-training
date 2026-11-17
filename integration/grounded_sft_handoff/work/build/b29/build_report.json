@@ -1,0 +1,50 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "constraint": 6,
+  "multiturn": 6
+ },
+ "tags": {
+  "safety": 17,
+  "conditional": 3
+ },
+ "per_group": {
+  "extortion_email_scam": 6,
+  "fake_debt_collector": 6,
+  "toll_text_scam": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-extortion_email_scam-01": "4f18eb784917d91f73864d1ca55d217e7eb1f5fe8eab3f52adb21e41e097e378",
+  "gsft-extortion_email_scam-02": "766049432588cbe9ee76303e9480f9de14dfbb1a393d2c2d26c82f87d39bb6d2",
+  "gsft-extortion_email_scam-03": "1a293bc6d6ac72c32713aad02748d15a8a5464231d939179d3a5f46dedf4aaae",
+  "gsft-extortion_email_scam-04": "49c713a5576a0b96cc313ccff5fb00fe6c179d447ea06fe9bb9e26e873baee24",
+  "gsft-extortion_email_scam-05": "a094661e02c575c50bea7966b68c58ae68f2fab7f8436699cfad875021fa3c62",
+  "gsft-extortion_email_scam-06": "203a32af2945cb664938d64494a10c881e9c68ca7282bc047cd8c25dfcd2e152",
+  "gsft-fake_debt_collector-01": "0b7d0ef3259949ebb8b70fae5309cf53b956048623e3b3a72afc3d08c65ec9c4",
+  "gsft-fake_debt_collector-02": "18c867c21e627dadf5d77feb1d748459ae2603b38b0324f90cef230cc516768b",
+  "gsft-fake_debt_collector-03": "ccdde45d6865f7969c04289cb03b64436bbab0b25a53b016bdb74415e4ffcf9b",
+  "gsft-fake_debt_collector-04": "6e067497ddb0dfa9f5e07770aeeecb59da3a9cc11f9b744d72c871233f93a1a6",
+  "gsft-fake_debt_collector-05": "a293baf8f23624fe5a553dbdde60da65d3b46908504acf7d5904ffc46325ed19",
+  "gsft-fake_debt_collector-06": "a905684c81ec0928200023357c168c14abc952dc96180812803a3e482f7414fa",
+  "gsft-toll_text_scam-01": "ca002f5857cd14116758690bb8f8c314347afe9edceef9721d26cbe0e354ec16",
+  "gsft-toll_text_scam-02": "14c917af94878983099559e79124f1a51e3d57651f2839e1d3d4ca1585df7920",
+  "gsft-toll_text_scam-03": "b0b8628827e999a0c7e2b95fc757bf8132fba89d3f29e60c3c88224c87d1d631",
+  "gsft-toll_text_scam-04": "91a6373595fdc7d92c7554d6763ffa76da0e3eb3e85141fbcd3c9ce79eaad84c",
+  "gsft-toll_text_scam-05": "de76ee8a577c4ac644390595edec28288900f3ed4ec5e01870545d92d53beeea",
+  "gsft-toll_text_scam-06": "498b3982d40831bdccf514e90ce30ad53ec269f63f90bc90dea082fe13042177"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "candidates": 14,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "constraint": 4,
+  "multiturn": 4
+ },
+ "tags": {
+  "safety": 10,
+  "conditional": 3
+ },
+ "per_group": {
+  "fake_check_scam": 6,
+  "home_improvement_scam": 6,
+  "print_email": 2
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-fake_check_scam-01": "01016b7dff1fa2423ee99e3b531ef372f01ec4b2ee1d2fa78439fe86137f123b",
+  "gsft-fake_check_scam-02": "d01d87026353e32a79bd9e61da381b47e6da65a2190f8691f3f76f5b5cda8cab",
+  "gsft-fake_check_scam-03": "22f4557473f2222bf06b6b1ba0f38d43c3c87ca81701d00cd58aac574f4b7cd3",
+  "gsft-fake_check_scam-04": "14e196611f21b4e391af96afbbcb81347dfe666b69c9f3b3d75f0c35b1468bd7",
+  "gsft-fake_check_scam-05": "30e5493fbfe1c5ed74ba3a18dc93051665c086e269bfd38804f5e1bab1e4707f",
+  "gsft-fake_check_scam-06": "94c97a445b0aa9a316065711fa6e53bb8d9792009bd5c2044d3ee413c9330e41",
+  "gsft-home_improvement_scam-01": "1a61b14a97f92ddfab2be863b89d6ee920260d7a7cbe6492c7a7ec1645ce5098",
+  "gsft-home_improvement_scam-02": "7416107143cee3a1e5905cbb5fad9876042e2c0f474354a8d34cbd2c3eee9f47",
+  "gsft-home_improvement_scam-03": "799bbac2b3f7b30178f48e09d977534651e99197aee405303b2d5657bff861d8",
+  "gsft-home_improvement_scam-04": "84bde07b711fa56dddc7ed2b479337c047665863152154bc18c5815ebd54d670",
+  "gsft-home_improvement_scam-05": "15a73e482f981a4b8f1e66db2058b2419fa4bdb1a467d6244e4a4f22472287ac",
+  "gsft-home_improvement_scam-06": "d1cb2f03aac6cdfc6b0d3fa62cdb3fdaf363278755441fe3c0cb7ab5f0930e11",
+  "gsft-print_email-01": "192f7910addae59db3f754171328da9233c67aadbfd526b55298f9d8bb2b23e7",
+  "gsft-print_email-02": "bc9d9742176c8bb9c175fe640eccbd41352df9e410b95bd0e086bcb3c462f94d"
+ }
+}

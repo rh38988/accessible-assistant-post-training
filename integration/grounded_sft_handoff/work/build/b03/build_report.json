@@ -26,27 +26,26 @@
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
   "gsft-display_scale-01": "91615456bfe054aa0301120499cd5a54cb70027d81c2c54f50b74493adbcd9b6",
-  "gsft-display_scale-02": "fee62498033e8779cdabe9dc96d7db06101d604bf02aa7b3b875e1d3a5640c49",
-  "gsft-display_scale-03": "52548a5d50a2bad600afccf4be2dae118edf2816543a726f0c0d4b14c2368ed4",
-  "gsft-display_scale-04": "974355c782e9cf452cd6fd10375cc190685b8895ca72405c747812abe181deda",
-  "gsft-internet_not_working-01": "a875b310f59dfb2b9d5b3d14b219e33b845640578679fcdc8ede74d3a5513d84",
-  "gsft-internet_not_working-02": "59649286d6275d27124cf52ae502c4c3ae2e5976afe37fc0b04b18119a80fc41",
+  "gsft-display_scale-02": "a5e57cf16bb41f7139e20851f14cf273f5b4abb8dce393ab8e89874068559de2",
+  "gsft-display_scale-03": "bdd9245364f326a243236f27e2153741f71f30c436d87bdf5774b06b49b79d77",
+  "gsft-display_scale-04": "1aed113f1512f2275db4b1ca2bdeacbad499ce99c08826c03067fef88121f44c",
+  "gsft-internet_not_working-01": "68402845d5ed64d4be11caddb0be429a3ffb7890062014318ea44237d2e4ea58",
+  "gsft-internet_not_working-02": "649eb2b06fc83a97ec6fbd6bc120c4907dd7bd15055677d0ed564015b65e1d6d",
   "gsft-internet_not_working-03": "414e7c1a4edf1189b9e37436f050505364b1661d0949f56743ac699aef17e3dd",
   "gsft-internet_not_working-04": "05bec90c01b1f08899dffaf8604d37d0c91bad06023fae40dd03a501786b2e9b",
   "gsft-internet_not_working-05": "422512ee2e5be745d609563ce21b99dcad9f3302bf27ac26681d0e2c5adc744b",
-  "gsft-internet_not_working-06": "52c5dc100088b35e28c73a0a1e441acaaea5457f985b10367e01bd536b59499a",
-  "gsft-internet_not_working-07": "e57dd84d587cf52a79ce5c9419894ac472bfd775f98ec73d4449285b9afa016c",
+  "gsft-internet_not_working-06": "6bf9de86f4e887b39fb954e1ac033b8056c1eda80d422e22d0dbea964876c3da",
+  "gsft-internet_not_working-07": "cc86e5bbd19ed8f30b45ddf7aa0214b6005be9103b471ac19a398480245069c3",
   "gsft-wifi_connect-01": "82bdf43ec04491167748f099d6920f956e57f076635b3e4278c0f18ad2525567",
   "gsft-wifi_connect-02": "94dfa6728f7dc735447831df865066bbbc9d0c35c09fa74916f28cc2bc91117e",
   "gsft-wifi_connect-03": "3a9626a28d58e0b8cb7a738e35dceb55cb3d81af228c2ea56bc00b1bf93bd813",
   "gsft-wifi_connect-04": "1a3738cfd225b7b138c0cc6a0d5d859c1ccb42245989c461913548b78c2409cf",
   "gsft-wifi_connect-05": "465466e5e7d2fe7cab0ed267653e62c9813c168cf4b8b59fabf56296936c968a",
-  "gsft-wifi_connect-06": "0035831c9359ae09d4d659a24dde167190be7ea6d8487a0ce290992bd8f06a0d",
-  "gsft-wifi_connect-07": "7c1b7c7585997011b8e665cb60c4123ac9ea26e6d53b59bd7658d3c8382efecb"
+  "gsft-wifi_connect-06": "8ca0a74bd8c352e55040d4c5f29bc679dacd12e117677fadc78e8003a40c1bd9",
+  "gsft-wifi_connect-07": "f153ecd4a3e15b53dc363e29abbbe987a5c584d39d778c18412520c1ca168d55"
  }
 }

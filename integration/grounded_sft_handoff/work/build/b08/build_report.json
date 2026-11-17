@@ -24,21 +24,20 @@
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
-  "gsft-battery_health-01": "5928dab4b2921b05d05ec675f1ac782824b826a48ef8cab34bd541c8913d575c",
-  "gsft-battery_health-02": "9c26ef485f56208c72551654dd217abef651dc50e1e52415734952a61dcbc2e8",
-  "gsft-battery_health-03": "214e9926ea9e7af5745670f67da0d8d0fe586083fcc946ababf58134a8093466",
-  "gsft-battery_health-04": "62c64cf760bf0c7edb09106e52996d38fbf159653d992f0aedab505f58d6ba18",
-  "gsft-silence_unknown_callers-01": "5bf0ed2b838d162f7a3b3cf7f5bde3b086745af449d4bfd135f148de718714cf",
+  "gsft-battery_health-01": "895b448eea955fc1dc209952b6e73cadb2a0141a5d2d65e5fbe2b127e7843f3f",
+  "gsft-battery_health-02": "c83bdf9a095c9ac2c169b2ca9ae8543b3078e7ba564504b7efa474491d969704",
+  "gsft-battery_health-03": "9cbaa9cbd0bcf1ea823c9ccb5162127473a16f7cc645e80c8f41b57b1ba0db8d",
+  "gsft-battery_health-04": "af1968e8c6449f7631b52fba799dff75425ca82dc236b5567f36b3d800d3e3cc",
+  "gsft-silence_unknown_callers-01": "75cd13b0676cdc07f3e1cf7aa35712d6919a5ee09305c1372599cb67691bfe23",
   "gsft-silence_unknown_callers-02": "38a9976e7abc225e4ac4d6a4c54502c8ad4cee0bea8c7356d20ebf3c87cacaea",
   "gsft-silence_unknown_callers-03": "dc46a0512036c02041e9e50bfcc6f14bf10827ea8672924aeebfd921e86716a2",
   "gsft-silence_unknown_callers-04": "2a55d00d80d1a202c35107eebaa4b86a6ee274da3c99b1b0f2721aab6eb56b95",
-  "gsft-spam_call_filter-01": "33824d5ae317357a5769fe8e40e6818db4ea3527ce33e5b7d0b6cbf3d0fee80d",
-  "gsft-spam_call_filter-02": "b79e30049a6de61229b922b7b2bad4c891d54a34fc03e47a3d713e00bafa5c02",
+  "gsft-spam_call_filter-01": "7d328a894920266910826bc29e9b2520aaaba6dc5d2b410f2ac89d6e204fa0b2",
+  "gsft-spam_call_filter-02": "265e255be139ff7ca3a3fe7decc4a01a3d743366c88dbbc502dbc18e344f8808",
   "gsft-spam_call_filter-03": "2fcb41e472d0d5f17f981d41678ac1de4c8390edf9bc2cd66843d25ee2e926a3",
-  "gsft-spam_call_filter-04": "d8db98df205214c2efb80ac91e5710e10eb3dfaea63f6284ef4faf5132d6164a"
+  "gsft-spam_call_filter-04": "c75f0519b55b5c60eaa31363b463b9002ad0f86552dc0c693e86ad71b9cf8533"
  }
 }

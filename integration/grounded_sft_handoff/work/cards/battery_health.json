@@ -14,9 +14,9 @@
    "applicability": "iPhone; Settings app",
    "platform": "iPhone",
    "app": "Settings > Battery > Battery Health",
-   "verified_excerpt": "Maximum Capacity shows battery capacity relative to when the battery was new.",
-   "model_visible_text": "On iPhone: Open the Settings app, then tap Battery. Tap Battery Health. Maximum Capacity shows your battery's capacity relative to when the battery was new. Design targets are 80 percent of original capacity at 500 complete charge cycles for iPhone 14 and earlier, and at 1000 cycles for iPhone 15 models.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps and Maximum Capacity text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim"
+   "verified_excerpt": "Maximum battery capacity measures the device battery capacity relative to when it was new.",
+   "model_visible_text": "On iPhone: Open the Settings app, then tap Battery. Tap Battery Health. Maximum Capacity shows your battery's capacity relative to when the battery was new. Under ideal conditions, batteries of iPhone 14 models and earlier are designed to retain 80 percent of their original capacity at 500 complete charge cycles, and iPhone 15 batteries at 1000 cycles.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps and Maximum Capacity text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim 2026-11-17 reviser B08 r1: design-target sentence corrected to carry the page qualifier 'under ideal conditions' (review-gsft-battery_health-01-v1); verified_excerpt set to the exact page sentence."
   },
   {
    "ref_id": "battery-health-iphone-perf-applied",
@@ -46,9 +46,9 @@
    "applicability": "iPhone; shown when battery health has significantly degraded",
    "platform": "iPhone",
    "app": "Settings > Battery > Battery Health",
-   "verified_excerpt": "Battery health degraded: Shown when health has significantly degraded.",
+   "verified_excerpt": "This message doesn't indicate a safety issue.",
    "model_visible_text": "On iPhone: Battery health degraded: This is shown when health has significantly degraded. This is not a safety issue. Service from an Apple Authorized Service Provider is recommended.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; message text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim; 2026-11-17 owner edit: removed the words 'The page says' (meta wording), content unchanged"
+   "extraction_method": "WebFetch of the official page on 2026-11-17; message text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim; 2026-11-17 owner edit: removed the words 'The page says' (meta wording), content unchanged 2026-11-17 reviser B08 r1: verified_excerpt set to the exact page sentence (review-gsft-battery_health-03-v1)."
   },
   {
    "ref_id": "battery-health-iphone-unable-verify",

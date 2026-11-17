@@ -1,0 +1,37 @@
+{
+ "candidates": 6,
+ "groups": 3,
+ "behavior": {
+  "direct": 6
+ },
+ "tags": {
+  "conditional": 6,
+  "distractor": 2,
+  "safety": 2
+ },
+ "per_group": {
+  "default_browser": 2,
+  "popups": 2,
+  "sign_out": 2
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-default_browser-01": "2eef2f24a889d9a7ef9decf257c8ae5a2d1dc8a6044c2545c73b46acfa60759a",
+  "gsft-default_browser-02": "5337ce54f63d036b8d7f750ac70a61cb7e0e5309649def0dad9a8053195494b3",
+  "gsft-popups-01": "1b4563b3643795d4e7a32cbaf812ba61bfb99d99a5403e7ede417585db0ef356",
+  "gsft-popups-02": "d2f1908e5878a5702ccf9fb06b198251f78e5d3d115e2e93cc9f2d8ab4cc6c47",
+  "gsft-sign_out-01": "bb4895956b36c18cc498f607a0e0074ac23998a49aa943872829ec767abb2509",
+  "gsft-sign_out-02": "1c1ac8557d4414e5e326b69eb7dd6eb628b6e1296fc3100487283b383f98ce8a"
+ }
+}

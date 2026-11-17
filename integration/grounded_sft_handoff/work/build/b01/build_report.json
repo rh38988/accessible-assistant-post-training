@@ -26,7 +26,6 @@
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
@@ -36,7 +35,7 @@
   "gsft-ring_volume-04": "3df146befef60682acca73916ee76f693dd70267b262cf424760ee975dfacc13",
   "gsft-ring_volume-05": "a865711723cab64bd4578aed24da10e6e72ca936ea6d936e289bdcb05efdf347",
   "gsft-ring_volume-06": "1ffa74306e0062dbe986e89b50cfaafbb68b60ecd44ffdd7374e71b577a177d2",
-  "gsft-ring_volume-07": "6c068abc5464d46b2206c85b1e3160e1d6e1a4f6d099a6e43b9ce7f8079613ec",
+  "gsft-ring_volume-07": "327d2ed3a50cee119c1e5139809ba68a7cc22e0fa7b9eb1ed6f9d10192b677fc",
   "gsft-send_photo_text-01": "f7f3441793a72af55f5b9a7c96397792106de781a163b37cd9edca2812bfb429",
   "gsft-send_photo_text-02": "d90ff006380bc7b6781e59aff21ea34903d38528e9444a79d6036ab09491bcbc",
   "gsft-send_photo_text-03": "ac24b6049b8ee181e02fed16f7490df9f42f620ea453110a9772484e93f4baf3",
@@ -44,9 +43,9 @@
   "gsft-text_size-01": "2f3def31e743088f906079163b29b865c6685b2e950734e8595c847a536567c8",
   "gsft-text_size-02": "1d2a15bbd2f9cb016db1701fe4cace2a023f548655d12b209c48e83f96372be2",
   "gsft-text_size-03": "449bae195fae9ccab7c221aaba9d60add1a5da35884bdf7b1fe205abc134007a",
-  "gsft-text_size-04": "981d9302659d2f755a210f284f2587892c8a582127d61b444e610db236c742b2",
+  "gsft-text_size-04": "ba22e6e8ab4b285f05d767676bdf4aa50306fff457d7852a6cd87ed02748457a",
   "gsft-text_size-05": "04f219e7608f124e91b26054ee524ed413949242725a415a4955d17a96a918f0",
-  "gsft-text_size-06": "f108236a3f0d4f660c0d40e88015ce4ab4c19a655edb36c1c5f8fcb25fef6732",
+  "gsft-text_size-06": "1671745047630b11f43c6ee8a76d819f4859bdd8193ba196e7ba045d440a24f3",
   "gsft-text_size-07": "e97e0bd5b33c49deb616bd26de8adcec776dbcc5c475a4b9aa62af2943b681f8"
  }
 }

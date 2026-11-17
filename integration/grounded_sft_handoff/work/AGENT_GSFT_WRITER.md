@@ -88,7 +88,7 @@ python3 H/work/tools/build_gsft.py --batch <batch>
 Then run Shirley's checks on your batch (it stops before the tokenizer step, which is expected):
 
 ```
-cd /home/claude/gsft && python3 H/work/tools/precheck.py H/work/build/<batch>/candidates.jsonl --provenance H/work/build/<batch>/provenance.jsonl --against data/v2/versions/train_v2_en.v2.1.jsonl
+cd /home/claude/gsft && python3 integration/grounded_sft_handoff/work/tools/precheck.py integration/grounded_sft_handoff/work/build/<batch>/candidates.jsonl --provenance integration/grounded_sft_handoff/work/build/<batch>/provenance.jsonl --against data/v2/versions/train_v2_en.v2.1.jsonl
 ```
 
 The status must be 'pre-tokenizer checks passed'. An 'exact user-turn duplicate' error means one of your user turns copies an existing training example: reword it.

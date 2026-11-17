@@ -27,28 +27,27 @@
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
   "gsft-backup_photos-01": "8366bf0627e8478e8074c1e2b31fcc03c62727d0e6e937c186391ec1048e6207",
-  "gsft-backup_photos-02": "48cf94815921cdaee09d6a3a31b84866e2f6052c50156fe0353196f28816a1cd",
+  "gsft-backup_photos-02": "11e42bac3177ccd6e5ea6b00fd3c30002fa738ec119248d83b060ec4cd74cb8f",
   "gsft-backup_photos-03": "5b327c82b34d70a079af8294ad46b3dadf1b65f29ba16d467ceaa7569d08ef82",
   "gsft-backup_photos-04": "6ef5d28d6d0d851929d3ce00139ea1c5e836f4704f6151fd67172ddc664e4e50",
   "gsft-backup_photos-05": "191ba8ec2b5384cc817f848b69a9a38a062d16b4738c854fcddb5f80ce248c38",
   "gsft-backup_photos-06": "a2300ecfe28dff1b21bba067560425a31be9b8a01e0114ac5ce37577cf52d209",
   "gsft-backup_photos-07": "e47b7f0ad2398ff485036559ac28b3c65b62fddf18659b0637db7446e903f0b4",
   "gsft-family_emergency_scam-01": "796f642de4c64ed25a08d57e0fa416910e44230f664342ba8c0d4c9844d32977",
-  "gsft-family_emergency_scam-02": "e3d028d736cbda74f92d4bc927f0440e94fe7014bc97dbc4a2dc4ac83e3ad5cb",
+  "gsft-family_emergency_scam-02": "2c602055002308fd81cbce6ec2bdc078480b45e26e57c78df2213ebbaaf011c8",
   "gsft-family_emergency_scam-03": "08cafa62a7674497b9c9c8ba8f3a9daea3c7d77f1936030e485807bfa4f9f8bf",
-  "gsft-family_emergency_scam-04": "f7446d160ff593dd5e979362e7b87fa88e777814563762f1f77fa16e58c4b8d7",
+  "gsft-family_emergency_scam-04": "a8871f8ded2af2df6e42d2997bbe7afa4dd6d28eff441c6f7e517d4fd1a84702",
   "gsft-family_emergency_scam-05": "e58b7b49afa443626103cd79a73cb6d1eff3e86c616d63bdad885867f2c62936",
   "gsft-family_emergency_scam-06": "795e0c9be2fdc33f9bed1441b98e2d753773642189c11293f33f6ba23deac47a",
-  "gsft-verification_code_scam-01": "e4979d2a142735a367943ed69c8062e563d398603cd128a8d1cc095c32d9bcfe",
-  "gsft-verification_code_scam-02": "9dfdef4df255bcad9c99ba4c5b6eb6cc4693aa99d3e7aff5d87f22efc9146ccb",
-  "gsft-verification_code_scam-03": "9e3de5f4704597e1a6ca270f63cfa48ffee57793e2cc2dea93ccc75e0bb0bc6e",
+  "gsft-verification_code_scam-01": "c7860150a727adb2a64478f7597bba5673beae0a3b7cec88a0fee343c95f7532",
+  "gsft-verification_code_scam-02": "27e03f7129db09c9cfeaa1927164457e0eb1bcf8b57ca54fa76ae9d584b313c9",
+  "gsft-verification_code_scam-03": "8a989652e34fd8702e618847ef1bfca72ca44a9e8d13365dcd6d6e3926d0a54d",
   "gsft-verification_code_scam-04": "be9861ea607504974bebd968420a8aef00d68d396e71d1d0981a8b2c6f25658f",
-  "gsft-verification_code_scam-05": "c7ca6868b8a64d20ad2dfa52408d2e5e51dd39d35ea509dd3a742dfd73202b08",
-  "gsft-verification_code_scam-06": "7d3cf67d5567474a65d280ee631af9416d380754e52d2c6d5cd4daea812b6eb4"
+  "gsft-verification_code_scam-05": "f9a3c8a6354aa893167bd22633f148c0482f22af451964aeb45e5c2a09a36bfa",
+  "gsft-verification_code_scam-06": "6616d31080cb7411789814f18570c9243deae705ebb27f7e7c6f1ada24980aea"
  }
 }

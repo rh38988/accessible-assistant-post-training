@@ -1,0 +1,43 @@
+{
+ "candidates": 12,
+ "groups": 2,
+ "behavior": {
+  "direct": 4,
+  "constraint": 4,
+  "multiturn": 4
+ },
+ "tags": {
+  "safety": 12,
+  "conditional": 3
+ },
+ "per_group": {
+  "mortgage_relief_scam": 6,
+  "rental_listing_scam": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-mortgage_relief_scam-01": "3f0fc1052b9e364dc2dc4a9c8d6bfdf8939a545e46edc33c13c8b49bdf5c5c57",
+  "gsft-mortgage_relief_scam-02": "dc3e7b4c8fcf9d25d29a86788676248bc6d7b6c4c0c47ee141604383d0078ab6",
+  "gsft-mortgage_relief_scam-03": "5d49356b207a0a1478ba182c3000109fa6df847eacbae2d2ca67f082f9c4ca8b",
+  "gsft-mortgage_relief_scam-04": "65ba8c005abbf5f79f63433dc3d4d085475664e909f11deba9c8b7dc0e9cf1d7",
+  "gsft-mortgage_relief_scam-05": "6d57dd8432e74f020c55c865e0964b51da4194ac5738cd816f291c34e874add9",
+  "gsft-mortgage_relief_scam-06": "7dc9b6620d62dd0cfd080692e92808b183e4e9c97157bc84451e5687c9725070",
+  "gsft-rental_listing_scam-01": "f2b6a3764fe0f146251e59dfa4a7c3b6caf6436558edf8f4b613dfb7f9ff1563",
+  "gsft-rental_listing_scam-02": "9021cc90e22567e60837b55d39f49ab0af1a61605720ed8cd3700d02c4ae9efc",
+  "gsft-rental_listing_scam-03": "b9f04e346e540c1ebb6bc96a0693d3342623757a41c3d4b820db6ce4521f95c7",
+  "gsft-rental_listing_scam-04": "32b736787f4be8d027452707610fef26426103f5b5b70e0d75caa4679f7f2cf3",
+  "gsft-rental_listing_scam-05": "d61b3e991d466d3170ea9c02638378ef451cb8e0fa8ba6bbf14180bfd3d0b92d",
+  "gsft-rental_listing_scam-06": "10e584b6aa5684141a135b78e190f603110b389e0442c254d8f761d3c89d39be"
+ }
+}
