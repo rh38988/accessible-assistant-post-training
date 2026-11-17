@@ -1,0 +1,42 @@
+{
+ "candidates": 9,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 2,
+  "constraint": 1
+ },
+ "tags": {
+  "distractor": 3,
+  "conditional": 3
+ },
+ "per_group": {
+  "find_model": 2,
+  "flash_alerts": 2,
+  "voicemail": 5
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-find_model-01": "e524dbbe6df3ea0c9a49f75d949381a6874bb43d4b9e59fdfc848680df2a4f90",
+  "gsft-find_model-02": "cc3425d69aa6894996ede4de1980aceea96fdb2ccca54f54b220878431eede2e",
+  "gsft-flash_alerts-01": "4f37c78b61c5f54066de17f26b81239640334c21518fc5f52d787952db3f07c2",
+  "gsft-flash_alerts-02": "0bb29c8a6abcfbe6b11443edbe790143ad235ac281e1c6a7eeb25e93614ae1ea",
+  "gsft-voicemail-01": "7f0c90216b2839005702a52a2002e640ad975dea01ec1105b681dcacacaefbf7",
+  "gsft-voicemail-02": "c1ec19e2e17e77c5e1cc47c8d30ca812102bc995ccde27af65c971a9a2f6f6d8",
+  "gsft-voicemail-03": "931a3fac617dfba5b9012f7801d04e949528b536469c13af9f103ae88cf3942d",
+  "gsft-voicemail-04": "469992b6477940607a5c988aee077188a233ff272e4a44e13bd9c5a820f65bd8",
+  "gsft-voicemail-05": "d3a57f9af750c63b2ecf3d38dcf50f1b70c1870d5799790a0f25786bdbd47a35"
+ }
+}

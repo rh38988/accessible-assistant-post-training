@@ -1,0 +1,49 @@
+{
+ "candidates": 15,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 5,
+  "constraint": 3,
+  "multiturn": 1
+ },
+ "tags": {
+  "distractor": 2,
+  "conditional": 7
+ },
+ "per_group": {
+  "brightness": 7,
+  "date_time": 5,
+  "overheating": 3
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-brightness-01": "5f41e6b1bf48b1a18836019110309a20fd719cf6188c647542fee09095a85037",
+  "gsft-brightness-02": "4f64991f3014c20a220461e35c6b1c6c704a0e765d0cf9616468c7dd1d2ff74d",
+  "gsft-brightness-03": "49df3aa119772622aba7a987f89799c516993c39368502dbaa80d09d77527606",
+  "gsft-brightness-04": "6344c0dd29619a36322c0c1d938355386ccff64d2ae9b04fbe4c5aebccc9dd3c",
+  "gsft-brightness-05": "6e87f7bec556b40cf040ead7c80007e3c80636bec8831e8fecdb1f6ff1cba927",
+  "gsft-brightness-06": "b1a2ebfd9816fabd45901d51ffd22f3ae603abff2e5790de84f3c56187442c08",
+  "gsft-brightness-07": "2dd63ec2792367845560226317fbe3ce085270f34e1c46d8d99cd0dc9047b36e",
+  "gsft-date_time-01": "e29c5af269d1e0640e244c26f878c3072e8b1ba1d712d71ec51522e9d293fb39",
+  "gsft-date_time-02": "78e42d7c0628bced2351e6301efd8fb849e36849753ed31ae3c8c3ac75ceea8c",
+  "gsft-date_time-03": "2d777c9ff6a0cc73c800411caa0622ce8be1b3b7faef097183e9fcb7e705d2c6",
+  "gsft-date_time-04": "1d66b3d782edaffadd2af5bcc9bfbd45298539988d92db9a709759c8d57796e6",
+  "gsft-date_time-05": "888a65f25ff24b51c0930acce4985c3b9237cc79aa4696da28bb68d66bb22590",
+  "gsft-overheating-01": "32ce805d74341ad78ba942518b9b36a096e8ef4ea77388268b5828ace9498e4d",
+  "gsft-overheating-02": "d25456545ba6da864033f7c037965ca41a82178c8130cbc3ffffe9f649920007",
+  "gsft-overheating-03": "d141b3f60283c3b49d0c3790a21b5ef5dd7aa73d206d35688e93cdda184d8ca6"
+ }
+}

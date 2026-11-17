@@ -45,10 +45,13 @@ def batch_ids(prov, batch):
     return [i for i, p in prov.items() if p["generation"]["draft_file"] == f"{batch}.json"]
 
 
+REDO = set()  # ids to re-review even if their hash has a review (set with --redo a,b)
+
+
 def render(batch, n):
     recs, prov = build(batch)
     done = all_reviews()
-    ids = [i for i in batch_ids(prov, batch) if (i, prov[i]["content_sha256"]) not in done]
+    ids = [i for i in batch_ids(prov, batch) if (i, prov[i]["content_sha256"]) not in done or i in REDO]
     lines = [f"# Review input: {batch}, round {n} ({len(ids)} candidates)\n"]
     for i in ids:
         p, t = prov[i], prov[i]["inference_template"]
@@ -145,6 +148,8 @@ def status():
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "render":
+        if "--redo" in sys.argv:
+            REDO.update(sys.argv[sys.argv.index("--redo") + 1].split(","))
         render(sys.argv[2], int(sys.argv[3]))
     elif cmd == "check":
         check(sys.argv[2], int(sys.argv[3]))

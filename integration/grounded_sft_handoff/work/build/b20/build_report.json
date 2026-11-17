@@ -1,0 +1,53 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "constraint": 4,
+  "multiturn": 3,
+  "clarify": 5
+ },
+ "tags": {
+  "safety": 6,
+  "conditional": 7,
+  "distractor": 9
+ },
+ "per_group": {
+  "crypto_investment_scam": 6,
+  "force_restart": 7,
+  "rotation_lock": 5
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-crypto_investment_scam-01": "c25c4785206d74ab7e2082c96c273496fc48c15c02f56559ac234d650af8480e",
+  "gsft-crypto_investment_scam-02": "55aff817783518dc74c85f012ad5e2f5de09221a90685234db62b04ea52a4592",
+  "gsft-crypto_investment_scam-03": "2337a27399478a5155a82452029ee9e3579050ce828efd6366a456344ea13321",
+  "gsft-crypto_investment_scam-04": "ebc7f40d0cccbf23f70c96b400c6497020f6834d4e2a8d0b07e7a1741168e017",
+  "gsft-crypto_investment_scam-05": "5c9af8d86a641eb15daa65767c0ccaf912b6ecd6c828612b04b0b01b06af3078",
+  "gsft-crypto_investment_scam-06": "daee44154a6f6055d2e0c08f69435b7ba423b3423802c55f6bde790019c07119",
+  "gsft-force_restart-01": "f1c02aece14d086f16e423c3255338d98376e7aa48cc1b0cca8230c4a8d3d7a4",
+  "gsft-force_restart-02": "1635930f4babeed84807d6651c56c84e0768e0e2d69c16366fc5fd8b235b3305",
+  "gsft-force_restart-03": "03a1dad778b8823ba9a3d657b9eb23f10c3f6975acd83269ce618149244ce463",
+  "gsft-force_restart-04": "1edfa0fb3ce085e19735abececf528c1ddda3e437d6ff506d2f2d5d3212431fd",
+  "gsft-force_restart-05": "84d7e89adaa27152178b6fdfcb22ac53196ef67ce50ae17c35a4ab6c6db11170",
+  "gsft-force_restart-06": "4837fe0f28aef876cf4a21a426ec02b0658c3b022f02b2436f7762ab0394de84",
+  "gsft-force_restart-07": "2664991ca3c5a457727ee44eaa6ff52cf649d020e718eb14c1e28d9e854da87c",
+  "gsft-rotation_lock-01": "e4750beee698ed318e4a69643601afb07261e5184edfa3767f93a567a838f8ed",
+  "gsft-rotation_lock-02": "ce61ceb7b4cfe758308f96add72691a8bf39c9b2cbead57f7047e73c2d70d91f",
+  "gsft-rotation_lock-03": "ad3c191612024e5762f17e08d38ca6ec5c2ac6d2f802bd867371584465dda0eb",
+  "gsft-rotation_lock-04": "cd458770b5343cf2a71141e0623e62817d3ddc4fdf6695569257c471384be5a2",
+  "gsft-rotation_lock-05": "7c993d0e3f2417224482508a3052132e56905d10ef47f2041ae57db0930e8efe"
+ }
+}

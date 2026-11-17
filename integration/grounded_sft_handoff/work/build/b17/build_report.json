@@ -1,0 +1,55 @@
+{
+ "candidates": 19,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 7,
+  "constraint": 3,
+  "multiturn": 3
+ },
+ "tags": {
+  "conditional": 9,
+  "distractor": 4,
+  "safety": 4
+ },
+ "per_group": {
+  "live_captions": 7,
+  "phone_not_charging": 6,
+  "stolen_device_protection": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-phone_not_charging-01: long: about 931 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)"
+ ],
+ "hashes": {
+  "gsft-live_captions-01": "df2857fce9531df691261ba711fc0e3ce25e9473dbab65568b88773c51669f0d",
+  "gsft-live_captions-02": "3c2aef15ccfacf80db9591e8044563acbbde1ad6fef0330f4195ca894c41a1ed",
+  "gsft-live_captions-03": "40f0da51d7ddc7d25050cadfc7dc39b5ecfe2857088a6454b65bc8c33edf7030",
+  "gsft-live_captions-04": "f72804a683c069890c13e9e5f126284c0dd4eb1c4017cbc2ed43a476eb09a7c6",
+  "gsft-live_captions-05": "3602e92412192c30c4625f83a6357b17fc341fcecb2dab334c84b6632a44530b",
+  "gsft-live_captions-06": "37ebe4cdcf2d45d77424d591a037ee248e155c767e8038853b2255ccc55c3343",
+  "gsft-live_captions-07": "2e380cbedbd4dcf1409a91b7c7d29766a858a085b289dab71d74beb99a366ec8",
+  "gsft-phone_not_charging-01": "9b3bb677661426438780891505632cabb03ebdc51aef7509dff4d721491638f6",
+  "gsft-phone_not_charging-02": "955e36a2dda46b6218a5bee73cb18a135c5ca92aa9fa441045fe0fc98f802ce8",
+  "gsft-phone_not_charging-03": "0f63e977c0303ffd80f2e597ad42bc4cfebefe9e68c8a22a8654cd12dab65433",
+  "gsft-phone_not_charging-04": "8e164bdc4e44e43c0656eec2526e970f853b712cddb9594dcc03c93f24cb15cd",
+  "gsft-phone_not_charging-05": "d81ef58d092a78dfa38d6d29771b34b06ad193112c8a40a9916a1ef96c51e9b7",
+  "gsft-phone_not_charging-06": "4afcbee9ba01b01a37bf4e0fafbad17a4fdaf903fbf858c87c1a036c14d08d15",
+  "gsft-stolen_device_protection-01": "966d1145f06e273ec4377919bca4763c5d57ffd38b2fdf14908e959afbe66072",
+  "gsft-stolen_device_protection-02": "2b9f5b224db00deb8875238d6704045292fd073a318ef4d792aab50681996008",
+  "gsft-stolen_device_protection-03": "c3ddbd82a146001c97a1947bdd06a8ba87b2a942b0d42c381667c8dbbe4b7b38",
+  "gsft-stolen_device_protection-04": "25a3fde35d5637f07c9d41e22b794b633e172e7421ae959002dd844ea97a3c8c",
+  "gsft-stolen_device_protection-05": "e4854734e75cdfd1a04ade1d90945bfb9ad3af674d93f386db53b01d0e6865c7",
+  "gsft-stolen_device_protection-06": "b65562e52048983450f6677731e8c75aa51301b7d0ac7077df040c2e56a4271a"
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "candidates": 18,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 6,
+  "constraint": 3,
+  "multiturn": 3
+ },
+ "tags": {
+  "conditional": 8,
+  "distractor": 10
+ },
+ "per_group": {
+  "backup_phone": 6,
+  "maps_directions": 6,
+  "video_captions": 6
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-backup_phone-06: answer has no numbered steps",
+  "gsft-video_captions-06: answer has no numbered steps"
+ ],
+ "hashes": {
+  "gsft-backup_phone-01": "d1b390e0e977680bc5f88eee0970c3fe399ac661febaff1f16a8188c306c130e",
+  "gsft-backup_phone-02": "b4d1abe372465cf852328481dbc3dd0db759d77d73cf6ddee6a6a4f624ea60d9",
+  "gsft-backup_phone-03": "a13799b114e61955049f634b2dc187db0db175e132a87dce8125f584fa7d925e",
+  "gsft-backup_phone-04": "13afe5cedbe3e8d56fdc76ab16092770973b8e93f924472067be00532d3d3b23",
+  "gsft-backup_phone-05": "37d85cd68aae50c97a123c78b4081f43a9897b9078591830ac01d26b8cc304eb",
+  "gsft-backup_phone-06": "cfa58f7cd5269fbd086bbdc025a95023194ddae073fbcfcca1b4b5d236ee17e7",
+  "gsft-maps_directions-01": "07324410e97b3418ea6b4fc9ef42b9e4f8fd4f56d1e034f0e89b618b60eb2321",
+  "gsft-maps_directions-02": "be4ef54b00eb030448af006c492cfc4c75bc33819e2f7d10828e40a01b9ba2e1",
+  "gsft-maps_directions-03": "673b29d9a5e4db99091d6ee20ab6fc33fa2d3cac10992cf958134f90eee3d3af",
+  "gsft-maps_directions-04": "9a11a0f89160d22caea1adaff207e9604734c3665514ed8fc5af618fa02ecafe",
+  "gsft-maps_directions-05": "9b99154026e2c8580a7579eab86fbfeebe28dac53c0a8699e8640d7327f52a54",
+  "gsft-maps_directions-06": "a4a982855b75e97eceaa8a733ebf85c27b29d1788bfaee6174f97cde17bf2ecc",
+  "gsft-video_captions-01": "968e40250a86d559559c6effae6a36287187620db606803af0f561169dfbd60a",
+  "gsft-video_captions-02": "739442d6b2d8771a4bf2ab33aa059a2bcecad9e38e8261881010bebfe2ce1e1c",
+  "gsft-video_captions-03": "3c4a6b494bdbb9c14b634f4bf5897158caa876c2c50afff33a5b71ca804e7b66",
+  "gsft-video_captions-04": "0f649293d6c67e383d3c963d4f76dead31270ad35138d6af124561c90a628572",
+  "gsft-video_captions-05": "0ba47350096da3b75eb898ce623376eaad5cacd5f1568936059e2bd0712bbfed",
+  "gsft-video_captions-06": "adc8c663628b4c2140e2426b50b754e728ace4c024afadb9950c078ce5f64cbe"
+ }
+}

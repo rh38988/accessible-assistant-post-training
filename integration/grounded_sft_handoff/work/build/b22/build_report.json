@@ -1,0 +1,44 @@
+{
+ "candidates": 11,
+ "groups": 3,
+ "behavior": {
+  "direct": 6,
+  "clarify": 2,
+  "constraint": 3
+ },
+ "tags": {
+  "conditional": 6,
+  "distractor": 2
+ },
+ "per_group": {
+  "messages_not_sending": 5,
+  "no_service": 3,
+  "touchscreen_unresponsive": 3
+ },
+ "errors": [],
+ "warnings": [
+  "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
+  "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+ ],
+ "hashes": {
+  "gsft-messages_not_sending-01": "7ffff3f2d4cc65f6969ade5eabe70778239a647e215d7d08e9b19703c2fb6aa5",
+  "gsft-messages_not_sending-02": "6a739eae69a606051f2aada74477f9454039d844465ae8de4efcfc1fd64347f9",
+  "gsft-messages_not_sending-03": "903cd733860afe7ebf1ec219dd9a5876dcbaa3b62bf5e63a7beaae09216a32e5",
+  "gsft-messages_not_sending-04": "096206f553609decd9a1253745a4c9c4a6c9642e1c358e135cc9c597e8052940",
+  "gsft-messages_not_sending-05": "edd28ba7f29c4d8a461eefaddc9ee94a2b37ac1525952d911f676ead51e7e512",
+  "gsft-no_service-01": "329ebac3fdd2847f54641119b6ebe12c2f1f679e13edcd7c813abb3bd42b5cf7",
+  "gsft-no_service-02": "811484faec904d3a6dce7589a37ab0720ed988ea1292a9602513a69ae3b52eb0",
+  "gsft-no_service-03": "24b42a9e8a571672f7694360836b3e39d0d4edc8f3badc3c130895f07355961e",
+  "gsft-touchscreen_unresponsive-01": "2740edf3abfafb2c5fba2bf9def5c4984c0d3d4f85b7ddf59cb504a421564a1e",
+  "gsft-touchscreen_unresponsive-02": "c80cc757ccf58d1c41af69f8b33ae95f6c5ac55d9ecde55bf9acc161841b6a59",
+  "gsft-touchscreen_unresponsive-03": "89202e42973da96311cb679c73fa82708e69f4497de4ae694b2899b222b68b80"
+ }
+}

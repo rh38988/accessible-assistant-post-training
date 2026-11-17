@@ -39,7 +39,7 @@ Write `H/work/reviews/<batch>.r<N>.jsonl`, one JSON object per candidate, in inp
  "decision": "keep", "findings": [], "correction_required": ""}
 ```
 
-- `source_checks`: one entry per source reference listed for the candidate (every ref_id, including distractors).
+- `source_checks`: one entry per source reference listed for the candidate (every ref_id, including distractors). `applicability_confirmed` means the page confirms the platform, version and conditions this ref claims for itself. For a distractor (another platform on purpose) it is true when the page really is for that other platform; say in `finding` that it does not apply to this user and is correctly unused. It is false only when the ref's own stated applicability is wrong.
 - `decision`: keep only if every check passes, every source is accessible and applicable, and every critical action is covered. Then `findings` is empty and `correction_required` is "".
 - revise: quote each problem in `findings` and give the exact fix in `correction_required`.
 - reject: the task or source can't support a good example; say why.

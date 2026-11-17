@@ -1,0 +1,12 @@
+{"task_group": "flash_alerts",
+ "source_gaps": "",
+ "source_refs": [
+  {"ref_id": "flash-alerts-iphone-setup", "source_group": "apple_led_flash_alerts_iphone",
+   "organization": "Apple", "title": "Get LED flash alerts on your iPhone or iPad - Apple Support",
+   "url": "https://support.apple.com/en-us/111774", "access_date": "2026-11-17", "page_update_date": "2026-05-27",
+   "section": "Turn on LED Flash for Alerts; Flash on Silent", "applicability": "iPhone; the page states the LED flash works only when the device is locked",
+   "platform": "iPhone", "app": "Settings",
+   "verified_excerpt": "LED Flash for Alerts works only when your device is locked.",
+   "model_visible_text": "On iPhone: 1. Open the Settings app, tap Accessibility, then tap Audio/Visual. 2. Turn on LED Flash for Alerts. LED Flash for Alerts works only when your device is locked. To prevent LED flashes when your iPhone is in silent mode, turn off Flash on Silent.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps quoted from the page with its labels; the iPad mention in the silent-mode sentence is removed; excerpt quoted exactly. Page published date is May 27, 2026."}
+ ]}

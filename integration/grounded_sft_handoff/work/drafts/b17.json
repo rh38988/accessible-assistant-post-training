@@ -1,0 +1,626 @@
+{
+ "batch": "b17",
+ "candidates": [
+  {
+   "id": "gsft-stolen_device_protection-01",
+   "candidate_id": "gsft-stolen_device_protection-01-v1",
+   "task_id": "TR-096",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I just updated my iPhone to iOS 17.5. How do I turn on Stolen Device Protection? My son says I should have it on."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone on iOS 17.5, which is later than iOS 17.3, so the iPhone passage applies. The Android passage is a distractor.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon",
+    "sdp-iphone-always",
+    "sdp-android-theftprotection-open"
+   ],
+   "target": "Here is how to turn on Stolen Device Protection:\n1. Open **Settings** and select **Face ID & Passcode**.\n2. Enter your device passcode.\n3. Select **Stolen Device Protection**, then switch it on.\n\nWith it on, your iPhone asks for extra checks when it is away from familiar locations, typically home or work.",
+   "author_note": "Cover the three steps and the familiar-location condition. Do not cover the Always option or Android steps."
+  },
+  {
+   "id": "gsft-stolen_device_protection-02",
+   "candidate_id": "gsft-stolen_device_protection-02-v1",
+   "task_id": "TR-158",
+   "task_group": "stolen_device_protection",
+   "source_group": "google_theft_protection_android",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": true,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android phone and I'm worried that if someone takes it, they can get into my Google account. Is there a setting that helps with that?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android, so the Android theft protection passages apply. The away-from-trusted-places condition is part of the Identity Check passage.",
+   "source_ref_ids": [
+    "sdp-android-theftprotection-open",
+    "sdp-android-identitycheck-setup",
+    "sdp-android-identitycheck-away"
+   ],
+   "target": "Android has a feature called Identity Check under Theft protection. To set it up:\n1. Open **Settings**, tap **Google**, then tap **All services**.\n2. Tap **Theft protection**, then tap **Identity Check**.\n3. Under **To activate**, sign in to a Google Account.\n4. Add a screen lock.\n5. Add biometrics, using a fingerprint or face unlock.\n6. Add your trusted places, such as Home or Work.\n7. Tap **Done**.\n\nOutside your trusted places, apps that ask you to 'Verify it's you' need a fingerprint or face. A PIN, pattern, or password won't work for those prompts, except in Private space, Multi-users mode, payment autofill in apps, and password and payments autofill in Chrome.",
+   "author_note": "Identity Check is the Android feature in the passage; the page does not call it stolen device protection, so do not say they are the same. Cover all required setup steps and the trusted-places condition."
+  },
+  {
+   "id": "gsft-stolen_device_protection-03",
+   "candidate_id": "gsft-stolen_device_protection-03-v1",
+   "task_id": "TR-096",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I turn on stolen device protection? I'm worried someone could get into my accounts."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name a device. The iPhone passage and the Android passage give different steps, so one question is needed before answering.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon",
+    "sdp-android-identitycheck-setup"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify route. The question asks only the device. Tags are empty so that the sensitive account-security case is not a clarify-only safety case."
+  },
+  {
+   "id": "gsft-stolen_device_protection-04",
+   "candidate_id": "gsft-stolen_device_protection-04-v1",
+   "task_id": "TR-158",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My phone got taken out of my bag this morning. Which setting should I turn on to keep my accounts safe?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which phone do you have, an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name a device, and the setting differs between the iPhone and Android passages, so one question is needed before answering.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon",
+    "sdp-android-identitycheck-setup"
+   ],
+   "target": "Which phone do you have, an iPhone or an Android phone?",
+   "author_note": "Clarify route with the device question only. Tags are empty so that the sensitive account-security case is not a clarify-only safety case."
+  },
+  {
+   "id": "gsft-stolen_device_protection-05",
+   "candidate_id": "gsft-stolen_device_protection-05-v1",
+   "task_id": "TR-096",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm standing in a queue at the bank and have only a minute. Just the quickest steps to switch on Stolen Device Protection on my iPhone, please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and asks for the shortest route, so the iPhone passage answers. The shortest route is the same three steps on the page.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon"
+   ],
+   "target": "Switch it on now with these steps:\n1. Open **Settings** and select **Face ID & Passcode**.\n2. Enter your device passcode.\n3. Select **Stolen Device Protection**, then switch it on.\n\nThis needs iOS 17.3 or later.",
+   "author_note": "Constraint is the wish for the shortest route. Keep to the three page steps and the version condition. No extra options."
+  },
+  {
+   "id": "gsft-stolen_device_protection-06",
+   "candidate_id": "gsft-stolen_device_protection-06-v1",
+   "task_id": "TR-096",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": true,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm away from home and tried to change my Apple Account password. What's going on?"
+    },
+    {
+     "role": "assistant",
+     "content": "Your iPhone may ask for extra checks when it is away from familiar places. Authenticate with Face ID or Touch ID, wait for the security delay to end, then authenticate again."
+    },
+    {
+     "role": "user",
+     "content": "I already did the Face ID check and now it says I have to wait before I can finish changing the password."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone away from home and a security delay. The Security Delay passage gives the next steps and the early-end condition.",
+   "source_ref_ids": [
+    "sdp-iphone-securitydelay"
+   ],
+   "target": "Here is what to do next to finish changing your Apple Account password:\n1. Wait for the security delay to end.\n2. Authenticate with Face ID or Touch ID again.\n\nYour iPhone may end the security delay early after it detects that you've arrived at a familiar location.",
+   "author_note": "The user already did the first Face ID check, so the target does not repeat it. Keep the early-end condition."
+  },
+  {
+   "id": "gsft-live_captions-01",
+   "candidate_id": "gsft-live_captions-01-v1",
+   "task_id": "TR-097",
+   "task_group": "live_captions",
+   "source_group": "android_live_caption",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an Android phone and want captions on a video I'm watching. How do I turn on Live Caption?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android, so the Android passage applies. The Windows 11 passage is a distractor.",
+   "source_ref_ids": [
+    "lc-android-turnon",
+    "lc-win11-quicksettings"
+   ],
+   "target": "Here is how to turn on Live Caption on your Android phone:\n1. Press a volume key to bring up the volume controls.\n2. Below the volume controls, tap **More**, then **Live Caption**, then **Done**.\n\nOn first use, connect to Wi-Fi to download the default language pack. If you don't see Live Caption, check with your phone manufacturer.",
+   "author_note": "Cover both steps, the first-use Wi-Fi condition and the missing-option condition. Do not add language or device lists."
+  },
+  {
+   "id": "gsft-live_captions-02",
+   "candidate_id": "gsft-live_captions-02-v1",
+   "task_id": "TR-178",
+   "task_group": "live_captions",
+   "source_group": "windows11_live_captions",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11 version 23H2 and I want live captions for my video calls. How do I turn them on?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11, version 23H2, which meets the 22H2-or-later condition. The Chrome passage is a distractor.",
+   "source_ref_ids": [
+    "lc-win11-quicksettings",
+    "lc-win11-firstuse",
+    "lc-chrome-winmac"
+   ],
+   "target": "Here is one way to turn on Live captions on Windows 11:\n1. Select the battery, network, or volume icon on the taskbar to open quick settings.\n2. Turn on the **Live captions** toggle.\n\nOn first use, Live captions asks for consent to process voice data on your device. It then prompts you to download the speech recognition language files. If your language isn't available, choose a different language during setup.",
+   "author_note": "The page gives several methods; one is enough. Cover the first-use consent, the language download and the language-choice condition."
+  },
+  {
+   "id": "gsft-live_captions-03",
+   "candidate_id": "gsft-live_captions-03-v1",
+   "task_id": "TR-097",
+   "task_group": "live_captions",
+   "source_group": "android_live_caption",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android or Windows 11",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I turn on Live Caption? I want the words to show up on screen when people talk."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you want captions on an Android phone or on a Windows 11 computer?"
+   },
+   "decision_basis": "The user does not name a device. The Android and Windows 11 passages give different steps, so one question is needed.",
+   "source_ref_ids": [
+    "lc-android-turnon",
+    "lc-win11-quicksettings"
+   ],
+   "target": "Do you want captions on an Android phone or on a Windows 11 computer?",
+   "author_note": "Clarify route with a device question only."
+  },
+  {
+   "id": "gsft-live_captions-04",
+   "candidate_id": "gsft-live_captions-04-v1",
+   "task_id": "TR-194",
+   "task_group": "live_captions",
+   "source_group": "chrome_live_caption_computer",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Chrome computer",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I watch a lot of videos in my browser and want captions. Can you walk me through it?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you use Chrome on a Windows or Mac computer, or on a Chromebook?"
+   },
+   "decision_basis": "The user names a browser but not the computer type. The Windows or Mac steps and the Chromebook steps differ, so one question is needed.",
+   "source_ref_ids": [
+    "lc-chrome-winmac",
+    "lc-chrome-chromebook"
+   ],
+   "target": "Do you use Chrome on a Windows or Mac computer, or on a Chromebook?",
+   "author_note": "Clarify route with a computer question only."
+  },
+  {
+   "id": "gsft-live_captions-05",
+   "candidate_id": "gsft-live_captions-05-v1",
+   "task_id": "TR-178",
+   "task_group": "live_captions",
+   "source_group": "windows11_live_captions",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11 or Chrome computer",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My laptop is where I watch my shows. Can you help me turn on captions?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your laptop running Windows 11, or are you using Chrome on it?"
+   },
+   "decision_basis": "The user does not name the operating system or browser. The Windows 11 steps and the Chrome steps differ, so one question is needed.",
+   "source_ref_ids": [
+    "lc-win11-quicksettings",
+    "lc-chrome-winmac"
+   ],
+   "target": "Is your laptop running Windows 11, or are you using Chrome on it?",
+   "author_note": "Clarify route with a device and browser question only."
+  },
+  {
+   "id": "gsft-live_captions-06",
+   "candidate_id": "gsft-live_captions-06-v1",
+   "task_id": "TR-178",
+   "task_group": "live_captions",
+   "source_group": "windows11_live_captions",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have arthritis and can't press several keys at once. What's the easiest way to get live captions on my Windows 11 PC?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a limit on key combinations, so the quick settings route applies and the key-combination shortcut is left out. The first-use passage gives the consent and language conditions.",
+   "source_ref_ids": [
+    "lc-win11-quicksettings",
+    "lc-win11-firstuse"
+   ],
+   "target": "Use quick settings, which doesn't need any key presses:\n1. Select the battery, network, or volume icon on the taskbar to open quick settings.\n2. Turn on the **Live captions** toggle.\n\nLive captions requires Windows 11, version 22H2 or later. On first use, it asks for consent to process voice data on your device, then prompts you to download the speech recognition language files.",
+   "author_note": "The constraint rules out key combinations, so the Windows key shortcut is not used. Only source steps and conditions appear."
+  },
+  {
+   "id": "gsft-live_captions-07",
+   "candidate_id": "gsft-live_captions-07-v1",
+   "task_id": "TR-097",
+   "task_group": "live_captions",
+   "source_group": "android_live_caption",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I turn on Live Caption on my Android phone?"
+    },
+    {
+     "role": "assistant",
+     "content": "1. Press a volume key to bring up the volume controls. 2. Below the volume controls, tap More, then Live Caption, then Done."
+    },
+    {
+     "role": "user",
+     "content": "I followed those steps but I don't see Live Caption under More. What now?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and that the listed steps did not show Live Caption. The passage gives a search route and a manufacturer condition for that case.",
+   "source_ref_ids": [
+    "lc-android-turnon"
+   ],
+   "target": "Try this next:\n1. Open **Settings**.\n2. Search for **Live Caption**.\n3. Turn it on.\n\nIf you don't see Live Caption, check with your phone manufacturer.",
+   "author_note": "The user already tried the volume-control route, so the target does not repeat it. The search route and manufacturer condition come from the same passage."
+  },
+  {
+   "id": "gsft-phone_not_charging-01",
+   "candidate_id": "gsft-phone_not_charging-01-v1",
+   "task_id": "TR-099",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone 13 won't charge at all, even with a brand new cable."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone 13, so the iPhone passages apply. The force restart applies only under its stated condition.",
+   "source_ref_ids": [
+    "pnc-iphone-basic",
+    "pnc-iphone-forcerestart"
+   ],
+   "target": "Try these steps in order:\n1. Plug the iPhone into a computer, a power accessory, or a wall outlet.\n2. Restart the iPhone.\n3. Check the charging cable and USB adapter for damage, such as breaks or bent prongs. Stop using any damaged accessory.\n4. Use a wall outlet, make sure the cable, USB adapter, and outlet connect securely, or try a different outlet.\n5. Clear debris from the charging port on the bottom of the iPhone, then firmly plug in the cable.\n6. Leave it charging.\n7. If it still won't turn on or shows a battery icon on the screen, force a restart.\n8. On iPhone 8 or later, quickly press **volume up**.\n9. Quickly press **volume down**.\n10. Press and hold the **side button** until the Apple logo appears.\n\nIf it still won't turn on or charge, you may need service through the 'Get service' link.",
+   "author_note": "Keep the force-restart branch as its own numbered steps and keep the service condition. The Pixel steps and the other iPhone models are left out."
+  },
+  {
+   "id": "gsft-phone_not_charging-02",
+   "candidate_id": "gsft-phone_not_charging-02-v1",
+   "task_id": "TR-111",
+   "task_group": "phone_not_charging",
+   "source_group": "pixel_wont_charge",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Pixel",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Pixel 9 keeps stopping charging on the wireless pad on my nightstand. It has a thick rubber case on it."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Pixel 9 and a case on a wireless pad, so the Pixel passages apply. The iPhone passage is a distractor. The notification step applies only if it appears.",
+   "source_ref_ids": [
+    "pnc-pixel-case-wireless",
+    "pnc-pixel-accessory-notice",
+    "pnc-iphone-basic"
+   ],
+   "target": "Start with the case and the charger:\n1. Take off any case that could block the wireless charger.\n2. Use a wireless charger approved for your specific Pixel model.\n3. If a 'Check charging accessory' notification appears, the cable or adapter may be damaged or unsupported. Switch to a compatible one.",
+   "author_note": "Cover the case step, the approved-charger step and the notification condition. The iPhone steps are not used."
+  },
+  {
+   "id": "gsft-phone_not_charging-03",
+   "candidate_id": "gsft-phone_not_charging-03-v1",
+   "task_id": "TR-099",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Pixel",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My phone won't charge and the screen stays dark. What should I try first?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or a Pixel?"
+   },
+   "decision_basis": "The user does not name the phone. The iPhone and Pixel passages give different steps, so one question is needed.",
+   "source_ref_ids": [
+    "pnc-iphone-basic",
+    "pnc-pixel-cable-outlet"
+   ],
+   "target": "Is your phone an iPhone or a Pixel?",
+   "author_note": "Clarify route with a device question only."
+  },
+  {
+   "id": "gsft-phone_not_charging-04",
+   "candidate_id": "gsft-phone_not_charging-04-v1",
+   "task_id": "TR-148",
+   "task_group": "phone_not_charging",
+   "source_group": "pixel_wont_charge",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Pixel",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My battery is charging really slowly overnight. Anything I can check?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which phone do you have, an iPhone or a Pixel?"
+   },
+   "decision_basis": "The user does not name the phone. The iPhone and Pixel passages give different checks, so one question is needed.",
+   "source_ref_ids": [
+    "pnc-iphone-basic",
+    "pnc-pixel-case-wireless"
+   ],
+   "target": "Which phone do you have, an iPhone or a Pixel?",
+   "author_note": "Clarify route with a device question only."
+  },
+  {
+   "id": "gsft-phone_not_charging-05",
+   "candidate_id": "gsft-phone_not_charging-05-v1",
+   "task_id": "TR-148",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone won't charge. There's no wall outlet where I am, I only have a power bank."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and cannot use a wall outlet, so the power accessory option is used and the wall outlet step is left out. The other source steps still apply.",
+   "source_ref_ids": [
+    "pnc-iphone-basic"
+   ],
+   "target": "Try these steps:\n1. Plug the iPhone into a power accessory.\n2. Restart the iPhone.\n3. Check the charging cable and USB adapter for damage, such as breaks or bent prongs. Stop using any damaged accessory.\n4. Clear debris from the charging port on the bottom of the iPhone, then firmly plug in the cable.\n5. Leave it charging.\n\nIf it still won't turn on or charge, you may need service through the 'Get service' link.",
+   "author_note": "The constraint rules out wall outlets, so the outlet step is not used. The other source steps and the service condition are kept."
+  },
+  {
+   "id": "gsft-phone_not_charging-06",
+   "candidate_id": "gsft-phone_not_charging-06-v1",
+   "task_id": "TR-148",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone 15 won't charge. What should I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "1. Plug the iPhone into a computer, a power accessory, or a wall outlet. 2. Restart the iPhone. 3. Check the charging cable and USB adapter for damage. Stop using any damaged accessory."
+    },
+    {
+     "role": "user",
+     "content": "I restarted it and tried another cable. Now there's a battery icon on the screen but it still won't charge."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone 15, which is iPhone 8 or later, and says a battery icon now shows. The passage's force restart condition applies, and the restart the user already did is not repeated.",
+   "source_ref_ids": [
+    "pnc-iphone-forcerestart"
+   ],
+   "target": "Since a battery icon is showing on your iPhone 8 or later, force a restart:\n1. Quickly press **volume up**.\n2. Quickly press **volume down**.\n3. Press and hold the **side button** until the Apple logo appears.\n4. Leave it charging.\n\nIf it still won't turn on or charge, you may need service through the 'Get service' link.",
+   "author_note": "The user already restarted the phone, so the target does not repeat the restart. The force-restart branch for iPhone 8 or later is kept and the other models are left out."
+  }
+ ]
+}
