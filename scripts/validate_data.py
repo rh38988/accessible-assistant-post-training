@@ -32,13 +32,16 @@ REQUIRED = {
 TASK_FAMILIES = {"Smartphone Basics", "Communication", "Online Safety and Scam Prevention"}
 
 
-def check_conversation(msgs, must_end_with, errors, where):
-    """Roles must alternate user/assistant, start with user, end as required."""
+def check_conversation(msgs, must_end_with, errors, where, rag_system_prompt=False):
+    """Validate legacy turns or one explicit RAG system/user/assistant example."""
     if not isinstance(msgs, list) or not msgs:
         errors.append(f"{where}: conversation must be a non-empty list")
         return
+    if rag_system_prompt and len(msgs) != 3:
+        errors.append(f"{where}: rag-system-v1 requires exactly system, user, assistant")
     for i, m in enumerate(msgs):
-        expected = "user" if i % 2 == 0 else "assistant"
+        expected = (('system', 'user', 'assistant')[i] if rag_system_prompt and i < 3
+                    else ('user' if i % 2 == 0 else 'assistant'))
         if not isinstance(m, dict) or set(m) != {"role", "content"}:
             errors.append(f"{where}: message {i} must have exactly 'role' and 'content'")
             continue
@@ -108,7 +111,11 @@ def check_record(rec, kind, errors, where):
 
     if kind == "train":
         # Training examples end with the assistant reply we want to teach.
-        check_conversation(rec["messages"], "assistant", errors, where)
+        prompt_format = rec.get("prompt_format")
+        if prompt_format is not None and prompt_format != "rag-system-v1":
+            errors.append(f"{where}: unsupported prompt_format '{prompt_format}'")
+        check_conversation(rec["messages"], "assistant", errors, where,
+                           rag_system_prompt=prompt_format == "rag-system-v1")
         if not isinstance(rec["reviewed"], bool):
             errors.append(f"{where}: reviewed must be true or false")
         sources = rec["sources"]

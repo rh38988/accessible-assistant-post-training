@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "historical_dataset_count": 981,
+  "historical_dataset_modified": false,
+  "sampled_one_turn_and_multi_turn": [
+    {
+      "id": "pilot-001",
+      "message_count": 2,
+      "full_tokens": 164,
+      "prompt_tokens_masked": 47,
+      "supervised_final_turn_tokens": 117,
+      "legacy_default_system_inserted": true,
+      "final_assistant_only": true
+    },
+    {
+      "id": "tr001-d",
+      "message_count": 4,
+      "full_tokens": 187,
+      "prompt_tokens_masked": 82,
+      "supervised_final_turn_tokens": 105,
+      "legacy_default_system_inserted": true,
+      "final_assistant_only": true
+    }
+  ],
+  "historical_dataset_sha256": "000f85584125bf8ef50a2cfdb1506b06440450352a6c3d234969f32a45aabce5"
+}

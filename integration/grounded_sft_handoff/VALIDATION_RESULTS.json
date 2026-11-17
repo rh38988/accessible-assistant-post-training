@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "count": 2,
+  "tokenizer_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "max_length": 1028,
+  "max_full_tokens": 357,
+  "results": [
+    {
+      "id": "gsft-demo-001",
+      "full_tokens_before_truncation": 282,
+      "prompt_tokens_masked": 245,
+      "supervised_tokens": 37,
+      "inference_prompt_tokens": 248,
+      "assistant_header_tokens_supervised": 3,
+      "inference_messages_sha256": "3f56bf8164d19a3f468aeb1f1821f6053462a2e51fabecb978e54f3d38dd8467",
+      "training_prefix_messages_sha256": "3f56bf8164d19a3f468aeb1f1821f6053462a2e51fabecb978e54f3d38dd8467",
+      "inference_rendering_sha256": "31db9ff7c11dae5f8fcfad9e4ea65b238e04169eb5bfecc451994edaf7b6952d",
+      "training_rendering_sha256": "a1f383e419edb2a3a5fb84e99b3ccd11f919b787bb75b8db92c01086fd4021f2",
+      "inference_messages_match": true,
+      "chat_template_prefix_match": true,
+      "input_roles": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "final_assistant_only": true,
+      "reference_text_in_model_input": true
+    },
+    {
+      "id": "gsft-demo-002",
+      "full_tokens_before_truncation": 357,
+      "prompt_tokens_masked": 308,
+      "supervised_tokens": 49,
+      "inference_prompt_tokens": 311,
+      "assistant_header_tokens_supervised": 3,
+      "inference_messages_sha256": "ae6daa1150b1c012e534f1a666a3a454b794a18df3efcc42e36edfcb38cae6c4",
+      "training_prefix_messages_sha256": "ae6daa1150b1c012e534f1a666a3a454b794a18df3efcc42e36edfcb38cae6c4",
+      "inference_rendering_sha256": "8c1da6f32eb6d01e1c2d44cac28b19b58797763f9629d030b66e7a92c094c1f5",
+      "training_rendering_sha256": "7e7bc46b264d21ff9ef17a4b7d65444fa7f3b1d2e6b11768495ad36011e37ad4",
+      "inference_messages_match": true,
+      "chat_template_prefix_match": true,
+      "input_roles": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "final_assistant_only": true,
+      "reference_text_in_model_input": true
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}
