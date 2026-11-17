@@ -1,11 +1,11 @@
-item,rater,clarity,actionability,completeness,correctness,clarification_behavior,notes
-H01,Cian-Rong,2,1,0,2,,
-H02,Cian-Rong,2,1,0,0,,
-H03,Cian-Rong,2,0,0,0,,
-H04,Cian-Rong,2,2,1,2,,
-H05,Cian-Rong,0,1,0,0,,
-H06,Cian-Rong,1,1,0,0,,
-H07,Cian-Rong,2,1,0,2,,
-H08,Cian-Rong,2,2,1,2,,
-H09,Cian-Rong,2,2,2,2,appropriate,clarification_behavior inferred from response; confirm
-H10,Cian-Rong,2,1,0,1,guessed,clarification_behavior inferred from response; confirm
+item,rater,clarity,actionability,completeness,correctness,actionability_v4,clarification_behavior,notes
+H01,Cian-Rong,2,1,0,2,,,
+H02,Cian-Rong,2,1,0,0,1,,
+H03,Cian-Rong,2,0,0,0,,,
+H04,Cian-Rong,2,2,1,2,2,,
+H05,Cian-Rong,0,1,0,0,2,,
+H06,Cian-Rong,1,1,0,0,2,,
+H07,Cian-Rong,2,1,0,2,1,,
+H08,Cian-Rong,2,2,1,2,2,,
+H09,Cian-Rong,2,2,2,2,2,appropriate,clarification_behavior inferred from response; confirm
+H10,Cian-Rong,2,1,0,1,1,guessed,clarification_behavior inferred from response; confirm

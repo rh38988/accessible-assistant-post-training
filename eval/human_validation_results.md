@@ -24,3 +24,14 @@ NA items (H09 completeness and correctness for the judge) are excluded from thos
 ## Limits
 
 Ten responses and one human rater. Kappa values on 9 to 10 items are very imprecise. No second human rater, so human-human agreement is unknown. The human rater also knew the rubric's design. Treat the judge as roughly consistent with the human on correctness and clarity, less reliable on actionability, and not informative on completeness.
+
+## Actionability re-rated with the v4 check A2 (post-hoc)
+
+The rater re-scored actionability of the 8 English items using the rubric v4 definition of A2 (a step must name something the user will see on the screen). Clarity, completeness and correctness scores are unchanged. The v2 human scores are kept in the `actionability` column; the re-rated scores are in `actionability_v4`. Changed items: H05 (1 to 2) and H06 (1 to 2).
+
+| Comparison (8 items) | Exact run 1 / run 2 | Within 1 | Quadratic weighted kappa run 1 / run 2 | Mean human | Mean judge |
+|---|---|---|---|---|---|
+| v2 human vs v2 judge | 4 / 6 | 8 / 8 | 0.30 / 0.47 | 1.38 | 1.38 |
+| v4 human vs v4 judge | 5 / 3 | 8 / 8 | 0.54 / 0.23 | 1.62 | 1.25 |
+
+Reading: agreement on actionability does not improve under v4. Exact agreement is 4 and 6 of 8 under v2, 5 and 3 of 8 under v4, and the two v4 judge runs disagree with each other on 2 of 8 items (H02 and H05), so the judge's own run-to-run noise is as large as the effect of the definition change. With 8 items and one human rater this cannot show that v4 is better or worse. The judge is stricter than the human under v4 (1.25 vs 1.62).
