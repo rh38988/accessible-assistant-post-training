@@ -1,1047 +1,1102 @@
 {
- "batch": "b05",
- "candidates": [
-  {
-   "id": "gsft-backup_photos-01",
-   "candidate_id": "gsft-backup_photos-01-v1",
-   "task_id": "TR-013",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
+  "batch": "b05",
+  "candidates": [
     {
-     "role": "user",
-     "content": "I have an iPhone 15 and I'm worried I'll lose all my pictures if the phone breaks. How do I turn on iCloud Photos?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names an iPhone 15, so the iPhone steps from the Apple page apply. The Android Google Photos steps are the inapplicable distractor. The prerequisite sentence about the same Apple Account is a condition and is kept.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "Here is how to turn on iCloud Photos on your iPhone:\n1. Make sure you're signed in to the same Apple Account on each device.\n2. Open **Settings**.\n3. Tap your name.\n4. Tap **iCloud**.\n5. Tap **Photos**.\n6. Turn on **Sync this iPhone**.",
-   "author_note": "Covers the prerequisite, Settings, your name, iCloud, Photos and Sync this iPhone. The Android steps are not used. No gap."
-  },
-  {
-   "id": "gsft-backup_photos-02",
-   "candidate_id": "gsft-backup_photos-02-v1",
-   "task_id": "TR-035",
-   "task_group": "backup_photos",
-   "source_group": "google_photos_backup_android",
-   "behavior": "direct",
-   "tags": [
-    "distractor"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Hi, so I have a Samsung Galaxy phone that runs Android, and my son told me my pictures should be saved to Google Photos automatically in case the phone gets lost. I'm not sure what to tap or where to go, could you walk me through it step by step please?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android (Samsung Galaxy), so the Google Photos Android steps apply. The iPhone iCloud steps are the inapplicable distractor. Steps are kept in page order.",
-   "source_ref_ids": [
-    "bp-android-google-photos",
-    "bp-iphone-icloud-photos"
-   ],
-   "target": "Here is how to turn on backup in Google Photos on your Android phone:\n1. Open the **Google Photos** app on your Android phone or tablet.\n2. Sign in to your Google Account.\n3. At the top right, tap your **Profile picture** or **Initial**.\n4. Tap **Photos settings**, and then tap **Backup**.\n5. Turn **Backup** on.",
-   "author_note": "Covers the open app, sign in, profile picture or initial, Photos settings then Backup, and the Backup toggle. The iCloud steps are not used. Google Photos step 5 says on or off; the reply asks for on. No gap."
-  },
-  {
-   "id": "gsft-backup_photos-03",
-   "candidate_id": "gsft-backup_photos-03-v1",
-   "task_id": "TR-013",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "clarify",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "any",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My phone is almost full of pictures and I'm scared I'll lose them. How do I back them up?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Is your phone an iPhone or an Android?"
-   },
-   "decision_basis": "The user says only my phone and does not name the device. The Apple steps use iCloud Photos and the Google steps use Google Photos on Android, so one question is needed before answering.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "Is your phone an iPhone or an Android?",
-   "author_note": "Clarify only. Question asks iPhone or Android, which is the first split in the sources."
-  },
-  {
-   "id": "gsft-backup_photos-04",
-   "candidate_id": "gsft-backup_photos-04-v1",
-   "task_id": "TR-035",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "any",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I want my family photos saved somewhere safe in case my phone gets lost or broken. Can you walk me through it?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Do you have an iPhone or an Android phone?"
-   },
-   "decision_basis": "The user does not name the phone type. iCloud Photos steps (iPhone) and Google Photos backup steps (Android) differ, so one question is needed.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "Do you have an iPhone or an Android phone?",
-   "author_note": "Clarify only. Asks which phone type, no assumption."
-  },
-  {
-   "id": "gsft-backup_photos-05",
-   "candidate_id": "gsft-backup_photos-05-v1",
-   "task_id": "TR-013",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Please help me back up my photos. I'm not techy at all, so simple steps please."
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Which kind of phone do you use, an iPhone or an Android?"
-   },
-   "decision_basis": "The user does not name the device or app. The iPhone and Android steps differ, so the reply must first ask which phone.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "Which kind of phone do you use, an iPhone or an Android?",
-   "author_note": "Clarify only. Asks which phone, no assumption about the device."
-  },
-  {
-   "id": "gsft-backup_photos-06",
-   "candidate_id": "gsft-backup_photos-06-v1",
-   "task_id": "TR-013",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "constraint",
-   "tags": [
-    "distractor"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm on an iPhone and I don't want to pay for any more storage, so please just give me the steps to turn on iCloud Photos and skip the rest."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names an iPhone and sets a limit: only the steps, no extra. The iPhone steps apply. The reply does not mention storage cost or upgrades because the Apple passage does not discuss them.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "Here are the steps to turn on iCloud Photos on your iPhone:\n1. Make sure you're signed in to the same **Apple Account** on each device.\n2. Open **Settings**.\n3. Tap your name.\n4. Tap **iCloud**.\n5. Tap **Photos**.\n6. Turn on **Sync this iPhone**.",
-   "author_note": "Respects the user's limit: steps only, no storage advice. Covers the prerequisite, Settings, your name, iCloud, Photos and Sync this iPhone. No gap."
-  },
-  {
-   "id": "gsft-backup_photos-07",
-   "candidate_id": "gsft-backup_photos-07-v1",
-   "task_id": "TR-013",
-   "task_group": "backup_photos",
-   "source_group": "apple_icloud_photos_iphone",
-   "behavior": "multiturn",
-   "tags": [
-    "distractor"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I have an iPhone and want my photos saved in iCloud."
+      "id": "gsft-backup_photos-01",
+      "candidate_id": "gsft-backup_photos-01-v1",
+      "task_id": "TR-013",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have an iPhone 15 and I'm worried I'll lose all my pictures if the phone breaks. How do I turn on iCloud Photos?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names an iPhone 15, so the iPhone steps from the Apple page apply. The Android Google Photos steps are the inapplicable distractor. The prerequisite sentence about the same Apple Account is a condition and is kept.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "Here is how to turn on iCloud Photos on your iPhone:\n1. Make sure you're signed in to the same Apple Account on each device.\n2. Open **Settings**.\n3. Tap your name.\n4. Tap **iCloud**.\n5. Tap **Photos**.\n6. Turn on **Sync this iPhone**.",
+      "author_note": "Covers the prerequisite, Settings, your name, iCloud, Photos and Sync this iPhone. The Android steps are not used. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Open Settings, tap your name, then tap iCloud. Tell me when you're there."
+      "id": "gsft-backup_photos-02",
+      "candidate_id": "gsft-backup_photos-02-v1",
+      "task_id": "TR-035",
+      "task_group": "backup_photos",
+      "source_group": "google_photos_backup_android",
+      "behavior": "direct",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi, so I have a Samsung Galaxy phone that runs Android, and my son told me my pictures should be saved to Google Photos automatically in case the phone gets lost. I'm not sure what to tap or where to go, could you walk me through it step by step please?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android (Samsung Galaxy), so the Google Photos Android steps apply. The iPhone iCloud steps are the inapplicable distractor. Steps are kept in page order.",
+      "source_ref_ids": [
+        "bp-android-google-photos",
+        "bp-iphone-icloud-photos"
+      ],
+      "target": "Here is how to turn on backup in Google Photos on your Android phone:\n1. Open the **Google Photos** app on your Android phone or tablet.\n2. Sign in to your Google Account.\n3. At the top right, tap your **Profile picture** or **Initial**.\n4. Tap **Photos settings**, and then tap **Backup**.\n5. Turn **Backup** on.",
+      "author_note": "Covers the open app, sign in, profile picture or initial, Photos settings then Backup, and the Backup toggle. The iCloud steps are not used. Google Photos step 5 says on or off; the reply asks for on. No gap."
     },
     {
-     "role": "user",
-     "content": "I'm in iCloud now and I can see Photos in the list, but Sync this iPhone is off. I haven't changed anything else."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct start. The last user turn says the user is in iCloud and sees Photos, with Sync this iPhone off. The remaining iPhone steps are Photos and then turning Sync this iPhone on, with the Apple Account condition.",
-   "source_ref_ids": [
-    "bp-iphone-icloud-photos",
-    "bp-android-google-photos"
-   ],
-   "target": "You are almost done. Make sure you're signed in to the same **Apple Account** on each device.\n1. Tap **Photos**.\n2. Turn on **Sync this iPhone**.",
-   "author_note": "Model sees the user turns only: user is already in iCloud and sees Photos. Target does not repeat Settings, your name or iCloud. Covers the prerequisite, Photos and Sync this iPhone. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-01",
-   "candidate_id": "gsft-family_emergency_scam-01-v1",
-   "task_id": "TR-014",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My grandson called from a number I don't know. He's crying and says he got arrested and needs bail money sent right away. Should I send it?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a call from a family member with an urgent payment demand from an unknown number. The sources say not to trust the voice, to verify through a number the user knows, to avoid any payment method the caller insists on, and to report scams. The If you can't reach condition is kept.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Please don't send any money yet.\n1. Don't trust the voice.\n2. Call the person who supposedly contacted you and verify the story.\n3. Use a phone number you know is theirs.\n4. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n5. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n6. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. Covers verify, known number, other family, payment method warning and report. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-02",
-   "candidate_id": "gsft-family_emergency_scam-02-v1",
-   "task_id": "TR-039",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A woman texted me from a new number saying she's my son's girlfriend. She says he was in a car crash and she needs money wired to a hospital today, and she says it's urgent and I can't call anyone else about it. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a text from a new number asking for a wire transfer. The sources say to verify the story through a number the user knows, to use another family member if the person cannot be reached, and to avoid payment methods the caller insists on.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Don't wire any money until you have checked the story.\n1. Call the person who supposedly contacted you and verify the story.\n2. Use a phone number you know is theirs.\n3. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n4. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n5. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. The claim that nobody else can be called is answered by the other-family step. Covers verify, known number, other family, payment warning and report. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-03",
-   "candidate_id": "gsft-family_emergency_scam-03-v1",
-   "task_id": "TR-014",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "constraint",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I can't reach my nephew by phone because his phone seems to be off. Someone is asking me to pay his bail with gift cards right now. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user cannot reach the family member, which is the stated limit. The sources give the other-family route for that case, the warning against a required payment method, and the report line. The reply uses only those steps.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Please don't buy any gift cards yet.\n1. Don't trust the voice.\n2. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Respects the constraint that the nephew cannot be reached by phone: the other-family step covers that. Covers the voice warning, other family, payment warning and report. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-04",
-   "candidate_id": "gsft-family_emergency_scam-04-v1",
-   "task_id": "TR-039",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm in a rush and can only read a few lines. Someone says my daughter is hurt and needs money by wire. Just the quick version?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user asks for the shortest version, which is the stated limit. The sources still require the verify steps, the payment warning and the report line, so the reply stays short and keeps each of them.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Please don't wire any money yet.\n1. Call the person who supposedly contacted you and verify the story.\n2. Use a phone number you know is theirs.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Short reply as the user asked. Covers verify, known number, payment warning and report. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-05",
-   "candidate_id": "gsft-family_emergency_scam-05-v1",
-   "task_id": "TR-014",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My grandson called from a number I don't know. He says he got into trouble and needs money right away."
+      "id": "gsft-backup_photos-03",
+      "candidate_id": "gsft-backup_photos-03-v1",
+      "task_id": "TR-013",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "clarify",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My phone is almost full of pictures and I'm scared I'll lose them. How do I back them up?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only my phone and does not name the device. The Apple steps use iCloud Photos and the Google steps use Google Photos on Android, so one question is needed before answering.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. Question asks iPhone or Android, which is the first split in the sources."
     },
     {
-     "role": "assistant",
-     "content": "Please don't send any money yet. Call your grandson at a number you know is his."
+      "id": "gsft-backup_photos-04",
+      "candidate_id": "gsft-backup_photos-04-v1",
+      "task_id": "TR-035",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I want my family photos saved somewhere safe in case my phone gets lost or broken. Can you walk me through it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Do you have an iPhone or an Android phone?"
+      },
+      "decision_basis": "The user does not name the phone type. iCloud Photos steps (iPhone) and Google Photos backup steps (Android) differ, so one question is needed.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "Do you have an iPhone or an Android phone?",
+      "author_note": "Clarify only. Asks which phone type, no assumption."
     },
     {
-     "role": "user",
-     "content": "I called his usual number and he answered. He says he's fine and never called anyone. But before that I already bought 3 gift cards and read the card numbers and PINs to the man on the phone. What now?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct verify step. The last user turn says the user already gave gift card numbers and PINs. The gift card section tells the user to contact the issuer right away, use the number on the card, say they were tricked, and ask for a refund. The report line is kept. The reply does not repeat the calls already made.",
-   "source_ref_ids": [
-    "fam-scam-giftcard",
-    "fam-scam-report-ftc"
-   ],
-   "target": "Please act on the gift cards now.\n1. Contact the gift card issuer immediately.\n2. Use the number on the back of the card.\n3. Tell them that a scammer tricked you into giving them the card number and PIN.\n4. Ask them to refund your money.\n5. Report a scammer to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: user already called grandson and gave gift card numbers and PINs. Target does not repeat those actions. Covers contact issuer, number on back, tell them, refund request and report. No gap."
-  },
-  {
-   "id": "gsft-family_emergency_scam-06",
-   "candidate_id": "gsft-family_emergency_scam-06-v1",
-   "task_id": "TR-039",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A man called and said he's my nephew and needs money wired today to get out of jail."
+      "id": "gsft-backup_photos-05",
+      "candidate_id": "gsft-backup_photos-05-v1",
+      "task_id": "TR-013",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Please help me back up my photos. I'm not techy at all, so simple steps please."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Which kind of phone do you use, an iPhone or an Android?"
+      },
+      "decision_basis": "The user does not name the device or app. The iPhone and Android steps differ, so the reply must first ask which phone.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "Which kind of phone do you use, an iPhone or an Android?",
+      "author_note": "Clarify only. Asks which phone, no assumption about the device."
     },
     {
-     "role": "assistant",
-     "content": "Don't send the money yet. Call your nephew at a number you know is his."
+      "id": "gsft-backup_photos-06",
+      "candidate_id": "gsft-backup_photos-06-v1",
+      "task_id": "TR-013",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "constraint",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on an iPhone and I don't want to pay for any more storage, so please just give me the steps to turn on iCloud Photos and skip the rest."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names an iPhone and sets a limit: only the steps, no extra. The iPhone steps apply. The reply does not mention storage cost or upgrades because the Apple passage does not discuss them.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "Here are the steps to turn on iCloud Photos on your iPhone:\n1. Make sure you're signed in to the same **Apple Account** on each device.\n2. Open **Settings**.\n3. Tap your name.\n4. Tap **iCloud**.\n5. Tap **Photos**.\n6. Turn on **Sync this iPhone**.",
+      "author_note": "Respects the user's limit: steps only, no storage advice. Covers the prerequisite, Settings, your name, iCloud, Photos and Sync this iPhone. No gap."
     },
     {
-     "role": "user",
-     "content": "I called his usual number and he's at work and has no idea what I'm talking about. But I already sent a wire transfer to the man this morning. Is there anything I can do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct verify step. The last user turn says a wire transfer was already sent. The wire transfer section tells the user to report it to the wire transfer company right away, say they were tricked, and ask for a refund. The report line is kept.",
-   "source_ref_ids": [
-    "fam-scam-wire",
-    "fam-scam-report-ftc"
-   ],
-   "target": "Please act on the wire transfer right away.\n1. Report it to the wire transfer company immediately.\n2. Tell them a scammer tricked you into sending money.\n3. Ask them to refund your money.\n4. Report a scammer to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: user already sent the wire transfer and checked the nephew. Target does not repeat the calls. Covers report to wire company, tell them, refund request and FTC report. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-01",
-   "candidate_id": "gsft-verification_code_scam-01-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a text with a 6-digit code from my bank, then a call from someone saying they're from the bank's fraud team. They want me to read the code to them. Is that normal?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a caller asking for a verification code. The sources say that anyone who asks for it is a scammer, that the code must not be given, to hang up and block the number, to contact the company through a trusted number, and to report the caller.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Use a number you trust, like the one on your statement or in your app.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. Covers every step the page gives for a code request. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-02",
-   "candidate_id": "gsft-verification_code_scam-02-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Someone just called and said they're from my email provider. They want the 6-digit code that was just sent to my phone to fix a problem with my account. My phone is right here and they sound official. Should I read it out to them?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a caller asking for a code that was just sent to the phone. The sources say never to give it, to hang up, to block the number, to use a trusted number instead of the caller's, and to report.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Please don't read that code out loud.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Use a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. The official-sounding claim is answered by the trusted-number step. Covers every step the page gives. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-03",
-   "candidate_id": "gsft-verification_code_scam-03-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My phone is old and my banking app won't open on it, and I can't get to the bank this week. A man is asking for the code from my text. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user cannot use the banking app and cannot visit the bank, which is the stated limit. The sources offer the statement as a trusted number, so the reply uses it and does not rely on the app. The other steps are kept.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Use a number you trust, like the one on your statement.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Respects the constraint: the statement is used as the trusted number since the app will not open. Covers every step the page gives. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-04",
-   "candidate_id": "gsft-verification_code_scam-04-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I have trouble hearing on the phone and I can't stay on long calls. Someone just asked me for my code. Please keep it very short."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user asks for a very short reply and cannot stay on long calls, which is the stated limit. The sources give the steps to refuse, hang up, block and report. The reply keeps those and drops the longer advice.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-report"
-   ],
-   "target": "Please don't share the code.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Short reply as the user asked. Covers refuse, hang up, block and report. The trusted-number step is left out for brevity; the page gives it as a second step, not a required one for a refused call. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-05",
-   "candidate_id": "gsft-verification_code_scam-05-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a text with a code from my bank that I didn't ask for."
+      "id": "gsft-backup_photos-07",
+      "candidate_id": "gsft-backup_photos-07-v1",
+      "task_id": "TR-013",
+      "task_group": "backup_photos",
+      "source_group": "apple_icloud_photos_iphone",
+      "behavior": "multiturn",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have an iPhone and want my photos saved in iCloud."
+        },
+        {
+          "role": "assistant",
+          "content": "Open Settings, tap your name, then tap iCloud. Tell me when you're there."
+        },
+        {
+          "role": "user",
+          "content": "I'm in iCloud now and I can see Photos in the list, but Sync this iPhone is off. I haven't changed anything else."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct start. The last user turn says the user is in iCloud and sees Photos, with Sync this iPhone off. The remaining iPhone steps are Photos and then turning Sync this iPhone on, with the Apple Account condition.",
+      "source_ref_ids": [
+        "bp-iphone-icloud-photos",
+        "bp-android-google-photos"
+      ],
+      "target": "You are almost done. Make sure you're signed in to the same **Apple Account** on each device.\n1. Tap **Photos**.\n2. Turn on **Sync this iPhone**.",
+      "author_note": "Model sees the user turns only: user is already in iCloud and sees Photos. Target does not repeat Settings, your name or iCloud. Covers the prerequisite, Photos and Sync this iPhone. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Don't share that code with anyone. Is someone calling you about it?"
+      "id": "gsft-family_emergency_scam-01",
+      "candidate_id": "gsft-family_emergency_scam-01-v1",
+      "task_id": "TR-014",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My grandson called from a number I don't know. He's crying and says he got arrested and needs bail money sent right away. Should I send it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a call from a family member with an urgent payment demand from an unknown number. The sources say not to trust the voice, to verify through a number the user knows, to avoid any payment method the caller insists on, and to report scams. The If you can't reach condition is kept.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Please don't send any money yet.\n1. Don't trust the voice.\n2. Call the person who supposedly contacted you and verify the story.\n3. Use a phone number you know is theirs.\n4. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n5. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n6. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. Covers verify, known number, other family, payment method warning and report. No gap."
     },
     {
-     "role": "user",
-     "content": "Yes, a man just called and asked me to read him the code so he can cancel a transfer. I already read it to him, and I'm not sure what to do now."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the code was already read out. The sources say to hang up, to use a trusted number instead of the caller's, and to report the caller. The reply does not repeat the reading of the code.",
-   "source_ref_ids": [
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Here is what to do next.\n1. Hang up.\n2. Use a number you trust, like the one on your statement or in your app.\n3. Never use the number the caller gave you; it'll take you to the scammer.\n4. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: user already read the code out. Target does not repeat that action. Covers hang up, trusted number, do not use caller's number and report. No gap."
-  },
-  {
-   "id": "gsft-verification_code_scam-06",
-   "candidate_id": "gsft-verification_code_scam-06-v1",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A text said my account code is 482913 and I should reply if I didn't ask for it."
+      "id": "gsft-family_emergency_scam-02",
+      "candidate_id": "gsft-family_emergency_scam-02-v1",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A woman texted me from a new number saying she's my son's girlfriend. She says he was in a car crash and she needs money wired to a hospital today, and she says it's urgent and I can't call anyone else about it. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a text from a new number asking for a wire transfer. The sources say to verify the story through a number the user knows, to use another family member if the person cannot be reached, and to avoid payment methods the caller insists on.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Don't wire any money until you have checked the story.\n1. Call the person who supposedly contacted you and verify the story.\n2. Use a phone number you know is theirs.\n3. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n4. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n5. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. The claim that nobody else can be called is answered by the other-family step. Covers verify, known number, other family, payment warning and report. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Don't reply, and don't share that code with anyone who asks for it."
+      "id": "gsft-family_emergency_scam-03",
+      "candidate_id": "gsft-family_emergency_scam-03-v1",
+      "task_id": "TR-014",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "constraint",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I can't reach my nephew by phone because his phone seems to be off. Someone is asking me to pay his bail with gift cards right now. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user cannot reach the family member, which is the stated limit. The sources give the other-family route for that case, the warning against a required payment method, and the report line. The reply uses only those steps.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Please don't buy any gift cards yet.\n1. Don't trust the voice.\n2. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Respects the constraint that the nephew cannot be reached by phone: the other-family step covers that. Covers the voice warning, other family, payment warning and report. No gap."
     },
     {
-     "role": "user",
-     "content": "I didn't reply. But a few minutes later a woman called from a number on my screen and said she's from my bank. She wants me to read back the code I just got. I'm still on the phone with her."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the call is still going and the caller wants the code read back, and the user has not yet read it. The sources say never to give the code, to hang up, to block the number, to use a trusted number and to report.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Please stop talking to her now.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Use a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: the call is still open and the code has not been read out. Target matches that state. Covers never give, hang up, block, trusted number, not caller's number and report. No gap."
-  },
-  {
-   "id": "gsft-backup_photos-02",
-   "candidate_id": "gsft-backup_photos-02-v2",
-   "task_id": "TR-035",
-   "task_group": "backup_photos",
-   "source_group": "google_photos_backup_android",
-   "behavior": "direct",
-   "tags": [
-    "distractor"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Hi, so I have a Samsung Galaxy phone that runs Android, and my son told me my pictures should be saved to Google Photos automatically in case the phone gets lost. I'm not sure what to tap or where to go, could you walk me through it step by step please?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android (Samsung Galaxy), so the Google Photos Android steps apply. The iPhone iCloud steps are the inapplicable distractor. Steps are kept in page order.",
-   "source_ref_ids": [
-    "bp-android-google-photos",
-    "bp-iphone-icloud-photos"
-   ],
-   "target": "Here is how to turn on backup in Google Photos on your Android phone:\n1. Open the **Google Photos** app on your Android phone or tablet.\n2. Sign in to your Google Account.\n3. At the top right, tap your **Profile picture** or **Initial**.\n4. Tap **Photos settings**.\n5. Tap **Backup**.\n6. Turn **Backup** on.",
-   "author_note": "Covers the open app, sign in, profile picture or initial, Photos settings then Backup, and the Backup toggle. The iCloud steps are not used. Google Photos step 5 says on or off; the reply asks for on. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-backup_photos-02-v1",
-     "to_candidate": "gsft-backup_photos-02-v2",
-     "reason": "Step 4 combined two taps (Photos settings and Backup), which breaks the one action per step rule, so it is split into two steps.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-backup_photos-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-family_emergency_scam-02",
-   "candidate_id": "gsft-family_emergency_scam-02-v2",
-   "task_id": "TR-039",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A woman texted me from a new number saying she's my son's girlfriend. She says he was in a car crash and she needs money wired to a hospital today, and she says it's urgent and I can't call anyone else about it. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a text from a new number asking for a wire transfer. The sources say to verify the story through a number the user knows, to use another family member if the person cannot be reached, and to avoid payment methods the caller insists on.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Don't wire any money until you have checked the story.\n1. Call your son at a phone number you already know is his, and verify the story.\n2. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. The claim that nobody else can be called is answered by the other-family step. Covers verify, known number, other family, payment warning and report. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-family_emergency_scam-02-v1",
-     "to_candidate": "gsft-family_emergency_scam-02-v2",
-     "reason": "Steps 1 and 2 told the reader to call the unknown texter's contact, so they now direct a call to the son at a number she already has for him.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-family_emergency_scam-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-family_emergency_scam-04",
-   "candidate_id": "gsft-family_emergency_scam-04-v2",
-   "task_id": "TR-039",
-   "task_group": "family_emergency_scam",
-   "source_group": "ftc_family_emergency_ai_2023",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm in a rush and can only read a few lines. Someone says my daughter is hurt and needs money by wire. Just the quick version?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user asks for the shortest version, which is the stated limit. The sources still require the verify steps, the payment warning and the report line, so the reply stays short and keeps each of them.",
-   "source_ref_ids": [
-    "fam-ftc2023-verify",
-    "fam-ftc2026-pay",
-    "fam-ftc2023-report"
-   ],
-   "target": "Please don't wire any money yet.\n1. Call your daughter at a phone number you already know is hers, and verify the story.\n2. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n3. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Short reply as the user asked. Covers verify, known number, payment warning and report. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-family_emergency_scam-04-v1",
-     "to_candidate": "gsft-family_emergency_scam-04-v2",
-     "reason": "Step 1 told the reader to call the unknown caller, so it now directs a call to the daughter at a number the user already has for her.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-family_emergency_scam-04-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-verification_code_scam-01",
-   "candidate_id": "gsft-verification_code_scam-01-v2",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a text with a 6-digit code from my bank, then a call from someone saying they're from the bank's fraud team. They want me to read the code to them. Is that normal?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a caller asking for a verification code. The sources say that anyone who asks for it is a scammer, that the code must not be given, to hang up and block the number, to contact the company through a trusted number, and to report the caller.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Call your bank at a number you trust, like the one on your statement or in your app.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. Covers every step the page gives for a code request. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-verification_code_scam-01-v1",
-     "to_candidate": "gsft-verification_code_scam-01-v2",
-     "reason": "Step 5 named no action or organization, so it now says to call the bank at a number the user trusts.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-verification_code_scam-01-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-verification_code_scam-02",
-   "candidate_id": "gsft-verification_code_scam-02-v2",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Someone just called and said they're from my email provider. They want the 6-digit code that was just sent to my phone to fix a problem with my account. My phone is right here and they sound official. Should I read it out to them?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user describes a caller asking for a code that was just sent to the phone. The sources say never to give it, to hang up, to block the number, to use a trusted number instead of the caller's, and to report.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Please don't read that code out loud.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Call your email provider at a number you trust, like the one in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Protective action first. The official-sounding claim is answered by the trusted-number step. Covers every step the page gives. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-verification_code_scam-02-v1",
-     "to_candidate": "gsft-verification_code_scam-02-v2",
-     "reason": "Step 4 named no action or organization, so it now says to call the email provider at a number the user trusts.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-verification_code_scam-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-verification_code_scam-03",
-   "candidate_id": "gsft-verification_code_scam-03-v2",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My phone is old and my banking app won't open on it, and I can't get to the bank this week. A man is asking for the code from my text. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user cannot use the banking app and cannot visit the bank, which is the stated limit. The sources offer the statement as a trusted number, so the reply uses it and does not rely on the app. The other steps are kept.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Call your bank at a number you trust, like the one on your statement.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Respects the constraint: the statement is used as the trusted number since the app will not open. Covers every step the page gives. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-verification_code_scam-03-v1",
-     "to_candidate": "gsft-verification_code_scam-03-v2",
-     "reason": "Step 5 named no action or organization, so it now says to call the bank at a number the user trusts, such as the one on the statement.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-verification_code_scam-03-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-verification_code_scam-05",
-   "candidate_id": "gsft-verification_code_scam-05-v2",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a text with a code from my bank that I didn't ask for."
+      "id": "gsft-family_emergency_scam-04",
+      "candidate_id": "gsft-family_emergency_scam-04-v1",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in a rush and can only read a few lines. Someone says my daughter is hurt and needs money by wire. Just the quick version?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user asks for the shortest version, which is the stated limit. The sources still require the verify steps, the payment warning and the report line, so the reply stays short and keeps each of them.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Please don't wire any money yet.\n1. Call the person who supposedly contacted you and verify the story.\n2. Use a phone number you know is theirs.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Short reply as the user asked. Covers verify, known number, payment warning and report. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Don't share that code with anyone. Is someone calling you about it?"
+      "id": "gsft-family_emergency_scam-05",
+      "candidate_id": "gsft-family_emergency_scam-05-v1",
+      "task_id": "TR-014",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My grandson called from a number I don't know. He says he got into trouble and needs money right away."
+        },
+        {
+          "role": "assistant",
+          "content": "Please don't send any money yet. Call your grandson at a number you know is his."
+        },
+        {
+          "role": "user",
+          "content": "I called his usual number and he answered. He says he's fine and never called anyone. But before that I already bought 3 gift cards and read the card numbers and PINs to the man on the phone. What now?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct verify step. The last user turn says the user already gave gift card numbers and PINs. The gift card section tells the user to contact the issuer right away, use the number on the card, say they were tricked, and ask for a refund. The report line is kept. The reply does not repeat the calls already made.",
+      "source_ref_ids": [
+        "fam-scam-giftcard",
+        "fam-scam-report-ftc"
+      ],
+      "target": "Please act on the gift cards now.\n1. Contact the gift card issuer immediately.\n2. Use the number on the back of the card.\n3. Tell them that a scammer tricked you into giving them the card number and PIN.\n4. Ask them to refund your money.\n5. Report a scammer to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: user already called grandson and gave gift card numbers and PINs. Target does not repeat those actions. Covers contact issuer, number on back, tell them, refund request and report. No gap."
     },
     {
-     "role": "user",
-     "content": "Yes, a man just called and asked me to read him the code so he can cancel a transfer. I already read it to him, and I'm not sure what to do now."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the code was already read out. The sources say to hang up, to use a trusted number instead of the caller's, and to report the caller. The reply does not repeat the reading of the code.",
-   "source_ref_ids": [
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Here is what to do next.\n1. Hang up.\n2. Block their number.\n3. Call your bank at a number you trust, like the one on your statement or in your app, about the transfer.\n4. Never use the number the caller gave you; it'll take you to the scammer.\n5. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: user already read the code out. Target does not repeat that action. Covers hang up, block, bank call about the transfer, do not use caller's number and report. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-verification_code_scam-05-v1",
-     "to_candidate": "gsft-verification_code_scam-05-v2",
-     "reason": "The target omitted blocking the number and calling the bank about the code and transfer, and step 2 named no action, so the steps now include both.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-verification_code_scam-05-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-verification_code_scam-06",
-   "candidate_id": "gsft-verification_code_scam-06-v2",
-   "task_id": "TR-015",
-   "task_group": "verification_code_scam",
-   "source_group": "ftc_verification_code_scam",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "any",
-   "sensitive": true,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A text said my account code is 482913 and I should reply if I didn't ask for it."
+      "id": "gsft-family_emergency_scam-06",
+      "candidate_id": "gsft-family_emergency_scam-06-v1",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A man called and said he's my nephew and needs money wired today to get out of jail."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't send the money yet. Call your nephew at a number you know is his."
+        },
+        {
+          "role": "user",
+          "content": "I called his usual number and he's at work and has no idea what I'm talking about. But I already sent a wire transfer to the man this morning. Is there anything I can do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct verify step. The last user turn says a wire transfer was already sent. The wire transfer section tells the user to report it to the wire transfer company right away, say they were tricked, and ask for a refund. The report line is kept.",
+      "source_ref_ids": [
+        "fam-scam-wire",
+        "fam-scam-report-ftc"
+      ],
+      "target": "Please act on the wire transfer right away.\n1. Report it to the wire transfer company immediately.\n2. Tell them a scammer tricked you into sending money.\n3. Ask them to refund your money.\n4. Report a scammer to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: user already sent the wire transfer and checked the nephew. Target does not repeat the calls. Covers report to wire company, tell them, refund request and FTC report. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Don't reply, and don't share that code with anyone who asks for it."
+      "id": "gsft-verification_code_scam-01",
+      "candidate_id": "gsft-verification_code_scam-01-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a text with a 6-digit code from my bank, then a call from someone saying they're from the bank's fraud team. They want me to read the code to them. Is that normal?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a caller asking for a verification code. The sources say that anyone who asks for it is a scammer, that the code must not be given, to hang up and block the number, to contact the company through a trusted number, and to report the caller.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Use a number you trust, like the one on your statement or in your app.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. Covers every step the page gives for a code request. No gap."
     },
     {
-     "role": "user",
-     "content": "I didn't reply. But a few minutes later a woman called from a number on my screen and said she's from my bank. She wants me to read back the code I just got. I'm still on the phone with her."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the call is still going and the caller wants the code read back, and the user has not yet read it. The sources say never to give the code, to hang up, to block the number, to use a trusted number and to report.",
-   "source_ref_ids": [
-    "vc-never-share",
-    "vc-hang-up",
-    "vc-contact",
-    "vc-report"
-   ],
-   "target": "Please stop talking to her now.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Call your bank at a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Model sees user turns only: the call is still open and the code has not been read out. Target matches that state. Covers never give, hang up, block, trusted number, not caller's number and report. No gap.",
-   "correction_history": [
+      "id": "gsft-verification_code_scam-02",
+      "candidate_id": "gsft-verification_code_scam-02-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Someone just called and said they're from my email provider. They want the 6-digit code that was just sent to my phone to fix a problem with my account. My phone is right here and they sound official. Should I read it out to them?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a caller asking for a code that was just sent to the phone. The sources say never to give it, to hang up, to block the number, to use a trusted number instead of the caller's, and to report.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Please don't read that code out loud.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Use a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. The official-sounding claim is answered by the trusted-number step. Covers every step the page gives. No gap."
+    },
     {
-     "from_candidate": "gsft-verification_code_scam-06-v1",
-     "to_candidate": "gsft-verification_code_scam-06-v2",
-     "reason": "Step 4 named no action or organization, so it now says to call the bank at a number the user trusts.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-verification_code_scam-06-v1"
+      "id": "gsft-verification_code_scam-03",
+      "candidate_id": "gsft-verification_code_scam-03-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My phone is old and my banking app won't open on it, and I can't get to the bank this week. A man is asking for the code from my text. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user cannot use the banking app and cannot visit the bank, which is the stated limit. The sources offer the statement as a trusted number, so the reply uses it and does not rely on the app. The other steps are kept.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Use a number you trust, like the one on your statement.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Respects the constraint: the statement is used as the trusted number since the app will not open. Covers every step the page gives. No gap."
+    },
+    {
+      "id": "gsft-verification_code_scam-04",
+      "candidate_id": "gsft-verification_code_scam-04-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have trouble hearing on the phone and I can't stay on long calls. Someone just asked me for my code. Please keep it very short."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user asks for a very short reply and cannot stay on long calls, which is the stated limit. The sources give the steps to refuse, hang up, block and report. The reply keeps those and drops the longer advice.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-report"
+      ],
+      "target": "Please don't share the code.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Short reply as the user asked. Covers refuse, hang up, block and report. The trusted-number step is left out for brevity; the page gives it as a second step, not a required one for a refused call. No gap."
+    },
+    {
+      "id": "gsft-verification_code_scam-05",
+      "candidate_id": "gsft-verification_code_scam-05-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a text with a code from my bank that I didn't ask for."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't share that code with anyone. Is someone calling you about it?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, a man just called and asked me to read him the code so he can cancel a transfer. I already read it to him, and I'm not sure what to do now."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the code was already read out. The sources say to hang up, to use a trusted number instead of the caller's, and to report the caller. The reply does not repeat the reading of the code.",
+      "source_ref_ids": [
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Here is what to do next.\n1. Hang up.\n2. Use a number you trust, like the one on your statement or in your app.\n3. Never use the number the caller gave you; it'll take you to the scammer.\n4. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: user already read the code out. Target does not repeat that action. Covers hang up, trusted number, do not use caller's number and report. No gap."
+    },
+    {
+      "id": "gsft-verification_code_scam-06",
+      "candidate_id": "gsft-verification_code_scam-06-v1",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A text said my account code is 482913 and I should reply if I didn't ask for it."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't reply, and don't share that code with anyone who asks for it."
+        },
+        {
+          "role": "user",
+          "content": "I didn't reply. But a few minutes later a woman called from a number on my screen and said she's from my bank. She wants me to read back the code I just got. I'm still on the phone with her."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the call is still going and the caller wants the code read back, and the user has not yet read it. The sources say never to give the code, to hang up, to block the number, to use a trusted number and to report.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Please stop talking to her now.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Use a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: the call is still open and the code has not been read out. Target matches that state. Covers never give, hang up, block, trusted number, not caller's number and report. No gap."
+    },
+    {
+      "id": "gsft-backup_photos-02",
+      "candidate_id": "gsft-backup_photos-02-v2",
+      "task_id": "TR-035",
+      "task_group": "backup_photos",
+      "source_group": "google_photos_backup_android",
+      "behavior": "direct",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi, so I have a Samsung Galaxy phone that runs Android, and my son told me my pictures should be saved to Google Photos automatically in case the phone gets lost. I'm not sure what to tap or where to go, could you walk me through it step by step please?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android (Samsung Galaxy), so the Google Photos Android steps apply. The iPhone iCloud steps are the inapplicable distractor. Steps are kept in page order.",
+      "source_ref_ids": [
+        "bp-android-google-photos",
+        "bp-iphone-icloud-photos"
+      ],
+      "target": "Here is how to turn on backup in Google Photos on your Android phone:\n1. Open the **Google Photos** app on your Android phone or tablet.\n2. Sign in to your Google Account.\n3. At the top right, tap your **Profile picture** or **Initial**.\n4. Tap **Photos settings**.\n5. Tap **Backup**.\n6. Turn **Backup** on.",
+      "author_note": "Covers the open app, sign in, profile picture or initial, Photos settings then Backup, and the Backup toggle. The iCloud steps are not used. Google Photos step 5 says on or off; the reply asks for on. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-backup_photos-02-v1",
+          "to_candidate": "gsft-backup_photos-02-v2",
+          "reason": "Step 4 combined two taps (Photos settings and Backup), which breaks the one action per step rule, so it is split into two steps.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-backup_photos-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-family_emergency_scam-02",
+      "candidate_id": "gsft-family_emergency_scam-02-v2",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A woman texted me from a new number saying she's my son's girlfriend. She says he was in a car crash and she needs money wired to a hospital today, and she says it's urgent and I can't call anyone else about it. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a text from a new number asking for a wire transfer. The sources say to verify the story through a number the user knows, to use another family member if the person cannot be reached, and to avoid payment methods the caller insists on.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Don't wire any money until you have checked the story.\n1. Call your son at a phone number you already know is his, and verify the story.\n2. If you can't reach your loved one, try to get in touch with them through another family member or their friends.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. The claim that nobody else can be called is answered by the other-family step. Covers verify, known number, other family, payment warning and report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-family_emergency_scam-02-v1",
+          "to_candidate": "gsft-family_emergency_scam-02-v2",
+          "reason": "Steps 1 and 2 told the reader to call the unknown texter's contact, so they now direct a call to the son at a number she already has for him.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-family_emergency_scam-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-family_emergency_scam-04",
+      "candidate_id": "gsft-family_emergency_scam-04-v2",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in a rush and can only read a few lines. Someone says my daughter is hurt and needs money by wire. Just the quick version?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user asks for the shortest version, which is the stated limit. The sources still require the verify steps, the payment warning and the report line, so the reply stays short and keeps each of them.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Please don't wire any money yet.\n1. Call your daughter at a phone number you already know is hers, and verify the story.\n2. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n3. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Short reply as the user asked. Covers verify, known number, payment warning and report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-family_emergency_scam-04-v1",
+          "to_candidate": "gsft-family_emergency_scam-04-v2",
+          "reason": "Step 1 told the reader to call the unknown caller, so it now directs a call to the daughter at a number the user already has for her.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-family_emergency_scam-04-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-verification_code_scam-01",
+      "candidate_id": "gsft-verification_code_scam-01-v2",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a text with a 6-digit code from my bank, then a call from someone saying they're from the bank's fraud team. They want me to read the code to them. Is that normal?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a caller asking for a verification code. The sources say that anyone who asks for it is a scammer, that the code must not be given, to hang up and block the number, to contact the company through a trusted number, and to report the caller.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Call your bank at a number you trust, like the one on your statement or in your app.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. Covers every step the page gives for a code request. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-verification_code_scam-01-v1",
+          "to_candidate": "gsft-verification_code_scam-01-v2",
+          "reason": "Step 5 named no action or organization, so it now says to call the bank at a number the user trusts.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-verification_code_scam-01-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-verification_code_scam-02",
+      "candidate_id": "gsft-verification_code_scam-02-v2",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Someone just called and said they're from my email provider. They want the 6-digit code that was just sent to my phone to fix a problem with my account. My phone is right here and they sound official. Should I read it out to them?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user describes a caller asking for a code that was just sent to the phone. The sources say never to give it, to hang up, to block the number, to use a trusted number instead of the caller's, and to report.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Please don't read that code out loud.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Call your email provider at a number you trust, like the one in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Protective action first. The official-sounding claim is answered by the trusted-number step. Covers every step the page gives. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-verification_code_scam-02-v1",
+          "to_candidate": "gsft-verification_code_scam-02-v2",
+          "reason": "Step 4 named no action or organization, so it now says to call the email provider at a number the user trusts.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-verification_code_scam-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-verification_code_scam-03",
+      "candidate_id": "gsft-verification_code_scam-03-v2",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My phone is old and my banking app won't open on it, and I can't get to the bank this week. A man is asking for the code from my text. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user cannot use the banking app and cannot visit the bank, which is the stated limit. The sources offer the statement as a trusted number, so the reply uses it and does not rely on the app. The other steps are kept.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Anyone who asks you for your account verification code is a scammer.\n1. Never give your verification code to someone else.\n2. If someone asks you for your verification code, don't engage.\n3. Hang up.\n4. Block their number.\n5. Call your bank at a number you trust, like the one on your statement.\n6. Never use the number the caller gave you; it'll take you to the scammer.\n7. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Respects the constraint: the statement is used as the trusted number since the app will not open. Covers every step the page gives. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-verification_code_scam-03-v1",
+          "to_candidate": "gsft-verification_code_scam-03-v2",
+          "reason": "Step 5 named no action or organization, so it now says to call the bank at a number the user trusts, such as the one on the statement.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-verification_code_scam-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-verification_code_scam-05",
+      "candidate_id": "gsft-verification_code_scam-05-v2",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a text with a code from my bank that I didn't ask for."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't share that code with anyone. Is someone calling you about it?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, a man just called and asked me to read him the code so he can cancel a transfer. I already read it to him, and I'm not sure what to do now."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the code was already read out. The sources say to hang up, to use a trusted number instead of the caller's, and to report the caller. The reply does not repeat the reading of the code.",
+      "source_ref_ids": [
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Here is what to do next.\n1. Hang up.\n2. Block their number.\n3. Call your bank at a number you trust, like the one on your statement or in your app, about the transfer.\n4. Never use the number the caller gave you; it'll take you to the scammer.\n5. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: user already read the code out. Target does not repeat that action. Covers hang up, block, bank call about the transfer, do not use caller's number and report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-verification_code_scam-05-v1",
+          "to_candidate": "gsft-verification_code_scam-05-v2",
+          "reason": "The target omitted blocking the number and calling the bank about the code and transfer, and step 2 named no action, so the steps now include both.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-verification_code_scam-05-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-verification_code_scam-06",
+      "candidate_id": "gsft-verification_code_scam-06-v2",
+      "task_id": "TR-015",
+      "task_group": "verification_code_scam",
+      "source_group": "ftc_verification_code_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A text said my account code is 482913 and I should reply if I didn't ask for it."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't reply, and don't share that code with anyone who asks for it."
+        },
+        {
+          "role": "user",
+          "content": "I didn't reply. But a few minutes later a woman called from a number on my screen and said she's from my bank. She wants me to read back the code I just got. I'm still on the phone with her."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The earlier assistant turn gave the correct refusal. The last user turn says the call is still going and the caller wants the code read back, and the user has not yet read it. The sources say never to give the code, to hang up, to block the number, to use a trusted number and to report.",
+      "source_ref_ids": [
+        "vc-never-share",
+        "vc-hang-up",
+        "vc-contact",
+        "vc-report"
+      ],
+      "target": "Please stop talking to her now.\n1. Never give your verification code to someone else.\n2. Hang up.\n3. Block their number.\n4. Call your bank at a number you trust, like the one on your statement or in your app.\n5. Never use the number the caller gave you; it'll take you to the scammer.\n6. Then report them to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Model sees user turns only: the call is still open and the code has not been read out. Target matches that state. Covers never give, hang up, block, trusted number, not caller's number and report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-verification_code_scam-06-v1",
+          "to_candidate": "gsft-verification_code_scam-06-v2",
+          "reason": "Step 4 named no action or organization, so it now says to call the bank at a number the user trusts.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-verification_code_scam-06-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-family_emergency_scam-04",
+      "candidate_id": "gsft-family_emergency_scam-04-v3",
+      "task_id": "TR-039",
+      "task_group": "family_emergency_scam",
+      "source_group": "ftc_family_emergency_ai_2023",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in a rush and can only read a few lines. Someone says my daughter is hurt and needs money by wire. Just the quick version?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user asks for the shortest version, which is the stated limit. The sources still require the verify steps, the payment warning and the report line, so the reply stays short and keeps each of them.",
+      "source_ref_ids": [
+        "fam-ftc2023-verify",
+        "fam-ftc2026-pay",
+        "fam-ftc2023-report"
+      ],
+      "target": "Please don't wire any money yet.\n1. Call your daughter at a phone number you already know is hers, and verify the story.\n2. If you can't reach her, try to get in touch with her through another family member or her friends.\n3. Never send money to anyone who says you can only pay with a specific payment method, no matter what reason they give you.\n4. If you spot a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Short reply as the user asked. Covers verify, known number, payment warning and report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-family_emergency_scam-04-v1",
+          "to_candidate": "gsft-family_emergency_scam-04-v2",
+          "reason": "Step 1 told the reader to call the unknown caller, so it now directs a call to the daughter at a number the user already has for her.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-family_emergency_scam-04-v1"
+        },
+        {
+          "from_candidate": "gsft-family_emergency_scam-04-v2",
+          "to_candidate": "gsft-family_emergency_scam-04-v3",
+          "reason": "The review found the fallback step for reaching an unreachable daughter was missing, so a new step gives that next action.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-family_emergency_scam-04-v2"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

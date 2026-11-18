@@ -596,6 +596,153 @@
      "review_id": "review-gsft-spam_call_filter-04-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-battery_health-01",
+   "candidate_id": "gsft-battery_health-01-v3",
+   "task_id": "TR-050",
+   "task_group": "battery_health",
+   "source_group": "apple_battery_health_steps",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone 13 doesn't last the day anymore. How do I check how worn out the battery is?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states iPhone 13 and asks how to check battery wear. The Apple page gives the Battery Health path and the Maximum Capacity description for iPhone; the model-version passage does not cover iPhone 13 and is an inapplicable distractor.",
+   "source_ref_ids": [
+    "battery-health-iphone-open-maxcap",
+    "battery-health-iphone-model-versions"
+   ],
+   "target": "Check your battery health in Settings.\n1. Open the **Settings** app.\n2. Tap **Battery**.\n3. Tap **Battery Health**.\n**Maximum Capacity** shows your battery's capacity relative to when the battery was new.",
+   "author_note": "Must cover: Settings, Battery, Battery Health, and what Maximum Capacity shows. Must not use the model-version passage. Source gap: the page refers iPhone 11 and later to a separate article for performance details, which this reply does not cover.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-battery_health-01-v1",
+     "to_candidate": "gsft-battery_health-01-v2",
+     "reason": "Target dropped the page qualifier 'under ideal conditions' from the design-target figures, so a conditional figure was stated as fixed.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-battery_health-01-v1"
+    },
+    {
+     "from_candidate": "gsft-battery_health-01-v2",
+     "to_candidate": "gsft-battery_health-01-v3",
+     "reason": "Target gave design-target cycle figures and the unexplained terms complete charge cycles and charge cycles, which the plain-words rule does not allow for this question.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-battery_health-01-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-battery_health-02",
+   "candidate_id": "gsft-battery_health-02-v2",
+   "task_id": "TR-050",
+   "task_group": "battery_health",
+   "source_group": "apple_performance_management_messages",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "On my iPhone 15 Pro, Battery Health says Performance management applied and there is a Disable button. Is that message normal, and does the button undo itself?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states iPhone 15 Pro and describes the Performance management applied message. The Apple page explains when the message appears, what the Disable option does, and when performance management turns back on.",
+   "source_ref_ids": [
+    "battery-health-iphone-perf-applied",
+    "battery-health-iphone-open-maxcap"
+   ],
+   "target": "The Performance management applied message appears after an unexpected shutdown. Apple applied it to help prevent another unexpected shutdown.\nPerformance management applied includes a **Disable** option, which cannot be reversed. Performance management turns on again if another unexpected shutdown occurs. If you disable performance management, you can't turn it back on.",
+   "author_note": "Must cover: the message appears after an unexpected shutdown; Apple applied performance management to help prevent another unexpected shutdown; the Disable option cannot be reversed; performance management turns on again after another unexpected shutdown. The Settings path is not needed because the user already sees the message on the Battery Health screen. Source gap: none beyond the fetch note in the card.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-battery_health-02-v1",
+     "to_candidate": "gsft-battery_health-02-v2",
+     "reason": "Target repeated the Settings, Battery, Battery Health steps the user had already completed and did not state the page's point that Apple applied the feature to prevent another unexpected shutdown, which answers whether the message is normal.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-battery_health-02-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-battery_health-03",
+   "candidate_id": "gsft-battery_health-03-v2",
+   "task_id": "TR-050",
+   "task_group": "battery_health",
+   "source_group": "apple_performance_management_messages",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone 8 Battery Health screen says Battery health degraded. Is this a safety problem?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states iPhone 8 and asks about the Battery health degraded message. The Apple page says this message is not a safety issue and recommends service. The Unable to verify passage is a different message and is an inapplicable distractor.",
+   "source_ref_ids": [
+    "battery-health-iphone-degraded",
+    "battery-health-iphone-open-maxcap",
+    "battery-health-iphone-unable-verify"
+   ],
+   "target": "Apple says the Battery health degraded message is not a safety issue. It is shown when battery health has significantly degraded.\nApple recommends service from an Apple Authorized Service Provider for this message.",
+   "author_note": "Must cover: not a safety issue; shown when health has significantly degraded; service from an Apple Authorized Service Provider. The Settings path is not needed because the user already sees the message on the Battery Health screen. Must not use the Unable to verify message. Source gap: none beyond the fetch note in the card.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-battery_health-03-v1",
+     "to_candidate": "gsft-battery_health-03-v2",
+     "reason": "Target repeated the Settings, Battery, Battery Health steps that the user had already completed, so the steps were not needed.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-battery_health-03-v1"
+    }
+   ]
   }
  ]
 }

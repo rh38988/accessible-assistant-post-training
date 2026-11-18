@@ -31,8 +31,8 @@
    "platform": "iPhone",
    "app": "Settings > Battery > Battery Health",
    "verified_excerpt": "Note that if you disable performance management, you can't turn it back on.",
-   "model_visible_text": "On iPhone: Performance management applied: This is shown after an unexpected shutdown. It includes a Disable option, which cannot be reversed. Performance management turns on again if another unexpected shutdown occurs. If you disable performance management, you can't turn it back on.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; message text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim"
+   "model_visible_text": "On iPhone: Performance management applied: This is shown after an unexpected shutdown. Performance management has been applied to help prevent this from happening again. It includes a Disable option, which cannot be reversed. Performance management turns on again if another unexpected shutdown occurs. If you disable performance management, you can't turn it back on.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; message text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim reviser B08 r2: model_visible_text gained the page sentence 'Performance management has been applied to help prevent this from happening again.' (review-gsft-battery_health-02-v1)"
   },
   {
    "ref_id": "battery-health-iphone-degraded",
@@ -62,7 +62,7 @@
    "applicability": "iPhone XS and later",
    "platform": "iPhone XS and later",
    "app": "Settings > Battery > Battery Health",
-   "verified_excerpt": "Unable to verify: Shown when the battery cannot be verified as genuine Apple.",
+   "verified_excerpt": "Unable to verify this iPhone has a genuine Apple battery.",
    "model_visible_text": "On iPhone XS and later: Unable to verify: This is shown when the battery cannot be verified as genuine Apple. The health information may be inaccurate.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; message text taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim"
   },
@@ -78,7 +78,7 @@
    "applicability": "iPhone 6 through iPhone XR, with the start iOS version for each group",
    "platform": "iPhone 6 through iPhone XR",
    "app": "Settings > Battery > Battery Health",
-   "verified_excerpt": "iPhone 8, 8 Plus, and X have it starting with iOS 12.1.",
+   "verified_excerpt": "Starting with iOS 12.1, iPhone 8, iPhone 8 Plus, and iPhone X include this feature",
    "model_visible_text": "On iPhone 6 through iPhone 7 Plus: The feature applies. On iPhone 8, 8 Plus, and X: The feature is available starting with iOS 12.1. On iPhone XS, XS Max, and XR: The feature is available starting with iOS 13.1.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; sentences taken from the WebFetch summary of the named section, with the platform prefix added and straight apostrophes; excerpt taken from the same fetch, not confirmed verbatim"
   }

@@ -22,12 +22,14 @@
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-battery_health-02: answer has no numbered steps",
+  "gsft-battery_health-03: answer has no numbered steps"
  ],
  "hashes": {
-  "gsft-battery_health-01": "895b448eea955fc1dc209952b6e73cadb2a0141a5d2d65e5fbe2b127e7843f3f",
-  "gsft-battery_health-02": "c83bdf9a095c9ac2c169b2ca9ae8543b3078e7ba564504b7efa474491d969704",
-  "gsft-battery_health-03": "9cbaa9cbd0bcf1ea823c9ccb5162127473a16f7cc645e80c8f41b57b1ba0db8d",
+  "gsft-battery_health-01": "d96f0385174be378b01800870e45cf72ef99db6fcb04dd88d73fbd80d3de5476",
+  "gsft-battery_health-02": "ea6759ec071c62eb2b3af7ffa057d1518e5414d02695ab3382977b9ce864a27b",
+  "gsft-battery_health-03": "92d688c15b417d3edf3ad8f58a1f5e7f7156b3367463a2b4b73571c795dcd5fa",
   "gsft-battery_health-04": "af1968e8c6449f7631b52fba799dff75425ca82dc236b5567f36b3d800d3e3cc",
   "gsft-silence_unknown_callers-01": "75cd13b0676cdc07f3e1cf7aa35712d6919a5ee09305c1372599cb67691bfe23",
   "gsft-silence_unknown_callers-02": "38a9976e7abc225e4ac4d6a4c54502c8ad4cee0bea8c7356d20ebf3c87cacaea",

@@ -964,6 +964,301 @@
      "review_id": "review-gsft-scan_qr-05-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-magnifier-03",
+   "candidate_id": "gsft-magnifier-03-v3",
+   "task_id": "TR-177",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_shortcuts",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows, Chromebook, Android, or Apple",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My screen is way too small to read and I can't see the small print on anything. Can you help me make it bigger?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this on a Windows computer, a Chromebook, an Android phone or tablet, or an Apple Mac, iPhone or iPad?"
+   },
+   "decision_basis": "The user does not name a device, and the steps differ across Windows, Chromebook, Android and Apple devices, so one question is needed before answering.",
+   "source_ref_ids": [
+    "magnifier-windows-onoff",
+    "magnifier-chromebook-settings",
+    "magnifier-android-shortcut",
+    "magnifier-mac-zoom",
+    "magnifier-iphone-zoom"
+   ],
+   "target": "Is this on a Windows computer, a Chromebook, an Android phone or tablet, or an Apple Mac, iPhone or iPad?",
+   "author_note": "Clarify route. The refs show that turning on and zooming differ by platform, including the Mac and iPhone zoom pages. The iPad option has no iPad page in the card, which is a source gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-03-v1",
+     "to_candidate": "gsft-magnifier-03-v2",
+     "reason": "Reviewer finding: The routed question says 'a Windows 11 computer'. The zoom-key page (magnifier-windows-zoom-keys) says Applies To: Windows 10 and Windows 11, so a Windows 10 user has no matching answer and would be forced into a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-03-v1"
+    },
+    {
+     "from_candidate": "gsft-magnifier-03-v2",
+     "to_candidate": "gsft-magnifier-03-v3",
+     "reason": "The routed question offered only Windows, Chromebook and Android, so a Mac, iPhone or iPad user had no matching option, and the Apple zoom steps had no source ref.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "platform",
+      "decision_basis",
+      "source_ref_ids",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-03-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-04",
+   "candidate_id": "gsft-magnifier-04-v3",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows, Chromebook, or Mac laptop",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My mom's laptop screen is hard for her to read. Her eyes are going. How can I make it easier for her to see?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is the laptop a Windows computer, a Chromebook, or a Mac?"
+   },
+   "decision_basis": "The user says laptop, which narrows the choice to Windows, Chromebook or Mac, but the zoom steps differ between them, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-settings",
+    "magnifier-mac-zoom"
+   ],
+   "target": "Is the laptop a Windows computer, a Chromebook, or a Mac?",
+   "author_note": "Clarify route. The Windows zoom keys, the Chromebook full-screen magnifier steps and the Mac zoom page show the difference.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-04-v1",
+     "to_candidate": "gsft-magnifier-04-v2",
+     "reason": "Reviewer finding: The routed question says 'a Windows 11 computer or a Chromebook'. The zoom-key page (magnifier-windows-zoom-keys) covers Windows 10 and Windows 11, so a Windows 10 laptop has no matching answer, and the question would push the user to a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-04-v1"
+    },
+    {
+     "from_candidate": "gsft-magnifier-04-v2",
+     "to_candidate": "gsft-magnifier-04-v3",
+     "reason": "The routed question offered only Windows and Chromebook, so a Mac user had no matching option, and the Mac zoom steps had no source ref.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "platform",
+      "decision_basis",
+      "source_ref_ids",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-04-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-05",
+   "candidate_id": "gsft-magnifier-05-v3",
+   "task_id": "TR-171",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows, Chromebook, Android, or Apple",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I just got a new machine and all the letters look really tiny to me. Where's the zoom setting?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which kind of device is it: a Windows computer, a Chromebook, an Android phone or tablet, or an Apple Mac, iPhone or iPad?"
+   },
+   "decision_basis": "The user says new machine but not the operating system, and the zoom steps differ by platform, including Apple devices, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-zoom",
+    "magnifier-android-zoom",
+    "magnifier-mac-zoom",
+    "magnifier-iphone-zoom"
+   ],
+   "target": "Which kind of device is it: a Windows computer, a Chromebook, an Android phone or tablet, or an Apple Mac, iPhone or iPad?",
+   "author_note": "Clarify route. The platform passages for zooming show the steps differ, including the Mac and iPhone zoom pages. The iPad option has no iPad page in the card, which is a source gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-05-v1",
+     "to_candidate": "gsft-magnifier-05-v2",
+     "reason": "Reviewer finding: The routed question says 'Windows 11, a Chromebook, or Android'. The zoom-key page (magnifier-windows-zoom-keys) covers Windows 10 and Windows 11, so a Windows 10 machine has no matching answer and would be forced into a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-05-v1"
+    },
+    {
+     "from_candidate": "gsft-magnifier-05-v2",
+     "to_candidate": "gsft-magnifier-05-v3",
+     "reason": "The routed question left out Apple devices, so a Mac, iPhone or iPad user had no matching option, and the Apple zoom steps had no source ref.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "platform",
+      "decision_basis",
+      "source_ref_ids",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-05-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-07",
+   "candidate_id": "gsft-magnifier-07-v3",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "google_chromebook_magnifier",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Chromebook",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I zoom in on my Chromebook screen?"
+    },
+    {
+     "role": "assistant",
+     "content": "Press Ctrl + Alt + Brightness up to increase magnification, or Ctrl + Alt + Brightness down to decrease it."
+    },
+    {
+     "role": "user",
+     "content": "I pressed Ctrl + Alt + Brightness up a few times and nothing changed on the screen."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The earlier assistant turn gave the zoom keys, and the user says they pressed them with no change. The Chromebook full-screen magnifier passage gives the setting to turn on, and the touchpad zoom line is conditional on a touchpad.",
+   "source_ref_ids": [
+    "magnifier-chromebook-settings",
+    "magnifier-chromebook-zoom"
+   ],
+   "target": "Here is how to check the full-screen magnifier setting.\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. On a touchpad, press **Ctrl + Alt**, then scroll with two fingers up to zoom in or down to zoom out.",
+   "author_note": "The reply covers the full-screen magnifier setting and the touchpad alternative. It does not say why the zoom keys did nothing, because the page does not state a cause. Source gap: the page does not say the zoom keys need the magnifier on.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-07-v1",
+     "to_candidate": "gsft-magnifier-07-v2",
+     "reason": "Reviewer finding: The opening line 'Turn on the full-screen magnifier first, then use the zoom keys' states a prerequisite. The page does not say the zoom keys need the full-screen magnifier on; it lists the keys under 'Change the magnification level' with no such condition. | Step 4 says 'hold Ctrl + Alt'. The page says 'press Ctrl + Alt, then scroll with 2 fingers'.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-07-v1"
+    },
+    {
+     "from_candidate": "gsft-magnifier-07-v2",
+     "to_candidate": "gsft-magnifier-07-v3",
+     "reason": "The intro said to try the zoom keys again after the magnifier setting, which the page does not support as a fix, and step 4 is unchanged; the reply now states only the setting steps.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-07-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-scan_qr-05",
+   "candidate_id": "gsft-scan_qr-05-v3",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an iPhone and I don't want to add anything to Settings or Control Center. What's the shortest way to scan the QR code on the bus stop sign?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and a limit: nothing added to Settings or Control Center. The Camera app steps need no setup, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera"
+   ],
+   "target": "To scan with the Camera app:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link to open the content.",
+   "author_note": "Constraint respected: the Code Scanner Control Center setup is left out because it needs adding a control.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-scan_qr-05-v1",
+     "to_candidate": "gsft-scan_qr-05-v2",
+     "reason": "Reviewer finding: Step 3 says 'Tap the link that appears on screen to open the content.' The page says 'then tap the link to open the content.' Nothing on the page says the link appears on screen.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-scan_qr-05-v1"
+    },
+    {
+     "from_candidate": "gsft-scan_qr-05-v2",
+     "to_candidate": "gsft-scan_qr-05-v3",
+     "reason": "The opening line called the Camera app the shortest way, but the Apple page describes only this route and does not compare routes.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-scan_qr-05-v2"
+    }
+   ]
   }
  ]
 }

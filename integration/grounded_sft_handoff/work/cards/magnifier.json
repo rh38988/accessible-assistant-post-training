@@ -1,6 +1,6 @@
 {
  "task_group": "magnifier",
- "source_gaps": "Android: the page says some steps require Android 13 or later but does not say which steps, so no version is claimed. Windows 11: the zoom page gives no Windows 11-specific steps and names no Settings labels, so only its keyboard and mouse zoom steps are used. Chromebook: the page does not say whether the zoom keys need Full screen magnifier turned on, so no such requirement is stated. Excerpts were taken from WebFetch output, which is processed text; they were not byte-checked against the live HTML.",
+ "source_gaps": "Android: the page says some steps require Android 13 or later but does not say which steps, so no version is claimed. Windows 11: the zoom page gives no Windows 11-specific steps and names no Settings labels, so only its keyboard and mouse zoom steps are used. Chromebook: the page does not say whether the zoom keys need Full screen magnifier turned on, so no such requirement is stated. Excerpts were taken from WebFetch output, which is processed text; they were not byte-checked against the live HTML. iPad: no Apple iPad page was read, so no iPad steps are stated. Mac and iPhone zoom refs added 2026-11-17 by reviser B12 r2 for the device clarify questions (review-gsft-magnifier-03-v2, review-gsft-magnifier-04-v2, review-gsft-magnifier-05-v2).",
  "source_refs": [
   {
    "ref_id": "magnifier-android-shortcut",
@@ -26,7 +26,7 @@
    "url": "https://support.google.com/accessibility/android/answer/6006949?hl=en",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Using magnification: Full screen (zoom in and make everything bigger)",
+   "section": "Using magnification (Step 2), full screen",
    "applicability": "Android; full-screen magnification",
    "platform": "Android",
    "app": "Accessibility",
@@ -74,11 +74,11 @@
    "url": "https://support.google.com/chromebook/answer/6320705?hl=en",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Zoom In and Out",
+   "section": "Change the magnification level",
    "applicability": "Chromebook",
    "platform": "Chromebook",
    "app": "Keyboard",
-   "verified_excerpt": "Increase magnification: Press Ctrl + Alt + Brightness up.",
+   "verified_excerpt": "Press Ctrl + Alt + Brightness up.",
    "model_visible_text": "On Chromebook: Under 'Change the magnification level': to increase magnification, press Ctrl + Alt + Brightness up. To decrease magnification, press Ctrl + Alt + Brightness down. On a touchpad, you can also press Ctrl + Alt and scroll with two fingers, up to zoom in or down to zoom out.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch; touchpad wording corrected from hold to press to match the page (review r1 finding); touchpad wording corrected from hold to press to match the page (review r1 finding)"
   },
@@ -91,7 +91,7 @@
    "access_date": "2026-11-17",
    "page_update_date": null,
    "section": "Turn Magnifier on and off",
-   "applicability": "Windows 11 keyboard shortcuts; the page states no Windows version limit for these rows",
+   "applicability": "Windows 11 keyboard shortcuts",
    "platform": "Windows 11",
    "app": "Magnifier",
    "verified_excerpt": "if any screens are locked, the first press releases the locks",
@@ -129,6 +129,38 @@
    "verified_excerpt": "Press Ctrl+Alt+Mouse wheel up or down.",
    "model_visible_text": "On Windows 11: To change the zoom level with the mouse, press Ctrl+Alt+mouse wheel up or down.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-mac-zoom",
+   "source_group": "apple_mac_zoom",
+   "organization": "Apple",
+   "title": "Zoom in on your Mac screen",
+   "url": "https://support.apple.com/guide/mac-help/mchl779716b8",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Zoom in on your screen",
+   "applicability": "Mac; the page describes System Settings and does not state which macOS versions it covers",
+   "platform": "Mac",
+   "app": "System Settings",
+   "verified_excerpt": "Double-tap the trackpad with three fingers and drag to zoom in and out gradually.",
+   "model_visible_text": "On Mac: 1. Open System Settings, then click Accessibility. 2. In the sidebar, click Zoom. 3. Turn on 'Use keyboard shortcuts to zoom'. To zoom in, press Option-Command-Plus Sign (+). To zoom out, press Option-Command-Minus Sign (-). 4. To zoom with a trackpad, turn on 'Use trackpad gesture to zoom'. Double-tap the trackpad with three fingers and drag to zoom in and out gradually.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section, with labels in single quotes; excerpt as returned by WebFetch; the page's en dash in the minus key label is written as a hyphen"
+  },
+  {
+   "ref_id": "magnifier-iphone-zoom",
+   "source_group": "apple_iphone_zoom",
+   "organization": "Apple",
+   "title": "iPhone User Guide",
+   "url": "https://support.apple.com/guide/iphone/zoom-iph3e2e367e/16.0",
+   "access_date": "2026-11-17",
+   "page_update_date": null,
+   "section": "Set up Zoom; Use Zoom",
+   "applicability": "iPhone; the page does not cover iPad",
+   "platform": "iPhone",
+   "app": "Settings",
+   "verified_excerpt": "Double-tap the screen with three fingers or use Accessibility Shortcut to turn on Zoom.",
+   "model_visible_text": "On iPhone: 1. Go to Settings, then Accessibility, then Zoom, and turn on Zoom. 2. To turn on Zoom, double-tap the screen with three fingers or use Accessibility Shortcut. 3. Double-tap the screen with three fingers (without lifting your fingers after the second tap), then drag up or down. Or triple-tap with three fingers, then drag the Zoom Level slider. To zoom in or out, double-tap the controller. 4. To turn off Zoom, double-tap the screen with three fingers or use Accessibility Shortcut.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named sections; excerpt as returned by WebFetch; the page gives no iOS version for these steps"
   }
  ]
 }
