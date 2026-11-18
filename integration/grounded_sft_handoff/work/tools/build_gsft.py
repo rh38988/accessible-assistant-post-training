@@ -195,7 +195,7 @@ def build_one(c, refs, errors, warnings):
               "category": c["category"], "platform": c["platform"], "language": "en",
               "sensitive": bool(c["sensitive"]), "sources": sources, "task_id": c["task_id"],
               "task_group": c["task_group"], "source_group": c["source_group"], "style": c["style"],
-              "author": "claude-haiku-writer-gsft", "reviewed": False, "prompt_format": "rag-system-v1"}
+              "author": c.get("author", "claude-haiku-writer-gsft"), "reviewed": False, "prompt_format": "rag-system-v1"}
     errs = []
     check_record(record, "train", errs, cid)
     for e in errs:

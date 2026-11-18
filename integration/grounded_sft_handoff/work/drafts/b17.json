@@ -944,6 +944,58 @@
      "review_id": "review-gsft-stolen_device_protection-04-v2"
     }
    ]
+  },
+  {
+   "id": "gsft-phone_not_charging-05",
+   "candidate_id": "gsft-phone_not_charging-05-v3",
+   "task_id": "TR-148",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone won't charge. There's no wall outlet where I am, I only have a power bank."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and cannot use a wall outlet, so the wall outlet step is left out. The power bank is not assumed to qualify as a power accessory, so a computer is offered as a fallback if it does not charge the phone.",
+   "source_ref_ids": [
+    "pnc-iphone-basic"
+   ],
+   "target": "Try these steps:\n1. Plug the iPhone into a power source, such as a power accessory (a device that supplies power). If your power bank does not charge it, plug it into a computer instead if you have one.\n2. Restart the iPhone.\n3. Check the charging cable and USB adapter for damage, such as breaks or bent prongs. Stop using any damaged accessory.\n4. Clear debris from the charging port on the bottom of the iPhone, then firmly plug in the cable.\n5. Let it charge for half an hour.\n\nIf it still won't turn on or charge, you might need to get service for your iPhone.",
+   "author_note": "The constraint rules out wall outlets, so the outlet step is not used. The other source steps and the service condition are kept.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-phone_not_charging-05-v1",
+     "to_candidate": "gsft-phone_not_charging-05-v2",
+     "reason": "The decision basis and step 1 treated the user's power bank as a power accessory, which the source does not support.",
+     "changed_fields": [
+      "target",
+      "decision_basis",
+      "messages"
+     ],
+     "review_id": "review-gsft-phone_not_charging-05-v1"
+    },
+    {
+     "from_candidate": "gsft-phone_not_charging-05-v2",
+     "to_candidate": "gsft-phone_not_charging-05-v3",
+     "reason": "Owner fix from review: Explained 'power accessory' in plain words, used the page's half-hour wording, and removed the misquoted link label.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-phone_not_charging-05-v2"
+    }
+   ]
   }
  ]
 }

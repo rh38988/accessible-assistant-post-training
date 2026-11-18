@@ -738,6 +738,37 @@
      "review_id": "review-gsft-group_text-06-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-browser_zoom-07",
+   "candidate_id": "gsft-browser_zoom-07-v1",
+   "task_id": "TR-188",
+   "task_group": "browser_zoom",
+   "source_group": "chrome_zoom_computer",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Chrome on a computer (system not stated)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I use Chrome. Is there a keyboard shortcut to make websites bigger? Using the mouse is hard for me."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Are you on a Windows computer or a Mac?"
+   },
+   "decision_basis": "The user names Chrome but not the computer. The Chrome passages give Ctrl and + on a Windows PC and Command and + on a Mac, so the key to press depends on the computer. The reply must ask first.",
+   "source_ref_ids": [
+    "zoom-chrome-keys-windows",
+    "zoom-chrome-keys-mac"
+   ],
+   "target": "Are you on a Windows computer or a Mac?",
+   "author": "claude-opus-main-session",
+   "author_note": "Added by the main session to restore the clarify count after two clarify candidates were changed to answers in review. Uses only the existing checked passages."
   }
  ]
 }

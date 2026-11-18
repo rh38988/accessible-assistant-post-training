@@ -1,8 +1,9 @@
 {
- "candidates": 6,
+ "candidates": 7,
  "groups": 3,
  "behavior": {
-  "direct": 6
+  "direct": 6,
+  "clarify": 1
  },
  "tags": {
   "conditional": 6,
@@ -10,7 +11,7 @@
   "safety": 2
  },
  "per_group": {
-  "default_browser": 2,
+  "default_browser": 3,
   "popups": 2,
   "sign_out": 2
  },
@@ -27,6 +28,7 @@
  "hashes": {
   "gsft-default_browser-01": "2eef2f24a889d9a7ef9decf257c8ae5a2d1dc8a6044c2545c73b46acfa60759a",
   "gsft-default_browser-02": "5337ce54f63d036b8d7f750ac70a61cb7e0e5309649def0dad9a8053195494b3",
+  "gsft-default_browser-03": "7b70127d87d9251504692616e21d42378551757adb5c11967fa9ae1a01dd63ce",
   "gsft-popups-01": "b0f2154604035d9f4b33142d94d52dc66f79b7f14102e2df5fa382d5958dc7a3",
   "gsft-popups-02": "d2f1908e5878a5702ccf9fb06b198251f78e5d3d115e2e93cc9f2d8ab4cc6c47",
   "gsft-sign_out-01": "bb4895956b36c18cc498f607a0e0074ac23998a49aa943872829ec767abb2509",

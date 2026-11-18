@@ -1,916 +1,991 @@
 {
-  "batch": "b02",
-  "candidates": [
+ "batch": "b02",
+ "candidates": [
+  {
+   "id": "gsft-screenshot-01",
+   "candidate_id": "gsft-screenshot-01-v1",
+   "task_id": "TR-004",
+   "task_group": "screenshot",
+   "source_group": "apple_screenshot_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
     {
-      "id": "gsft-screenshot-01",
-      "candidate_id": "gsft-screenshot-01-v1",
-      "task_id": "TR-004",
-      "task_group": "screenshot",
-      "source_group": "apple_screenshot_iphone",
-      "behavior": "direct",
-      "tags": [
-        "distractor",
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My iPhone has Face ID and no Home button. My grandson wants a picture of my screen. How do I take a screenshot?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states an iPhone with Face ID, so the Face ID branch of the iPhone passage applies. The iPad passage is a different device and is only an inapplicable distractor.",
-      "source_ref_ids": [
-        "screenshot-iphone",
-        "screenshot-ipad"
-      ],
-      "target": "Here is how to take a screenshot on an iPhone with Face ID.\n1. Press the **side button** and the **volume up button** at the same time.\n2. Quickly release both buttons.\n3. In iOS 18 and earlier, a thumbnail temporarily appears in the lower-left corner of your screen.\n4. To find the screenshot later, open **Photos**, then go to **Collections** and tap **Media Types**.\n5. Tap **Screenshots**.",
-      "author_note": "Covers the Face ID button combination, releasing both buttons, the thumbnail (iOS 18 and earlier) and the Photos path. Home button branches are left out because the user has Face ID. Ref text is from a WebFetch summary."
-    },
-    {
-      "id": "gsft-screenshot-02",
-      "candidate_id": "gsft-screenshot-02-v1",
-      "task_id": "TR-027",
-      "task_group": "screenshot",
-      "source_group": "samsung_screenshot_galaxy",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "technical_support",
-      "platform": "Samsung Galaxy",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I just got a Samsung Galaxy phone and I want to save a text message from my grandson. How do I take a screenshot?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states a Samsung Galaxy phone, so the Samsung passage applies. The iPhone passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "screenshot-samsung",
-        "screenshot-iphone"
-      ],
-      "target": "Here is how to take a screenshot on your Samsung Galaxy phone.\n1. Press and hold the **Power/Side** button and the **Volume Down** button at the same time.\n2. Release them after a brief moment.\n3. The screen flashes to confirm the capture.",
-      "author_note": "Covers the Power/Side and Volume Down combination, the release step and the flash confirmation. The palm swipe and voice assistant options on the page are not required and are left out."
-    },
-    {
-      "id": "gsft-screenshot-03",
-      "candidate_id": "gsft-screenshot-03-v1",
-      "task_id": "TR-028",
-      "task_group": "screenshot",
-      "source_group": "apple_screenshot_iphone",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My phone won't take a screenshot when I press the buttons I usually use. Can you tell me the right way?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is your phone an iPhone or an Android phone?"
-      },
-      "decision_basis": "The user says only 'my phone'. The iPhone and Android passages give different button combinations, so one question is needed before answering.",
-      "source_ref_ids": [
-        "screenshot-iphone",
-        "screenshot-android"
-      ],
-      "target": "Is your phone an iPhone or an Android phone?",
-      "author_note": "Clarify route. The question asks only for the device type, without assuming a brand."
-    },
-    {
-      "id": "gsft-screenshot-04",
-      "candidate_id": "gsft-screenshot-04-v1",
-      "task_id": "TR-117",
-      "task_group": "screenshot",
-      "source_group": "apple_screenshot_mac",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I need to capture just part of what's on my computer screen to send to my bank. What keys do I press?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is your computer a Mac, a Windows computer, or a Chromebook?"
-      },
-      "decision_basis": "The user says 'my computer' without naming the system. The Mac, Windows 11 and Chromebook passages use different keys or menus, so one question is needed.",
-      "source_ref_ids": [
-        "screenshot-mac",
-        "screenshot-win11-snip",
-        "screenshot-chromebook"
-      ],
-      "target": "Is your computer a Mac, a Windows computer, or a Chromebook?",
-      "author_note": "Clarify route. The question lists the three platforms covered by the sources and does not assume any of them."
-    },
-    {
-      "id": "gsft-screenshot-05",
-      "candidate_id": "gsft-screenshot-05-v1",
-      "task_id": "TR-121",
-      "task_group": "screenshot",
-      "source_group": "google_android_screenshot",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My daughter set up my cell phone last year and I forgot how to capture my screen. Could you explain how?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is your cell phone an iPhone or an Android phone?"
-      },
-      "decision_basis": "The user says 'cell phone' without naming the system. The iPhone and Android passages give different button combinations, so one question is needed.",
-      "source_ref_ids": [
-        "screenshot-iphone",
-        "screenshot-android"
-      ],
-      "target": "Is your cell phone an iPhone or an Android phone?",
-      "author_note": "Clarify route. The question asks only for the phone type. It is worded differently from the other phone clarify case."
-    },
-    {
-      "id": "gsft-screenshot-06",
-      "candidate_id": "gsft-screenshot-06-v1",
-      "task_id": "TR-160",
-      "task_group": "screenshot",
-      "source_group": "google_chromebook_screenshot",
-      "behavior": "constraint",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Chromebook",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I have a Chromebook and my hands shake too much to press two keys at the same time. Is there another way to take a screenshot?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states a Chromebook and a limit on pressing two keys together. The page's Settings path uses menus and no key presses, so it fits the limit.",
-      "source_ref_ids": [
-        "screenshot-chromebook"
-      ],
-      "target": "Here is a menu route you can use if your Chromebook doesn't have a Screenshot key.\n1. Select **Settings** at the bottom right of the screen.\n2. Select **Screen Capture**.\n3. In the menu at the bottom, select **Screenshot**.\n4. Choose a capture type: **full screen**, **partial**, or **window**.\n5. Screenshots are automatically copied to your clipboard.",
-      "author_note": "Constraint: no simultaneous key presses. The Screenshot key branch is conditional and is kept as a condition. Covers the Settings path, the menu, capture type and clipboard sentence."
-    },
-    {
-      "id": "gsft-screenshot-07",
-      "candidate_id": "gsft-screenshot-07-v1",
-      "task_id": "TR-168",
-      "task_group": "screenshot",
-      "source_group": "apple_screenshot_iphone",
-      "behavior": "multiturn",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "How do I take a screenshot on my iPhone? It has Face ID."
-        },
-        {
-          "role": "assistant",
-          "content": "Press the side button and the volume up button at the same time, then quickly release both buttons."
-        },
-        {
-          "role": "user",
-          "content": "I did that and a little thumbnail showed up in the corner, but I can't find the picture afterward in Photos."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user already took the screenshot and says it was not found in Photos. The Photos and Collections steps on the iPhone passage answer that without repeating the button press.",
-      "source_ref_ids": [
-        "screenshot-iphone"
-      ],
-      "target": "To find your screenshots, follow these steps.\n1. Open **Photos**.\n2. Go to **Collections**, then tap **Media Types**.\n3. Tap **Screenshots**.",
-      "author_note": "Multiturn. The user has already pressed the buttons and seen the thumbnail, so the reply covers only the Photos path and does not repeat the button press."
-    },
-    {
-      "id": "gsft-email_not_working-01",
-      "candidate_id": "gsft-email_not_working-01-v1",
-      "task_id": "TR-005",
-      "task_group": "email_not_working",
-      "source_group": "apple_mail_receive_iphone",
-      "behavior": "direct",
-      "tags": [
-        "distractor",
-        "conditional"
-      ],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My iPhone mail hasn't brought in any new messages since this morning. Where do I check the settings that control this?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states an iPhone and asks where the fetch settings are, so the Apple Mail fetch passage applies. The Outlook.com receive passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "email-iphone-fetch",
-        "email-outlook-receive"
-      ],
-      "target": "Here is how to check how your iPhone Mail app gets new messages.\n1. Go to **Settings**, then tap **Apps**.\n2. Choose **Mail**, then tap **Mail Accounts**.\n3. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n4. On iOS 11 and later, and iPadOS, **Automatically** is the default. Background fetching then happens only while the device is charging and on Wi-Fi.",
-      "author_note": "Covers the Settings, Apps, Mail, Mail Accounts and Fetch New Data path, the fetch options and the default and charging or Wi-Fi condition. The page has no step for sending failures."
-    },
-    {
-      "id": "gsft-email_not_working-02",
-      "candidate_id": "gsft-email_not_working-02-v1",
-      "task_id": "TR-134",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "Outlook.com",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "email-outlook-send",
-        "email-outlook-signin",
-        "email-iphone-fetch"
-      ],
-      "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account. If your password was changed recently, update it.\n3. If the account may be temporarily blocked because of unusual sign-in activity, follow the linked article to unblock your Outlook.com account. If you can't sign in, use the **Microsoft account sign-in helper**.\n4. Attachments over 25 MB can't be sent.\n5. If a signature causes an error, remove it and resend.",
-      "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable."
-    },
-    {
-      "id": "gsft-email_not_working-03",
-      "candidate_id": "gsft-email_not_working-03-v1",
-      "task_id": "TR-200",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "Emails I send to my daughter never arrive, and I don't know why. Can you help?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Are you sending from an iPhone, or from the Outlook.com website?"
-      },
-      "decision_basis": "The user does not name the device or service. The iPhone and Outlook.com passages cover different apps and steps, so one question is needed before answering.",
-      "source_ref_ids": [
-        "email-outlook-send",
-        "email-iphone-fetch"
-      ],
-      "target": "Are you sending from an iPhone, or from the Outlook.com website?",
-      "author_note": "Clarify route. The iPhone passage covers receiving only, so the question keeps the device choice open."
-    },
-    {
-      "id": "gsft-email_not_working-04",
-      "candidate_id": "gsft-email_not_working-04-v1",
-      "task_id": "TR-005",
-      "task_group": "email_not_working",
-      "source_group": "apple_mail_receive_iphone",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My mail hasn't shown anything new for days, and my sister says she sent me something. What's wrong?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is this happening on an iPhone, or on Outlook.com?"
-      },
-      "decision_basis": "The user describes new mail not arriving but does not name the app or device. The Apple Mail and Outlook.com receive passages differ, so one question is needed.",
-      "source_ref_ids": [
-        "email-iphone-fetch",
-        "email-outlook-receive"
-      ],
-      "target": "Is this happening on an iPhone, or on Outlook.com?",
-      "author_note": "Clarify route. The question separates the two receive passages."
-    },
-    {
-      "id": "gsft-email_not_working-05",
-      "candidate_id": "gsft-email_not_working-05-v1",
-      "task_id": "TR-134",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "unknown",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "Something is wrong with my email and I'm not sure what it is. My phone and my computer both act strange."
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is your email on an iPhone, or on Outlook.com?"
-      },
-      "decision_basis": "The user mentions a phone and a computer but does not say which app is failing. The iPhone and Outlook.com passages give different steps, so one question is needed.",
-      "source_ref_ids": [
-        "email-iphone-fetch",
-        "email-outlook-send"
-      ],
-      "target": "Is your email on an iPhone, or on Outlook.com?",
-      "author_note": "Clarify route. The question is not a paraphrase of the other email clarify cases."
-    },
-    {
-      "id": "gsft-email_not_working-06",
-      "candidate_id": "gsft-email_not_working-06-v1",
-      "task_id": "TR-200",
-      "task_group": "email_not_working",
-      "source_group": "apple_mail_receive_iphone",
-      "behavior": "constraint",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on my iPhone and I only want the shortest way to get new mail to come in. Skip the explanations."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states an iPhone and asks for the shortest route with no explanation. The Apple Mail fetch passage gives that route.",
-      "source_ref_ids": [
-        "email-iphone-fetch"
-      ],
-      "target": "Here is the shortest route on your iPhone.\n1. Go to **Settings**, then tap **Apps**.\n2. Choose **Mail**, then tap **Mail Accounts**.\n3. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.",
-      "author_note": "Constraint: shortest route, no explanation. The default and charging or Wi-Fi sentences are left out on purpose; the steps still come only from the passage."
-    },
-    {
-      "id": "gsft-email_not_working-07",
-      "candidate_id": "gsft-email_not_working-07-v1",
-      "task_id": "TR-005",
-      "task_group": "email_not_working",
-      "source_group": "apple_mail_remove_account_iphone",
-      "behavior": "multiturn",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My iPhone mail stopped bringing in new messages yesterday. What should I check?"
-        },
-        {
-          "role": "assistant",
-          "content": "Go to Settings, tap Apps, choose Mail, then tap Mail Accounts, and check the Fetch New Data setting."
-        },
-        {
-          "role": "user",
-          "content": "I signed in to my email website with my password and it worked, but my phone still gets no new mail."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user already checked the password on the provider's website and the fetch step was already described. The remaining steps are the fetch setting and, if needed, removing and adding the account again, both from the Apple passages.",
-      "source_ref_ids": [
-        "email-iphone-fetch",
-        "email-iphone-remove-account"
-      ],
-      "target": "Next, check how your iPhone fetches mail, then set up the account again if needed.\n1. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n2. On a computer, sign in to your provider's website and confirm your email is saved elsewhere.\n3. Go to **Settings**, tap **Apps**, choose **Mail**, then tap **Mail Accounts**.\n4. Tap the account, then tap **Delete Account**.\n5. Add the account again, following the linked Apple article.\n6. If these steps fail, contact your email provider.",
-      "author_note": "Multiturn. The password check is not repeated. The computer step comes before the delete step, as the page orders it, so the saved email is confirmed first. Deleting an account can remove previously downloaded emails; that warning is not in the page section used, so it is not stated."
-    },
-    {
-      "id": "gsft-printer_not_printing-01",
-      "candidate_id": "gsft-printer_not_printing-01-v1",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "direct",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on Windows 11 and my USB printer won't print anything. It's plugged into my computer with a cable."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wired USB printer. The troubleshooter, power cycle and wired connection checks all apply to Windows 11.",
-      "source_ref_ids": [
-        "printer-win-restart",
-        "printer-win-connection"
-      ],
-      "target": "Here is what to try first for a printer that won't print on Windows 11.\n1. Open the printer troubleshooter in the **Get Help** app.\n2. Power off the printer, disconnect it, wait, reconnect it, and power it on.\n3. Confirm the **USB** cable is firmly connected to the PC.\n4. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.",
-      "author_note": "Covers the Windows 11 troubleshooter, the power cycle, the wired USB check and the error-state branch. The reinstall and driver steps are not needed for this first attempt and are left out."
-    },
-    {
-      "id": "gsft-printer_not_printing-02",
-      "candidate_id": "gsft-printer_not_printing-02-v1",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "direct",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "On my Windows 10 laptop the wireless printer says it's connected, but nothing comes out when I print. What should I do?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 10 and a wireless printer. The page's troubleshooter step is for Windows 11 only, so it is skipped; the wireless check and the reinstall steps apply.",
-      "source_ref_ids": [
-        "printer-win-restart",
-        "printer-win-connection",
-        "printer-win-reinstall"
-      ],
-      "target": "The troubleshooter step is for Windows 11 only, so skip it on Windows 10.\n1. Power off the printer, disconnect it, wait, reconnect it, and power it on.\n2. For a wireless printer, confirm the printer's wireless option is on and that the PC is on the same network.\n3. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.\n4. If it still fails, go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**. Select the printer, select **Remove**, then select **Yes**.\n5. Select **Add device** or **Refresh**. If the printer doesn't appear, select **Add manually**.\n6. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
-      "author_note": "Covers the power cycle, the wireless check, the error-state branch, the remove and re-add steps and the driver step. The Windows 11 troubleshooter is skipped on purpose because the user is on Windows 10."
-    },
-    {
-      "id": "gsft-printer_not_printing-03",
-      "candidate_id": "gsft-printer_not_printing-03-v1",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on Windows 11. I printed something and nothing happened, so I think the printer setup is broken. How do I remove the printer and add it back?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and asks how to remove and re-add the printer, which the reinstall passage covers.",
-      "source_ref_ids": [
-        "printer-win-reinstall"
-      ],
-      "target": "Here is how to remove the printer and add it back on Windows 11.\n1. Go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**.\n2. Select the printer, select **Remove**, then select **Yes**.\n3. Select **Add device** or **Refresh**.\n4. If the printer doesn't appear, select **Add manually**.\n5. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
-      "author_note": "Covers the Settings path, remove, add device or refresh, add manually and the driver step from the passage. The user's guess about a broken setup is not repeated as a fact."
-    },
-    {
-      "id": "gsft-printer_not_printing-04",
-      "candidate_id": "gsft-printer_not_printing-04-v1",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "constraint",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I can't handle a lot of menus. Tell me just the first thing to try on Windows, nothing else, please."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user limits the answer to one thing with no menus. The power cycle is the first step in the passage and needs no menus, so it respects the limit.",
-      "source_ref_ids": [
-        "printer-win-restart"
-      ],
-      "target": "Here is the one thing to try first, and it needs no menus.\n1. Power off the printer, disconnect it, wait, reconnect it, and power it on.",
-      "author_note": "Constraint: one step only, no menus. The troubleshooter step is left out because it runs through the Get Help app menus."
-    },
-    {
-      "id": "gsft-email_not_working-02",
-      "candidate_id": "gsft-email_not_working-02-v2",
-      "task_id": "TR-134",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "Outlook.com",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "email-outlook-send",
-        "email-outlook-signin",
-        "email-iphone-fetch"
-      ],
-      "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the link 'Learn how to unblock your Outlook.com account' on the Microsoft support page.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
-      "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-email_not_working-02-v1",
-          "to_candidate": "gsft-email_not_working-02-v2",
-          "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-email_not_working-07",
-      "candidate_id": "gsft-email_not_working-07-v2",
-      "task_id": "TR-005",
-      "task_group": "email_not_working",
-      "source_group": "apple_mail_remove_account_iphone",
-      "behavior": "multiturn",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My iPhone mail stopped bringing in new messages yesterday. What should I check?"
-        },
-        {
-          "role": "assistant",
-          "content": "Go to Settings, tap Apps, choose Mail, then tap Mail Accounts, and check the Fetch New Data setting."
-        },
-        {
-          "role": "user",
-          "content": "I signed in to my email website with my password and it worked, but my phone still gets no new mail."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user already checked the password on the provider's website and the fetch step was already described. The remaining steps are the fetch setting and, if needed, removing and adding the account again, both from the Apple passages.",
-      "source_ref_ids": [
-        "email-iphone-fetch",
-        "email-iphone-remove-account"
-      ],
-      "target": "Next, check how your iPhone fetches mail. If new mail still doesn't come in, set up the account again.\n1. Go to **Settings**, tap **Apps**, choose **Mail**, then tap **Mail Accounts**.\n2. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n3. You already signed in to your provider's website. Before you delete anything, make sure all of your email is there or saved somewhere other than your device.\n4. In **Mail Accounts**, tap the account, then tap **Delete Account**.\n5. Add the account again, following the linked Apple article.\n6. If these steps don't work, contact your email provider.",
-      "author_note": "Multiturn. The password check is not repeated. The computer step comes before the delete step, as the page orders it, so the saved email is confirmed first. Deleting an account can remove previously downloaded emails; that warning is not in the page section used, so it is not stated.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-email_not_working-07-v1",
-          "to_candidate": "gsft-email_not_working-07-v2",
-          "reason": "Step 1 gave no path to Fetch New Data, and step 2 asked the user to repeat a sign-in they had already confirmed, so the path comes first and the sign-in is noted as done.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-07-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer_not_printing-01",
-      "candidate_id": "gsft-printer_not_printing-01-v2",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "direct",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on Windows 11 and my USB printer won't print anything. It's plugged into my computer with a cable."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wired USB printer. The troubleshooter, power cycle and wired connection checks all apply to Windows 11.",
-      "source_ref_ids": [
-        "printer-win-restart",
-        "printer-win-connection"
-      ],
-      "target": "Here is what to try first for a printer that won't print on Windows 11.\n1. Open the printer troubleshooter in the **Get Help** app.\n2. Power off the printer, disconnect it, wait about 30 seconds, reconnect it, and power it on.\n3. Confirm the **USB** cable is properly connected from the printer to the PC.\n4. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.",
-      "author_note": "Covers the Windows 11 troubleshooter, the power cycle, the wired USB check and the error-state branch. The reinstall and driver steps are not needed for this first attempt and are left out.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer_not_printing-01-v1",
-          "to_candidate": "gsft-printer_not_printing-01-v2",
-          "reason": "Step 3 said 'firmly', which the page does not say, and step 2 dropped the about 30 second wait that the page gives.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer_not_printing-01-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer_not_printing-03",
-      "candidate_id": "gsft-printer_not_printing-03-v2",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on Windows 11. I printed something and nothing happened, so I think the printer setup is broken. How do I remove the printer and add it back?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and asks how to remove and re-add the printer, which the reinstall passage covers.",
-      "source_ref_ids": [
-        "printer-win-reinstall"
-      ],
-      "target": "Here is how to remove the printer and add it back on Windows 11.\n1. Go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**.\n2. Select the printer, select **Remove**, then select **Yes**.\n3. Make sure the printer is turned on and connected.\n4. Select **Add device** or **Refresh**.\n5. If the printer doesn't appear, select **Add manually**.\n6. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
-      "author_note": "Covers the Settings path, remove, add device or refresh, add manually and the driver step from the passage. The user's guess about a broken setup is not repeated as a fact.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer_not_printing-03-v1",
-          "to_candidate": "gsft-printer_not_printing-03-v2",
-          "reason": "The page's prerequisite to make sure the printer is turned on and connected before adding it again was missing, so it is added as a new step.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer_not_printing-03-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer_not_printing-04",
-      "candidate_id": "gsft-printer_not_printing-04-v2",
-      "task_id": "TR-006",
-      "task_group": "printer_not_printing",
-      "source_group": "microsoft_printer_troubleshoot",
-      "behavior": "constraint",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I can't handle a lot of menus. Tell me just the first thing to try on Windows, nothing else, please."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user limits the answer to one thing with no menus. The power cycle is the first step in the passage and needs no menus, so it respects the limit.",
-      "source_ref_ids": [
-        "printer-win-restart"
-      ],
-      "target": "Here is one thing to try, and it needs no menus.\n1. Power off the printer, disconnect it, wait about 30 seconds, reconnect it, and power it on.",
-      "author_note": "Constraint: one step only, no menus. The troubleshooter step is left out because it runs through the Get Help app menus.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer_not_printing-04-v1",
-          "to_candidate": "gsft-printer_not_printing-04-v2",
-          "reason": "The lead said 'first' although the page starts Windows 11 with the troubleshooter, and step 1 dropped the about 30 second wait that the page gives.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer_not_printing-04-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-email_not_working-02",
-      "candidate_id": "gsft-email_not_working-02-v3",
-      "task_id": "TR-134",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "Outlook.com",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "email-outlook-send",
-        "email-outlook-signin",
-        "email-iphone-fetch"
-      ],
-      "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the linked article to unblock your Outlook.com account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
-      "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-email_not_working-02-v1",
-          "to_candidate": "gsft-email_not_working-02-v2",
-          "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02-v1"
-        },
-        {
-          "from_candidate": "gsft-email_not_working-02-v2",
-          "to_candidate": "gsft-email_not_working-02-v3",
-          "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02-v2"
-        }
-      ]
-    },
-    {
-      "id": "gsft-email_not_working-02",
-      "candidate_id": "gsft-email_not_working-02-v4",
-      "task_id": "TR-134",
-      "task_group": "email_not_working",
-      "source_group": "microsoft_outlook_com_send",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "Outlook.com",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "email-outlook-send",
-        "email-outlook-signin",
-        "email-iphone-fetch"
-      ],
-      "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the Microsoft Support article titled \"Learn how to unblock your Outlook.com account\" to unblock your account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
-      "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-email_not_working-02-v1",
-          "to_candidate": "gsft-email_not_working-02-v2",
-          "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02-v1"
-        },
-        {
-          "from_candidate": "gsft-email_not_working-02-v2",
-          "to_candidate": "gsft-email_not_working-02-v3",
-          "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02-v2"
-        },
-        {
-          "from_candidate": "gsft-email_not_working-02-v3",
-          "to_candidate": "gsft-email_not_working-02-v4",
-          "reason": "Step 4 referred to a linked article without naming it; it now names the Microsoft Support article title so the user can find it.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-email_not_working-02"
-        }
-      ]
+     "role": "user",
+     "content": "My iPhone has Face ID and no Home button. My grandson wants a picture of my screen. How do I take a screenshot?"
     }
-  ]
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone with Face ID, so the Face ID branch of the iPhone passage applies. The iPad passage is a different device and is only an inapplicable distractor.",
+   "source_ref_ids": [
+    "screenshot-iphone",
+    "screenshot-ipad"
+   ],
+   "target": "Here is how to take a screenshot on an iPhone with Face ID.\n1. Press the **side button** and the **volume up button** at the same time.\n2. Quickly release both buttons.\n3. In iOS 18 and earlier, a thumbnail temporarily appears in the lower-left corner of your screen.\n4. To find the screenshot later, open **Photos**, then go to **Collections** and tap **Media Types**.\n5. Tap **Screenshots**.",
+   "author_note": "Covers the Face ID button combination, releasing both buttons, the thumbnail (iOS 18 and earlier) and the Photos path. Home button branches are left out because the user has Face ID. Ref text is from a WebFetch summary."
+  },
+  {
+   "id": "gsft-screenshot-02",
+   "candidate_id": "gsft-screenshot-02-v1",
+   "task_id": "TR-027",
+   "task_group": "screenshot",
+   "source_group": "samsung_screenshot_galaxy",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Samsung Galaxy",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I just got a Samsung Galaxy phone and I want to save a text message from my grandson. How do I take a screenshot?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Samsung Galaxy phone, so the Samsung passage applies. The iPhone passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "screenshot-samsung",
+    "screenshot-iphone"
+   ],
+   "target": "Here is how to take a screenshot on your Samsung Galaxy phone.\n1. Press and hold the **Power/Side** button and the **Volume Down** button at the same time.\n2. Release them after a brief moment.\n3. The screen flashes to confirm the capture.",
+   "author_note": "Covers the Power/Side and Volume Down combination, the release step and the flash confirmation. The palm swipe and voice assistant options on the page are not required and are left out."
+  },
+  {
+   "id": "gsft-screenshot-03",
+   "candidate_id": "gsft-screenshot-03-v1",
+   "task_id": "TR-028",
+   "task_group": "screenshot",
+   "source_group": "apple_screenshot_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My phone won't take a screenshot when I press the buttons I usually use. Can you tell me the right way?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user says only 'my phone'. The iPhone and Android passages give different button combinations, so one question is needed before answering.",
+   "source_ref_ids": [
+    "screenshot-iphone",
+    "screenshot-android"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify route. The question asks only for the device type, without assuming a brand."
+  },
+  {
+   "id": "gsft-screenshot-04",
+   "candidate_id": "gsft-screenshot-04-v1",
+   "task_id": "TR-117",
+   "task_group": "screenshot",
+   "source_group": "apple_screenshot_mac",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I need to capture just part of what's on my computer screen to send to my bank. What keys do I press?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your computer a Mac, a Windows computer, or a Chromebook?"
+   },
+   "decision_basis": "The user says 'my computer' without naming the system. The Mac, Windows 11 and Chromebook passages use different keys or menus, so one question is needed.",
+   "source_ref_ids": [
+    "screenshot-mac",
+    "screenshot-win11-snip",
+    "screenshot-chromebook"
+   ],
+   "target": "Is your computer a Mac, a Windows computer, or a Chromebook?",
+   "author_note": "Clarify route. The question lists the three platforms covered by the sources and does not assume any of them."
+  },
+  {
+   "id": "gsft-screenshot-05",
+   "candidate_id": "gsft-screenshot-05-v1",
+   "task_id": "TR-121",
+   "task_group": "screenshot",
+   "source_group": "google_android_screenshot",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My daughter set up my cell phone last year and I forgot how to capture my screen. Could you explain how?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your cell phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user says 'cell phone' without naming the system. The iPhone and Android passages give different button combinations, so one question is needed.",
+   "source_ref_ids": [
+    "screenshot-iphone",
+    "screenshot-android"
+   ],
+   "target": "Is your cell phone an iPhone or an Android phone?",
+   "author_note": "Clarify route. The question asks only for the phone type. It is worded differently from the other phone clarify case."
+  },
+  {
+   "id": "gsft-screenshot-06",
+   "candidate_id": "gsft-screenshot-06-v1",
+   "task_id": "TR-160",
+   "task_group": "screenshot",
+   "source_group": "google_chromebook_screenshot",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Chromebook",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have a Chromebook and my hands shake too much to press two keys at the same time. Is there another way to take a screenshot?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Chromebook and a limit on pressing two keys together. The page's Settings path uses menus and no key presses, so it fits the limit.",
+   "source_ref_ids": [
+    "screenshot-chromebook"
+   ],
+   "target": "Here is a menu route you can use if your Chromebook doesn't have a Screenshot key.\n1. Select **Settings** at the bottom right of the screen.\n2. Select **Screen Capture**.\n3. In the menu at the bottom, select **Screenshot**.\n4. Choose a capture type: **full screen**, **partial**, or **window**.\n5. Screenshots are automatically copied to your clipboard.",
+   "author_note": "Constraint: no simultaneous key presses. The Screenshot key branch is conditional and is kept as a condition. Covers the Settings path, the menu, capture type and clipboard sentence."
+  },
+  {
+   "id": "gsft-screenshot-07",
+   "candidate_id": "gsft-screenshot-07-v1",
+   "task_id": "TR-168",
+   "task_group": "screenshot",
+   "source_group": "apple_screenshot_iphone",
+   "behavior": "multiturn",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I take a screenshot on my iPhone? It has Face ID."
+    },
+    {
+     "role": "assistant",
+     "content": "Press the side button and the volume up button at the same time, then quickly release both buttons."
+    },
+    {
+     "role": "user",
+     "content": "I did that and a little thumbnail showed up in the corner, but I can't find the picture afterward in Photos."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user already took the screenshot and says it was not found in Photos. The Photos and Collections steps on the iPhone passage answer that without repeating the button press.",
+   "source_ref_ids": [
+    "screenshot-iphone"
+   ],
+   "target": "To find your screenshots, follow these steps.\n1. Open **Photos**.\n2. Go to **Collections**, then tap **Media Types**.\n3. Tap **Screenshots**.",
+   "author_note": "Multiturn. The user has already pressed the buttons and seen the thumbnail, so the reply covers only the Photos path and does not repeat the button press."
+  },
+  {
+   "id": "gsft-email_not_working-01",
+   "candidate_id": "gsft-email_not_working-01-v1",
+   "task_id": "TR-005",
+   "task_group": "email_not_working",
+   "source_group": "apple_mail_receive_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone mail hasn't brought in any new messages since this morning. Where do I check the settings that control this?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and asks where the fetch settings are, so the Apple Mail fetch passage applies. The Outlook.com receive passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-iphone-fetch",
+    "email-outlook-receive"
+   ],
+   "target": "Here is how to check how your iPhone Mail app gets new messages.\n1. Go to **Settings**, then tap **Apps**.\n2. Choose **Mail**, then tap **Mail Accounts**.\n3. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n4. On iOS 11 and later, and iPadOS, **Automatically** is the default. Background fetching then happens only while the device is charging and on Wi-Fi.",
+   "author_note": "Covers the Settings, Apps, Mail, Mail Accounts and Fetch New Data path, the fetch options and the default and charging or Wi-Fi condition. The page has no step for sending failures."
+  },
+  {
+   "id": "gsft-email_not_working-02",
+   "candidate_id": "gsft-email_not_working-02-v1",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "Outlook.com",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-outlook-signin",
+    "email-iphone-fetch"
+   ],
+   "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account. If your password was changed recently, update it.\n3. If the account may be temporarily blocked because of unusual sign-in activity, follow the linked article to unblock your Outlook.com account. If you can't sign in, use the **Microsoft account sign-in helper**.\n4. Attachments over 25 MB can't be sent.\n5. If a signature causes an error, remove it and resend.",
+   "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable."
+  },
+  {
+   "id": "gsft-email_not_working-03",
+   "candidate_id": "gsft-email_not_working-03-v1",
+   "task_id": "TR-200",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Emails I send to my daughter never arrive, and I don't know why. Can you help?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Are you sending from an iPhone, or from the Outlook.com website?"
+   },
+   "decision_basis": "The user does not name the device or service. The iPhone and Outlook.com passages cover different apps and steps, so one question is needed before answering.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-iphone-fetch"
+   ],
+   "target": "Are you sending from an iPhone, or from the Outlook.com website?",
+   "author_note": "Clarify route. The iPhone passage covers receiving only, so the question keeps the device choice open."
+  },
+  {
+   "id": "gsft-email_not_working-04",
+   "candidate_id": "gsft-email_not_working-04-v1",
+   "task_id": "TR-005",
+   "task_group": "email_not_working",
+   "source_group": "apple_mail_receive_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My mail hasn't shown anything new for days, and my sister says she sent me something. What's wrong?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this happening on an iPhone, or on Outlook.com?"
+   },
+   "decision_basis": "The user describes new mail not arriving but does not name the app or device. The Apple Mail and Outlook.com receive passages differ, so one question is needed.",
+   "source_ref_ids": [
+    "email-iphone-fetch",
+    "email-outlook-receive"
+   ],
+   "target": "Is this happening on an iPhone, or on Outlook.com?",
+   "author_note": "Clarify route. The question separates the two receive passages."
+  },
+  {
+   "id": "gsft-email_not_working-05",
+   "candidate_id": "gsft-email_not_working-05-v1",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "unknown",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Something is wrong with my email and I'm not sure what it is. My phone and my computer both act strange."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your email on an iPhone, or on Outlook.com?"
+   },
+   "decision_basis": "The user mentions a phone and a computer but does not say which app is failing. The iPhone and Outlook.com passages give different steps, so one question is needed.",
+   "source_ref_ids": [
+    "email-iphone-fetch",
+    "email-outlook-send"
+   ],
+   "target": "Is your email on an iPhone, or on Outlook.com?",
+   "author_note": "Clarify route. The question is not a paraphrase of the other email clarify cases."
+  },
+  {
+   "id": "gsft-email_not_working-06",
+   "candidate_id": "gsft-email_not_working-06-v1",
+   "task_id": "TR-200",
+   "task_group": "email_not_working",
+   "source_group": "apple_mail_receive_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my iPhone and I only want the shortest way to get new mail to come in. Skip the explanations."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and asks for the shortest route with no explanation. The Apple Mail fetch passage gives that route.",
+   "source_ref_ids": [
+    "email-iphone-fetch"
+   ],
+   "target": "Here is the shortest route on your iPhone.\n1. Go to **Settings**, then tap **Apps**.\n2. Choose **Mail**, then tap **Mail Accounts**.\n3. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.",
+   "author_note": "Constraint: shortest route, no explanation. The default and charging or Wi-Fi sentences are left out on purpose; the steps still come only from the passage."
+  },
+  {
+   "id": "gsft-email_not_working-07",
+   "candidate_id": "gsft-email_not_working-07-v1",
+   "task_id": "TR-005",
+   "task_group": "email_not_working",
+   "source_group": "apple_mail_remove_account_iphone",
+   "behavior": "multiturn",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone mail stopped bringing in new messages yesterday. What should I check?"
+    },
+    {
+     "role": "assistant",
+     "content": "Go to Settings, tap Apps, choose Mail, then tap Mail Accounts, and check the Fetch New Data setting."
+    },
+    {
+     "role": "user",
+     "content": "I signed in to my email website with my password and it worked, but my phone still gets no new mail."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user already checked the password on the provider's website and the fetch step was already described. The remaining steps are the fetch setting and, if needed, removing and adding the account again, both from the Apple passages.",
+   "source_ref_ids": [
+    "email-iphone-fetch",
+    "email-iphone-remove-account"
+   ],
+   "target": "Next, check how your iPhone fetches mail, then set up the account again if needed.\n1. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n2. On a computer, sign in to your provider's website and confirm your email is saved elsewhere.\n3. Go to **Settings**, tap **Apps**, choose **Mail**, then tap **Mail Accounts**.\n4. Tap the account, then tap **Delete Account**.\n5. Add the account again, following the linked Apple article.\n6. If these steps fail, contact your email provider.",
+   "author_note": "Multiturn. The password check is not repeated. The computer step comes before the delete step, as the page orders it, so the saved email is confirmed first. Deleting an account can remove previously downloaded emails; that warning is not in the page section used, so it is not stated."
+  },
+  {
+   "id": "gsft-printer_not_printing-01",
+   "candidate_id": "gsft-printer_not_printing-01-v1",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11 and my USB printer won't print anything. It's plugged into my computer with a cable."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wired USB printer. The troubleshooter, power cycle and wired connection checks all apply to Windows 11.",
+   "source_ref_ids": [
+    "printer-win-restart",
+    "printer-win-connection"
+   ],
+   "target": "Here is what to try first for a printer that won't print on Windows 11.\n1. Open the printer troubleshooter in the **Get Help** app.\n2. Power off the printer, disconnect it, wait, reconnect it, and power it on.\n3. Confirm the **USB** cable is firmly connected to the PC.\n4. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.",
+   "author_note": "Covers the Windows 11 troubleshooter, the power cycle, the wired USB check and the error-state branch. The reinstall and driver steps are not needed for this first attempt and are left out."
+  },
+  {
+   "id": "gsft-printer_not_printing-02",
+   "candidate_id": "gsft-printer_not_printing-02-v1",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "On my Windows 10 laptop the wireless printer says it's connected, but nothing comes out when I print. What should I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 10 and a wireless printer. The page's troubleshooter step is for Windows 11 only, so it is skipped; the wireless check and the reinstall steps apply.",
+   "source_ref_ids": [
+    "printer-win-restart",
+    "printer-win-connection",
+    "printer-win-reinstall"
+   ],
+   "target": "The troubleshooter step is for Windows 11 only, so skip it on Windows 10.\n1. Power off the printer, disconnect it, wait, reconnect it, and power it on.\n2. For a wireless printer, confirm the printer's wireless option is on and that the PC is on the same network.\n3. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.\n4. If it still fails, go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**. Select the printer, select **Remove**, then select **Yes**.\n5. Select **Add device** or **Refresh**. If the printer doesn't appear, select **Add manually**.\n6. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
+   "author_note": "Covers the power cycle, the wireless check, the error-state branch, the remove and re-add steps and the driver step. The Windows 11 troubleshooter is skipped on purpose because the user is on Windows 10."
+  },
+  {
+   "id": "gsft-printer_not_printing-03",
+   "candidate_id": "gsft-printer_not_printing-03-v1",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11. I printed something and nothing happened, so I think the printer setup is broken. How do I remove the printer and add it back?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and asks how to remove and re-add the printer, which the reinstall passage covers.",
+   "source_ref_ids": [
+    "printer-win-reinstall"
+   ],
+   "target": "Here is how to remove the printer and add it back on Windows 11.\n1. Go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**.\n2. Select the printer, select **Remove**, then select **Yes**.\n3. Select **Add device** or **Refresh**.\n4. If the printer doesn't appear, select **Add manually**.\n5. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
+   "author_note": "Covers the Settings path, remove, add device or refresh, add manually and the driver step from the passage. The user's guess about a broken setup is not repeated as a fact."
+  },
+  {
+   "id": "gsft-printer_not_printing-04",
+   "candidate_id": "gsft-printer_not_printing-04-v1",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I can't handle a lot of menus. Tell me just the first thing to try on Windows, nothing else, please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user limits the answer to one thing with no menus. The power cycle is the first step in the passage and needs no menus, so it respects the limit.",
+   "source_ref_ids": [
+    "printer-win-restart"
+   ],
+   "target": "Here is the one thing to try first, and it needs no menus.\n1. Power off the printer, disconnect it, wait, reconnect it, and power it on.",
+   "author_note": "Constraint: one step only, no menus. The troubleshooter step is left out because it runs through the Get Help app menus."
+  },
+  {
+   "id": "gsft-email_not_working-02",
+   "candidate_id": "gsft-email_not_working-02-v2",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "Outlook.com",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-outlook-signin",
+    "email-iphone-fetch"
+   ],
+   "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the link 'Learn how to unblock your Outlook.com account' on the Microsoft support page.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
+   "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-email_not_working-02-v1",
+     "to_candidate": "gsft-email_not_working-02-v2",
+     "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-email_not_working-07",
+   "candidate_id": "gsft-email_not_working-07-v2",
+   "task_id": "TR-005",
+   "task_group": "email_not_working",
+   "source_group": "apple_mail_remove_account_iphone",
+   "behavior": "multiturn",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone mail stopped bringing in new messages yesterday. What should I check?"
+    },
+    {
+     "role": "assistant",
+     "content": "Go to Settings, tap Apps, choose Mail, then tap Mail Accounts, and check the Fetch New Data setting."
+    },
+    {
+     "role": "user",
+     "content": "I signed in to my email website with my password and it worked, but my phone still gets no new mail."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user already checked the password on the provider's website and the fetch step was already described. The remaining steps are the fetch setting and, if needed, removing and adding the account again, both from the Apple passages.",
+   "source_ref_ids": [
+    "email-iphone-fetch",
+    "email-iphone-remove-account"
+   ],
+   "target": "Next, check how your iPhone fetches mail. If new mail still doesn't come in, set up the account again.\n1. Go to **Settings**, tap **Apps**, choose **Mail**, then tap **Mail Accounts**.\n2. Tap **Fetch New Data**, then select a setting such as **Automatically** or **Manually**, or a schedule.\n3. You already signed in to your provider's website. Before you delete anything, make sure all of your email is there or saved somewhere other than your device.\n4. In **Mail Accounts**, tap the account, then tap **Delete Account**.\n5. Add the account again, following the linked Apple article.\n6. If these steps don't work, contact your email provider.",
+   "author_note": "Multiturn. The password check is not repeated. The computer step comes before the delete step, as the page orders it, so the saved email is confirmed first. Deleting an account can remove previously downloaded emails; that warning is not in the page section used, so it is not stated.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-email_not_working-07-v1",
+     "to_candidate": "gsft-email_not_working-07-v2",
+     "reason": "Step 1 gave no path to Fetch New Data, and step 2 asked the user to repeat a sign-in they had already confirmed, so the path comes first and the sign-in is noted as done.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-07-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer_not_printing-01",
+   "candidate_id": "gsft-printer_not_printing-01-v2",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11 and my USB printer won't print anything. It's plugged into my computer with a cable."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wired USB printer. The troubleshooter, power cycle and wired connection checks all apply to Windows 11.",
+   "source_ref_ids": [
+    "printer-win-restart",
+    "printer-win-connection"
+   ],
+   "target": "Here is what to try first for a printer that won't print on Windows 11.\n1. Open the printer troubleshooter in the **Get Help** app.\n2. Power off the printer, disconnect it, wait about 30 seconds, reconnect it, and power it on.\n3. Confirm the **USB** cable is properly connected from the printer to the PC.\n4. If the status reads 'Printer in error state,' check for low paper or ink, an open cover, or a paper jam.",
+   "author_note": "Covers the Windows 11 troubleshooter, the power cycle, the wired USB check and the error-state branch. The reinstall and driver steps are not needed for this first attempt and are left out.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer_not_printing-01-v1",
+     "to_candidate": "gsft-printer_not_printing-01-v2",
+     "reason": "Step 3 said 'firmly', which the page does not say, and step 2 dropped the about 30 second wait that the page gives.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer_not_printing-01-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer_not_printing-03",
+   "candidate_id": "gsft-printer_not_printing-03-v2",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11. I printed something and nothing happened, so I think the printer setup is broken. How do I remove the printer and add it back?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and asks how to remove and re-add the printer, which the reinstall passage covers.",
+   "source_ref_ids": [
+    "printer-win-reinstall"
+   ],
+   "target": "Here is how to remove the printer and add it back on Windows 11.\n1. Go to **Start**, then **Settings**, then **Bluetooth & Devices**, then **Printers & scanners**.\n2. Select the printer, select **Remove**, then select **Yes**.\n3. Make sure the printer is turned on and connected.\n4. Select **Add device** or **Refresh**.\n5. If the printer doesn't appear, select **Add manually**.\n6. If the printer still fails, install the latest driver from the manufacturer or the driver guide linked in the Microsoft article.",
+   "author_note": "Covers the Settings path, remove, add device or refresh, add manually and the driver step from the passage. The user's guess about a broken setup is not repeated as a fact.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer_not_printing-03-v1",
+     "to_candidate": "gsft-printer_not_printing-03-v2",
+     "reason": "The page's prerequisite to make sure the printer is turned on and connected before adding it again was missing, so it is added as a new step.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer_not_printing-03-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer_not_printing-04",
+   "candidate_id": "gsft-printer_not_printing-04-v2",
+   "task_id": "TR-006",
+   "task_group": "printer_not_printing",
+   "source_group": "microsoft_printer_troubleshoot",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I can't handle a lot of menus. Tell me just the first thing to try on Windows, nothing else, please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user limits the answer to one thing with no menus. The power cycle is the first step in the passage and needs no menus, so it respects the limit.",
+   "source_ref_ids": [
+    "printer-win-restart"
+   ],
+   "target": "Here is one thing to try, and it needs no menus.\n1. Power off the printer, disconnect it, wait about 30 seconds, reconnect it, and power it on.",
+   "author_note": "Constraint: one step only, no menus. The troubleshooter step is left out because it runs through the Get Help app menus.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer_not_printing-04-v1",
+     "to_candidate": "gsft-printer_not_printing-04-v2",
+     "reason": "The lead said 'first' although the page starts Windows 11 with the troubleshooter, and step 1 dropped the about 30 second wait that the page gives.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer_not_printing-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-email_not_working-02",
+   "candidate_id": "gsft-email_not_working-02-v3",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "Outlook.com",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-outlook-signin",
+    "email-iphone-fetch"
+   ],
+   "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the linked article to unblock your Outlook.com account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
+   "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-email_not_working-02-v1",
+     "to_candidate": "gsft-email_not_working-02-v2",
+     "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v1"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v2",
+     "to_candidate": "gsft-email_not_working-02-v3",
+     "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-email_not_working-02",
+   "candidate_id": "gsft-email_not_working-02-v4",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "Outlook.com",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-outlook-signin",
+    "email-iphone-fetch"
+   ],
+   "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the Microsoft Support article titled \"Learn how to unblock your Outlook.com account\" to unblock your account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
+   "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-email_not_working-02-v1",
+     "to_candidate": "gsft-email_not_working-02-v2",
+     "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v1"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v2",
+     "to_candidate": "gsft-email_not_working-02-v3",
+     "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v2"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v3",
+     "to_candidate": "gsft-email_not_working-02-v4",
+     "reason": "Step 4 referred to a linked article without naming it; it now names the Microsoft Support article title so the user can find it.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02"
+    }
+   ]
+  },
+  {
+   "id": "gsft-email_not_working-02",
+   "candidate_id": "gsft-email_not_working-02-v5",
+   "task_id": "TR-134",
+   "task_group": "email_not_working",
+   "source_group": "microsoft_outlook_com_send",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "Outlook.com",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "email-outlook-send",
+    "email-outlook-signin",
+    "email-iphone-fetch"
+   ],
+   "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, you need to unblock your Outlook.com account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
+   "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-email_not_working-02-v1",
+     "to_candidate": "gsft-email_not_working-02-v2",
+     "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v1"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v2",
+     "to_candidate": "gsft-email_not_working-02-v3",
+     "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v2"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v3",
+     "to_candidate": "gsft-email_not_working-02-v4",
+     "reason": "Step 4 referred to a linked article without naming it; it now names the Microsoft Support article title so the user can find it.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-email_not_working-02"
+    },
+    {
+     "from_candidate": "gsft-email_not_working-02-v4",
+     "to_candidate": "gsft-email_not_working-02-v5",
+     "reason": "Owner fix from review: Removed the quoted article title, which is not on the page; step 4 now states the action in plain words.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-email_not_working-02-v4"
+    }
+   ]
+  }
+ ]
 }
