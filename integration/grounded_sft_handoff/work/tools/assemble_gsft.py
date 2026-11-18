@@ -80,6 +80,16 @@ def main():
     final_ids = sorted(keep)
     assert len(final_ids) == 500, len(final_ids)
 
+    # Eligibility follows the evaluation owner's clearance file once it exists: cleared only when
+    # every final task group is allow_training with an owner and a date.
+    clearance_path = OUT / "grounded_sft_500.task_clearance.csv"
+    cleared = False
+    if clearance_path.exists():
+        cl = {r["task_group"]: r for r in csv.DictReader(open(clearance_path, encoding="utf-8"))}
+        cleared = all(cl.get(prov[i]["task_group"], {}).get("disposition") == "allow_training"
+                      and cl[prov[i]["task_group"]].get("owner") and cl[prov[i]["task_group"]].get("date")
+                      for i in final_ids)
+
     OUT.mkdir(exist_ok=True)
     url_notes = 0
     with open(OUT / "grounded_sft_500.jsonl", "w", encoding="utf-8") as fr, \
@@ -88,6 +98,8 @@ def main():
         for i in final_ids:
             rec = json.loads(json.dumps(recs[i]))
             p = json.loads(json.dumps(prov[i]))
+            if cleared:
+                p["eligibility"] = "cleared_for_training"
             r = keep[i]
             read_at = {sc["ref_id"]: sc["official_url"] for sc in r["source_checks"]}
             for ref in p["source_refs"]:
@@ -179,7 +191,9 @@ def main():
     tags = collections.Counter(t for i in final_ids for t in prov[i]["tags"])
     manifest = {
         "name": "grounded_sft_500", "prompt_version": "rag-system-v1", "count": len(final_ids),
-        "status": "AI-reviewed; pending evaluation-owner task clearance, Ryan's human spot checks, and the full tokenizer validation",
+        "status": ("AI-reviewed, human spot-checked and cleared by the evaluation owner; pending only the tokenizer length check"
+                   if cleared else "AI-reviewed; pending evaluation-owner task clearance and the tokenizer length check"),
+        "eligibility": "cleared_for_training" if cleared else "pending_eval_owner_clearance",
         "tokenizer_revision_required": "Qwen/Qwen2.5-3B-Instruct aa8e72537993ba99e69dfaafa59ed015b17504d1",
         "files": {f.name: sha_file(f) for f in sorted(OUT.glob("grounded_sft_500.*")) if f.suffix in (".jsonl", ".csv")},
         "behavior": dict(beh), "tags": dict(tags),

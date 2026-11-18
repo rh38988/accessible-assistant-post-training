@@ -10,7 +10,8 @@ Ryan's 500 English, official-source-grounded training examples, built for Shirle
 | `grounded_sft_500.provenance.jsonl` | one row per id: official URL, section, applicability, verified anchor, exact model-visible passage, decision basis, correction chain |
 | `grounded_sft_500.ai_reviews.jsonl` | the independent `keep` review bound to each final content hash |
 | `grounded_sft_500.human_spot_checks.csv` | Ryan's human spot check: 55 ids, verdicts, findings, corrections and follow-up reviews |
-| `grounded_sft_500.task_clearance_request.csv` | 95 task groups for the evaluation owner to clear |
+| `grounded_sft_500.task_clearance_request.csv` | the request sent to the evaluation owner |
+| `grounded_sft_500.task_clearance.csv` | the evaluation owner's clearance: 95 of 95 `allow_training` |
 | `grounded_sft_500.manifest.json` | counts, file hashes, every id and hash, exclusions, input hashes |
 
 ## Gates
@@ -18,12 +19,14 @@ Ryan's 500 English, official-source-grounded training examples, built for Shirle
 | Gate | Status |
 |---|---|
 | Schema, English, prompt rebuild, provenance hashes, source mapping, train_v2.1 overlap, eval task types | Pass (Shirley's validator up to the tokenizer step) |
-| Independent AI review per final hash | Pass: 500 of 500 `keep`. Simulated with eligibility set to cleared, `--require-ai-review` passes |
+| Independent AI review per final hash | Pass: 500 of 500 `keep`; `--require-ai-review` passes |
 | Token length (max 1,028) | Not run here: needs the cached Qwen tokenizer revision `aa8e725...` |
-| Evaluation-owner task clearance | Pending: `disposition` blank for all 95 groups |
+| Evaluation-owner task clearance | Done: 95 of 95 `allow_training` (owner Cian-Rong, 2026-11-17); `--task-clearance --require-task-clearance` passes |
 | Ryan's human spot checks (at least 50) | Done: 55 checked on 2026-11-17. 46 keep; 9 corrected as new versions, each re-reviewed independently and kept |
 
-Eligibility stays `pending_eval_owner_clearance` until the evaluation owner fills the clearance file.
+All 500 provenance rows are `cleared_for_training`. The only check left is the token length, which needs the Qwen tokenizer.
+
+The clearance file comes from branch `eval-clearance-grounded-sft-500` (`eval/clearance/grounded_sft_500.task_clearance.csv`). It was copied here without its UTF-8 byte-order mark, because the validator reads plain UTF-8 and the mark would hide the `task_group` column; every value is unchanged.
 
 ## Counts
 
@@ -47,9 +50,9 @@ Eligibility stays `pending_eval_owner_clearance` until the evaluation owner fill
 
 - **Passages are close paraphrases.** The fetch tool returns page summaries and only short exact quotes, so `model_visible_text` follows the page closely but is not always word for word. Each claim was checked against the live page by an independent reviewer. `verified_excerpt` is the short exact anchor.
 - **Source addresses.** For 135 example-source pairs the reviewer read the same official page at another address (often a regional Apple page or a reordered Google URL). Provenance records the address actually read, with the card's address in `card_url`.
-- **Wording overlap warnings (12, for manual review).** 9 are multiturn examples whose opening question resembles a train_v2 user turn; their final question differs. 3 single-turn clarify prompts are close paraphrases of train_v2 user turns: `gsft-bookmark_site-03`, `gsft-brightness-03`, `gsft-ring_volume-03`. Kept because the format and target differ; reword and re-review them if the team wants zero overlap.
+- **Wording overlap warnings (10 examples, 12 pairs, for manual review).** 7 are multiturn examples whose opening question resembles a train_v2 user turn; their final question differs. 3 single-turn clarify prompts are close paraphrases of train_v2 user turns: `gsft-bookmark_site-03`, `gsft-brightness-03`, `gsft-ring_volume-03`. Kept because the format and target differ; reword and re-review them if the team wants zero overlap.
 - **Human spot-check fixes.** Ryan's 9 fixes: two steps that joined several actions, a missing reset-network warning (Apple), two missing anti-phishing lines (FTC), a link the user cannot see, jargon ('network administrator'), an unnatural user turn, and an Edge passage that a build check had garbled. All are in `correction_history` with `review_id` `human-spot-check-<id>`.
-- **Dev overlap notes.** `wifi_connect`, `video_captions`, `bluetooth_pair` and `crypto_investment_scam` are near the development set; flagged in the clearance request.
+- **Dev overlap.** `wifi_connect`, `video_captions` and `brightness` share topics with first-round development scenarios; `bluetooth_pair` and `crypto_investment_scam` were flagged as similar. The evaluation owner approved all of them for training and recorded this in the clearance notes. A model trained on this set has not seen those topics fresh, so it is not unseen on the matching first-round scenarios; second-round evaluation topics will be chosen outside these 95 groups.
 
 ## Full validation (on a machine with the Qwen tokenizer cached)
 
@@ -58,7 +61,8 @@ python integration/grounded_sft_handoff/validate_grounded.py \
   integration/grounded_sft_handoff/final/grounded_sft_500.jsonl \
   --provenance integration/grounded_sft_handoff/final/grounded_sft_500.provenance.jsonl \
   --reviews integration/grounded_sft_handoff/final/grounded_sft_500.ai_reviews.jsonl \
+  --require-ai-review \
+  --task-clearance integration/grounded_sft_handoff/final/grounded_sft_500.task_clearance.csv \
+  --require-task-clearance \
   --against data/v2/versions/train_v2_en.v2.1.jsonl --expected-count 500
 ```
-
-After the evaluation owner fills the clearance file and eligibility is set to `cleared_for_training`, add `--require-ai-review --task-clearance <filled csv> --require-task-clearance`.

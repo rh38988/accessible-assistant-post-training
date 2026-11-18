@@ -2,13 +2,15 @@
  "name": "grounded_sft_500",
  "prompt_version": "rag-system-v1",
  "count": 500,
- "status": "AI-reviewed; pending evaluation-owner task clearance, Ryan's human spot checks, and the full tokenizer validation",
+ "status": "AI-reviewed, human spot-checked and cleared by the evaluation owner; pending only the tokenizer length check",
+ "eligibility": "cleared_for_training",
  "tokenizer_revision_required": "Qwen/Qwen2.5-3B-Instruct aa8e72537993ba99e69dfaafa59ed015b17504d1",
  "files": {
   "grounded_sft_500.ai_reviews.jsonl": "bfd75ea689933b81ce3e81d00a550472b6bf378de09a0ae978152c247e66f493",
   "grounded_sft_500.human_spot_checks.csv": "2a9c03ba886e6abc50c5d1d8ccb8e4f808495ba7835f7ce2a10f46da5c916fb3",
   "grounded_sft_500.jsonl": "76270874350bf86f7d6e87a721b451974b7cfaef3397f7e09bb0ff105a59cb25",
-  "grounded_sft_500.provenance.jsonl": "325326b61a99510d6297c08b2e284146af66c7578f04557e523e8477cb2a3cb8",
+  "grounded_sft_500.provenance.jsonl": "ac651d9da3c158b8b32387ed94fd3dca35370d623f14a88259f58e45a8934212",
+  "grounded_sft_500.task_clearance.csv": "6184cbec671f02e5b4bf0851e5837fe7614fcd857691b05a8d1392025ec312dc",
   "grounded_sft_500.task_clearance_request.csv": "ec737d5473aad195b36d13ab98e259f9d4c11628dfbb3005f623de36471d45b7"
  },
  "behavior": {
