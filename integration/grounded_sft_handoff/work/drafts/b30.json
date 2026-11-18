@@ -773,6 +773,85 @@
      "review_id": "review-gsft-unordered_package_scam-02-v3"
     }
    ]
+  },
+  {
+   "id": "gsft-unordered_package_scam-02",
+   "candidate_id": "gsft-unordered_package_scam-02-v5",
+   "task_id": "TR-220",
+   "task_group": "unordered_package_scam",
+   "source_group": "ftc_unordered_package_alert",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Any",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
+   "source_ref_ids": [
+    "pkg-change-passwords",
+    "pkg-marketplace-notify",
+    "pkg-no-contact",
+    "pkg-keep-report",
+    "pkg-check-credit"
+   ],
+   "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If you want, and the seller is listed in your shopping app, you can send the app (not the seller) a message so it can look into removing the seller. You do not have to message anyone else.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise.\n5. Report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n6. Check your credit weekly for free at **AnnualCreditReport.com**.\n7. Watch for signs of identity theft.",
+   "author_note": "Must cover the four actions that need no message: change passwords, do not contact the sender, keep the merchandise and report, and check credit. The marketplace step is left out because the user does not want to message anyone and the marketplace condition is not confirmed.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-unordered_package_scam-02-v1",
+     "to_candidate": "gsft-unordered_package_scam-02-v2",
+     "reason": "Reviewer found step 2 read as starting a message despite the user not wanting to message anyone, and did not mark the marketplace step as conditional.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-unordered_package_scam-02-v1"
+    },
+    {
+     "from_candidate": "gsft-unordered_package_scam-02-v2",
+     "to_candidate": "gsft-unordered_package_scam-02-v3",
+     "reason": "Step 2 asked the user to message the platform although the user does not want to message anyone, and the closing sentence claimed that message was the only one needed.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-unordered_package_scam-02-v2"
+    },
+    {
+     "from_candidate": "gsft-unordered_package_scam-02-v3",
+     "to_candidate": "gsft-unordered_package_scam-02-v4",
+     "reason": "Owner fix from review: Added the message-the-app step (to the app, not the seller) and split the two joined steps.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-unordered_package_scam-02-v3"
+    },
+    {
+     "from_candidate": "gsft-unordered_package_scam-02-v4",
+     "to_candidate": "gsft-unordered_package_scam-02-v5",
+     "reason": "Owner fix from review: Made the message to the shopping app optional, matching the user's wish not to message anybody.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-unordered_package_scam-02-v4"
+    }
+   ]
   }
  ]
 }

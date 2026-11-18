@@ -884,6 +884,71 @@
      "review_id": "review-gsft-bluetooth_pair-06-v2"
     }
    ]
+  },
+  {
+   "id": "gsft-bluetooth_pair-01",
+   "candidate_id": "gsft-bluetooth_pair-01-v4",
+   "task_id": "TR-129",
+   "task_group": "bluetooth_pair",
+   "source_group": "google_android_bluetooth_pair",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an Android phone and I want to pair my new wireless earbuds. Where do I start?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone, so the Android Settings steps apply; the Windows passage is inapplicable and is included only as the distractor.",
+   "source_ref_ids": [
+    "bluetooth-android-pair",
+    "bluetooth-windows-pair"
+   ],
+   "target": "Pair the earbuds from your Android Bluetooth settings:\n1. From the top of the screen, swipe down.\n2. Touch and hold **Bluetooth**.\n3. Tap **Pair new device**.\n4. If there is no **Pair new device**, check under **Available devices**, or tap **More**, then **Refresh**.\n5. Tap the name of the Bluetooth device.\n6. Follow the on-screen instructions.\nIf you see a notification to pair, your phone can connect the earbuds for you automatically. This is called Fast Pair. Some of these steps work only on Android 15 and up.",
+   "author_note": "Must cover the Settings pairing steps, the missing Pair new device branch, the Fast Pair notification branch, and the Android 15 condition. The page does not attach the Android 15 condition to a specific step, so the line stays general. No other gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-bluetooth_pair-01-v1",
+     "to_candidate": "gsft-bluetooth_pair-01-v2",
+     "reason": "The last sentence used Fast Pair with no explanation, which a user with no background could not follow.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-bluetooth_pair-01-v1"
+    },
+    {
+     "from_candidate": "gsft-bluetooth_pair-01-v2",
+     "to_candidate": "gsft-bluetooth_pair-01-v3",
+     "reason": "Owner fix from review: Removed ', a Google feature', which the page does not say.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-bluetooth_pair-01-v2"
+    },
+    {
+     "from_candidate": "gsft-bluetooth_pair-01-v3",
+     "to_candidate": "gsft-bluetooth_pair-01-v4",
+     "reason": "Owner fix from review: Explained Fast Pair in plain words.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-bluetooth_pair-01-v3"
+    }
+   ]
   }
  ]
 }

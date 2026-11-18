@@ -990,6 +990,73 @@
      "review_id": "review-gsft-romance_scam-02-v2"
     }
    ]
+  },
+  {
+   "id": "gsft-romance_scam-02",
+   "candidate_id": "gsft-romance_scam-02-v4",
+   "task_id": "TR-088",
+   "task_group": "romance_scam",
+   "source_group": "ftc_what_do_if_scammed",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Any device",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I bought $500 in gift cards yesterday for a man I met on a dating website. I read him the codes over the phone, and now he's asking for more. I think he's a scammer. What do I do now? I'm using my phone."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states the device (phone) and a gift card payment, so the gift card recovery steps apply. The notify and report steps come from the romance page. The 'if you think it's a scam' condition is met by the user's own belief and is kept as a report step.",
+   "source_ref_ids": [
+    "romance-giftcard",
+    "romance-paid",
+    "romance-stop",
+    "romance-report"
+   ],
+   "target": "Stop communicating with him now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.\n7. Talk with a trusted friend or family member about this.",
+   "author_note": "Must cover the gift card steps (issuer, number on back, tell them, refund, keep card and receipt), the FTC report and notify the site or app. The stop line is the romance page's first step. The wire or card payment step is not needed. No gap.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-romance_scam-02-v1",
+     "to_candidate": "gsft-romance_scam-02-v2",
+     "reason": "First line said do not send him anything else, which is not on the page and is not established by the user facts; first line trimmed; romance-paid excerpt corrected.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-romance_scam-02-v1"
+    },
+    {
+     "from_candidate": "gsft-romance_scam-02-v2",
+     "to_candidate": "gsft-romance_scam-02-v3",
+     "reason": "Owner fix from review: Added the trusted friend or family member step from the passage and renumbered.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-romance_scam-02-v2"
+    },
+    {
+     "from_candidate": "gsft-romance_scam-02-v3",
+     "to_candidate": "gsft-romance_scam-02-v4",
+     "reason": "Owner fix from review: Moved the trusted friend step to the end so the gift card issuer is contacted immediately, as the passage says.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-romance_scam-02-v3"
+    }
+   ]
   }
  ]
 }
