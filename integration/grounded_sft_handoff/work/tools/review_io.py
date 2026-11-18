@@ -15,6 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 WORK = Path(__file__).resolve().parents[1]
+ROOT_GIT = Path(__file__).resolve().parents[4]
 REVIEWER_DOC = WORK / "AGENT_GSFT_REVIEWER.md"
 CHECKS = ["factual_steps_labels_contacts_claims", "necessary_action_coverage",
           "explicit_constraints_and_completed_state", "clarification_decision",
@@ -158,12 +159,52 @@ def status():
     print(dict(st))
 
 
+def stamp(batch, n, rev):
+    """Add reviewer_prompt_sha256 to rows of a review file whose batch-wide check never passed
+    (for example because other rows in it were superseded). Each stamped row must still bind to
+    the current candidate and pass every per-row check; the hash is of the reviewer document as
+    it was at git revision `rev`, the version the reviewer actually followed."""
+    import subprocess
+    doc = subprocess.run(["git", "show", f"{rev}:{REVIEWER_DOC.relative_to(ROOT_GIT)}"], cwd=ROOT_GIT,
+                         capture_output=True, check=True).stdout
+    prompt_sha = hashlib.sha256(doc).hexdigest()
+    recs, prov = build()
+    path = WORK / f"reviews/{batch}.r{n}.jsonl"
+    rows = jl(path)
+    stamped = 0
+    for r in rows:
+        i, p = r.get("id"), prov.get(r.get("id"))
+        if r.get("reviewer_prompt_sha256") or not p:
+            continue
+        if r.get("conversation_sha256") != p["content_sha256"] or r.get("candidate_id") != p["generation"]["candidate_id"]:
+            continue  # superseded by a later version; leave as historical record
+        checks = r.get("checks") or {}
+        refs = sorted(x["ref_id"] for x in p["source_refs"])
+        ok = (sorted(s.get("ref_id") for s in r.get("source_checks") or []) == refs and
+              all(k in r for k in ("review_id", "reviewer_model", "reviewed_at", "required_actions", "decision")))
+        if r.get("decision") == "keep":
+            ok = ok and all(checks.get(c) == "pass" for c in CHECKS) and not r.get("findings") \
+                and not r.get("correction_required") \
+                and all(s.get("source_accessible") is True and s.get("applicability_confirmed") is True and s.get("finding")
+                        for s in r["source_checks"]) \
+                and not any(a.get("critical") and not a.get("covered_in_target") for a in r["required_actions"])
+        if ok:
+            r["reviewer_prompt_sha256"] = prompt_sha
+            stamped += 1
+    with open(path, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"stamped {stamped} rows of {batch} r{n} with the reviewer document at {rev} ({prompt_sha[:12]})")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "render":
         if "--redo" in sys.argv:
             REDO.update(sys.argv[sys.argv.index("--redo") + 1].split(","))
         render(sys.argv[2], int(sys.argv[3]))
+    elif cmd == "stamp":
+        stamp(sys.argv[2], int(sys.argv[3]), sys.argv[4])
     elif cmd == "check":
         check(sys.argv[2], int(sys.argv[3]))
     else:

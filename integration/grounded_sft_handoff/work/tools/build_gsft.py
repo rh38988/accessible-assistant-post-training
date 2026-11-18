@@ -205,7 +205,9 @@ def build_one(c, refs, errors, warnings):
         "id": cid, "task_id": c["task_id"], "task_group": c["task_group"], "source_group": c["source_group"],
         "content_sha256": digest, "eligibility": "pending_eval_owner_clearance",
         "behavior": c["behavior"], "tags": sorted(c.get("tags", [])),
-        "generation": {"method": "Claude Haiku writer agent, work/AGENT_GSFT_WRITER.md", "model": "claude-haiku-5-5",
+        "generation": ({"method": "Main session, from the checked source cards", "model": "claude-opus-5-5"}
+                       if c.get("author") == "claude-opus-main-session" else
+                       {"method": "Claude Haiku writer agent, work/AGENT_GSFT_WRITER.md", "model": "claude-haiku-5-5"}) | {
                        "prompt_version": "rag-system-v1", "candidate_id": c["candidate_id"], "draft_file": c["_file"]},
         "inference_template": {"builder": "eval.generate_rag.build_messages", "condition": "sft_v2_rag",
                                "decision": {"mode": mode, "question": decision.get("question", "") if mode == "clarify" else ""},
