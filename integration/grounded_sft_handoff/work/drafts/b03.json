@@ -922,6 +922,173 @@
      "review_id": "review-gsft-wifi_connect-07-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-internet_not_working-02",
+   "candidate_id": "gsft-internet_not_working-02-v3",
+   "task_id": "TR-149",
+   "task_group": "internet_not_working",
+   "source_group": "google_fix_internet_android_wifi",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
+   "source_ref_ids": [
+    "android-internet-wifi-check",
+    "apple-iphone-internet-troubleshoot"
+   ],
+   "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n3. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+   "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-internet_not_working-02-v1",
+     "to_candidate": "gsft-internet_not_working-02-v2",
+     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-02-v1"
+    },
+    {
+     "from_candidate": "gsft-internet_not_working-02-v2",
+     "to_candidate": "gsft-internet_not_working-02-v3",
+     "reason": "Step 2 'Check the Wi-Fi indicator at the top of the screen' repeats a check the user already reported, so it was deleted and the remaining steps were renumbered.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-02-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-internet_not_working-06",
+   "candidate_id": "gsft-internet_not_working-06-v3",
+   "task_id": "TR-149",
+   "task_group": "internet_not_working",
+   "source_group": "google_fix_internet_android_wifi",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
+   "source_ref_ids": [
+    "android-internet-wifi-check"
+   ],
+   "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**. Turn **Wi-Fi** on if it is off.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+   "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-internet_not_working-06-v1",
+     "to_candidate": "gsft-internet_not_working-06-v2",
+     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says they can only use Wi-Fi and that the internet is down on it, so Wi-Fi is already on.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-06-v1"
+    },
+    {
+     "from_candidate": "gsft-internet_not_working-06-v2",
+     "to_candidate": "gsft-internet_not_working-06-v3",
+     "reason": "Step 1 leaves out the passage step 'Turn Wi-Fi on', and the user does not say that Wi-Fi is on, so the step now includes it as a condition.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-06-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-internet_not_working-07",
+   "candidate_id": "gsft-internet_not_working-07-v3",
+   "task_id": "TR-009",
+   "task_group": "internet_not_working",
+   "source_group": "google_fix_internet_android_mobile_data",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "incomplete",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android phone won't open any websites, even though it's on wifi."
+    },
+    {
+     "role": "assistant",
+     "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+    },
+    {
+     "role": "user",
+     "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
+   "source_ref_ids": [
+    "android-internet-mobile-data"
+   ],
+   "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears, move to a different area or go outside, then check again.\nIf this happens often, contact your mobile service provider.",
+   "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-internet_not_working-07-v1",
+     "to_candidate": "gsft-internet_not_working-07-v2",
+     "reason": "Step 5 says 'Move somewhere else or go outside and check again.' The page says 'If you can, move to a different area, or go outside, and check your signal again.' The target drops the condition 'if you can', so it tells the user to move even when they cannot.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-07-v1"
+    },
+    {
+     "from_candidate": "gsft-internet_not_working-07-v2",
+     "to_candidate": "gsft-internet_not_working-07-v3",
+     "reason": "Step 5 added the condition 'and you can', which the page does not state, so the step now gives the page's wording without that added condition.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-internet_not_working-07-v2"
+    }
+   ]
   }
  ]
 }

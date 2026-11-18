@@ -20,14 +20,11 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
@@ -39,9 +36,9 @@
   "gsft-bluetooth_pair-03": "fff13c36b35d13702bc76513ef3bf6d50c67ad963023b3f77ecea9ddea1c0eb4",
   "gsft-bluetooth_pair-04": "3e6200ff77b211ed0bfce890ab24d8c1a660d5b6e1330135bb9b37e2d0e8bfa0",
   "gsft-bluetooth_pair-05": "08d1eb454d1a473368acb1cb6ccd0d046e28bf08a1fa442e76c9829a1d9c1e77",
-  "gsft-bluetooth_pair-06": "3aa5d7f3898359e089235ee9efc82f507dd00fd531f0168972028e64a490d20e",
-  "gsft-bluetooth_pair-07": "5ce3a204eb0029a4ff86fbe7a0548cdec671e073c9fd76b3aec72192b5b4d863",
-  "gsft-password_manager-01": "938bd8968c7399b36de794c438bd3861638c98a8b9a7227c2d10ef26ed0dcc50",
+  "gsft-bluetooth_pair-06": "32665fc9d4e89989d1d243ebcddf08b7444027313654389e6d14aa3ebe447f7a",
+  "gsft-bluetooth_pair-07": "c27d0f4debb72aedf767f8d27a3ece11f3b8d00b537a5d6f87d4a6e66b803cfc",
+  "gsft-password_manager-01": "5b72616130211f11d429addb1639a6a80265dec7b2f144bf23c75743ceef9dc8",
   "gsft-password_manager-02": "1eb2d015a7c540bea6072e1820ef8ade60ba94d758da18eb20f3bfe04f36e2ac",
   "gsft-password_manager-03": "067677505ae7d5520993d8c1716d7edf5df5109a1b667ace8e50791e6d4552bb",
   "gsft-password_manager-04": "91b18a16f478bf99b3750e1b2bb69f317bab6b00677808376a900dce3f089a1f",

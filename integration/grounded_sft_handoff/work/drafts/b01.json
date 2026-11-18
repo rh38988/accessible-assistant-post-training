@@ -711,6 +711,68 @@
           "review_id": "review-gsft-text_size-06-v1"
         }
       ]
+    },
+    {
+      "id": "gsft-text_size-04",
+      "candidate_id": "gsft-text_size-04-v3",
+      "task_id": "TR-098",
+      "task_group": "text_size",
+      "source_group": "samsung_galaxy_font_size",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "The text on my Android phone is hard to read. Can you tell me how to make it bigger?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android, and the Google Android passage gives steps for font size in Settings that do not depend on the brand, so the brand is not needed. The Samsung Galaxy path is an optional branch from the Samsung passage.",
+      "source_ref_ids": [
+        "text-size-android-settings",
+        "text-size-samsung-fontstyle"
+      ],
+      "target": "Here is how to make text bigger on Android.\n\n1. Open the **Settings** app.\n2. Search for **Font size** and select it.\n3. Move the slider left or right to set your preferred size.\n\nSome apps do not use this font size setting.\n\nIf you have a Samsung Galaxy phone, you can also:\n\n4. Open **Settings**, then select **Display**.\n5. Select **Font size and style**, then adjust the options as desired.",
+      "author_note": "Answer route. Steps come from the Google Android passage (Settings, Font size, slider, apps note). Samsung steps are a conditional branch from the Samsung passage. The device-variation note on the Samsung page sits under High contrast fonts, so it is not used.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-text_size-04-v1",
+          "to_candidate": "gsft-text_size-04-v2",
+          "reason": "Reviewer found the question gave only two brands, leaving users of other Android phones with no matching path.",
+          "changed_fields": [
+            "decision",
+            "target",
+            "decision_basis",
+            "messages"
+          ],
+          "review_id": "review-gsft-text_size-04-v1"
+        },
+        {
+          "from_candidate": "gsft-text_size-04-v2",
+          "to_candidate": "gsft-text_size-04-v3",
+          "reason": "Reviewer found the clarify route unjustified because the brand does not change the Android Settings steps, and the target gave no steps covering the critical actions.",
+          "changed_fields": [
+            "behavior",
+            "tags",
+            "decision",
+            "target",
+            "decision_basis",
+            "source_ref_ids",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-text_size-04-v2"
+        }
+      ]
     }
   ]
 }

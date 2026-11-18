@@ -621,6 +621,232 @@
    ],
    "target": "Since a battery icon is showing on your iPhone 8 or later, force a restart:\n1. Quickly press **volume up**.\n2. Quickly press **volume down**.\n3. Press and hold the **side button** until the Apple logo appears.\n4. Leave it charging.\n\nIf it still won't turn on or charge, you may need service through the 'Get service' link.",
    "author_note": "The user already restarted the phone, so the target does not repeat the restart. The force-restart branch for iPhone 8 or later is kept and the other models are left out."
+  },
+  {
+   "id": "gsft-live_captions-04",
+   "candidate_id": "gsft-live_captions-04-v2",
+   "task_id": "TR-194",
+   "task_group": "live_captions",
+   "source_group": "chrome_live_caption_computer",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Chrome computer",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I watch a lot of videos in my browser and want captions. Can you walk me through it?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you watch your videos in Google Chrome?"
+   },
+   "decision_basis": "The user says 'my browser' without naming Chrome or a computer type. The Chrome steps depend on the computer type, so one question about the browser comes first.",
+   "source_ref_ids": [
+    "lc-chrome-winmac",
+    "lc-chrome-chromebook"
+   ],
+   "target": "Do you watch your videos in Google Chrome?",
+   "author_note": "Clarify route with a browser question only. The user did not name a browser.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-live_captions-04-v1",
+     "to_candidate": "gsft-live_captions-04-v2",
+     "reason": "The reviewer found the question assumed Chrome and the decision basis wrongly said the user named a browser; the question now asks only about the browser.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "decision_basis",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-live_captions-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-live_captions-05",
+   "candidate_id": "gsft-live_captions-05-v2",
+   "task_id": "TR-178",
+   "task_group": "live_captions",
+   "source_group": "windows11_live_captions",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11 or Chrome computer",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My laptop is where I watch my shows. Can you help me turn on captions?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your laptop a Windows 11 computer, a Mac, or a Chromebook?"
+   },
+   "decision_basis": "The user says 'my laptop' without naming the operating system or browser. The Windows 11 steps, the Chrome steps on Windows or Mac and the Chrome steps on a Chromebook differ, so one question about the computer type is needed.",
+   "source_ref_ids": [
+    "lc-win11-quicksettings",
+    "lc-chrome-winmac",
+    "lc-chrome-chromebook"
+   ],
+   "target": "Is your laptop a Windows 11 computer, a Mac, or a Chromebook?",
+   "author_note": "Clarify route with a computer type question only; the Chromebook ref is added so the question is sourced.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-live_captions-05-v1",
+     "to_candidate": "gsft-live_captions-05-v2",
+     "reason": "The reviewer found the routed question sent a Chrome user to the Windows or Mac steps and misrouted Chromebook users; the question now names the three computer types the sources cover.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "source_ref_ids",
+      "decision_basis",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-live_captions-05-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-live_captions-06",
+   "candidate_id": "gsft-live_captions-06-v2",
+   "task_id": "TR-178",
+   "task_group": "live_captions",
+   "source_group": "windows11_live_captions",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have arthritis and can't press several keys at once. What's the easiest way to get live captions on my Windows 11 PC?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a limit on key combinations, so the quick settings route applies and the key-combination shortcut is left out. The first-use passage gives the consent and language conditions.",
+   "source_ref_ids": [
+    "lc-win11-quicksettings",
+    "lc-win11-firstuse"
+   ],
+   "target": "Use quick settings, which you open by selecting the icon on the taskbar:\n1. Select the battery, network, or volume icon on the taskbar to open quick settings.\n2. Turn on the **Live captions** toggle.\n\nLive captions requires Windows 11, version 22H2 or later. On first use, it asks for consent to process voice data on your device, then prompts you to download the speech recognition language files.",
+   "author_note": "The constraint rules out key combinations, so the Windows key shortcut is not used. Only source steps and conditions appear.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-live_captions-06-v1",
+     "to_candidate": "gsft-live_captions-06-v2",
+     "reason": "The reviewer found the phrase about key presses is not in the passage, so it was replaced with a description of the select action.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-live_captions-06-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-stolen_device_protection-02",
+   "candidate_id": "gsft-stolen_device_protection-02-v2",
+   "task_id": "TR-158",
+   "task_group": "stolen_device_protection",
+   "source_group": "google_theft_protection_android",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": true,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android phone and I'm worried that if someone takes it, they can get into my Google account. Is there a setting that helps with that?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android, so the Android theft protection passages apply. The away-from-trusted-places condition is part of the Identity Check passage.",
+   "source_ref_ids": [
+    "sdp-android-theftprotection-open",
+    "sdp-android-identitycheck-setup",
+    "sdp-android-identitycheck-away"
+   ],
+   "target": "Android has a feature called Identity Check under Theft protection. To set it up:\n1. Add a screen lock (PIN, pattern, or password) first.\n2. Open **Settings**, tap **Google**, then tap **All services**.\n3. Tap **Theft protection**, then tap **Identity Check**.\n4. Under **To activate**, sign in to a Google Account.\n5. Add biometrics, using a fingerprint or face unlock.\n6. Add your trusted places, such as Home or Work.\n7. Tap **Done**.\n\nOutside your trusted places, apps that ask you to 'Verify it's you' need a fingerprint or face. A PIN, pattern, or password won't work for those prompts, except in Private space, Multi-users mode, payment autofill in apps, and password and payments autofill in Chrome.",
+   "author_note": "Identity Check is the Android feature in the passage; the page does not call it stolen device protection, so do not say they are the same. Cover all required setup steps and the trusted-places condition.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-stolen_device_protection-02-v1",
+     "to_candidate": "gsft-stolen_device_protection-02-v2",
+     "reason": "The reviewer found the screen lock was placed after sign-in, but the Theft protection passage says a screen lock must be set first; the screen lock is now the first step and the later duplicate is removed.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-stolen_device_protection-02-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-stolen_device_protection-04",
+   "candidate_id": "gsft-stolen_device_protection-04-v2",
+   "task_id": "TR-158",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My phone got taken out of my bag this morning. Which setting should I turn on to keep my accounts safe?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Sorry, that is stressful. The setting you need depends on your phone. Which phone do you have, an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name a device, and the setting differs between the iPhone and Android passages, so one question is needed before answering.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon",
+    "sdp-android-identitycheck-setup"
+   ],
+   "target": "Sorry, that is stressful. The setting you need depends on your phone. Which phone do you have, an iPhone or an Android phone?",
+   "author_note": "Clarify route: one acknowledgment sentence, then the device question only. Tags are empty so that the sensitive account-security case is not a clarify-only safety case.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-stolen_device_protection-04-v1",
+     "to_candidate": "gsft-stolen_device_protection-04-v2",
+     "reason": "The reviewer found no acknowledgment of the theft and no urgency; a sentence acknowledging the stressful situation was added before the device question, which still ends the target.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-stolen_device_protection-04-v1"
+    }
+   ]
   }
  ]
 }

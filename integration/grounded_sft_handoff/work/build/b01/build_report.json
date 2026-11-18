@@ -2,14 +2,14 @@
  "candidates": 18,
  "groups": 3,
  "behavior": {
-  "direct": 7,
-  "clarify": 6,
+  "direct": 8,
+  "clarify": 5,
   "constraint": 3,
   "multiturn": 2
  },
  "tags": {
   "distractor": 3,
-  "conditional": 7
+  "conditional": 8
  },
  "per_group": {
   "ring_volume": 7,
@@ -19,8 +19,6 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
@@ -43,7 +41,7 @@
   "gsft-text_size-01": "2f3def31e743088f906079163b29b865c6685b2e950734e8595c847a536567c8",
   "gsft-text_size-02": "1d2a15bbd2f9cb016db1701fe4cace2a023f548655d12b209c48e83f96372be2",
   "gsft-text_size-03": "449bae195fae9ccab7c221aaba9d60add1a5da35884bdf7b1fe205abc134007a",
-  "gsft-text_size-04": "ba22e6e8ab4b285f05d767676bdf4aa50306fff457d7852a6cd87ed02748457a",
+  "gsft-text_size-04": "9e918bb1a04c7967f2de69fd5dc5665fd9d7558364ee935f95a57c8ae5004dba",
   "gsft-text_size-05": "04f219e7608f124e91b26054ee524ed413949242725a415a4955d17a96a918f0",
   "gsft-text_size-06": "1671745047630b11f43c6ee8a76d819f4859bdd8193ba196e7ba045d440a24f3",
   "gsft-text_size-07": "e97e0bd5b33c49deb616bd26de8adcec776dbcc5c475a4b9aa62af2943b681f8"

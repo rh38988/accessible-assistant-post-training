@@ -22,7 +22,7 @@
    "access_date": "2026-11-17", "page_update_date": null,
    "section": "Fix mobile data problems", "applicability": "Android devices; labels vary by device; if you don't see the mobile data switch, the page says to select Data usage first",
    "platform": "Android", "app": "Settings",
-   "verified_excerpt": "Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.",
+   "verified_excerpt": "Look for a data indicator, such as 2G, 3G, 4G, or H, next to the signal bars.",
    "model_visible_text": "On Android: Open Settings, tap 'Network & internet' or 'Connections', then 'Mobile data' or 'Cellular data'. If you don't see it, first select 'Data usage'. Turn the switch on. If it's already on, turn it off and back on. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen. If Wi-Fi is active, that indicator may not appear, so turn Wi-Fi off and check again. If no data indicator appears, you may be out of coverage. Move somewhere else or go outside and check again. If this happens often, contact your mobile service provider.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the Fix mobile data problems section; labels kept exactly; straight apostrophes used; excerpt quoted as WebFetch returned it"}
  ]}

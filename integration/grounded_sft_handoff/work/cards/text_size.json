@@ -78,9 +78,9 @@
       "applicability": "Samsung Galaxy phones; the page says menus may vary by device model and software version",
       "platform": "Samsung Galaxy",
       "app": "Settings",
-      "verified_excerpt": "Launch the Settings app, and then select Display. Select Font size and style. Here you can adjust the options as desired.",
-      "model_visible_text": "On Samsung Galaxy: Launch the Settings app, and then select Display. Select Font size and style. Here you can adjust the options as desired. Device screenshots and menu may vary depending on the device model and software version.",
-      "extraction_method": "WebFetch of the official page on 2026-11-17; steps taken from the section named; platform prefix added; sentences as returned in the fetch output."
+      "verified_excerpt": "Launch the Settings app, and then select Display. Select Font size and style.",
+      "model_visible_text": "On Samsung Galaxy: Launch the Settings app, and then select Display. Select Font size and style. Here you can adjust the options as desired.",
+      "extraction_method": "WebFetch of the official page on 2026-11-17; steps taken from the section named; platform prefix added; sentences as returned in the fetch output. Revision on 2026-11-17 (round 2 review): removed the device-variation sentence, which the page places under High contrast fonts, not under this section; excerpt set to exact page wording of 20 words or fewer."
     },
     {
       "ref_id": "text-size-windows11-textsize",

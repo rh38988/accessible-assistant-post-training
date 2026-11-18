@@ -17,8 +17,6 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
@@ -35,7 +33,7 @@
   "gsft-mortgage_relief_scam-06": "7dc9b6620d62dd0cfd080692e92808b183e4e9c97157bc84451e5687c9725070",
   "gsft-rental_listing_scam-01": "f2b6a3764fe0f146251e59dfa4a7c3b6caf6436558edf8f4b613dfb7f9ff1563",
   "gsft-rental_listing_scam-02": "9021cc90e22567e60837b55d39f49ab0af1a61605720ed8cd3700d02c4ae9efc",
-  "gsft-rental_listing_scam-03": "b9f04e346e540c1ebb6bc96a0693d3342623757a41c3d4b820db6ce4521f95c7",
+  "gsft-rental_listing_scam-03": "848b65c83262d20b43bf326a7d4138ea2b0c895ac3780bde888f531e2927afad",
   "gsft-rental_listing_scam-04": "32b736787f4be8d027452707610fef26426103f5b5b70e0d75caa4679f7f2cf3",
   "gsft-rental_listing_scam-05": "d61b3e991d466d3170ea9c02638378ef451cb8e0fa8ba6bbf14180bfd3d0b92d",
   "gsft-rental_listing_scam-06": "10e584b6aa5684141a135b78e190f603110b389e0442c254d8f761d3c89d39be"

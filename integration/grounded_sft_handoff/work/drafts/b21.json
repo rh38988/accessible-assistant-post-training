@@ -1,124 +1,618 @@
-{"batch": "b21", "candidates": [
- {"id": "gsft-backup_computer-01", "candidate_id": "gsft-backup_computer-01-v1", "task_id": "TR-127", "task_group": "backup_computer", "source_group": "apple_time_machine_mac", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "Mac", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I bought an external drive to back up my MacBook Air, which runs macOS Sonoma. How do I set it up for Time Machine?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a Mac on macOS Sonoma, which is a later version than the macOS Ventura 13 or later steps on the page, so the setup steps answer directly.",
-  "source_ref_ids": ["backup-mac-timemachine-connect", "backup-mac-timemachine-setup", "backup-mac-timemachine-setup-options"],
-  "target": "Here is how to set up your drive for Time Machine.\n1. Plug in an external drive with at least twice your Mac's storage, and use it only for backups.\n2. From the **Apple** menu, choose **System Settings**.\n3. Click **General** in the sidebar, then click **Time Machine** on the right.\n4. Click **Add Backup Disk**, or click the **Add** button.\n5. Select your connected storage device, then click **Set Up Disk**.\n6. If your Mac asks to erase the drive, either erase it or select a different backup disk or volume.\n7. If your Mac asks whether to claim backups from another computer, claim them if you want them to become part of this Mac's backups.\n8. If you turn on **Encrypt Backup**, you will be asked to create a backup password. You will need it if you later restore files from the backup.",
-  "author_note": "Covers the drive requirement, System Settings > General > Time Machine, Add Backup Disk, Set Up Disk, the erase or different-disk prompt, claiming old backups, and the Encrypt Backup password. No source gap."},
-
- {"id": "gsft-backup_computer-02", "candidate_id": "gsft-backup_computer-02-v1", "task_id": "TR-127", "task_group": "backup_computer", "source_group": "apple_time_machine_mac", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "Mac", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My Mac runs macOS Ventura and I want Time Machine to back up right now, not later. How do I start it?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a Mac on macOS Ventura and asks for a backup now, which the Make a backup section answers directly.",
-  "source_ref_ids": ["backup-mac-timemachine-backup-now"],
-  "target": "Start the backup from the menu bar:\n1. Choose **Back Up Now** from the **Time Machine** menu in the menu bar.\nOr wait for the next automatic backup if you do not want to start one now. The menu shows how much of the current backup is done, or the date and time of the latest backup.",
-  "author_note": "Must cover Back Up Now from the Time Machine menu bar menu, the automatic-backup alternative, and the progress or latest-backup display. No source gap."},
-
- {"id": "gsft-backup_computer-03", "candidate_id": "gsft-backup_computer-03-v1", "task_id": "TR-127", "task_group": "backup_computer", "source_group": "apple_time_machine_mac", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "Mac", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I don't want to press buttons every time. I just want my Mac on Ventura to back up by itself to my external drive. What do I set?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a Mac on Ventura and a limit of no repeated manual backups, so the setup steps plus the backup frequency setting respect that limit using only the page's steps.",
-  "source_ref_ids": ["backup-mac-timemachine-setup", "backup-mac-timemachine-setup-options", "backup-mac-timemachine-frequency"],
-  "target": "Set it up with these steps:\n1. From the **Apple** menu, choose **System Settings**.\n2. Click **General** in the sidebar, then click **Time Machine** on the right.\n3. Click **Add Backup Disk**, or click the **Add** button.\n4. Select your connected storage device, then click **Set Up Disk**.\n5. If your Mac asks to erase the drive, either erase it or select a different backup disk or volume.\n6. To change how often backups run, choose **Open Time Machine Settings** from the **Time Machine** menu.\n7. Click **Options**, then choose a setting from the **Back up frequency** menu.",
-  "author_note": "Constraint: no repeated manual backups. Reply uses setup, the erase prompt, and the Back up frequency setting from the page. The page does not say what the frequency options are, so do not name them. No source gap."},
-
- {"id": "gsft-bluetooth_pair-01", "candidate_id": "gsft-bluetooth_pair-01-v1", "task_id": "TR-129", "task_group": "bluetooth_pair", "source_group": "google_android_bluetooth_pair", "behavior": "direct", "tags": ["distractor", "conditional"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm on an Android phone and I want to pair my new wireless earbuds. Where do I start?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an Android phone, so the Android Settings steps apply; the Windows passage is inapplicable and is included only as the distractor.",
-  "source_ref_ids": ["bluetooth-android-pair", "bluetooth-windows-pair"],
-  "target": "Pair the earbuds from your Android Bluetooth settings:\n1. From the top of the screen, swipe down.\n2. Touch and hold **Bluetooth**.\n3. Tap **Pair new device**.\n4. If there is no **Pair new device**, check under **Available devices**, or tap **More**, then **Refresh**.\n5. Tap the name of the Bluetooth device.\n6. Follow the on-screen instructions.\nIf you see a notification to pair, automatically connect your Bluetooth devices with Fast Pair. Some of these steps work only on Android 15 and up.",
-  "author_note": "Must cover the Settings pairing steps, the missing Pair new device branch, the Fast Pair notification branch, and the Android 15 condition. The page does not attach the Android 15 condition to a specific step, so the line stays general. No other gap."},
-
- {"id": "gsft-bluetooth_pair-02", "candidate_id": "gsft-bluetooth_pair-02-v1", "task_id": "TR-154", "task_group": "bluetooth_pair", "source_group": "microsoft_windows_bluetooth_pair", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "Windows 11", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm on Windows 11 and want to add my new wireless keyboard. It's turned on. How do I connect it?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Windows 11 and a device to add, so the Windows 11 pairing steps answer directly; the Bluetooth and discovery conditions are part of the same page section.",
-  "source_ref_ids": ["bluetooth-windows-pair", "bluetooth-windows-discovery"],
-  "target": "Add the keyboard on Windows 11:\n1. Make sure the keyboard is discoverable. Check its documentation for how.\n2. On the taskbar, click the **Network**, **Sound**, or **Battery** icon next to the time and date.\n3. Select the **Manage Bluetooth devices** chevron on the **Bluetooth** quick setting.\n4. Under **New devices**, select your keyboard. If **New devices** doesn't appear, scroll through **Your devices**.\n5. Follow additional instructions if they appear, then select **Done**.\nBluetooth must be turned on. If it is off, turn it on from the **Bluetooth** quick setting, or go to **Settings**, then **Bluetooth & devices**. If the keyboard is not in the list, the Bluetooth devices discovery setting might need to be set to Advanced. To learn how, see Fix Bluetooth problems in Windows.",
-  "author_note": "Covers the five pairing steps, the Bluetooth-on condition, and the discovery condition. The word Advanced is from a page summary, not an exact quote; check it if the reviewer asks. The taskbar and New devices scroll wording is paraphrased."},
-
- {"id": "gsft-bluetooth_pair-03", "candidate_id": "gsft-bluetooth_pair-03-v1", "task_id": "TR-175", "task_group": "bluetooth_pair", "source_group": "google_android_bluetooth_pair", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "unspecified", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I want to hook up my new wireless headset and the thing just won't connect. Can you tell me how to do it?"}],
-  "decision": {"mode": "clarify", "question": "Is this on an Android phone, a Mac, or a Windows 11 PC?"},
-  "decision_basis": "The user does not name the device, and the Android, Mac and Windows passages give different steps, so one question is needed before answering.",
-  "source_ref_ids": ["bluetooth-android-pair", "bluetooth-mac-connect", "bluetooth-windows-pair"],
-  "target": "Is this on an Android phone, a Mac, or a Windows 11 PC?",
-  "author_note": "Clarify route. Three refs show the steps differ by device. No gap."},
-
- {"id": "gsft-bluetooth_pair-04", "candidate_id": "gsft-bluetooth_pair-04-v1", "task_id": "TR-129", "task_group": "bluetooth_pair", "source_group": "apple_bluetooth_mac", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "unspecified", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Need to pair my wireless mouse with my computer. The mouse is charged but it's not connecting."}],
-  "decision": {"mode": "clarify", "question": "Is your computer a Mac or a Windows 11 PC?"},
-  "decision_basis": "The user says computer but not Mac or Windows, and the Mac and Windows passages give different pairing steps, so the operating system must be asked first.",
-  "source_ref_ids": ["bluetooth-mac-connect", "bluetooth-windows-pair"],
-  "target": "Is your computer a Mac or a Windows 11 PC?",
-  "author_note": "Clarify route. Mac and Windows refs show the difference. No gap."},
-
- {"id": "gsft-bluetooth_pair-05", "candidate_id": "gsft-bluetooth_pair-05-v1", "task_id": "TR-175", "task_group": "bluetooth_pair", "source_group": "apple_bluetooth_mac", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "unspecified", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Can you help me connect my Bluetooth speaker to my laptop? I can't find the right setting."}],
-  "decision": {"mode": "clarify", "question": "Is your laptop a Mac or a Windows 11 PC?"},
-  "decision_basis": "The user says laptop without naming the operating system, and the Mac and Windows passages open different settings screens, so one question is needed.",
-  "source_ref_ids": ["bluetooth-mac-connect", "bluetooth-windows-pair"],
-  "target": "Is your laptop a Mac or a Windows 11 PC?",
-  "author_note": "Clarify route. Mac and Windows refs differ in the settings path. No gap."},
-
- {"id": "gsft-bluetooth_pair-06", "candidate_id": "gsft-bluetooth_pair-06-v1", "task_id": "TR-154", "task_group": "bluetooth_pair", "source_group": "apple_bluetooth_mac", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "Mac", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm on my MacBook. I want the quickest way to connect my wireless headphones, and I don't want to dig through Settings."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a MacBook and a limit of avoiding the Settings app, so the Control Center route on the page respects that limit.",
-  "source_ref_ids": ["bluetooth-mac-connect"],
-  "target": "Connect from Control Center:\n1. Make sure the headphones are turned on and discoverable. Their documentation explains how.\n2. Click in **Control Center** and select the headphones.",
-  "author_note": "Constraint: avoid Settings. Uses only the Control Center sentence and the discoverable step from the page. No gap, but the page does not say whether the headphones must already be paired first."},
-
- {"id": "gsft-bluetooth_pair-07", "candidate_id": "gsft-bluetooth_pair-07-v1", "task_id": "TR-175", "task_group": "bluetooth_pair", "source_group": "microsoft_windows_bluetooth_pair", "behavior": "multiturn", "tags": ["conditional"], "category": "technical_support", "platform": "Windows 11", "sensitive": false, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "How do I pair my earbuds on Windows 11?"},
-   {"role": "assistant", "content": "1. Turn on the earbuds and make them discoverable.\n2. On the taskbar, click the Network, Sound, or Battery icon.\n3. Select the Manage Bluetooth devices chevron on the Bluetooth quick setting, then select your earbuds under New devices.\n4. Follow additional instructions if they appear, then select Done."},
-   {"role": "user", "content": "I did those steps and Bluetooth is on, but my earbuds still don't show up in the list."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Windows 11 and what happened after the earlier steps, so the page's discovery condition applies to this failure.",
-  "source_ref_ids": ["bluetooth-windows-pair", "bluetooth-windows-discovery"],
-  "target": "Here is what to check next:\n1. Make sure the earbuds are turned on and discoverable. Their documentation explains how.\n2. If the earbuds still aren't in the list, the Bluetooth devices discovery setting might need to be set to Advanced. To learn how, see Fix Bluetooth problems in Windows.",
-  "author_note": "Multiturn. The reply must not repeat that Bluetooth is on or that the steps were followed. Covers the discoverable step and the discovery condition. The word Advanced is from a page summary, not an exact quote."},
-
- {"id": "gsft-password_manager-01", "candidate_id": "gsft-password_manager-01-v1", "task_id": "TR-131", "task_group": "password_manager", "source_group": "apple_passwords_iphone", "behavior": "direct", "tags": ["safety", "distractor"], "category": "online_services", "platform": "iPhone", "sensitive": true, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "Someone may know the password for my email account. I have an iPhone with iOS 18. Where do I change the saved password?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone on iOS 18 and asks to change a saved password, so the iOS 18 Passwords app steps answer directly; the iOS 17 passage is inapplicable and is the distractor.",
-  "source_ref_ids": ["password-iphone-passwords-app", "password-iphone-settings-ios17"],
-  "target": "Update the saved password for that account first.\n1. Open the Passwords app.\n2. Unlock with Face ID or Touch ID, or enter your passcode.\n3. Choose a category or Shared Group, then select the website or app.\n4. Tap **Edit**, then tap **Change Password**.",
-  "author_note": "Safety: the protective action (change the password) comes first. The sources cover only the Passwords app and say nothing about changing the password with the email provider, so do not claim that. The Shared Group choice is the page's wording, so keep it. No other gap."},
-
- {"id": "gsft-password_manager-02", "candidate_id": "gsft-password_manager-02-v1", "task_id": "TR-192", "task_group": "password_manager", "source_group": "apple_passwords_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "unspecified", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Where do I see the password I saved for my library account? I can't find it anywhere."}],
-  "decision": {"mode": "clarify", "question": "Are you using an iPhone, or Chrome on a computer?"},
-  "decision_basis": "The user does not name the device or app, and the iPhone Passwords app and Chrome passwords steps differ, so one question is needed.",
-  "source_ref_ids": ["password-iphone-passwords-app", "password-chrome-manage"],
-  "target": "Are you using an iPhone, or Chrome on a computer?",
-  "author_note": "Clarify route. The iPhone and Chrome refs show the steps differ. No gap."},
-
- {"id": "gsft-password_manager-03", "candidate_id": "gsft-password_manager-03-v1", "task_id": "TR-192", "task_group": "password_manager", "source_group": "google_chrome_passwords_computer", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "unspecified", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I saved the password for my school portal a while ago and now I need it back. Can you tell me how to look it up?"}],
-  "decision": {"mode": "clarify", "question": "Is this on an iPhone or in Chrome on a computer?"},
-  "decision_basis": "The user does not say which device or app holds the saved password, and the two sources open saved passwords in different places, so one question is needed.",
-  "source_ref_ids": ["password-chrome-manage", "password-iphone-passwords-app"],
-  "target": "Is this on an iPhone or in Chrome on a computer?",
-  "author_note": "Clarify route. Chrome and iPhone refs differ. No gap."},
-
- {"id": "gsft-password_manager-04", "candidate_id": "gsft-password_manager-04-v1", "task_id": "TR-192", "task_group": "password_manager", "source_group": "google_chrome_passwords_computer", "behavior": "direct", "tags": [], "category": "online_services", "platform": "Chrome on computer", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm in Chrome on my Windows laptop and I need to see the password I saved for my power company account."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Chrome on a computer and asks to view one saved password, which the Chrome show-password steps answer directly.",
-  "source_ref_ids": ["password-chrome-manage"],
-  "target": "Open the saved password in Chrome:\n1. At the top right, select **More**, then **Passwords and autofill**, then **Google Password Manager**.\n2. Under **Passwords**, select the password.\n3. On the right of your password, select **Show password**.",
-  "author_note": "Covers the menu path, the password selection, and Show password. The Windows laptop is consistent with Chrome on a computer. No gap."},
-
- {"id": "gsft-password_manager-05", "candidate_id": "gsft-password_manager-05-v1", "task_id": "TR-131", "task_group": "password_manager", "source_group": "google_chrome_passwords_computer", "behavior": "constraint", "tags": [], "category": "online_services", "platform": "Chrome on computer", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "This is a shared laptop and I don't want Chrome offering to save my passwords anymore. How do I turn that off?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Chrome on a shared laptop and a limit of no password saving, so the offer-to-save setting respects that limit using the page's steps.",
-  "source_ref_ids": ["password-chrome-offer-to-save", "password-chrome-manage"],
-  "target": "Turn off Chrome's offer to save passwords:\n1. At the top right, select **More**, then **Passwords and autofill**, then **Google Password Manager**.\n2. Select **Settings**.\n3. Change **Offer to save passwords and passkeys** to off.",
-  "author_note": "Constraint: no password saving. Uses the page's setting path and the Offer to save passwords and passkeys option. The page does not say what happens to passwords already saved, so do not say."}
-]}
+{
+  "batch": "b21",
+  "candidates": [
+    {
+      "id": "gsft-backup_computer-01",
+      "candidate_id": "gsft-backup_computer-01-v1",
+      "task_id": "TR-127",
+      "task_group": "backup_computer",
+      "source_group": "apple_time_machine_mac",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I bought an external drive to back up my MacBook Air, which runs macOS Sonoma. How do I set it up for Time Machine?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Mac on macOS Sonoma, which is a later version than the macOS Ventura 13 or later steps on the page, so the setup steps answer directly.",
+      "source_ref_ids": [
+        "backup-mac-timemachine-connect",
+        "backup-mac-timemachine-setup",
+        "backup-mac-timemachine-setup-options"
+      ],
+      "target": "Here is how to set up your drive for Time Machine.\n1. Plug in an external drive with at least twice your Mac's storage, and use it only for backups.\n2. From the **Apple** menu, choose **System Settings**.\n3. Click **General** in the sidebar, then click **Time Machine** on the right.\n4. Click **Add Backup Disk**, or click the **Add** button.\n5. Select your connected storage device, then click **Set Up Disk**.\n6. If your Mac asks to erase the drive, either erase it or select a different backup disk or volume.\n7. If your Mac asks whether to claim backups from another computer, claim them if you want them to become part of this Mac's backups.\n8. If you turn on **Encrypt Backup**, you will be asked to create a backup password. You will need it if you later restore files from the backup.",
+      "author_note": "Covers the drive requirement, System Settings > General > Time Machine, Add Backup Disk, Set Up Disk, the erase or different-disk prompt, claiming old backups, and the Encrypt Backup password. No source gap."
+    },
+    {
+      "id": "gsft-backup_computer-02",
+      "candidate_id": "gsft-backup_computer-02-v1",
+      "task_id": "TR-127",
+      "task_group": "backup_computer",
+      "source_group": "apple_time_machine_mac",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Mac runs macOS Ventura and I want Time Machine to back up right now, not later. How do I start it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Mac on macOS Ventura and asks for a backup now, which the Make a backup section answers directly.",
+      "source_ref_ids": [
+        "backup-mac-timemachine-backup-now"
+      ],
+      "target": "Start the backup from the menu bar:\n1. Choose **Back Up Now** from the **Time Machine** menu in the menu bar.\nOr wait for the next automatic backup if you do not want to start one now. The menu shows how much of the current backup is done, or the date and time of the latest backup.",
+      "author_note": "Must cover Back Up Now from the Time Machine menu bar menu, the automatic-backup alternative, and the progress or latest-backup display. No source gap."
+    },
+    {
+      "id": "gsft-backup_computer-03",
+      "candidate_id": "gsft-backup_computer-03-v1",
+      "task_id": "TR-127",
+      "task_group": "backup_computer",
+      "source_group": "apple_time_machine_mac",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I don't want to press buttons every time. I just want my Mac on Ventura to back up by itself to my external drive. What do I set?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Mac on Ventura and a limit of no repeated manual backups, so the setup steps plus the backup frequency setting respect that limit using only the page's steps.",
+      "source_ref_ids": [
+        "backup-mac-timemachine-setup",
+        "backup-mac-timemachine-setup-options",
+        "backup-mac-timemachine-frequency"
+      ],
+      "target": "Set it up with these steps:\n1. From the **Apple** menu, choose **System Settings**.\n2. Click **General** in the sidebar, then click **Time Machine** on the right.\n3. Click **Add Backup Disk**, or click the **Add** button.\n4. Select your connected storage device, then click **Set Up Disk**.\n5. If your Mac asks to erase the drive, either erase it or select a different backup disk or volume.\n6. To change how often backups run, choose **Open Time Machine Settings** from the **Time Machine** menu.\n7. Click **Options**, then choose a setting from the **Back up frequency** menu.",
+      "author_note": "Constraint: no repeated manual backups. Reply uses setup, the erase prompt, and the Back up frequency setting from the page. The page does not say what the frequency options are, so do not name them. No source gap."
+    },
+    {
+      "id": "gsft-bluetooth_pair-01",
+      "candidate_id": "gsft-bluetooth_pair-01-v1",
+      "task_id": "TR-129",
+      "task_group": "bluetooth_pair",
+      "source_group": "google_android_bluetooth_pair",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on an Android phone and I want to pair my new wireless earbuds. Where do I start?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an Android phone, so the Android Settings steps apply; the Windows passage is inapplicable and is included only as the distractor.",
+      "source_ref_ids": [
+        "bluetooth-android-pair",
+        "bluetooth-windows-pair"
+      ],
+      "target": "Pair the earbuds from your Android Bluetooth settings:\n1. From the top of the screen, swipe down.\n2. Touch and hold **Bluetooth**.\n3. Tap **Pair new device**.\n4. If there is no **Pair new device**, check under **Available devices**, or tap **More**, then **Refresh**.\n5. Tap the name of the Bluetooth device.\n6. Follow the on-screen instructions.\nIf you see a notification to pair, automatically connect your Bluetooth devices with Fast Pair. Some of these steps work only on Android 15 and up.",
+      "author_note": "Must cover the Settings pairing steps, the missing Pair new device branch, the Fast Pair notification branch, and the Android 15 condition. The page does not attach the Android 15 condition to a specific step, so the line stays general. No other gap."
+    },
+    {
+      "id": "gsft-bluetooth_pair-02",
+      "candidate_id": "gsft-bluetooth_pair-02-v1",
+      "task_id": "TR-154",
+      "task_group": "bluetooth_pair",
+      "source_group": "microsoft_windows_bluetooth_pair",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on Windows 11 and want to add my new wireless keyboard. It's turned on. How do I connect it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and a device to add, so the Windows 11 pairing steps answer directly; the Bluetooth and discovery conditions are part of the same page section.",
+      "source_ref_ids": [
+        "bluetooth-windows-pair",
+        "bluetooth-windows-discovery"
+      ],
+      "target": "Add the keyboard on Windows 11:\n1. Make sure the keyboard is discoverable. Check its documentation for how.\n2. On the taskbar, click the **Network**, **Sound**, or **Battery** icon next to the time and date.\n3. Select the **Manage Bluetooth devices** chevron on the **Bluetooth** quick setting.\n4. Under **New devices**, select your keyboard. If **New devices** doesn't appear, scroll through **Your devices**.\n5. Follow additional instructions if they appear, then select **Done**.\nBluetooth must be turned on. If it is off, turn it on from the **Bluetooth** quick setting, or go to **Settings**, then **Bluetooth & devices**. If the keyboard is not in the list, the Bluetooth devices discovery setting might need to be set to Advanced. To learn how, see Fix Bluetooth problems in Windows.",
+      "author_note": "Covers the five pairing steps, the Bluetooth-on condition, and the discovery condition. The word Advanced is from a page summary, not an exact quote; check it if the reviewer asks. The taskbar and New devices scroll wording is paraphrased."
+    },
+    {
+      "id": "gsft-bluetooth_pair-03",
+      "candidate_id": "gsft-bluetooth_pair-03-v1",
+      "task_id": "TR-175",
+      "task_group": "bluetooth_pair",
+      "source_group": "google_android_bluetooth_pair",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I want to hook up my new wireless headset and the thing just won't connect. Can you tell me how to do it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is this on an Android phone, a Mac, or a Windows 11 PC?"
+      },
+      "decision_basis": "The user does not name the device, and the Android, Mac and Windows passages give different steps, so one question is needed before answering.",
+      "source_ref_ids": [
+        "bluetooth-android-pair",
+        "bluetooth-mac-connect",
+        "bluetooth-windows-pair"
+      ],
+      "target": "Is this on an Android phone, a Mac, or a Windows 11 PC?",
+      "author_note": "Clarify route. Three refs show the steps differ by device. No gap."
+    },
+    {
+      "id": "gsft-bluetooth_pair-04",
+      "candidate_id": "gsft-bluetooth_pair-04-v1",
+      "task_id": "TR-129",
+      "task_group": "bluetooth_pair",
+      "source_group": "apple_bluetooth_mac",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Need to pair my wireless mouse with my computer. The mouse is charged but it's not connecting."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your computer a Mac or a Windows 11 PC?"
+      },
+      "decision_basis": "The user says computer but not Mac or Windows, and the Mac and Windows passages give different pairing steps, so the operating system must be asked first.",
+      "source_ref_ids": [
+        "bluetooth-mac-connect",
+        "bluetooth-windows-pair"
+      ],
+      "target": "Is your computer a Mac or a Windows 11 PC?",
+      "author_note": "Clarify route. Mac and Windows refs show the difference. No gap."
+    },
+    {
+      "id": "gsft-bluetooth_pair-05",
+      "candidate_id": "gsft-bluetooth_pair-05-v1",
+      "task_id": "TR-175",
+      "task_group": "bluetooth_pair",
+      "source_group": "apple_bluetooth_mac",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Can you help me connect my Bluetooth speaker to my laptop? I can't find the right setting."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your laptop a Mac or a Windows 11 PC?"
+      },
+      "decision_basis": "The user says laptop without naming the operating system, and the Mac and Windows passages open different settings screens, so one question is needed.",
+      "source_ref_ids": [
+        "bluetooth-mac-connect",
+        "bluetooth-windows-pair"
+      ],
+      "target": "Is your laptop a Mac or a Windows 11 PC?",
+      "author_note": "Clarify route. Mac and Windows refs differ in the settings path. No gap."
+    },
+    {
+      "id": "gsft-bluetooth_pair-06",
+      "candidate_id": "gsft-bluetooth_pair-06-v1",
+      "task_id": "TR-154",
+      "task_group": "bluetooth_pair",
+      "source_group": "apple_bluetooth_mac",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on my MacBook. I want the quickest way to connect my wireless headphones, and I don't want to dig through Settings."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a MacBook and a limit of avoiding the Settings app, so the Control Center route on the page respects that limit.",
+      "source_ref_ids": [
+        "bluetooth-mac-connect"
+      ],
+      "target": "Connect from Control Center:\n1. Make sure the headphones are turned on and discoverable. Their documentation explains how.\n2. Click in **Control Center** and select the headphones.",
+      "author_note": "Constraint: avoid Settings. Uses only the Control Center sentence and the discoverable step from the page. No gap, but the page does not say whether the headphones must already be paired first."
+    },
+    {
+      "id": "gsft-bluetooth_pair-07",
+      "candidate_id": "gsft-bluetooth_pair-07-v1",
+      "task_id": "TR-175",
+      "task_group": "bluetooth_pair",
+      "source_group": "microsoft_windows_bluetooth_pair",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "How do I pair my earbuds on Windows 11?"
+        },
+        {
+          "role": "assistant",
+          "content": "1. Turn on the earbuds and make them discoverable.\n2. On the taskbar, click the Network, Sound, or Battery icon.\n3. Select the Manage Bluetooth devices chevron on the Bluetooth quick setting, then select your earbuds under New devices.\n4. Follow additional instructions if they appear, then select Done."
+        },
+        {
+          "role": "user",
+          "content": "I did those steps and Bluetooth is on, but my earbuds still don't show up in the list."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and what happened after the earlier steps, so the page's discovery condition applies to this failure.",
+      "source_ref_ids": [
+        "bluetooth-windows-pair",
+        "bluetooth-windows-discovery"
+      ],
+      "target": "Here is what to check next:\n1. Make sure the earbuds are turned on and discoverable. Their documentation explains how.\n2. If the earbuds still aren't in the list, the Bluetooth devices discovery setting might need to be set to Advanced. To learn how, see Fix Bluetooth problems in Windows.",
+      "author_note": "Multiturn. The reply must not repeat that Bluetooth is on or that the steps were followed. Covers the discoverable step and the discovery condition. The word Advanced is from a page summary, not an exact quote."
+    },
+    {
+      "id": "gsft-password_manager-01",
+      "candidate_id": "gsft-password_manager-01-v1",
+      "task_id": "TR-131",
+      "task_group": "password_manager",
+      "source_group": "apple_passwords_iphone",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "distractor"
+      ],
+      "category": "online_services",
+      "platform": "iPhone",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Someone may know the password for my email account. I have an iPhone with iOS 18. Where do I change the saved password?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone on iOS 18 and asks to change a saved password, so the iOS 18 Passwords app steps answer directly; the iOS 17 passage is inapplicable and is the distractor.",
+      "source_ref_ids": [
+        "password-iphone-passwords-app",
+        "password-iphone-settings-ios17"
+      ],
+      "target": "Update the saved password for that account first.\n1. Open the Passwords app.\n2. Unlock with Face ID or Touch ID, or enter your passcode.\n3. Choose a category or Shared Group, then select the website or app.\n4. Tap **Edit**, then tap **Change Password**.",
+      "author_note": "Safety: the protective action (change the password) comes first. The sources cover only the Passwords app and say nothing about changing the password with the email provider, so do not claim that. The Shared Group choice is the page's wording, so keep it. No other gap."
+    },
+    {
+      "id": "gsft-password_manager-02",
+      "candidate_id": "gsft-password_manager-02-v1",
+      "task_id": "TR-192",
+      "task_group": "password_manager",
+      "source_group": "apple_passwords_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "online_services",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Where do I see the password I saved for my library account? I can't find it anywhere."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Are you using an iPhone, or Chrome on a computer?"
+      },
+      "decision_basis": "The user does not name the device or app, and the iPhone Passwords app and Chrome passwords steps differ, so one question is needed.",
+      "source_ref_ids": [
+        "password-iphone-passwords-app",
+        "password-chrome-manage"
+      ],
+      "target": "Are you using an iPhone, or Chrome on a computer?",
+      "author_note": "Clarify route. The iPhone and Chrome refs show the steps differ. No gap."
+    },
+    {
+      "id": "gsft-password_manager-03",
+      "candidate_id": "gsft-password_manager-03-v1",
+      "task_id": "TR-192",
+      "task_group": "password_manager",
+      "source_group": "google_chrome_passwords_computer",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "online_services",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I saved the password for my school portal a while ago and now I need it back. Can you tell me how to look it up?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is this on an iPhone or in Chrome on a computer?"
+      },
+      "decision_basis": "The user does not say which device or app holds the saved password, and the two sources open saved passwords in different places, so one question is needed.",
+      "source_ref_ids": [
+        "password-chrome-manage",
+        "password-iphone-passwords-app"
+      ],
+      "target": "Is this on an iPhone or in Chrome on a computer?",
+      "author_note": "Clarify route. Chrome and iPhone refs differ. No gap."
+    },
+    {
+      "id": "gsft-password_manager-04",
+      "candidate_id": "gsft-password_manager-04-v1",
+      "task_id": "TR-192",
+      "task_group": "password_manager",
+      "source_group": "google_chrome_passwords_computer",
+      "behavior": "direct",
+      "tags": [],
+      "category": "online_services",
+      "platform": "Chrome on computer",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in Chrome on my Windows laptop and I need to see the password I saved for my power company account."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Chrome on a computer and asks to view one saved password, which the Chrome show-password steps answer directly.",
+      "source_ref_ids": [
+        "password-chrome-manage"
+      ],
+      "target": "Open the saved password in Chrome:\n1. At the top right, select **More**, then **Passwords and autofill**, then **Google Password Manager**.\n2. Under **Passwords**, select the password.\n3. On the right of your password, select **Show password**.",
+      "author_note": "Covers the menu path, the password selection, and Show password. The Windows laptop is consistent with Chrome on a computer. No gap."
+    },
+    {
+      "id": "gsft-password_manager-05",
+      "candidate_id": "gsft-password_manager-05-v1",
+      "task_id": "TR-131",
+      "task_group": "password_manager",
+      "source_group": "google_chrome_passwords_computer",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "online_services",
+      "platform": "Chrome on computer",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "This is a shared laptop and I don't want Chrome offering to save my passwords anymore. How do I turn that off?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Chrome on a shared laptop and a limit of no password saving, so the offer-to-save setting respects that limit using the page's steps.",
+      "source_ref_ids": [
+        "password-chrome-offer-to-save",
+        "password-chrome-manage"
+      ],
+      "target": "Turn off Chrome's offer to save passwords:\n1. At the top right, select **More**, then **Passwords and autofill**, then **Google Password Manager**.\n2. Select **Settings**.\n3. Change **Offer to save passwords and passkeys** to off.",
+      "author_note": "Constraint: no password saving. Uses the page's setting path and the Offer to save passwords and passkeys option. The page does not say what happens to passwords already saved, so do not say."
+    },
+    {
+      "id": "gsft-bluetooth_pair-06",
+      "candidate_id": "gsft-bluetooth_pair-06-v2",
+      "task_id": "TR-154",
+      "task_group": "bluetooth_pair",
+      "source_group": "apple_bluetooth_mac",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on my MacBook. I want the quickest way to connect my wireless headphones, and I don't want to dig through Settings."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a MacBook and a limit of avoiding the Settings app, so the Control Center route on the page respects that limit.",
+      "source_ref_ids": [
+        "bluetooth-mac-connect"
+      ],
+      "target": "Connect from Control Center:\n1. Make sure the headphones are turned on and discoverable. Their documentation explains how.\n2. Click in **Control Center** and select the headphones.\n3. If prompted, click Accept, or enter the number sequence shown and press Enter.",
+      "author_note": "Constraint: avoid Settings. Uses the Control Center sentence, the discoverable step and the pairing prompt from the page. No gap, but the page does not say whether the headphones must already be paired first.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-bluetooth_pair-06-v1",
+          "to_candidate": "gsft-bluetooth_pair-06-v2",
+          "reason": "Review found the passage's pairing prompt step ('If prompted, click Accept...') missing from the target.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-bluetooth_pair-06-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-bluetooth_pair-07",
+      "candidate_id": "gsft-bluetooth_pair-07-v2",
+      "task_id": "TR-175",
+      "task_group": "bluetooth_pair",
+      "source_group": "microsoft_windows_bluetooth_pair",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "How do I pair my earbuds on Windows 11?"
+        },
+        {
+          "role": "assistant",
+          "content": "1. Turn on the earbuds and make them discoverable.\n2. On the taskbar, click the Network, Sound, or Battery icon.\n3. Select the Manage Bluetooth devices chevron on the Bluetooth quick setting, then select your earbuds under New devices.\n4. Follow additional instructions if they appear, then select Done."
+        },
+        {
+          "role": "user",
+          "content": "I did those steps and Bluetooth is on, but my earbuds still don't show up in the list."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and what happened after the earlier steps, so the page's discovery condition applies to this failure.",
+      "source_ref_ids": [
+        "bluetooth-windows-pair",
+        "bluetooth-windows-discovery"
+      ],
+      "target": "Here is what to check next:\n1. If the earbuds still don't appear under New devices, scroll through Your devices.\n2. If the earbuds still aren't in the list, the Bluetooth devices discovery setting might need to be set to Advanced. To learn how, see Fix Bluetooth problems in Windows.",
+      "author_note": "Multiturn. The reply must not repeat that Bluetooth is on or that the earlier steps were followed. Covers the New devices scroll fallback and the discovery condition. The word Advanced is from a page summary, not an exact quote.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-bluetooth_pair-07-v1",
+          "to_candidate": "gsft-bluetooth_pair-07-v2",
+          "reason": "Review found the completed discoverable step repeated and the page's New devices scroll fallback omitted.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-bluetooth_pair-07-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-password_manager-01",
+      "candidate_id": "gsft-password_manager-01-v2",
+      "task_id": "TR-131",
+      "task_group": "password_manager",
+      "source_group": "apple_passwords_iphone",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "distractor"
+      ],
+      "category": "online_services",
+      "platform": "iPhone",
+      "sensitive": true,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Someone may know the password for my email account. I have an iPhone with iOS 18. Where do I change the saved password?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone on iOS 18 and asks to change a saved password, so the iOS 18 Passwords app steps answer directly; the iOS 17 passage is inapplicable and is the distractor.",
+      "source_ref_ids": [
+        "password-iphone-passwords-app",
+        "password-iphone-settings-ios17"
+      ],
+      "target": "Update the saved password for that account first.\n1. Open the Passwords app.\n2. Unlock with Face ID or Touch ID, or enter your passcode.\n3. Find your email account in the list, then select it.\n4. Tap **Edit**, then tap **Change Password**.",
+      "author_note": "Safety: the protective action (change the password) comes first. The sources cover only the Passwords app and say nothing about changing the password with the email provider, so do not claim that. Step 3 names only the email account, per the review. No other gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-password_manager-01-v1",
+          "to_candidate": "gsft-password_manager-01-v2",
+          "reason": "Review found step 3 uses unexplained terms ('category', 'Shared Group') that the user does not need.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-password_manager-01-v1"
+        }
+      ]
+    }
+  ]
+}
