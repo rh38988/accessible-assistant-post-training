@@ -20,16 +20,13 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "gsft-magnifier-01: long: about 913 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)"
+  "gsft-magnifier-01: long: about 914 tokens by character estimate (limit 1028, exact check needs the Qwen tokenizer)"
  ],
  "hashes": {
   "gsft-find_lost_phone-01": "b58b32634e347b53a2b9d243f56d09d70471bd03884aaec2e6b94112d304b8bc",
@@ -39,18 +36,18 @@
   "gsft-find_lost_phone-05": "0bfc26b09a3a3ae29dc79f4565d5a749cf76aff8b4e866723a2c3f45b364cd81",
   "gsft-find_lost_phone-06": "7d958ab213f364c4b2a3688d1b7b2a322a967d3494eb5e0a95634d7596847030",
   "gsft-find_lost_phone-07": "57d80e909e9a4b0f1a50fd5a67f2f23a5c7bedb4656024322494f451118db4f5",
-  "gsft-magnifier-01": "78254efd709df68a00a8a819fd9d02dfb7dd3744510267dfe4c090f08ad9c27e",
-  "gsft-magnifier-02": "c984919e8e243e3296ec86d92a7a6df1cc67066c8f75d7bfa0c5a49a52ee36a2",
-  "gsft-magnifier-03": "d08626651b75553908512a5b2145ee36e00de9cfeddc805c7b40e767f273cb85",
-  "gsft-magnifier-04": "b59bc5bdd13a0b9be3b5e8ef309f9b769465e4fde1a694bef31e642fe1c6b912",
-  "gsft-magnifier-05": "dd2d59c938c7e23a16950e9a7006811feb91a8e6b99ba87eb9f501e72fabc860",
-  "gsft-magnifier-06": "74be59e85872bb9e29592d0dd626d537e071205aa960fde5ceacd2ac8a8b17ba",
-  "gsft-magnifier-07": "ad3a52823f35628cdce575f9dbcaf1c30170430d88d6e0f48cb186a16b9900ce",
-  "gsft-scan_qr-01": "3844d6ac7121364aefdd0343700ee8869dcf987a4e5a0a95be8dbeef05093c02",
-  "gsft-scan_qr-02": "96ea29d8028b3179d967d2cd3b1a7f69bf9531c7c8d842bff53cfb7d51b2716d",
+  "gsft-magnifier-01": "efb27af9d0640c736ad8d4f012aa097cd2c84972ea96a73bada38200f408eee5",
+  "gsft-magnifier-02": "814d3633ed380cb1742581c774d6c183d5bcb3abf0cb9985c992544d0331e587",
+  "gsft-magnifier-03": "155f989856aed52defbfae515ba595ffdca33d1007d47f7dccb0373ee0c207f3",
+  "gsft-magnifier-04": "cd76a2c55e141fa64fe1fa6a14fbbaef5d508e60d329110000981af4c75222d2",
+  "gsft-magnifier-05": "19ca6a78bc83cd6b744bdd3f349dc30cd8078179440bd17e3a15b091b62a9ddf",
+  "gsft-magnifier-06": "c446a24badaa86197a66d4862e3e2faf31280aa2f129ca48930d4d613c3d6422",
+  "gsft-magnifier-07": "46ff07d90e20b4e42ffdce194808f4a1a02d3fa08a4d9315063d08238b5c3923",
+  "gsft-scan_qr-01": "6c625d8720dcb5d737cb977ef3e5462dd92770c51ce52636f7dac4badd13c7ed",
+  "gsft-scan_qr-02": "9e78137809754c62f0cdba33bcecf4b380ee12af804642cc98fd2a108bcb4252",
   "gsft-scan_qr-03": "3365a699a41141102072ad04ad3daf195d144537fb7b2187d85334a854f16217",
   "gsft-scan_qr-04": "b93b6d016c7babaabcbd80bcd867d60667b386cfb47481c91db45502fb6a2f7f",
-  "gsft-scan_qr-05": "e92d07bd5c0d2ee4c4e3194f1b61548e27207d4979f6d4c9558a6b2924bfa65c",
+  "gsft-scan_qr-05": "472510b752a5b2274c611b1b8815ca1605dd683052051352042921fcac01c12b",
   "gsft-scan_qr-06": "c56c08bbf760175e1b0f89229d5b8271213dea0455f6be6076035c0674d7859f"
  }
 }

@@ -16,16 +16,16 @@
    "section": "Join a Family Sharing group; If you can't accept the invitation",
    "applicability": "iPhone",
    "platform": "iPhone", "app": "Settings",
-   "verified_excerpt": "You can be a part of only one Family Sharing group at a time. If you can't accept the invitation, check if someone else joined a Family Sharing group with your Apple Account.",
-   "model_visible_text": "On iPhone: You'll get an invitation to join a Family Sharing group by email or in a text message. You can respond directly from that invitation. Open Settings, tap your name, then tap Invitations. To accept, complete the onscreen instructions. You may be asked to confirm your Apple Account information and opt in to features the group has set up. You can be a part of only one Family Sharing group at a time. If you can't accept the invitation, check if someone else joined a Family Sharing group with your Apple Account.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the section 'Join a Family Sharing group'; the excerpt is quoted from the fetch result; apostrophes straight; no other edits."},
+   "verified_excerpt": "You can be a part of only one Family Sharing group at a time.",
+   "model_visible_text": "On iPhone: You'll get an invitation to join a Family Sharing group by email or in a text message. You can respond directly from that invitation. Open Settings, tap your name, then tap Invitations. To accept, complete the onscreen instructions. You may be asked to confirm your Apple Account information and opt in to any features or services that your Family Sharing group has set up. You can be a part of only one Family Sharing group at a time. If you can't accept the invitation, check if someone else joined a Family Sharing group with your Apple Account.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the section 'Join a Family Sharing group'; the excerpt is quoted from the fetch result; apostrophes straight; no other edits. Review round 1: the features sentence was corrected to the page wording and the excerpt was shortened to one page sentence within the 20-word limit."},
   {"ref_id": "family-sharing-iphone-age", "source_group": "apple_family_sharing_age_footnote",
    "organization": "Apple", "title": "Set up Family Sharing (title not confirmed by WebFetch)", "url": "https://support.apple.com/en-us/108380",
    "access_date": "2026-11-17", "page_update_date": null,
    "section": "Footnote under Set a member in your Family Sharing group as a parent/guardian",
    "applicability": "iPhone; age rules depend on the state, country or region",
    "platform": "iPhone", "app": "Settings",
-   "verified_excerpt": "Age varies by state, country, or region. Where legally required, an Apple Account created for a child under 18 needs to be part of a Family Sharing group.",
+   "verified_excerpt": "Age varies by state, country, or region.",
    "model_visible_text": "On iPhone: Age varies by state, country, or region. Where legally required, an Apple Account created for a child under 18 needs to be part of a Family Sharing group.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; footnote text quoted from the fetch result; apostrophes straight; no other edits."}
+   "extraction_method": "WebFetch of the official page on 2026-11-17; footnote text quoted from the fetch result; apostrophes straight; no other edits. Review round 1: the excerpt was shortened to the first page sentence to meet the 20-word limit."}
  ]}

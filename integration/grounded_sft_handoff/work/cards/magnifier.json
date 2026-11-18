@@ -1,7 +1,9 @@
-{"task_group": "magnifier",
+{
+ "task_group": "magnifier",
  "source_gaps": "Android: the page says some steps require Android 13 or later but does not say which steps, so no version is claimed. Windows 11: the zoom page gives no Windows 11-specific steps and names no Settings labels, so only its keyboard and mouse zoom steps are used. Chromebook: the page does not say whether the zoom keys need Full screen magnifier turned on, so no such requirement is stated. Excerpts were taken from WebFetch output, which is processed text; they were not byte-checked against the live HTML.",
  "source_refs": [
-  {"ref_id": "magnifier-android-shortcut",
+  {
+   "ref_id": "magnifier-android-shortcut",
    "source_group": "google_android_magnification",
    "organization": "Google",
    "title": "Use magnification on your screen",
@@ -14,8 +16,10 @@
    "app": "Settings",
    "verified_excerpt": "Turn on Magnification shortcut.",
    "model_visible_text": "On Android: 1. Open your device's Settings app. 2. Tap Accessibility, then Magnification. 3. Turn on Magnification shortcut. 4. Optionally, tap Magnification shortcut to choose a trigger. Accessibility button: uses the Accessibility icon at the bottom of the screen. The button's position can vary with your navigation setup. Hold volume keys: press and hold both volume keys. Triple-tap screen: quickly tap the screen 3 times and hold the gesture. This shortcut may slow down your device.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-android-zoom",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-android-zoom",
    "source_group": "google_android_magnification",
    "organization": "Google",
    "title": "Use magnification on your screen",
@@ -26,24 +30,28 @@
    "applicability": "Android; full-screen magnification",
    "platform": "Android",
    "app": "Accessibility",
-   "verified_excerpt": "Pinch with 2 fingers to adjust the zoom.",
+   "verified_excerpt": "Pinch with 2 fingers to adjust zoom.",
    "model_visible_text": "On Android: 1. Tap the Accessibility icon, or your custom shortcut. 2. Tap anywhere except the keyboard or navigation bar. 3. Drag with 2 fingers to move around the screen. 4. Pinch with 2 fingers to adjust the zoom. 5. Use your magnification shortcut again to stop. Magnification can go up to 8x.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-chromebook-settings",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-chromebook-settings",
    "source_group": "google_chromebook_magnifier",
    "organization": "Google",
    "title": "Zoom in or magnify your Chromebook screen",
    "url": "https://support.google.com/chromebook/answer/6320705?hl=en",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Turn on Full-Screen Magnifier",
+   "section": "Magnify your whole screen",
    "applicability": "Chromebook",
    "platform": "Chromebook",
    "app": "Settings",
-   "verified_excerpt": "Under \"Display,\" turn on \"Full screen magnifier.\"",
+   "verified_excerpt": "Under Display, turn on Full screen magnifier.",
    "model_visible_text": "On Chromebook: 1. Select the time at the bottom right, or press Alt + Shift + S. 2. Select Settings, then Accessibility. 3. Under 'Display', turn on 'Full screen magnifier'. 4. Choose how the magnified view moves with your mouse: 'Move screen continuously as mouse moves', 'Move screen keeping mouse at center of screen', or 'Move screen when mouse touches edge of screen'.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-chromebook-quick",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-chromebook-quick",
    "source_group": "google_chromebook_magnifier",
    "organization": "Google",
    "title": "Zoom in or magnify your Chromebook screen",
@@ -56,8 +64,10 @@
    "app": "Keyboard",
    "verified_excerpt": "press Ctrl + Search + M, or Ctrl + Launcher + M",
    "model_visible_text": "On Chromebook: To magnify your whole screen quickly, press Ctrl + Search + M, or Ctrl + Launcher + M.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-chromebook-zoom",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-chromebook-zoom",
    "source_group": "google_chromebook_magnifier",
    "organization": "Google",
    "title": "Zoom in or magnify your Chromebook screen",
@@ -69,9 +79,11 @@
    "platform": "Chromebook",
    "app": "Keyboard",
    "verified_excerpt": "Increase magnification: Press Ctrl + Alt + Brightness up.",
-   "model_visible_text": "On Chromebook: Under 'Change the magnification level': to increase magnification, press Ctrl + Alt + Brightness up. To decrease magnification, press Ctrl + Alt + Brightness down. On a touchpad, you can also hold Ctrl + Alt and scroll with two fingers, up to zoom in or down to zoom out.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-windows-onoff",
+   "model_visible_text": "On Chromebook: Under 'Change the magnification level': to increase magnification, press Ctrl + Alt + Brightness up. To decrease magnification, press Ctrl + Alt + Brightness down. On a touchpad, you can also press Ctrl + Alt and scroll with two fingers, up to zoom in or down to zoom out.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch; touchpad wording corrected from hold to press to match the page (review r1 finding); touchpad wording corrected from hold to press to match the page (review r1 finding)"
+  },
+  {
+   "ref_id": "magnifier-windows-onoff",
    "source_group": "microsoft_windows_magnifier_shortcuts",
    "organization": "Microsoft",
    "title": "Appendix A: Keyboard shortcuts for Magnifier",
@@ -82,24 +94,28 @@
    "applicability": "Windows 11 keyboard shortcuts; the page states no Windows version limit for these rows",
    "platform": "Windows 11",
    "app": "Magnifier",
-   "verified_excerpt": "If screens are locked, the first press releases the locks",
+   "verified_excerpt": "if any screens are locked, the first press releases the locks",
    "model_visible_text": "On Windows 11: To turn Magnifier on, press Windows key+Plus sign (+). To turn Magnifier off, press Windows key+Esc. If screens are locked, the first press releases the locks.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; shortcuts copied from the named table; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-windows-zoom-keys",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; shortcuts copied from the named table; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-windows-zoom-keys",
    "source_group": "microsoft_windows_magnifier_zoom",
    "organization": "Microsoft",
    "title": "How to quickly change the zoom level for Magnifier",
    "url": "https://support.microsoft.com/en-US/accessibility/windows/magnifier/how-to-quickly-change-the-zoom-level-for-magnifier",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Change the zoom level with the keyboard",
+   "section": "Change the Magnifier zoom level with a keyboard",
    "applicability": "Windows 10 and Windows 11; the page gives no Windows 11-only steps",
    "platform": "Windows 11",
    "app": "Magnifier",
    "verified_excerpt": "To increase the Magnifier zoom level, press the Windows key+Plus sign(+).",
    "model_visible_text": "On Windows 11: To increase the Magnifier zoom level, press the Windows key+Plus sign(+). To decrease the Magnifier zoom level, press the Windows key+Minus sign(-).",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "magnifier-windows-zoom-mouse",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "magnifier-windows-zoom-mouse",
    "source_group": "microsoft_windows_magnifier_zoom",
    "organization": "Microsoft",
    "title": "How to quickly change the zoom level for Magnifier",
@@ -112,5 +128,7 @@
    "app": "Magnifier",
    "verified_excerpt": "Press Ctrl+Alt+Mouse wheel up or down.",
    "model_visible_text": "On Windows 11: To change the zoom level with the mouse, press Ctrl+Alt+mouse wheel up or down.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; excerpt as returned by WebFetch"}
- ]}
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps copied from the named section; excerpt as returned by WebFetch"
+  }
+ ]
+}

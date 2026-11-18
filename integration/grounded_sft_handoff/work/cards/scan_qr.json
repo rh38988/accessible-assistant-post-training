@@ -1,21 +1,25 @@
-{"task_group": "scan_qr",
+{
+ "task_group": "scan_qr",
  "source_gaps": "iPhone: the page gives no minimum iOS version, no Settings path, and no list of supported models for the Camera Control option, so the conditional is kept as written. Android: the page covers only Camera from Google, not Google Lens or Pixel Camera, and it says the feature is available only on selected devices without listing them. Excerpts were taken from WebFetch output, which is processed text; they were not byte-checked against the live HTML.",
  "source_refs": [
-  {"ref_id": "scanqr-iphone-camera",
+  {
+   "ref_id": "scanqr-iphone-camera",
    "source_group": "apple_scan_qr_iphone",
    "organization": "Apple",
    "title": "Scan a QR code with your iPhone or iPad",
    "url": "https://support.apple.com/en-us/102680",
    "access_date": "2026-11-17",
    "page_update_date": null,
-   "section": "Scanning with the Camera App",
+   "section": "How to scan a QR code with the Camera app or Code Scanner",
    "applicability": "iPhone; the Camera Control option applies only to supported models, which the page does not list",
    "platform": "iPhone",
    "app": "Camera",
    "verified_excerpt": "Hold your device so that the QR code appears, then tap the link to open the content.",
-   "model_visible_text": "On iPhone: 1. Open the Camera app from the Home Screen, Lock Screen, or Control Center. On supported models, you can also open it from the Camera Control. 2. Hold your device so that the QR code appears. 3. Tap the link that appears on screen to open the content.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "scanqr-android-camera",
+   "model_visible_text": "On iPhone: 1. Open the Camera app from the Home Screen, Lock Screen, or Control Center. On supported models, you can also open it from the Camera Control. 2. Hold your device so that the QR code appears. 3. Tap the link to open the content.",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch; step 3 wording corrected to remove on screen, which the page does not state (review r1 finding); step 3 wording corrected to remove on screen, which the page does not state (review r1 finding)"
+  },
+  {
+   "ref_id": "scanqr-android-camera",
    "source_group": "google_camera_from_google_qr",
    "organization": "Google",
    "title": "Scan QR codes on Camera from Google",
@@ -28,8 +32,10 @@
    "app": "Camera from Google",
    "verified_excerpt": "click the banner that appears",
    "model_visible_text": "On Android: 1. Open Camera from Google. 2. For QR mode, tap 'QR', then point the camera at the code. For default photo mode, point the camera at the code. 3. After the scan, tap the banner that appears to open a browser page, app, or payments app.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"},
-  {"ref_id": "scanqr-android-conditions",
+   "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt as returned by WebFetch"
+  },
+  {
+   "ref_id": "scanqr-android-conditions",
    "source_group": "google_camera_from_google_qr",
    "organization": "Google",
    "title": "Scan QR codes on Camera from Google",
@@ -42,5 +48,7 @@
    "app": "Camera from Google",
    "verified_excerpt": "This feature is available only on selected devices.",
    "model_visible_text": "On Android: This feature is available only on selected devices. You can't scan a QR code in portrait and video mode.",
-   "extraction_method": "WebFetch of the official page on 2026-11-17; conditions copied from the named section; excerpt as returned by WebFetch"}
- ]}
+   "extraction_method": "WebFetch of the official page on 2026-11-17; conditions copied from the named section; excerpt as returned by WebFetch"
+  }
+ ]
+}

@@ -1,170 +1,969 @@
-{"batch": "b12", "candidates": [
- {"id": "gsft-magnifier-01", "candidate_id": "gsft-magnifier-01-v1", "task_id": "TR-073", "task_group": "magnifier", "source_group": "google_chromebook_magnifier", "behavior": "direct", "tags": ["distractor"], "category": "technical_support", "platform": "Chromebook", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My Chromebook screen is too small for me to read my email. Everything looks tiny. How do I make the whole screen bigger? I'm not good with computers, so simple steps please."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a Chromebook and asks to enlarge the whole screen. The Chromebook full-screen magnifier and zoom passages apply; the Android passage does not.",
-  "source_ref_ids": ["magnifier-chromebook-settings", "magnifier-chromebook-zoom", "magnifier-android-shortcut"],
-  "target": "Here is how to make your whole Chromebook screen bigger:\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. Choose how the magnified view moves with your mouse: **Move screen continuously as mouse moves**, **Move screen keeping mouse at center of screen**, or **Move screen when mouse touches edge of screen**.\n5. To increase magnification, press **Ctrl + Alt + Brightness up**. To decrease it, press **Ctrl + Alt + Brightness down**.",
-  "author_note": "Covers the full-screen magnifier steps and the Chromebook zoom keys. The Android passage is an inapplicable distractor. Source gap: the page does not say whether the zoom keys need the magnifier on, so none is stated."},
-
- {"id": "gsft-magnifier-02", "candidate_id": "gsft-magnifier-02-v1", "task_id": "TR-171", "task_group": "magnifier", "source_group": "microsoft_windows_magnifier_shortcuts", "behavior": "direct", "tags": ["distractor"], "category": "technical_support", "platform": "Windows 11", "sensitive": false, "style": "verbose",
-  "source_conversation": [{"role": "user", "content": "I'm on Windows 11 and the text on my screen is too small. How do I zoom in? I think there's a key combination but I don't remember it. I'd also like to know how to get out of it again."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Windows 11 and asks for the zoom key combination and how to exit. The Windows shortcut and zoom passages apply; the Chromebook passage does not.",
-  "source_ref_ids": ["magnifier-windows-onoff", "magnifier-windows-zoom-keys", "magnifier-chromebook-zoom"],
-  "target": "Here is how to turn on Magnifier and change its zoom on Windows 11:\n1. Press **Windows key+Plus sign (+)** to turn Magnifier on.\n2. Press **Windows key+Plus sign (+)** to zoom in, or **Windows key+Minus sign (-)** to zoom out.\n3. Press **Windows key+Esc** to turn Magnifier off. If screens are locked, the first press releases the locks.",
-  "author_note": "Covers turn on, zoom in and out, and turn off from the Windows shortcut appendix and zoom page. The Chromebook passage is an inapplicable distractor."},
-
- {"id": "gsft-magnifier-03", "candidate_id": "gsft-magnifier-03-v1", "task_id": "TR-177", "task_group": "magnifier", "source_group": "microsoft_windows_magnifier_shortcuts", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Windows 11, Chromebook, or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "My screen is way too small to read and I can't see the small print on anything. Can you help me make it bigger?"}],
-  "decision": {"mode": "clarify", "question": "Is this on a Windows 11 computer, a Chromebook, or an Android phone or tablet?"},
-  "decision_basis": "The user does not name a device, and the steps differ across Windows 11, Chromebook and Android, so one question is needed before answering.",
-  "source_ref_ids": ["magnifier-windows-onoff", "magnifier-chromebook-settings", "magnifier-android-shortcut"],
-  "target": "Is this on a Windows 11 computer, a Chromebook, or an Android phone or tablet?",
-  "author_note": "Clarify route. The three refs show that turning on and zooming differ by platform."},
-
- {"id": "gsft-magnifier-04", "candidate_id": "gsft-magnifier-04-v1", "task_id": "TR-073", "task_group": "magnifier", "source_group": "microsoft_windows_magnifier_zoom", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Windows 11 or Chromebook laptop", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "My mom's laptop screen is hard for her to read. Her eyes are going. How can I make it easier for her to see?"}],
-  "decision": {"mode": "clarify", "question": "Is the laptop a Windows 11 computer or a Chromebook?"},
-  "decision_basis": "The user says laptop, which narrows the choice to Windows 11 or Chromebook, but the zoom steps still differ between those two, so one question is needed.",
-  "source_ref_ids": ["magnifier-windows-zoom-keys", "magnifier-chromebook-settings"],
-  "target": "Is the laptop a Windows 11 computer or a Chromebook?",
-  "author_note": "Clarify route. The Windows zoom keys and the Chromebook full-screen magnifier steps show the difference."},
-
- {"id": "gsft-magnifier-05", "candidate_id": "gsft-magnifier-05-v1", "task_id": "TR-171", "task_group": "magnifier", "source_group": "microsoft_windows_magnifier_zoom", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Windows 11, Chromebook, or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I just got a new machine and all the letters look really tiny to me. Where's the zoom setting?"}],
-  "decision": {"mode": "clarify", "question": "Which kind of device is it: Windows 11, a Chromebook, or Android?"},
-  "decision_basis": "The user says new machine but not the operating system, and the zoom steps differ by platform, so one question is needed.",
-  "source_ref_ids": ["magnifier-windows-zoom-keys", "magnifier-chromebook-zoom", "magnifier-android-zoom"],
-  "target": "Which kind of device is it: Windows 11, a Chromebook, or Android?",
-  "author_note": "Clarify route. Three platform passages for zooming show the steps differ."},
-
- {"id": "gsft-magnifier-06", "candidate_id": "gsft-magnifier-06-v1", "task_id": "TR-177", "task_group": "magnifier", "source_group": "google_android_magnification", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "over_specified",
-  "source_conversation": [{"role": "user", "content": "My Android phone's screen is hard to see. I can't do quick repeated taps because of my hands, so please don't give me anything that needs fast tapping. How do I zoom in?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Android and a limit: no quick repeated taps. The Android magnification passages allow the Accessibility button route without the triple-tap option, so the answer can respect the limit.",
-  "source_ref_ids": ["magnifier-android-shortcut", "magnifier-android-zoom"],
-  "target": "Here is how to turn on magnification without quick repeated taps:\n1. Open **Settings**.\n2. Tap **Accessibility**, then **Magnification**.\n3. Turn on **Magnification shortcut**.\n4. Tap **Magnification shortcut**, then choose **Accessibility button**.\n5. Tap the **Accessibility** icon, or your custom shortcut.\n6. Tap anywhere except the keyboard or navigation bar.\n7. Pinch with 2 fingers to adjust the zoom.\n8. Use your magnification shortcut again to stop.\nIf the Accessibility icon is not where you expect, its position can vary with your navigation setup.",
-  "author_note": "Constraint respected: the triple-tap option is left out. Only steps from the Android pages are used."},
-
- {"id": "gsft-magnifier-07", "candidate_id": "gsft-magnifier-07-v1", "task_id": "TR-073", "task_group": "magnifier", "source_group": "google_chromebook_magnifier", "behavior": "multiturn", "tags": ["conditional"], "category": "technical_support", "platform": "Chromebook", "sensitive": false, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "How do I zoom in on my Chromebook screen?"},
-   {"role": "assistant", "content": "Press Ctrl + Alt + Brightness up to increase magnification, or Ctrl + Alt + Brightness down to decrease it."},
-   {"role": "user", "content": "I pressed Ctrl + Alt + Brightness up a few times and nothing changed on the screen."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The earlier assistant turn gave the zoom keys, and the user says they pressed them with no change. The Chromebook full-screen magnifier passage gives the setting to turn on, and the touchpad zoom line is conditional on a touchpad.",
-  "source_ref_ids": ["magnifier-chromebook-settings", "magnifier-chromebook-zoom"],
-  "target": "Turn on the full-screen magnifier first, then use the zoom keys:\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. On a touchpad, hold **Ctrl + Alt** and scroll with two fingers, up to zoom in or down to zoom out.",
-  "author_note": "The reply covers the magnifier setting that the earlier keys did not include, plus the touchpad alternative. Source gap: the page does not say the zoom keys need the magnifier on, so the order is a writer choice and is not stated by the page."},
-
- {"id": "gsft-find_lost_phone-01", "candidate_id": "gsft-find_lost_phone-01-v1", "task_id": "TR-074", "task_group": "find_lost_phone", "source_group": "apple_find_lost_iphone", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "technical_support", "platform": "iPhone", "sensitive": true, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone is missing and I think I left it on the train. I have my iPad with me. How do I mark my iPhone as lost in Find My?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone and has another Apple device, which is the route the Apple passage gives. The Android ring passage does not apply.",
-  "source_ref_ids": ["find-iphone-lostmode", "find-iphone-conditions", "find-android-ring"],
-  "target": "Here is how to mark your missing iPhone as lost, using Find My on your iPad:\n1. In the **Find My** app, go to the **Devices** tab.\n2. Scroll down and select your missing iPhone.\n3. Tap **More**.\n4. Scroll down to **Lost iPhone**, then turn on **Lost Mode**.\n5. If you want to show your contact information on the device, follow the onscreen steps.\n6. Tap **Activate**.\nIf the iPhone is off or offline, it appears in Lost Mode only after it is turned on and connected to Wi-Fi or cellular. If Find My wasn't on before it was lost, you can't mark it as lost. If Stolen Device Protection is on, Face ID or Touch ID is required to turn off Lost Mode, even if someone knows your passcode.",
-  "author_note": "Covers the Lost Mode steps and the three conditions from the Apple page. The Android passage is an inapplicable distractor."},
-
- {"id": "gsft-find_lost_phone-02", "candidate_id": "gsft-find_lost_phone-02-v1", "task_id": "TR-075", "task_group": "find_lost_phone", "source_group": "samsung_locate_galaxy", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "technical_support", "platform": "Samsung Galaxy", "sensitive": true, "style": "verbose",
-  "source_conversation": [{"role": "user", "content": "I think I left my Samsung Galaxy phone at the coffee shop this morning. Can I see where it is on a map from my computer?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a Samsung Galaxy phone and asks to see its location from a computer, which the Samsung locate section covers. The iPhone passage is inapplicable.",
-  "source_ref_ids": ["find-samsung-locate", "find-iphone-lostmode"],
-  "target": "Here is how to see where your Galaxy phone is on a map:\n1. In a web browser, go to the SmartThings Find or Samsung Find website and sign in with your Samsung account.\n2. Select your device from the list on the left to see its location on the map.\nIf the phone is powered off, only its last known location is shown.",
-  "author_note": "Covers the locate steps and the powered-off condition. The iPhone Lost Mode passage is an inapplicable distractor."},
-
- {"id": "gsft-find_lost_phone-03", "candidate_id": "gsft-find_lost_phone-03-v1", "task_id": "TR-166", "task_group": "find_lost_phone", "source_group": "google_find_hub_android", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone or Android", "sensitive": true, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I can't find my phone. I think it's somewhere in the house, under the couch cushions maybe. Can I make it ring from somewhere else?"}],
-  "decision": {"mode": "clarify", "question": "Is your phone an iPhone or an Android phone?"},
-  "decision_basis": "The user does not name the phone type. Ringing from another device is a play-sound step on Android and Samsung, while the iPhone Lost Mode steps do not ring the phone, so one question is needed.",
-  "source_ref_ids": ["find-android-ring", "find-samsung-ring", "find-iphone-lostmode"],
-  "target": "Is your phone an iPhone or an Android phone?",
-  "author_note": "Clarify route. The ring steps are on the Android and Samsung passages; the iPhone passage shows the Lost Mode steps instead."},
-
- {"id": "gsft-find_lost_phone-04", "candidate_id": "gsft-find_lost_phone-04-v1", "task_id": "TR-074", "task_group": "find_lost_phone", "source_group": "google_find_hub_android", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone or Android", "sensitive": true, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I left my phone on the bus this morning and I'm worried someone will use it. How do I lock it from another device?"}],
-  "decision": {"mode": "clarify", "question": "Do you have an iPhone or an Android phone?"},
-  "decision_basis": "The user does not name the phone type. Locking works differently on iPhone (Lost Mode), Android (Mark as lost) and Samsung (Lock on the website), so one question is needed.",
-  "source_ref_ids": ["find-iphone-lostmode", "find-android-lock", "find-samsung-lock"],
-  "target": "Do you have an iPhone or an Android phone?",
-  "author_note": "Clarify route. Three platform passages show the locking steps differ."},
-
- {"id": "gsft-find_lost_phone-05", "candidate_id": "gsft-find_lost_phone-05-v1", "task_id": "TR-075", "task_group": "find_lost_phone", "source_group": "apple_find_lost_iphone", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone or Android", "sensitive": true, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Somebody took my phone out of my bag at the market. How can I find where it is?"}],
-  "decision": {"mode": "clarify", "question": "Which phone is it, an iPhone or an Android?"},
-  "decision_basis": "The user does not name the phone type. Finding the phone is a Find My step on iPhone and a website step on Samsung, and the Android passage uses Find Hub, so one question is needed.",
-  "source_ref_ids": ["find-iphone-lostmode", "find-samsung-locate", "find-android-ring"],
-  "target": "Which phone is it, an iPhone or an Android?",
-  "author_note": "Clarify route. The iPhone Find My passage differs from the Samsung website passage and the Android Find Hub passage."},
-
- {"id": "gsft-find_lost_phone-06", "candidate_id": "gsft-find_lost_phone-06-v1", "task_id": "TR-166", "task_group": "find_lost_phone", "source_group": "google_find_hub_android", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "Android", "sensitive": true, "style": "over_specified",
-  "source_conversation": [{"role": "user", "content": "My Android phone is lost. I don't have any other phone or tablet to borrow, only my laptop. Can I make it ring from there?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Android and a limit: only a laptop is available. The Android ringing section allows Find Hub in a browser, so the answer can respect the limit.",
-  "source_ref_ids": ["find-android-ring"],
-  "target": "Here is how to make your lost Android phone ring from your laptop:\n1. Use Find Hub in a browser on your laptop.\n2. Sign in, then select the lost device.\n3. Select **Play sound**.\nIt rings the device at full volume for 5 minutes, even on silent or vibrate.",
-  "author_note": "Constraint respected: no second phone or tablet is required. Only the browser route from the Android ringing section is used."},
-
- {"id": "gsft-find_lost_phone-07", "candidate_id": "gsft-find_lost_phone-07-v1", "task_id": "TR-074", "task_group": "find_lost_phone", "source_group": "apple_find_lost_iphone", "behavior": "multiturn", "tags": ["safety"], "category": "technical_support", "platform": "iPhone", "sensitive": true, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "Someone texted me that they found my iPhone. They want my Apple Account passcode so they can send it back. Is this real?"},
-   {"role": "assistant", "content": "Be careful. Apple will never contact you to say that your iPhone or iPad has been found. Never share your passcode, passwords, or verification codes with anyone who asks for them."},
-   {"role": "user", "content": "I already typed my passcode into the link they sent me. What do I do now?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone and that the passcode was already entered into a link from a stranger. The Apple scam warning and the Apple Account review step apply.",
-  "source_ref_ids": ["find-iphone-scam", "find-iphone-account"],
-  "target": "Stop, and do not share any more codes or passwords with them.\n1. Check your account information at account.apple.com.\n2. If you see changes you didn't make, update them and change your password.",
-  "author_note": "Safety case: the protective action comes first. The account review and password steps come from the Apple page. No other contact or web address is used."},
-
- {"id": "gsft-scan_qr-01", "candidate_id": "gsft-scan_qr-01-v1", "task_id": "TR-076", "task_group": "scan_qr", "source_group": "apple_scan_qr_iphone", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm on an iPhone 13 and there's a QR code on the table at the restaurant for the menu. How do I open it?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone and asks how to open a QR code, which the Apple Camera passage covers. The Android passage does not apply.",
-  "source_ref_ids": ["scanqr-iphone-camera", "scanqr-android-camera"],
-  "target": "Here is how to open the menu with your iPhone camera:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link that appears on screen to open the content.\nOn supported models, you can also open the **Camera** app from the Camera Control.",
-  "author_note": "Covers the Camera app scan steps and the supported-models condition. The Android passage is an inapplicable distractor. Source gap: the page does not list the supported models."},
-
- {"id": "gsft-scan_qr-02", "candidate_id": "gsft-scan_qr-02-v1", "task_id": "TR-077", "task_group": "scan_qr", "source_group": "google_camera_from_google_qr", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "verbose",
-  "source_conversation": [{"role": "user", "content": "I have an Android phone and I need to scan the QR code on the parking meter. How do I do it with the camera?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states Android and a camera scan. The Camera from Google passage and its conditions apply; the iPhone passage does not.",
-  "source_ref_ids": ["scanqr-android-camera", "scanqr-android-conditions", "scanqr-iphone-camera"],
-  "target": "Here is how to scan the parking meter code with Camera from Google:\n1. Open **Camera from Google**.\n2. Tap **QR**, then point the camera at the code.\n3. Tap the banner that appears to open the browser page, app, or payments app.\nYou can't scan a QR code in portrait and video mode. This feature is available only on selected devices, so if a step doesn't match what you see, your phone may not have it.",
-  "author_note": "Covers the QR mode steps and both Camera from Google conditions. The iPhone passage is an inapplicable distractor. Source gap: the selected devices are not listed."},
-
- {"id": "gsft-scan_qr-03", "candidate_id": "gsft-scan_qr-03-v1", "task_id": "TR-076", "task_group": "scan_qr", "source_group": "apple_scan_qr_iphone", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "The QR code on my gym's check-in sign won't open anything for me. Can you show me how to scan it?"}],
-  "decision": {"mode": "clarify", "question": "Do you have an iPhone or an Android phone?"},
-  "decision_basis": "The user does not name the phone type. The iPhone Camera steps and the Android Camera from Google steps differ, so one question is needed.",
-  "source_ref_ids": ["scanqr-iphone-camera", "scanqr-android-camera"],
-  "target": "Do you have an iPhone or an Android phone?",
-  "author_note": "Clarify route. The iPhone Camera passage and the Android Camera from Google passage show the steps differ."},
-
- {"id": "gsft-scan_qr-04", "candidate_id": "gsft-scan_qr-04-v1", "task_id": "TR-077", "task_group": "scan_qr", "source_group": "google_camera_from_google_qr", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "There's a QR code on my kid's school flyer. I held my phone over it and nothing happened. What am I supposed to do?"}],
-  "decision": {"mode": "clarify", "question": "Which kind of phone is it, an iPhone or an Android?"},
-  "decision_basis": "The user does not name the phone type. The scan steps differ between the iPhone Camera app and Camera from Google, so one question is needed.",
-  "source_ref_ids": ["scanqr-iphone-camera", "scanqr-android-camera"],
-  "target": "Which kind of phone is it, an iPhone or an Android?",
-  "author_note": "Clarify route. The two platform passages show the scan steps differ."},
-
- {"id": "gsft-scan_qr-05", "candidate_id": "gsft-scan_qr-05-v1", "task_id": "TR-076", "task_group": "scan_qr", "source_group": "apple_scan_qr_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "over_specified",
-  "source_conversation": [{"role": "user", "content": "I have an iPhone and I don't want to add anything to Settings or Control Center. What's the shortest way to scan the QR code on the bus stop sign?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone and a limit: nothing added to Settings or Control Center. The Camera app steps need no setup, so the answer can respect the limit.",
-  "source_ref_ids": ["scanqr-iphone-camera"],
-  "target": "The shortest way is the Camera app:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link that appears on screen to open the content.",
-  "author_note": "Constraint respected: the Code Scanner Control Center setup is left out because it needs adding a control."},
-
- {"id": "gsft-scan_qr-06", "candidate_id": "gsft-scan_qr-06-v1", "task_id": "TR-077", "task_group": "scan_qr", "source_group": "google_camera_from_google_qr", "behavior": "multiturn", "tags": ["conditional"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "How do I scan a QR code with my Android phone?"},
-   {"role": "assistant", "content": "Open Camera from Google, tap QR, point the camera at the code, then tap the banner that appears."},
-   {"role": "user", "content": "I opened Camera from Google and pointed it at the code, but no banner came up. I never tapped QR."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The earlier assistant turn gave the Camera from Google steps. The user opened the app and did not tap QR, and the page says scanning does not work in portrait and video mode, so the reply covers both.",
-  "source_ref_ids": ["scanqr-android-camera", "scanqr-android-conditions"],
-  "target": "You can't scan a QR code in portrait and video mode, so check that first.\n1. Tap **QR**, then point the camera at the code.\n2. Tap the banner that appears to open the browser page, app, or payments app.\nIf you don't see **QR**, this feature is available only on selected devices.",
-  "author_note": "Covers the QR mode step the user missed, the banner step, and the portrait and video mode condition. Source gap: the page does not say what appears when a banner is missing."}
-]}
+{
+ "batch": "b12",
+ "candidates": [
+  {
+   "id": "gsft-magnifier-01",
+   "candidate_id": "gsft-magnifier-01-v1",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "google_chromebook_magnifier",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Chromebook",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Chromebook screen is too small for me to read my email. Everything looks tiny. How do I make the whole screen bigger? I'm not good with computers, so simple steps please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Chromebook and asks to enlarge the whole screen. The Chromebook full-screen magnifier and zoom passages apply; the Android passage does not.",
+   "source_ref_ids": [
+    "magnifier-chromebook-settings",
+    "magnifier-chromebook-zoom",
+    "magnifier-android-shortcut"
+   ],
+   "target": "Here is how to make your whole Chromebook screen bigger:\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. Choose how the magnified view moves with your mouse: **Move screen continuously as mouse moves**, **Move screen keeping mouse at center of screen**, or **Move screen when mouse touches edge of screen**.\n5. To increase magnification, press **Ctrl + Alt + Brightness up**. To decrease it, press **Ctrl + Alt + Brightness down**.",
+   "author_note": "Covers the full-screen magnifier steps and the Chromebook zoom keys. The Android passage is an inapplicable distractor. Source gap: the page does not say whether the zoom keys need the magnifier on, so none is stated."
+  },
+  {
+   "id": "gsft-magnifier-02",
+   "candidate_id": "gsft-magnifier-02-v1",
+   "task_id": "TR-171",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_shortcuts",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on Windows 11 and the text on my screen is too small. How do I zoom in? I think there's a key combination but I don't remember it. I'd also like to know how to get out of it again."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and asks for the zoom key combination and how to exit. The Windows shortcut and zoom passages apply; the Chromebook passage does not.",
+   "source_ref_ids": [
+    "magnifier-windows-onoff",
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-zoom"
+   ],
+   "target": "Here is how to turn on Magnifier and change its zoom on Windows 11:\n1. Press **Windows key+Plus sign (+)** to turn Magnifier on.\n2. Press **Windows key+Plus sign (+)** to zoom in, or **Windows key+Minus sign (-)** to zoom out.\n3. Press **Windows key+Esc** to turn Magnifier off. If screens are locked, the first press releases the locks.",
+   "author_note": "Covers turn on, zoom in and out, and turn off from the Windows shortcut appendix and zoom page. The Chromebook passage is an inapplicable distractor."
+  },
+  {
+   "id": "gsft-magnifier-03",
+   "candidate_id": "gsft-magnifier-03-v1",
+   "task_id": "TR-177",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_shortcuts",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11, Chromebook, or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My screen is way too small to read and I can't see the small print on anything. Can you help me make it bigger?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this on a Windows 11 computer, a Chromebook, or an Android phone or tablet?"
+   },
+   "decision_basis": "The user does not name a device, and the steps differ across Windows 11, Chromebook and Android, so one question is needed before answering.",
+   "source_ref_ids": [
+    "magnifier-windows-onoff",
+    "magnifier-chromebook-settings",
+    "magnifier-android-shortcut"
+   ],
+   "target": "Is this on a Windows 11 computer, a Chromebook, or an Android phone or tablet?",
+   "author_note": "Clarify route. The three refs show that turning on and zooming differ by platform."
+  },
+  {
+   "id": "gsft-magnifier-04",
+   "candidate_id": "gsft-magnifier-04-v1",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11 or Chromebook laptop",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My mom's laptop screen is hard for her to read. Her eyes are going. How can I make it easier for her to see?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is the laptop a Windows 11 computer or a Chromebook?"
+   },
+   "decision_basis": "The user says laptop, which narrows the choice to Windows 11 or Chromebook, but the zoom steps still differ between those two, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-settings"
+   ],
+   "target": "Is the laptop a Windows 11 computer or a Chromebook?",
+   "author_note": "Clarify route. The Windows zoom keys and the Chromebook full-screen magnifier steps show the difference."
+  },
+  {
+   "id": "gsft-magnifier-05",
+   "candidate_id": "gsft-magnifier-05-v1",
+   "task_id": "TR-171",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11, Chromebook, or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I just got a new machine and all the letters look really tiny to me. Where's the zoom setting?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which kind of device is it: Windows 11, a Chromebook, or Android?"
+   },
+   "decision_basis": "The user says new machine but not the operating system, and the zoom steps differ by platform, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-zoom",
+    "magnifier-android-zoom"
+   ],
+   "target": "Which kind of device is it: Windows 11, a Chromebook, or Android?",
+   "author_note": "Clarify route. Three platform passages for zooming show the steps differ."
+  },
+  {
+   "id": "gsft-magnifier-06",
+   "candidate_id": "gsft-magnifier-06-v1",
+   "task_id": "TR-177",
+   "task_group": "magnifier",
+   "source_group": "google_android_magnification",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android phone's screen is hard to see. I can't do quick repeated taps because of my hands, so please don't give me anything that needs fast tapping. How do I zoom in?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and a limit: no quick repeated taps. The Android magnification passages allow the Accessibility button route without the triple-tap option, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "magnifier-android-shortcut",
+    "magnifier-android-zoom"
+   ],
+   "target": "Here is how to turn on magnification without quick repeated taps:\n1. Open **Settings**.\n2. Tap **Accessibility**, then **Magnification**.\n3. Turn on **Magnification shortcut**.\n4. Tap **Magnification shortcut**, then choose **Accessibility button**.\n5. Tap the **Accessibility** icon, or your custom shortcut.\n6. Tap anywhere except the keyboard or navigation bar.\n7. Pinch with 2 fingers to adjust the zoom.\n8. Use your magnification shortcut again to stop.\nIf the Accessibility icon is not where you expect, its position can vary with your navigation setup.",
+   "author_note": "Constraint respected: the triple-tap option is left out. Only steps from the Android pages are used."
+  },
+  {
+   "id": "gsft-magnifier-07",
+   "candidate_id": "gsft-magnifier-07-v1",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "google_chromebook_magnifier",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Chromebook",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I zoom in on my Chromebook screen?"
+    },
+    {
+     "role": "assistant",
+     "content": "Press Ctrl + Alt + Brightness up to increase magnification, or Ctrl + Alt + Brightness down to decrease it."
+    },
+    {
+     "role": "user",
+     "content": "I pressed Ctrl + Alt + Brightness up a few times and nothing changed on the screen."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The earlier assistant turn gave the zoom keys, and the user says they pressed them with no change. The Chromebook full-screen magnifier passage gives the setting to turn on, and the touchpad zoom line is conditional on a touchpad.",
+   "source_ref_ids": [
+    "magnifier-chromebook-settings",
+    "magnifier-chromebook-zoom"
+   ],
+   "target": "Turn on the full-screen magnifier first, then use the zoom keys:\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. On a touchpad, hold **Ctrl + Alt** and scroll with two fingers, up to zoom in or down to zoom out.",
+   "author_note": "The reply covers the magnifier setting that the earlier keys did not include, plus the touchpad alternative. Source gap: the page does not say the zoom keys need the magnifier on, so the order is a writer choice and is not stated by the page."
+  },
+  {
+   "id": "gsft-find_lost_phone-01",
+   "candidate_id": "gsft-find_lost_phone-01-v1",
+   "task_id": "TR-074",
+   "task_group": "find_lost_phone",
+   "source_group": "apple_find_lost_iphone",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone is missing and I think I left it on the train. I have my iPad with me. How do I mark my iPhone as lost in Find My?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and has another Apple device, which is the route the Apple passage gives. The Android ring passage does not apply.",
+   "source_ref_ids": [
+    "find-iphone-lostmode",
+    "find-iphone-conditions",
+    "find-android-ring"
+   ],
+   "target": "Here is how to mark your missing iPhone as lost, using Find My on your iPad:\n1. In the **Find My** app, go to the **Devices** tab.\n2. Scroll down and select your missing iPhone.\n3. Tap **More**.\n4. Scroll down to **Lost iPhone**, then turn on **Lost Mode**.\n5. If you want to show your contact information on the device, follow the onscreen steps.\n6. Tap **Activate**.\nIf the iPhone is off or offline, it appears in Lost Mode only after it is turned on and connected to Wi-Fi or cellular. If Find My wasn't on before it was lost, you can't mark it as lost. If Stolen Device Protection is on, Face ID or Touch ID is required to turn off Lost Mode, even if someone knows your passcode.",
+   "author_note": "Covers the Lost Mode steps and the three conditions from the Apple page. The Android passage is an inapplicable distractor."
+  },
+  {
+   "id": "gsft-find_lost_phone-02",
+   "candidate_id": "gsft-find_lost_phone-02-v1",
+   "task_id": "TR-075",
+   "task_group": "find_lost_phone",
+   "source_group": "samsung_locate_galaxy",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Samsung Galaxy",
+   "sensitive": true,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I think I left my Samsung Galaxy phone at the coffee shop this morning. Can I see where it is on a map from my computer?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a Samsung Galaxy phone and asks to see its location from a computer, which the Samsung locate section covers. The iPhone passage is inapplicable.",
+   "source_ref_ids": [
+    "find-samsung-locate",
+    "find-iphone-lostmode"
+   ],
+   "target": "Here is how to see where your Galaxy phone is on a map:\n1. In a web browser, go to the SmartThings Find or Samsung Find website and sign in with your Samsung account.\n2. Select your device from the list on the left to see its location on the map.\nIf the phone is powered off, only its last known location is shown.",
+   "author_note": "Covers the locate steps and the powered-off condition. The iPhone Lost Mode passage is an inapplicable distractor."
+  },
+  {
+   "id": "gsft-find_lost_phone-03",
+   "candidate_id": "gsft-find_lost_phone-03-v1",
+   "task_id": "TR-166",
+   "task_group": "find_lost_phone",
+   "source_group": "google_find_hub_android",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I can't find my phone. I think it's somewhere in the house, under the couch cushions maybe. Can I make it ring from somewhere else?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone type. Ringing from another device is a play-sound step on Android and Samsung, while the iPhone Lost Mode steps do not ring the phone, so one question is needed.",
+   "source_ref_ids": [
+    "find-android-ring",
+    "find-samsung-ring",
+    "find-iphone-lostmode"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify route. The ring steps are on the Android and Samsung passages; the iPhone passage shows the Lost Mode steps instead."
+  },
+  {
+   "id": "gsft-find_lost_phone-04",
+   "candidate_id": "gsft-find_lost_phone-04-v1",
+   "task_id": "TR-074",
+   "task_group": "find_lost_phone",
+   "source_group": "google_find_hub_android",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I left my phone on the bus this morning and I'm worried someone will use it. How do I lock it from another device?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you have an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone type. Locking works differently on iPhone (Lost Mode), Android (Mark as lost) and Samsung (Lock on the website), so one question is needed.",
+   "source_ref_ids": [
+    "find-iphone-lostmode",
+    "find-android-lock",
+    "find-samsung-lock"
+   ],
+   "target": "Do you have an iPhone or an Android phone?",
+   "author_note": "Clarify route. Three platform passages show the locking steps differ."
+  },
+  {
+   "id": "gsft-find_lost_phone-05",
+   "candidate_id": "gsft-find_lost_phone-05-v1",
+   "task_id": "TR-075",
+   "task_group": "find_lost_phone",
+   "source_group": "apple_find_lost_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Somebody took my phone out of my bag at the market. How can I find where it is?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which phone is it, an iPhone or an Android?"
+   },
+   "decision_basis": "The user does not name the phone type. Finding the phone is a Find My step on iPhone and a website step on Samsung, and the Android passage uses Find Hub, so one question is needed.",
+   "source_ref_ids": [
+    "find-iphone-lostmode",
+    "find-samsung-locate",
+    "find-android-ring"
+   ],
+   "target": "Which phone is it, an iPhone or an Android?",
+   "author_note": "Clarify route. The iPhone Find My passage differs from the Samsung website passage and the Android Find Hub passage."
+  },
+  {
+   "id": "gsft-find_lost_phone-06",
+   "candidate_id": "gsft-find_lost_phone-06-v1",
+   "task_id": "TR-166",
+   "task_group": "find_lost_phone",
+   "source_group": "google_find_hub_android",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": true,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android phone is lost. I don't have any other phone or tablet to borrow, only my laptop. Can I make it ring from there?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and a limit: only a laptop is available. The Android ringing section allows Find Hub in a browser, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "find-android-ring"
+   ],
+   "target": "Here is how to make your lost Android phone ring from your laptop:\n1. Use Find Hub in a browser on your laptop.\n2. Sign in, then select the lost device.\n3. Select **Play sound**.\nIt rings the device at full volume for 5 minutes, even on silent or vibrate.",
+   "author_note": "Constraint respected: no second phone or tablet is required. Only the browser route from the Android ringing section is used."
+  },
+  {
+   "id": "gsft-find_lost_phone-07",
+   "candidate_id": "gsft-find_lost_phone-07-v1",
+   "task_id": "TR-074",
+   "task_group": "find_lost_phone",
+   "source_group": "apple_find_lost_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "safety"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": true,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Someone texted me that they found my iPhone. They want my Apple Account passcode so they can send it back. Is this real?"
+    },
+    {
+     "role": "assistant",
+     "content": "Be careful. Apple will never contact you to say that your iPhone or iPad has been found. Never share your passcode, passwords, or verification codes with anyone who asks for them."
+    },
+    {
+     "role": "user",
+     "content": "I already typed my passcode into the link they sent me. What do I do now?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and that the passcode was already entered into a link from a stranger. The Apple scam warning and the Apple Account review step apply.",
+   "source_ref_ids": [
+    "find-iphone-scam",
+    "find-iphone-account"
+   ],
+   "target": "Stop, and do not share any more codes or passwords with them.\n1. Check your account information at account.apple.com.\n2. If you see changes you didn't make, update them and change your password.",
+   "author_note": "Safety case: the protective action comes first. The account review and password steps come from the Apple page. No other contact or web address is used."
+  },
+  {
+   "id": "gsft-scan_qr-01",
+   "candidate_id": "gsft-scan_qr-01-v1",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an iPhone 13 and there's a QR code on the table at the restaurant for the menu. How do I open it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and asks how to open a QR code, which the Apple Camera passage covers. The Android passage does not apply.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera",
+    "scanqr-android-camera"
+   ],
+   "target": "Here is how to open the menu with your iPhone camera:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link that appears on screen to open the content.\nOn supported models, you can also open the **Camera** app from the Camera Control.",
+   "author_note": "Covers the Camera app scan steps and the supported-models condition. The Android passage is an inapplicable distractor. Source gap: the page does not list the supported models."
+  },
+  {
+   "id": "gsft-scan_qr-02",
+   "candidate_id": "gsft-scan_qr-02-v1",
+   "task_id": "TR-077",
+   "task_group": "scan_qr",
+   "source_group": "google_camera_from_google_qr",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android phone and I need to scan the QR code on the parking meter. How do I do it with the camera?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and a camera scan. The Camera from Google passage and its conditions apply; the iPhone passage does not.",
+   "source_ref_ids": [
+    "scanqr-android-camera",
+    "scanqr-android-conditions",
+    "scanqr-iphone-camera"
+   ],
+   "target": "Here is how to scan the parking meter code with Camera from Google:\n1. Open **Camera from Google**.\n2. Tap **QR**, then point the camera at the code.\n3. Tap the banner that appears to open the browser page, app, or payments app.\nYou can't scan a QR code in portrait and video mode. This feature is available only on selected devices, so if a step doesn't match what you see, your phone may not have it.",
+   "author_note": "Covers the QR mode steps and both Camera from Google conditions. The iPhone passage is an inapplicable distractor. Source gap: the selected devices are not listed."
+  },
+  {
+   "id": "gsft-scan_qr-03",
+   "candidate_id": "gsft-scan_qr-03-v1",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "The QR code on my gym's check-in sign won't open anything for me. Can you show me how to scan it?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you have an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone type. The iPhone Camera steps and the Android Camera from Google steps differ, so one question is needed.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera",
+    "scanqr-android-camera"
+   ],
+   "target": "Do you have an iPhone or an Android phone?",
+   "author_note": "Clarify route. The iPhone Camera passage and the Android Camera from Google passage show the steps differ."
+  },
+  {
+   "id": "gsft-scan_qr-04",
+   "candidate_id": "gsft-scan_qr-04-v1",
+   "task_id": "TR-077",
+   "task_group": "scan_qr",
+   "source_group": "google_camera_from_google_qr",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "There's a QR code on my kid's school flyer. I held my phone over it and nothing happened. What am I supposed to do?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which kind of phone is it, an iPhone or an Android?"
+   },
+   "decision_basis": "The user does not name the phone type. The scan steps differ between the iPhone Camera app and Camera from Google, so one question is needed.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera",
+    "scanqr-android-camera"
+   ],
+   "target": "Which kind of phone is it, an iPhone or an Android?",
+   "author_note": "Clarify route. The two platform passages show the scan steps differ."
+  },
+  {
+   "id": "gsft-scan_qr-05",
+   "candidate_id": "gsft-scan_qr-05-v1",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an iPhone and I don't want to add anything to Settings or Control Center. What's the shortest way to scan the QR code on the bus stop sign?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and a limit: nothing added to Settings or Control Center. The Camera app steps need no setup, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera"
+   ],
+   "target": "The shortest way is the Camera app:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link that appears on screen to open the content.",
+   "author_note": "Constraint respected: the Code Scanner Control Center setup is left out because it needs adding a control."
+  },
+  {
+   "id": "gsft-scan_qr-06",
+   "candidate_id": "gsft-scan_qr-06-v1",
+   "task_id": "TR-077",
+   "task_group": "scan_qr",
+   "source_group": "google_camera_from_google_qr",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I scan a QR code with my Android phone?"
+    },
+    {
+     "role": "assistant",
+     "content": "Open Camera from Google, tap QR, point the camera at the code, then tap the banner that appears."
+    },
+    {
+     "role": "user",
+     "content": "I opened Camera from Google and pointed it at the code, but no banner came up. I never tapped QR."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The earlier assistant turn gave the Camera from Google steps. The user opened the app and did not tap QR, and the page says scanning does not work in portrait and video mode, so the reply covers both.",
+   "source_ref_ids": [
+    "scanqr-android-camera",
+    "scanqr-android-conditions"
+   ],
+   "target": "You can't scan a QR code in portrait and video mode, so check that first.\n1. Tap **QR**, then point the camera at the code.\n2. Tap the banner that appears to open the browser page, app, or payments app.\nIf you don't see **QR**, this feature is available only on selected devices.",
+   "author_note": "Covers the QR mode step the user missed, the banner step, and the portrait and video mode condition. Source gap: the page does not say what appears when a banner is missing."
+  },
+  {
+   "id": "gsft-magnifier-03",
+   "candidate_id": "gsft-magnifier-03-v2",
+   "task_id": "TR-177",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_shortcuts",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11, Chromebook, or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My screen is way too small to read and I can't see the small print on anything. Can you help me make it bigger?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this on a Windows computer, a Chromebook, or an Android phone or tablet?"
+   },
+   "decision_basis": "The user does not name a device, and the steps differ across Windows 11, Chromebook and Android, so one question is needed before answering.",
+   "source_ref_ids": [
+    "magnifier-windows-onoff",
+    "magnifier-chromebook-settings",
+    "magnifier-android-shortcut"
+   ],
+   "target": "Is this on a Windows computer, a Chromebook, or an Android phone or tablet?",
+   "author_note": "Clarify route. The three refs show that turning on and zooming differ by platform.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-03-v1",
+     "to_candidate": "gsft-magnifier-03-v2",
+     "reason": "Reviewer finding: The routed question says 'a Windows 11 computer'. The zoom-key page (magnifier-windows-zoom-keys) says Applies To: Windows 10 and Windows 11, so a Windows 10 user has no matching answer and would be forced into a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-03-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-04",
+   "candidate_id": "gsft-magnifier-04-v2",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11 or Chromebook laptop",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My mom's laptop screen is hard for her to read. Her eyes are going. How can I make it easier for her to see?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is the laptop a Windows computer or a Chromebook?"
+   },
+   "decision_basis": "The user says laptop, which narrows the choice to Windows 11 or Chromebook, but the zoom steps still differ between those two, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-settings"
+   ],
+   "target": "Is the laptop a Windows computer or a Chromebook?",
+   "author_note": "Clarify route. The Windows zoom keys and the Chromebook full-screen magnifier steps show the difference.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-04-v1",
+     "to_candidate": "gsft-magnifier-04-v2",
+     "reason": "Reviewer finding: The routed question says 'a Windows 11 computer or a Chromebook'. The zoom-key page (magnifier-windows-zoom-keys) covers Windows 10 and Windows 11, so a Windows 10 laptop has no matching answer, and the question would push the user to a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-05",
+   "candidate_id": "gsft-magnifier-05-v2",
+   "task_id": "TR-171",
+   "task_group": "magnifier",
+   "source_group": "microsoft_windows_magnifier_zoom",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11, Chromebook, or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I just got a new machine and all the letters look really tiny to me. Where's the zoom setting?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which kind of device is it: a Windows computer, a Chromebook, or Android?"
+   },
+   "decision_basis": "The user says new machine but not the operating system, and the zoom steps differ by platform, so one question is needed.",
+   "source_ref_ids": [
+    "magnifier-windows-zoom-keys",
+    "magnifier-chromebook-zoom",
+    "magnifier-android-zoom"
+   ],
+   "target": "Which kind of device is it: a Windows computer, a Chromebook, or Android?",
+   "author_note": "Clarify route. Three platform passages for zooming show the steps differ.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-05-v1",
+     "to_candidate": "gsft-magnifier-05-v2",
+     "reason": "Reviewer finding: The routed question says 'Windows 11, a Chromebook, or Android'. The zoom-key page (magnifier-windows-zoom-keys) covers Windows 10 and Windows 11, so a Windows 10 machine has no matching answer and would be forced into a wrong choice.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-05-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-06",
+   "candidate_id": "gsft-magnifier-06-v2",
+   "task_id": "TR-177",
+   "task_group": "magnifier",
+   "source_group": "google_android_magnification",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android phone's screen is hard to see. I can't do quick repeated taps because of my hands, so please don't give me anything that needs fast tapping. How do I zoom in?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Android and a limit: no quick repeated taps. The Android magnification passages allow the Accessibility button route without the triple-tap option, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "magnifier-android-shortcut",
+    "magnifier-android-zoom"
+   ],
+   "target": "Here is how to turn on magnification without quick repeated taps:\n1. Open **Settings**.\n2. Tap **Accessibility**, then **Magnification**.\n3. Turn on **Magnification shortcut**.\n4. Tap **Magnification shortcut**, then choose **Accessibility button**.\n5. Tap the **Accessibility** icon, or your custom shortcut.\n6. Tap anywhere except the keyboard or navigation bar.\n7. Pinch with 2 fingers to adjust the zoom.\n8. Use your magnification shortcut again to stop.\nIf the Accessibility icon is not where you expect, its position can vary with your navigation setup.\nSome of these steps need Android 13 or later.",
+   "author_note": "Constraint respected: the triple-tap option is left out. Only steps from the Android pages are used.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-06-v1",
+     "to_candidate": "gsft-magnifier-06-v2",
+     "reason": "Reviewer finding: The page states 'Some of these steps work only on Android 13 and up.' The target omits this condition, and the user's Android version is not known. The ref itself flags this version condition, so the target should carry it.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-06-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-magnifier-07",
+   "candidate_id": "gsft-magnifier-07-v2",
+   "task_id": "TR-073",
+   "task_group": "magnifier",
+   "source_group": "google_chromebook_magnifier",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Chromebook",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I zoom in on my Chromebook screen?"
+    },
+    {
+     "role": "assistant",
+     "content": "Press Ctrl + Alt + Brightness up to increase magnification, or Ctrl + Alt + Brightness down to decrease it."
+    },
+    {
+     "role": "user",
+     "content": "I pressed Ctrl + Alt + Brightness up a few times and nothing changed on the screen."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The earlier assistant turn gave the zoom keys, and the user says they pressed them with no change. The Chromebook full-screen magnifier passage gives the setting to turn on, and the touchpad zoom line is conditional on a touchpad.",
+   "source_ref_ids": [
+    "magnifier-chromebook-settings",
+    "magnifier-chromebook-zoom"
+   ],
+   "target": "Here is how to turn on the full-screen magnifier, then try the zoom keys again:\n1. Select the time at the bottom right, or press **Alt + Shift + S**.\n2. Select **Settings**, then **Accessibility**.\n3. Under **Display**, turn on **Full screen magnifier**.\n4. On a touchpad, press **Ctrl + Alt**, then scroll with two fingers up to zoom in or down to zoom out.",
+   "author_note": "The reply covers the magnifier setting that the earlier keys did not include, plus the touchpad alternative. Source gap: the page does not say the zoom keys need the magnifier on, so the order is a writer choice and is not stated by the page.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-magnifier-07-v1",
+     "to_candidate": "gsft-magnifier-07-v2",
+     "reason": "Reviewer finding: The opening line 'Turn on the full-screen magnifier first, then use the zoom keys' states a prerequisite. The page does not say the zoom keys need the full-screen magnifier on; it lists the keys under 'Change the magnification level' with no such condition. | Step 4 says 'hold Ctrl + Alt'. The page says 'press Ctrl + Alt, then scroll with 2 fingers'.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-magnifier-07-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-scan_qr-01",
+   "candidate_id": "gsft-scan_qr-01-v2",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor"
+   ],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an iPhone 13 and there's a QR code on the table at the restaurant for the menu. How do I open it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and asks how to open a QR code, which the Apple Camera passage covers. The Android passage does not apply.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera",
+    "scanqr-android-camera"
+   ],
+   "target": "Here is how to open the menu with your iPhone camera:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link to open the content.\nOn supported models, you can also open the **Camera** app from the Camera Control.",
+   "author_note": "Covers the Camera app scan steps and the supported-models condition. The Android passage is an inapplicable distractor. Source gap: the page does not list the supported models.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-scan_qr-01-v1",
+     "to_candidate": "gsft-scan_qr-01-v2",
+     "reason": "Reviewer finding: Step 3 says 'Tap the link that appears on screen to open the content.' The page says 'then tap the link to open the content.' Nothing on the page says the link appears on screen.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-scan_qr-01-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-scan_qr-05",
+   "candidate_id": "gsft-scan_qr-05-v2",
+   "task_id": "TR-076",
+   "task_group": "scan_qr",
+   "source_group": "apple_scan_qr_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an iPhone and I don't want to add anything to Settings or Control Center. What's the shortest way to scan the QR code on the bus stop sign?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and a limit: nothing added to Settings or Control Center. The Camera app steps need no setup, so the answer can respect the limit.",
+   "source_ref_ids": [
+    "scanqr-iphone-camera"
+   ],
+   "target": "The shortest way is the Camera app:\n1. Open the **Camera** app from the Home Screen, Lock Screen, or Control Center.\n2. Hold your device so that the QR code appears.\n3. Tap the link to open the content.",
+   "author_note": "Constraint respected: the Code Scanner Control Center setup is left out because it needs adding a control.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-scan_qr-05-v1",
+     "to_candidate": "gsft-scan_qr-05-v2",
+     "reason": "Reviewer finding: Step 3 says 'Tap the link that appears on screen to open the content.' The page says 'then tap the link to open the content.' Nothing on the page says the link appears on screen.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-scan_qr-05-v1"
+    }
+   ]
+  }
+ ]
+}
