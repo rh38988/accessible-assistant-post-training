@@ -1,887 +1,951 @@
 {
-  "batch": "b06",
-  "candidates": [
+ "batch": "b06",
+ "candidates": [
+  {
+   "id": "gsft-wifi_calling-01",
+   "candidate_id": "gsft-wifi_calling-01-v1",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
     {
-      "id": "gsft-wifi_calling-01",
-      "candidate_id": "gsft-wifi_calling-01-v1",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "Hi, my iPhone has bad signal at home and calls keep dropping. How do I turn on Wi-Fi Calling?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user names an iPhone, so the Apple turn-on steps apply. The Android refs are inapplicable distractors and are not used.",
-      "source_ref_ids": [
-        "wifi-iphone-on",
-        "wifi-android-on"
-      ],
-      "target": "Here is how to turn on Wi-Fi Calling on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Cellular**.\n3. If your iPhone has multiple SIMs (SIM cards), scroll to the line you want to use.\n4. Tap **Wi-Fi Calling** and turn on **Wi-Fi Calling on This iPhone**.\n5. Tap **Enable**. You might need to enter or confirm your address for emergency services.\nWhen it works, you'll see 'Wi-Fi' in the status bar while viewing Control Center.",
-      "author_note": "Covers all five page steps and the status bar line. The status bar line is taken from the page paragraph after the steps. No gap for this procedure."
-    },
-    {
-      "id": "gsft-wifi_calling-02",
-      "candidate_id": "gsft-wifi_calling-02-v1",
-      "task_id": "TR-159",
-      "task_group": "wifi_calling",
-      "source_group": "google_wifi_calling_android",
-      "behavior": "direct",
-      "tags": [
-        "distractor",
-        "conditional"
-      ],
-      "category": "communication",
-      "platform": "Android",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My Android phone drops calls in my basement apartment. I want Wi-Fi calling on. Where in the settings do I go?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user names an Android phone, so the Google steps apply. The iPhone ref is an inapplicable distractor. The page's carrier-support condition is kept as a conditional line.",
-      "source_ref_ids": [
-        "wifi-android-on",
-        "wifi-android-notes",
-        "wifi-iphone-on"
-      ],
-      "target": "Here is how to turn on Wi-Fi calling on your Android phone.\n1. Open your phone's **Settings** app.\n2. Tap **Network & internet**, then **SIMs**, then **Carrier SIM**, then **Wi-Fi calling**.\n3. Turn **Wi-Fi calling** on.\nIf you don't find this option, your carrier doesn't support this feature. Also check with your carrier that Wi-Fi calling is supported, since you may incur additional charges for making calls over Wi-Fi.",
-      "author_note": "The page's 'Notes before you start' are kept as the last line rather than a lead-in. The 'Carrier SIM' path is the page's path only; other phone makers may label it differently and the page does not say so."
-    },
-    {
-      "id": "gsft-wifi_calling-03",
-      "candidate_id": "gsft-wifi_calling-03-v1",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone or Android",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My calls keep dropping at home. Can you tell me how to turn on Wi-Fi calling?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Is your phone an iPhone or an Android phone?"
-      },
-      "decision_basis": "The user does not name the phone. The Apple steps use Settings, Cellular and Wi-Fi Calling, while the Google steps use Settings, Network & internet, SIMs, Carrier SIM and Wi-Fi calling, so the device must be known first.",
-      "source_ref_ids": [
-        "wifi-iphone-on",
-        "wifi-android-on"
-      ],
-      "target": "Is your phone an iPhone or an Android phone?",
-      "author_note": "Clarify route. The question asks only the device, not the carrier or phone maker."
-    },
-    {
-      "id": "gsft-wifi_calling-04",
-      "candidate_id": "gsft-wifi_calling-04-v1",
-      "task_id": "TR-159",
-      "task_group": "wifi_calling",
-      "source_group": "google_wifi_calling_android",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone or Android",
-      "sensitive": false,
-      "style": "incomplete",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My son set up Wi-Fi calling on my phone last year and now I forgot where it is. Can you walk me through turning it on again?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Do you have an iPhone or an Android phone?"
-      },
-      "decision_basis": "The user does not name the phone, and the steps to find the Wi-Fi calling setting differ between the iPhone page and the Android page, so one question is needed before answering.",
-      "source_ref_ids": [
-        "wifi-iphone-on",
-        "wifi-android-on"
-      ],
-      "target": "Do you have an iPhone or an Android phone?",
-      "author_note": "Clarify route. Only the device is asked."
-    },
-    {
-      "id": "gsft-wifi_calling-05",
-      "candidate_id": "gsft-wifi_calling-05-v1",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "clarify",
-      "tags": [],
-      "category": "communication",
-      "platform": "iPhone or Android",
-      "sensitive": false,
-      "style": "under_specified",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "We are moving to a house with poor cell signal next week. I want Wi-Fi calling ready before then. Which settings do I need?"
-        }
-      ],
-      "decision": {
-        "mode": "clarify",
-        "question": "Which phone do you have, an iPhone or an Android?"
-      },
-      "decision_basis": "The user names no phone. The two sources show different menu paths, so the device is asked first.",
-      "source_ref_ids": [
-        "wifi-iphone-on",
-        "wifi-android-on"
-      ],
-      "target": "Which phone do you have, an iPhone or an Android?",
-      "author_note": "Clarify route. The question uses the device choice only."
-    },
-    {
-      "id": "gsft-wifi_calling-06",
-      "candidate_id": "gsft-wifi_calling-06-v1",
-      "task_id": "TR-159",
-      "task_group": "wifi_calling",
-      "source_group": "google_wifi_calling_android",
-      "behavior": "constraint",
-      "tags": [
-        "conditional"
-      ],
-      "category": "communication",
-      "platform": "Android",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I'm on my Android phone and I only have a minute before my bus comes. What's the quickest way to turn on Wi-Fi calling?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states an Android phone and a one-minute limit. The Google steps are short, so the reply gives only the path and the carrier-support line.",
-      "source_ref_ids": [
-        "wifi-android-on"
-      ],
-      "target": "Here is the quickest way to turn on Wi-Fi calling on your Android phone.\n1. Open your phone's **Settings** app.\n2. Tap **Network & internet**, then **SIMs**, then **Carrier SIM**, then **Wi-Fi calling**.\n3. Turn **Wi-Fi calling** on.\nIf you don't find this option, your carrier doesn't support this feature.",
-      "author_note": "Respects the one-minute limit by leaving out the carrier and charges notes. Those notes remain on the page and are covered in another candidate."
-    },
-    {
-      "id": "gsft-wifi_calling-07",
-      "candidate_id": "gsft-wifi_calling-07-v1",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "multiturn",
-      "tags": [
-        "conditional"
-      ],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
-        },
-        {
-          "role": "assistant",
-          "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
-        },
-        {
-          "role": "user",
-          "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
-      "source_ref_ids": [
-        "wifi-iphone-fix"
-      ],
-      "target": "Try these steps next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**. If your iPhone has multiple SIMs, tap the line you want to use Wi-Fi Calling. Then tap **Wi-Fi Calling** and turn it off and then on again.\n3. Go back to **Settings** and tap **General**.\n4. Tap **Transfer or Reset iPhone**, then tap **Reset**.\n5. Tap **Reset Network Settings**.",
-      "author_note": "Skips the restart and the first turn-on steps the user already did. The page says to wait two minutes between steps; that duration is left out of the reply by the writing rules, so the reply does not carry it. Step 5 erases network settings, as the page says."
-    },
-    {
-      "id": "gsft-printer-01",
-      "candidate_id": "gsft-printer-01-v1",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My printer is plugged into my Windows 11 PC with a USB cable, but I can't find how to add it. What do I do?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wired USB printer, so the wired-printer steps apply, and the post-install driver check follows the install.",
-      "source_ref_ids": [
-        "printer-wired",
-        "printer-driver"
-      ],
-      "target": "Here is how to add a USB printer on Windows 11.\n1. Connect the printer to the PC with the USB cable and turn it on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether your printer is already in the installed list. If it isn't, select **Add device** next to **Add a printer & scanner**.\n4. Wait for the list to load, then select the **Add Device** button next to your printer.\n5. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "All wired steps and the post-install driver check are covered. The page's 'for example, by USB' is kept as the cable step."
-    },
-    {
-      "id": "gsft-printer-02",
-      "candidate_id": "gsft-printer-02-v1",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I bought a new wireless printer and it's on my home Wi-Fi. My Windows 11 laptop is on the same network. How do I connect them?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wireless printer on the same network, so the network-printer steps apply. The not-listed branch is kept as a condition.",
-      "source_ref_ids": [
-        "printer-network",
-        "printer-not-listed",
-        "printer-driver"
-      ],
-      "target": "Here is how to add a wireless printer on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed. If it isn't, select **Add device** next to **Add a printer & scanner**.\n4. Wait for the list to load, then select **Add Device** next to the printer.\n5. If the printer doesn't appear, select **Add a new device manually** under **The printer that I want isn't listed**, then follow the instructions in the Add Printer window that opens.\n6. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "Covers the network steps, the not-listed branch as a condition, and the driver check. The wording 'Add Printer window' follows the page."
-    },
-    {
-      "id": "gsft-printer-03",
-      "candidate_id": "gsft-printer-03-v1",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
-      "source_ref_ids": [
-        "printer-not-listed",
-        "printer-wired"
-      ],
-      "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is connected to the PC and turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Select **Add device** next to **Add a printer & scanner**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** under **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.",
-      "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen."
-    },
-    {
-      "id": "gsft-printer-04",
-      "candidate_id": "gsft-printer-04-v1",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "constraint",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I have a wireless printer and no installation CD. I'm in a hurry, so what's the quickest way to add it to my Windows 11 computer?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11, a wireless printer, no CD and a hurry. The reply uses only the network-printer steps and the driver check, with no CD step, since the page has none.",
-      "source_ref_ids": [
-        "printer-network",
-        "printer-driver"
-      ],
-      "target": "Here is the quickest route on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed. If it isn't, select **Add device** next to **Add a printer & scanner**, wait for the list to load, then select **Add Device** next to the printer.\n4. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "The no-CD constraint is respected: the page gives no CD step, so none is added. The reply is kept short to meet the hurry."
-    },
-    {
-      "id": "gsft-package_text_scam-01",
-      "candidate_id": "gsft-package_text_scam-01-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_usps_text_scam",
-      "behavior": "direct",
-      "tags": [
-        "safety"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I got a text saying a USPS package is on hold and I have to pay a $1.99 fee through a link to get it released. Should I pay?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The FTC alert describes a package-fee text with a link as a common scam, so the reply tells the user not to act on the link and gives the page's checks, filter and reporting steps.",
-      "source_ref_ids": [
-        "scam-text-link",
-        "scam-text-filter",
-        "scam-text-report"
-      ],
-      "target": "This may be a scam, so stop before you act.\n1. Don't click any links in the text, and don't give any information from it.\n2. Check your delivery through the online retail site or account you ordered your item from.\n3. Look at the filter options your phone has, and block texts from unknown senders.\n4. Report the text on the messaging app you use. If the app has no way to report it, forward the message to 7726.",
-      "author_note": "Protective action first. The reporting number 7726 is given by the page for reporting texts. No other contact details are used."
-    },
-    {
-      "id": "gsft-package_text_scam-02",
-      "candidate_id": "gsft-package_text_scam-02-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_scammed_what_to_do",
-      "behavior": "direct",
-      "tags": [
-        "safety",
-        "distractor"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I paid a fake online seller with my credit card yesterday, and I think it was a scam. What do I do?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says a scammer was paid by credit card, so the credit card passage applies. The debit card passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "scam-card-credit",
-        "scam-card-debit"
-      ],
-      "target": "Act right away.\n1. Report it to the credit card issuer immediately.\n2. Use the number on the back of your card, or log in to your account online or through the app.\n3. Ask them to refund your money.",
-      "author_note": "Protective action first. The page's wording 'their app' is written as 'the app' because the issuer is the subject of the sentence."
-    },
-    {
-      "id": "gsft-package_text_scam-03",
-      "candidate_id": "gsft-package_text_scam-03-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_scammed_what_to_do",
-      "behavior": "constraint",
-      "tags": [
-        "safety"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I paid a scammer with my debit card yesterday. I don't want to make a phone call about it, so how do I deal with this?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states a debit card payment to a scammer and rules out a phone call. The page gives an online and app route, so the reply uses only that route for reporting and the refund request.",
-      "source_ref_ids": [
-        "scam-card-debit"
-      ],
-      "target": "You can do this online or in the app, without a phone call. Act right away.\n1. Report it to your bank or credit union immediately by logging in to your account online or through the app.\n2. Ask them to refund your money.",
-      "author_note": "The no-call constraint is respected by leaving out the card number option. The page's wording on the card number is not used."
-    },
-    {
-      "id": "gsft-package_text_scam-04",
-      "candidate_id": "gsft-package_text_scam-04-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_scammed_what_to_do",
-      "behavior": "constraint",
-      "tags": [
-        "safety",
-        "conditional"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "A stranger got into my computer remotely after I let him in. I'm not technical and can't set up complicated programs. What should I do?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says a stranger had remote access and that complicated setup is not possible. The page's three basic steps apply, with the download step kept as a condition.",
-      "source_ref_ids": [
-        "scam-computer-access"
-      ],
-      "target": "Here are the basic steps. Keep them simple, and ask a friend or family member for advice if you need it.\n1. Update your security software to make sure you have the latest protections. If you don't have security software, download it, and get recommendations from independent review sites, friends and family.\n2. Run a scan and delete anything it identifies as a problem.\n3. Change your passwords and turn on two-factor authentication to protect your accounts.",
-      "author_note": "The page's three numbered steps are covered in full. The constraint is respected by keeping the reply to those steps, with the download step as a condition."
-    },
-    {
-      "id": "gsft-package_text_scam-05",
-      "candidate_id": "gsft-package_text_scam-05-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_scammed_what_to_do",
-      "behavior": "multiturn",
-      "tags": [
-        "safety",
-        "distractor"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I got a text saying my USPS package needs a small fee before it can be released. Is it real?"
-        },
-        {
-          "role": "assistant",
-          "content": "It may be a scam. Don't click any links or give information from the text. Check your delivery through the retailer's website or account instead."
-        },
-        {
-          "role": "user",
-          "content": "I already clicked the link, typed my debit card number on their site, and paid the fee. What do I do now?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says a debit card was used to pay a scammer after clicking the link. The debit card passage applies, and the credit card passage is an inapplicable distractor.",
-      "source_ref_ids": [
-        "scam-card-debit",
-        "scam-card-credit"
-      ],
-      "target": "Act right away.\n1. Report it to your bank or credit union immediately, using the number on the back of your card or by logging in to your account online or through the app.\n2. Ask them to refund your money.",
-      "author_note": "Does not repeat the clicking, typing or paying the user already did. The earlier assistant turn matches the page's advice on links and checking delivery."
-    },
-    {
-      "id": "gsft-package_text_scam-06",
-      "candidate_id": "gsft-package_text_scam-06-v1",
-      "task_id": "TR-040",
-      "task_group": "package_text_scam",
-      "source_group": "ftc_scammed_what_to_do",
-      "behavior": "multiturn",
-      "tags": [
-        "safety",
-        "conditional"
-      ],
-      "category": "online_services",
-      "platform": "any",
-      "sensitive": true,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "A text said I had a missed delivery, and I clicked the link. Now there's a pop-up on my computer saying I have a virus."
-        },
-        {
-          "role": "assistant",
-          "content": "Don't give any information or click any links in the message. Check your delivery through the retailer's website or account instead."
-        },
-        {
-          "role": "user",
-          "content": "I called the number in the pop-up and let the person connect to my computer to fix the virus. He's gone now, and I'm not sure what he did."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says a stranger was let into the computer. The page's three steps for a scammer with access apply, and the download step is kept as a condition.",
-      "source_ref_ids": [
-        "scam-computer-access"
-      ],
-      "target": "Act now.\n1. Update your security software to make sure you have the latest protections. If you don't have security software, download it. Get recommendations from independent review sites, friends and family.\n2. Run a scan and delete anything it identifies as a problem.\n3. Change your passwords and turn on two-factor authentication to protect your accounts.",
-      "author_note": "Does not repeat the call or the remote access the user described. The page does not say to disconnect the stranger, so no such step is added."
-    },
-    {
-      "id": "gsft-printer-01",
-      "candidate_id": "gsft-printer-01-v2",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "My printer is plugged into my Windows 11 PC with a USB cable, but I can't find how to add it. What do I do?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wired USB printer, so the wired-printer steps apply, and the post-install driver check follows the install.",
-      "source_ref_ids": [
-        "printer-wired",
-        "printer-driver"
-      ],
-      "target": "Here is how to add a USB printer on Windows 11.\n1. Make sure the printer is turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. If it isn't in the list, go to **Add a printer & scanner** and select **Add device**.\n4. Wait for the list to load, then select the **Add Device** button next to your printer.\n5. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "All wired steps and the post-install driver check are covered. The page's 'for example, by USB' is kept as the cable step.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer-01-v1",
-          "to_candidate": "gsft-printer-01-v2",
-          "reason": "Step 1 repeated the USB connection the user already made, and step 3 added a 'next to' placement the page does not state.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-01-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer-02",
-      "candidate_id": "gsft-printer-02-v2",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I bought a new wireless printer and it's on my home Wi-Fi. My Windows 11 laptop is on the same network. How do I connect them?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and a wireless printer on the same network, so the network-printer steps apply. The not-listed branch is kept as a condition.",
-      "source_ref_ids": [
-        "printer-network",
-        "printer-not-listed",
-        "printer-driver"
-      ],
-      "target": "Here is how to add a wireless printer on Windows 11.\n1. Make sure the printer is turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. If it isn't in the list, go to **Add a printer & scanner** and select **Add device**.\n4. Wait for the list to load, then select **Add Device** next to the printer.\n5. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**, then follow the instructions in the Add Printer window that opens.\n6. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "Covers the network steps, the not-listed branch as a condition, and the driver check. The wording 'Add Printer window' follows the page.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer-02-v1",
-          "to_candidate": "gsft-printer-02-v2",
-          "reason": "Step 1 repeated the network connection the user already said was done, step 3 added an unstated 'next to' placement, and step 5 used 'under' where the page says 'next to'.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-02-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer-03",
-      "candidate_id": "gsft-printer-03-v2",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
-      "source_ref_ids": [
-        "printer-not-listed",
-        "printer-wired"
-      ],
-      "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is connected to the PC and turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Go to **Add a printer & scanner** and select **Add device**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.\nIf you already tried Add device, you can go straight to step 4.",
-      "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer-03-v1",
-          "to_candidate": "gsft-printer-03-v2",
-          "reason": "Step 3 added an unstated 'next to' placement, step 4 used 'under' where the page says 'next to', and the steps repeated the Add device attempt the user already made without saying so.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-03-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer-04",
-      "candidate_id": "gsft-printer-04-v2",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "constraint",
-      "tags": [
-        "conditional"
-      ],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I have a wireless printer and no installation CD. I'm in a hurry, so what's the quickest way to add it to my Windows 11 computer?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11, a wireless printer, no CD and a hurry. The reply uses only the network-printer steps and the driver check, with no CD step, since the page has none.",
-      "source_ref_ids": [
-        "printer-network",
-        "printer-driver"
-      ],
-      "target": "Here is the quickest route on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed.\n4. If it isn't, go to **Add a printer & scanner** and select **Add device**.\n5. Wait for the list to load.\n6. Select **Add Device** next to the printer.\n7. After installation, check **Windows Update** for newer drivers.",
-      "author_note": "The no-CD constraint is respected: the page gives no CD step, so none is added. The reply is kept short to meet the hurry.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer-04-v1",
-          "to_candidate": "gsft-printer-04-v2",
-          "reason": "Step 3 combined four actions in one step and added an unstated 'next to' placement.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-04-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-wifi_calling-01",
-      "candidate_id": "gsft-wifi_calling-01-v2",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "direct",
-      "tags": [
-        "distractor"
-      ],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "plain",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "Hi, my iPhone has bad signal at home and calls keep dropping. How do I turn on Wi-Fi Calling?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user names an iPhone, so the Apple turn-on steps apply. The Android refs are inapplicable distractors and are not used.",
-      "source_ref_ids": [
-        "wifi-iphone-on",
-        "wifi-android-on"
-      ],
-      "target": "Here is how to turn on Wi-Fi Calling on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Cellular**.\n3. If your iPhone has multiple SIMs (SIM cards), scroll to the line you want to use.\n4. Tap **Wi-Fi Calling** and turn on **Wi-Fi Calling on This iPhone**.\n5. Tap **Enable**. You might need to enter or confirm your address for emergency services.\nIf Wi-Fi Calling is available, you'll see 'Wi-Fi' in the status bar while viewing Control Center.",
-      "author_note": "Covers all five page steps and the status bar line. The status bar line is taken from the page paragraph after the steps. No gap for this procedure.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-wifi_calling-01-v1",
-          "to_candidate": "gsft-wifi_calling-01-v2",
-          "reason": "The closing line turned the page's conditional ('If Wi-Fi Calling is available') into a guarantee that it works.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-wifi_calling-01-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-wifi_calling-07",
-      "candidate_id": "gsft-wifi_calling-07-v2",
-      "task_id": "TR-026",
-      "task_group": "wifi_calling",
-      "source_group": "apple_wifi_calling_iphone",
-      "behavior": "multiturn",
-      "tags": [
-        "conditional"
-      ],
-      "category": "communication",
-      "platform": "iPhone",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
-        },
-        {
-          "role": "assistant",
-          "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
-        },
-        {
-          "role": "user",
-          "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
-      "source_ref_ids": [
-        "wifi-iphone-fix"
-      ],
-      "target": "Try these steps next.\nWait two minutes before you go from one step to the next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**.\n3. If your iPhone has multiple SIMs, tap the line you want to use.\n4. Tap **Wi-Fi Calling**.\n5. Turn **Wi-Fi Calling** off and then on again.\n6. Go back to **Settings** and tap **General**.\n7. Tap **Transfer or Reset iPhone**, then tap **Reset**.\n8. Tap **Reset Network Settings**.",
-      "author_note": "Skips the restart and the first turn-on steps the user already did. The page's instruction to wait two minutes between steps is included as the reviewer required, and each step has one action. Step 8 is the page's Reset Network Settings step.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-wifi_calling-07-v1",
-          "to_candidate": "gsft-wifi_calling-07-v2",
-          "reason": "The page's instruction to wait two minutes between steps was omitted, and step 2 combined several actions in one step.",
-          "changed_fields": [
-            "target",
-            "author_note",
-            "messages"
-          ],
-          "review_id": "review-gsft-wifi_calling-07-v1"
-        }
-      ]
-    },
-    {
-      "id": "gsft-printer-03",
-      "candidate_id": "gsft-printer-03-v3",
-      "task_id": "TR-036",
-      "task_group": "add_printer",
-      "source_group": "microsoft_add_printer_windows11",
-      "behavior": "direct",
-      "tags": [],
-      "category": "technical_support",
-      "platform": "Windows 11",
-      "sensitive": false,
-      "style": "failure_recovery",
-      "source_conversation": [
-        {
-          "role": "user",
-          "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
-        }
-      ],
-      "decision": {
-        "mode": "answer",
-        "question": ""
-      },
-      "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
-      "source_ref_ids": [
-        "printer-not-listed",
-        "printer-wired"
-      ],
-      "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is turned on and connected to the PC, for example by USB, or to the same network as the PC if it is a wireless printer.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Go to **Add a printer & scanner** and select **Add device**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.\nIf you already tried Add device, you can go straight to step 4.",
-      "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen.",
-      "correction_history": [
-        {
-          "from_candidate": "gsft-printer-03-v1",
-          "to_candidate": "gsft-printer-03-v2",
-          "reason": "Step 3 added an unstated 'next to' placement, step 4 used 'under' where the page says 'next to', and the steps repeated the Add device attempt the user already made without saying so.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-03-v1"
-        },
-        {
-          "from_candidate": "gsft-printer-03-v2",
-          "to_candidate": "gsft-printer-03-v3",
-          "reason": "Step 1 assumed a wired connection, but the page says a wireless printer must be on the same network as the PC, so the step now covers both cases.",
-          "changed_fields": [
-            "target",
-            "messages"
-          ],
-          "review_id": "review-gsft-printer-03-v2"
-        }
-      ]
+     "role": "user",
+     "content": "Hi, my iPhone has bad signal at home and calls keep dropping. How do I turn on Wi-Fi Calling?"
     }
-  ]
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names an iPhone, so the Apple turn-on steps apply. The Android refs are inapplicable distractors and are not used.",
+   "source_ref_ids": [
+    "wifi-iphone-on",
+    "wifi-android-on"
+   ],
+   "target": "Here is how to turn on Wi-Fi Calling on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Cellular**.\n3. If your iPhone has multiple SIMs (SIM cards), scroll to the line you want to use.\n4. Tap **Wi-Fi Calling** and turn on **Wi-Fi Calling on This iPhone**.\n5. Tap **Enable**. You might need to enter or confirm your address for emergency services.\nWhen it works, you'll see 'Wi-Fi' in the status bar while viewing Control Center.",
+   "author_note": "Covers all five page steps and the status bar line. The status bar line is taken from the page paragraph after the steps. No gap for this procedure."
+  },
+  {
+   "id": "gsft-wifi_calling-02",
+   "candidate_id": "gsft-wifi_calling-02-v1",
+   "task_id": "TR-159",
+   "task_group": "wifi_calling",
+   "source_group": "google_wifi_calling_android",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Android phone drops calls in my basement apartment. I want Wi-Fi calling on. Where in the settings do I go?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names an Android phone, so the Google steps apply. The iPhone ref is an inapplicable distractor. The page's carrier-support condition is kept as a conditional line.",
+   "source_ref_ids": [
+    "wifi-android-on",
+    "wifi-android-notes",
+    "wifi-iphone-on"
+   ],
+   "target": "Here is how to turn on Wi-Fi calling on your Android phone.\n1. Open your phone's **Settings** app.\n2. Tap **Network & internet**, then **SIMs**, then **Carrier SIM**, then **Wi-Fi calling**.\n3. Turn **Wi-Fi calling** on.\nIf you don't find this option, your carrier doesn't support this feature. Also check with your carrier that Wi-Fi calling is supported, since you may incur additional charges for making calls over Wi-Fi.",
+   "author_note": "The page's 'Notes before you start' are kept as the last line rather than a lead-in. The 'Carrier SIM' path is the page's path only; other phone makers may label it differently and the page does not say so."
+  },
+  {
+   "id": "gsft-wifi_calling-03",
+   "candidate_id": "gsft-wifi_calling-03-v1",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My calls keep dropping at home. Can you tell me how to turn on Wi-Fi calling?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone. The Apple steps use Settings, Cellular and Wi-Fi Calling, while the Google steps use Settings, Network & internet, SIMs, Carrier SIM and Wi-Fi calling, so the device must be known first.",
+   "source_ref_ids": [
+    "wifi-iphone-on",
+    "wifi-android-on"
+   ],
+   "target": "Is your phone an iPhone or an Android phone?",
+   "author_note": "Clarify route. The question asks only the device, not the carrier or phone maker."
+  },
+  {
+   "id": "gsft-wifi_calling-04",
+   "candidate_id": "gsft-wifi_calling-04-v1",
+   "task_id": "TR-159",
+   "task_group": "wifi_calling",
+   "source_group": "google_wifi_calling_android",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone or Android",
+   "sensitive": false,
+   "style": "incomplete",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My son set up Wi-Fi calling on my phone last year and now I forgot where it is. Can you walk me through turning it on again?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you have an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone, and the steps to find the Wi-Fi calling setting differ between the iPhone page and the Android page, so one question is needed before answering.",
+   "source_ref_ids": [
+    "wifi-iphone-on",
+    "wifi-android-on"
+   ],
+   "target": "Do you have an iPhone or an Android phone?",
+   "author_note": "Clarify route. Only the device is asked."
+  },
+  {
+   "id": "gsft-wifi_calling-05",
+   "candidate_id": "gsft-wifi_calling-05-v1",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "communication",
+   "platform": "iPhone or Android",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "We are moving to a house with poor cell signal next week. I want Wi-Fi calling ready before then. Which settings do I need?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Which phone do you have, an iPhone or an Android?"
+   },
+   "decision_basis": "The user names no phone. The two sources show different menu paths, so the device is asked first.",
+   "source_ref_ids": [
+    "wifi-iphone-on",
+    "wifi-android-on"
+   ],
+   "target": "Which phone do you have, an iPhone or an Android?",
+   "author_note": "Clarify route. The question uses the device choice only."
+  },
+  {
+   "id": "gsft-wifi_calling-06",
+   "candidate_id": "gsft-wifi_calling-06-v1",
+   "task_id": "TR-159",
+   "task_group": "wifi_calling",
+   "source_group": "google_wifi_calling_android",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "Android",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my Android phone and I only have a minute before my bus comes. What's the quickest way to turn on Wi-Fi calling?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an Android phone and a one-minute limit. The Google steps are short, so the reply gives only the path and the carrier-support line.",
+   "source_ref_ids": [
+    "wifi-android-on"
+   ],
+   "target": "Here is the quickest way to turn on Wi-Fi calling on your Android phone.\n1. Open your phone's **Settings** app.\n2. Tap **Network & internet**, then **SIMs**, then **Carrier SIM**, then **Wi-Fi calling**.\n3. Turn **Wi-Fi calling** on.\nIf you don't find this option, your carrier doesn't support this feature.",
+   "author_note": "Respects the one-minute limit by leaving out the carrier and charges notes. Those notes remain on the page and are covered in another candidate."
+  },
+  {
+   "id": "gsft-wifi_calling-07",
+   "candidate_id": "gsft-wifi_calling-07-v1",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
+    },
+    {
+     "role": "user",
+     "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
+   "source_ref_ids": [
+    "wifi-iphone-fix"
+   ],
+   "target": "Try these steps next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**. If your iPhone has multiple SIMs, tap the line you want to use Wi-Fi Calling. Then tap **Wi-Fi Calling** and turn it off and then on again.\n3. Go back to **Settings** and tap **General**.\n4. Tap **Transfer or Reset iPhone**, then tap **Reset**.\n5. Tap **Reset Network Settings**.",
+   "author_note": "Skips the restart and the first turn-on steps the user already did. The page says to wait two minutes between steps; that duration is left out of the reply by the writing rules, so the reply does not carry it. Step 5 erases network settings, as the page says."
+  },
+  {
+   "id": "gsft-printer-01",
+   "candidate_id": "gsft-printer-01-v1",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My printer is plugged into my Windows 11 PC with a USB cable, but I can't find how to add it. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wired USB printer, so the wired-printer steps apply, and the post-install driver check follows the install.",
+   "source_ref_ids": [
+    "printer-wired",
+    "printer-driver"
+   ],
+   "target": "Here is how to add a USB printer on Windows 11.\n1. Connect the printer to the PC with the USB cable and turn it on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether your printer is already in the installed list. If it isn't, select **Add device** next to **Add a printer & scanner**.\n4. Wait for the list to load, then select the **Add Device** button next to your printer.\n5. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "All wired steps and the post-install driver check are covered. The page's 'for example, by USB' is kept as the cable step."
+  },
+  {
+   "id": "gsft-printer-02",
+   "candidate_id": "gsft-printer-02-v1",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I bought a new wireless printer and it's on my home Wi-Fi. My Windows 11 laptop is on the same network. How do I connect them?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wireless printer on the same network, so the network-printer steps apply. The not-listed branch is kept as a condition.",
+   "source_ref_ids": [
+    "printer-network",
+    "printer-not-listed",
+    "printer-driver"
+   ],
+   "target": "Here is how to add a wireless printer on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed. If it isn't, select **Add device** next to **Add a printer & scanner**.\n4. Wait for the list to load, then select **Add Device** next to the printer.\n5. If the printer doesn't appear, select **Add a new device manually** under **The printer that I want isn't listed**, then follow the instructions in the Add Printer window that opens.\n6. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "Covers the network steps, the not-listed branch as a condition, and the driver check. The wording 'Add Printer window' follows the page."
+  },
+  {
+   "id": "gsft-printer-03",
+   "candidate_id": "gsft-printer-03-v1",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
+   "source_ref_ids": [
+    "printer-not-listed",
+    "printer-wired"
+   ],
+   "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is connected to the PC and turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Select **Add device** next to **Add a printer & scanner**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** under **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.",
+   "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen."
+  },
+  {
+   "id": "gsft-printer-04",
+   "candidate_id": "gsft-printer-04-v1",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have a wireless printer and no installation CD. I'm in a hurry, so what's the quickest way to add it to my Windows 11 computer?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11, a wireless printer, no CD and a hurry. The reply uses only the network-printer steps and the driver check, with no CD step, since the page has none.",
+   "source_ref_ids": [
+    "printer-network",
+    "printer-driver"
+   ],
+   "target": "Here is the quickest route on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed. If it isn't, select **Add device** next to **Add a printer & scanner**, wait for the list to load, then select **Add Device** next to the printer.\n4. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "The no-CD constraint is respected: the page gives no CD step, so none is added. The reply is kept short to meet the hurry."
+  },
+  {
+   "id": "gsft-package_text_scam-01",
+   "candidate_id": "gsft-package_text_scam-01-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_usps_text_scam",
+   "behavior": "direct",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got a text saying a USPS package is on hold and I have to pay a $1.99 fee through a link to get it released. Should I pay?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The FTC alert describes a package-fee text with a link as a common scam, so the reply tells the user not to act on the link and gives the page's checks, filter and reporting steps.",
+   "source_ref_ids": [
+    "scam-text-link",
+    "scam-text-filter",
+    "scam-text-report"
+   ],
+   "target": "This may be a scam, so stop before you act.\n1. Don't click any links in the text, and don't give any information from it.\n2. Check your delivery through the online retail site or account you ordered your item from.\n3. Look at the filter options your phone has, and block texts from unknown senders.\n4. Report the text on the messaging app you use. If the app has no way to report it, forward the message to 7726.",
+   "author_note": "Protective action first. The reporting number 7726 is given by the page for reporting texts. No other contact details are used."
+  },
+  {
+   "id": "gsft-package_text_scam-02",
+   "candidate_id": "gsft-package_text_scam-02-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_scammed_what_to_do",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "distractor"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I paid a fake online seller with my credit card yesterday, and I think it was a scam. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says a scammer was paid by credit card, so the credit card passage applies. The debit card passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "scam-card-credit",
+    "scam-card-debit"
+   ],
+   "target": "Act right away.\n1. Report it to the credit card issuer immediately.\n2. Use the number on the back of your card, or log in to your account online or through the app.\n3. Ask them to refund your money.",
+   "author_note": "Protective action first. The page's wording 'their app' is written as 'the app' because the issuer is the subject of the sentence."
+  },
+  {
+   "id": "gsft-package_text_scam-03",
+   "candidate_id": "gsft-package_text_scam-03-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_scammed_what_to_do",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I paid a scammer with my debit card yesterday. I don't want to make a phone call about it, so how do I deal with this?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states a debit card payment to a scammer and rules out a phone call. The page gives an online and app route, so the reply uses only that route for reporting and the refund request.",
+   "source_ref_ids": [
+    "scam-card-debit"
+   ],
+   "target": "You can do this online or in the app, without a phone call. Act right away.\n1. Report it to your bank or credit union immediately by logging in to your account online or through the app.\n2. Ask them to refund your money.",
+   "author_note": "The no-call constraint is respected by leaving out the card number option. The page's wording on the card number is not used."
+  },
+  {
+   "id": "gsft-package_text_scam-04",
+   "candidate_id": "gsft-package_text_scam-04-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_scammed_what_to_do",
+   "behavior": "constraint",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A stranger got into my computer remotely after I let him in. I'm not technical and can't set up complicated programs. What should I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says a stranger had remote access and that complicated setup is not possible. The page's three basic steps apply, with the download step kept as a condition.",
+   "source_ref_ids": [
+    "scam-computer-access"
+   ],
+   "target": "Here are the basic steps. Keep them simple, and ask a friend or family member for advice if you need it.\n1. Update your security software to make sure you have the latest protections. If you don't have security software, download it, and get recommendations from independent review sites, friends and family.\n2. Run a scan and delete anything it identifies as a problem.\n3. Change your passwords and turn on two-factor authentication to protect your accounts.",
+   "author_note": "The page's three numbered steps are covered in full. The constraint is respected by keeping the reply to those steps, with the download step as a condition."
+  },
+  {
+   "id": "gsft-package_text_scam-05",
+   "candidate_id": "gsft-package_text_scam-05-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_scammed_what_to_do",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "distractor"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got a text saying my USPS package needs a small fee before it can be released. Is it real?"
+    },
+    {
+     "role": "assistant",
+     "content": "It may be a scam. Don't click any links or give information from the text. Check your delivery through the retailer's website or account instead."
+    },
+    {
+     "role": "user",
+     "content": "I already clicked the link, typed my debit card number on their site, and paid the fee. What do I do now?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says a debit card was used to pay a scammer after clicking the link. The debit card passage applies, and the credit card passage is an inapplicable distractor.",
+   "source_ref_ids": [
+    "scam-card-debit",
+    "scam-card-credit"
+   ],
+   "target": "Act right away.\n1. Report it to your bank or credit union immediately, using the number on the back of your card or by logging in to your account online or through the app.\n2. Ask them to refund your money.",
+   "author_note": "Does not repeat the clicking, typing or paying the user already did. The earlier assistant turn matches the page's advice on links and checking delivery."
+  },
+  {
+   "id": "gsft-package_text_scam-06",
+   "candidate_id": "gsft-package_text_scam-06-v1",
+   "task_id": "TR-040",
+   "task_group": "package_text_scam",
+   "source_group": "ftc_scammed_what_to_do",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "any",
+   "sensitive": true,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A text said I had a missed delivery, and I clicked the link. Now there's a pop-up on my computer saying I have a virus."
+    },
+    {
+     "role": "assistant",
+     "content": "Don't give any information or click any links in the message. Check your delivery through the retailer's website or account instead."
+    },
+    {
+     "role": "user",
+     "content": "I called the number in the pop-up and let the person connect to my computer to fix the virus. He's gone now, and I'm not sure what he did."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says a stranger was let into the computer. The page's three steps for a scammer with access apply, and the download step is kept as a condition.",
+   "source_ref_ids": [
+    "scam-computer-access"
+   ],
+   "target": "Act now.\n1. Update your security software to make sure you have the latest protections. If you don't have security software, download it. Get recommendations from independent review sites, friends and family.\n2. Run a scan and delete anything it identifies as a problem.\n3. Change your passwords and turn on two-factor authentication to protect your accounts.",
+   "author_note": "Does not repeat the call or the remote access the user described. The page does not say to disconnect the stranger, so no such step is added."
+  },
+  {
+   "id": "gsft-printer-01",
+   "candidate_id": "gsft-printer-01-v2",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My printer is plugged into my Windows 11 PC with a USB cable, but I can't find how to add it. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wired USB printer, so the wired-printer steps apply, and the post-install driver check follows the install.",
+   "source_ref_ids": [
+    "printer-wired",
+    "printer-driver"
+   ],
+   "target": "Here is how to add a USB printer on Windows 11.\n1. Make sure the printer is turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. If it isn't in the list, go to **Add a printer & scanner** and select **Add device**.\n4. Wait for the list to load, then select the **Add Device** button next to your printer.\n5. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "All wired steps and the post-install driver check are covered. The page's 'for example, by USB' is kept as the cable step.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer-01-v1",
+     "to_candidate": "gsft-printer-01-v2",
+     "reason": "Step 1 repeated the USB connection the user already made, and step 3 added a 'next to' placement the page does not state.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-01-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer-02",
+   "candidate_id": "gsft-printer-02-v2",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I bought a new wireless printer and it's on my home Wi-Fi. My Windows 11 laptop is on the same network. How do I connect them?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and a wireless printer on the same network, so the network-printer steps apply. The not-listed branch is kept as a condition.",
+   "source_ref_ids": [
+    "printer-network",
+    "printer-not-listed",
+    "printer-driver"
+   ],
+   "target": "Here is how to add a wireless printer on Windows 11.\n1. Make sure the printer is turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. If it isn't in the list, go to **Add a printer & scanner** and select **Add device**.\n4. Wait for the list to load, then select **Add Device** next to the printer.\n5. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**, then follow the instructions in the Add Printer window that opens.\n6. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "Covers the network steps, the not-listed branch as a condition, and the driver check. The wording 'Add Printer window' follows the page.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer-02-v1",
+     "to_candidate": "gsft-printer-02-v2",
+     "reason": "Step 1 repeated the network connection the user already said was done, step 3 added an unstated 'next to' placement, and step 5 used 'under' where the page says 'next to'.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-02-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer-03",
+   "candidate_id": "gsft-printer-03-v2",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
+   "source_ref_ids": [
+    "printer-not-listed",
+    "printer-wired"
+   ],
+   "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is connected to the PC and turned on.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Go to **Add a printer & scanner** and select **Add device**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.\nIf you already tried Add device, you can go straight to step 4.",
+   "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer-03-v1",
+     "to_candidate": "gsft-printer-03-v2",
+     "reason": "Step 3 added an unstated 'next to' placement, step 4 used 'under' where the page says 'next to', and the steps repeated the Add device attempt the user already made without saying so.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-03-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer-04",
+   "candidate_id": "gsft-printer-04-v2",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have a wireless printer and no installation CD. I'm in a hurry, so what's the quickest way to add it to my Windows 11 computer?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11, a wireless printer, no CD and a hurry. The reply uses only the network-printer steps and the driver check, with no CD step, since the page has none.",
+   "source_ref_ids": [
+    "printer-network",
+    "printer-driver"
+   ],
+   "target": "Here is the quickest route on Windows 11.\n1. Turn on the printer and connect it to the same network as the PC. For wireless printers, use the same wireless network.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Check whether the printer is already installed.\n4. If it isn't, go to **Add a printer & scanner** and select **Add device**.\n5. Wait for the list to load.\n6. Select **Add Device** next to the printer.\n7. After installation, check **Windows Update** for newer drivers.",
+   "author_note": "The no-CD constraint is respected: the page gives no CD step, so none is added. The reply is kept short to meet the hurry.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer-04-v1",
+     "to_candidate": "gsft-printer-04-v2",
+     "reason": "Step 3 combined four actions in one step and added an unstated 'next to' placement.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-wifi_calling-01",
+   "candidate_id": "gsft-wifi_calling-01-v2",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Hi, my iPhone has bad signal at home and calls keep dropping. How do I turn on Wi-Fi Calling?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names an iPhone, so the Apple turn-on steps apply. The Android refs are inapplicable distractors and are not used.",
+   "source_ref_ids": [
+    "wifi-iphone-on",
+    "wifi-android-on"
+   ],
+   "target": "Here is how to turn on Wi-Fi Calling on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Cellular**.\n3. If your iPhone has multiple SIMs (SIM cards), scroll to the line you want to use.\n4. Tap **Wi-Fi Calling** and turn on **Wi-Fi Calling on This iPhone**.\n5. Tap **Enable**. You might need to enter or confirm your address for emergency services.\nIf Wi-Fi Calling is available, you'll see 'Wi-Fi' in the status bar while viewing Control Center.",
+   "author_note": "Covers all five page steps and the status bar line. The status bar line is taken from the page paragraph after the steps. No gap for this procedure.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-wifi_calling-01-v1",
+     "to_candidate": "gsft-wifi_calling-01-v2",
+     "reason": "The closing line turned the page's conditional ('If Wi-Fi Calling is available') into a guarantee that it works.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-wifi_calling-01-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-wifi_calling-07",
+   "candidate_id": "gsft-wifi_calling-07-v2",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
+    },
+    {
+     "role": "user",
+     "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
+   "source_ref_ids": [
+    "wifi-iphone-fix"
+   ],
+   "target": "Try these steps next.\nWait two minutes before you go from one step to the next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**.\n3. If your iPhone has multiple SIMs, tap the line you want to use.\n4. Tap **Wi-Fi Calling**.\n5. Turn **Wi-Fi Calling** off and then on again.\n6. Go back to **Settings** and tap **General**.\n7. Tap **Transfer or Reset iPhone**, then tap **Reset**.\n8. Tap **Reset Network Settings**.",
+   "author_note": "Skips the restart and the first turn-on steps the user already did. The page's instruction to wait two minutes between steps is included as the reviewer required, and each step has one action. Step 8 is the page's Reset Network Settings step.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-wifi_calling-07-v1",
+     "to_candidate": "gsft-wifi_calling-07-v2",
+     "reason": "The page's instruction to wait two minutes between steps was omitted, and step 2 combined several actions in one step.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-wifi_calling-07-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-printer-03",
+   "candidate_id": "gsft-printer-03-v3",
+   "task_id": "TR-036",
+   "task_group": "add_printer",
+   "source_group": "microsoft_add_printer_windows11",
+   "behavior": "direct",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "Windows 11",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I tried adding my printer on Windows 11 but it isn't in the list. Can you help?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Windows 11 and that the printer is not listed. The page's not-listed passage applies, and the navigation steps come from the wired-printer section.",
+   "source_ref_ids": [
+    "printer-not-listed",
+    "printer-wired"
+   ],
+   "target": "Here is what to try when your printer isn't in the list.\n1. Make sure the printer is turned on and connected to the PC, for example by USB, or to the same network as the PC if it is a wireless printer.\n2. Open **Start**, then **Settings**, then **Bluetooth & devices**, then **Printers & scanners**.\n3. Go to **Add a printer & scanner** and select **Add device**, then wait for the list to load.\n4. If the printer doesn't appear, select **Add a new device manually** next to **The printer that I want isn't listed**.\n5. Follow the instructions in the Add Printer window that opens.\nIf you already tried Add device, you can go straight to step 4.",
+   "author_note": "Step 1 is the wired section's connection step, which the user may not have done. The reply does not say where the printer is or what the Windows setting looks like on screen.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-printer-03-v1",
+     "to_candidate": "gsft-printer-03-v2",
+     "reason": "Step 3 added an unstated 'next to' placement, step 4 used 'under' where the page says 'next to', and the steps repeated the Add device attempt the user already made without saying so.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-03-v1"
+    },
+    {
+     "from_candidate": "gsft-printer-03-v2",
+     "to_candidate": "gsft-printer-03-v3",
+     "reason": "Step 1 assumed a wired connection, but the page says a wireless printer must be on the same network as the PC, so the step now covers both cases.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-printer-03-v2"
+    }
+   ]
+  },
+  {
+   "id": "gsft-wifi_calling-07",
+   "candidate_id": "gsft-wifi_calling-07-v3",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
+    },
+    {
+     "role": "user",
+     "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
+   "source_ref_ids": [
+    "wifi-iphone-fix",
+    "wifi-iphone-reset-network-warning"
+   ],
+   "target": "Try these steps next.\nWait two minutes before you go from one step to the next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**.\n3. If your iPhone has multiple SIMs, tap the line you want to use.\n4. Tap **Wi-Fi Calling**.\n5. Turn **Wi-Fi Calling** off and then on again.\nThe last three steps reset all saved Wi-Fi networks and passwords, cellular settings, and VPN and APN settings.\n6. Go back to **Settings** and tap **General**.\n7. Tap **Transfer or Reset iPhone**, then tap **Reset**.\n8. Tap **Reset Network Settings**.",
+   "author_note": "Skips the restart and the first turn-on steps the user already did. The page's instruction to wait two minutes between steps is included as the reviewer required, and each step has one action. Step 8 is the page's Reset Network Settings step.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-wifi_calling-07-v1",
+     "to_candidate": "gsft-wifi_calling-07-v2",
+     "reason": "The page's instruction to wait two minutes between steps was omitted, and step 2 combined several actions in one step.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-wifi_calling-07-v1"
+    },
+    {
+     "from_candidate": "gsft-wifi_calling-07-v2",
+     "to_candidate": "gsft-wifi_calling-07-v3",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): target told the user to reset network settings without saying this erases saved Wi-Fi networks and passwords; added Apple's statement before the reset steps.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "source_ref_ids"
+     ],
+     "review_id": "human-spot-check-gsft-wifi_calling-07"
+    }
+   ]
+  }
+ ]
 }

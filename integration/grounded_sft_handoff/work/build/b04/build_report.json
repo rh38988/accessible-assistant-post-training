@@ -20,8 +20,6 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
@@ -36,7 +34,7 @@
   "gsft-account_password_reset-02": "5055a781e50925eb8294bee4e9e30d43b613201af15e08b0fb21763c9fa057c9",
   "gsft-account_password_reset-03": "4822b28a11648ef0464e6e57f97bfbca4c0e56317d3789d2e60b929fd1f35859",
   "gsft-account_password_reset-04": "a5dfb3900aeb5839fd19e3df2d948dec7270520fd8e34afec0792faa5661e17f",
-  "gsft-account_password_reset-05": "16dbb0f262bc5197cbf373de36a6772cfcd170f982a04e9cd2cd30fb11dc8c78",
+  "gsft-account_password_reset-05": "66e5ab706e475d1a55602fed5765fdf37d308181c239559609a06806406367fb",
   "gsft-account_password_reset-06": "1b40892363bb1ed5d8d729f4b6d544daa75d773c67bbb3131a6462bda8294761",
   "gsft-account_password_reset-07": "aeb7b19ebf7bd4b723448db3f347d131299f5561b533f1c90f91b1bd47a9010c",
   "gsft-email_attach-01": "100fb66d4e74782b28af7bef61ebedc0c23f8e85d89a91a05b6d8a89874fef95",

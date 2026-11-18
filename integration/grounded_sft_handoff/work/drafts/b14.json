@@ -1,28 +1,1071 @@
-{"batch": "b14", "candidates": [
-{"id": "gsft-two_step_verification-01", "candidate_id": "gsft-two_step_verification-01-v1", "task_id": "TR-085", "task_group": "two_step_verification", "source_group": "apple_two_factor_iphone", "behavior": "direct", "tags": ["safety", "distractor"], "category": "online_services", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "My Apple Account sent me a notice about a sign-in I don't remember. I'm on my iPhone. How do I turn on two-factor authentication so I can add that extra check?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user names the iPhone, so the Apple iPhone steps apply. The Google computer steps are for a different device and are inapplicable.", "source_ref_ids": ["two_step_verification-iphone-apple", "two_step_verification-computer-google"], "target": "Here is how to turn on two-factor authentication on your iPhone.\n1. Open the **Settings** app.\n2. Tap your name at the top, then select **Sign-In & Security**.\n3. Turn on **Turn on two-factor authentication** and complete the prompts that appear.\nMost accounts already use two-factor authentication, so you may not need to enable it. If your Apple Account was created with two-factor authentication, the protection can't be removed.", "author_note": "Must cover: open Settings, tap name, select Sign-In & Security, turn on two-factor authentication, complete prompts. Conditions: most accounts already use it; cannot be removed if created with it. No source gap beyond paraphrased page text."},
-{"id": "gsft-two_step_verification-02", "candidate_id": "gsft-two_step_verification-02-v1", "task_id": "TR-130", "task_group": "two_step_verification", "source_group": "google_2sv_computer", "behavior": "direct", "tags": ["safety", "distractor", "conditional"], "category": "online_services", "platform": "Google Account on a computer", "sensitive": false, "style": "verbose", "source_conversation": [{"role": "user", "content": "A man called me just now saying he's from Google and asked me to read him the 6-digit code that just texted to my phone. He says it's to protect my account. My Google account is on my computer. Should I give him the code? And how do I turn on 2-Step Verification for it?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user's account is used on a computer, so the Google computer steps apply. The Apple iPhone steps are for a different device. The codes sentence applies to any device and answers the caller question.", "source_ref_ids": ["two_step_verification-codes-google", "two_step_verification-computer-google", "two_step_verification-iphone-apple"], "target": "Never share your verification codes with anyone.\nHere are the steps on your computer.\n1. Go to myaccount.google.com.\n2. Click **Security & sign-in**.\n3. Under **How you sign in to Google**, choose **Turn on 2-Step Verification**.\n4. Complete the prompts that appear.\nIf the account is managed through work, school, or another group, these steps may not work. Contact your administrator.", "author_note": "Must cover: never share codes (protective action first); steps 1 to 4; managed-account condition kept as a condition. No claims beyond the sources."},
-{"id": "gsft-two_step_verification-03", "candidate_id": "gsft-two_step_verification-03-v1", "task_id": "TR-085", "task_group": "two_step_verification", "source_group": "apple_two_factor_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (iPhone or computer)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "My grandson says I should turn on the extra login check on my email account. I'm not sure how to do it. Can you walk me through it?"}], "decision": {"mode": "clarify", "question": "Are you setting this up on your iPhone or on a computer?"}, "decision_basis": "The user does not name the device. The Apple iPhone steps and the Google computer steps differ, so one question is needed before answering.", "source_ref_ids": ["two_step_verification-iphone-apple", "two_step_verification-computer-google"], "target": "Are you setting this up on your iPhone or on a computer?", "author_note": "Clarify only. The target is the question and nothing else."},
-{"id": "gsft-two_step_verification-04", "candidate_id": "gsft-two_step_verification-04-v1", "task_id": "TR-130", "task_group": "two_step_verification", "source_group": "google_2sv_computer", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (iPhone or computer)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "My account asked me for a code when I signed in on a new device. I want that code check turned on for good. Where do I start?"}], "decision": {"mode": "clarify", "question": "Do you want to set this up on your iPhone or on a computer?"}, "decision_basis": "The user does not name a device. The iPhone steps and the computer steps differ, so the device is needed first.", "source_ref_ids": ["two_step_verification-iphone-apple", "two_step_verification-computer-google"], "target": "Do you want to set this up on your iPhone or on a computer?", "author_note": "Clarify only. The target is the question and nothing else."},
-{"id": "gsft-two_step_verification-05", "candidate_id": "gsft-two_step_verification-05-v1", "task_id": "TR-130", "task_group": "two_step_verification", "source_group": "google_2sv_computer", "behavior": "constraint", "tags": ["conditional"], "category": "online_services", "platform": "Google Account on a computer", "sensitive": false, "style": "over_specified", "source_conversation": [{"role": "user", "content": "I can't use my phone for this, the screen is too small for my eyes. I'm at my desk with my computer. Please give me the shortest steps to turn on 2-step for my Google account."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states the computer and asks for the shortest route, so only the computer steps apply. The phone is excluded by the user's own limit.", "source_ref_ids": ["two_step_verification-computer-google", "two_step_verification-iphone-apple"], "target": "Here are the shortest steps on your computer.\n1. Go to myaccount.google.com.\n2. Click **Security & sign-in**.\n3. Under **How you sign in to Google**, choose **Turn on 2-Step Verification**.\n4. Complete the prompts that appear.\nIf the account is managed through work, school, or another group, these steps may not work. Contact your administrator.", "author_note": "Must respect the no-phone limit and keep to the four steps plus the managed-account condition. No phone steps."},
-{"id": "gsft-two_step_verification-06", "candidate_id": "gsft-two_step_verification-06-v1", "task_id": "TR-130", "task_group": "two_step_verification", "source_group": "google_2sv_computer", "behavior": "multiturn", "tags": ["conditional"], "category": "online_services", "platform": "Google Account on a computer", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "How do I turn on 2-step verification for my Google account?"}, {"role": "assistant", "content": "On a computer: go to myaccount.google.com, click Security & sign-in, then under How you sign in to Google, choose Turn on 2-Step Verification. Then complete the prompts that appear."}, {"role": "user", "content": "I did that on my computer and it says my account is managed by my school, so the option isn't there. What now?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user reports the steps did not work because the account is managed by a school. The page says these steps may not work for managed accounts and to contact the administrator, so the reply is the contact step.", "source_ref_ids": ["two_step_verification-computer-google"], "target": "These steps may not work for an account managed through work, school, or another group.\n1. Contact your administrator.", "author_note": "Must not repeat the steps the user already tried. Must cover the managed-account condition and the contact-administrator step only."},
-{"id": "gsft-phishing_email-01", "candidate_id": "gsft-phishing_email-01-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "direct", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "I got an email saying my account will be closed today unless I click the link and log in. I've never heard of this company. Should I do anything?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has no account with the company and does not know the sender, so the 'No' branch of the email checklist applies and the report steps follow.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not click the link yet. Attachments and links might install harmful malware.\n1. Answer this question: do you have an account with the company, or do you know the person who contacted you?\n2. If the answer is no, it could be a phishing scam. Report the message and then delete it.\n3. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n4. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.", "author_note": "Must cover: do not click link (malware sentence); the checklist question; the No branch; report then delete; forward to APWG; report to FTC. The text-message forwarding line is inapplicable to email and must not be used."},
-{"id": "gsft-phishing_email-02", "candidate_id": "gsft-phishing_email-02-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "direct", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "The email looks like it's from my bank. It has a link to log in and check a payment. I do have an account with that bank. Is it safe to click the link?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has an account with the company, so the 'Yes' branch applies: contact the company through a number or website known to be real.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not click the link in the email. Attachments and links might install harmful malware.\n1. Contact the company using a phone number or website you know is real.", "author_note": "Must cover: do not click the link (malware sentence) and the Yes branch contact step. The report steps apply only to the No branch and must not be used here."},
-{"id": "gsft-phishing_email-03", "candidate_id": "gsft-phishing_email-03-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "over_specified", "source_conversation": [{"role": "user", "content": "I got an email asking me to open an attachment for an invoice. I don't know the sender. My email app won't let me forward messages, so please don't tell me to forward it. What do I do?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user does not know the sender, so the No branch applies. The user cannot forward messages, so the forwarding step is excluded and the FTC report and delete steps are used instead.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not open the attachment. Attachments and links might install harmful malware.\n1. Answer this question: do you have an account with the company, or do you know the person who contacted you? If not, it could be a phishing scam.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.", "author_note": "Must respect the no-forwarding limit. Must cover: attachment warning, checklist question with No branch, FTC report, delete. No forwarding step."},
-{"id": "gsft-phishing_email-04", "candidate_id": "gsft-phishing_email-04-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "Short answers please, long messages confuse me. An email says my tax refund is waiting if I open the attached file. What do I do with it? Nothing else please."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user describes an attachment from a sender they do not name and asks for short steps only. The checklist and report sentences from the FTC page apply.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not open the attached file. Attachments and links might install harmful malware.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.", "author_note": "Must keep the answer short and cover: attachment warning, forward to APWG, FTC report, delete. Forwarding is applicable here because the user describes a suspicious email with an attachment. The text-message line is inapplicable."},
-{"id": "gsft-phishing_email-05", "candidate_id": "gsft-phishing_email-05-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_report", "behavior": "multiturn", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "incomplete", "source_conversation": [{"role": "user", "content": "I got an email asking me to click a link to update my account details. What should I check?"}, {"role": "assistant", "content": "Ask yourself whether you have an account with that company or know the person who sent it. If the answer is no, it could be a phishing scam, so do not click the link."}, {"role": "user", "content": "I have no account with them and I don't know the sender. I already forwarded the email to the Anti-Phishing Working Group. What do I do now?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has already forwarded the email, so forwarding is not repeated. The remaining step is the FTC report and deleting the message, which the FTC page gives for a phishing email.", "source_ref_ids": ["phishing_email-email-report-ftc", "phishing_email-email-check-ftc", "phishing_email-text-ftc"], "target": "Do not click the link in the email.\n1. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n2. Delete the message.", "author_note": "Must not tell the user to forward again. Must cover FTC report and delete, with the protective first line."},
-{"id": "gsft-phishing_email-06", "candidate_id": "gsft-phishing_email-06-v1", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_report", "behavior": "multiturn", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "My bank emailed me asking me to click a link and confirm my details. It looks real."}, {"role": "assistant", "content": "Check whether you have an account with the company or know the person who contacted you. If you do, contact the company using a phone number or website you know is real. If you don't, it could be a phishing scam."}, {"role": "user", "content": "I do have an account. I called the bank on the number on my card and they said the email was fake. What should I do with it?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user confirmed with the company that the email is fake, so the email is phishing. The FTC page gives the forward and report steps for a phishing email, and the user has not forwarded it yet.", "source_ref_ids": ["phishing_email-email-report-ftc", "phishing_email-email-check-ftc", "phishing_email-text-ftc"], "target": "Do not click any links in the email.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.", "author_note": "Must not repeat the bank call the user already made. Must cover: link warning, forward to APWG, FTC report, delete."},
-{"id": "gsft-report_spam_text-01", "candidate_id": "gsft-report_spam_text-01-v1", "task_id": "TR-133", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "direct", "tags": ["distractor", "conditional"], "category": "online_services", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "A text came in saying my package is stuck and I have to pay a fee at a link. I haven't opened it yet. I have an iPhone. How do I report it?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user names the iPhone and says the message is not yet opened, so the not-yet-opened branch of the iPhone steps applies. The Google Messages steps are for Android and are inapplicable.", "source_ref_ids": ["report_spam_text-iphone-unopened", "report_spam_text-android-hold"], "target": "Here is how to report an unopened spam text on your iPhone.\n1. Open the **Messages** app.\n2. Swipe left on the message, press the Delete control, then tap **Delete and Report Spam**.\nYou can't report a message after you've replied to it. Reporting doesn't stop the sender, so block them separately if you need to.", "author_note": "Must cover: open Messages, swipe left, press Delete control, tap Delete and Report Spam, the reply condition, and the block-separately condition. The Android lines are inapplicable."},
-{"id": "gsft-report_spam_text-02", "candidate_id": "gsft-report_spam_text-02-v1", "task_id": "TR-152", "task_group": "report_spam_text", "source_group": "google_messages_report_spam", "behavior": "direct", "tags": ["distractor", "conditional"], "category": "online_services", "platform": "Android (Google Messages)", "sensitive": false, "style": "verbose", "source_conversation": [{"role": "user", "content": "I have an Android and I use Google Messages. I opened a spam text from a number I don't know and it's asking for my bank login. How do I report it and block the number?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user names an Android phone with Google Messages and has opened the conversation, so the Google Messages block-from-inside steps apply. The iPhone block steps are inapplicable.", "source_ref_ids": ["report_spam_text-android-inside", "report_spam_text-iphone-block"], "target": "Here is how to report and block it from inside the conversation.\n1. Open the conversation.\n2. Tap **More options**, then **Details**.\n3. Tap **Block & report spam**, then **OK**.\nReported conversations are moved to the **Spam & blocked** folder.", "author_note": "Must cover: open conversation, More options, Details, Block & report spam, OK, and the folder note. No iPhone steps."},
-{"id": "gsft-report_spam_text-03", "candidate_id": "gsft-report_spam_text-03-v1", "task_id": "TR-087", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (iPhone or Android)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "I got a spam text today and I want to report it so it stops. Can you help me do that?"}], "decision": {"mode": "clarify", "question": "Is your phone an iPhone or an Android?"}, "decision_basis": "The user does not name the phone. The iPhone steps and the Google Messages steps differ, so the device is needed first.", "source_ref_ids": ["report_spam_text-iphone-unopened", "report_spam_text-android-hold"], "target": "Is your phone an iPhone or an Android?", "author_note": "Clarify only. The target is the question and nothing else."},
-{"id": "gsft-report_spam_text-04", "candidate_id": "gsft-report_spam_text-04-v1", "task_id": "TR-087", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (iPhone or Android)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "A number I don't know texted me asking me to confirm my bank details. I want to block them so they can't text me again. Please help."}], "decision": {"mode": "clarify", "question": "Do you use an iPhone or an Android phone?"}, "decision_basis": "The user does not name the phone. The iPhone block steps and the Android block steps differ, so the device is needed first.", "source_ref_ids": ["report_spam_text-iphone-block", "report_spam_text-android-inside"], "target": "Do you use an iPhone or an Android phone?", "author_note": "Clarify only. The target is the question and nothing else."},
-{"id": "gsft-report_spam_text-05", "candidate_id": "gsft-report_spam_text-05-v1", "task_id": "TR-152", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (iPhone or Android)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "Spam keeps coming from a company I never dealt with. I have one of their texts open right now. What do I do?"}], "decision": {"mode": "clarify", "question": "Is this on an iPhone or an Android phone?"}, "decision_basis": "The user has the message open but does not name the phone. The iPhone opened-message steps and the Android opened-conversation steps differ, so the device is needed first.", "source_ref_ids": ["report_spam_text-iphone-opened", "report_spam_text-android-inside"], "target": "Is this on an iPhone or an Android phone?", "author_note": "Clarify only. The target is the question and nothing else."},
-{"id": "gsft-report_spam_text-06", "candidate_id": "gsft-report_spam_text-06-v1", "task_id": "TR-133", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "constraint", "tags": [], "category": "online_services", "platform": "iPhone", "sensitive": false, "style": "over_specified", "source_conversation": [{"role": "user", "content": "I'm on an iPhone. I can't tap small buttons well, so give me the fewest taps possible. A text just came in asking me to click a link for a delivery fee. I haven't opened it."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user names the iPhone and says the message is not opened, so the not-yet-opened branch applies. The user limits the reply to the fewest taps.", "source_ref_ids": ["report_spam_text-iphone-unopened"], "target": "Here are the fewest steps for an unopened text on your iPhone.\n1. Swipe left on the message.\n2. Press the Delete control.\n3. Tap **Delete and Report Spam**.", "author_note": "Must respect the fewest-taps limit and cover all three actions from the Apple page. Do not add the FTC forwarding step, because the user's limit and the deletion conflict with it."},
-{"id": "gsft-report_spam_text-07", "candidate_id": "gsft-report_spam_text-07-v1", "task_id": "TR-152", "task_group": "report_spam_text", "source_group": "google_messages_report_spam", "behavior": "multiturn", "tags": ["safety", "distractor", "conditional"], "category": "online_services", "platform": "Android (Google Messages)", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "A text said I won a prize and to click a link to claim it. What should I do?"}, {"role": "assistant", "content": "Don't tap links in unexpected texts asking for personal or financial information. Copy the message and forward it to 7726 (SPAM). Then report it to the FTC at ReportFraud.ftc.gov."}, {"role": "user", "content": "I forwarded it to 7726 already. I'm on an Android, and the message is still in my Google Messages."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has already forwarded the message and is on Android with Google Messages. The Google Messages report steps apply, and the FTC report step is still outstanding. The iPhone steps are inapplicable.", "source_ref_ids": ["report_spam_text-android-hold", "report_spam_text-ftc-phone", "report_spam_text-iphone-unopened"], "target": "Here is how to report the conversation in Google Messages.\n1. Touch and hold the conversation you want to report.\n2. Tap **Block**, then **Report spam**, then **OK**.\n3. Report it to the FTC at ReportFraud.ftc.gov.\nReported conversations are moved to the **Spam & blocked** folder.", "author_note": "Must not repeat the forwarding the user already did. Must cover: touch and hold, Block, Report spam, OK, FTC report, folder note. No iPhone steps."},
-{"id": "gsft-phishing_email-01", "candidate_id": "gsft-phishing_email-01-v2", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "direct", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "I got an email saying my account will be closed today unless I click the link and log in. I've never heard of this company. Should I do anything?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has no account with the company and does not know the sender, so the 'No' branch of the email checklist applies and the report steps follow.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not click the link. Attachments and links might install harmful malware. Since you have never heard of this company, it could be a phishing scam.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.", "author_note": "Must cover: do not click the link (malware sentence); the no-known-sender basis for phishing; forward to APWG; report to FTC; delete after reporting. The text-message forwarding line is inapplicable to email and must not be used.", "correction_history": [{"from_candidate": "gsft-phishing_email-01-v1", "to_candidate": "gsft-phishing_email-01-v2", "reason": "The checklist question repeated a fact the user already gave, and the target omitted the delete step that the email-check passage requires.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-phishing_email-01-v1"}]},
-{"id": "gsft-phishing_email-03", "candidate_id": "gsft-phishing_email-03-v2", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "over_specified", "source_conversation": [{"role": "user", "content": "I got an email asking me to open an attachment for an invoice. I don't know the sender. My email app won't let me forward messages, so please don't tell me to forward it. What do I do?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user does not know the sender, so the No branch applies. The user cannot forward messages, so the forwarding step is excluded and the FTC report and delete steps are used instead.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not open the attachment. Attachments and links might install harmful malware. Since you do not know the sender, it could be a phishing scam.\n1. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n2. Delete the message.", "author_note": "Must respect the no-forwarding limit. Must cover: attachment warning, the no-known-sender basis, FTC report, delete. No forwarding step.", "correction_history": [{"from_candidate": "gsft-phishing_email-03-v1", "to_candidate": "gsft-phishing_email-03-v2", "reason": "The account-or-sender question was repeated although the user already said they do not know the sender, so it was replaced with that stated fact.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-phishing_email-03-v1"}]},
-{"id": "gsft-phishing_email-04", "candidate_id": "gsft-phishing_email-04-v2", "task_id": "TR-086", "task_group": "phishing_email", "source_group": "ftc_phishing_check", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Email", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "Short answers please, long messages confuse me. An email says my tax refund is waiting if I open the attached file. What do I do with it? Nothing else please."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user describes an attachment from a sender they do not name and asks for short steps only. The checklist and report sentences from the FTC page apply.", "source_ref_ids": ["phishing_email-email-check-ftc", "phishing_email-email-report-ftc", "phishing_email-text-ftc"], "target": "Do not open the attached file. Attachments and links might install harmful malware. If you do not know the sender, it could be a phishing scam.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.", "author_note": "Must keep the answer short and cover: attachment warning, the sender basis sentence, forward to APWG, FTC report, delete. The text-message line is inapplicable.", "correction_history": [{"from_candidate": "gsft-phishing_email-04-v1", "to_candidate": "gsft-phishing_email-04-v2", "reason": "The target gave the report steps without the sentence stating why the email is treated as phishing, which is the first check in the email-check passage.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-phishing_email-04-v1"}]},
-{"id": "gsft-report_spam_text-06", "candidate_id": "gsft-report_spam_text-06-v2", "task_id": "TR-133", "task_group": "report_spam_text", "source_group": "apple_report_spam_iphone", "behavior": "constraint", "tags": [], "category": "online_services", "platform": "iPhone", "sensitive": false, "style": "over_specified", "source_conversation": [{"role": "user", "content": "I'm on an iPhone. I can't tap small buttons well, so give me the fewest taps possible. A text just came in asking me to click a link for a delivery fee. I haven't opened it."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user names the iPhone and says the message is not opened, so the not-yet-opened branch applies. The user limits the reply to the fewest taps.", "source_ref_ids": ["report_spam_text-iphone-unopened"], "target": "Here are the fewest steps for an unopened text on your iPhone.\n1. Open the **Messages** app.\n2. Swipe left on the message.\n3. Tap **Delete**.\n4. Tap **Delete and Report Spam**.", "author_note": "Must respect the fewest-taps limit and cover all four actions from the Apple page: open Messages, swipe left, Delete, Delete and Report Spam. Do not add the FTC forwarding step, because the user's limit and the deletion conflict with it.", "correction_history": [{"from_candidate": "gsft-report_spam_text-06-v1", "to_candidate": "gsft-report_spam_text-06-v2", "reason": "The target began at the swipe without the Open the Messages app step that the iPhone passage gives first.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-report_spam_text-06-v1"}]},
-{"id": "gsft-report_spam_text-07", "candidate_id": "gsft-report_spam_text-07-v2", "task_id": "TR-152", "task_group": "report_spam_text", "source_group": "google_messages_report_spam", "behavior": "multiturn", "tags": ["safety", "distractor", "conditional"], "category": "online_services", "platform": "Android (Google Messages)", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "A text said I won a prize and to click a link to claim it. What should I do?"}, {"role": "assistant", "content": "Don't tap links in unexpected texts asking for personal or financial information. Copy the message and forward it to 7726 (SPAM). Then report it to the FTC at ReportFraud.ftc.gov."}, {"role": "user", "content": "I forwarded it to 7726 already. I'm on an Android, and the message is still in my Google Messages."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user has already forwarded the message and is on Android with Google Messages. The Google Messages report steps apply, and the FTC report step is still outstanding. The iPhone steps are inapplicable.", "source_ref_ids": ["report_spam_text-android-hold", "report_spam_text-ftc-phone", "report_spam_text-iphone-unopened"], "target": "Here is how to report the conversation in Google Messages.\nReporting is optional. Reporting sends the spammer's phone number and their last 10 incoming messages to Google.\n1. Touch and hold the conversation you want to report.\n2. Tap **Block**, then **Report spam**, then **OK**.\n3. Report it to the FTC at ReportFraud.ftc.gov.\nReported conversations are moved to the **Spam & blocked** folder.", "author_note": "Must not repeat the forwarding the user already did. Must cover: optional reporting and what it sends to Google, touch and hold, Block, Report spam, OK, FTC report, folder note. No iPhone steps.", "correction_history": [{"from_candidate": "gsft-report_spam_text-07-v1", "to_candidate": "gsft-report_spam_text-07-v2", "reason": "The target did not state that reporting is optional or what data it sends to Google, which the user needs before deciding.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-report_spam_text-07-v1"}]},
-{"id": "gsft-two_step_verification-03", "candidate_id": "gsft-two_step_verification-03-v2", "task_id": "TR-085", "task_group": "two_step_verification", "source_group": "apple_two_factor_iphone", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (Google or Apple Account)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "My grandson says I should turn on the extra login check on my email account. I'm not sure how to do it. Can you walk me through it?"}], "decision": {"mode": "clarify", "question": "Is your email account a Google account, such as Gmail, or an Apple Account?"}, "decision_basis": "The user does not name the email provider. The Apple Account steps and the Google Account steps differ by account, not by device, so the account is needed first.", "source_ref_ids": ["two_step_verification-iphone-apple", "two_step_verification-computer-google"], "target": "Is your email account a Google account, such as Gmail, or an Apple Account?", "author_note": "Clarify only. The target is the question and nothing else.", "correction_history": [{"from_candidate": "gsft-two_step_verification-03-v1", "to_candidate": "gsft-two_step_verification-03-v2", "reason": "The routed question asked for the device, but the passages are keyed to the account provider, so the question was changed to ask which account it is.", "changed_fields": ["decision", "target", "platform", "decision_basis", "messages"], "review_id": "review-gsft-two_step_verification-03-v1"}]},
-{"id": "gsft-two_step_verification-04", "candidate_id": "gsft-two_step_verification-04-v2", "task_id": "TR-130", "task_group": "two_step_verification", "source_group": "google_2sv_computer", "behavior": "clarify", "tags": [], "category": "online_services", "platform": "Unknown (Google or Apple Account)", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "My account asked me for a code when I signed in on a new device. I want that code check turned on for good. Where do I start?"}], "decision": {"mode": "clarify", "question": "Is this account a Google account or an Apple Account?"}, "decision_basis": "The user does not name the account. The Apple Account steps and the Google Account steps differ by account, so the account is needed first.", "source_ref_ids": ["two_step_verification-iphone-apple", "two_step_verification-computer-google"], "target": "Is this account a Google account or an Apple Account?", "author_note": "Clarify only. The target is the question and nothing else.", "correction_history": [{"from_candidate": "gsft-two_step_verification-04-v1", "to_candidate": "gsft-two_step_verification-04-v2", "reason": "The routed question asked for the device, but the passages are keyed to the account provider, so the question was changed to ask which account it is.", "changed_fields": ["decision", "target", "platform", "decision_basis", "messages"], "review_id": "review-gsft-two_step_verification-04-v1"}]}
-]}
+{
+ "batch": "b14",
+ "candidates": [
+  {
+   "id": "gsft-two_step_verification-01",
+   "candidate_id": "gsft-two_step_verification-01-v1",
+   "task_id": "TR-085",
+   "task_group": "two_step_verification",
+   "source_group": "apple_two_factor_iphone",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "distractor"
+   ],
+   "category": "online_services",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My Apple Account sent me a notice about a sign-in I don't remember. I'm on my iPhone. How do I turn on two-factor authentication so I can add that extra check?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names the iPhone, so the Apple iPhone steps apply. The Google computer steps are for a different device and are inapplicable.",
+   "source_ref_ids": [
+    "two_step_verification-iphone-apple",
+    "two_step_verification-computer-google"
+   ],
+   "target": "Here is how to turn on two-factor authentication on your iPhone.\n1. Open the **Settings** app.\n2. Tap your name at the top, then select **Sign-In & Security**.\n3. Turn on **Turn on two-factor authentication** and complete the prompts that appear.\nMost accounts already use two-factor authentication, so you may not need to enable it. If your Apple Account was created with two-factor authentication, the protection can't be removed.",
+   "author_note": "Must cover: open Settings, tap name, select Sign-In & Security, turn on two-factor authentication, complete prompts. Conditions: most accounts already use it; cannot be removed if created with it. No source gap beyond paraphrased page text."
+  },
+  {
+   "id": "gsft-two_step_verification-02",
+   "candidate_id": "gsft-two_step_verification-02-v1",
+   "task_id": "TR-130",
+   "task_group": "two_step_verification",
+   "source_group": "google_2sv_computer",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Google Account on a computer",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A man called me just now saying he's from Google and asked me to read him the 6-digit code that just texted to my phone. He says it's to protect my account. My Google account is on my computer. Should I give him the code? And how do I turn on 2-Step Verification for it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user's account is used on a computer, so the Google computer steps apply. The Apple iPhone steps are for a different device. The codes sentence applies to any device and answers the caller question.",
+   "source_ref_ids": [
+    "two_step_verification-codes-google",
+    "two_step_verification-computer-google",
+    "two_step_verification-iphone-apple"
+   ],
+   "target": "Never share your verification codes with anyone.\nHere are the steps on your computer.\n1. Go to myaccount.google.com.\n2. Click **Security & sign-in**.\n3. Under **How you sign in to Google**, choose **Turn on 2-Step Verification**.\n4. Complete the prompts that appear.\nIf the account is managed through work, school, or another group, these steps may not work. Contact your administrator.",
+   "author_note": "Must cover: never share codes (protective action first); steps 1 to 4; managed-account condition kept as a condition. No claims beyond the sources."
+  },
+  {
+   "id": "gsft-two_step_verification-03",
+   "candidate_id": "gsft-two_step_verification-03-v1",
+   "task_id": "TR-085",
+   "task_group": "two_step_verification",
+   "source_group": "apple_two_factor_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (iPhone or computer)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My grandson says I should turn on the extra login check on my email account. I'm not sure how to do it. Can you walk me through it?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Are you setting this up on your iPhone or on a computer?"
+   },
+   "decision_basis": "The user does not name the device. The Apple iPhone steps and the Google computer steps differ, so one question is needed before answering.",
+   "source_ref_ids": [
+    "two_step_verification-iphone-apple",
+    "two_step_verification-computer-google"
+   ],
+   "target": "Are you setting this up on your iPhone or on a computer?",
+   "author_note": "Clarify only. The target is the question and nothing else."
+  },
+  {
+   "id": "gsft-two_step_verification-04",
+   "candidate_id": "gsft-two_step_verification-04-v1",
+   "task_id": "TR-130",
+   "task_group": "two_step_verification",
+   "source_group": "google_2sv_computer",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (iPhone or computer)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My account asked me for a code when I signed in on a new device. I want that code check turned on for good. Where do I start?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you want to set this up on your iPhone or on a computer?"
+   },
+   "decision_basis": "The user does not name a device. The iPhone steps and the computer steps differ, so the device is needed first.",
+   "source_ref_ids": [
+    "two_step_verification-iphone-apple",
+    "two_step_verification-computer-google"
+   ],
+   "target": "Do you want to set this up on your iPhone or on a computer?",
+   "author_note": "Clarify only. The target is the question and nothing else."
+  },
+  {
+   "id": "gsft-two_step_verification-05",
+   "candidate_id": "gsft-two_step_verification-05-v1",
+   "task_id": "TR-130",
+   "task_group": "two_step_verification",
+   "source_group": "google_2sv_computer",
+   "behavior": "constraint",
+   "tags": [
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Google Account on a computer",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I can't use my phone for this, the screen is too small for my eyes. I'm at my desk with my computer. Please give me the shortest steps to turn on 2-step for my Google account."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states the computer and asks for the shortest route, so only the computer steps apply. The phone is excluded by the user's own limit.",
+   "source_ref_ids": [
+    "two_step_verification-computer-google",
+    "two_step_verification-iphone-apple"
+   ],
+   "target": "Here are the shortest steps on your computer.\n1. Go to myaccount.google.com.\n2. Click **Security & sign-in**.\n3. Under **How you sign in to Google**, choose **Turn on 2-Step Verification**.\n4. Complete the prompts that appear.\nIf the account is managed through work, school, or another group, these steps may not work. Contact your administrator.",
+   "author_note": "Must respect the no-phone limit and keep to the four steps plus the managed-account condition. No phone steps."
+  },
+  {
+   "id": "gsft-two_step_verification-06",
+   "candidate_id": "gsft-two_step_verification-06-v1",
+   "task_id": "TR-130",
+   "task_group": "two_step_verification",
+   "source_group": "google_2sv_computer",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Google Account on a computer",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "How do I turn on 2-step verification for my Google account?"
+    },
+    {
+     "role": "assistant",
+     "content": "On a computer: go to myaccount.google.com, click Security & sign-in, then under How you sign in to Google, choose Turn on 2-Step Verification. Then complete the prompts that appear."
+    },
+    {
+     "role": "user",
+     "content": "I did that on my computer and it says my account is managed by my school, so the option isn't there. What now?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user reports the steps did not work because the account is managed by a school. The page says these steps may not work for managed accounts and to contact the administrator, so the reply is the contact step.",
+   "source_ref_ids": [
+    "two_step_verification-computer-google"
+   ],
+   "target": "These steps may not work for an account managed through work, school, or another group.\n1. Contact your administrator.",
+   "author_note": "Must not repeat the steps the user already tried. Must cover the managed-account condition and the contact-administrator step only."
+  },
+  {
+   "id": "gsft-phishing_email-01",
+   "candidate_id": "gsft-phishing_email-01-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got an email saying my account will be closed today unless I click the link and log in. I've never heard of this company. Should I do anything?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has no account with the company and does not know the sender, so the 'No' branch of the email checklist applies and the report steps follow.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not click the link yet. Attachments and links might install harmful malware.\n1. Answer this question: do you have an account with the company, or do you know the person who contacted you?\n2. If the answer is no, it could be a phishing scam. Report the message and then delete it.\n3. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n4. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.",
+   "author_note": "Must cover: do not click link (malware sentence); the checklist question; the No branch; report then delete; forward to APWG; report to FTC. The text-message forwarding line is inapplicable to email and must not be used."
+  },
+  {
+   "id": "gsft-phishing_email-02",
+   "candidate_id": "gsft-phishing_email-02-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "The email looks like it's from my bank. It has a link to log in and check a payment. I do have an account with that bank. Is it safe to click the link?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has an account with the company, so the 'Yes' branch applies: contact the company through a number or website known to be real.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not click the link in the email. Attachments and links might install harmful malware.\n1. Contact the company using a phone number or website you know is real.",
+   "author_note": "Must cover: do not click the link (malware sentence) and the Yes branch contact step. The report steps apply only to the No branch and must not be used here."
+  },
+  {
+   "id": "gsft-phishing_email-03",
+   "candidate_id": "gsft-phishing_email-03-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got an email asking me to open an attachment for an invoice. I don't know the sender. My email app won't let me forward messages, so please don't tell me to forward it. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user does not know the sender, so the No branch applies. The user cannot forward messages, so the forwarding step is excluded and the FTC report and delete steps are used instead.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not open the attachment. Attachments and links might install harmful malware.\n1. Answer this question: do you have an account with the company, or do you know the person who contacted you? If not, it could be a phishing scam.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.",
+   "author_note": "Must respect the no-forwarding limit. Must cover: attachment warning, checklist question with No branch, FTC report, delete. No forwarding step."
+  },
+  {
+   "id": "gsft-phishing_email-04",
+   "candidate_id": "gsft-phishing_email-04-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Short answers please, long messages confuse me. An email says my tax refund is waiting if I open the attached file. What do I do with it? Nothing else please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user describes an attachment from a sender they do not name and asks for short steps only. The checklist and report sentences from the FTC page apply.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not open the attached file. Attachments and links might install harmful malware.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.",
+   "author_note": "Must keep the answer short and cover: attachment warning, forward to APWG, FTC report, delete. Forwarding is applicable here because the user describes a suspicious email with an attachment. The text-message line is inapplicable."
+  },
+  {
+   "id": "gsft-phishing_email-05",
+   "candidate_id": "gsft-phishing_email-05-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_report",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "incomplete",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got an email asking me to click a link to update my account details. What should I check?"
+    },
+    {
+     "role": "assistant",
+     "content": "Ask yourself whether you have an account with that company or know the person who sent it. If the answer is no, it could be a phishing scam, so do not click the link."
+    },
+    {
+     "role": "user",
+     "content": "I have no account with them and I don't know the sender. I already forwarded the email to the Anti-Phishing Working Group. What do I do now?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has already forwarded the email, so forwarding is not repeated. The remaining step is the FTC report and deleting the message, which the FTC page gives for a phishing email.",
+   "source_ref_ids": [
+    "phishing_email-email-report-ftc",
+    "phishing_email-email-check-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not click the link in the email.\n1. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n2. Delete the message.",
+   "author_note": "Must not tell the user to forward again. Must cover FTC report and delete, with the protective first line."
+  },
+  {
+   "id": "gsft-phishing_email-06",
+   "candidate_id": "gsft-phishing_email-06-v1",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_report",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My bank emailed me asking me to click a link and confirm my details. It looks real."
+    },
+    {
+     "role": "assistant",
+     "content": "Check whether you have an account with the company or know the person who contacted you. If you do, contact the company using a phone number or website you know is real. If you don't, it could be a phishing scam."
+    },
+    {
+     "role": "user",
+     "content": "I do have an account. I called the bank on the number on my card and they said the email was fake. What should I do with it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user confirmed with the company that the email is fake, so the email is phishing. The FTC page gives the forward and report steps for a phishing email, and the user has not forwarded it yet.",
+   "source_ref_ids": [
+    "phishing_email-email-report-ftc",
+    "phishing_email-email-check-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not click any links in the email.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.",
+   "author_note": "Must not repeat the bank call the user already made. Must cover: link warning, forward to APWG, FTC report, delete."
+  },
+  {
+   "id": "gsft-report_spam_text-01",
+   "candidate_id": "gsft-report_spam_text-01-v1",
+   "task_id": "TR-133",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A text came in saying my package is stuck and I have to pay a fee at a link. I haven't opened it yet. I have an iPhone. How do I report it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names the iPhone and says the message is not yet opened, so the not-yet-opened branch of the iPhone steps applies. The Google Messages steps are for Android and are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-unopened",
+    "report_spam_text-android-hold"
+   ],
+   "target": "Here is how to report an unopened spam text on your iPhone.\n1. Open the **Messages** app.\n2. Swipe left on the message, press the Delete control, then tap **Delete and Report Spam**.\nYou can't report a message after you've replied to it. Reporting doesn't stop the sender, so block them separately if you need to.",
+   "author_note": "Must cover: open Messages, swipe left, press Delete control, tap Delete and Report Spam, the reply condition, and the block-separately condition. The Android lines are inapplicable."
+  },
+  {
+   "id": "gsft-report_spam_text-02",
+   "candidate_id": "gsft-report_spam_text-02-v1",
+   "task_id": "TR-152",
+   "task_group": "report_spam_text",
+   "source_group": "google_messages_report_spam",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Android (Google Messages)",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android and I use Google Messages. I opened a spam text from a number I don't know and it's asking for my bank login. How do I report it and block the number?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names an Android phone with Google Messages and has opened the conversation, so the Google Messages block-from-inside steps apply. The iPhone block steps are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-android-inside",
+    "report_spam_text-iphone-block"
+   ],
+   "target": "Here is how to report and block it from inside the conversation.\n1. Open the conversation.\n2. Tap **More options**, then **Details**.\n3. Tap **Block & report spam**, then **OK**.\nReported conversations are moved to the **Spam & blocked** folder.",
+   "author_note": "Must cover: open conversation, More options, Details, Block & report spam, OK, and the folder note. No iPhone steps."
+  },
+  {
+   "id": "gsft-report_spam_text-03",
+   "candidate_id": "gsft-report_spam_text-03-v1",
+   "task_id": "TR-087",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (iPhone or Android)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got a spam text today and I want to report it so it stops. Can you help me do that?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your phone an iPhone or an Android?"
+   },
+   "decision_basis": "The user does not name the phone. The iPhone steps and the Google Messages steps differ, so the device is needed first.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-unopened",
+    "report_spam_text-android-hold"
+   ],
+   "target": "Is your phone an iPhone or an Android?",
+   "author_note": "Clarify only. The target is the question and nothing else."
+  },
+  {
+   "id": "gsft-report_spam_text-04",
+   "candidate_id": "gsft-report_spam_text-04-v1",
+   "task_id": "TR-087",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (iPhone or Android)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A number I don't know texted me asking me to confirm my bank details. I want to block them so they can't text me again. Please help."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Do you use an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name the phone. The iPhone block steps and the Android block steps differ, so the device is needed first.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-block",
+    "report_spam_text-android-inside"
+   ],
+   "target": "Do you use an iPhone or an Android phone?",
+   "author_note": "Clarify only. The target is the question and nothing else."
+  },
+  {
+   "id": "gsft-report_spam_text-05",
+   "candidate_id": "gsft-report_spam_text-05-v1",
+   "task_id": "TR-152",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (iPhone or Android)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Spam keeps coming from a company I never dealt with. I have one of their texts open right now. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this on an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user has the message open but does not name the phone. The iPhone opened-message steps and the Android opened-conversation steps differ, so the device is needed first.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-opened",
+    "report_spam_text-android-inside"
+   ],
+   "target": "Is this on an iPhone or an Android phone?",
+   "author_note": "Clarify only. The target is the question and nothing else."
+  },
+  {
+   "id": "gsft-report_spam_text-06",
+   "candidate_id": "gsft-report_spam_text-06-v1",
+   "task_id": "TR-133",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "online_services",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an iPhone. I can't tap small buttons well, so give me the fewest taps possible. A text just came in asking me to click a link for a delivery fee. I haven't opened it."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names the iPhone and says the message is not opened, so the not-yet-opened branch applies. The user limits the reply to the fewest taps.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-unopened"
+   ],
+   "target": "Here are the fewest steps for an unopened text on your iPhone.\n1. Swipe left on the message.\n2. Press the Delete control.\n3. Tap **Delete and Report Spam**.",
+   "author_note": "Must respect the fewest-taps limit and cover all three actions from the Apple page. Do not add the FTC forwarding step, because the user's limit and the deletion conflict with it."
+  },
+  {
+   "id": "gsft-report_spam_text-07",
+   "candidate_id": "gsft-report_spam_text-07-v1",
+   "task_id": "TR-152",
+   "task_group": "report_spam_text",
+   "source_group": "google_messages_report_spam",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Android (Google Messages)",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A text said I won a prize and to click a link to claim it. What should I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Don't tap links in unexpected texts asking for personal or financial information. Copy the message and forward it to 7726 (SPAM). Then report it to the FTC at ReportFraud.ftc.gov."
+    },
+    {
+     "role": "user",
+     "content": "I forwarded it to 7726 already. I'm on an Android, and the message is still in my Google Messages."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has already forwarded the message and is on Android with Google Messages. The Google Messages report steps apply, and the FTC report step is still outstanding. The iPhone steps are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-android-hold",
+    "report_spam_text-ftc-phone",
+    "report_spam_text-iphone-unopened"
+   ],
+   "target": "Here is how to report the conversation in Google Messages.\n1. Touch and hold the conversation you want to report.\n2. Tap **Block**, then **Report spam**, then **OK**.\n3. Report it to the FTC at ReportFraud.ftc.gov.\nReported conversations are moved to the **Spam & blocked** folder.",
+   "author_note": "Must not repeat the forwarding the user already did. Must cover: touch and hold, Block, Report spam, OK, FTC report, folder note. No iPhone steps."
+  },
+  {
+   "id": "gsft-phishing_email-01",
+   "candidate_id": "gsft-phishing_email-01-v2",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "direct",
+   "tags": [
+    "safety",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got an email saying my account will be closed today unless I click the link and log in. I've never heard of this company. Should I do anything?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has no account with the company and does not know the sender, so the 'No' branch of the email checklist applies and the report steps follow.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not click the link. Attachments and links might install harmful malware. Since you have never heard of this company, it could be a phishing scam.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.",
+   "author_note": "Must cover: do not click the link (malware sentence); the no-known-sender basis for phishing; forward to APWG; report to FTC; delete after reporting. The text-message forwarding line is inapplicable to email and must not be used.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-phishing_email-01-v1",
+     "to_candidate": "gsft-phishing_email-01-v2",
+     "reason": "The checklist question repeated a fact the user already gave, and the target omitted the delete step that the email-check passage requires.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-phishing_email-01-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-phishing_email-03",
+   "candidate_id": "gsft-phishing_email-03-v2",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I got an email asking me to open an attachment for an invoice. I don't know the sender. My email app won't let me forward messages, so please don't tell me to forward it. What do I do?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user does not know the sender, so the No branch applies. The user cannot forward messages, so the forwarding step is excluded and the FTC report and delete steps are used instead.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not open the attachment. Attachments and links might install harmful malware. Since you do not know the sender, it could be a phishing scam.\n1. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n2. Delete the message.",
+   "author_note": "Must respect the no-forwarding limit. Must cover: attachment warning, the no-known-sender basis, FTC report, delete. No forwarding step.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-phishing_email-03-v1",
+     "to_candidate": "gsft-phishing_email-03-v2",
+     "reason": "The account-or-sender question was repeated although the user already said they do not know the sender, so it was replaced with that stated fact.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-phishing_email-03-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-phishing_email-04",
+   "candidate_id": "gsft-phishing_email-04-v2",
+   "task_id": "TR-086",
+   "task_group": "phishing_email",
+   "source_group": "ftc_phishing_check",
+   "behavior": "constraint",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Email",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "Short answers please, long messages confuse me. An email says my tax refund is waiting if I open the attached file. What do I do with it? Nothing else please."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user describes an attachment from a sender they do not name and asks for short steps only. The checklist and report sentences from the FTC page apply.",
+   "source_ref_ids": [
+    "phishing_email-email-check-ftc",
+    "phishing_email-email-report-ftc",
+    "phishing_email-text-ftc"
+   ],
+   "target": "Do not open the attached file. Attachments and links might install harmful malware. If you do not know the sender, it could be a phishing scam.\n1. Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.\n2. Report the phishing attempt to the FTC at ReportFraud.ftc.gov.\n3. Delete the message.",
+   "author_note": "Must keep the answer short and cover: attachment warning, the sender basis sentence, forward to APWG, FTC report, delete. The text-message line is inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-phishing_email-04-v1",
+     "to_candidate": "gsft-phishing_email-04-v2",
+     "reason": "The target gave the report steps without the sentence stating why the email is treated as phishing, which is the first check in the email-check passage.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-phishing_email-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-report_spam_text-06",
+   "candidate_id": "gsft-report_spam_text-06-v2",
+   "task_id": "TR-133",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "online_services",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "over_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on an iPhone. I can't tap small buttons well, so give me the fewest taps possible. A text just came in asking me to click a link for a delivery fee. I haven't opened it."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names the iPhone and says the message is not opened, so the not-yet-opened branch applies. The user limits the reply to the fewest taps.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-unopened"
+   ],
+   "target": "Here are the fewest steps for an unopened text on your iPhone.\n1. Open the **Messages** app.\n2. Swipe left on the message.\n3. Tap **Delete**.\n4. Tap **Delete and Report Spam**.",
+   "author_note": "Must respect the fewest-taps limit and cover all four actions from the Apple page: open Messages, swipe left, Delete, Delete and Report Spam. Do not add the FTC forwarding step, because the user's limit and the deletion conflict with it.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-report_spam_text-06-v1",
+     "to_candidate": "gsft-report_spam_text-06-v2",
+     "reason": "The target began at the swipe without the Open the Messages app step that the iPhone passage gives first.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-report_spam_text-06-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-report_spam_text-07",
+   "candidate_id": "gsft-report_spam_text-07-v2",
+   "task_id": "TR-152",
+   "task_group": "report_spam_text",
+   "source_group": "google_messages_report_spam",
+   "behavior": "multiturn",
+   "tags": [
+    "safety",
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "Android (Google Messages)",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A text said I won a prize and to click a link to claim it. What should I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Don't tap links in unexpected texts asking for personal or financial information. Copy the message and forward it to 7726 (SPAM). Then report it to the FTC at ReportFraud.ftc.gov."
+    },
+    {
+     "role": "user",
+     "content": "I forwarded it to 7726 already. I'm on an Android, and the message is still in my Google Messages."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user has already forwarded the message and is on Android with Google Messages. The Google Messages report steps apply, and the FTC report step is still outstanding. The iPhone steps are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-android-hold",
+    "report_spam_text-ftc-phone",
+    "report_spam_text-iphone-unopened"
+   ],
+   "target": "Here is how to report the conversation in Google Messages.\nReporting is optional. Reporting sends the spammer's phone number and their last 10 incoming messages to Google.\n1. Touch and hold the conversation you want to report.\n2. Tap **Block**, then **Report spam**, then **OK**.\n3. Report it to the FTC at ReportFraud.ftc.gov.\nReported conversations are moved to the **Spam & blocked** folder.",
+   "author_note": "Must not repeat the forwarding the user already did. Must cover: optional reporting and what it sends to Google, touch and hold, Block, Report spam, OK, FTC report, folder note. No iPhone steps.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-report_spam_text-07-v1",
+     "to_candidate": "gsft-report_spam_text-07-v2",
+     "reason": "The target did not state that reporting is optional or what data it sends to Google, which the user needs before deciding.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-report_spam_text-07-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-two_step_verification-03",
+   "candidate_id": "gsft-two_step_verification-03-v2",
+   "task_id": "TR-085",
+   "task_group": "two_step_verification",
+   "source_group": "apple_two_factor_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (Google or Apple Account)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My grandson says I should turn on the extra login check on my email account. I'm not sure how to do it. Can you walk me through it?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your email account a Google account, such as Gmail, or an Apple Account?"
+   },
+   "decision_basis": "The user does not name the email provider. The Apple Account steps and the Google Account steps differ by account, not by device, so the account is needed first.",
+   "source_ref_ids": [
+    "two_step_verification-iphone-apple",
+    "two_step_verification-computer-google"
+   ],
+   "target": "Is your email account a Google account, such as Gmail, or an Apple Account?",
+   "author_note": "Clarify only. The target is the question and nothing else.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-two_step_verification-03-v1",
+     "to_candidate": "gsft-two_step_verification-03-v2",
+     "reason": "The routed question asked for the device, but the passages are keyed to the account provider, so the question was changed to ask which account it is.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "platform",
+      "decision_basis",
+      "messages"
+     ],
+     "review_id": "review-gsft-two_step_verification-03-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-two_step_verification-04",
+   "candidate_id": "gsft-two_step_verification-04-v2",
+   "task_id": "TR-130",
+   "task_group": "two_step_verification",
+   "source_group": "google_2sv_computer",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Unknown (Google or Apple Account)",
+   "sensitive": false,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My account asked me for a code when I signed in on a new device. I want that code check turned on for good. Where do I start?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is this account a Google account or an Apple Account?"
+   },
+   "decision_basis": "The user does not name the account. The Apple Account steps and the Google Account steps differ by account, so the account is needed first.",
+   "source_ref_ids": [
+    "two_step_verification-iphone-apple",
+    "two_step_verification-computer-google"
+   ],
+   "target": "Is this account a Google account or an Apple Account?",
+   "author_note": "Clarify only. The target is the question and nothing else.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-two_step_verification-04-v1",
+     "to_candidate": "gsft-two_step_verification-04-v2",
+     "reason": "The routed question asked for the device, but the passages are keyed to the account provider, so the question was changed to ask which account it is.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "platform",
+      "decision_basis",
+      "messages"
+     ],
+     "review_id": "review-gsft-two_step_verification-04-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-report_spam_text-01",
+   "candidate_id": "gsft-report_spam_text-01-v2",
+   "task_id": "TR-133",
+   "task_group": "report_spam_text",
+   "source_group": "apple_report_spam_iphone",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "online_services",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "A text came in saying my package is stuck and I have to pay a fee at a link. I haven't opened it yet. I have an iPhone. How do I report it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names the iPhone and says the message is not yet opened, so the not-yet-opened branch of the iPhone steps applies. The Google Messages steps are for Android and are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-iphone-unopened",
+    "report_spam_text-android-hold"
+   ],
+   "target": "Here is how to report an unopened spam text on your iPhone.\n1. Open the **Messages** app.\n2. Swipe left on the message.\n3. Tap **Delete**.\n4. Tap **Delete and Report Spam**.\nYou can't report a message after you've replied to it. Reporting doesn't stop the sender, so block them separately if you need to.",
+   "author_note": "Must cover: open Messages, swipe left, press Delete control, tap Delete and Report Spam, the reply condition, and the block-separately condition. The Android lines are inapplicable.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-report_spam_text-01-v1",
+     "to_candidate": "gsft-report_spam_text-01-v2",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): step 2 joined three actions and said 'press the Delete control'; split into separate steps with 'Tap Delete'.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "human-spot-check-gsft-report_spam_text-01"
+    }
+   ]
+  },
+  {
+   "id": "gsft-report_spam_text-02",
+   "candidate_id": "gsft-report_spam_text-02-v2",
+   "task_id": "TR-152",
+   "task_group": "report_spam_text",
+   "source_group": "google_messages_report_spam",
+   "behavior": "direct",
+   "tags": [
+    "conditional",
+    "distractor",
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Android (Google Messages)",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I have an Android and I use Google Messages. I opened a spam text from a number I don't know and it's asking for my bank login. How do I report it and block the number?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user names an Android phone with Google Messages and has opened the conversation, so the Google Messages block-from-inside steps apply. The iPhone block steps are inapplicable.",
+   "source_ref_ids": [
+    "report_spam_text-android-inside",
+    "report_spam_text-iphone-block",
+    "report_spam_text-ftc-phone"
+   ],
+   "target": "Don't tap any links in this text, because it asks for your bank login. Unexpected texts asking for personal or financial information are a warning sign. If you're worried about your bank account, contact your bank using a phone number or website you know is real.\n\nThen report and block it from inside the conversation:\n1. Open the conversation.\n2. Tap **More options**, then **Details**.\n3. Tap **Block & report spam**, then **OK**.\nReported conversations are moved to the **Spam & blocked** folder.",
+   "author_note": "Must cover: open conversation, More options, Details, Block & report spam, OK, and the folder note. No iPhone steps.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-report_spam_text-02-v1",
+     "to_candidate": "gsft-report_spam_text-02-v2",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): the text asked for a bank login but the target never said not to tap its links; added the FTC passage as the first, protective line.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "source_ref_ids",
+      "tags"
+     ],
+     "review_id": "human-spot-check-gsft-report_spam_text-02"
+    }
+   ]
+  }
+ ]
+}

@@ -852,6 +852,53 @@
      "review_id": "review-gsft-unordered_package_scam-02-v4"
     }
    ]
+  },
+  {
+   "id": "gsft-public_wifi_safety-02",
+   "candidate_id": "gsft-public_wifi_safety-02-v2",
+   "task_id": "TR-219",
+   "task_group": "public_wifi_safety",
+   "source_group": "ftc_public_wifi_safety_practices",
+   "behavior": "direct",
+   "tags": [
+    "safety"
+   ],
+   "category": "online_services",
+   "platform": "Any",
+   "sensitive": false,
+   "style": "verbose",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I work from a coffee shop on their free wifi with my laptop most of the day. Yesterday a guy messaged me saying he was from my bank and wanted me to confirm my login, and it has me nervous. How do I keep my laptop safe from people like him?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states the setting (public Wi-Fi on a laptop) and a scam worry. The FTC article gives impersonator, update and reporting guidance for any device.",
+   "source_ref_ids": [
+    "public-wifi-phishing-contact",
+    "public-wifi-impersonators",
+    "public-wifi-updates",
+    "public-wifi-report"
+   ],
+   "target": "Don't confirm your login to him, and don't click links in his message. Scammers pretend to be someone they're not, like a representative from a well-known company.\n1. If you think the message could really be from your bank, contact your bank using a phone number, email, or website you know is real.\n2. Make sure your **security software**, **operating system**, and **internet browser** are up to date.\n3. Turn on **automatic updates** to keep up with the latest protections.\n4. Report scammers to the FTC at ReportFraud.ftc.gov.",
+   "author_note": "Must cover: impersonator warning first; security software, operating system and browser updates; automatic updates; FTC report. Source gap: no advice on confirming logins is in the article, none is added.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-public_wifi_safety-02-v1",
+     "to_candidate": "gsft-public_wifi_safety-02-v2",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): a man claiming to be from the bank asked her to confirm her login, but the target never said not to; added the FTC phishing passage and put the protective steps first.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "source_ref_ids"
+     ],
+     "review_id": "human-spot-check-gsft-public_wifi_safety-02"
+    }
+   ]
   }
  ]
 }

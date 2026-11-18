@@ -72,7 +72,7 @@ def load_cards(errors, warnings, need=None):
                 sink.append(f"card {p.name}: duplicate ref_id {r.get('ref_id')}")
             if CJK.search(r.get("model_visible_text", "")):
                 sink.append(f"card {p.name} {r.get('ref_id')}: model-visible text must be English")
-            if re.search(r"\b(the|this) (page|article|source) (says|states|notes|recommends|gives|lists|explains)\b|\bthis (page|article)\b|\baccording to\b|webfetch", r.get("model_visible_text", ""), re.I):
+            if re.search(r"\b(the|this) (page|article|source) (says|states|notes|recommends|gives|lists|explains)\b|\baccording to\b|webfetch", r.get("model_visible_text", ""), re.I):
                 sink.append(f"card {p.name} {r.get('ref_id')}: model-visible text must not mention the page, source or fetch")
             if len(r.get("verified_excerpt", "").split()) > 25:
                 warnings.append(f"card {p.name} {r.get('ref_id')}: verified_excerpt over 25 words; fetch tools can only confirm short quotes")

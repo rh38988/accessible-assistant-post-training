@@ -869,6 +869,81 @@
      "review_id": "review-gsft-bookmark_site-02-v3"
     }
    ]
+  },
+  {
+   "id": "gsft-bookmark_site-02",
+   "candidate_id": "gsft-bookmark_site-02-v5",
+   "task_id": "TR-186",
+   "task_group": "bookmark_site",
+   "source_group": "edge_add_site_favorites",
+   "behavior": "direct",
+   "tags": [
+    "distractor",
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Microsoft Edge (computer)",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I use Microsoft Edge on my Windows PC and want this page in my favorites. How do I add it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states Microsoft Edge on a computer. The Chrome ref is a different app and is only a marked distractor.",
+   "source_ref_ids": [
+    "bookmark-site-edge-addressbar",
+    "bookmark-site-chrome-desktop-add"
+   ],
+   "target": "Here is how to add a page to favorites in Microsoft Edge:\n\n1. Select the **Add this page to favorites** button in the address bar.\n2. If you want, rename the favorite.\n3. If you want, choose a different folder to save it in.\n4. Select **Done**.",
+   "author_note": "Must cover the rename and folder steps as conditions and end with Done. Do not mention Chrome.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-bookmark_site-02-v1",
+     "to_candidate": "gsft-bookmark_site-02-v2",
+     "reason": "Removed the step that repeated the user's stated Edge and page; the Edge ref is unreadable, so a keep waits for it.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-bookmark_site-02-v1"
+    },
+    {
+     "from_candidate": "gsft-bookmark_site-02-v2",
+     "to_candidate": "gsft-bookmark_site-02-v3",
+     "reason": "Step 2 said to change the name in a dialog, which the Edge page does not mention; it only says to rename the favorite.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-bookmark_site-02-v2"
+    },
+    {
+     "from_candidate": "gsft-bookmark_site-02-v3",
+     "to_candidate": "gsft-bookmark_site-02-v4",
+     "reason": "Owner fix from review: Step 3 now uses the page's wording; 'from the list' removed.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-bookmark_site-02-v3"
+    },
+    {
+     "from_candidate": "gsft-bookmark_site-02-v4",
+     "to_candidate": "gsft-bookmark_site-02-v5",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): model-visible Edge passage described the button instead of its label and kept 'select it from the list'; passage corrected to Microsoft's wording (card fix), target unchanged.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "human-spot-check-gsft-bookmark_site-02"
+    }
+   ]
   }
  ]
 }

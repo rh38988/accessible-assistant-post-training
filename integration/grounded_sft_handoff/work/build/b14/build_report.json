@@ -9,7 +9,7 @@
  },
  "tags": {
   "conditional": 10,
-  "safety": 9,
+  "safety": 10,
   "distractor": 5
  },
  "per_group": {
@@ -34,8 +34,8 @@
   "gsft-phishing_email-04": "6a5f78321dcd4505325e77437578e0a7c450699cab4c04b63be4aa641db24d31",
   "gsft-phishing_email-05": "0f6ed7a4ae51459816aa9e3224529893e464c092c15cd12634f488876351aec6",
   "gsft-phishing_email-06": "d401c6f7a02af208bd964305cbad35c71f303e66ab2ea43bb75ce1c2198e32b3",
-  "gsft-report_spam_text-01": "dd02c5cfb9342ec401a80c90fc8a22426ea31d476172e82c118b5e6787517728",
-  "gsft-report_spam_text-02": "92b5a254ce34c5ff35033a1afc3a04aa23d28ed71e30814387001813a5a31510",
+  "gsft-report_spam_text-01": "e117642c79385c9e4f884aa137d4006843aa1d7859f03341a10a8290eb28b7f8",
+  "gsft-report_spam_text-02": "18bebc52cc430cab1546eba51ad946cbbd952af95a986d2a91f78891ed4fb7d9",
   "gsft-report_spam_text-03": "ef238f4d679cc661336af47af48c6141f7800ff9b9762b182bf473bc3e207457",
   "gsft-report_spam_text-04": "d51135063b44d2ba93eb89555680f94b83af2fa0feaeff0a196cc83f65cf63b2",
   "gsft-report_spam_text-05": "0dd7f1e63ab1b0c607f30b0e7ffd3e3d00ee54278457b9c2da66d3f7e56d3bfc",

@@ -81,6 +81,22 @@
    "verified_excerpt": "Report scammers to the FTC at ReportFraud.ftc.gov",
    "model_visible_text": "Report scammers to the FTC at ReportFraud.ftc.gov.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; sentence exact (fetch quote)"
+  },
+  {
+   "ref_id": "public-wifi-phishing-contact",
+   "source_group": "ftc_phishing_alert_2025",
+   "organization": "Federal Trade Commission",
+   "title": "Protect yourself from phishing scams",
+   "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/protect-yourself-phishing-scams",
+   "access_date": "2026-11-17",
+   "page_update_date": "2025-06-04",
+   "section": "To help protect yourself from phishing scams",
+   "applicability": "Any device; unexpected messages",
+   "platform": "Any device",
+   "app": "Any",
+   "verified_excerpt": "Don't click links or download attachments in unexpected messages.",
+   "model_visible_text": "Any device: Don't click links or download attachments in unexpected messages. If you think the message could be legit, contact the company or bank using a phone number, email, or website you know is real.",
+   "extraction_method": "Main session, spot-check fix 2026-11-17 (Ryan Hsieh): WebSearch then WebFetch of the official FTC alert; first sentence quoted exactly by fetch, second sentence as shown on the page in the search result; straight apostrophes"
   }
  ]
 }

@@ -931,6 +931,48 @@
      "review_id": "review-gsft-software_update-06-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-account_password_reset-05",
+   "candidate_id": "gsft-account_password_reset-05-v2",
+   "task_id": "TR-010",
+   "task_group": "account_password_reset",
+   "source_group": "google_change_password_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "online_services",
+   "platform": "Not stated",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I want to change my Google password on my tablet."
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Is your tablet an iPad or an Android tablet?"
+   },
+   "decision_basis": "The user names a tablet but not the make. The iPhone and iPad Google passage and the Android passage give different steps, so one question is needed.",
+   "source_ref_ids": [
+    "google-password-iphone",
+    "google-password-android"
+   ],
+   "target": "Is your tablet an iPad or an Android tablet?",
+   "author_note": "Clarify only. The iPad and Android passages differ in the menu path.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-account_password_reset-05-v1",
+     "to_candidate": "gsft-account_password_reset-05-v2",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): unnatural user turn ('whichever one I have') reworded; routed question unchanged.",
+     "changed_fields": [
+      "messages",
+      "source_conversation"
+     ],
+     "review_id": "human-spot-check-gsft-account_password_reset-05"
+    }
+   ]
   }
  ]
 }

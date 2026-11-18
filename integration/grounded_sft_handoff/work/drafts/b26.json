@@ -400,6 +400,59 @@
    "target": "Is your computer running Windows 11 or Windows 10?",
    "author": "claude-opus-main-session",
    "author_note": "Added by the main session to restore the clarify count after two clarify candidates were changed to answers in review. Uses only the existing checked passages."
+  },
+  {
+   "id": "gsft-popups-01",
+   "candidate_id": "gsft-popups-01-v3",
+   "task_id": "TR-189",
+   "task_group": "popups",
+   "source_group": "google_chrome_popups_block_site",
+   "behavior": "direct",
+   "tags": [
+    "conditional"
+   ],
+   "category": "technical_support",
+   "platform": "Chrome on computer",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I'm on my laptop in Chrome and one website keeps opening pop-up windows over everything. How do I stop that one site from doing it?"
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states the device and app (laptop, Chrome) and asks to stop one named-by-role site from opening pop-ups, which the site-specific block steps cover.",
+   "source_ref_ids": [
+    "popups-chrome-block-site"
+   ],
+   "target": "Here's how to block pop-ups from one website in Chrome on your computer:\n1. Open Chrome and click **More**, then **Settings**.\n2. Click **Privacy and security**, then **Site Settings**, then **Pop-ups and redirects**.\n3. Under 'Allowed to send pop-ups and use redirects,' find the site.\n4. Click **More** next to the site, then **Block**.\n5. If the site isn't listed, click **Add** next to 'Not allowed to send pop-ups or use redirects.'\n6. Enter the site's web address.\n7. Click **Add**.",
+   "author_note": "Covers the Settings path, finding the site under Allowed, More then Block, and the Add branch when the site is not listed. Source gap: the default-setting choices are not named on the page and are not covered.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-popups-01-v1",
+     "to_candidate": "gsft-popups-01-v2",
+     "reason": "Step 5 ended with a [*.]example.com domain pattern that the user did not ask about and that is an unexplained technical term, breaking the plain-words and brevity rule.",
+     "changed_fields": [
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-popups-01-v1"
+    },
+    {
+     "from_candidate": "gsft-popups-01-v2",
+     "to_candidate": "gsft-popups-01-v3",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): step 5 joined three actions in the 'site isn't listed' branch; split into separate steps.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "human-spot-check-gsft-popups-01"
+    }
+   ]
   }
  ]
 }
