@@ -782,6 +782,130 @@
           "review_id": "review-gsft-home_improvement_scam-06-v1"
         }
       ]
+    },
+    {
+      "id": "gsft-home_improvement_scam-05",
+      "candidate_id": "gsft-home_improvement_scam-05-v3",
+      "task_id": "TR-213",
+      "task_group": "home_improvement_scam",
+      "source_group": "ftc_home_improvement_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A roofer I found on a flyer wants a $5,000 deposit before he starts. Is that okay?"
+        },
+        {
+          "role": "assistant",
+          "content": "Don't pay the full amount for the project up front. Some states actually limit the amount of money a contractor can ask for as a down payment."
+        },
+        {
+          "role": "user",
+          "content": "I checked his license and it's valid. But he wants me to sign tonight, and the contract has blank lines he says he'll fill in later."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports a valid license and pressure to sign tonight with blank lines. The pressure and blank-space passages cover the next steps, and the license check is not repeated.",
+      "source_ref_ids": [
+        "home-improvement-pressure",
+        "home-improvement-blank",
+        "home-improvement-contract-contents"
+      ],
+      "target": "Don't let anyone pressure you into signing any document.\n1. Make sure all blank spaces are filled in before you sign.\n2. Make sure the contract includes the contractor's name, address, phone number, and license number.\n3. Make sure it includes an estimated start and completion date.",
+      "author_note": "Must cover: no pressure to sign; no signing with blank spaces; blanks filled; contract includes contractor details and estimated start and completion dates. The reply does not repeat the license check the user already did. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-home_improvement_scam-05-v1",
+          "to_candidate": "gsft-home_improvement_scam-05-v2",
+          "reason": "Items 1 and 2 repeated the blank-spaces check, so they were merged into one step.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-home_improvement_scam-05-v1"
+        },
+        {
+          "from_candidate": "gsft-home_improvement_scam-05-v2",
+          "to_candidate": "gsft-home_improvement_scam-05-v3",
+          "reason": "The earlier assistant turn claimed a state rule and a consumer-agency check that the retrieved FTC page text does not contain, so it now uses only the confirmed wording.",
+          "changed_fields": [
+            "messages"
+          ],
+          "review_id": "review-gsft-home_improvement_scam-05-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-home_improvement_scam-06",
+      "candidate_id": "gsft-home_improvement_scam-06-v3",
+      "task_id": "TR-213",
+      "task_group": "home_improvement_scam",
+      "source_group": "ftc_home_improvement_scam",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I want a deck built. The contractor asks for 60% now. Is that how it works?"
+        },
+        {
+          "role": "assistant",
+          "content": "Don't pay the full amount for the project up front. Some states actually limit the amount of money a contractor can ask for as a down payment."
+        },
+        {
+          "role": "user",
+          "content": "I already paid him the 60% and he's about 80% done. Now he says the last 40% is due today or he stops, and he wants it in cash before the last boards go on."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user has already paid part and asks about a final payment before the work is finished. The final-payment passage and the contract completion-date passage answer this.",
+      "source_ref_ids": [
+        "home-improvement-final",
+        "home-improvement-contract-contents"
+      ],
+      "target": "Here is what to check before the last payment.\n1. Hold off on the last payment until the work is finished and you are satisfied with it.\n2. If you have a written contract, check that it has an estimated completion date.",
+      "author_note": "Must cover: no final payment until the work is finished and the user is satisfied; if a written contract exists, check that it has an estimated completion date. The reply does not repeat the 60 percent payment the user already made. Source gap: no passage covers pressure to pay in cash or a contractor threat to stop work, so none is stated.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-home_improvement_scam-06-v1",
+          "to_candidate": "gsft-home_improvement_scam-06-v2",
+          "reason": "The passage's condition 'and you're satisfied with it' was restored to the final-payment step, and the contract-date item was reworded to apply only if a written contract exists.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-home_improvement_scam-06-v1"
+        },
+        {
+          "from_candidate": "gsft-home_improvement_scam-06-v2",
+          "to_candidate": "gsft-home_improvement_scam-06-v3",
+          "reason": "The earlier assistant turn claimed a state rule and a consumer-agency check that the retrieved FTC page text does not contain, so it now uses only the confirmed wording.",
+          "changed_fields": [
+            "messages"
+          ],
+          "review_id": "review-gsft-home_improvement_scam-06-v2"
+        }
+      ]
     }
   ]
 }

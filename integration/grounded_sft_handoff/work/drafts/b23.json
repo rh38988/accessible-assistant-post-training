@@ -1,1 +1,674 @@
-{"batch": "b23", "candidates": [{"id": "gsft-overheating-01", "candidate_id": "gsft-overheating-01-v1", "task_id": "TR-138", "task_group": "overheating", "source_group": "apple_too_hot_iphone_warning_screen", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "My iPhone was sitting in my car in the sun and now it shows a temperature warning screen. What do I do?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone and says the temperature warning screen appeared, so the warning-screen steps apply directly.", "source_ref_ids": ["overheating-iphone-warning"], "target": "Follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.", "author_note": "Must cover turning the device off, moving it to a cooler environment away from direct sunlight, and letting it cool down. Gap: the warning screen text is shown only as an image on the page, so it is not quoted."}, {"id": "gsft-overheating-02", "candidate_id": "gsft-overheating-02-v1", "task_id": "TR-138", "task_group": "overheating", "source_group": "apple_too_hot_iphone_warning_screen", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "verbose", "source_conversation": [{"role": "user", "content": "Hi, my iPhone 15 has been hot all afternoon from being out on the patio and now there's a temperature warning on the screen. I need to make a call to my brother in a bit. Should I still turn it off first?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone 15 and the temperature warning screen, and asks about turning it off with a call pending, so the steps and the emergency call condition from the same section apply.", "source_ref_ids": ["overheating-iphone-warning"], "target": "An iPhone showing this message might still be able to make emergency calls. Follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.", "author_note": "Must give the three steps and the emergency call sentence as a condition. Do not invent a way to make a regular call. Gap: warning screen text is an image only."}, {"id": "gsft-overheating-03", "candidate_id": "gsft-overheating-03-v1", "task_id": "TR-138", "task_group": "overheating", "source_group": "apple_too_hot_iphone_warning_screen", "behavior": "constraint", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "my iphone is hot and showing a temp warning. im in a hurry, just give me the short version please"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone and the warning, and limits the reply to the shortest route, which the three source steps satisfy.", "source_ref_ids": ["overheating-iphone-warning"], "target": "Short version for your iPhone:\n1. Turn off your device.\n2. Move it to a cooler environment, away from direct sunlight.\n3. Allow it to cool down.", "author_note": "Constraint is the shortest way. Must still cover all three source actions. Gap: warning screen text is an image only."}, {"id": "gsft-date_time-01", "candidate_id": "gsft-date_time-01-v1", "task_id": "TR-139", "task_group": "date_time", "source_group": "apple_date_time_auto_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "my iphone clock is an hour off since i got back from europe, how do i fix this"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone and a wrong clock after travel, so the automatic date and time route from the iPhone passages applies directly.", "source_ref_ids": ["date_time-iphone-auto-set", "date_time-iphone-auto-timezone"], "target": "Set the date and time automatically on your iPhone:\n1. Make sure that your device is connected to the internet.\n2. Install the latest software updates for your device.\n3. Open Settings, tap **General**, tap **Date & Time**, then turn on **Set Time Automatically**.\n4. If a message says that updated time zone information is available, restart your device and any paired Apple Watch.\n5. Open Settings, tap **Privacy & Security**, tap **Location Services**, scroll to the bottom and tap **System Services**, then turn on **Setting Time Zone**.\nSet Time Automatically might not be available with all carriers or in all countries and regions. If the device has a Screen Time passcode or a corporate profile with device restrictions installed, the setting might be dimmed (grayed out).", "author_note": "Must cover internet connection, software updates, Set Time Automatically, the time zone update restart message, and Setting Time Zone under Location Services, plus the two conditions. Gap: the Open Settings lead-in for step 5 and the conditions are paraphrased from fetch answers."}, {"id": "gsft-date_time-02", "candidate_id": "gsft-date_time-02-v1", "task_id": "TR-156", "task_group": "date_time", "source_group": "google_clock_auto_time_android", "behavior": "direct", "tags": ["distractor"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "My Android phone's clock is off by an hour since daylight saving changed. How can I make it set itself?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states Android and wants the time to set itself, so the Android automatic date and time steps apply; the iPhone passage is inapplicable.", "source_ref_ids": ["date_time-android-auto-time", "date_time-iphone-auto-set"], "target": "Turn on automatic date and time on your Android:\n1. Open your device's **Clock** app.\n2. Tap **More**, then tap **Settings**.\n3. Tap **Change date and time**.\n4. Turn on **Automatic date and time**.", "author_note": "Must cover opening the Clock app, More then Settings, Change date and time, and turning on Automatic date and time. Do not use the iPhone steps. Gap: no official Android system Settings path was found."}, {"id": "gsft-date_time-03", "candidate_id": "gsft-date_time-03-v1", "task_id": "TR-139", "task_group": "date_time", "source_group": "apple_date_time_auto_iphone", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "my phone shows the wrong time, how do i fix it?"}], "decision": {"mode": "clarify", "question": "Is your phone an iPhone or an Android?"}, "decision_basis": "The user says only my phone, and the iPhone and Android passages give different steps for setting the time automatically, so one question is needed first.", "source_ref_ids": ["date_time-iphone-auto-set", "date_time-android-auto-time"], "target": "Is your phone an iPhone or an Android?", "author_note": "Clarify only. The question asks iPhone or Android and assumes nothing else."}, {"id": "gsft-date_time-04", "candidate_id": "gsft-date_time-04-v1", "task_id": "TR-156", "task_group": "date_time", "source_group": "google_clock_auto_timezone_android", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "The clock on my phone has been an hour behind since the time change and it's driving me nuts. Can you walk me through the fix?"}], "decision": {"mode": "clarify", "question": "Do you have an iPhone or an Android phone?"}, "decision_basis": "The user does not name the device, and the iPhone and Android passages differ, so one question about the device is needed first.", "source_ref_ids": ["date_time-iphone-auto-timezone", "date_time-android-auto-timezone"], "target": "Do you have an iPhone or an Android phone?", "author_note": "Clarify only. The question names the two platforms and assumes nothing else."}, {"id": "gsft-date_time-05", "candidate_id": "gsft-date_time-05-v1", "task_id": "TR-139", "task_group": "date_time", "source_group": "apple_date_time_manual_iphone", "behavior": "constraint", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "I'm on a flight with no wifi and my iPhone's clock is wrong. How do I set the time by hand?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone, has no internet, and asks for manual setting, which the manual iPhone passage covers without requiring internet.", "source_ref_ids": ["date_time-iphone-manual"], "target": "Set the date and time by hand on your iPhone:\n1. Open Settings. Tap **General**, tap **Date & Time**, then turn off **Set Automatically**.\n2. To change the time zone, tap **Time Zone** and enter a city with the time zone that you need.\n3. Or tap the date to change the date and time.", "author_note": "Constraint is no internet. Must give the manual route only, with the time zone and date options. Do not include the automatic steps that need internet."}, {"id": "gsft-brightness-01", "candidate_id": "gsft-brightness-01-v1", "task_id": "TR-140", "task_group": "brightness", "source_group": "google_pixel_brightness_level_android", "behavior": "direct", "tags": ["distractor"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "My Pixel 7 screen is too dim to read indoors, how do i make it brighter"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states a Pixel 7 phone, so the Pixel brightness level steps apply; the iPhone passage is inapplicable.", "source_ref_ids": ["brightness-pixel-settings", "brightness-iphone-settings"], "target": "Raise the brightness on your Pixel:\n1. Open your phone's **Settings** app.\n2. Tap **Display & touch**.\n3. Tap **Brightness level** and move the slider.", "author_note": "Must cover Settings, Display & touch, and Brightness level with the slider. Do not use the iPhone steps."}, {"id": "gsft-brightness-02", "candidate_id": "gsft-brightness-02-v1", "task_id": "TR-179", "task_group": "brightness", "source_group": "microsoft_windows_brightness_taskbar_windows11", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "Windows 11", "sensitive": false, "style": "verbose", "source_conversation": [{"role": "user", "content": "Hi there. On my Windows 11 PC the screen has been really dark since this morning and I can't tell what's on it. How do I brighten it up?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states Windows 11 and wants the screen brighter, so the two Windows 11 manual routes apply, with the external monitor condition kept.", "source_ref_ids": ["brightness-windows-network", "brightness-windows-settings"], "target": "Brighten the screen on your Windows 11 PC:\n1. Select the **Network** icon on the right side of the taskbar, then move the **Brightness** slider.\n2. Or go to **Settings** > **System** > **Display** and move the **Brightness** slider.\nYou might not see the Brightness slider on desktop PCs that have an external monitor. Use the buttons on the monitor instead.", "author_note": "Must cover both manual routes and keep the external monitor condition. Gap: the monitor buttons sentence and the move slider step are paraphrased from fetch answers."}, {"id": "gsft-brightness-03", "candidate_id": "gsft-brightness-03-v1", "task_id": "TR-140", "task_group": "brightness", "source_group": "apple_brightness_control_center_iphone", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "my phone screen is too dim, how do i make it brighter"}], "decision": {"mode": "clarify", "question": "Is your phone an iPhone or an Android?"}, "decision_basis": "The user says only my phone, and the iPhone Control Center and Pixel Settings passages give different steps, so one device question is needed first.", "source_ref_ids": ["brightness-iphone-controlcenter", "brightness-pixel-settings"], "target": "Is your phone an iPhone or an Android?", "author_note": "Clarify only. The question asks iPhone or Android and assumes nothing else."}, {"id": "gsft-brightness-04", "candidate_id": "gsft-brightness-04-v1", "task_id": "TR-155", "task_group": "brightness", "source_group": "microsoft_windows_brightness_taskbar_windows11", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Windows 11", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "How do I make the display brighter? It's on my computer."}], "decision": {"mode": "clarify", "question": "Is your device an iPhone, an Android phone, or a Windows 11 PC?"}, "decision_basis": "The user says only computer, and the iPhone and Windows 11 passages give different steps, so one device question is needed first.", "source_ref_ids": ["brightness-iphone-controlcenter", "brightness-windows-network"], "target": "Is your device an iPhone, an Android phone, or a Windows 11 PC?", "author_note": "Clarify only. The question lists the three platforms and assumes nothing else."}, {"id": "gsft-brightness-05", "candidate_id": "gsft-brightness-05-v1", "task_id": "TR-155", "task_group": "brightness", "source_group": "google_pixel_adaptive_brightness_android", "behavior": "clarify", "tags": [], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "under_specified", "source_conversation": [{"role": "user", "content": "The screen keeps dimming by itself and I want it to stay bright. Any idea how to stop that?"}], "decision": {"mode": "clarify", "question": "Is the screen on an iPhone, an Android phone, or a Windows 11 PC?"}, "decision_basis": "The user does not name the device, and the Pixel adaptive brightness passage and the Windows 11 manual brightness passage give different steps, so one device question is needed first.", "source_ref_ids": ["brightness-pixel-adaptive", "brightness-windows-network"], "target": "Is the screen on an iPhone, an Android phone, or a Windows 11 PC?", "author_note": "Clarify only. The question lists the three platforms and assumes nothing about auto-dimming."}, {"id": "gsft-brightness-06", "candidate_id": "gsft-brightness-06-v1", "task_id": "TR-140", "task_group": "brightness", "source_group": "apple_brightness_settings_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain", "source_conversation": [{"role": "user", "content": "I can't swipe down from the top corner on my iPhone to get Control Center to work, so how do I change the brightness another way?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone and cannot use the Control Center swipe, so the Settings route from the iPhone passage applies without the Control Center steps.", "source_ref_ids": ["brightness-iphone-settings"], "target": "Change the brightness in Settings on your iPhone:\n1. In the Settings app, tap **Display & Brightness**.\n2. Drag the slider to the right or left to adjust the brightness.", "author_note": "Constraint is no Control Center swipe. Must use only the Settings route and not the Control Center steps."}, {"id": "gsft-brightness-07", "candidate_id": "gsft-brightness-07-v1", "task_id": "TR-179", "task_group": "brightness", "source_group": "google_pixel_adaptive_brightness_android", "behavior": "multiturn", "tags": ["conditional"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "My Pixel screen is hard to see outside, how do I brighten it?"}, {"role": "assistant", "content": "On Android (Pixel phone): 1. Open your phone's Settings app. 2. Tap Display & touch. 3. Tap Brightness level and move the slider."}, {"role": "user", "content": "I moved the Brightness level slider all the way up but it still looks dim in direct sunlight."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states a Pixel and has already moved the Brightness level slider, so the reply uses the Adaptive brightness passage, which covers the brighter-than-maximum behavior in direct sunlight on Pixel 4 and later.", "source_ref_ids": ["brightness-pixel-adaptive", "brightness-pixel-settings"], "target": "Adaptive brightness is on by default, and on Pixel 4 and later it can temporarily brighten your screen above the normal maximum in extremely bright light, such as direct sunlight. Check it in the same section:\n1. Turn on **Adaptive brightness** if it is off.", "author_note": "Must not repeat the slider step the user already did. Must explain the Adaptive brightness condition and the Pixel 4 and later limit. Gap: the sunlight wording and the on-by-default sentence are paraphrased from fetch answers."}, {"id": "gsft-overheating-02", "candidate_id": "gsft-overheating-02-v2", "task_id": "TR-138", "task_group": "overheating", "source_group": "apple_too_hot_iphone_warning_screen", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "verbose", "source_conversation": [{"role": "user", "content": "Hi, my iPhone 15 has been hot all afternoon from being out on the patio and now there's a temperature warning on the screen. I need to make a call to my brother in a bit. Should I still turn it off first?"}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states iPhone 15 and the temperature warning screen, and asks whether to turn it off before a call, so the three warning-screen steps answer that yes or no question directly.", "source_ref_ids": ["overheating-iphone-warning"], "target": "Yes. Turn off your iPhone first, then follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.", "author_note": "Must answer yes directly, then give the three steps. Must not imply that a normal call to the brother is an emergency call. Gap: warning screen text is an image only.", "correction_history": [{"from_candidate": "gsft-overheating-02-v1", "to_candidate": "gsft-overheating-02-v2", "reason": "The target did not answer the yes or no question and led with an emergency-call line that does not fit a normal call.", "changed_fields": ["target", "decision_basis", "author_note", "messages"], "review_id": "review-gsft-overheating-02-v1"}]}, {"id": "gsft-brightness-07", "candidate_id": "gsft-brightness-07-v2", "task_id": "TR-179", "task_group": "brightness", "source_group": "google_pixel_adaptive_brightness_android", "behavior": "multiturn", "tags": ["conditional"], "category": "technical_support", "platform": "Android", "sensitive": false, "style": "failure_recovery", "source_conversation": [{"role": "user", "content": "My Pixel screen is hard to see outside, how do I brighten it?"}, {"role": "assistant", "content": "On Android (Pixel phone): 1. Open your phone's Settings app. 2. Tap Display & touch. 3. Tap Brightness level and move the slider."}, {"role": "user", "content": "I moved the Brightness level slider all the way up but it still looks dim in direct sunlight."}], "decision": {"mode": "answer", "question": ""}, "decision_basis": "The user states a Pixel and has already moved the Brightness level slider, so the reply uses the Adaptive brightness passage, which covers the brighter-than-maximum behavior in direct sunlight on Pixel 4 and later.", "source_ref_ids": ["brightness-pixel-adaptive", "brightness-pixel-settings"], "target": "Adaptive brightness is on by default, and on Pixel 4 and later it can temporarily brighten your screen above the normal maximum in extremely bright light, such as direct sunlight. Check that it is turned on in your Pixel display settings:\n1. Turn on **Adaptive brightness** if it is off.", "author_note": "Must not repeat the slider step the user already did. Must explain the Adaptive brightness condition and the Pixel 4 and later limit. Gap: the sunlight wording and the on-by-default sentence are paraphrased from fetch answers.", "correction_history": [{"from_candidate": "gsft-brightness-07-v1", "to_candidate": "gsft-brightness-07-v2", "reason": "The target placed Adaptive brightness in the same section as Brightness level, which the Pixel page does not say.", "changed_fields": ["target", "messages"], "review_id": "review-gsft-brightness-07-v1"}]}]}
+{
+  "batch": "b23",
+  "candidates": [
+    {
+      "id": "gsft-overheating-01",
+      "candidate_id": "gsft-overheating-01-v1",
+      "task_id": "TR-138",
+      "task_group": "overheating",
+      "source_group": "apple_too_hot_iphone_warning_screen",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone was sitting in my car in the sun and now it shows a temperature warning screen. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and says the temperature warning screen appeared, so the warning-screen steps apply directly.",
+      "source_ref_ids": [
+        "overheating-iphone-warning"
+      ],
+      "target": "Follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.",
+      "author_note": "Must cover turning the device off, moving it to a cooler environment away from direct sunlight, and letting it cool down. Gap: the warning screen text is shown only as an image on the page, so it is not quoted."
+    },
+    {
+      "id": "gsft-overheating-02",
+      "candidate_id": "gsft-overheating-02-v1",
+      "task_id": "TR-138",
+      "task_group": "overheating",
+      "source_group": "apple_too_hot_iphone_warning_screen",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi, my iPhone 15 has been hot all afternoon from being out on the patio and now there's a temperature warning on the screen. I need to make a call to my brother in a bit. Should I still turn it off first?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone 15 and the temperature warning screen, and asks about turning it off with a call pending, so the steps and the emergency call condition from the same section apply.",
+      "source_ref_ids": [
+        "overheating-iphone-warning"
+      ],
+      "target": "An iPhone showing this message might still be able to make emergency calls. Follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.",
+      "author_note": "Must give the three steps and the emergency call sentence as a condition. Do not invent a way to make a regular call. Gap: warning screen text is an image only."
+    },
+    {
+      "id": "gsft-overheating-03",
+      "candidate_id": "gsft-overheating-03-v1",
+      "task_id": "TR-138",
+      "task_group": "overheating",
+      "source_group": "apple_too_hot_iphone_warning_screen",
+      "behavior": "constraint",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "my iphone is hot and showing a temp warning. im in a hurry, just give me the short version please"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and the warning, and limits the reply to the shortest route, which the three source steps satisfy.",
+      "source_ref_ids": [
+        "overheating-iphone-warning"
+      ],
+      "target": "Short version for your iPhone:\n1. Turn off your device.\n2. Move it to a cooler environment, away from direct sunlight.\n3. Allow it to cool down.",
+      "author_note": "Constraint is the shortest way. Must still cover all three source actions. Gap: warning screen text is an image only."
+    },
+    {
+      "id": "gsft-date_time-01",
+      "candidate_id": "gsft-date_time-01-v1",
+      "task_id": "TR-139",
+      "task_group": "date_time",
+      "source_group": "apple_date_time_auto_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "my iphone clock is an hour off since i got back from europe, how do i fix this"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and a wrong clock after travel, so the automatic date and time route from the iPhone passages applies directly.",
+      "source_ref_ids": [
+        "date_time-iphone-auto-set",
+        "date_time-iphone-auto-timezone"
+      ],
+      "target": "Set the date and time automatically on your iPhone:\n1. Make sure that your device is connected to the internet.\n2. Install the latest software updates for your device.\n3. Open Settings, tap **General**, tap **Date & Time**, then turn on **Set Time Automatically**.\n4. If a message says that updated time zone information is available, restart your device and any paired Apple Watch.\n5. Open Settings, tap **Privacy & Security**, tap **Location Services**, scroll to the bottom and tap **System Services**, then turn on **Setting Time Zone**.\nSet Time Automatically might not be available with all carriers or in all countries and regions. If the device has a Screen Time passcode or a corporate profile with device restrictions installed, the setting might be dimmed (grayed out).",
+      "author_note": "Must cover internet connection, software updates, Set Time Automatically, the time zone update restart message, and Setting Time Zone under Location Services, plus the two conditions. Gap: the Open Settings lead-in for step 5 and the conditions are paraphrased from fetch answers."
+    },
+    {
+      "id": "gsft-date_time-02",
+      "candidate_id": "gsft-date_time-02-v1",
+      "task_id": "TR-156",
+      "task_group": "date_time",
+      "source_group": "google_clock_auto_time_android",
+      "behavior": "direct",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android phone's clock is off by an hour since daylight saving changed. How can I make it set itself?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and wants the time to set itself, so the Android automatic date and time steps apply; the iPhone passage is inapplicable.",
+      "source_ref_ids": [
+        "date_time-android-auto-time",
+        "date_time-iphone-auto-set"
+      ],
+      "target": "Turn on automatic date and time on your Android:\n1. Open your device's **Clock** app.\n2. Tap **More**, then tap **Settings**.\n3. Tap **Change date and time**.\n4. Turn on **Automatic date and time**.",
+      "author_note": "Must cover opening the Clock app, More then Settings, Change date and time, and turning on Automatic date and time. Do not use the iPhone steps. Gap: no official Android system Settings path was found."
+    },
+    {
+      "id": "gsft-date_time-03",
+      "candidate_id": "gsft-date_time-03-v1",
+      "task_id": "TR-139",
+      "task_group": "date_time",
+      "source_group": "apple_date_time_auto_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "my phone shows the wrong time, how do i fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only my phone, and the iPhone and Android passages give different steps for setting the time automatically, so one question is needed first.",
+      "source_ref_ids": [
+        "date_time-iphone-auto-set",
+        "date_time-android-auto-time"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. The question asks iPhone or Android and assumes nothing else."
+    },
+    {
+      "id": "gsft-date_time-04",
+      "candidate_id": "gsft-date_time-04-v1",
+      "task_id": "TR-156",
+      "task_group": "date_time",
+      "source_group": "google_clock_auto_timezone_android",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "The clock on my phone has been an hour behind since the time change and it's driving me nuts. Can you walk me through the fix?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Do you have an iPhone or an Android phone?"
+      },
+      "decision_basis": "The user does not name the device, and the iPhone and Android passages differ, so one question about the device is needed first.",
+      "source_ref_ids": [
+        "date_time-iphone-auto-timezone",
+        "date_time-android-auto-timezone"
+      ],
+      "target": "Do you have an iPhone or an Android phone?",
+      "author_note": "Clarify only. The question names the two platforms and assumes nothing else."
+    },
+    {
+      "id": "gsft-date_time-05",
+      "candidate_id": "gsft-date_time-05-v1",
+      "task_id": "TR-139",
+      "task_group": "date_time",
+      "source_group": "apple_date_time_manual_iphone",
+      "behavior": "constraint",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on a flight with no wifi and my iPhone's clock is wrong. How do I set the time by hand?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone, has no internet, and asks for manual setting, which the manual iPhone passage covers without requiring internet.",
+      "source_ref_ids": [
+        "date_time-iphone-manual"
+      ],
+      "target": "Set the date and time by hand on your iPhone:\n1. Open Settings. Tap **General**, tap **Date & Time**, then turn off **Set Automatically**.\n2. To change the time zone, tap **Time Zone** and enter a city with the time zone that you need.\n3. Or tap the date to change the date and time.",
+      "author_note": "Constraint is no internet. Must give the manual route only, with the time zone and date options. Do not include the automatic steps that need internet."
+    },
+    {
+      "id": "gsft-brightness-01",
+      "candidate_id": "gsft-brightness-01-v1",
+      "task_id": "TR-140",
+      "task_group": "brightness",
+      "source_group": "google_pixel_brightness_level_android",
+      "behavior": "direct",
+      "tags": [
+        "distractor"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Pixel 7 screen is too dim to read indoors, how do i make it brighter"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Pixel 7 phone, so the Pixel brightness level steps apply; the iPhone passage is inapplicable.",
+      "source_ref_ids": [
+        "brightness-pixel-settings",
+        "brightness-iphone-settings"
+      ],
+      "target": "Raise the brightness on your Pixel:\n1. Open your phone's **Settings** app.\n2. Tap **Display & touch**.\n3. Tap **Brightness level** and move the slider.",
+      "author_note": "Must cover Settings, Display & touch, and Brightness level with the slider. Do not use the iPhone steps."
+    },
+    {
+      "id": "gsft-brightness-02",
+      "candidate_id": "gsft-brightness-02-v1",
+      "task_id": "TR-179",
+      "task_group": "brightness",
+      "source_group": "microsoft_windows_brightness_taskbar_windows11",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi there. On my Windows 11 PC the screen has been really dark since this morning and I can't tell what's on it. How do I brighten it up?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and wants the screen brighter, so the two Windows 11 manual routes apply, with the external monitor condition kept.",
+      "source_ref_ids": [
+        "brightness-windows-network",
+        "brightness-windows-settings"
+      ],
+      "target": "Brighten the screen on your Windows 11 PC:\n1. Select the **Network** icon on the right side of the taskbar, then move the **Brightness** slider.\n2. Or go to **Settings** > **System** > **Display** and move the **Brightness** slider.\nYou might not see the Brightness slider on desktop PCs that have an external monitor. Use the buttons on the monitor instead.",
+      "author_note": "Must cover both manual routes and keep the external monitor condition. Gap: the monitor buttons sentence and the move slider step are paraphrased from fetch answers."
+    },
+    {
+      "id": "gsft-brightness-03",
+      "candidate_id": "gsft-brightness-03-v1",
+      "task_id": "TR-140",
+      "task_group": "brightness",
+      "source_group": "apple_brightness_control_center_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "my phone screen is too dim, how do i make it brighter"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only my phone, and the iPhone Control Center and Pixel Settings passages give different steps, so one device question is needed first.",
+      "source_ref_ids": [
+        "brightness-iphone-controlcenter",
+        "brightness-pixel-settings"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. The question asks iPhone or Android and assumes nothing else."
+    },
+    {
+      "id": "gsft-brightness-04",
+      "candidate_id": "gsft-brightness-04-v1",
+      "task_id": "TR-155",
+      "task_group": "brightness",
+      "source_group": "microsoft_windows_brightness_taskbar_windows11",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "How do I make the display brighter? It's on my computer."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your device an iPhone, an Android phone, or a Windows 11 PC?"
+      },
+      "decision_basis": "The user says only computer, and the iPhone and Windows 11 passages give different steps, so one device question is needed first.",
+      "source_ref_ids": [
+        "brightness-iphone-controlcenter",
+        "brightness-windows-network"
+      ],
+      "target": "Is your device an iPhone, an Android phone, or a Windows 11 PC?",
+      "author_note": "Clarify only. The question lists the three platforms and assumes nothing else."
+    },
+    {
+      "id": "gsft-brightness-05",
+      "candidate_id": "gsft-brightness-05-v1",
+      "task_id": "TR-155",
+      "task_group": "brightness",
+      "source_group": "google_pixel_adaptive_brightness_android",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "The screen keeps dimming by itself and I want it to stay bright. Any idea how to stop that?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is the screen on an iPhone, an Android phone, or a Windows 11 PC?"
+      },
+      "decision_basis": "The user does not name the device, and the Pixel adaptive brightness passage and the Windows 11 manual brightness passage give different steps, so one device question is needed first.",
+      "source_ref_ids": [
+        "brightness-pixel-adaptive",
+        "brightness-windows-network"
+      ],
+      "target": "Is the screen on an iPhone, an Android phone, or a Windows 11 PC?",
+      "author_note": "Clarify only. The question lists the three platforms and assumes nothing about auto-dimming."
+    },
+    {
+      "id": "gsft-brightness-06",
+      "candidate_id": "gsft-brightness-06-v1",
+      "task_id": "TR-140",
+      "task_group": "brightness",
+      "source_group": "apple_brightness_settings_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I can't swipe down from the top corner on my iPhone to get Control Center to work, so how do I change the brightness another way?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and cannot use the Control Center swipe, so the Settings route from the iPhone passage applies without the Control Center steps.",
+      "source_ref_ids": [
+        "brightness-iphone-settings"
+      ],
+      "target": "Change the brightness in Settings on your iPhone:\n1. In the Settings app, tap **Display & Brightness**.\n2. Drag the slider to the right or left to adjust the brightness.",
+      "author_note": "Constraint is no Control Center swipe. Must use only the Settings route and not the Control Center steps."
+    },
+    {
+      "id": "gsft-brightness-07",
+      "candidate_id": "gsft-brightness-07-v1",
+      "task_id": "TR-179",
+      "task_group": "brightness",
+      "source_group": "google_pixel_adaptive_brightness_android",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Pixel screen is hard to see outside, how do I brighten it?"
+        },
+        {
+          "role": "assistant",
+          "content": "On Android (Pixel phone): 1. Open your phone's Settings app. 2. Tap Display & touch. 3. Tap Brightness level and move the slider."
+        },
+        {
+          "role": "user",
+          "content": "I moved the Brightness level slider all the way up but it still looks dim in direct sunlight."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Pixel and has already moved the Brightness level slider, so the reply uses the Adaptive brightness passage, which covers the brighter-than-maximum behavior in direct sunlight on Pixel 4 and later.",
+      "source_ref_ids": [
+        "brightness-pixel-adaptive",
+        "brightness-pixel-settings"
+      ],
+      "target": "Adaptive brightness is on by default, and on Pixel 4 and later it can temporarily brighten your screen above the normal maximum in extremely bright light, such as direct sunlight. Check it in the same section:\n1. Turn on **Adaptive brightness** if it is off.",
+      "author_note": "Must not repeat the slider step the user already did. Must explain the Adaptive brightness condition and the Pixel 4 and later limit. Gap: the sunlight wording and the on-by-default sentence are paraphrased from fetch answers."
+    },
+    {
+      "id": "gsft-overheating-02",
+      "candidate_id": "gsft-overheating-02-v2",
+      "task_id": "TR-138",
+      "task_group": "overheating",
+      "source_group": "apple_too_hot_iphone_warning_screen",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi, my iPhone 15 has been hot all afternoon from being out on the patio and now there's a temperature warning on the screen. I need to make a call to my brother in a bit. Should I still turn it off first?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone 15 and the temperature warning screen, and asks whether to turn it off before a call, so the three warning-screen steps answer that yes or no question directly.",
+      "source_ref_ids": [
+        "overheating-iphone-warning"
+      ],
+      "target": "Yes. Turn off your iPhone first, then follow these steps on your iPhone:\n1. Turn off your device.\n2. Move your device to a cooler environment (away from direct sunlight).\n3. Allow your device to cool down.",
+      "author_note": "Must answer yes directly, then give the three steps. Must not imply that a normal call to the brother is an emergency call. Gap: warning screen text is an image only.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-overheating-02-v1",
+          "to_candidate": "gsft-overheating-02-v2",
+          "reason": "The target did not answer the yes or no question and led with an emergency-call line that does not fit a normal call.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-overheating-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-brightness-07",
+      "candidate_id": "gsft-brightness-07-v2",
+      "task_id": "TR-179",
+      "task_group": "brightness",
+      "source_group": "google_pixel_adaptive_brightness_android",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Pixel screen is hard to see outside, how do I brighten it?"
+        },
+        {
+          "role": "assistant",
+          "content": "On Android (Pixel phone): 1. Open your phone's Settings app. 2. Tap Display & touch. 3. Tap Brightness level and move the slider."
+        },
+        {
+          "role": "user",
+          "content": "I moved the Brightness level slider all the way up but it still looks dim in direct sunlight."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Pixel and has already moved the Brightness level slider, so the reply uses the Adaptive brightness passage, which covers the brighter-than-maximum behavior in direct sunlight on Pixel 4 and later.",
+      "source_ref_ids": [
+        "brightness-pixel-adaptive",
+        "brightness-pixel-settings"
+      ],
+      "target": "Adaptive brightness is on by default, and on Pixel 4 and later it can temporarily brighten your screen above the normal maximum in extremely bright light, such as direct sunlight. Check that it is turned on in your Pixel display settings:\n1. Turn on **Adaptive brightness** if it is off.",
+      "author_note": "Must not repeat the slider step the user already did. Must explain the Adaptive brightness condition and the Pixel 4 and later limit. Gap: the sunlight wording and the on-by-default sentence are paraphrased from fetch answers.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-brightness-07-v1",
+          "to_candidate": "gsft-brightness-07-v2",
+          "reason": "The target placed Adaptive brightness in the same section as Brightness level, which the Pixel page does not say.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-brightness-07-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-brightness-04",
+      "candidate_id": "gsft-brightness-04-v2",
+      "task_id": "TR-155",
+      "task_group": "brightness",
+      "source_group": "microsoft_windows_brightness_taskbar_windows11",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "How do I make the display brighter? It's on my computer."
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your computer a Windows 11 PC or a Mac?"
+      },
+      "decision_basis": "The user says only that the display is on their computer, so one question is needed to tell a Windows 11 PC from a Mac before steps are given.",
+      "source_ref_ids": [
+        "brightness-iphone-controlcenter",
+        "brightness-windows-network"
+      ],
+      "target": "Is your computer a Windows 11 PC or a Mac?",
+      "author_note": "Clarify only. The question names the two computer types and offers no phone options, since the user named a computer. No Mac source is in the set, so the Mac answer has no steps yet.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-brightness-04-v1",
+          "to_candidate": "gsft-brightness-04-v2",
+          "reason": "The clarify question offered phone options the user did not name and left out Mac, so it now asks only whether the computer is a Windows 11 PC or a Mac.",
+          "changed_fields": [
+            "decision",
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-brightness-04-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-overheating-02",
+      "candidate_id": "gsft-overheating-02-v3",
+      "task_id": "TR-138",
+      "task_group": "overheating",
+      "source_group": "apple_too_hot_iphone_warning_screen",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Hi, my iPhone 15 has been hot all afternoon from being out on the patio and now there's a temperature warning on the screen. I need to make a call to my brother in a bit. Should I still turn it off first?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone 15 and the temperature warning screen, and asks whether to turn it off before a call, so the three warning-screen steps answer that yes or no question directly.",
+      "source_ref_ids": [
+        "overheating-iphone-warning"
+      ],
+      "target": "Yes. Turn off your iPhone first. Then:\n1. Move your device to a cooler environment (away from direct sunlight).\n2. Allow your device to cool down.",
+      "author_note": "Must answer yes directly, then give the two steps that follow turning it off. Must not imply that a normal call to the brother is an emergency call. Gap: warning screen text is an image only.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-overheating-02-v1",
+          "to_candidate": "gsft-overheating-02-v2",
+          "reason": "The target did not answer the yes or no question and led with an emergency-call line that does not fit a normal call.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-overheating-02-v1"
+        },
+        {
+          "from_candidate": "gsft-overheating-02-v2",
+          "to_candidate": "gsft-overheating-02-v3",
+          "reason": "The target repeated the turn-off action as a numbered step after answering yes, so the duplicate step is removed.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-overheating-02-v2"
+        }
+      ]
+    }
+  ]
+}

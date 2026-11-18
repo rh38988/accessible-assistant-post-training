@@ -865,6 +865,74 @@
           "review_id": "review-gsft-fake_debt_collector-04-v1"
         }
       ]
+    },
+    {
+      "id": "gsft-extortion_email_scam-06",
+      "candidate_id": "gsft-extortion_email_scam-06-v3",
+      "task_id": "TR-218",
+      "task_group": "extortion_email_scam",
+      "source_group": "ftc_scam_emails_bitcoin_2020",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "any",
+      "sensitive": true,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Got a scary email from a hacker who says they filmed me. Pay them bitcoin or else. Should I?"
+        },
+        {
+          "role": "assistant",
+          "content": "No. Don't pay anything. Delete the message. It's a scam."
+        },
+        {
+          "role": "user",
+          "content": "I replied asking for proof and they sent me a screenshot of my webcam and want the money by Friday. Please help."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The last turn shows the user replied asking for proof, and the scammer sent a webcam screenshot and set a deadline. The FTC 2020 advice says scammers may claim access to a webcam, that this is all talk, and to stop and report the message. The reply does not repeat the reply the user sent.",
+      "source_ref_ids": [
+        "extortion-access",
+        "extortion-claims",
+        "extortion-stop",
+        "extortion-report"
+      ],
+      "target": "The scammers may say they have access to your computer or webcam. That's all talk.\n\n1. Stop. Don't pay anything.\n2. Delete the message.\n3. If you get a message like this, please report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Must cover: stop and do not pay; the webcam claim is all talk; delete the message; report to the FTC at ReportFraud.ftc.gov. Must not repeat that the user replied. Source gap: none.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-extortion_email_scam-06-v1",
+          "to_candidate": "gsft-extortion_email_scam-06-v2",
+          "reason": "The user already replied to the sender asking for proof and the target never told them to stop replying, though the official page opens with Stop.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-extortion_email_scam-06-v1"
+        },
+        {
+          "from_candidate": "gsft-extortion_email_scam-06-v2",
+          "to_candidate": "gsft-extortion_email_scam-06-v3",
+          "reason": "The target told the user to stop replying, which the FTC page does not say, and its opening line repeated the do-not-pay instruction.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-extortion_email_scam-06-v2"
+        }
+      ]
     }
   ]
 }

@@ -1,820 +1,938 @@
 {
- "batch": "b15",
- "candidates": [
-  {
-   "id": "gsft-romance_scam-01",
-   "candidate_id": "gsft-romance_scam-01-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_romance_scams",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
+  "batch": "b15",
+  "candidates": [
     {
-     "role": "user",
-     "content": "I met a man on Facebook about four months ago. We have only ever talked by messages on my phone. He says he's an engineer on an oil rig and now he wants me to send $800 for a plane ticket so he can finally visit. I'm thinking of sending it today. Is that okay?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names Facebook and a phone, has not sent the money yet, and has never met the person in person. The page says never to send money or gifts to a sweetheart not met in person, so the protective line comes first, followed by the stop, talk, search, reverse image and notify steps.",
-   "source_ref_ids": [
-    "romance-bottom",
-    "romance-stop",
-    "romance-search",
-    "romance-report"
-   ],
-   "target": "Please don't send him the $800. Never send money or gifts to a sweetheart you haven't met in person.\n1. Stop communicating with him immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. Search online for the type of job he says he has plus the word 'scammer.'\n4. Run a reverse image search on his profile photo to see whether it appears under other names.\n5. Notify the social networking site or app where you met him, too.",
-   "author_note": "Must cover: never send money (protective, first), stop communicating, talk with trusted person, search job plus scammer, reverse image search, notify the app. Report step is optional here. No gap."
-  },
-  {
-   "id": "gsft-romance_scam-02",
-   "candidate_id": "gsft-romance_scam-02-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I bought $500 in gift cards yesterday for a man I met on a dating website. I read him the codes over the phone, and now he's asking for more. I think he's a scammer. What do I do now? I'm using my phone."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states the device (phone) and a gift card payment, so the gift card recovery steps apply. The notify and report steps come from the romance page. The 'if you think it's a scam' condition is met by the user's own belief and is kept as a report step.",
-   "source_ref_ids": [
-    "romance-giftcard",
-    "romance-paid",
-    "romance-stop",
-    "romance-report"
-   ],
-   "target": "Stop communicating with him now, and don't send him anything else.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
-   "author_note": "Must cover the gift card steps (issuer, number on back, tell them, refund, keep card and receipt), the FTC report and notify the site or app. The stop line is the romance page's first step. The wire or card payment step is not needed. No gap."
-  },
-  {
-   "id": "gsft-romance_scam-03",
-   "candidate_id": "gsft-romance_scam-03-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_romance_scams",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Quick one, I only have a minute and my phone screen is tiny. The man I talk to online wants me to pay a $350 shipping fee for a package he says has money in it. Just tell me the short answer, please."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user asks for the short answer. The reply keeps only the protective line and the two most important actions from the page (stop communicating, report to the FTC).",
-   "source_ref_ids": [
-    "romance-bottom",
-    "romance-stop",
-    "romance-report"
-   ],
-   "target": "Don't pay the fee. Never send money or gifts to a sweetheart you haven't met in person.\n1. Stop communicating with him immediately.\n2. Report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Constraint respected by a three-line answer. Must not add steps the user did not ask for beyond the two chosen. No gap; the omitted steps are optional under the constraint."
-  },
-  {
-   "id": "gsft-romance_scam-04",
-   "candidate_id": "gsft-romance_scam-04-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_romance_scams",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I can't do searches or look at pictures online because my eyesight is poor and I get lost in apps. A woman I chat with says she's a doctor overseas and needs $1,000 for hospital fees. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user cannot search or run a reverse image search. The reply uses only the steps that need no searching: stop, talk to a trusted person, notify the app, report. The search and reverse image steps are left out as the user asked.",
-   "source_ref_ids": [
-    "romance-stop",
-    "romance-report",
-    "romance-paid"
-   ],
-   "target": "Please don't send her the $1,000 for hospital fees.\n1. Stop communicating with her immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. Notify the social networking site or app where you met her, too.\n4. Report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "The constraint excludes searching and reverse image search, so those page steps are omitted. Every step given is from the page. The user's word 'doctor' is not repeated as a fact. No gap."
-  },
-  {
-   "id": "gsft-romance_scam-05",
-   "candidate_id": "gsft-romance_scam-05-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I think the man I've been messaging online is a scammer. He keeps asking me for money."
+      "id": "gsft-romance_scam-01",
+      "candidate_id": "gsft-romance_scam-01-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I met a man on Facebook about four months ago. We have only ever talked by messages on my phone. He says he's an engineer on an oil rig and now he wants me to send $800 for a plane ticket so he can finally visit. I'm thinking of sending it today. Is that okay?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names Facebook and a phone, has not sent the money yet, and has never met the person in person. The page says never to send money or gifts to a sweetheart not met in person, so the protective line comes first, followed by the stop, talk, search, reverse image and notify steps.",
+      "source_ref_ids": [
+        "romance-bottom",
+        "romance-stop",
+        "romance-search",
+        "romance-report"
+      ],
+      "target": "Please don't send him the $800. Never send money or gifts to a sweetheart you haven't met in person.\n1. Stop communicating with him immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. Search online for the type of job he says he has plus the word 'scammer.'\n4. Run a reverse image search on his profile photo to see whether it appears under other names.\n5. Notify the social networking site or app where you met him, too.",
+      "author_note": "Must cover: never send money (protective, first), stop communicating, talk with trusted person, search job plus scammer, reverse image search, notify the app. Report step is optional here. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Stop communicating with him immediately. Then talk with a trusted friend or family member about the relationship."
+      "id": "gsft-romance_scam-02",
+      "candidate_id": "gsft-romance_scam-02-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I bought $500 in gift cards yesterday for a man I met on a dating website. I read him the codes over the phone, and now he's asking for more. I think he's a scammer. What do I do now? I'm using my phone."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states the device (phone) and a gift card payment, so the gift card recovery steps apply. The notify and report steps come from the romance page. The 'if you think it's a scam' condition is met by the user's own belief and is kept as a report step.",
+      "source_ref_ids": [
+        "romance-giftcard",
+        "romance-paid",
+        "romance-stop",
+        "romance-report"
+      ],
+      "target": "Stop communicating with him now, and don't send him anything else.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
+      "author_note": "Must cover the gift card steps (issuer, number on back, tell them, refund, keep card and receipt), the FTC report and notify the site or app. The stop line is the romance page's first step. The wire or card payment step is not needed. No gap."
     },
     {
-     "role": "user",
-     "content": "I already stopped replying. But before that I bought $300 in Apple gift cards and sent him the codes."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The last user turn states the stop was done and that a gift card payment happened. The reply covers the gift card steps and the report and notify steps, and does not repeat the stop step the user already did.",
-   "source_ref_ids": [
-    "romance-giftcard",
-    "romance-report",
-    "romance-stop"
-   ],
-   "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
-   "author_note": "Must not repeat stopping contact. Covers gift card issuer steps, refund request, keep card and receipt, FTC report, notify the app. No gap."
-  },
-  {
-   "id": "gsft-romance_scam-06",
-   "candidate_id": "gsft-romance_scam-06-v1",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_romance_scams",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A woman I've chatted with on a dating app for two months wants me to pay for her flight so she can come see me. I'm worried."
+      "id": "gsft-romance_scam-03",
+      "candidate_id": "gsft-romance_scam-03-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Quick one, I only have a minute and my phone screen is tiny. The man I talk to online wants me to pay a $350 shipping fee for a package he says has money in it. Just tell me the short answer, please."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user asks for the short answer. The reply keeps only the protective line and the two most important actions from the page (stop communicating, report to the FTC).",
+      "source_ref_ids": [
+        "romance-bottom",
+        "romance-stop",
+        "romance-report"
+      ],
+      "target": "Don't pay the fee. Never send money or gifts to a sweetheart you haven't met in person.\n1. Stop communicating with him immediately.\n2. Report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Constraint respected by a three-line answer. Must not add steps the user did not ask for beyond the two chosen. No gap; the omitted steps are optional under the constraint."
     },
     {
-     "role": "assistant",
-     "content": "Never send money or gifts to a sweetheart you haven't met in person."
+      "id": "gsft-romance_scam-04",
+      "candidate_id": "gsft-romance_scam-04-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I can't do searches or look at pictures online because my eyesight is poor and I get lost in apps. A woman I chat with says she's a doctor overseas and needs $1,000 for hospital fees. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user cannot search or run a reverse image search. The reply uses only the steps that need no searching: stop, talk to a trusted person, notify the app, report. The search and reverse image steps are left out as the user asked.",
+      "source_ref_ids": [
+        "romance-stop",
+        "romance-report",
+        "romance-paid"
+      ],
+      "target": "Please don't send her the $1,000 for hospital fees.\n1. Stop communicating with her immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. Notify the social networking site or app where you met her, too.\n4. Report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "The constraint excludes searching and reverse image search, so those page steps are omitted. Every step given is from the page. The user's word 'doctor' is not repeated as a fact. No gap."
     },
     {
-     "role": "user",
-     "content": "I searched her job plus the word scammer and a scam warning came up with her job title. I also ran a reverse image search and her photo shows under other names. I told her I'm done with the chat."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user has already done the search and reverse image steps and has ended the chat. The remaining page steps are talk with a trusted person, notify the app, and report to the FTC. The reply gives only these.",
-   "source_ref_ids": [
-    "romance-stop",
-    "romance-report",
-    "romance-bottom"
-   ],
-   "target": "Here are the steps that remain.\n1. Talk with a trusted friend or family member about the relationship.\n2. Notify the dating app where you met her, too.\n3. Report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Must not repeat the search, reverse image check, or ending the chat. Keep to the three remaining page steps. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-01",
-   "candidate_id": "gsft-government_impersonation-01-v1",
-   "task_id": "TR-089",
-   "task_group": "government_impersonation",
-   "source_group": "irs_phony_calls_ftc",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A man called on my phone and said he's from the IRS. He says I owe back taxes and I'll be arrested unless I pay today with gift cards. I'm scared. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names an IRS call on a phone and a gift card payment demand. The IRS page gives the hang up, verify, do-not-pay and report steps for IRS calls. The IRS's payment policy line is kept as stated on the page.",
-   "source_ref_ids": [
-    "gov-irs-info",
-    "gov-irs-verify",
-    "gov-irs-payment",
-    "gov-irs-report"
-   ],
-   "target": "Don't give him any personal or financial information.\n1. Hang up the phone.\n2. If in doubt, call the IRS directly at 1-800-829-1040.\n3. Don't send money by wire transfer, prepaid card or gift card to someone claiming to be from the IRS. The IRS will not require a specific type of payment.\n4. Report phony IRS calls to the Treasury Inspector General for Tax Administration (TIGTA).",
-   "author_note": "Must cover hang up, call the IRS at the page's number to check, no gift card or wire payment, report to TIGTA, no personal or financial info. The 'arrested' threat is not discussed on the page and is not repeated. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-02",
-   "candidate_id": "gsft-government_impersonation-02-v1",
-   "task_id": "TR-216",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_government_impersonation",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "On my landline a recorded voice said my Social Security number is suspended and I should press 1 to talk to an agent. Should I press 1?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a landline and a recorded voice, which matches the robocall condition on the page. The condition is kept: a robocall means no number is pressed. The hang up, call-the-agency, personal information and caller ID steps follow the same page.",
-   "source_ref_ids": [
-    "gov-robocall",
-    "gov-hang-up",
-    "gov-avoid-info",
-    "gov-caller-id"
-   ],
-   "target": "If the call is a robocall, don't press any numbers. Pressing numbers could lead to more calls.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\n3. Don't give your financial or personal information.\n4. Don't trust your caller ID.",
-   "author_note": "The robocall condition is kept as a condition, and the user's recorded voice is the stated fact that meets it. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-03",
-   "candidate_id": "gsft-government_impersonation-03-v1",
-   "task_id": "TR-217",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_government_impersonation",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A man on the phone says I must pay a $500 fine today with gift cards or I'll be arrested. My hands shake too much to dial any numbers. Just tell me the quickest thing to do."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user cannot dial numbers and wants the quickest answer. The reply uses only the hang up or ignore step, the no-payment step, and the no-personal-information step. It does not ask the user to call anyone.",
-   "source_ref_ids": [
-    "gov-ignore",
-    "gov-avoid-payment",
-    "gov-avoid-info"
-   ],
-   "target": "Don't pay this man anything.\n1. Hang up or ignore the call. It's a scammer.\n2. Don't wire money or use gift cards, cryptocurrency, or a payment app to pay someone who says they're with the government.\n3. Don't give your financial or personal information.",
-   "author_note": "Respects the no-dialing constraint by omitting the call-back step. The 'arrested' and fine claims are not on the page and are not repeated. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-04",
-   "candidate_id": "gsft-government_impersonation-04-v1",
-   "task_id": "TR-089",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_government_impersonation",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A woman called saying she's from the Social Security Administration. She wants me to confirm my Social Security number to fix a problem. I only have a flip phone and I can't go online at all. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user has a flip phone and cannot go online, so no web addresses are given. The reply uses the no-personal-information step, the hang up and call-the-agency step, and the agency contact rule from the page.",
-   "source_ref_ids": [
-    "gov-avoid-info",
-    "gov-hang-up",
-    "gov-agency-never"
-   ],
-   "target": "Don't give your financial or personal information to this caller.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\nGovernment agencies will never call, email, text, or message you on social media to ask for money or personal information.",
-   "author_note": "Respects the flip phone and no-internet constraint by giving no web address. The Social Security number is not repeated as a fact about the caller. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-05",
-   "candidate_id": "gsft-government_impersonation-05-v1",
-   "task_id": "TR-216",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A caller said he was from the government and that my account had a problem. He asked me to buy gift cards and read him the numbers."
+      "id": "gsft-romance_scam-05",
+      "candidate_id": "gsft-romance_scam-05-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I think the man I've been messaging online is a scammer. He keeps asking me for money."
+        },
+        {
+          "role": "assistant",
+          "content": "Stop communicating with him immediately. Then talk with a trusted friend or family member about the relationship."
+        },
+        {
+          "role": "user",
+          "content": "I already stopped replying. But before that I bought $300 in Apple gift cards and sent him the codes."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The last user turn states the stop was done and that a gift card payment happened. The reply covers the gift card steps and the report and notify steps, and does not repeat the stop step the user already did.",
+      "source_ref_ids": [
+        "romance-giftcard",
+        "romance-report",
+        "romance-stop"
+      ],
+      "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
+      "author_note": "Must not repeat stopping contact. Covers gift card issuer steps, refund request, keep card and receipt, FTC report, notify the app. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Hang up the phone and call the government agency directly at a number you know is correct."
+      "id": "gsft-romance_scam-06",
+      "candidate_id": "gsft-romance_scam-06-v1",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A woman I've chatted with on a dating app for two months wants me to pay for her flight so she can come see me. I'm worried."
+        },
+        {
+          "role": "assistant",
+          "content": "Never send money or gifts to a sweetheart you haven't met in person."
+        },
+        {
+          "role": "user",
+          "content": "I searched her job plus the word scammer and a scam warning came up with her job title. I also ran a reverse image search and her photo shows under other names. I told her I'm done with the chat."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user has already done the search and reverse image steps and has ended the chat. The remaining page steps are talk with a trusted person, notify the app, and report to the FTC. The reply gives only these.",
+      "source_ref_ids": [
+        "romance-stop",
+        "romance-report",
+        "romance-bottom"
+      ],
+      "target": "Here are the steps that remain.\n1. Talk with a trusted friend or family member about the relationship.\n2. Notify the dating app where you met her, too.\n3. Report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Must not repeat the search, reverse image check, or ending the chat. Keep to the three remaining page steps. No gap."
     },
     {
-     "role": "user",
-     "content": "I hung up already. But before that I bought two $100 gift cards and read him the card numbers and PINs."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user has hung up and says the gift cards were already paid. The reply gives only the gift card recovery steps and the FTC report, and does not repeat the hang up step.",
-   "source_ref_ids": [
-    "gov-gift-steps",
-    "gov-report"
-   ],
-   "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. If you think it's a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Does not repeat hanging up. Covers the gift card issuer steps and the FTC report. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-06",
-   "candidate_id": "gsft-government_impersonation-06-v1",
-   "task_id": "TR-217",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A caller said he was from the IRS and that I owe back taxes. I asked how to pay and he said by wire transfer."
+      "id": "gsft-government_impersonation-01",
+      "candidate_id": "gsft-government_impersonation-01-v1",
+      "task_id": "TR-089",
+      "task_group": "government_impersonation",
+      "source_group": "irs_phony_calls_ftc",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A man called on my phone and said he's from the IRS. He says I owe back taxes and I'll be arrested unless I pay today with gift cards. I'm scared. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names an IRS call on a phone and a gift card payment demand. The IRS page gives the hang up, verify, do-not-pay and report steps for IRS calls. The IRS's payment policy line is kept as stated on the page.",
+      "source_ref_ids": [
+        "gov-irs-info",
+        "gov-irs-verify",
+        "gov-irs-payment",
+        "gov-irs-report"
+      ],
+      "target": "Don't give him any personal or financial information.\n1. Hang up the phone.\n2. If in doubt, call the IRS directly at 1-800-829-1040.\n3. Don't send money by wire transfer, prepaid card or gift card to someone claiming to be from the IRS. The IRS will not require a specific type of payment.\n4. Report phony IRS calls to the Treasury Inspector General for Tax Administration (TIGTA).",
+      "author_note": "Must cover hang up, call the IRS at the page's number to check, no gift card or wire payment, report to TIGTA, no personal or financial info. The 'arrested' threat is not discussed on the page and is not repeated. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Don't wire money or use gift cards, cryptocurrency, or a payment app to pay someone who says they're with the government."
+      "id": "gsft-government_impersonation-02",
+      "candidate_id": "gsft-government_impersonation-02-v1",
+      "task_id": "TR-216",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_government_impersonation",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "On my landline a recorded voice said my Social Security number is suspended and I should press 1 to talk to an agent. Should I press 1?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a landline and a recorded voice, which matches the robocall condition on the page. The condition is kept: a robocall means no number is pressed. The hang up, call-the-agency, personal information and caller ID steps follow the same page.",
+      "source_ref_ids": [
+        "gov-robocall",
+        "gov-hang-up",
+        "gov-avoid-info",
+        "gov-caller-id"
+      ],
+      "target": "If the call is a robocall, don't press any numbers. Pressing numbers could lead to more calls.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\n3. Don't give your financial or personal information.\n4. Don't trust your caller ID.",
+      "author_note": "The robocall condition is kept as a condition, and the user's recorded voice is the stated fact that meets it. No gap."
     },
     {
-     "role": "user",
-     "content": "I didn't wire anything, but I already read him my Social Security number and my bank account number before I realized what was going on."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user did not wire money but gave personal numbers. The page's personal information steps apply: the Social Security number report or the unsure path, bank statement checks, and a credit freeze. The reply does not repeat the wire advice.",
-   "source_ref_ids": [
-    "gov-ssn-report",
-    "gov-unsure",
-    "gov-bank",
-    "gov-freeze"
-   ],
-   "target": "Here is what to do about the numbers you shared.\n1. If a scammer used your Social Security number: Report it at https://www.identitytheft.gov/. Get a customized recovery plan. Follow the recovery steps.\n2. If you aren't sure whether a scammer used your Social Security number, go to https://www.identitytheft.gov/databreach and follow the steps to protect yourself from identity theft.\n3. Check your bank account statement. Withdrawals you didn't make could indicate identity theft.\n4. To place a credit freeze, contact each of the three credit bureaus.",
-   "author_note": "Does not repeat the wire advice. Covers the Social Security number report or unsure path, bank statement check, and credit freeze. The bank account number is not discussed beyond the bank statement check. No gap."
-  },
-  {
-   "id": "gsft-strong_passwords-01",
-   "candidate_id": "gsft-strong_passwords-01-v1",
-   "task_id": "TR-090",
-   "task_group": "strong_passwords",
-   "source_group": "ftc_strong_passwords",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm setting up a new Gmail account on my Samsung phone. I was going to use my dog's name and birth year as the password because I won't forget it. Is that okay?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a Samsung phone and a Gmail account, and proposes a guessable password. The page's length, passphrase, common phrase and browser steps answer it. No Samsung-specific steps are on the page, so none are given.",
-   "source_ref_ids": [
-    "pw-length",
-    "pw-passphrase",
-    "pw-common",
-    "pw-browser",
-    "pw-email"
-   ],
-   "target": "Avoid anything a hacking program could easily guess.\n1. Make your password long. Aim for at least 12 characters.\n2. If you use a passphrase, make sure that your passphrase consists of random words.\n3. Avoid using common phrases, song lyrics, or movie quotes that are easy for a hacking program to guess.\n4. Have your web or mobile browser create a password for you.\nIt's critical to protect your email account with a strong password.",
-   "author_note": "Covers length, random-word passphrase, avoid guessable phrases, browser-generated password, and the email importance line. The page does not give Samsung or Gmail steps, so none are added. No gap for these steps."
-  },
-  {
-   "id": "gsft-strong_passwords-02",
-   "candidate_id": "gsft-strong_passwords-02-v1",
-   "task_id": "TR-090",
-   "task_group": "strong_passwords",
-   "source_group": "ftc_strong_passwords",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I have a Gmail account on my laptop and I use the same password for everything. I want better protection than just a password. How do I do that, and how do I keep track of new passwords?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names a laptop and a Gmail account and asks about extra protection and tracking passwords. The page's two-factor and password manager steps answer this. The 'if you have the option' condition is kept.",
-   "source_ref_ids": [
-    "pw-email",
-    "pw-mfa",
-    "pw-authapp",
-    "pw-manager",
-    "pw-vet"
-   ],
-   "target": "It's critical to protect your email account with a strong password.\n1. Use a third-party password manager to create a strong password, and remember it.\n2. To find a reputable password manager, read expert reviews.\n3. Choose a more secure method like an authenticator app or a security key for more protection, if you have the option.",
-   "author_note": "Covers the email importance line, password manager with reviews, and the stronger two-factor method as a conditional. The page's stolen-password advice is not needed here. No gap, though the page does not say how to turn two-factor on, so no setup steps are given."
-  },
-  {
-   "id": "gsft-strong_passwords-03",
-   "candidate_id": "gsft-strong_passwords-03-v1",
-   "task_id": "TR-090",
-   "task_group": "strong_passwords",
-   "source_group": "ftc_strong_passwords",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got an email that a shopping site I used had a data breach. I use the same password on that site, my bank app on my iPhone, and my email. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an iPhone and a breach with a reused password. The stolen-password section applies: change the password right away, change other accounts using it, and report personal information use if it happens. Each step is from the same page section.",
-   "source_ref_ids": [
-    "pw-stolen-change",
-    "pw-stolen-report",
-    "pw-email"
-   ],
-   "target": "If your password is stolen, act right away.\n1. Change your password right away.\n2. Change any other account that used the same or a similar password.\n3. If someone is using your personal information, report it at IdentityTheft.gov.",
-   "author_note": "Covers change now, change other accounts with the same password, and report personal information use if it happens. The user's bank app and email are covered by the 'other account' step. No iPhone steps are on the page, so none are given. No gap."
-  },
-  {
-   "id": "gsft-strong_passwords-04",
-   "candidate_id": "gsft-strong_passwords-04-v1",
-   "task_id": "TR-090",
-   "task_group": "strong_passwords",
-   "source_group": "ftc_strong_passwords",
-   "behavior": "constraint",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I don't want to install any extra apps on my phone, so please skip password managers. What's an easy way to make a strong password for my bank account?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user refuses password manager apps. The reply uses only the length, passphrase, common-phrase, browser and mixed-character steps. The mixed-character step is kept as a condition on the account blocking long passwords.",
-   "source_ref_ids": [
-    "pw-length",
-    "pw-passphrase",
-    "pw-common",
-    "pw-browser",
-    "pw-mix"
-   ],
-   "target": "Here is a simple way that needs no password manager.\n1. Make your password long. Aim for at least 12 characters.\n2. If you use a passphrase, make sure that your passphrase consists of random words.\n3. Avoid using common phrases, song lyrics, or movie quotes that are easy for a hacking program to guess.\n4. Have your web or mobile browser create a password for you.\n5. If the account blocks long passwords, mix uppercase and lowercase letters, numbers, and symbols.",
-   "author_note": "Respects the no-extra-app constraint by leaving out password managers. The mixed-character step is a condition and is kept as one. No gap."
-  },
-  {
-   "id": "gsft-government_impersonation-02",
-   "candidate_id": "gsft-government_impersonation-02-v2",
-   "task_id": "TR-216",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_government_impersonation",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "On my landline a recorded voice said my Social Security number is suspended and I should press 1 to talk to an agent. Should I press 1?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a landline and a recorded voice, which matches the robocall condition on the page. The condition is kept: a robocall means no number is pressed. The hang up, call-the-agency, personal information and caller ID steps follow the same page.",
-   "source_ref_ids": [
-    "gov-robocall",
-    "gov-hang-up",
-    "gov-avoid-info",
-    "gov-caller-id"
-   ],
-   "target": "Do not press 1 or any other number. This is a recorded call, and pressing numbers could lead to more calls.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\n3. Don't give your financial or personal information.\n4. Don't trust your caller ID.",
-   "author_note": "The robocall condition is kept as a condition, and the user's recorded voice is the stated fact that meets it. No gap.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-government_impersonation-02-v1",
-     "to_candidate": "gsft-government_impersonation-02-v2",
-     "reason": "Reply did not give the direct answer to Should I press 1; the first line now says not to press any number on a recorded call; excerpt for gov-avoid-info corrected.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-government_impersonation-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-government_impersonation-05",
-   "candidate_id": "gsft-government_impersonation-05-v2",
-   "task_id": "TR-216",
-   "task_group": "government_impersonation",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any phone",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A caller said he was from the government and that my account had a problem. He asked me to buy gift cards and read him the numbers."
+      "id": "gsft-government_impersonation-03",
+      "candidate_id": "gsft-government_impersonation-03-v1",
+      "task_id": "TR-217",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_government_impersonation",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A man on the phone says I must pay a $500 fine today with gift cards or I'll be arrested. My hands shake too much to dial any numbers. Just tell me the quickest thing to do."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user cannot dial numbers and wants the quickest answer. The reply uses only the hang up or ignore step, the no-payment step, and the no-personal-information step. It does not ask the user to call anyone.",
+      "source_ref_ids": [
+        "gov-ignore",
+        "gov-avoid-payment",
+        "gov-avoid-info"
+      ],
+      "target": "Don't pay this man anything.\n1. Hang up or ignore the call. It's a scammer.\n2. Don't wire money or use gift cards, cryptocurrency, or a payment app to pay someone who says they're with the government.\n3. Don't give your financial or personal information.",
+      "author_note": "Respects the no-dialing constraint by omitting the call-back step. The 'arrested' and fine claims are not on the page and are not repeated. No gap."
     },
     {
-     "role": "assistant",
-     "content": "Hang up the phone and call the government agency directly at a number you know is correct."
+      "id": "gsft-government_impersonation-04",
+      "candidate_id": "gsft-government_impersonation-04-v1",
+      "task_id": "TR-089",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_government_impersonation",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A woman called saying she's from the Social Security Administration. She wants me to confirm my Social Security number to fix a problem. I only have a flip phone and I can't go online at all. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user has a flip phone and cannot go online, so no web addresses are given. The reply uses the no-personal-information step, the hang up and call-the-agency step, and the agency contact rule from the page.",
+      "source_ref_ids": [
+        "gov-avoid-info",
+        "gov-hang-up",
+        "gov-agency-never"
+      ],
+      "target": "Don't give your financial or personal information to this caller.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\nGovernment agencies will never call, email, text, or message you on social media to ask for money or personal information.",
+      "author_note": "Respects the flip phone and no-internet constraint by giving no web address. The Social Security number is not repeated as a fact about the caller. No gap."
     },
     {
-     "role": "user",
-     "content": "I hung up already. But before that I bought two $100 gift cards and read him the card numbers and PINs."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user has hung up and says the gift cards were already paid. The reply gives only the gift card recovery steps and the FTC report, and does not repeat the hang up step.",
-   "source_ref_ids": [
-    "gov-gift-steps",
-    "gov-report"
-   ],
-   "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. If you think it's a scam, report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Does not repeat hanging up. Covers the gift card issuer steps and the FTC report. No gap.",
-   "correction_history": [
+      "id": "gsft-government_impersonation-05",
+      "candidate_id": "gsft-government_impersonation-05-v1",
+      "task_id": "TR-216",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A caller said he was from the government and that my account had a problem. He asked me to buy gift cards and read him the numbers."
+        },
+        {
+          "role": "assistant",
+          "content": "Hang up the phone and call the government agency directly at a number you know is correct."
+        },
+        {
+          "role": "user",
+          "content": "I hung up already. But before that I bought two $100 gift cards and read him the card numbers and PINs."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user has hung up and says the gift cards were already paid. The reply gives only the gift card recovery steps and the FTC report, and does not repeat the hang up step.",
+      "source_ref_ids": [
+        "gov-gift-steps",
+        "gov-report"
+      ],
+      "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. If you think it's a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Does not repeat hanging up. Covers the gift card issuer steps and the FTC report. No gap."
+    },
     {
-     "from_candidate": "gsft-government_impersonation-05-v1",
-     "to_candidate": "gsft-government_impersonation-05-v2",
-     "reason": "Ref gov-report cited the romance article for a government impersonation case; ref now cites the government impersonation article with its report sentence; target unchanged.",
-     "changed_fields": [
-      "messages"
-     ],
-     "review_id": "review-gsft-government_impersonation-05-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-romance_scam-02",
-   "candidate_id": "gsft-romance_scam-02-v2",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_what_do_if_scammed",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
+      "id": "gsft-government_impersonation-06",
+      "candidate_id": "gsft-government_impersonation-06-v1",
+      "task_id": "TR-217",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A caller said he was from the IRS and that I owe back taxes. I asked how to pay and he said by wire transfer."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't wire money or use gift cards, cryptocurrency, or a payment app to pay someone who says they're with the government."
+        },
+        {
+          "role": "user",
+          "content": "I didn't wire anything, but I already read him my Social Security number and my bank account number before I realized what was going on."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user did not wire money but gave personal numbers. The page's personal information steps apply: the Social Security number report or the unsure path, bank statement checks, and a credit freeze. The reply does not repeat the wire advice.",
+      "source_ref_ids": [
+        "gov-ssn-report",
+        "gov-unsure",
+        "gov-bank",
+        "gov-freeze"
+      ],
+      "target": "Here is what to do about the numbers you shared.\n1. If a scammer used your Social Security number: Report it at https://www.identitytheft.gov/. Get a customized recovery plan. Follow the recovery steps.\n2. If you aren't sure whether a scammer used your Social Security number, go to https://www.identitytheft.gov/databreach and follow the steps to protect yourself from identity theft.\n3. Check your bank account statement. Withdrawals you didn't make could indicate identity theft.\n4. To place a credit freeze, contact each of the three credit bureaus.",
+      "author_note": "Does not repeat the wire advice. Covers the Social Security number report or unsure path, bank statement check, and credit freeze. The bank account number is not discussed beyond the bank statement check. No gap."
+    },
     {
-     "role": "user",
-     "content": "I bought $500 in gift cards yesterday for a man I met on a dating website. I read him the codes over the phone, and now he's asking for more. I think he's a scammer. What do I do now? I'm using my phone."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states the device (phone) and a gift card payment, so the gift card recovery steps apply. The notify and report steps come from the romance page. The 'if you think it's a scam' condition is met by the user's own belief and is kept as a report step.",
-   "source_ref_ids": [
-    "romance-giftcard",
-    "romance-paid",
-    "romance-stop",
-    "romance-report"
-   ],
-   "target": "Stop communicating with him now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
-   "author_note": "Must cover the gift card steps (issuer, number on back, tell them, refund, keep card and receipt), the FTC report and notify the site or app. The stop line is the romance page's first step. The wire or card payment step is not needed. No gap.",
-   "correction_history": [
+      "id": "gsft-strong_passwords-01",
+      "candidate_id": "gsft-strong_passwords-01-v1",
+      "task_id": "TR-090",
+      "task_group": "strong_passwords",
+      "source_group": "ftc_strong_passwords",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm setting up a new Gmail account on my Samsung phone. I was going to use my dog's name and birth year as the password because I won't forget it. Is that okay?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Samsung phone and a Gmail account, and proposes a guessable password. The page's length, passphrase, common phrase and browser steps answer it. No Samsung-specific steps are on the page, so none are given.",
+      "source_ref_ids": [
+        "pw-length",
+        "pw-passphrase",
+        "pw-common",
+        "pw-browser",
+        "pw-email"
+      ],
+      "target": "Avoid anything a hacking program could easily guess.\n1. Make your password long. Aim for at least 12 characters.\n2. If you use a passphrase, make sure that your passphrase consists of random words.\n3. Avoid using common phrases, song lyrics, or movie quotes that are easy for a hacking program to guess.\n4. Have your web or mobile browser create a password for you.\nIt's critical to protect your email account with a strong password.",
+      "author_note": "Covers length, random-word passphrase, avoid guessable phrases, browser-generated password, and the email importance line. The page does not give Samsung or Gmail steps, so none are added. No gap for these steps."
+    },
     {
-     "from_candidate": "gsft-romance_scam-02-v1",
-     "to_candidate": "gsft-romance_scam-02-v2",
-     "reason": "First line said do not send him anything else, which is not on the page and is not established by the user facts; first line trimmed; romance-paid excerpt corrected.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-romance_scam-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-romance_scam-04",
-   "candidate_id": "gsft-romance_scam-04-v2",
-   "task_id": "TR-088",
-   "task_group": "romance_scam",
-   "source_group": "ftc_romance_scams",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
+      "id": "gsft-strong_passwords-02",
+      "candidate_id": "gsft-strong_passwords-02-v1",
+      "task_id": "TR-090",
+      "task_group": "strong_passwords",
+      "source_group": "ftc_strong_passwords",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have a Gmail account on my laptop and I use the same password for everything. I want better protection than just a password. How do I do that, and how do I keep track of new passwords?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names a laptop and a Gmail account and asks about extra protection and tracking passwords. The page's two-factor and password manager steps answer this. The 'if you have the option' condition is kept.",
+      "source_ref_ids": [
+        "pw-email",
+        "pw-mfa",
+        "pw-authapp",
+        "pw-manager",
+        "pw-vet"
+      ],
+      "target": "It's critical to protect your email account with a strong password.\n1. Use a third-party password manager to create a strong password, and remember it.\n2. To find a reputable password manager, read expert reviews.\n3. Choose a more secure method like an authenticator app or a security key for more protection, if you have the option.",
+      "author_note": "Covers the email importance line, password manager with reviews, and the stronger two-factor method as a conditional. The page's stolen-password advice is not needed here. No gap, though the page does not say how to turn two-factor on, so no setup steps are given."
+    },
     {
-     "role": "user",
-     "content": "I can't do searches or look at pictures online because my eyesight is poor and I get lost in apps. A woman I chat with says she's a doctor overseas and needs $1,000 for hospital fees. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "Constraint: the user cannot search or run a reverse image search. The reply uses only the steps that need no searching: stop, talk to a trusted person, notify the app, report. The search and reverse image steps are left out as the user asked.",
-   "source_ref_ids": [
-    "romance-stop",
-    "romance-report",
-    "romance-paid",
-    "romance-bottom"
-   ],
-   "target": "Please don't send her the $1,000 for hospital fees.\n1. Stop communicating with her immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. If you can, notify the social networking site or app where you met her, too.\n4. Report it to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "The constraint excludes searching and reverse image search, so those page steps are omitted. Every step given is from the page. The user's word 'doctor' is not repeated as a fact. No gap.",
-   "correction_history": [
+      "id": "gsft-strong_passwords-03",
+      "candidate_id": "gsft-strong_passwords-03-v1",
+      "task_id": "TR-090",
+      "task_group": "strong_passwords",
+      "source_group": "ftc_strong_passwords",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got an email that a shopping site I used had a data breach. I use the same password on that site, my bank app on my iPhone, and my email. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone and a breach with a reused password. The stolen-password section applies: change the password right away, change other accounts using it, and report personal information use if it happens. Each step is from the same page section.",
+      "source_ref_ids": [
+        "pw-stolen-change",
+        "pw-stolen-report",
+        "pw-email"
+      ],
+      "target": "If your password is stolen, act right away.\n1. Change your password right away.\n2. Change any other account that used the same or a similar password.\n3. If someone is using your personal information, report it at IdentityTheft.gov.",
+      "author_note": "Covers change now, change other accounts with the same password, and report personal information use if it happens. The user's bank app and email are covered by the 'other account' step. No iPhone steps are on the page, so none are given. No gap."
+    },
     {
-     "from_candidate": "gsft-romance_scam-04-v1",
-     "to_candidate": "gsft-romance_scam-04-v2",
-     "reason": "Step 3 ignored the user constraint that they get lost in apps; step now says if you can; Bottom line ref added to support the first line.",
-     "changed_fields": [
-      "target",
-      "source_ref_ids",
-      "messages"
-     ],
-     "review_id": "review-gsft-romance_scam-04-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-strong_passwords-02",
-   "candidate_id": "gsft-strong_passwords-02-v2",
-   "task_id": "TR-090",
-   "task_group": "strong_passwords",
-   "source_group": "ftc_strong_passwords",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any device",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
+      "id": "gsft-strong_passwords-04",
+      "candidate_id": "gsft-strong_passwords-04-v1",
+      "task_id": "TR-090",
+      "task_group": "strong_passwords",
+      "source_group": "ftc_strong_passwords",
+      "behavior": "constraint",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I don't want to install any extra apps on my phone, so please skip password managers. What's an easy way to make a strong password for my bank account?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user refuses password manager apps. The reply uses only the length, passphrase, common-phrase, browser and mixed-character steps. The mixed-character step is kept as a condition on the account blocking long passwords.",
+      "source_ref_ids": [
+        "pw-length",
+        "pw-passphrase",
+        "pw-common",
+        "pw-browser",
+        "pw-mix"
+      ],
+      "target": "Here is a simple way that needs no password manager.\n1. Make your password long. Aim for at least 12 characters.\n2. If you use a passphrase, make sure that your passphrase consists of random words.\n3. Avoid using common phrases, song lyrics, or movie quotes that are easy for a hacking program to guess.\n4. Have your web or mobile browser create a password for you.\n5. If the account blocks long passwords, mix uppercase and lowercase letters, numbers, and symbols.",
+      "author_note": "Respects the no-extra-app constraint by leaving out password managers. The mixed-character step is a condition and is kept as one. No gap."
+    },
     {
-     "role": "user",
-     "content": "I have a Gmail account on my laptop and I use the same password for everything. I want better protection than just a password. How do I do that, and how do I keep track of new passwords?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user names a laptop and a Gmail account and asks about extra protection and tracking passwords. The page's two-factor and password manager steps answer this. The 'if you have the option' condition is kept.",
-   "source_ref_ids": [
-    "pw-email",
-    "pw-mfa",
-    "pw-authapp",
-    "pw-manager",
-    "pw-vet"
-   ],
-   "target": "It's critical to protect your email account with a strong password.\n1. Turn on two-factor authentication for your Gmail account, if the account offers it. It adds a second step when you sign in, so a hacker who steals your password still cannot log in.\n2. Use a third-party password manager to create a strong password, and remember it.\n3. To find a reputable password manager, read expert reviews.\n4. Choose a more secure method like an authenticator app (an app that gives you a code to enter when you sign in) or a security key (a small device you plug in or tap to confirm sign-in) for more protection, if you have the option.",
-   "author_note": "Covers the email importance line, password manager with reviews, and the stronger two-factor method as a conditional. The page's stolen-password advice is not needed here. No gap, though the page does not say how to turn two-factor on, so no setup steps are given.",
-   "correction_history": [
+      "id": "gsft-government_impersonation-02",
+      "candidate_id": "gsft-government_impersonation-02-v2",
+      "task_id": "TR-216",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_government_impersonation",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "On my landline a recorded voice said my Social Security number is suspended and I should press 1 to talk to an agent. Should I press 1?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a landline and a recorded voice, which matches the robocall condition on the page. The condition is kept: a robocall means no number is pressed. The hang up, call-the-agency, personal information and caller ID steps follow the same page.",
+      "source_ref_ids": [
+        "gov-robocall",
+        "gov-hang-up",
+        "gov-avoid-info",
+        "gov-caller-id"
+      ],
+      "target": "Do not press 1 or any other number. This is a recorded call, and pressing numbers could lead to more calls.\n1. Hang up the phone.\n2. Call the government agency directly at a number you know is correct.\n3. Don't give your financial or personal information.\n4. Don't trust your caller ID.",
+      "author_note": "The robocall condition is kept as a condition, and the user's recorded voice is the stated fact that meets it. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-government_impersonation-02-v1",
+          "to_candidate": "gsft-government_impersonation-02-v2",
+          "reason": "Reply did not give the direct answer to Should I press 1; the first line now says not to press any number on a recorded call; excerpt for gov-avoid-info corrected.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-government_impersonation-02-v1"
+        }
+      ]
+    },
     {
-     "from_candidate": "gsft-strong_passwords-02-v1",
-     "to_candidate": "gsft-strong_passwords-02-v2",
-     "reason": "Two-factor authentication step missing; added as step 1 with plain glosses for authenticator app and security key; numbering updated.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-strong_passwords-02-v1"
+      "id": "gsft-government_impersonation-05",
+      "candidate_id": "gsft-government_impersonation-05-v2",
+      "task_id": "TR-216",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A caller said he was from the government and that my account had a problem. He asked me to buy gift cards and read him the numbers."
+        },
+        {
+          "role": "assistant",
+          "content": "Hang up the phone and call the government agency directly at a number you know is correct."
+        },
+        {
+          "role": "user",
+          "content": "I hung up already. But before that I bought two $100 gift cards and read him the card numbers and PINs."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user has hung up and says the gift cards were already paid. The reply gives only the gift card recovery steps and the FTC report, and does not repeat the hang up step.",
+      "source_ref_ids": [
+        "gov-gift-steps",
+        "gov-report"
+      ],
+      "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. If you think it's a scam, report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Does not repeat hanging up. Covers the gift card issuer steps and the FTC report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-government_impersonation-05-v1",
+          "to_candidate": "gsft-government_impersonation-05-v2",
+          "reason": "Ref gov-report cited the romance article for a government impersonation case; ref now cites the government impersonation article with its report sentence; target unchanged.",
+          "changed_fields": [
+            "messages"
+          ],
+          "review_id": "review-gsft-government_impersonation-05-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-romance_scam-02",
+      "candidate_id": "gsft-romance_scam-02-v2",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I bought $500 in gift cards yesterday for a man I met on a dating website. I read him the codes over the phone, and now he's asking for more. I think he's a scammer. What do I do now? I'm using my phone."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states the device (phone) and a gift card payment, so the gift card recovery steps apply. The notify and report steps come from the romance page. The 'if you think it's a scam' condition is met by the user's own belief and is kept as a report step.",
+      "source_ref_ids": [
+        "romance-giftcard",
+        "romance-paid",
+        "romance-stop",
+        "romance-report"
+      ],
+      "target": "Stop communicating with him now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report it to the FTC at ReportFraud.ftc.gov.\n6. Notify the social networking site or app where you met him, too.",
+      "author_note": "Must cover the gift card steps (issuer, number on back, tell them, refund, keep card and receipt), the FTC report and notify the site or app. The stop line is the romance page's first step. The wire or card payment step is not needed. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-romance_scam-02-v1",
+          "to_candidate": "gsft-romance_scam-02-v2",
+          "reason": "First line said do not send him anything else, which is not on the page and is not established by the user facts; first line trimmed; romance-paid excerpt corrected.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-romance_scam-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-romance_scam-04",
+      "candidate_id": "gsft-romance_scam-04-v2",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I can't do searches or look at pictures online because my eyesight is poor and I get lost in apps. A woman I chat with says she's a doctor overseas and needs $1,000 for hospital fees. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user cannot search or run a reverse image search. The reply uses only the steps that need no searching: stop, talk to a trusted person, notify the app, report. The search and reverse image steps are left out as the user asked.",
+      "source_ref_ids": [
+        "romance-stop",
+        "romance-report",
+        "romance-paid",
+        "romance-bottom"
+      ],
+      "target": "Please don't send her the $1,000 for hospital fees.\n1. Stop communicating with her immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. If you can, notify the social networking site or app where you met her, too.\n4. Report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "The constraint excludes searching and reverse image search, so those page steps are omitted. Every step given is from the page. The user's word 'doctor' is not repeated as a fact. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-romance_scam-04-v1",
+          "to_candidate": "gsft-romance_scam-04-v2",
+          "reason": "Step 3 ignored the user constraint that they get lost in apps; step now says if you can; Bottom line ref added to support the first line.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "messages"
+          ],
+          "review_id": "review-gsft-romance_scam-04-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-strong_passwords-02",
+      "candidate_id": "gsft-strong_passwords-02-v2",
+      "task_id": "TR-090",
+      "task_group": "strong_passwords",
+      "source_group": "ftc_strong_passwords",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have a Gmail account on my laptop and I use the same password for everything. I want better protection than just a password. How do I do that, and how do I keep track of new passwords?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names a laptop and a Gmail account and asks about extra protection and tracking passwords. The page's two-factor and password manager steps answer this. The 'if you have the option' condition is kept.",
+      "source_ref_ids": [
+        "pw-email",
+        "pw-mfa",
+        "pw-authapp",
+        "pw-manager",
+        "pw-vet"
+      ],
+      "target": "It's critical to protect your email account with a strong password.\n1. Turn on two-factor authentication for your Gmail account, if the account offers it. It adds a second step when you sign in, so a hacker who steals your password still cannot log in.\n2. Use a third-party password manager to create a strong password, and remember it.\n3. To find a reputable password manager, read expert reviews.\n4. Choose a more secure method like an authenticator app (an app that gives you a code to enter when you sign in) or a security key (a small device you plug in or tap to confirm sign-in) for more protection, if you have the option.",
+      "author_note": "Covers the email importance line, password manager with reviews, and the stronger two-factor method as a conditional. The page's stolen-password advice is not needed here. No gap, though the page does not say how to turn two-factor on, so no setup steps are given.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-strong_passwords-02-v1",
+          "to_candidate": "gsft-strong_passwords-02-v2",
+          "reason": "Two-factor authentication step missing; added as step 1 with plain glosses for authenticator app and security key; numbering updated.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-strong_passwords-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-government_impersonation-05",
+      "candidate_id": "gsft-government_impersonation-05-v3",
+      "task_id": "TR-216",
+      "task_group": "government_impersonation",
+      "source_group": "ftc_what_do_if_scammed",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any phone",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A caller said he was from the government and that my account had a problem. He asked me to buy gift cards and read him the numbers."
+        },
+        {
+          "role": "assistant",
+          "content": "Hang up the phone and call the government agency directly at a number you know is correct."
+        },
+        {
+          "role": "user",
+          "content": "I hung up already. But before that I bought two $100 gift cards and read him the card numbers and PINs."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user has hung up and says the gift cards were already paid. The reply gives only the gift card recovery steps and the FTC report, and does not repeat the hang up step.",
+      "source_ref_ids": [
+        "gov-gift-steps",
+        "gov-report"
+      ],
+      "target": "Act on the gift cards now.\n1. Contact the gift card issuer immediately. Use the number on the back of the card.\n2. Tell them that a scammer tricked you into giving them the card number and PIN.\n3. Ask them to refund your money.\n4. Keep the card and receipt if you have them.\n5. Report this government impersonation scam to the FTC at ReportFraud.ftc.gov, or to your state attorney general.",
+      "author_note": "Does not repeat hanging up. Covers the gift card issuer steps and the FTC report. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-government_impersonation-05-v1",
+          "to_candidate": "gsft-government_impersonation-05-v2",
+          "reason": "Ref gov-report cited the romance article for a government impersonation case; ref now cites the government impersonation article with its report sentence; target unchanged.",
+          "changed_fields": [
+            "messages"
+          ],
+          "review_id": "review-gsft-government_impersonation-05-v1"
+        },
+        {
+          "from_candidate": "gsft-government_impersonation-05-v2",
+          "to_candidate": "gsft-government_impersonation-05-v3",
+          "reason": "Step 5 used wording from a different source and dropped the state attorney general option; it now matches the cited government impersonation page.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-government_impersonation-05"
+        }
+      ]
+    },
+    {
+      "id": "gsft-romance_scam-04",
+      "candidate_id": "gsft-romance_scam-04-v3",
+      "task_id": "TR-088",
+      "task_group": "romance_scam",
+      "source_group": "ftc_romance_scams",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any device",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I can't do searches or look at pictures online because my eyesight is poor and I get lost in apps. A woman I chat with says she's a doctor overseas and needs $1,000 for hospital fees. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "Constraint: the user cannot search or run a reverse image search. The reply uses only the steps that need no searching: stop, talk to a trusted person, notify the app, report. The search and reverse image steps are left out as the user asked.",
+      "source_ref_ids": [
+        "romance-stop",
+        "romance-report",
+        "romance-paid",
+        "romance-bottom"
+      ],
+      "target": "Please don't send her the $1,000 for hospital fees.\n1. Stop communicating with her immediately.\n2. Talk with a trusted friend or family member about the relationship.\n3. Notify the social networking site or app where you met her, too.\n4. Report it to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "The constraint excludes searching and reverse image search, so those page steps are omitted. Every step given is from the page. The user's word 'doctor' is not repeated as a fact. No gap.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-romance_scam-04-v1",
+          "to_candidate": "gsft-romance_scam-04-v2",
+          "reason": "Step 3 ignored the user constraint that they get lost in apps; step now says if you can; Bottom line ref added to support the first line.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "messages"
+          ],
+          "review_id": "review-gsft-romance_scam-04-v1"
+        },
+        {
+          "from_candidate": "gsft-romance_scam-04-v2",
+          "to_candidate": "gsft-romance_scam-04-v3",
+          "reason": "Step 3 made a required reporting step conditional without a source; it now states the page sentence without the condition.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-romance_scam-04"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

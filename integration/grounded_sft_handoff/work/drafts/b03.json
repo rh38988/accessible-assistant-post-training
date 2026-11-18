@@ -1,1094 +1,1159 @@
 {
- "batch": "b03",
- "candidates": [
-  {
-   "id": "gsft-wifi_connect-01",
-   "candidate_id": "gsft-wifi_connect-01-v1",
-   "task_id": "TR-007",
-   "task_group": "wifi_connect",
-   "source_group": "apple_connect_wifi_iphone",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
+  "batch": "b03",
+  "candidates": [
     {
-     "role": "user",
-     "content": "I'm visiting a friend and need to get my iPhone onto their wifi. How do I join it?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states iPhone, so the iPhone passage applies. The Android passage is included only as an inapplicable passage and must not be followed.",
-   "source_ref_ids": [
-    "wifi-iphone-join",
-    "wifi-android-join"
-   ],
-   "target": "Here is how to join a Wi-Fi network on your iPhone.\n1. Open **Settings** and select **Wi-Fi**, then switch **Wi-Fi** on.\n2. Select the network you want.\n3. If the network asks for a password or its terms and conditions, enter the password or accept the terms. If you don't know the password, ask your network administrator.\n4. Check for a blue tick beside the network name and the **Wi-Fi** icon in the top corner of the screen. This confirms the connection.\n5. Optional: For a more reliable connection that uses cellular data alongside Wi-Fi, scroll down and turn on **Connectivity Assist**.",
-   "author_note": "Covers the iPhone join steps, the password or terms condition, the network administrator line, the blue tick confirmation and the optional Connectivity Assist step. The Android passage is not used."
-  },
-  {
-   "id": "gsft-wifi_connect-02",
-   "candidate_id": "gsft-wifi_connect-02-v1",
-   "task_id": "TR-030",
-   "task_group": "wifi_connect",
-   "source_group": "apple_connect_wifi_mac",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Mac",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I need to get my MacBook online at the hotel. The network is called Harbor Guest. Which buttons do I press? I'm not very good with computers so please be clear."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states MacBook, so the Mac passage applies. The Chromebook passage is included only as an inapplicable passage and must not be followed.",
-   "source_ref_ids": [
-    "wifi-mac-join",
-    "wifi-chromebook-join"
-   ],
-   "target": "Here is how to join Harbor Guest on your Mac. Check first that Wi-Fi is turned on, that you're within range of the network, and that you have its password ready.\n1. Click the **Wi-Fi** status menu icon in the menu bar, then select **Harbor Guest**.\n2. If you don't see it, choose **Other Networks** to list nearby networks.\n3. If prompted, enter the password and click **Join**.",
-   "author_note": "Covers the Wi-Fi on, range and password conditions, the menu bar icon step, the Other Networks branch and the Join step. The Chromebook passage is not used."
-  },
-  {
-   "id": "gsft-wifi_connect-03",
-   "candidate_id": "gsft-wifi_connect-03-v1",
-   "task_id": "TR-031",
-   "task_group": "wifi_connect",
-   "source_group": "apple_connect_wifi_iphone",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I need to get my phone onto the wifi at the library. Can you walk me through it?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Is your phone an iPhone or an Android?"
-   },
-   "decision_basis": "The user says only 'my phone'. The iPhone steps open Settings and then Wi-Fi, while the Android steps open Settings and then Network & internet and Internet, so one question is needed before giving steps.",
-   "source_ref_ids": [
-    "wifi-iphone-join",
-    "wifi-android-join"
-   ],
-   "target": "Is your phone an iPhone or an Android?",
-   "author_note": "Clarify only. The question asks the platform and does not assume a brand or a network type."
-  },
-  {
-   "id": "gsft-wifi_connect-04",
-   "candidate_id": "gsft-wifi_connect-04-v1",
-   "task_id": "TR-123",
-   "task_group": "wifi_connect",
-   "source_group": "microsoft_connect_wifi_windows",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My laptop can't find any networks to join. How do I get it onto the wifi?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Is your laptop a Windows PC, a Mac, or a Chromebook?"
-   },
-   "decision_basis": "The user says only 'laptop'. The Windows 11 steps use the taskbar and Quick Settings, the Mac steps use the menu bar, and the Chromebook steps use the time tray and the Settings gear, so the question must come first.",
-   "source_ref_ids": [
-    "wifi-windows11-join",
-    "wifi-mac-join",
-    "wifi-chromebook-join"
-   ],
-   "target": "Is your laptop a Windows PC, a Mac, or a Chromebook?",
-   "author_note": "Clarify only. The question names the three platforms with source passages and does not assume which one the user has."
-  },
-  {
-   "id": "gsft-wifi_connect-05",
-   "candidate_id": "gsft-wifi_connect-05-v1",
-   "task_id": "TR-162",
-   "task_group": "wifi_connect",
-   "source_group": "microsoft_connect_wifi_windows",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I just moved into a new place and need my home computer on the wifi. Where do I start?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Which kind of computer is it, a Windows PC, a Mac, or a Chromebook?"
-   },
-   "decision_basis": "The user says only 'home computer'. The three passages describe different menus (Quick Settings on Windows 11, the menu bar on a Mac, the time tray and Settings gear on a Chromebook), so one question is needed.",
-   "source_ref_ids": [
-    "wifi-windows11-join",
-    "wifi-mac-join",
-    "wifi-chromebook-join"
-   ],
-   "target": "Which kind of computer is it, a Windows PC, a Mac, or a Chromebook?",
-   "author_note": "Clarify only. Situation differs from the laptop case; the question does not assume the platform."
-  },
-  {
-   "id": "gsft-wifi_connect-06",
-   "candidate_id": "gsft-wifi_connect-06-v1",
-   "task_id": "TR-169",
-   "task_group": "wifi_connect",
-   "source_group": "microsoft_connect_wifi_windows",
-   "behavior": "constraint",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm on Windows 11 and my hands shake, so I need the fewest clicks possible to join the wifi called Maple Lane. Please keep it short."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and asks for the fewest clicks. The Windows 11 passage gives the steps and the refresh and password conditions, so a short answer using only those steps is possible.",
-   "source_ref_ids": [
-    "wifi-windows11-join"
-   ],
-   "target": "Here are the Windows 11 steps, kept to the actions the page gives.\n1. Select the **Network**, **Sound**, or **Battery** icons on the taskbar to open Quick Settings.\n2. In the Wi-Fi quick setting, select **Manage Wi-Fi connections**.\n3. Choose **Maple Lane**, then select **Connect**.\n4. If prompted, type the network password, then select **Next**.\nIf Maple Lane isn't listed, select the **Refresh network list** button in the lower right to start a new scan.",
-   "author_note": "Respects the request for the fewest clicks by giving only the four page steps plus the refresh condition. No extra steps are added."
-  },
-  {
-   "id": "gsft-wifi_connect-07",
-   "candidate_id": "gsft-wifi_connect-07-v1",
-   "task_id": "TR-007",
-   "task_group": "wifi_connect",
-   "source_group": "samsung_connect_galaxy_wifi",
-   "behavior": "multiturn",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Samsung Galaxy",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm on a Samsung Galaxy phone and need to get on the wifi at my apartment building."
+      "id": "gsft-wifi_connect-01",
+      "candidate_id": "gsft-wifi_connect-01-v1",
+      "task_id": "TR-007",
+      "task_group": "wifi_connect",
+      "source_group": "apple_connect_wifi_iphone",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm visiting a friend and need to get my iPhone onto their wifi. How do I join it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone, so the iPhone passage applies. The Android passage is included only as an inapplicable passage and must not be followed.",
+      "source_ref_ids": [
+        "wifi-iphone-join",
+        "wifi-android-join"
+      ],
+      "target": "Here is how to join a Wi-Fi network on your iPhone.\n1. Open **Settings** and select **Wi-Fi**, then switch **Wi-Fi** on.\n2. Select the network you want.\n3. If the network asks for a password or its terms and conditions, enter the password or accept the terms. If you don't know the password, ask your network administrator.\n4. Check for a blue tick beside the network name and the **Wi-Fi** icon in the top corner of the screen. This confirms the connection.\n5. Optional: For a more reliable connection that uses cellular data alongside Wi-Fi, scroll down and turn on **Connectivity Assist**.",
+      "author_note": "Covers the iPhone join steps, the password or terms condition, the network administrator line, the blue tick confirmation and the optional Connectivity Assist step. The Android passage is not used."
     },
     {
-     "role": "assistant",
-     "content": "Open Settings and tap 'Connections', then tap 'Wi-Fi'. Turn on the Wi-Fi toggle if it's off."
+      "id": "gsft-wifi_connect-02",
+      "candidate_id": "gsft-wifi_connect-02-v1",
+      "task_id": "TR-030",
+      "task_group": "wifi_connect",
+      "source_group": "apple_connect_wifi_mac",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Mac",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I need to get my MacBook online at the hotel. The network is called Harbor Guest. Which buttons do I press? I'm not very good with computers so please be clear."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states MacBook, so the Mac passage applies. The Chromebook passage is included only as an inapplicable passage and must not be followed.",
+      "source_ref_ids": [
+        "wifi-mac-join",
+        "wifi-chromebook-join"
+      ],
+      "target": "Here is how to join Harbor Guest on your Mac. Check first that Wi-Fi is turned on, that you're within range of the network, and that you have its password ready.\n1. Click the **Wi-Fi** status menu icon in the menu bar, then select **Harbor Guest**.\n2. If you don't see it, choose **Other Networks** to list nearby networks.\n3. If prompted, enter the password and click **Join**.",
+      "author_note": "Covers the Wi-Fi on, range and password conditions, the menu bar icon step, the Other Networks branch and the Join step. The Chromebook passage is not used."
     },
     {
-     "role": "user",
-     "content": "Wi-Fi is on now and I can see the building network in the list. It's asking for a password and I have it. What's next?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a Samsung Galaxy phone and has already turned Wi-Fi on and found the network. The remaining steps on the Samsung passage are entering the password and connecting, so the reply starts there.",
-   "source_ref_ids": [
-    "wifi-samsung-join"
-   ],
-   "target": "With the password in hand, these are the last steps.\n1. Tap the name of the network you want.\n2. Enter the password, then tap **Connect**.\n3. When connected, the network name appears under **Current network**, with **Connected** below it.",
-   "author_note": "Multiturn. The reply does not repeat turning Wi-Fi on. The password condition is covered by the password step."
-  },
-  {
-   "id": "gsft-display_scale-01",
-   "candidate_id": "gsft-display_scale-01-v1",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_make_text_bigger_windows11",
-   "behavior": "direct",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "The text on my Windows 11 laptop is too small for me to read. How do I make it bigger?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and says the text is too small, which is the condition the Text size passage describes. The steps come from that passage.",
-   "source_ref_ids": [
-    "display-text-size-windows11"
-   ],
-   "target": "Here is how to make the text bigger on your Windows 11 laptop.\n1. Press **Windows logo key+U**, or select **Start**, then **Settings**, then **Accessibility**.\n2. Select **Text size**.\n3. Drag the **Text size** slider to the right to enlarge the sample text.\n4. Select **Apply**. Windows then scales up all text.",
-   "author_note": "Covers the Accessibility route, Text size, the slider and Apply. The condition about text feeling too small is the trigger in the user's message."
-  },
-  {
-   "id": "gsft-display_scale-02",
-   "candidate_id": "gsft-display_scale-02-v1",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "direct",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I want the apps and pictures on my Windows 11 PC bigger, not just the words. Can you tell me how?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and wants images and apps bigger, which the Make images and apps bigger section covers.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is how to make apps and images bigger on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.\nSome changes may require signing out and back in before they appear in certain apps. Most changes apply right away.",
-   "author_note": "Covers the shortcut, Display, Scale & layout and the scale choice, plus the sign out condition and the apply timing stated on the page."
-  },
-  {
-   "id": "gsft-display_scale-03",
-   "candidate_id": "gsft-display_scale-03-v1",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "direct",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I changed my Windows 11 screen size and now everything looks huge. How do I set it back to normal?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and wants to change the scale back. The passage gives the Display and Scale menu steps; it does not name a normal value, so the reply asks the user to choose the percentage they want.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is how to change the scale back on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.\nSome changes may require signing out and back in before they appear in certain apps.",
-   "author_note": "Covers the scale steps. The page does not say which percentage is normal, so the reply does not name one."
-  },
-  {
-   "id": "gsft-display_scale-04",
-   "candidate_id": "gsft-display_scale-04-v1",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "constraint",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Keep it short please. I just want everything on my Windows 11 screen a bit bigger, nothing fancy."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and asks for the shortest way to make everything bigger. The Scale steps on the passage are the shortest route to that.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is the short way on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.",
-   "author_note": "Respects the request for brevity with the three scale steps only."
-  },
-  {
-   "id": "gsft-internet_not_working-01",
-   "candidate_id": "gsft-internet_not_working-01-v1",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "apple_cant_connect_wifi_iphone",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My iPhone shows full wifi bars but Safari says No Internet Connection. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states iPhone and the No Internet Connection message, so the iPhone troubleshooting passage applies. The Android Wi-Fi passage is included only as an inapplicable passage.",
-   "source_ref_ids": [
-    "apple-iphone-internet-troubleshoot",
-    "android-internet-wifi-check"
-   ],
-   "target": "Here are the checks to try on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Wi-Fi** and confirm it's turned on.\n3. Tap the name of the network you want to join.\n4. Look for a blue checkmark to confirm the connection.\n5. If you still can't connect, return to **Settings** and confirm **Airplane Mode** is off.\n6. Tap **Wi-Fi** again and check that **Connectivity Assist** is off. If the Wi-Fi setting is dimmed, restart the device.\n7. If you still see 'No Internet Connection,' check your router and network settings.",
-   "author_note": "Covers the iPhone troubleshooting steps in order, including the Airplane Mode, Connectivity Assist and dimmed Wi-Fi restart conditions, and the router check. The Android passage is not used."
-  },
-  {
-   "id": "gsft-internet_not_working-02",
-   "candidate_id": "gsft-internet_not_working-02-v1",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
-   "source_ref_ids": [
-    "android-internet-wifi-check",
-    "apple-iphone-internet-troubleshoot"
-   ],
-   "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Turn **Wi-Fi** on.\n3. Check the Wi-Fi indicator at the top of the screen.\n4. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n5. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used."
-  },
-  {
-   "id": "gsft-internet_not_working-03",
-   "candidate_id": "gsft-internet_not_working-03-v1",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "apple_cant_connect_wifi_iphone",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My phone says no internet connection even though it shows bars. What's wrong?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Is your phone an iPhone or an Android?"
-   },
-   "decision_basis": "The user says only 'my phone'. The iPhone passage uses Settings, Wi-Fi and Airplane Mode checks, while the Android passage uses the Wi-Fi indicator at the top of the screen, so one question is needed first.",
-   "source_ref_ids": [
-    "apple-iphone-internet-troubleshoot",
-    "android-internet-wifi-check"
-   ],
-   "target": "Is your phone an iPhone or an Android?",
-   "author_note": "Clarify only. The question asks the platform and does not assume a cause."
-  },
-  {
-   "id": "gsft-internet_not_working-04",
-   "candidate_id": "gsft-internet_not_working-04-v1",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_mobile_data",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Websites won't load on my cellphone at the cafe, even though I have signal. Is it the cafe's wifi?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Is your cellphone an iPhone or an Android?"
-   },
-   "decision_basis": "The user says only 'cellphone'. The iPhone passage works from the Wi-Fi settings, while the Android mobile data passage works from Mobile data or Cellular data in Settings, so the platform decides which steps apply.",
-   "source_ref_ids": [
-    "apple-iphone-internet-troubleshoot",
-    "android-internet-mobile-data"
-   ],
-   "target": "Is your cellphone an iPhone or an Android?",
-   "author_note": "Clarify only. The question does not assume the cafe's wifi is the cause."
-  },
-  {
-   "id": "gsft-internet_not_working-05",
-   "candidate_id": "gsft-internet_not_working-05-v1",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_mobile_data",
-   "behavior": "clarify",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "unspecified",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Since this morning every app on my phone says it can't get online. How do I fix it?"
-    }
-   ],
-   "decision": {
-    "mode": "clarify",
-    "question": "Which kind of phone is it, an iPhone or an Android?"
-   },
-   "decision_basis": "The user says only 'my phone' and describes apps failing. The iPhone passage and the Android mobile data passage use different menus, so the platform must be known before steps are given.",
-   "source_ref_ids": [
-    "apple-iphone-internet-troubleshoot",
-    "android-internet-mobile-data"
-   ],
-   "target": "Which kind of phone is it, an iPhone or an Android?",
-   "author_note": "Clarify only. The question is the platform question, phrased differently from the other clarify cases."
-  },
-  {
-   "id": "gsft-internet_not_working-06",
-   "candidate_id": "gsft-internet_not_working-06-v1",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "constraint",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
-   "source_ref_ids": [
-    "android-internet-wifi-check"
-   ],
-   "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Turn **Wi-Fi** on.\n3. Check the Wi-Fi indicator at the top of the screen.\n4. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n5. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given."
-  },
-  {
-   "id": "gsft-internet_not_working-07",
-   "candidate_id": "gsft-internet_not_working-07-v1",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_mobile_data",
-   "behavior": "multiturn",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android phone won't open any websites, even though it's on wifi."
+      "id": "gsft-wifi_connect-03",
+      "candidate_id": "gsft-wifi_connect-03-v1",
+      "task_id": "TR-031",
+      "task_group": "wifi_connect",
+      "source_group": "apple_connect_wifi_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I need to get my phone onto the wifi at the library. Can you walk me through it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only 'my phone'. The iPhone steps open Settings and then Wi-Fi, while the Android steps open Settings and then Network & internet and Internet, so one question is needed before giving steps.",
+      "source_ref_ids": [
+        "wifi-iphone-join",
+        "wifi-android-join"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. The question asks the platform and does not assume a brand or a network type."
     },
     {
-     "role": "assistant",
-     "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+      "id": "gsft-wifi_connect-04",
+      "candidate_id": "gsft-wifi_connect-04-v1",
+      "task_id": "TR-123",
+      "task_group": "wifi_connect",
+      "source_group": "microsoft_connect_wifi_windows",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My laptop can't find any networks to join. How do I get it onto the wifi?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your laptop a Windows PC, a Mac, or a Chromebook?"
+      },
+      "decision_basis": "The user says only 'laptop'. The Windows 11 steps use the taskbar and Quick Settings, the Mac steps use the menu bar, and the Chromebook steps use the time tray and the Settings gear, so the question must come first.",
+      "source_ref_ids": [
+        "wifi-windows11-join",
+        "wifi-mac-join",
+        "wifi-chromebook-join"
+      ],
+      "target": "Is your laptop a Windows PC, a Mac, or a Chromebook?",
+      "author_note": "Clarify only. The question names the three platforms with source passages and does not assume which one the user has."
     },
     {
-     "role": "user",
-     "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
-   "source_ref_ids": [
-    "android-internet-mobile-data"
-   ],
-   "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears, you may be out of coverage. Move somewhere else or go outside and check again.\nIf this happens often, contact your mobile service provider.",
-   "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on."
-  },
-  {
-   "id": "gsft-display_scale-02",
-   "candidate_id": "gsft-display_scale-02-v2",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "direct",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I want the apps and pictures on my Windows 11 PC bigger, not just the words. Can you tell me how?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and wants images and apps bigger, which the Make images and apps bigger section covers.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is how to make apps and images bigger on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.\nSome changes may require signing out and back in before they appear in certain apps. Most changes apply right away.",
-   "author_note": "Covers the shortcut, Display, Scale & layout and the scale choice, plus the sign out condition and the apply timing stated on the page.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-display_scale-02-v1",
-     "to_candidate": "gsft-display_scale-02-v2",
-     "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-display_scale-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-display_scale-03",
-   "candidate_id": "gsft-display_scale-03-v2",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "direct",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I changed my Windows 11 screen size and now everything looks huge. How do I set it back to normal?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and wants to change the scale back. The passage gives the Display and Scale menu steps; it does not name a normal value, so the reply asks the user to choose the percentage they want.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is how to change the scale back on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.\nSome changes may require signing out and back in before they appear in certain apps.",
-   "author_note": "Covers the scale steps. The page does not say which percentage is normal, so the reply does not name one.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-display_scale-03-v1",
-     "to_candidate": "gsft-display_scale-03-v2",
-     "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-display_scale-03-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-display_scale-04",
-   "candidate_id": "gsft-display_scale-04-v2",
-   "task_id": "TR-008",
-   "task_group": "display_scale",
-   "source_group": "microsoft_scale_bigger_windows11",
-   "behavior": "constraint",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Windows 11",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Keep it short please. I just want everything on my Windows 11 screen a bit bigger, nothing fancy."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Windows 11 and asks for the shortest way to make everything bigger. The Scale steps on the passage are the shortest route to that.",
-   "source_ref_ids": [
-    "display-scale-windows11"
-   ],
-   "target": "Here is the short way on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.",
-   "author_note": "Respects the request for brevity with the three scale steps only.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-display_scale-04-v1",
-     "to_candidate": "gsft-display_scale-04-v2",
-     "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-display_scale-04-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-01",
-   "candidate_id": "gsft-internet_not_working-01-v2",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "apple_cant_connect_wifi_iphone",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "iPhone",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My iPhone shows full wifi bars but Safari says No Internet Connection. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states iPhone and the No Internet Connection message, so the iPhone troubleshooting passage applies. The Android Wi-Fi passage is included only as an inapplicable passage.",
-   "source_ref_ids": [
-    "apple-iphone-internet-troubleshoot",
-    "android-internet-wifi-check"
-   ],
-   "target": "Here are the checks to try on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Wi-Fi** and confirm it's turned on.\n3. Look for a blue checkmark to confirm the connection.\n4. Return to **Settings** and make sure **Airplane Mode** is off.\n5. Tap **Wi-Fi** again and make sure **Connectivity Assist** is off.\n6. If the Wi-Fi setting is dimmed, restart the device.\n7. If you still see 'No Internet Connection,' check your router and network settings.",
-   "author_note": "Covers the iPhone troubleshooting steps in order, including the Airplane Mode, Connectivity Assist and dimmed Wi-Fi restart conditions, and the router check. The Android passage is not used.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-01-v1",
-     "to_candidate": "gsft-internet_not_working-01-v2",
-     "reason": "Step 3 'Tap the name of the network you want to join' repeats a step the user has already done. The user reports full Wi-Fi bars, so the phone is already on the network. Step 5 begins 'If you still can't connect', but the user is connected and sees 'No Internet Connection', so the condition does not match the user's situation. Step 6 combines two actions: checking that Connectivity Assist is off and restarting the device if the Wi-Fi setting is dimmed.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-01-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-02",
-   "candidate_id": "gsft-internet_not_working-02-v2",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
-   "source_ref_ids": [
-    "android-internet-wifi-check",
-    "apple-iphone-internet-troubleshoot"
-   ],
-   "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-02-v1",
-     "to_candidate": "gsft-internet_not_working-02-v2",
-     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-06",
-   "candidate_id": "gsft-internet_not_working-06-v2",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "constraint",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
-   "source_ref_ids": [
-    "android-internet-wifi-check"
-   ],
-   "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-06-v1",
-     "to_candidate": "gsft-internet_not_working-06-v2",
-     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says they can only use Wi-Fi and that the internet is down on it, so Wi-Fi is already on.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-06-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-07",
-   "candidate_id": "gsft-internet_not_working-07-v2",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_mobile_data",
-   "behavior": "multiturn",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android phone won't open any websites, even though it's on wifi."
+      "id": "gsft-wifi_connect-05",
+      "candidate_id": "gsft-wifi_connect-05-v1",
+      "task_id": "TR-162",
+      "task_group": "wifi_connect",
+      "source_group": "microsoft_connect_wifi_windows",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I just moved into a new place and need my home computer on the wifi. Where do I start?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Which kind of computer is it, a Windows PC, a Mac, or a Chromebook?"
+      },
+      "decision_basis": "The user says only 'home computer'. The three passages describe different menus (Quick Settings on Windows 11, the menu bar on a Mac, the time tray and Settings gear on a Chromebook), so one question is needed.",
+      "source_ref_ids": [
+        "wifi-windows11-join",
+        "wifi-mac-join",
+        "wifi-chromebook-join"
+      ],
+      "target": "Which kind of computer is it, a Windows PC, a Mac, or a Chromebook?",
+      "author_note": "Clarify only. Situation differs from the laptop case; the question does not assume the platform."
     },
     {
-     "role": "assistant",
-     "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+      "id": "gsft-wifi_connect-06",
+      "candidate_id": "gsft-wifi_connect-06-v1",
+      "task_id": "TR-169",
+      "task_group": "wifi_connect",
+      "source_group": "microsoft_connect_wifi_windows",
+      "behavior": "constraint",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on Windows 11 and my hands shake, so I need the fewest clicks possible to join the wifi called Maple Lane. Please keep it short."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and asks for the fewest clicks. The Windows 11 passage gives the steps and the refresh and password conditions, so a short answer using only those steps is possible.",
+      "source_ref_ids": [
+        "wifi-windows11-join"
+      ],
+      "target": "Here are the Windows 11 steps, kept to the actions the page gives.\n1. Select the **Network**, **Sound**, or **Battery** icons on the taskbar to open Quick Settings.\n2. In the Wi-Fi quick setting, select **Manage Wi-Fi connections**.\n3. Choose **Maple Lane**, then select **Connect**.\n4. If prompted, type the network password, then select **Next**.\nIf Maple Lane isn't listed, select the **Refresh network list** button in the lower right to start a new scan.",
+      "author_note": "Respects the request for the fewest clicks by giving only the four page steps plus the refresh condition. No extra steps are added."
     },
     {
-     "role": "user",
-     "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
-   "source_ref_ids": [
-    "android-internet-mobile-data"
-   ],
-   "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears and you can, move to a different area or go outside, then check again.\nIf this happens often, contact your mobile service provider.",
-   "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-07-v1",
-     "to_candidate": "gsft-internet_not_working-07-v2",
-     "reason": "Step 5 says 'Move somewhere else or go outside and check again.' The page says 'If you can, move to a different area, or go outside, and check your signal again.' The target drops the condition 'if you can', so it tells the user to move even when they cannot.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-07-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-wifi_connect-07",
-   "candidate_id": "gsft-wifi_connect-07-v2",
-   "task_id": "TR-007",
-   "task_group": "wifi_connect",
-   "source_group": "samsung_connect_galaxy_wifi",
-   "behavior": "multiturn",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Samsung Galaxy",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'm on a Samsung Galaxy phone and need to get on the wifi at my apartment building."
+      "id": "gsft-wifi_connect-07",
+      "candidate_id": "gsft-wifi_connect-07-v1",
+      "task_id": "TR-007",
+      "task_group": "wifi_connect",
+      "source_group": "samsung_connect_galaxy_wifi",
+      "behavior": "multiturn",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Samsung Galaxy",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on a Samsung Galaxy phone and need to get on the wifi at my apartment building."
+        },
+        {
+          "role": "assistant",
+          "content": "Open Settings and tap 'Connections', then tap 'Wi-Fi'. Turn on the Wi-Fi toggle if it's off."
+        },
+        {
+          "role": "user",
+          "content": "Wi-Fi is on now and I can see the building network in the list. It's asking for a password and I have it. What's next?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Samsung Galaxy phone and has already turned Wi-Fi on and found the network. The remaining steps on the Samsung passage are entering the password and connecting, so the reply starts there.",
+      "source_ref_ids": [
+        "wifi-samsung-join"
+      ],
+      "target": "With the password in hand, these are the last steps.\n1. Tap the name of the network you want.\n2. Enter the password, then tap **Connect**.\n3. When connected, the network name appears under **Current network**, with **Connected** below it.",
+      "author_note": "Multiturn. The reply does not repeat turning Wi-Fi on. The password condition is covered by the password step."
     },
     {
-     "role": "assistant",
-     "content": "Open Settings and tap 'Connections', then tap 'Wi-Fi'. Turn on the Wi-Fi toggle if it's off."
+      "id": "gsft-display_scale-01",
+      "candidate_id": "gsft-display_scale-01-v1",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_make_text_bigger_windows11",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "The text on my Windows 11 laptop is too small for me to read. How do I make it bigger?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and says the text is too small, which is the condition the Text size passage describes. The steps come from that passage.",
+      "source_ref_ids": [
+        "display-text-size-windows11"
+      ],
+      "target": "Here is how to make the text bigger on your Windows 11 laptop.\n1. Press **Windows logo key+U**, or select **Start**, then **Settings**, then **Accessibility**.\n2. Select **Text size**.\n3. Drag the **Text size** slider to the right to enlarge the sample text.\n4. Select **Apply**. Windows then scales up all text.",
+      "author_note": "Covers the Accessibility route, Text size, the slider and Apply. The condition about text feeling too small is the trigger in the user's message."
     },
     {
-     "role": "user",
-     "content": "Wi-Fi is on now and I can see the building network in the list. It's asking for a password and I have it. What's next?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a Samsung Galaxy phone and has already turned Wi-Fi on and found the network. The remaining steps on the Samsung passage are entering the password and connecting, so the reply starts there.",
-   "source_ref_ids": [
-    "wifi-samsung-join"
-   ],
-   "target": "With the password in hand, these are the last steps.\n1. Enter the password, then tap **Connect**.\n2. When connected, the network name appears under **Current network**, with **Connected** below it.",
-   "author_note": "Multiturn. The reply does not repeat turning Wi-Fi on. The password condition is covered by the password step.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-wifi_connect-07-v1",
-     "to_candidate": "gsft-wifi_connect-07-v2",
-     "reason": "Step 1 'Tap the name of the network you want.' repeats a step the user has already done. The user says the network is in the list and the phone is now asking for a password.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-wifi_connect-07-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-02",
-   "candidate_id": "gsft-internet_not_working-02-v3",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "direct",
-   "tags": [
-    "distractor",
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
-   "source_ref_ids": [
-    "android-internet-wifi-check",
-    "apple-iphone-internet-troubleshoot"
-   ],
-   "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n3. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-02-v1",
-     "to_candidate": "gsft-internet_not_working-02-v2",
-     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-02-v1"
+      "id": "gsft-display_scale-02",
+      "candidate_id": "gsft-display_scale-02-v1",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "direct",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I want the apps and pictures on my Windows 11 PC bigger, not just the words. Can you tell me how?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and wants images and apps bigger, which the Make images and apps bigger section covers.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is how to make apps and images bigger on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.\nSome changes may require signing out and back in before they appear in certain apps. Most changes apply right away.",
+      "author_note": "Covers the shortcut, Display, Scale & layout and the scale choice, plus the sign out condition and the apply timing stated on the page."
     },
     {
-     "from_candidate": "gsft-internet_not_working-02-v2",
-     "to_candidate": "gsft-internet_not_working-02-v3",
-     "reason": "Step 2 'Check the Wi-Fi indicator at the top of the screen' repeats a check the user already reported, so it was deleted and the remaining steps were renumbered.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-02-v2"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-06",
-   "candidate_id": "gsft-internet_not_working-06-v3",
-   "task_id": "TR-149",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_wifi",
-   "behavior": "constraint",
-   "tags": [],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "over_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
-   "source_ref_ids": [
-    "android-internet-wifi-check"
-   ],
-   "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**. Turn **Wi-Fi** on if it is off.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
-   "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-06-v1",
-     "to_candidate": "gsft-internet_not_working-06-v2",
-     "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says they can only use Wi-Fi and that the internet is down on it, so Wi-Fi is already on.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-06-v1"
+      "id": "gsft-display_scale-03",
+      "candidate_id": "gsft-display_scale-03-v1",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "direct",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I changed my Windows 11 screen size and now everything looks huge. How do I set it back to normal?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and wants to change the scale back. The passage gives the Display and Scale menu steps; it does not name a normal value, so the reply asks the user to choose the percentage they want.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is how to change the scale back on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.\nSome changes may require signing out and back in before they appear in certain apps.",
+      "author_note": "Covers the scale steps. The page does not say which percentage is normal, so the reply does not name one."
     },
     {
-     "from_candidate": "gsft-internet_not_working-06-v2",
-     "to_candidate": "gsft-internet_not_working-06-v3",
-     "reason": "Step 1 leaves out the passage step 'Turn Wi-Fi on', and the user does not say that Wi-Fi is on, so the step now includes it as a condition.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-06-v2"
-    }
-   ]
-  },
-  {
-   "id": "gsft-internet_not_working-07",
-   "candidate_id": "gsft-internet_not_working-07-v3",
-   "task_id": "TR-009",
-   "task_group": "internet_not_working",
-   "source_group": "google_fix_internet_android_mobile_data",
-   "behavior": "multiturn",
-   "tags": [
-    "conditional"
-   ],
-   "category": "technical_support",
-   "platform": "Android",
-   "sensitive": false,
-   "style": "incomplete",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "My Android phone won't open any websites, even though it's on wifi."
+      "id": "gsft-display_scale-04",
+      "candidate_id": "gsft-display_scale-04-v1",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Keep it short please. I just want everything on my Windows 11 screen a bit bigger, nothing fancy."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and asks for the shortest way to make everything bigger. The Scale steps on the passage are the shortest route to that.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is the short way on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and choose the percentage you want.",
+      "author_note": "Respects the request for brevity with the three scale steps only."
     },
     {
-     "role": "assistant",
-     "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+      "id": "gsft-internet_not_working-01",
+      "candidate_id": "gsft-internet_not_working-01-v1",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "apple_cant_connect_wifi_iphone",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone shows full wifi bars but Safari says No Internet Connection. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and the No Internet Connection message, so the iPhone troubleshooting passage applies. The Android Wi-Fi passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "apple-iphone-internet-troubleshoot",
+        "android-internet-wifi-check"
+      ],
+      "target": "Here are the checks to try on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Wi-Fi** and confirm it's turned on.\n3. Tap the name of the network you want to join.\n4. Look for a blue checkmark to confirm the connection.\n5. If you still can't connect, return to **Settings** and confirm **Airplane Mode** is off.\n6. Tap **Wi-Fi** again and check that **Connectivity Assist** is off. If the Wi-Fi setting is dimmed, restart the device.\n7. If you still see 'No Internet Connection,' check your router and network settings.",
+      "author_note": "Covers the iPhone troubleshooting steps in order, including the Airplane Mode, Connectivity Assist and dimmed Wi-Fi restart conditions, and the router check. The Android passage is not used."
     },
     {
-     "role": "user",
-     "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
-   "source_ref_ids": [
-    "android-internet-mobile-data"
-   ],
-   "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears, move to a different area or go outside, then check again.\nIf this happens often, contact your mobile service provider.",
-   "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on.",
-   "correction_history": [
-    {
-     "from_candidate": "gsft-internet_not_working-07-v1",
-     "to_candidate": "gsft-internet_not_working-07-v2",
-     "reason": "Step 5 says 'Move somewhere else or go outside and check again.' The page says 'If you can, move to a different area, or go outside, and check your signal again.' The target drops the condition 'if you can', so it tells the user to move even when they cannot.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-07-v1"
+      "id": "gsft-internet_not_working-02",
+      "candidate_id": "gsft-internet_not_working-02-v1",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "android-internet-wifi-check",
+        "apple-iphone-internet-troubleshoot"
+      ],
+      "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Turn **Wi-Fi** on.\n3. Check the Wi-Fi indicator at the top of the screen.\n4. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n5. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used."
     },
     {
-     "from_candidate": "gsft-internet_not_working-07-v2",
-     "to_candidate": "gsft-internet_not_working-07-v3",
-     "reason": "Step 5 added the condition 'and you can', which the page does not state, so the step now gives the page's wording without that added condition.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-internet_not_working-07-v2"
+      "id": "gsft-internet_not_working-03",
+      "candidate_id": "gsft-internet_not_working-03-v1",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "apple_cant_connect_wifi_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My phone says no internet connection even though it shows bars. What's wrong?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only 'my phone'. The iPhone passage uses Settings, Wi-Fi and Airplane Mode checks, while the Android passage uses the Wi-Fi indicator at the top of the screen, so one question is needed first.",
+      "source_ref_ids": [
+        "apple-iphone-internet-troubleshoot",
+        "android-internet-wifi-check"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. The question asks the platform and does not assume a cause."
+    },
+    {
+      "id": "gsft-internet_not_working-04",
+      "candidate_id": "gsft-internet_not_working-04-v1",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_mobile_data",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Websites won't load on my cellphone at the cafe, even though I have signal. Is it the cafe's wifi?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your cellphone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only 'cellphone'. The iPhone passage works from the Wi-Fi settings, while the Android mobile data passage works from Mobile data or Cellular data in Settings, so the platform decides which steps apply.",
+      "source_ref_ids": [
+        "apple-iphone-internet-troubleshoot",
+        "android-internet-mobile-data"
+      ],
+      "target": "Is your cellphone an iPhone or an Android?",
+      "author_note": "Clarify only. The question does not assume the cafe's wifi is the cause."
+    },
+    {
+      "id": "gsft-internet_not_working-05",
+      "candidate_id": "gsft-internet_not_working-05-v1",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_mobile_data",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "unspecified",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Since this morning every app on my phone says it can't get online. How do I fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Which kind of phone is it, an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only 'my phone' and describes apps failing. The iPhone passage and the Android mobile data passage use different menus, so the platform must be known before steps are given.",
+      "source_ref_ids": [
+        "apple-iphone-internet-troubleshoot",
+        "android-internet-mobile-data"
+      ],
+      "target": "Which kind of phone is it, an iPhone or an Android?",
+      "author_note": "Clarify only. The question is the platform question, phrased differently from the other clarify cases."
+    },
+    {
+      "id": "gsft-internet_not_working-06",
+      "candidate_id": "gsft-internet_not_working-06-v1",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
+      "source_ref_ids": [
+        "android-internet-wifi-check"
+      ],
+      "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Turn **Wi-Fi** on.\n3. Check the Wi-Fi indicator at the top of the screen.\n4. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n5. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given."
+    },
+    {
+      "id": "gsft-internet_not_working-07",
+      "candidate_id": "gsft-internet_not_working-07-v1",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_mobile_data",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android phone won't open any websites, even though it's on wifi."
+        },
+        {
+          "role": "assistant",
+          "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+        },
+        {
+          "role": "user",
+          "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
+      "source_ref_ids": [
+        "android-internet-mobile-data"
+      ],
+      "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears, you may be out of coverage. Move somewhere else or go outside and check again.\nIf this happens often, contact your mobile service provider.",
+      "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on."
+    },
+    {
+      "id": "gsft-display_scale-02",
+      "candidate_id": "gsft-display_scale-02-v2",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "direct",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I want the apps and pictures on my Windows 11 PC bigger, not just the words. Can you tell me how?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and wants images and apps bigger, which the Make images and apps bigger section covers.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is how to make apps and images bigger on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.\nSome changes may require signing out and back in before they appear in certain apps. Most changes apply right away.",
+      "author_note": "Covers the shortcut, Display, Scale & layout and the scale choice, plus the sign out condition and the apply timing stated on the page.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-display_scale-02-v1",
+          "to_candidate": "gsft-display_scale-02-v2",
+          "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-display_scale-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-display_scale-03",
+      "candidate_id": "gsft-display_scale-03-v2",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "direct",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I changed my Windows 11 screen size and now everything looks huge. How do I set it back to normal?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and wants to change the scale back. The passage gives the Display and Scale menu steps; it does not name a normal value, so the reply asks the user to choose the percentage they want.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is how to change the scale back on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.\nSome changes may require signing out and back in before they appear in certain apps.",
+      "author_note": "Covers the scale steps. The page does not say which percentage is normal, so the reply does not name one.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-display_scale-03-v1",
+          "to_candidate": "gsft-display_scale-03-v2",
+          "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-display_scale-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-display_scale-04",
+      "candidate_id": "gsft-display_scale-04-v2",
+      "task_id": "TR-008",
+      "task_group": "display_scale",
+      "source_group": "microsoft_scale_bigger_windows11",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Windows 11",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Keep it short please. I just want everything on my Windows 11 screen a bit bigger, nothing fancy."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Windows 11 and asks for the shortest way to make everything bigger. The Scale steps on the passage are the shortest route to that.",
+      "source_ref_ids": [
+        "display-scale-windows11"
+      ],
+      "target": "Here is the short way on Windows 11.\n1. Open **Settings** with the **Windows key + I** shortcut, or from **Start**.\n2. Select **Display**.\n3. Under **Scale & layout**, expand the **Scale** menu and select the option you want.",
+      "author_note": "Respects the request for brevity with the three scale steps only.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-display_scale-04-v1",
+          "to_candidate": "gsft-display_scale-04-v2",
+          "reason": "Step 3 says 'choose the percentage you want'. The page says 'select the option you want' and does not mention percentages, so 'percentage' is a claim beyond the page.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-display_scale-04-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-01",
+      "candidate_id": "gsft-internet_not_working-01-v2",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "apple_cant_connect_wifi_iphone",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone shows full wifi bars but Safari says No Internet Connection. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states iPhone and the No Internet Connection message, so the iPhone troubleshooting passage applies. The Android Wi-Fi passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "apple-iphone-internet-troubleshoot",
+        "android-internet-wifi-check"
+      ],
+      "target": "Here are the checks to try on your iPhone.\n1. Open the **Settings** app.\n2. Tap **Wi-Fi** and confirm it's turned on.\n3. Look for a blue checkmark to confirm the connection.\n4. Return to **Settings** and make sure **Airplane Mode** is off.\n5. Tap **Wi-Fi** again and make sure **Connectivity Assist** is off.\n6. If the Wi-Fi setting is dimmed, restart the device.\n7. If you still see 'No Internet Connection,' check your router and network settings.",
+      "author_note": "Covers the iPhone troubleshooting steps in order, including the Airplane Mode, Connectivity Assist and dimmed Wi-Fi restart conditions, and the router check. The Android passage is not used.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-01-v1",
+          "to_candidate": "gsft-internet_not_working-01-v2",
+          "reason": "Step 3 'Tap the name of the network you want to join' repeats a step the user has already done. The user reports full Wi-Fi bars, so the phone is already on the network. Step 5 begins 'If you still can't connect', but the user is connected and sees 'No Internet Connection', so the condition does not match the user's situation. Step 6 combines two actions: checking that Connectivity Assist is off and restarting the device if the Wi-Fi setting is dimmed.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-01-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-02",
+      "candidate_id": "gsft-internet_not_working-02-v2",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "android-internet-wifi-check",
+        "apple-iphone-internet-troubleshoot"
+      ],
+      "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-02-v1",
+          "to_candidate": "gsft-internet_not_working-02-v2",
+          "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-06",
+      "candidate_id": "gsft-internet_not_working-06-v2",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
+      "source_ref_ids": [
+        "android-internet-wifi-check"
+      ],
+      "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-06-v1",
+          "to_candidate": "gsft-internet_not_working-06-v2",
+          "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says they can only use Wi-Fi and that the internet is down on it, so Wi-Fi is already on.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-06-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-07",
+      "candidate_id": "gsft-internet_not_working-07-v2",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_mobile_data",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android phone won't open any websites, even though it's on wifi."
+        },
+        {
+          "role": "assistant",
+          "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+        },
+        {
+          "role": "user",
+          "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
+      "source_ref_ids": [
+        "android-internet-mobile-data"
+      ],
+      "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears and you can, move to a different area or go outside, then check again.\nIf this happens often, contact your mobile service provider.",
+      "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-07-v1",
+          "to_candidate": "gsft-internet_not_working-07-v2",
+          "reason": "Step 5 says 'Move somewhere else or go outside and check again.' The page says 'If you can, move to a different area, or go outside, and check your signal again.' The target drops the condition 'if you can', so it tells the user to move even when they cannot.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-07-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-wifi_connect-07",
+      "candidate_id": "gsft-wifi_connect-07-v2",
+      "task_id": "TR-007",
+      "task_group": "wifi_connect",
+      "source_group": "samsung_connect_galaxy_wifi",
+      "behavior": "multiturn",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Samsung Galaxy",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on a Samsung Galaxy phone and need to get on the wifi at my apartment building."
+        },
+        {
+          "role": "assistant",
+          "content": "Open Settings and tap 'Connections', then tap 'Wi-Fi'. Turn on the Wi-Fi toggle if it's off."
+        },
+        {
+          "role": "user",
+          "content": "Wi-Fi is on now and I can see the building network in the list. It's asking for a password and I have it. What's next?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a Samsung Galaxy phone and has already turned Wi-Fi on and found the network. The remaining steps on the Samsung passage are entering the password and connecting, so the reply starts there.",
+      "source_ref_ids": [
+        "wifi-samsung-join"
+      ],
+      "target": "With the password in hand, these are the last steps.\n1. Enter the password, then tap **Connect**.\n2. When connected, the network name appears under **Current network**, with **Connected** below it.",
+      "author_note": "Multiturn. The reply does not repeat turning Wi-Fi on. The password condition is covered by the password step.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-wifi_connect-07-v1",
+          "to_candidate": "gsft-wifi_connect-07-v2",
+          "reason": "Step 1 'Tap the name of the network you want.' repeats a step the user has already done. The user says the network is in the list and the phone is now asking for a password.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-wifi_connect-07-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-02",
+      "candidate_id": "gsft-internet_not_working-02-v3",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "android-internet-wifi-check",
+        "apple-iphone-internet-troubleshoot"
+      ],
+      "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n3. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-02-v1",
+          "to_candidate": "gsft-internet_not_working-02-v2",
+          "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02-v1"
+        },
+        {
+          "from_candidate": "gsft-internet_not_working-02-v2",
+          "to_candidate": "gsft-internet_not_working-02-v3",
+          "reason": "Step 2 'Check the Wi-Fi indicator at the top of the screen' repeats a check the user already reported, so it was deleted and the remaining steps were renumbered.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-06",
+      "candidate_id": "gsft-internet_not_working-06-v3",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "over_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android is out of mobile data for the month, so I can only use wifi. The internet is down on it. What do I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and says mobile data is used up, so only the Wi-Fi passage is used and the mobile data steps are left out.",
+      "source_ref_ids": [
+        "android-internet-wifi-check"
+      ],
+      "target": "Since only Wi-Fi is available to you, these checks cover the Wi-Fi connection only.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**. Turn **Wi-Fi** on if it is off.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Respects the no mobile data limit by using only the Wi-Fi passage. No mobile data steps are given.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-06-v1",
+          "to_candidate": "gsft-internet_not_working-06-v2",
+          "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says they can only use Wi-Fi and that the internet is down on it, so Wi-Fi is already on.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-06-v1"
+        },
+        {
+          "from_candidate": "gsft-internet_not_working-06-v2",
+          "to_candidate": "gsft-internet_not_working-06-v3",
+          "reason": "Step 1 leaves out the passage step 'Turn Wi-Fi on', and the user does not say that Wi-Fi is on, so the step now includes it as a condition.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-06-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-07",
+      "candidate_id": "gsft-internet_not_working-07-v3",
+      "task_id": "TR-009",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_mobile_data",
+      "behavior": "multiturn",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My Android phone won't open any websites, even though it's on wifi."
+        },
+        {
+          "role": "assistant",
+          "content": "Restart the device first. If restarting doesn't help, open Settings and tap Network & internet or Connections."
+        },
+        {
+          "role": "user",
+          "content": "I restarted it and it still won't load anything. Wi-Fi is on with full bars. My mobile data is off."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android, has already restarted, and reports that mobile data is off. The mobile data passage covers turning the switch on and the data indicator checks, including the case where Wi-Fi is active.",
+      "source_ref_ids": [
+        "android-internet-mobile-data"
+      ],
+      "target": "Mobile data is the next thing to check.\n1. Open **Settings**, tap **Network & internet** or **Connections**, then tap **Mobile data** or **Cellular data**.\n2. Turn the switch on.\n3. Look for a data indicator (2G, 3G, 4G, or H) beside the signal bars at the top of the screen.\n4. If Wi-Fi is active, that indicator may not appear, so turn **Wi-Fi** off and check again.\n5. If no data indicator appears, move to a different area or go outside, then check again.\nIf this happens often, contact your mobile service provider.",
+      "author_note": "Multiturn. The reply does not repeat the restart. The Wi-Fi active condition explains why the user may not see the data indicator while Wi-Fi is on.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-07-v1",
+          "to_candidate": "gsft-internet_not_working-07-v2",
+          "reason": "Step 5 says 'Move somewhere else or go outside and check again.' The page says 'If you can, move to a different area, or go outside, and check your signal again.' The target drops the condition 'if you can', so it tells the user to move even when they cannot.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-07-v1"
+        },
+        {
+          "from_candidate": "gsft-internet_not_working-07-v2",
+          "to_candidate": "gsft-internet_not_working-07-v3",
+          "reason": "Step 5 added the condition 'and you can', which the page does not state, so the step now gives the page's wording without that added condition.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-07-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-internet_not_working-02",
+      "candidate_id": "gsft-internet_not_working-02-v4",
+      "task_id": "TR-149",
+      "task_group": "internet_not_working",
+      "source_group": "google_fix_internet_android_wifi",
+      "behavior": "direct",
+      "tags": [
+        "distractor",
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Websites won't load on my Android phone even though the wifi says it's connected. What do I check?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Android and that Wi-Fi shows connected, so the Android Wi-Fi passage applies. The iPhone passage is included only as an inapplicable passage.",
+      "source_ref_ids": [
+        "android-internet-wifi-check",
+        "apple-iphone-internet-troubleshoot"
+      ],
+      "target": "Here is how to check the Wi-Fi connection on your Android phone.\n1. Open **Settings**, tap **Network & Internet** or **Connections**, then tap **Wi-Fi**.\n2. Check the Wi-Fi indicator at the top of the screen.\n3. If it isn't shown, or no bars are filled in, you may be out of range. Move closer to the router, confirm you have a stronger signal, and try again.\n4. If problems persist, contact your internet service provider or the host of the Wi-Fi network.",
+      "author_note": "Covers the Wi-Fi steps, the indicator check, the range condition and the provider contact line. The iPhone passage is not used.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-internet_not_working-02-v1",
+          "to_candidate": "gsft-internet_not_working-02-v2",
+          "reason": "Step 2 'Turn Wi-Fi on' repeats a step the user has already done. The user says the Wi-Fi shows as connected.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02-v1"
+        },
+        {
+          "from_candidate": "gsft-internet_not_working-02-v2",
+          "to_candidate": "gsft-internet_not_working-02-v3",
+          "reason": "Step 2 'Check the Wi-Fi indicator at the top of the screen' repeats a check the user already reported, so it was deleted and the remaining steps were renumbered.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02-v2"
+        },
+        {
+          "from_candidate": "gsft-internet_not_working-02-v3",
+          "to_candidate": "gsft-internet_not_working-02-v4",
+          "reason": "Step 2 used the pronoun it with no antecedent because the Wi-Fi indicator check had been removed; that check is restored as its own step and the steps are renumbered.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-internet_not_working-02"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

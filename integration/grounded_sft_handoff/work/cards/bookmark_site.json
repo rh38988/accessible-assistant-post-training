@@ -46,7 +46,7 @@
       "applicability": "Chrome on an Android phone or tablet",
       "platform": "Android",
       "app": "Chrome",
-      "verified_excerpt": "Go to a site that you want to visit again in the future.",
+      "verified_excerpt": "Go to a site you want to visit again in the future.",
       "model_visible_text": "On Chrome on Android: Open Chrome and go to the site. Tap the **More** icon, then tap **Add to bookmarks**.",
       "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt quoted exactly"
     },

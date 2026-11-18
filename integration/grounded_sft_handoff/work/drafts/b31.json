@@ -1,106 +1,584 @@
-{"batch": "b31", "candidates": [
- {"id": "gsft-rental_listing_scam-01", "candidate_id": "gsft-rental_listing_scam-01-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_protect_money", "behavior": "direct", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "There's a 2 bedroom on Facebook Marketplace for $850 a month near campus, way cheaper than anything else I've seen. The landlord says he's overseas for work and I have to wire a $1,000 deposit through Western Union to hold it. Is this real?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a wire transfer demand, a far-below-market rent and an overseas landlord; the sources answer directly with the protective action first.",
-  "source_ref_ids": ["rental-payment-methods", "rental-copied-listing", "rental-pressure-walkaway"],
-  "target": "Don't send any deposit yet. Here is what to do first:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. Search online for the rental location's address along with the name of the property owner or rental company.\n3. If the same address appears under a different owner or company, treat it as a likely scam.\n4. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n5. Be suspicious if the rent is far below local rents, and walk away if anyone pressures you to decide quickly.",
-  "author_note": "Covers: no wire transfer; copied-listing search; company website check; below-market rent; pressure walk-away. Source gap: none."},
- {"id": "gsft-rental_listing_scam-02", "candidate_id": "gsft-rental_listing_scam-02-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_verify_listing", "behavior": "direct", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "verbose",
-  "source_conversation": [{"role": "user", "content": "I found a studio on a rental site. The person posting it says he lives in another state and wants a gift card deposit for the first month. The rent is $300 under everything else nearby. Anything I should check before I do anything?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a gift card deposit demand and a far-below-local-rent price; the sources give the verification steps and the no-payment rule.",
-  "source_ref_ids": ["rental-payment-methods", "rental-copied-listing", "rental-pressure-walkaway"],
-  "target": "Don't buy the gift cards or send any deposit. Then check the listing:\n1. Search online for the rental location's address along with the name of the property owner or rental company.\n2. If the same address appears under a different owner or company, treat it as a likely scam.\n3. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n4. Be suspicious if the rent is far below local rents.",
-  "author_note": "Covers: gift card refusal; address search; company website check; below-market rent. Source gap: none."},
- {"id": "gsft-rental_listing_scam-03", "candidate_id": "gsft-rental_listing_scam-03-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_protect_info", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I use a wheelchair and can't easily get to viewings, so I'm looking at places remotely. A rental agent wants my Social Security number and credit score before we set up a viewing. How do I check that this is real?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a limit (cannot attend in person) and a request for sensitive data; the sources allow a video or virtual tour through a trusted person and advise against sharing these numbers before agreeing to rent.",
-  "source_ref_ids": ["rental-personal-info", "rental-inspect-property"],
-  "target": "Don't share your Social Security number or credit score before you've agreed to rent.\n1. Landlords usually check credit themselves and won't ask you to obtain it.\n2. Look at the property through someone you trust, or via a video or virtual tour, before you sign or pay.\n3. Note that this doesn't guarantee the rental is real.",
-  "author_note": "Covers: no SSN or credit score before agreeing to rent; virtual tour or trusted person as remote viewing; the tour does not guarantee the rental is real. Source gap: none."},
- {"id": "gsft-rental_listing_scam-03", "candidate_id": "gsft-rental_listing_scam-03-v2", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_protect_info", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I use a wheelchair and can't easily get to viewings, so I'm looking at places remotely. A rental agent wants my Social Security number and credit score before we set up a viewing. How do I check that this is real?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a limit (cannot attend in person) and a request for sensitive data; the sources allow a video or virtual tour through a trusted person and advise against sharing these numbers before agreeing to rent.",
-  "source_ref_ids": ["rental-personal-info", "rental-inspect-property"],
-  "target": "Don't share your Social Security number or credit score before you've agreed to rent.\n1. Landlords usually check credit themselves and won't ask you to obtain it.\n2. Contact the owner or company using details you already have.\n3. Look at the property through someone you trust, or via a video or virtual tour, before you sign or pay.\n4. Note that this doesn't guarantee the rental is real.",
-  "author_note": "Covers: no SSN or credit score before agreeing to rent; contact the owner or company using details you already have; virtual tour or trusted person as remote viewing; the tour does not guarantee the rental is real. Source gap: none.",
-  "correction_history": [{"from_candidate": "gsft-rental_listing_scam-03-v1", "to_candidate": "gsft-rental_listing_scam-03-v2", "reason": "The target omitted the source step to contact the owner or company using details already held, which answers the user's question on how to check the listing; it is now step 2 and the later steps are renumbered.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-rental_listing_scam-03-v1"}]},
- {"id": "gsft-rental_listing_scam-04", "candidate_id": "gsft-rental_listing_scam-04-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_protect_money", "behavior": "constraint", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "I'm on a fixed income so I need the shortest answer. A listing says to reserve the unit by sending money through Western Union today. Is that safe?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user asks for the shortest answer and names a Western Union demand; the sources give the no-wire rule and the insistence rule directly.",
-  "source_ref_ids": ["rental-payment-methods", "rental-pressure-walkaway"],
-  "target": "No, don't send it.\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. If someone insists on wire transfers through Western Union or MoneyGram, gift cards, or cryptocurrency, treat it as a scam.\n3. If anyone pressures you to make a decision quickly, walk away.",
-  "author_note": "Covers: no wire; insistence rule; pressure walk-away. Kept short per the stated limit. Source gap: none."},
- {"id": "gsft-rental_listing_scam-05", "candidate_id": "gsft-rental_listing_scam-05-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_report", "behavior": "multiturn", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "incomplete",
-  "source_conversation": [
-   {"role": "user", "content": "Saw a room for rent near campus. The landlord is in another state."},
-   {"role": "assistant", "content": "Search the rental location's address along with the owner's name. If the same address appears under a different owner, treat it as a likely scam."},
-   {"role": "user", "content": "I did that and the same address shows up under a different company name. Now the 'property manager' wants a $500 holding fee by gift card. Should I pay?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user reports the copied-listing result and a gift card fee; the sources say to treat it as a likely scam, not to send gift cards, and to contact the company and report it.",
-  "source_ref_ids": ["rental-payment-methods", "rental-copied-listing", "rental-report"],
-  "target": "Don't pay the holding fee. Steps:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n3. Contact the owner or company using details you already have.\n4. Report the scam to your local law enforcement agency and to the website where the ad appeared.",
-  "author_note": "Covers: no gift card; company website check; contact via known details; report to police and website. The address search is not repeated. Source gap: none."},
- {"id": "gsft-rental_listing_scam-06", "candidate_id": "gsft-rental_listing_scam-06-v1", "task_id": "TR-223", "task_group": "rental_listing_scam", "source_group": "rental_listing_scams_verify_listing", "behavior": "multiturn", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "I'm thinking about renting a condo the ad says is near the university."},
-   {"role": "assistant", "content": "Look at the property before you sign or pay, in person, through someone you trust, or via a video or virtual tour."},
-   {"role": "user", "content": "I toured it on a video call with the agent. Then he asked me to send a $600 deposit by gift card so the unit is held, and he says I have to decide by tonight."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user reports a gift card deposit and an evening deadline after a video tour; the sources say not to pay by gift card, to walk away from pressure and to report the ad.",
-  "source_ref_ids": ["rental-payment-methods", "rental-pressure-walkaway", "rental-report"],
-  "target": "Don't send the deposit. Steps:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. If anyone pressures you to make a decision quickly, walk away.\n3. Report the scam to your local law enforcement agency and to the website where the ad appeared.\n4. Report it to the FTC at ReportFraud.ftc.gov (https://reportfraud.ftc.gov/#/).",
-  "author_note": "Covers: no gift card; walk away from deadline; police, ad website and FTC reports. The video tour is not repeated. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-01", "candidate_id": "gsft-mortgage_relief_scam-01-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_rights", "behavior": "direct", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "A company says it can lower my mortgage payment and stop the foreclosure if I pay a $1,500 fee up front. I'm two months behind. Should I pay them?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an upfront fee demand and missed payments with foreclosure risk; the sources say never pay upfront, contact the lender and find a HUD-approved counselor.",
-  "source_ref_ids": ["mortgage-upfront-fee", "mortgage-contact-lender", "mortgage-counselor-hud"],
-  "target": "Hold off on paying that fee.\n1. Never pay a company upfront for promises to help you get relief on paying your mortgage.\n2. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.\n3. Find a HUD-approved counselor in your state.\n4. Visit makinghomeaffordable.gov or call the help line at 1-888-995-HOPE (4673).",
-  "author_note": "Covers: no upfront fee; contact lender right away; HUD-approved counselor; makinghomeaffordable.gov and help line. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-02", "candidate_id": "gsft-mortgage_relief_scam-02-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_types", "behavior": "direct", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "verbose",
-  "source_conversation": [{"role": "user", "content": "A mortgage relief outfit called me from a number I didn't know. They want me to pay by cashier's check and say they'll get my payments lowered. I'm worried it's a scam, what should I do?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a cashier's check demand from an unknown caller; the sources say to be cautious of such payment requests, not to pay before results, keep contact with the lender and report.",
-  "source_ref_ids": ["mortgage-payment-methods", "mortgage-upfront-fee", "mortgage-contact-lender", "mortgage-report-fraud"],
-  "target": "Hold off on paying by check.\n1. Be cautious of requests to pay only by cashier's check, wire transfer, or mobile payment app.\n2. Don't pay any money until the company delivers the results you want.\n3. Keep in contact with your lender. Don't stop talking to them because a company tells you to.\n4. Report suspected mortgage relief scams to the FTC at ReportFraud.ftc.gov. Report them to your state attorney general.",
-  "author_note": "Covers: cashier's check caution; no payment before results; keep contact with lender; FTC and state attorney general reports. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-03", "candidate_id": "gsft-mortgage_relief_scam-03-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_help", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm hard of hearing so phone calls are really difficult, and I can't leave my apartment right now. A company says it can stop my foreclosure for a $1,200 fee paid up front. What can I do without calling anyone?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states they cannot make phone calls or leave home; the sources give a website route and the upfront fee rule, and the reply uses only those.",
-  "source_ref_ids": ["mortgage-upfront-fee", "mortgage-counselor-hud", "mortgage-contact-lender"],
-  "target": "Don't pay the $1,200 fee up front. Steps you can take online:\n1. Never pay a company upfront for promises to help you get relief on paying your mortgage.\n2. Visit makinghomeaffordable.gov to find a HUD-approved counselor in your state.\n3. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.",
-  "author_note": "Covers: no upfront fee; makinghomeaffordable.gov route for a counselor; contact lender right away. The phone help line is left out because the user cannot make calls. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-04", "candidate_id": "gsft-mortgage_relief_scam-04-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_types", "behavior": "constraint", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Typing this one-handed on my phone so keep it short. A loan modification company wants payment through a mobile payment app to start. Normal?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states a one-handed, short-answer limit and a mobile payment app demand; the sources give the caution about mobile payment apps and the no-payment-before-results rule.",
-  "source_ref_ids": ["mortgage-payment-methods", "mortgage-upfront-fee"],
-  "target": "Be cautious about that.\n1. Be cautious of requests to pay only by cashier's check, wire transfer, or mobile payment app.\n2. Don't pay any money until the company delivers the results you want.",
-  "author_note": "Covers: mobile payment app caution; no payment before results. Kept short per the stated limit. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-05", "candidate_id": "gsft-mortgage_relief_scam-05-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_paid", "behavior": "multiturn", "tags": ["safety", "conditional"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "incomplete",
-  "source_conversation": [
-   {"role": "user", "content": "A company promised to get my loan modified for an upfront fee."},
-   {"role": "assistant", "content": "Never pay a company upfront for promises to help you get relief on paying your mortgage. Contact your lender directly."},
-   {"role": "user", "content": "I already paid them $800 by mobile payment app last week and now they want another fee to finish. My lender hasn't answered yet."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user reports an upfront payment already made and a second fee demand; the sources give the act-now line, the FTC guidance, the reports and the lender contact.",
-  "source_ref_ids": ["mortgage-paid-scammer", "mortgage-report-fraud", "mortgage-contact-lender"],
-  "target": "The sooner you act, the better.\n1. Review the FTC's guidance on trying to get your money back.\n2. Report suspected mortgage relief scams to the FTC at ReportFraud.ftc.gov.\n3. Report them to your state attorney general.\n4. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.",
-  "author_note": "Covers: act as soon as possible; FTC guidance on recovering money; FTC and state attorney general reports; contact the lender right away. The earlier payment is not repeated. Source gap: none."},
- {"id": "gsft-mortgage_relief_scam-06", "candidate_id": "gsft-mortgage_relief_scam-06-v1", "task_id": "TR-224", "task_group": "mortgage_relief_scam", "source_group": "mortgage_relief_scams_types", "behavior": "multiturn", "tags": ["safety"], "category": "online_services", "platform": "Any", "sensitive": false, "style": "failure_recovery",
-  "source_conversation": [
-   {"role": "user", "content": "A man offered to buy my house from me and lease it back so I can stay."},
-   {"role": "assistant", "content": "Don't give up your deed in exchange for promises to buy the home back or to finance it."},
-   {"role": "user", "content": "I called my servicer and they said they can't help unless I pay this month. Now the company wants me to sign loan papers today and says there's no time to read them."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user reports pressure to sign papers quickly after a lender said it cannot help; the sources say not to sign under pressure, to read documents that transfer the deed, and to keep in contact with the lender.",
-  "source_ref_ids": ["mortgage-sign-under-pressure", "mortgage-deed-transfer", "mortgage-contact-lender", "mortgage-counselor-hud"],
-  "target": "Don't sign loan papers under pressure.\n1. Read all documents, especially any that transfer the deed.\n2. Don't transfer your home deed to anyone.\n3. Keep in contact with your lender. Don't stop talking to them because a company tells you to.\n4. Find a HUD-approved counselor in your state.",
-  "author_note": "Covers: no signing under pressure; read documents, especially deed transfers; no deed transfer; keep lender contact; HUD-approved counselor. The servicer call is not repeated. Source gap: none."}
-]}
+{
+  "batch": "b31",
+  "candidates": [
+    {
+      "id": "gsft-rental_listing_scam-01",
+      "candidate_id": "gsft-rental_listing_scam-01-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_protect_money",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "There's a 2 bedroom on Facebook Marketplace for $850 a month near campus, way cheaper than anything else I've seen. The landlord says he's overseas for work and I have to wire a $1,000 deposit through Western Union to hold it. Is this real?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a wire transfer demand, a far-below-market rent and an overseas landlord; the sources answer directly with the protective action first.",
+      "source_ref_ids": [
+        "rental-payment-methods",
+        "rental-copied-listing",
+        "rental-pressure-walkaway"
+      ],
+      "target": "Don't send any deposit yet. Here is what to do first:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. Search online for the rental location's address along with the name of the property owner or rental company.\n3. If the same address appears under a different owner or company, treat it as a likely scam.\n4. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n5. Be suspicious if the rent is far below local rents, and walk away if anyone pressures you to decide quickly.",
+      "author_note": "Covers: no wire transfer; copied-listing search; company website check; below-market rent; pressure walk-away. Source gap: none."
+    },
+    {
+      "id": "gsft-rental_listing_scam-02",
+      "candidate_id": "gsft-rental_listing_scam-02-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_verify_listing",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I found a studio on a rental site. The person posting it says he lives in another state and wants a gift card deposit for the first month. The rent is $300 under everything else nearby. Anything I should check before I do anything?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a gift card deposit demand and a far-below-local-rent price; the sources give the verification steps and the no-payment rule.",
+      "source_ref_ids": [
+        "rental-payment-methods",
+        "rental-copied-listing",
+        "rental-pressure-walkaway"
+      ],
+      "target": "Don't buy the gift cards or send any deposit. Then check the listing:\n1. Search online for the rental location's address along with the name of the property owner or rental company.\n2. If the same address appears under a different owner or company, treat it as a likely scam.\n3. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n4. Be suspicious if the rent is far below local rents.",
+      "author_note": "Covers: gift card refusal; address search; company website check; below-market rent. Source gap: none."
+    },
+    {
+      "id": "gsft-rental_listing_scam-03",
+      "candidate_id": "gsft-rental_listing_scam-03-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_protect_info",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I use a wheelchair and can't easily get to viewings, so I'm looking at places remotely. A rental agent wants my Social Security number and credit score before we set up a viewing. How do I check that this is real?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a limit (cannot attend in person) and a request for sensitive data; the sources allow a video or virtual tour through a trusted person and advise against sharing these numbers before agreeing to rent.",
+      "source_ref_ids": [
+        "rental-personal-info",
+        "rental-inspect-property"
+      ],
+      "target": "Don't share your Social Security number or credit score before you've agreed to rent.\n1. Landlords usually check credit themselves and won't ask you to obtain it.\n2. Look at the property through someone you trust, or via a video or virtual tour, before you sign or pay.\n3. Note that this doesn't guarantee the rental is real.",
+      "author_note": "Covers: no SSN or credit score before agreeing to rent; virtual tour or trusted person as remote viewing; the tour does not guarantee the rental is real. Source gap: none."
+    },
+    {
+      "id": "gsft-rental_listing_scam-03",
+      "candidate_id": "gsft-rental_listing_scam-03-v2",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_protect_info",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I use a wheelchair and can't easily get to viewings, so I'm looking at places remotely. A rental agent wants my Social Security number and credit score before we set up a viewing. How do I check that this is real?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a limit (cannot attend in person) and a request for sensitive data; the sources allow a video or virtual tour through a trusted person and advise against sharing these numbers before agreeing to rent.",
+      "source_ref_ids": [
+        "rental-personal-info",
+        "rental-inspect-property"
+      ],
+      "target": "Don't share your Social Security number or credit score before you've agreed to rent.\n1. Landlords usually check credit themselves and won't ask you to obtain it.\n2. Contact the owner or company using details you already have.\n3. Look at the property through someone you trust, or via a video or virtual tour, before you sign or pay.\n4. Note that this doesn't guarantee the rental is real.",
+      "author_note": "Covers: no SSN or credit score before agreeing to rent; contact the owner or company using details you already have; virtual tour or trusted person as remote viewing; the tour does not guarantee the rental is real. Source gap: none.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-rental_listing_scam-03-v1",
+          "to_candidate": "gsft-rental_listing_scam-03-v2",
+          "reason": "The target omitted the source step to contact the owner or company using details already held, which answers the user's question on how to check the listing; it is now step 2 and the later steps are renumbered.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-rental_listing_scam-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-rental_listing_scam-04",
+      "candidate_id": "gsft-rental_listing_scam-04-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_protect_money",
+      "behavior": "constraint",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm on a fixed income so I need the shortest answer. A listing says to reserve the unit by sending money through Western Union today. Is that safe?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user asks for the shortest answer and names a Western Union demand; the sources give the no-wire rule and the insistence rule directly.",
+      "source_ref_ids": [
+        "rental-payment-methods",
+        "rental-pressure-walkaway"
+      ],
+      "target": "No, don't send it.\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. If someone insists on wire transfers through Western Union or MoneyGram, gift cards, or cryptocurrency, treat it as a scam.\n3. If anyone pressures you to make a decision quickly, walk away.",
+      "author_note": "Covers: no wire; insistence rule; pressure walk-away. Kept short per the stated limit. Source gap: none."
+    },
+    {
+      "id": "gsft-rental_listing_scam-05",
+      "candidate_id": "gsft-rental_listing_scam-05-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_report",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Saw a room for rent near campus. The landlord is in another state."
+        },
+        {
+          "role": "assistant",
+          "content": "Search the rental location's address along with the owner's name. If the same address appears under a different owner, treat it as a likely scam."
+        },
+        {
+          "role": "user",
+          "content": "I did that and the same address shows up under a different company name. Now the 'property manager' wants a $500 holding fee by gift card. Should I pay?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports the copied-listing result and a gift card fee; the sources say to treat it as a likely scam, not to send gift cards, and to contact the company and report it.",
+      "source_ref_ids": [
+        "rental-payment-methods",
+        "rental-copied-listing",
+        "rental-report"
+      ],
+      "target": "Don't pay the holding fee. Steps:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. Check whether the property appears on the rental company's own website. If it doesn't, the ad may be a scam.\n3. Contact the owner or company using details you already have.\n4. Report the scam to your local law enforcement agency and to the website where the ad appeared.",
+      "author_note": "Covers: no gift card; company website check; contact via known details; report to police and website. The address search is not repeated. Source gap: none."
+    },
+    {
+      "id": "gsft-rental_listing_scam-06",
+      "candidate_id": "gsft-rental_listing_scam-06-v1",
+      "task_id": "TR-223",
+      "task_group": "rental_listing_scam",
+      "source_group": "rental_listing_scams_verify_listing",
+      "behavior": "multiturn",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm thinking about renting a condo the ad says is near the university."
+        },
+        {
+          "role": "assistant",
+          "content": "Look at the property before you sign or pay, in person, through someone you trust, or via a video or virtual tour."
+        },
+        {
+          "role": "user",
+          "content": "I toured it on a video call with the agent. Then he asked me to send a $600 deposit by gift card so the unit is held, and he says I have to decide by tonight."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports a gift card deposit and an evening deadline after a video tour; the sources say not to pay by gift card, to walk away from pressure and to report the ad.",
+      "source_ref_ids": [
+        "rental-payment-methods",
+        "rental-pressure-walkaway",
+        "rental-report"
+      ],
+      "target": "Don't send the deposit. Steps:\n1. Don't send money by wire transfer, gift card, or cryptocurrency, since these work like cash and are usually unrecoverable.\n2. If anyone pressures you to make a decision quickly, walk away.\n3. Report the scam to your local law enforcement agency and to the website where the ad appeared.\n4. Report it to the FTC at ReportFraud.ftc.gov (https://reportfraud.ftc.gov/#/).",
+      "author_note": "Covers: no gift card; walk away from deadline; police, ad website and FTC reports. The video tour is not repeated. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-01",
+      "candidate_id": "gsft-mortgage_relief_scam-01-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_rights",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A company says it can lower my mortgage payment and stop the foreclosure if I pay a $1,500 fee up front. I'm two months behind. Should I pay them?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an upfront fee demand and missed payments with foreclosure risk; the sources say never pay upfront, contact the lender and find a HUD-approved counselor.",
+      "source_ref_ids": [
+        "mortgage-upfront-fee",
+        "mortgage-contact-lender",
+        "mortgage-counselor-hud"
+      ],
+      "target": "Hold off on paying that fee.\n1. Never pay a company upfront for promises to help you get relief on paying your mortgage.\n2. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.\n3. Find a HUD-approved counselor in your state.\n4. Visit makinghomeaffordable.gov or call the help line at 1-888-995-HOPE (4673).",
+      "author_note": "Covers: no upfront fee; contact lender right away; HUD-approved counselor; makinghomeaffordable.gov and help line. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-02",
+      "candidate_id": "gsft-mortgage_relief_scam-02-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_types",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A mortgage relief outfit called me from a number I didn't know. They want me to pay by cashier's check and say they'll get my payments lowered. I'm worried it's a scam, what should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a cashier's check demand from an unknown caller; the sources say to be cautious of such payment requests, not to pay before results, keep contact with the lender and report.",
+      "source_ref_ids": [
+        "mortgage-payment-methods",
+        "mortgage-upfront-fee",
+        "mortgage-contact-lender",
+        "mortgage-report-fraud"
+      ],
+      "target": "Hold off on paying by check.\n1. Be cautious of requests to pay only by cashier's check, wire transfer, or mobile payment app.\n2. Don't pay any money until the company delivers the results you want.\n3. Keep in contact with your lender. Don't stop talking to them because a company tells you to.\n4. Report suspected mortgage relief scams to the FTC at ReportFraud.ftc.gov. Report them to your state attorney general.",
+      "author_note": "Covers: cashier's check caution; no payment before results; keep contact with lender; FTC and state attorney general reports. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-03",
+      "candidate_id": "gsft-mortgage_relief_scam-03-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_help",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm hard of hearing so phone calls are really difficult, and I can't leave my apartment right now. A company says it can stop my foreclosure for a $1,200 fee paid up front. What can I do without calling anyone?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states they cannot make phone calls or leave home; the sources give a website route and the upfront fee rule, and the reply uses only those.",
+      "source_ref_ids": [
+        "mortgage-upfront-fee",
+        "mortgage-counselor-hud",
+        "mortgage-contact-lender"
+      ],
+      "target": "Don't pay the $1,200 fee up front. Steps you can take online:\n1. Never pay a company upfront for promises to help you get relief on paying your mortgage.\n2. Visit makinghomeaffordable.gov to find a HUD-approved counselor in your state.\n3. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.",
+      "author_note": "Covers: no upfront fee; makinghomeaffordable.gov route for a counselor; contact lender right away. The phone help line is left out because the user cannot make calls. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-04",
+      "candidate_id": "gsft-mortgage_relief_scam-04-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_types",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Typing this one-handed on my phone so keep it short. A loan modification company wants payment through a mobile payment app to start. Normal?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a one-handed, short-answer limit and a mobile payment app demand; the sources give the caution about mobile payment apps and the no-payment-before-results rule.",
+      "source_ref_ids": [
+        "mortgage-payment-methods",
+        "mortgage-upfront-fee"
+      ],
+      "target": "Be cautious about that.\n1. Be cautious of requests to pay only by cashier's check, wire transfer, or mobile payment app.\n2. Don't pay any money until the company delivers the results you want.",
+      "author_note": "Covers: mobile payment app caution; no payment before results. Kept short per the stated limit. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-05",
+      "candidate_id": "gsft-mortgage_relief_scam-05-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_paid",
+      "behavior": "multiturn",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A company promised to get my loan modified for an upfront fee."
+        },
+        {
+          "role": "assistant",
+          "content": "Never pay a company upfront for promises to help you get relief on paying your mortgage. Contact your lender directly."
+        },
+        {
+          "role": "user",
+          "content": "I already paid them $800 by mobile payment app last week and now they want another fee to finish. My lender hasn't answered yet."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports an upfront payment already made and a second fee demand; the sources give the act-now line, the FTC guidance, the reports and the lender contact.",
+      "source_ref_ids": [
+        "mortgage-paid-scammer",
+        "mortgage-report-fraud",
+        "mortgage-contact-lender"
+      ],
+      "target": "The sooner you act, the better.\n1. Review the FTC's guidance on trying to get your money back.\n2. Report suspected mortgage relief scams to the FTC at ReportFraud.ftc.gov.\n3. Report them to your state attorney general.\n4. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.",
+      "author_note": "Covers: act as soon as possible; FTC guidance on recovering money; FTC and state attorney general reports; contact the lender right away. The earlier payment is not repeated. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-06",
+      "candidate_id": "gsft-mortgage_relief_scam-06-v1",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_types",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A man offered to buy my house from me and lease it back so I can stay."
+        },
+        {
+          "role": "assistant",
+          "content": "Don't give up your deed in exchange for promises to buy the home back or to finance it."
+        },
+        {
+          "role": "user",
+          "content": "I called my servicer and they said they can't help unless I pay this month. Now the company wants me to sign loan papers today and says there's no time to read them."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports pressure to sign papers quickly after a lender said it cannot help; the sources say not to sign under pressure, to read documents that transfer the deed, and to keep in contact with the lender.",
+      "source_ref_ids": [
+        "mortgage-sign-under-pressure",
+        "mortgage-deed-transfer",
+        "mortgage-contact-lender",
+        "mortgage-counselor-hud"
+      ],
+      "target": "Don't sign loan papers under pressure.\n1. Read all documents, especially any that transfer the deed.\n2. Don't transfer your home deed to anyone.\n3. Keep in contact with your lender. Don't stop talking to them because a company tells you to.\n4. Find a HUD-approved counselor in your state.",
+      "author_note": "Covers: no signing under pressure; read documents, especially deed transfers; no deed transfer; keep lender contact; HUD-approved counselor. The servicer call is not repeated. Source gap: none."
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-03",
+      "candidate_id": "gsft-mortgage_relief_scam-03-v2",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_help",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm hard of hearing so phone calls are really difficult, and I can't leave my apartment right now. A company says it can stop my foreclosure for a $1,200 fee paid up front. What can I do without calling anyone?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states they cannot make phone calls or leave home; the sources give a website route and the upfront fee rule, and the reply uses only those.",
+      "source_ref_ids": [
+        "mortgage-upfront-fee",
+        "mortgage-counselor-hud",
+        "mortgage-contact-lender"
+      ],
+      "target": "Don't pay the $1,200 fee up front. Steps you can take now:\n1. Never pay a company upfront for promises to help you get relief on paying your mortgage.\n2. Find HUD's list of approved housing counseling agencies to locate a counselor in your state.\n3. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.",
+      "author_note": "Covers: no upfront fee; HUD's list of approved housing counseling agencies to find a counselor in the state; contact lender right away. The phone help line is left out because the user cannot make calls. Source gap: none.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-mortgage_relief_scam-03-v1",
+          "to_candidate": "gsft-mortgage_relief_scam-03-v2",
+          "reason": "The heading said every step was online, and the step used makinghomeaffordable.gov as a counselor finder, which the page does not say.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-mortgage_relief_scam-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-mortgage_relief_scam-05",
+      "candidate_id": "gsft-mortgage_relief_scam-05-v2",
+      "task_id": "TR-224",
+      "task_group": "mortgage_relief_scam",
+      "source_group": "mortgage_relief_scams_paid",
+      "behavior": "multiturn",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "incomplete",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A company promised to get my loan modified for an upfront fee."
+        },
+        {
+          "role": "assistant",
+          "content": "Never pay a company upfront for promises to help you get relief on paying your mortgage. Contact your lender directly."
+        },
+        {
+          "role": "user",
+          "content": "I already paid them $800 by mobile payment app last week and now they want another fee to finish. My lender hasn't answered yet."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user reports an upfront payment already made and a second fee demand; the sources give the no-further-payment line, the act-now line, the FTC guidance, the reports and the lender contact.",
+      "source_ref_ids": [
+        "mortgage-upfront-fee",
+        "mortgage-paid-scammer",
+        "mortgage-report-fraud",
+        "mortgage-contact-lender"
+      ],
+      "target": "The sooner you act, the better.\n1. Don't pay the second fee. Don't pay any money until the company delivers the results you want.\n2. Contact your mortgage servicer or lender right away if you're struggling to pay or have a foreclosure notice, even if foreclosure has started.\n3. Review the FTC's guidance on trying to get your money back.\n4. Report suspected mortgage relief scams to the FTC at ReportFraud.ftc.gov.\n5. Report them to your state attorney general.",
+      "author_note": "Covers: do not pay the second fee or any money until the company delivers the results; contact the lender right away; FTC guidance on trying to get money back; FTC and state attorney general reports. The earlier payment is not repeated. Source gap: none.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-mortgage_relief_scam-05-v1",
+          "to_candidate": "gsft-mortgage_relief_scam-05-v2",
+          "reason": "The target never told the user to refuse the second fee, and the lender contact and protective steps came after the money-recovery steps.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-mortgage_relief_scam-05-v1"
+        }
+      ]
+    }
+  ]
+}

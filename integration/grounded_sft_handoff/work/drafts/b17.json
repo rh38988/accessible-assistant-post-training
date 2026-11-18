@@ -847,6 +847,103 @@
      "review_id": "review-gsft-stolen_device_protection-04-v1"
     }
    ]
+  },
+  {
+   "id": "gsft-phone_not_charging-05",
+   "candidate_id": "gsft-phone_not_charging-05-v2",
+   "task_id": "TR-148",
+   "task_group": "phone_not_charging",
+   "source_group": "apple_iphone_wont_charge",
+   "behavior": "constraint",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "plain",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My iPhone won't charge. There's no wall outlet where I am, I only have a power bank."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user states an iPhone and cannot use a wall outlet, so the wall outlet step is left out. The power bank is not assumed to qualify as a power accessory, so a computer is offered as a fallback if it does not charge the phone.",
+   "source_ref_ids": [
+    "pnc-iphone-basic"
+   ],
+   "target": "Try these steps:\n1. Plug the iPhone into a power accessory. If the power bank does not charge the iPhone, plug it into a computer instead if you have one.\n2. Restart the iPhone.\n3. Check the charging cable and USB adapter for damage, such as breaks or bent prongs. Stop using any damaged accessory.\n4. Clear debris from the charging port on the bottom of the iPhone, then firmly plug in the cable.\n5. Leave it charging.\n\nIf it still won't turn on or charge, you may need service through the 'Get service' link.",
+   "author_note": "The constraint rules out wall outlets, so the outlet step is not used. The other source steps and the service condition are kept.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-phone_not_charging-05-v1",
+     "to_candidate": "gsft-phone_not_charging-05-v2",
+     "reason": "The decision basis and step 1 treated the user's power bank as a power accessory, which the source does not support.",
+     "changed_fields": [
+      "target",
+      "decision_basis",
+      "messages"
+     ],
+     "review_id": "review-gsft-phone_not_charging-05-v1"
+    }
+   ]
+  },
+  {
+   "id": "gsft-stolen_device_protection-04",
+   "candidate_id": "gsft-stolen_device_protection-04-v3",
+   "task_id": "TR-158",
+   "task_group": "stolen_device_protection",
+   "source_group": "apple_stolen_device_protection_iphone",
+   "behavior": "clarify",
+   "tags": [],
+   "category": "technical_support",
+   "platform": "iPhone or Android",
+   "sensitive": true,
+   "style": "under_specified",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "My phone got taken out of my bag this morning. Which setting should I turn on to keep my accounts safe?"
+    }
+   ],
+   "decision": {
+    "mode": "clarify",
+    "question": "Sorry, that is stressful. The setting you need depends on your phone. Which phone was taken, an iPhone or an Android phone?"
+   },
+   "decision_basis": "The user does not name a device, and the setting differs between the iPhone and Android passages, so one question is needed before answering.",
+   "source_ref_ids": [
+    "sdp-iphone-turnon",
+    "sdp-android-identitycheck-setup"
+   ],
+   "target": "Sorry, that is stressful. The setting you need depends on your phone. Which phone was taken, an iPhone or an Android phone?",
+   "author_note": "Clarify route: one acknowledgment sentence, then the device question only. Tags are empty so that the sensitive account-security case is not a clarify-only safety case.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-stolen_device_protection-04-v1",
+     "to_candidate": "gsft-stolen_device_protection-04-v2",
+     "reason": "The reviewer found no acknowledgment of the theft and no urgency; a sentence acknowledging the stressful situation was added before the device question, which still ends the target.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-stolen_device_protection-04-v1"
+    },
+    {
+     "from_candidate": "gsft-stolen_device_protection-04-v2",
+     "to_candidate": "gsft-stolen_device_protection-04-v3",
+     "reason": "The question asked 'Which phone do you have' although the user said the phone was taken, so it assumed the user still has the phone.",
+     "changed_fields": [
+      "decision",
+      "target",
+      "messages"
+     ],
+     "review_id": "review-gsft-stolen_device_protection-04-v2"
+    }
+   ]
   }
  ]
 }

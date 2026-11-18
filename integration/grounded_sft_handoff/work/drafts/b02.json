@@ -846,6 +846,71 @@
           "review_id": "review-gsft-email_not_working-02-v2"
         }
       ]
+    },
+    {
+      "id": "gsft-email_not_working-02",
+      "candidate_id": "gsft-email_not_working-02-v4",
+      "task_id": "TR-134",
+      "task_group": "email_not_working",
+      "source_group": "microsoft_outlook_com_send",
+      "behavior": "direct",
+      "tags": [
+        "distractor"
+      ],
+      "category": "communication",
+      "platform": "Outlook.com",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm using Outlook.com in my web browser and my emails won't send. Is my storage full or is it something else?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states Outlook.com and asks about storage or another cause, so the Outlook.com send and sign-in passages apply. The Apple iPhone fetch passage is an inapplicable distractor.",
+      "source_ref_ids": [
+        "email-outlook-send",
+        "email-outlook-signin",
+        "email-iphone-fetch"
+      ],
+      "target": "Start with your storage, since a full storage stops mail from being sent or received.\n1. Check your mailbox storage to see what's using space.\n2. If your storage and mailbox aren't full, check your account.\n3. If your password was changed recently, update it.\n4. If your account may be temporarily blocked because of unusual sign-in activity, follow the Microsoft Support article titled \"Learn how to unblock your Outlook.com account\" to unblock your account.\n5. If you can't sign in, use the **Microsoft account sign-in helper**.\n6. Attachments over 25 MB can't be sent.\n7. If a signature causes an error, remove it and resend.",
+      "author_note": "Covers the storage check, the password, the blocked-account article, the sign-in helper, the 25 MB limit and the signature step. The recipient safe-sender advice is left out because it is not about the user's own send failure. The iPhone passage is inapplicable.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-email_not_working-02-v1",
+          "to_candidate": "gsft-email_not_working-02-v2",
+          "reason": "Steps 2 and 3 each combined two conditional actions and step 3 pointed to a linked article without naming it, so they are split and the link is named.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-email_not_working-02-v1"
+        },
+        {
+          "from_candidate": "gsft-email_not_working-02-v2",
+          "to_candidate": "gsft-email_not_working-02-v3",
+          "reason": "Step 4 quoted a link label that the page-level passage does not contain, so the step now refers to the linked article without a label.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-email_not_working-02-v2"
+        },
+        {
+          "from_candidate": "gsft-email_not_working-02-v3",
+          "to_candidate": "gsft-email_not_working-02-v4",
+          "reason": "Step 4 referred to a linked article without naming it; it now names the Microsoft Support article title so the user can find it.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-email_not_working-02"
+        }
+      ]
     }
   ]
 }

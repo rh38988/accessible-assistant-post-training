@@ -30,7 +30,7 @@
    "applicability": "iPhone; the force restart applies only if the iPhone still won't turn on or shows a battery icon on the screen",
    "platform": "iPhone",
    "app": "Charging",
-   "verified_excerpt": "Your iPhone might get slightly warmer while it charges.",
+   "verified_excerpt": "If your device still won't turn on or if the screen displays a battery icon, force your device to restart:",
    "model_visible_text": "On iPhone: Only if the iPhone still won't turn on or shows a battery icon on the screen, force a restart. On iPhone 8 or later and iPhone SE (2nd generation or later): Quickly press volume up, quickly press volume down, then press and hold the side button until the Apple logo appears. On iPhone 7 or iPhone 7 Plus: Press and hold the side (or top) button and volume down until the Apple logo appears. On iPhone 6s or earlier and iPhone SE (1st generation): Press and hold the side (or top) button and the Home button until the Apple logo appears. Then charge for another half hour. If the iPhone still won't turn on or charge, you may need service through the 'Get service' link.",
    "extraction_method": "WebFetch of the official page on 2026-11-17; steps paraphrased from the named section; excerpt quoted exactly by WebFetch Corrected 2026-11-17: duration sentence set to the page wording another half hour."
   },

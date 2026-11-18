@@ -1,605 +1,709 @@
 {
- "batch": "b30",
- "candidates": [
-  {
-   "id": "gsft-public_wifi_safety-01",
-   "candidate_id": "gsft-public_wifi_safety-01-v1",
-   "task_id": "TR-219",
-   "task_group": "public_wifi_safety",
-   "source_group": "ftc_public_wifi_encryption",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
+  "batch": "b30",
+  "candidates": [
     {
-     "role": "user",
-     "content": "im at the airport and want to check my bank balance on their free wifi. what should i check before i sign in? typing on my phone so sorry for typos"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states the situation (free airport Wi-Fi, bank sign-in). The FTC article gives a connection check and password and two-factor advice that apply to any device.",
-   "source_ref_ids": [
-    "public-wifi-encryption-check",
-    "public-wifi-passwords-2fa"
-   ],
-   "target": "Before you sign in on airport Wi-Fi, check the website connection first:\n1. On a computer or mobile browser, look for a **lock symbol** or **https** in the address bar, to the left of the website address.\n2. Create strong passwords and turn on **two-factor authentication** when it's available.",
-   "author_note": "Must cover: lock symbol or https check in the browser; strong passwords and two-factor authentication when available. Source gap: the article gives no bank-login advice, none is added."
-  },
-  {
-   "id": "gsft-public_wifi_safety-02",
-   "candidate_id": "gsft-public_wifi_safety-02-v1",
-   "task_id": "TR-219",
-   "task_group": "public_wifi_safety",
-   "source_group": "ftc_public_wifi_safety_practices",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I work from a coffee shop on their free wifi with my laptop most of the day. Yesterday a guy messaged me saying he was from my bank and wanted me to confirm my login, and it has me nervous. How do I keep my laptop safe from people like him?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states the setting (public Wi-Fi on a laptop) and a scam worry. The FTC article gives impersonator, update and reporting guidance for any device.",
-   "source_ref_ids": [
-    "public-wifi-impersonators",
-    "public-wifi-updates",
-    "public-wifi-report"
-   ],
-   "target": "Protect your laptop and watch for impersonators:\n1. Be wary of anyone who pretends to be someone they're not, like a representative from a well-known company or the government.\n2. Make sure your **security software**, **operating system**, and **internet browser** are up to date.\n3. Turn on **automatic updates** to keep up with the latest protections.\n4. Report scammers to the FTC at ReportFraud.ftc.gov.",
-   "author_note": "Must cover: impersonator warning first; security software, operating system and browser updates; automatic updates; FTC report. Source gap: no advice on confirming logins is in the article, none is added."
-  },
-  {
-   "id": "gsft-unordered_package_scam-01",
-   "candidate_id": "gsft-unordered_package_scam-01-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Got a box today at my apartment from an online store I never ordered from. My name and email are on the label. What do I do now?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a package they did not order. The FTC alert gives steps for any unordered package, plus a marketplace step that applies only if it came from a marketplace.",
-   "source_ref_ids": [
-    "pkg-change-passwords",
-    "pkg-marketplace-notify",
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Protect your accounts and your credit first:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, send the platform a message so it can look into removing the seller.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
-   "author_note": "Must cover all five actions; step 2 is conditional on the marketplace case. Source gap: the article does not say whether to open the package, not added."
-  },
-  {
-   "id": "gsft-unordered_package_scam-02",
-   "candidate_id": "gsft-unordered_package_scam-02-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
-   "source_ref_ids": [
-    "pkg-change-passwords",
-    "pkg-marketplace-notify",
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, send the platform a message so it can look into removing the seller.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
-   "author_note": "Must cover all five actions; the user does not want to message anyone, so the no-contact step must be clear. Step 2 is conditional on the marketplace case."
-  },
-  {
-   "id": "gsft-unordered_package_scam-03",
-   "candidate_id": "gsft-unordered_package_scam-03-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I'd really rather not write back to whoever sent this box, no back and forth at all. I got a package I never ordered. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an unordered package and a limit: no messages to the sender. The reply must respect that limit and use only the alert's steps.",
-   "source_ref_ids": [
-    "pkg-no-contact",
-    "pkg-change-passwords",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Here is what to do without writing to the sender:\n1. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n2. **Change passwords** on all your online shopping accounts in case they were compromised.\n3. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n4. Check your credit weekly for free at **AnnualCreditReport.com**.",
-   "author_note": "Constraint: no messages to the sender. Must keep the no-contact step, which matches the limit, and cover the password, report and credit steps. Marketplace step omitted because the user did not say the package came from a marketplace."
-  },
-  {
-   "id": "gsft-unordered_package_scam-04",
-   "candidate_id": "gsft-unordered_package_scam-04-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Quick one, I'm super busy today. Got a package I didn't order. Just give me the short list please."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an unordered package and asks for a short list. The reply must stay short and use only the alert's steps.",
-   "source_ref_ids": [
-    "pkg-change-passwords",
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Here is the short list:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. Do not contact the sender.\n3. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n4. Check your credit weekly for free at **AnnualCreditReport.com**.",
-   "author_note": "Constraint: the user wants the shortest possible reply. Four steps from the alert; the marketplace step is left out because the user did not name a marketplace."
-  },
-  {
-   "id": "gsft-unordered_package_scam-05",
-   "candidate_id": "gsft-unordered_package_scam-05-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a package I never ordered from a seller I've never heard of."
+      "id": "gsft-public_wifi_safety-01",
+      "candidate_id": "gsft-public_wifi_safety-01-v1",
+      "task_id": "TR-219",
+      "task_group": "public_wifi_safety",
+      "source_group": "ftc_public_wifi_encryption",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "im at the airport and want to check my bank balance on their free wifi. what should i check before i sign in? typing on my phone so sorry for typos"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states the situation (free airport Wi-Fi, bank sign-in). The FTC article gives a connection check and password and two-factor advice that apply to any device.",
+      "source_ref_ids": [
+        "public-wifi-encryption-check",
+        "public-wifi-passwords-2fa"
+      ],
+      "target": "Before you sign in on airport Wi-Fi, check the website connection first:\n1. On a computer or mobile browser, look for a **lock symbol** or **https** in the address bar, to the left of the website address.\n2. Create strong passwords and turn on **two-factor authentication** when it's available.",
+      "author_note": "Must cover: lock symbol or https check in the browser; strong passwords and two-factor authentication when available. Source gap: the article gives no bank-login advice, none is added."
     },
     {
-     "role": "assistant",
-     "content": "Do not contact the sender. Keep the merchandise and report fake reviews and scams to the FTC at ReportFraud.ftc.gov."
+      "id": "gsft-public_wifi_safety-02",
+      "candidate_id": "gsft-public_wifi_safety-02-v1",
+      "task_id": "TR-219",
+      "task_group": "public_wifi_safety",
+      "source_group": "ftc_public_wifi_safety_practices",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I work from a coffee shop on their free wifi with my laptop most of the day. Yesterday a guy messaged me saying he was from my bank and wanted me to confirm my login, and it has me nervous. How do I keep my laptop safe from people like him?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states the setting (public Wi-Fi on a laptop) and a scam worry. The FTC article gives impersonator, update and reporting guidance for any device.",
+      "source_ref_ids": [
+        "public-wifi-impersonators",
+        "public-wifi-updates",
+        "public-wifi-report"
+      ],
+      "target": "Protect your laptop and watch for impersonators:\n1. Be wary of anyone who pretends to be someone they're not, like a representative from a well-known company or the government.\n2. Make sure your **security software**, **operating system**, and **internet browser** are up to date.\n3. Turn on **automatic updates** to keep up with the latest protections.\n4. Report scammers to the FTC at ReportFraud.ftc.gov.",
+      "author_note": "Must cover: impersonator warning first; security software, operating system and browser updates; automatic updates; FTC report. Source gap: no advice on confirming logins is in the article, none is added."
     },
     {
-     "role": "user",
-     "content": "I already changed my shopping account passwords, but another box from that same seller showed up today."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user's last turn states a second package from the same seller and says the password change is already done. The alert's no-contact, report and credit steps still apply.",
-   "source_ref_ids": [
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "For this second box:\n1. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n2. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n3. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
-   "author_note": "Last user turn says the passwords were already changed, so the password step is not repeated. The target must read on its own, since the model sees only the user turns."
-  },
-  {
-   "id": "gsft-unordered_package_scam-06",
-   "candidate_id": "gsft-unordered_package_scam-06-v1",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Got a package from a company I don't know. I didn't order anything from them."
+      "id": "gsft-unordered_package_scam-01",
+      "candidate_id": "gsft-unordered_package_scam-01-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Got a box today at my apartment from an online store I never ordered from. My name and email are on the label. What do I do now?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a package they did not order. The FTC alert gives steps for any unordered package, plus a marketplace step that applies only if it came from a marketplace.",
+      "source_ref_ids": [
+        "pkg-change-passwords",
+        "pkg-marketplace-notify",
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Protect your accounts and your credit first:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, send the platform a message so it can look into removing the seller.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Must cover all five actions; step 2 is conditional on the marketplace case. Source gap: the article does not say whether to open the package, not added."
     },
     {
-     "role": "assistant",
-     "content": "Change passwords on all your online shopping accounts in case they were compromised."
+      "id": "gsft-unordered_package_scam-02",
+      "candidate_id": "gsft-unordered_package_scam-02-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
+      "source_ref_ids": [
+        "pkg-change-passwords",
+        "pkg-marketplace-notify",
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, send the platform a message so it can look into removing the seller.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Must cover all five actions; the user does not want to message anyone, so the no-contact step must be clear. Step 2 is conditional on the marketplace case."
     },
     {
-     "role": "user",
-     "content": "I did that already. Then I emailed the company asking why they sent it, and they wrote back asking for my date of birth and my bank account number."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user's last turn says they already changed passwords and then wrote to the sender, who asked for sensitive details. The alert says not to contact the sender and that responders will likely seek more sensitive information.",
-   "source_ref_ids": [
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Do not reply to them again. Anyone who responds will likely try to get more sensitive information. Next:\n1. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n2. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
-   "author_note": "Last user turn reports an earlier email exchange and a request for sensitive details. The target must not repeat the password change, and must read on its own."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-01",
-   "candidate_id": "gsft-timeshare_resale_scam-01-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A man called saying he has a buyer lined up for my timeshare. He wants $1,200 up front to process the sale. What should I do?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an up-front fee request from a caller offering a timeshare sale. The FTC article gives checks on the reseller and fee and contract guidance for any timeshare resale.",
-   "source_ref_ids": [
-    "ts-research-company",
-    "ts-contact-ag",
-    "ts-upfront-fees",
-    "ts-refund-policy",
-    "ts-everything-writing",
-    "ts-dont-sign"
-   ],
-   "target": "Before you pay anything, check the company:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. It's better to do business with a reseller that takes fees after the timeshare is sold.\n4. If you must pay a fee in advance, get refund policies in writing.\n5. Get everything in writing, and make sure the contract matches verbal promises.\n6. If the deal isn't what you expected or wanted, don't sign the contract.",
-   "author_note": "Must cover the reseller check, the agency contact, the fee timing and refund policy, written terms and not signing if the deal differs. Source gap: the article does not mention hanging up or checking with the resort, not added."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-02",
-   "candidate_id": "gsft-timeshare_resale_scam-02-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "I got a call from a resale company about my timeshare, and now they've emailed me a contract to sign. On the phone they promised a fast sale, but the paper doesn't say anything about that and I'm not sure what the fees are. Should I sign it?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a resale contract that differs from the verbal promise. The FTC article says to check the company, get everything in writing, and not sign a contract that differs from what was expected.",
-   "source_ref_ids": [
-    "ts-research-company",
-    "ts-contact-ag",
-    "ts-everything-writing",
-    "ts-dont-sign"
-   ],
-   "target": "Do not sign until the paperwork matches what you were told:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. Get everything in writing, and make sure the contract matches verbal promises.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
-   "author_note": "The user asks whether to sign. The target gives the source's steps without saying yes or no. The fee detail is not in the source, so it is not stated."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-03",
-   "candidate_id": "gsft-timeshare_resale_scam-03-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "plain",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "Long papers are really hard for me to read. Can you give me the quick version? A company says they can sell my timeshare but I have to pay them first."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an up-front payment request and asks for a quick version. The reply must stay short and use only the article's steps.",
-   "source_ref_ids": [
-    "ts-research-company",
-    "ts-upfront-fees",
-    "ts-refund-policy"
-   ],
-   "target": "Here are the short steps:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. It's better to do business with a reseller that takes fees after the timeshare is sold.\n3. If you must pay a fee in advance, get refund policies in writing.",
-   "author_note": "Constraint: the user wants a short reply. Three steps from the article, with the conditional kept as stated."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-04",
-   "candidate_id": "gsft-timeshare_resale_scam-04-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "constraint",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "under_specified",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "The timeshare company is in a different state from me and I can't travel to check on them in person. How can I find out whether they're legit?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a company out of state and a limit: no in-person visit. The article's check through the state attorney general and consumer agencies can be done without travel.",
-   "source_ref_ids": [
-    "ts-research-company",
-    "ts-contact-ag"
-   ],
-   "target": "Research the company first.\n1. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.",
-   "author_note": "Constraint: no travel. The steps are contact-based. The article does not give a way to check complaints by phone, so none is added."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-05",
-   "candidate_id": "gsft-timeshare_resale_scam-05-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A resale company called about selling my timeshare."
+      "id": "gsft-unordered_package_scam-03",
+      "candidate_id": "gsft-unordered_package_scam-03-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'd really rather not write back to whoever sent this box, no back and forth at all. I got a package I never ordered. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an unordered package and a limit: no messages to the sender. The reply must respect that limit and use only the alert's steps.",
+      "source_ref_ids": [
+        "pkg-no-contact",
+        "pkg-change-passwords",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Here is what to do without writing to the sender:\n1. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n2. **Change passwords** on all your online shopping accounts in case they were compromised.\n3. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n4. Check your credit weekly for free at **AnnualCreditReport.com**.",
+      "author_note": "Constraint: no messages to the sender. Must keep the no-contact step, which matches the limit, and cover the password, report and credit steps. Marketplace step omitted because the user did not say the package came from a marketplace."
     },
     {
-     "role": "assistant",
-     "content": "Research the company first. Contact the State Attorney General and local consumer protection agencies in the state where the reseller is located."
+      "id": "gsft-unordered_package_scam-04",
+      "candidate_id": "gsft-unordered_package_scam-04-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Quick one, I'm super busy today. Got a package I didn't order. Just give me the short list please."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an unordered package and asks for a short list. The reply must stay short and use only the alert's steps.",
+      "source_ref_ids": [
+        "pkg-change-passwords",
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Here is the short list:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. Do not contact the sender.\n3. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n4. Check your credit weekly for free at **AnnualCreditReport.com**.",
+      "author_note": "Constraint: the user wants the shortest possible reply. Four steps from the alert; the marketplace step is left out because the user did not name a marketplace."
     },
     {
-     "role": "user",
-     "content": "I did that and they have no complaints on file. Now they want $1,500 paid before anything happens. Should I pay?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user's last turn says the company check is done with no complaints on file and that $1,500 is requested up front. The article's fee, refund and written-terms guidance applies. The reply must not repeat the agency check.",
-   "source_ref_ids": [
-    "ts-upfront-fees",
-    "ts-refund-policy",
-    "ts-everything-writing",
-    "ts-dont-sign"
-   ],
-   "target": "Before you pay, check these points:\n1. It's better to do business with a reseller that takes fees after the timeshare is sold.\n2. If you must pay a fee in advance, get refund policies in writing.\n3. Get everything in writing, and make sure the contract matches verbal promises.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
-   "author_note": "Last user turn reports the agency check is done and asks about paying. The target must not repeat the agency contact and must read on its own."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-06",
-   "candidate_id": "gsft-timeshare_resale_scam-06-v1",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_report",
-   "behavior": "multiturn",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "failure_recovery",
-   "source_conversation": [
-    {
-     "role": "user",
-     "content": "A resale company promised me a buyer for my timeshare."
+      "id": "gsft-unordered_package_scam-05",
+      "candidate_id": "gsft-unordered_package_scam-05-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a package I never ordered from a seller I've never heard of."
+        },
+        {
+          "role": "assistant",
+          "content": "Do not contact the sender. Keep the merchandise and report fake reviews and scams to the FTC at ReportFraud.ftc.gov."
+        },
+        {
+          "role": "user",
+          "content": "I already changed my shopping account passwords, but another box from that same seller showed up today."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user's last turn states a second package from the same seller and says the password change is already done. The alert's no-contact, report and credit steps still apply.",
+      "source_ref_ids": [
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "For this second box:\n1. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n2. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n3. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Last user turn says the passwords were already changed, so the password step is not repeated. The target must read on its own, since the model sees only the user turns."
     },
     {
-     "role": "assistant",
-     "content": "If you must pay a fee in advance, get refund policies in writing."
+      "id": "gsft-unordered_package_scam-06",
+      "candidate_id": "gsft-unordered_package_scam-06-v1",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Got a package from a company I don't know. I didn't order anything from them."
+        },
+        {
+          "role": "assistant",
+          "content": "Change passwords on all your online shopping accounts in case they were compromised."
+        },
+        {
+          "role": "user",
+          "content": "I did that already. Then I emailed the company asking why they sent it, and they wrote back asking for my date of birth and my bank account number."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user's last turn says they already changed passwords and then wrote to the sender, who asked for sensitive details. The alert says not to contact the sender and that responders will likely seek more sensitive information.",
+      "source_ref_ids": [
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Do not reply to them again. Anyone who responds will likely try to get more sensitive information. Next:\n1. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n2. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Last user turn reports an earlier email exchange and a request for sensitive details. The target must not repeat the password change, and must read on its own."
     },
     {
-     "role": "user",
-     "content": "I already paid their $1,500 fee last month. Now they've stopped answering my calls and the sale never happened."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user's last turn says they already paid the fee and the company stopped answering and no sale happened. The article says to report a scam to the FTC if one has been a victim, and to check the reseller with the state attorney general and consumer agencies.",
-   "source_ref_ids": [
-    "ts-report-ftc",
-    "ts-contact-ag"
-   ],
-   "target": "Here is what to do next:\n1. If you have been a victim of a scam, report it to the **FTC**.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.",
-   "author_note": "Last user turn reports the payment and the lost contact. The target must not repeat the payment or the non-response, and must read on its own."
-  },
-  {
-   "id": "gsft-timeshare_resale_scam-02",
-   "candidate_id": "gsft-timeshare_resale_scam-02-v2",
-   "task_id": "TR-221",
-   "task_group": "timeshare_resale_scam",
-   "source_group": "ftc_timeshare_resale_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
+      "id": "gsft-timeshare_resale_scam-01",
+      "candidate_id": "gsft-timeshare_resale_scam-01-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A man called saying he has a buyer lined up for my timeshare. He wants $1,200 up front to process the sale. What should I do?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an up-front fee request from a caller offering a timeshare sale. The FTC article gives checks on the reseller and fee and contract guidance for any timeshare resale.",
+      "source_ref_ids": [
+        "ts-research-company",
+        "ts-contact-ag",
+        "ts-upfront-fees",
+        "ts-refund-policy",
+        "ts-everything-writing",
+        "ts-dont-sign"
+      ],
+      "target": "Before you pay anything, check the company:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. It's better to do business with a reseller that takes fees after the timeshare is sold.\n4. If you must pay a fee in advance, get refund policies in writing.\n5. Get everything in writing, and make sure the contract matches verbal promises.\n6. If the deal isn't what you expected or wanted, don't sign the contract.",
+      "author_note": "Must cover the reseller check, the agency contact, the fee timing and refund policy, written terms and not signing if the deal differs. Source gap: the article does not mention hanging up or checking with the resort, not added."
+    },
     {
-     "role": "user",
-     "content": "I got a call from a resale company about my timeshare, and now they've emailed me a contract to sign. On the phone they promised a fast sale, but the paper doesn't say anything about that and I'm not sure what the fees are. Should I sign it?"
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states a resale contract that differs from the verbal promise. The FTC article says to check the company, get everything in writing, and not sign a contract that differs from what was expected.",
-   "source_ref_ids": [
-    "ts-research-company",
-    "ts-contact-ag",
-    "ts-everything-writing",
-    "ts-dont-sign"
-   ],
-   "target": "Do not sign until the paperwork matches what you were told:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. Get everything in writing. Make sure the contract matches verbal promises and lists the services, the fees, and when fees are due.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
-   "author_note": "The user asks whether to sign. The target gives the source's steps without saying yes or no. The fee detail is not in the source, so it is not stated.",
-   "correction_history": [
+      "id": "gsft-timeshare_resale_scam-02",
+      "candidate_id": "gsft-timeshare_resale_scam-02-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a call from a resale company about my timeshare, and now they've emailed me a contract to sign. On the phone they promised a fast sale, but the paper doesn't say anything about that and I'm not sure what the fees are. Should I sign it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a resale contract that differs from the verbal promise. The FTC article says to check the company, get everything in writing, and not sign a contract that differs from what was expected.",
+      "source_ref_ids": [
+        "ts-research-company",
+        "ts-contact-ag",
+        "ts-everything-writing",
+        "ts-dont-sign"
+      ],
+      "target": "Do not sign until the paperwork matches what you were told:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. Get everything in writing, and make sure the contract matches verbal promises.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
+      "author_note": "The user asks whether to sign. The target gives the source's steps without saying yes or no. The fee detail is not in the source, so it is not stated."
+    },
     {
-     "from_candidate": "gsft-timeshare_resale_scam-02-v1",
-     "to_candidate": "gsft-timeshare_resale_scam-02-v2",
-     "reason": "Reviewer found step 3 omitted that the contract must list the services, the fees and when fees are due.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-timeshare_resale_scam-02-v1"
-    }
-   ]
-  },
-  {
-   "id": "gsft-unordered_package_scam-02",
-   "candidate_id": "gsft-unordered_package_scam-02-v2",
-   "task_id": "TR-220",
-   "task_group": "unordered_package_scam",
-   "source_group": "ftc_unordered_package_alert",
-   "behavior": "direct",
-   "tags": [
-    "safety",
-    "conditional"
-   ],
-   "category": "online_services",
-   "platform": "Any",
-   "sensitive": false,
-   "style": "verbose",
-   "source_conversation": [
+      "id": "gsft-timeshare_resale_scam-03",
+      "candidate_id": "gsft-timeshare_resale_scam-03-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Long papers are really hard for me to read. Can you give me the quick version? A company says they can sell my timeshare but I have to pay them first."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an up-front payment request and asks for a quick version. The reply must stay short and use only the article's steps.",
+      "source_ref_ids": [
+        "ts-research-company",
+        "ts-upfront-fees",
+        "ts-refund-policy"
+      ],
+      "target": "Here are the short steps:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. It's better to do business with a reseller that takes fees after the timeshare is sold.\n3. If you must pay a fee in advance, get refund policies in writing.",
+      "author_note": "Constraint: the user wants a short reply. Three steps from the article, with the conditional kept as stated."
+    },
     {
-     "role": "user",
-     "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
-    }
-   ],
-   "decision": {
-    "mode": "answer",
-    "question": ""
-   },
-   "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
-   "source_ref_ids": [
-    "pkg-change-passwords",
-    "pkg-marketplace-notify",
-    "pkg-no-contact",
-    "pkg-keep-report",
-    "pkg-check-credit"
-   ],
-   "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, you can send the platform a message (not the seller) so it can look into removing the seller. This is the only message this plan asks you to send.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
-   "author_note": "Must cover all five actions; the user does not want to message anyone, so the no-contact step must be clear. Step 2 is conditional on the marketplace case.",
-   "correction_history": [
+      "id": "gsft-timeshare_resale_scam-04",
+      "candidate_id": "gsft-timeshare_resale_scam-04-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "constraint",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "The timeshare company is in a different state from me and I can't travel to check on them in person. How can I find out whether they're legit?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a company out of state and a limit: no in-person visit. The article's check through the state attorney general and consumer agencies can be done without travel.",
+      "source_ref_ids": [
+        "ts-research-company",
+        "ts-contact-ag"
+      ],
+      "target": "Research the company first.\n1. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.",
+      "author_note": "Constraint: no travel. The steps are contact-based. The article does not give a way to check complaints by phone, so none is added."
+    },
     {
-     "from_candidate": "gsft-unordered_package_scam-02-v1",
-     "to_candidate": "gsft-unordered_package_scam-02-v2",
-     "reason": "Reviewer found step 2 read as starting a message despite the user not wanting to message anyone, and did not mark the marketplace step as conditional.",
-     "changed_fields": [
-      "target",
-      "messages"
-     ],
-     "review_id": "review-gsft-unordered_package_scam-02-v1"
+      "id": "gsft-timeshare_resale_scam-05",
+      "candidate_id": "gsft-timeshare_resale_scam-05-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A resale company called about selling my timeshare."
+        },
+        {
+          "role": "assistant",
+          "content": "Research the company first. Contact the State Attorney General and local consumer protection agencies in the state where the reseller is located."
+        },
+        {
+          "role": "user",
+          "content": "I did that and they have no complaints on file. Now they want $1,500 paid before anything happens. Should I pay?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user's last turn says the company check is done with no complaints on file and that $1,500 is requested up front. The article's fee, refund and written-terms guidance applies. The reply must not repeat the agency check.",
+      "source_ref_ids": [
+        "ts-upfront-fees",
+        "ts-refund-policy",
+        "ts-everything-writing",
+        "ts-dont-sign"
+      ],
+      "target": "Before you pay, check these points:\n1. It's better to do business with a reseller that takes fees after the timeshare is sold.\n2. If you must pay a fee in advance, get refund policies in writing.\n3. Get everything in writing, and make sure the contract matches verbal promises.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
+      "author_note": "Last user turn reports the agency check is done and asks about paying. The target must not repeat the agency contact and must read on its own."
+    },
+    {
+      "id": "gsft-timeshare_resale_scam-06",
+      "candidate_id": "gsft-timeshare_resale_scam-06-v1",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_report",
+      "behavior": "multiturn",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "failure_recovery",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "A resale company promised me a buyer for my timeshare."
+        },
+        {
+          "role": "assistant",
+          "content": "If you must pay a fee in advance, get refund policies in writing."
+        },
+        {
+          "role": "user",
+          "content": "I already paid their $1,500 fee last month. Now they've stopped answering my calls and the sale never happened."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user's last turn says they already paid the fee and the company stopped answering and no sale happened. The article says to report a scam to the FTC if one has been a victim, and to check the reseller with the state attorney general and consumer agencies.",
+      "source_ref_ids": [
+        "ts-report-ftc",
+        "ts-contact-ag"
+      ],
+      "target": "Here is what to do next:\n1. If you have been a victim of a scam, report it to the **FTC**.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.",
+      "author_note": "Last user turn reports the payment and the lost contact. The target must not repeat the payment or the non-response, and must read on its own."
+    },
+    {
+      "id": "gsft-timeshare_resale_scam-02",
+      "candidate_id": "gsft-timeshare_resale_scam-02-v2",
+      "task_id": "TR-221",
+      "task_group": "timeshare_resale_scam",
+      "source_group": "ftc_timeshare_resale_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I got a call from a resale company about my timeshare, and now they've emailed me a contract to sign. On the phone they promised a fast sale, but the paper doesn't say anything about that and I'm not sure what the fees are. Should I sign it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states a resale contract that differs from the verbal promise. The FTC article says to check the company, get everything in writing, and not sign a contract that differs from what was expected.",
+      "source_ref_ids": [
+        "ts-research-company",
+        "ts-contact-ag",
+        "ts-everything-writing",
+        "ts-dont-sign"
+      ],
+      "target": "Do not sign until the paperwork matches what you were told:\n1. If you are thinking about selling your timeshare through a resale company, research the company first.\n2. Contact the **State Attorney General** and local consumer protection agencies in the state where the reseller is located.\n3. Get everything in writing. Make sure the contract matches verbal promises and lists the services, the fees, and when fees are due.\n4. If the deal isn't what you expected or wanted, don't sign the contract.",
+      "author_note": "The user asks whether to sign. The target gives the source's steps without saying yes or no. The fee detail is not in the source, so it is not stated.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-timeshare_resale_scam-02-v1",
+          "to_candidate": "gsft-timeshare_resale_scam-02-v2",
+          "reason": "Reviewer found step 3 omitted that the contract must list the services, the fees and when fees are due.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-timeshare_resale_scam-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-unordered_package_scam-02",
+      "candidate_id": "gsft-unordered_package_scam-02-v2",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
+      "source_ref_ids": [
+        "pkg-change-passwords",
+        "pkg-marketplace-notify",
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. If the package came from Amazon or another online marketplace, you can send the platform a message (not the seller) so it can look into removing the seller. This is the only message this plan asks you to send.\n3. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n4. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n5. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Must cover all five actions; the user does not want to message anyone, so the no-contact step must be clear. Step 2 is conditional on the marketplace case.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-unordered_package_scam-02-v1",
+          "to_candidate": "gsft-unordered_package_scam-02-v2",
+          "reason": "Reviewer found step 2 read as starting a message despite the user not wanting to message anyone, and did not mark the marketplace step as conditional.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-unordered_package_scam-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-public_wifi_safety-01",
+      "candidate_id": "gsft-public_wifi_safety-01-v2",
+      "task_id": "TR-219",
+      "task_group": "public_wifi_safety",
+      "source_group": "ftc_public_wifi_encryption",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "im at the airport and want to check my bank balance on their free wifi. what should i check before i sign in? typing on my phone so sorry for typos"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states the situation (free airport Wi-Fi, bank sign-in). The FTC article gives a connection check and password and two-factor advice that apply to any device.",
+      "source_ref_ids": [
+        "public-wifi-encryption-check",
+        "public-wifi-passwords-2fa"
+      ],
+      "target": "Before you sign in on airport Wi-Fi, check the website connection first:\n1. On a computer or mobile browser, look for a **lock symbol** or **https** in the address bar, to the left of the website address.\n2. Create and use strong passwords.\n3. Turn on **two-factor authentication** when it's available.",
+      "author_note": "Must cover: lock symbol or https check in the browser; strong passwords and two-factor authentication when available. Source gap: the article gives no bank-login advice, none is added.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-public_wifi_safety-01-v1",
+          "to_candidate": "gsft-public_wifi_safety-01-v2",
+          "reason": "Step 2 combined two separate actions, strong passwords and two-factor authentication, so it is split into two numbered steps.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-public_wifi_safety-01-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-unordered_package_scam-02",
+      "candidate_id": "gsft-unordered_package_scam-02-v3",
+      "task_id": "TR-220",
+      "task_group": "unordered_package_scam",
+      "source_group": "ftc_unordered_package_alert",
+      "behavior": "direct",
+      "tags": [
+        "safety",
+        "conditional"
+      ],
+      "category": "online_services",
+      "platform": "Any",
+      "sensitive": false,
+      "style": "verbose",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "So a few kitchen gadgets showed up at my door last week that I never bought. The seller is listed in my shopping app, and I just want to know if my account is in trouble or if I need to do anything about it. I also don't really want to start messaging anybody, because I'm not good with that stuff and I'd rather keep it simple. Thanks for helping me with this, it has been a stressful week."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an unordered package from a seller in a shopping app. The FTC alert covers shopping account passwords, the marketplace notice, not contacting the sender, reporting and credit checks.",
+      "source_ref_ids": [
+        "pkg-change-passwords",
+        "pkg-marketplace-notify",
+        "pkg-no-contact",
+        "pkg-keep-report",
+        "pkg-check-credit"
+      ],
+      "target": "Check your shopping account and your credit:\n1. **Change passwords** on all your online shopping accounts in case they were compromised.\n2. Do not contact the sender. Anyone who responds will likely try to get more sensitive information.\n3. Keep the merchandise and report fake reviews and scams to the FTC at **ReportFraud.ftc.gov**.\n4. Check your credit weekly for free at **AnnualCreditReport.com** and watch for signs of identity theft.",
+      "author_note": "Must cover the four actions that need no message: change passwords, do not contact the sender, keep the merchandise and report, and check credit. The marketplace step is left out because the user does not want to message anyone and the marketplace condition is not confirmed.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-unordered_package_scam-02-v1",
+          "to_candidate": "gsft-unordered_package_scam-02-v2",
+          "reason": "Reviewer found step 2 read as starting a message despite the user not wanting to message anyone, and did not mark the marketplace step as conditional.",
+          "changed_fields": [
+            "target",
+            "messages"
+          ],
+          "review_id": "review-gsft-unordered_package_scam-02-v1"
+        },
+        {
+          "from_candidate": "gsft-unordered_package_scam-02-v2",
+          "to_candidate": "gsft-unordered_package_scam-02-v3",
+          "reason": "Step 2 asked the user to message the platform although the user does not want to message anyone, and the closing sentence claimed that message was the only one needed.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-unordered_package_scam-02-v2"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

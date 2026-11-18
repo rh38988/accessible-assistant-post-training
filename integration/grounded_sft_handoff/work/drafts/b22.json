@@ -1,134 +1,752 @@
-{"batch": "b22", "candidates": [
- {"id": "gsft-messages_not_sending-01", "candidate_id": "gsft-messages_not_sending-01-v1", "task_id": "TR-135", "task_group": "messages_not_sending", "source_group": "apple_messages_not_delivered_iphone", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "communication", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "the red exclamation mark next to my text says Not Delivered on my iPhone. what do i do"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user names an iPhone and a red exclamation point with Not Delivered, which matches the iPhone section. The Android passage is for another platform and is not used.",
-  "source_ref_ids": ["msgns-iphone-not-delivered", "msgns-android-checks"],
-  "target": "Your message shows Not Delivered, so try these steps in order.\n1. Check your network connection.\n2. Tap the red exclamation point, then tap **Try Again**.\n3. If the message still won't send, tap the red exclamation point, then tap **Send as Text Message**.",
-  "author_note": "Cover the three iPhone steps in order and keep the condition on step 3. Leave out the messaging rates note, which is billing."},
-
- {"id": "gsft-messages_not_sending-02", "candidate_id": "gsft-messages_not_sending-02-v1", "task_id": "TR-150", "task_group": "messages_not_sending", "source_group": "google_messages_fix_android", "behavior": "direct", "tags": ["conditional", "distractor"], "category": "communication", "platform": "Android", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I switched from an iPhone to an Android phone last week. My texts to my sister stay stuck on sending in Google Messages. What should I check?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user names an Android phone and Google Messages, so the Android checks and conditions apply. The user switched from an iPhone, which meets the iMessage condition. The iPhone section is for another platform and is not used.",
-  "source_ref_ids": ["msgns-android-checks", "msgns-android-conditions", "msgns-iphone-not-delivered"],
-  "target": "Check these in Google Messages on your Android phone.\n1. Make sure you have the most updated version of **Google Messages**.\n2. If you have a SIM card, ensure that it is inserted properly.\n3. Verify that **Google Messages** is set as your default texting app.\n4. Check your plan or credit balance to see that you have enough to send/receive messages.\n5. See if you have signal.\n6. Check if you're on airplane mode. If you are, turn it off.\n7. If you're switching from an iPhone, make sure you've deactivated iMessage for your number.",
-  "author_note": "Cover all six Android checks and the iMessage condition, which applies because the user switched from an iPhone. The Fi and RCS chat lines do not apply to this user and are left out."},
-
- {"id": "gsft-messages_not_sending-03", "candidate_id": "gsft-messages_not_sending-03-v1", "task_id": "TR-135", "task_group": "messages_not_sending", "source_group": "apple_messages_not_delivered_iphone", "behavior": "clarify", "tags": [], "category": "communication", "platform": "iPhone or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "My texts keep failing and a little red warning shows up beside them. Can you help me fix it?"}],
-  "decision": {"mode": "clarify", "question": "Do you have an iPhone or an Android phone?"},
-  "decision_basis": "The user does not name the phone. The iPhone steps (red exclamation point, Try Again) and the Google Messages checks on Android are different, so one device question is needed first.",
-  "source_ref_ids": ["msgns-iphone-not-delivered", "msgns-android-checks"],
-  "target": "Do you have an iPhone or an Android phone?",
-  "author_note": "Clarify only. The target is the device question."},
-
- {"id": "gsft-messages_not_sending-04", "candidate_id": "gsft-messages_not_sending-04-v1", "task_id": "TR-150", "task_group": "messages_not_sending", "source_group": "google_messages_fix_android", "behavior": "clarify", "tags": [], "category": "communication", "platform": "iPhone or Android", "sensitive": false, "style": "under_specified",
-  "source_conversation": [{"role": "user", "content": "Messages to my kids won't send from my phone since last night. Everything else on it works. What should I look at?"}],
-  "decision": {"mode": "clarify", "question": "Is your phone an iPhone or an Android?"},
-  "decision_basis": "The user says only my phone. The iPhone section and the Android Google Messages section give different steps, so the device must be known before answering.",
-  "source_ref_ids": ["msgns-android-checks", "msgns-iphone-not-delivered"],
-  "target": "Is your phone an iPhone or an Android?",
-  "author_note": "Clarify only. The target is the device question."},
-
- {"id": "gsft-messages_not_sending-05", "candidate_id": "gsft-messages_not_sending-05-v1", "task_id": "TR-150", "task_group": "messages_not_sending", "source_group": "google_messages_fix_android", "behavior": "constraint", "tags": [], "category": "communication", "platform": "Android", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My texts stopped sending on my Android and I'm standing in line at the bank with about a minute. Just give me the quickest things to check, nothing fancy."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user names Android and Google Messages and asks for the shortest checks, so the three quickest checks from the Android section are given.",
-  "source_ref_ids": ["msgns-android-checks"],
-  "target": "Here are the quickest checks in Google Messages.\n1. See if you have signal.\n2. Check if you're on airplane mode. If you are, turn it off.\n3. Verify that **Google Messages** is set as your default texting app.",
-  "author_note": "The user asked for the shortest way, so the reply keeps only the signal, airplane mode and default texting app checks. The other Android checks are left out for this constraint."},
-
- {"id": "gsft-no_service-01", "candidate_id": "gsft-no_service-01-v1", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone has said No Service since this morning and I'm at home. what can i try"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone showing No Service at home, so the iPhone reconnect, restart, carrier settings and carrier contact steps apply.",
-  "source_ref_ids": ["nosvc-iphone-airplane", "nosvc-iphone-restart", "nosvc-iphone-carrier-settings", "nosvc-iphone-contact-carrier"],
-  "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Make sure that your device is connected to Wi-Fi.\n6. Open the **Settings** app.\n7. Tap **General**.\n8. Tap **About**. If an update is available, you'll see an option to update your carrier settings.\n9. If you still see No Service after following these steps, contact your carrier.",
-  "author_note": "Cover the Airplane Mode reconnect, the restart, the Wi-Fi carrier settings check and the contact carrier line. The user is at home, so the Wi-Fi step applies."},
-
- {"id": "gsft-no_service-02", "candidate_id": "gsft-no_service-02-v1", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm in Japan on a trip with only my one eSIM line and my iPhone shows No Service. How do I fix it?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with a single eSIM line while traveling abroad, so the traveling steps for a single SIM or eSIM apply, plus the carrier contact line.",
-  "source_ref_ids": ["nosvc-iphone-travel", "nosvc-iphone-contact-carrier"],
-  "target": "If you're traveling internationally, make sure that your device is set up for data roaming.\n1. Open the **Settings** app.\n2. Tap **Cellular** or **Cellular Data**.\n3. If your device has a single SIM card or eSIM, turn on **Cellular Data**, then tap **Cellular Data Options**.\n4. Turn on **Data Roaming**.\n5. If you still see No Service after following these steps, contact your carrier.",
-  "author_note": "The user has a single eSIM line, so the dual SIM branch is left out. The condition on step 3 is kept."},
-
- {"id": "gsft-no_service-03", "candidate_id": "gsft-no_service-03-v1", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone says No Service and I'm on a bus with no Wi-Fi, so I can't connect to anything. What can I do right now?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with No Service and no Wi-Fi, so the steps that need no Wi-Fi apply: reconnect, restart and the carrier contact line.",
-  "source_ref_ids": ["nosvc-iphone-airplane", "nosvc-iphone-restart", "nosvc-iphone-contact-carrier"],
-  "target": "Try these steps in order.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. If you still see No Service after following these steps, contact your carrier.",
-  "author_note": "The user has no Wi-Fi, so the Wi-Fi carrier settings check is left out. The reply uses only the reconnect, restart and carrier contact steps."},
-
- {"id": "gsft-touchscreen_unresponsive-01", "candidate_id": "gsft-touchscreen_unresponsive-01-v1", "task_id": "TR-137", "task_group": "touchscreen_unresponsive", "source_group": "apple_screen_not_working_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone 14 screen stopped responding to my finger completely this afternoon. I tried pressing harder and it still does nothing."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone whose screen does not respond to touch, so the iPhone steps for an unresponsive or intermittent touchscreen apply.",
-  "source_ref_ids": ["touch-iphone-restart-clean", "touch-iphone-accessories-cases"],
-  "target": "Try these steps on your iPhone in order.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.",
-  "author_note": "Cover all five steps. The step 4 condition is kept as written in the iPhone section."},
-
- {"id": "gsft-touchscreen_unresponsive-02", "candidate_id": "gsft-touchscreen_unresponsive-02-v1", "task_id": "TR-137", "task_group": "touchscreen_unresponsive", "source_group": "apple_screen_not_working_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "my iphone screen only works if its plugged into the charger. unplugged it randomly ignores my taps. ugh"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone whose screen ignores taps at random and works only while charging, which matches the intermittent section for iPhone. The accessory condition applies.",
-  "source_ref_ids": ["touch-iphone-restart-clean", "touch-iphone-accessories-cases"],
-  "target": "Go through these steps on your iPhone in order.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.",
-  "author_note": "Cover all five steps. The charger is an accessory, so the step 4 condition applies to this user."},
-
- {"id": "gsft-touchscreen_unresponsive-03", "candidate_id": "gsft-touchscreen_unresponsive-03-v1", "task_id": "TR-137", "task_group": "touchscreen_unresponsive", "source_group": "apple_screen_not_working_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I have arthritis and can't pull a case off my iPhone without pain, but my screen has gone dead to touch. What can I do without taking the case off?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with a dead touchscreen and a limit: the case cannot be removed. The iPhone steps apply except the case removal step.",
-  "source_ref_ids": ["touch-iphone-restart-clean", "touch-iphone-accessories-cases"],
-  "target": "Start with these steps on your iPhone.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.",
-  "author_note": "The user cannot remove the case, so the remove cases or screen protectors step is left out. The other iPhone steps and the accessory condition are kept."},
-
- {"id": "gsft-no_service-01", "candidate_id": "gsft-no_service-01-v2", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone has said No Service since this morning and I'm at home. what can i try"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone showing No Service at home, so the iPhone reconnect, restart, carrier settings and carrier contact steps apply.",
-  "source_ref_ids": ["nosvc-iphone-airplane", "nosvc-iphone-restart", "nosvc-iphone-carrier-settings", "nosvc-iphone-contact-carrier"],
-  "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Make sure that your device is connected to Wi-Fi.\n6. Open the **Settings** app.\n7. Tap **General**.\n8. Tap **About**. If an update is available, you'll see an option to update your carrier settings.\n9. Issues with your carrier or account might affect your service. Contact your carrier.",
-  "author_note": "Cover the Airplane Mode reconnect, the restart, the Wi-Fi carrier settings check and the carrier heading line. The user is at home, so the Wi-Fi step applies.",
-  "correction_history": [{"from_candidate": "gsft-no_service-01-v1", "to_candidate": "gsft-no_service-01-v2", "reason": "Step 9 cited a carrier sentence that sits under the 3G section, so it now uses the Contact your carrier heading text and drops the No Service condition.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-no_service-01-v1"}]},
-
- {"id": "gsft-no_service-02", "candidate_id": "gsft-no_service-02-v2", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I'm in Japan on a trip with only my one eSIM line and my iPhone shows No Service. How do I fix it?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with a single eSIM line while traveling abroad, so the traveling steps for a single SIM or eSIM apply, plus the carrier heading line.",
-  "source_ref_ids": ["nosvc-iphone-travel", "nosvc-iphone-contact-carrier"],
-  "target": "If you're traveling internationally, make sure that your device is set up for data roaming.\n1. Open the **Settings** app.\n2. Tap **Cellular** or **Cellular Data**.\n3. If your device has a single SIM card or eSIM, turn on **Cellular Data**, then tap **Cellular Data Options**.\n4. Turn on **Data Roaming**.\n5. Issues with your carrier or account might affect your service. Contact your carrier.",
-  "author_note": "The user has a single eSIM line, so the dual SIM branch is left out. The condition on step 3 is kept. The carrier heading line replaces the No Service closing line.",
-  "correction_history": [{"from_candidate": "gsft-no_service-02-v1", "to_candidate": "gsft-no_service-02-v2", "reason": "Step 5 cited a carrier sentence that sits under the 3G section, so it now uses the Contact your carrier heading text and drops the No Service condition.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-no_service-02-v1"}]},
-
- {"id": "gsft-no_service-03", "candidate_id": "gsft-no_service-03-v2", "task_id": "TR-136", "task_group": "no_service", "source_group": "apple_no_service_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone says No Service and I'm on a bus with no Wi-Fi, so I can't connect to anything. What can I do right now?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with No Service and no Wi-Fi, so the steps that need no Wi-Fi apply: reconnect, restart and the carrier heading line.",
-  "source_ref_ids": ["nosvc-iphone-airplane", "nosvc-iphone-restart", "nosvc-iphone-contact-carrier"],
-  "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off. Try these steps in order.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Issues with your carrier or account might affect your service. Contact your carrier.",
-  "author_note": "The user has no Wi-Fi, so the Wi-Fi carrier settings check is left out. The source condition on the Airplane Mode step is kept. The reply uses only the reconnect, restart and carrier heading steps.",
-  "correction_history": [{"from_candidate": "gsft-no_service-03-v1", "to_candidate": "gsft-no_service-03-v2", "reason": "The reconnect step lacked the page's condition on cellular availability, and step 5 cited a carrier sentence under the 3G section, so the condition was added and step 5 uses the Contact your carrier heading text.", "changed_fields": ["target", "author_note", "messages"], "review_id": "review-gsft-no_service-03-v1"}]},
-
- {"id": "gsft-touchscreen_unresponsive-01", "candidate_id": "gsft-touchscreen_unresponsive-01-v2", "task_id": "TR-137", "task_group": "touchscreen_unresponsive", "source_group": "apple_screen_not_working_iphone", "behavior": "direct", "tags": ["conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "My iPhone 14 screen stopped responding to my finger completely this afternoon. I tried pressing harder and it still does nothing."}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone whose screen does not respond to touch. The iPhone steps come from the section for unresponsive or intermittent touchscreens, and the page's Get support sentence covers the case where they do not help.",
-  "source_ref_ids": ["touch-iphone-restart-clean", "touch-iphone-accessories-cases", "touch-iphone-get-support"],
-  "target": "Your screen has stopped responding completely. These steps are for screens that are too sensitive or respond only sometimes, so try them.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.\n6. If your screen still isn't working, you might need to set up service for your device.",
-  "author_note": "Cover the five steps and the Get support step. The intro states that the steps are for too-sensitive or intermittent screens, so the user knows they may not fix a dead screen. The step 4 condition is kept as written in the iPhone section.",
-  "correction_history": [{"from_candidate": "gsft-touchscreen_unresponsive-01-v1", "to_candidate": "gsft-touchscreen_unresponsive-01-v2", "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.", "changed_fields": ["target", "source_ref_ids", "author_note", "messages"], "review_id": "review-gsft-touchscreen_unresponsive-01-v1"}]},
-
- {"id": "gsft-touchscreen_unresponsive-03", "candidate_id": "gsft-touchscreen_unresponsive-03-v2", "task_id": "TR-137", "task_group": "touchscreen_unresponsive", "source_group": "apple_screen_not_working_iphone", "behavior": "constraint", "tags": [], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
-  "source_conversation": [{"role": "user", "content": "I have arthritis and can't pull a case off my iPhone without pain, but my screen has gone dead to touch. What can I do without taking the case off?"}],
-  "decision": {"mode": "answer", "question": ""},
-  "decision_basis": "The user states an iPhone with a dead touchscreen and a limit: the case cannot be removed. The iPhone steps apply except the case removal step, and the page's Get support sentence covers the case where they do not help.",
-  "source_ref_ids": ["touch-iphone-restart-clean", "touch-iphone-accessories-cases", "touch-iphone-get-support"],
-  "target": "These steps are for screens that are too sensitive or respond only sometimes, so try them.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. If your screen still isn't working, you might need to set up service for your device.",
-  "author_note": "The user cannot remove the case, so the remove cases or screen protectors step is left out. The intro states the limit of the steps, and the Get support sentence is the final step.",
-  "correction_history": [{"from_candidate": "gsft-touchscreen_unresponsive-03-v1", "to_candidate": "gsft-touchscreen_unresponsive-03-v2", "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.", "changed_fields": ["target", "source_ref_ids", "author_note", "messages"], "review_id": "review-gsft-touchscreen_unresponsive-03-v1"}]}
-]}
+{
+  "batch": "b22",
+  "candidates": [
+    {
+      "id": "gsft-messages_not_sending-01",
+      "candidate_id": "gsft-messages_not_sending-01-v1",
+      "task_id": "TR-135",
+      "task_group": "messages_not_sending",
+      "source_group": "apple_messages_not_delivered_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional",
+        "distractor"
+      ],
+      "category": "communication",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "the red exclamation mark next to my text says Not Delivered on my iPhone. what do i do"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names an iPhone and a red exclamation point with Not Delivered, which matches the iPhone section. The Android passage is for another platform and is not used.",
+      "source_ref_ids": [
+        "msgns-iphone-not-delivered",
+        "msgns-android-checks"
+      ],
+      "target": "Your message shows Not Delivered, so try these steps in order.\n1. Check your network connection.\n2. Tap the red exclamation point, then tap **Try Again**.\n3. If the message still won't send, tap the red exclamation point, then tap **Send as Text Message**.",
+      "author_note": "Cover the three iPhone steps in order and keep the condition on step 3. Leave out the messaging rates note, which is billing."
+    },
+    {
+      "id": "gsft-messages_not_sending-02",
+      "candidate_id": "gsft-messages_not_sending-02-v1",
+      "task_id": "TR-150",
+      "task_group": "messages_not_sending",
+      "source_group": "google_messages_fix_android",
+      "behavior": "direct",
+      "tags": [
+        "conditional",
+        "distractor"
+      ],
+      "category": "communication",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I switched from an iPhone to an Android phone last week. My texts to my sister stay stuck on sending in Google Messages. What should I check?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names an Android phone and Google Messages, so the Android checks and conditions apply. The user switched from an iPhone, which meets the iMessage condition. The iPhone section is for another platform and is not used.",
+      "source_ref_ids": [
+        "msgns-android-checks",
+        "msgns-android-conditions",
+        "msgns-iphone-not-delivered"
+      ],
+      "target": "Check these in Google Messages on your Android phone.\n1. Make sure you have the most updated version of **Google Messages**.\n2. If you have a SIM card, ensure that it is inserted properly.\n3. Verify that **Google Messages** is set as your default texting app.\n4. Check your plan or credit balance to see that you have enough to send/receive messages.\n5. See if you have signal.\n6. Check if you're on airplane mode. If you are, turn it off.\n7. If you're switching from an iPhone, make sure you've deactivated iMessage for your number.",
+      "author_note": "Cover all six Android checks and the iMessage condition, which applies because the user switched from an iPhone. The Fi and RCS chat lines do not apply to this user and are left out."
+    },
+    {
+      "id": "gsft-messages_not_sending-03",
+      "candidate_id": "gsft-messages_not_sending-03-v1",
+      "task_id": "TR-135",
+      "task_group": "messages_not_sending",
+      "source_group": "apple_messages_not_delivered_iphone",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "communication",
+      "platform": "iPhone or Android",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My texts keep failing and a little red warning shows up beside them. Can you help me fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Do you have an iPhone or an Android phone?"
+      },
+      "decision_basis": "The user does not name the phone. The iPhone steps (red exclamation point, Try Again) and the Google Messages checks on Android are different, so one device question is needed first.",
+      "source_ref_ids": [
+        "msgns-iphone-not-delivered",
+        "msgns-android-checks"
+      ],
+      "target": "Do you have an iPhone or an Android phone?",
+      "author_note": "Clarify only. The target is the device question."
+    },
+    {
+      "id": "gsft-messages_not_sending-04",
+      "candidate_id": "gsft-messages_not_sending-04-v1",
+      "task_id": "TR-150",
+      "task_group": "messages_not_sending",
+      "source_group": "google_messages_fix_android",
+      "behavior": "clarify",
+      "tags": [],
+      "category": "communication",
+      "platform": "iPhone or Android",
+      "sensitive": false,
+      "style": "under_specified",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "Messages to my kids won't send from my phone since last night. Everything else on it works. What should I look at?"
+        }
+      ],
+      "decision": {
+        "mode": "clarify",
+        "question": "Is your phone an iPhone or an Android?"
+      },
+      "decision_basis": "The user says only my phone. The iPhone section and the Android Google Messages section give different steps, so the device must be known before answering.",
+      "source_ref_ids": [
+        "msgns-android-checks",
+        "msgns-iphone-not-delivered"
+      ],
+      "target": "Is your phone an iPhone or an Android?",
+      "author_note": "Clarify only. The target is the device question."
+    },
+    {
+      "id": "gsft-messages_not_sending-05",
+      "candidate_id": "gsft-messages_not_sending-05-v1",
+      "task_id": "TR-150",
+      "task_group": "messages_not_sending",
+      "source_group": "google_messages_fix_android",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "communication",
+      "platform": "Android",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My texts stopped sending on my Android and I'm standing in line at the bank with about a minute. Just give me the quickest things to check, nothing fancy."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user names Android and Google Messages and asks for the shortest checks, so the three quickest checks from the Android section are given.",
+      "source_ref_ids": [
+        "msgns-android-checks"
+      ],
+      "target": "Here are the quickest checks in Google Messages.\n1. See if you have signal.\n2. Check if you're on airplane mode. If you are, turn it off.\n3. Verify that **Google Messages** is set as your default texting app.",
+      "author_note": "The user asked for the shortest way, so the reply keeps only the signal, airplane mode and default texting app checks. The other Android checks are left out for this constraint."
+    },
+    {
+      "id": "gsft-no_service-01",
+      "candidate_id": "gsft-no_service-01-v1",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone has said No Service since this morning and I'm at home. what can i try"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone showing No Service at home, so the iPhone reconnect, restart, carrier settings and carrier contact steps apply.",
+      "source_ref_ids": [
+        "nosvc-iphone-airplane",
+        "nosvc-iphone-restart",
+        "nosvc-iphone-carrier-settings",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Make sure that your device is connected to Wi-Fi.\n6. Open the **Settings** app.\n7. Tap **General**.\n8. Tap **About**. If an update is available, you'll see an option to update your carrier settings.\n9. If you still see No Service after following these steps, contact your carrier.",
+      "author_note": "Cover the Airplane Mode reconnect, the restart, the Wi-Fi carrier settings check and the contact carrier line. The user is at home, so the Wi-Fi step applies."
+    },
+    {
+      "id": "gsft-no_service-02",
+      "candidate_id": "gsft-no_service-02-v1",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in Japan on a trip with only my one eSIM line and my iPhone shows No Service. How do I fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a single eSIM line while traveling abroad, so the traveling steps for a single SIM or eSIM apply, plus the carrier contact line.",
+      "source_ref_ids": [
+        "nosvc-iphone-travel",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If you're traveling internationally, make sure that your device is set up for data roaming.\n1. Open the **Settings** app.\n2. Tap **Cellular** or **Cellular Data**.\n3. If your device has a single SIM card or eSIM, turn on **Cellular Data**, then tap **Cellular Data Options**.\n4. Turn on **Data Roaming**.\n5. If you still see No Service after following these steps, contact your carrier.",
+      "author_note": "The user has a single eSIM line, so the dual SIM branch is left out. The condition on step 3 is kept."
+    },
+    {
+      "id": "gsft-no_service-03",
+      "candidate_id": "gsft-no_service-03-v1",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone says No Service and I'm on a bus with no Wi-Fi, so I can't connect to anything. What can I do right now?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with No Service and no Wi-Fi, so the steps that need no Wi-Fi apply: reconnect, restart and the carrier contact line.",
+      "source_ref_ids": [
+        "nosvc-iphone-airplane",
+        "nosvc-iphone-restart",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "Try these steps in order.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. If you still see No Service after following these steps, contact your carrier.",
+      "author_note": "The user has no Wi-Fi, so the Wi-Fi carrier settings check is left out. The reply uses only the reconnect, restart and carrier contact steps."
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-01",
+      "candidate_id": "gsft-touchscreen_unresponsive-01-v1",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone 14 screen stopped responding to my finger completely this afternoon. I tried pressing harder and it still does nothing."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone whose screen does not respond to touch, so the iPhone steps for an unresponsive or intermittent touchscreen apply.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases"
+      ],
+      "target": "Try these steps on your iPhone in order.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.",
+      "author_note": "Cover all five steps. The step 4 condition is kept as written in the iPhone section."
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-02",
+      "candidate_id": "gsft-touchscreen_unresponsive-02-v1",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "my iphone screen only works if its plugged into the charger. unplugged it randomly ignores my taps. ugh"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone whose screen ignores taps at random and works only while charging, which matches the intermittent section for iPhone. The accessory condition applies.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases"
+      ],
+      "target": "Go through these steps on your iPhone in order.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.",
+      "author_note": "Cover all five steps. The charger is an accessory, so the step 4 condition applies to this user."
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-03",
+      "candidate_id": "gsft-touchscreen_unresponsive-03-v1",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have arthritis and can't pull a case off my iPhone without pain, but my screen has gone dead to touch. What can I do without taking the case off?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a dead touchscreen and a limit: the case cannot be removed. The iPhone steps apply except the case removal step.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases"
+      ],
+      "target": "Start with these steps on your iPhone.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.",
+      "author_note": "The user cannot remove the case, so the remove cases or screen protectors step is left out. The other iPhone steps and the accessory condition are kept."
+    },
+    {
+      "id": "gsft-no_service-01",
+      "candidate_id": "gsft-no_service-01-v2",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone has said No Service since this morning and I'm at home. what can i try"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone showing No Service at home, so the iPhone reconnect, restart, carrier settings and carrier contact steps apply.",
+      "source_ref_ids": [
+        "nosvc-iphone-airplane",
+        "nosvc-iphone-restart",
+        "nosvc-iphone-carrier-settings",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Make sure that your device is connected to Wi-Fi.\n6. Open the **Settings** app.\n7. Tap **General**.\n8. Tap **About**. If an update is available, you'll see an option to update your carrier settings.\n9. Issues with your carrier or account might affect your service. Contact your carrier.",
+      "author_note": "Cover the Airplane Mode reconnect, the restart, the Wi-Fi carrier settings check and the carrier heading line. The user is at home, so the Wi-Fi step applies.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-no_service-01-v1",
+          "to_candidate": "gsft-no_service-01-v2",
+          "reason": "Step 9 cited a carrier sentence that sits under the 3G section, so it now uses the Contact your carrier heading text and drops the No Service condition.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-no_service-01-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-no_service-02",
+      "candidate_id": "gsft-no_service-02-v2",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in Japan on a trip with only my one eSIM line and my iPhone shows No Service. How do I fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a single eSIM line while traveling abroad, so the traveling steps for a single SIM or eSIM apply, plus the carrier heading line.",
+      "source_ref_ids": [
+        "nosvc-iphone-travel",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If you're traveling internationally, make sure that your device is set up for data roaming.\n1. Open the **Settings** app.\n2. Tap **Cellular** or **Cellular Data**.\n3. If your device has a single SIM card or eSIM, turn on **Cellular Data**, then tap **Cellular Data Options**.\n4. Turn on **Data Roaming**.\n5. Issues with your carrier or account might affect your service. Contact your carrier.",
+      "author_note": "The user has a single eSIM line, so the dual SIM branch is left out. The condition on step 3 is kept. The carrier heading line replaces the No Service closing line.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-no_service-02-v1",
+          "to_candidate": "gsft-no_service-02-v2",
+          "reason": "Step 5 cited a carrier sentence that sits under the 3G section, so it now uses the Contact your carrier heading text and drops the No Service condition.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-no_service-02-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-no_service-03",
+      "candidate_id": "gsft-no_service-03-v2",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone says No Service and I'm on a bus with no Wi-Fi, so I can't connect to anything. What can I do right now?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with No Service and no Wi-Fi, so the steps that need no Wi-Fi apply: reconnect, restart and the carrier heading line.",
+      "source_ref_ids": [
+        "nosvc-iphone-airplane",
+        "nosvc-iphone-restart",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If your cellular network is available, you might be able to reconnect by turning Airplane Mode on and off. Try these steps in order.\n1. Open the **Settings** app.\n2. Turn on **Airplane Mode** for at least 15 seconds.\n3. Turn off **Airplane Mode**.\n4. Restart your iPhone.\n5. Issues with your carrier or account might affect your service. Contact your carrier.",
+      "author_note": "The user has no Wi-Fi, so the Wi-Fi carrier settings check is left out. The source condition on the Airplane Mode step is kept. The reply uses only the reconnect, restart and carrier heading steps.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-no_service-03-v1",
+          "to_candidate": "gsft-no_service-03-v2",
+          "reason": "The reconnect step lacked the page's condition on cellular availability, and step 5 cited a carrier sentence under the 3G section, so the condition was added and step 5 uses the Contact your carrier heading text.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-no_service-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-01",
+      "candidate_id": "gsft-touchscreen_unresponsive-01-v2",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone 14 screen stopped responding to my finger completely this afternoon. I tried pressing harder and it still does nothing."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone whose screen does not respond to touch. The iPhone steps come from the section for unresponsive or intermittent touchscreens, and the page's Get support sentence covers the case where they do not help.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases",
+        "touch-iphone-get-support"
+      ],
+      "target": "Your screen has stopped responding completely. These steps are for screens that are too sensitive or respond only sometimes, so try them.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.\n6. If your screen still isn't working, you might need to set up service for your device.",
+      "author_note": "Cover the five steps and the Get support step. The intro states that the steps are for too-sensitive or intermittent screens, so the user knows they may not fix a dead screen. The step 4 condition is kept as written in the iPhone section.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-01-v1",
+          "to_candidate": "gsft-touchscreen_unresponsive-01-v2",
+          "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-01-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-03",
+      "candidate_id": "gsft-touchscreen_unresponsive-03-v2",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have arthritis and can't pull a case off my iPhone without pain, but my screen has gone dead to touch. What can I do without taking the case off?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a dead touchscreen and a limit: the case cannot be removed. The iPhone steps apply except the case removal step, and the page's Get support sentence covers the case where they do not help.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases",
+        "touch-iphone-get-support"
+      ],
+      "target": "These steps are for screens that are too sensitive or respond only sometimes, so try them.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. If your screen still isn't working, you might need to set up service for your device.",
+      "author_note": "The user cannot remove the case, so the remove cases or screen protectors step is left out. The intro states the limit of the steps, and the Get support sentence is the final step.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-03-v1",
+          "to_candidate": "gsft-touchscreen_unresponsive-03-v2",
+          "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-03-v1"
+        }
+      ]
+    },
+    {
+      "id": "gsft-no_service-02",
+      "candidate_id": "gsft-no_service-02-v3",
+      "task_id": "TR-136",
+      "task_group": "no_service",
+      "source_group": "apple_no_service_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I'm in Japan on a trip with only my one eSIM line and my iPhone shows No Service. How do I fix it?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a single eSIM line while traveling abroad, so the traveling steps for a single SIM or eSIM apply, plus the carrier heading line.",
+      "source_ref_ids": [
+        "nosvc-iphone-travel",
+        "nosvc-iphone-contact-carrier"
+      ],
+      "target": "If you're traveling internationally, make sure that your device is set up for data roaming.\n1. Open the **Settings** app.\n2. Tap **Cellular** or **Cellular Data**.\n3. Turn on **Cellular Data**.\n4. Tap **Cellular Data Options**.\n5. Turn on **Data Roaming**.\n6. Issues with your carrier or account might affect your service. Contact your carrier.",
+      "author_note": "The user has a single eSIM line, so the dual SIM branch is left out and the single SIM or eSIM condition is dropped because the user already meets it. Cellular Data and Cellular Data Options are separate steps. The carrier heading line is the final step.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-no_service-02-v1",
+          "to_candidate": "gsft-no_service-02-v2",
+          "reason": "Step 5 cited a carrier sentence that sits under the 3G section, so it now uses the Contact your carrier heading text and drops the No Service condition.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-no_service-02-v1"
+        },
+        {
+          "from_candidate": "gsft-no_service-02-v2",
+          "to_candidate": "gsft-no_service-02-v3",
+          "reason": "Step 3 combined two actions and repeated the single SIM or eSIM condition that the user already meets, so it is split into two steps and the condition is dropped.",
+          "changed_fields": [
+            "target",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-no_service-02-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-01",
+      "candidate_id": "gsft-touchscreen_unresponsive-01-v3",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "direct",
+      "tags": [
+        "conditional"
+      ],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "My iPhone 14 screen stopped responding to my finger completely this afternoon. I tried pressing harder and it still does nothing."
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone whose screen does not respond to touch. The iPhone steps come from the section for screens that are too sensitive or respond intermittently to touch, and the Get support sentence covers the case where they do not help.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases",
+        "touch-iphone-get-support"
+      ],
+      "target": "Your screen has stopped responding completely. These steps are for screens that are too sensitive or respond only sometimes. They may not help a screen that does not respond at all.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. Remove any cases or screen protectors.\n6. If your screen still isn't working, you might need to set up service for your device.",
+      "author_note": "Cover the five steps and the Get support step. The intro says the steps are for too-sensitive or intermittent screens and may not help a screen that does not respond at all. The step 4 condition is kept as written in the iPhone section.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-01-v1",
+          "to_candidate": "gsft-touchscreen_unresponsive-01-v2",
+          "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-01-v1"
+        },
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-01-v2",
+          "to_candidate": "gsft-touchscreen_unresponsive-01-v3",
+          "reason": "The intro said the steps are for a screen that has stopped responding, but the Apple scope covers only too-sensitive or intermittent screens, so the intro now limits the steps to that scope and says they may not help a dead screen.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-01-v2"
+        }
+      ]
+    },
+    {
+      "id": "gsft-touchscreen_unresponsive-03",
+      "candidate_id": "gsft-touchscreen_unresponsive-03-v3",
+      "task_id": "TR-137",
+      "task_group": "touchscreen_unresponsive",
+      "source_group": "apple_screen_not_working_iphone",
+      "behavior": "constraint",
+      "tags": [],
+      "category": "technical_support",
+      "platform": "iPhone",
+      "sensitive": false,
+      "style": "plain",
+      "source_conversation": [
+        {
+          "role": "user",
+          "content": "I have arthritis and can't pull a case off my iPhone without pain, but my screen has gone dead to touch. What can I do without taking the case off?"
+        }
+      ],
+      "decision": {
+        "mode": "answer",
+        "question": ""
+      },
+      "decision_basis": "The user states an iPhone with a dead touchscreen and a limit: the case cannot be removed. The iPhone steps from the section for too-sensitive or intermittent screens apply except the case removal step, and the Get support sentence covers the case where they do not help.",
+      "source_ref_ids": [
+        "touch-iphone-restart-clean",
+        "touch-iphone-accessories-cases",
+        "touch-iphone-get-support"
+      ],
+      "target": "These steps are for screens that are too sensitive or respond only sometimes. They may not help a screen that does not respond at all. You can try the steps below without removing your case.\n1. Restart your iPhone.\n2. Make sure that your screen is clean and free of any debris or water.\n3. Disconnect any Lightning or USB-C accessories.\n4. If your screen works after removing an accessory, try using a different outlet, cable, or charger.\n5. If your screen still isn't working, you might need to set up service for your device.",
+      "author_note": "The user cannot remove the case, so the remove cases or screen protectors step is left out. The intro states the limit of the steps and that the steps below can be tried without removing the case, and the Get support sentence is the final step.",
+      "correction_history": [
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-03-v1",
+          "to_candidate": "gsft-touchscreen_unresponsive-03-v2",
+          "reason": "The steps come from a section for too-sensitive or intermittent screens, so the intro now says so and the Get support sentence is added as a final step, which the earlier target omitted.",
+          "changed_fields": [
+            "target",
+            "source_ref_ids",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-03-v1"
+        },
+        {
+          "from_candidate": "gsft-touchscreen_unresponsive-03-v2",
+          "to_candidate": "gsft-touchscreen_unresponsive-03-v3",
+          "reason": "The intro said the steps are for screens that are too sensitive or intermittent and told the user to try them for a dead screen, so the intro now states that scope and that the steps can be tried without removing the case.",
+          "changed_fields": [
+            "target",
+            "decision_basis",
+            "author_note",
+            "messages"
+          ],
+          "review_id": "review-gsft-touchscreen_unresponsive-03-v2"
+        }
+      ]
+    }
+  ]
+}
