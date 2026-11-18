@@ -946,6 +946,80 @@
      "review_id": "human-spot-check-gsft-wifi_calling-07"
     }
    ]
+  },
+  {
+   "id": "gsft-wifi_calling-07",
+   "candidate_id": "gsft-wifi_calling-07-v4",
+   "task_id": "TR-026",
+   "task_group": "wifi_calling",
+   "source_group": "apple_wifi_calling_iphone",
+   "behavior": "multiturn",
+   "tags": [
+    "conditional"
+   ],
+   "category": "communication",
+   "platform": "iPhone",
+   "sensitive": false,
+   "style": "failure_recovery",
+   "source_conversation": [
+    {
+     "role": "user",
+     "content": "I think my iPhone should use Wi-Fi calling at home, but calls still drop. What can I do?"
+    },
+    {
+     "role": "assistant",
+     "content": "Check with your carrier that Wi-Fi Calling is supported and that your iPhone has the latest software. Then open Settings, tap Cellular, and turn on Wi-Fi Calling."
+    },
+    {
+     "role": "user",
+     "content": "I already called my carrier and they said it's supported. I restarted my iPhone and turned Wi-Fi Calling on, but I still can't make a Wi-Fi call at home."
+    }
+   ],
+   "decision": {
+    "mode": "answer",
+    "question": ""
+   },
+   "decision_basis": "The user says the carrier supports Wi-Fi Calling, the phone was restarted and the setting is on, and a Wi-Fi call still fails. The page's troubleshooting steps apply only after contacting the carrier, which the user did.",
+   "source_ref_ids": [
+    "wifi-iphone-fix",
+    "wifi-iphone-reset-network-warning"
+   ],
+   "target": "Try these steps next.\nWait two minutes before you go from one step to the next.\n1. Connect to a different Wi-Fi network. Not all Wi-Fi networks work with Wi-Fi Calling.\n2. Open the **Settings** app and tap **Cellular**.\n3. If your iPhone has multiple SIMs, tap the line you want to use.\n4. Tap **Wi-Fi Calling**.\n5. Turn **Wi-Fi Calling** off and then on again.\n6. Go back to **Settings** and tap **General**.\n7. Tap **Transfer or Reset iPhone**, then tap **Reset**.\nBefore the next step: tapping **Reset Network Settings** resets all Wi-Fi networks and passwords, cellular settings, and VPN and APN settings.\n8. Tap **Reset Network Settings**.",
+   "author_note": "Skips the restart and the first turn-on steps the user already did. The page's instruction to wait two minutes between steps is included as the reviewer required, and each step has one action. Step 8 is the page's Reset Network Settings step.",
+   "correction_history": [
+    {
+     "from_candidate": "gsft-wifi_calling-07-v1",
+     "to_candidate": "gsft-wifi_calling-07-v2",
+     "reason": "The page's instruction to wait two minutes between steps was omitted, and step 2 combined several actions in one step.",
+     "changed_fields": [
+      "target",
+      "author_note",
+      "messages"
+     ],
+     "review_id": "review-gsft-wifi_calling-07-v1"
+    },
+    {
+     "from_candidate": "gsft-wifi_calling-07-v2",
+     "to_candidate": "gsft-wifi_calling-07-v3",
+     "reason": "Human spot check (Ryan Hsieh, 2026-11-17): target told the user to reset network settings without saying this erases saved Wi-Fi networks and passwords; added Apple's statement before the reset steps.",
+     "changed_fields": [
+      "messages",
+      "target",
+      "source_ref_ids"
+     ],
+     "review_id": "human-spot-check-gsft-wifi_calling-07"
+    },
+    {
+     "from_candidate": "gsft-wifi_calling-07-v3",
+     "to_candidate": "gsft-wifi_calling-07-v4",
+     "reason": "Owner fix from review: the warning wrongly said the last three steps reset settings; only the Reset Network Settings tap does, so Apple's sentence now sits directly before step 8.",
+     "changed_fields": [
+      "messages",
+      "target"
+     ],
+     "review_id": "review-gsft-wifi_calling-07-v3"
+    }
+   ]
   }
  ]
 }

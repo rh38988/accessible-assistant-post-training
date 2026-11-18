@@ -44,6 +44,10 @@ def sha_file(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
+SPOT = H / "final/grounded_sft_500.human_spot_checks.csv"
+SPOT_IDS = {r["id"] for r in csv.DictReader(open(SPOT, encoding="utf-8"))} if SPOT.exists() else set()
+
+
 def main():
     recs, prov = rio.build()
     done = rio.all_reviews()
@@ -64,7 +68,8 @@ def main():
         extra = len(ids) - TARGET[beh]
         if extra < 0:
             sys.exit(f"not enough kept {beh} examples: {len(ids)} < {TARGET[beh]}")
-        owner = {i for i in ids if any("Owner" in h.get("reason", "") for h in prov[i]["correction_history"])}
+        owner = {i for i in ids if any("Owner" in h.get("reason", "") or "Human spot check" in h.get("reason", "")
+                                       for h in prov[i]["correction_history"])} | SPOT_IDS
         ranked = sorted((i for i in ids if i not in owner),
                         key=lambda i: (-group_n[prov[i]["task_group"]], i), )
         for i in ranked[:extra]:
@@ -103,43 +108,61 @@ def main():
             fp.write(json.dumps(p, ensure_ascii=False) + "\n")
             fv.write(json.dumps(r, ensure_ascii=False) + "\n")
 
-    # Human spot-check sheet: at least 50 ids, ids and hashes only (no outcomes).
-    rng = random.Random(20261117)
-    reasons = {}
-    for i in final_ids:
-        hist = prov[i]["correction_history"]
-        if prov[i]["generation"].get("model") == "claude-opus-5-5" or any("Owner" in h.get("reason", "") for h in hist):
-            reasons[i] = "AI-review edge case: edited or written by the main session, not the writer agent"
-    for i, why in (("gsft-text_size-06", "edge case: user avoids Settings but the only documented path mentions it"),
-                   ("gsft-wifi_calling-07", "edge case: target keeps a page-stated wait between steps")):
-        if i in keep:
-            reasons[i] = why
-    for batch in ("b02.json", "b14.json"):
-        pool = [i for i in final_ids if prov[i]["generation"]["draft_file"] == batch and i not in reasons]
-        for i in rng.sample(pool, 2):
-            reasons[i] = "edge case: its reviewer read the targets before listing required actions"
-    quota = {b: round(55 * n / 500) for b, n in TARGET.items()}
-    have = collections.Counter(prov[i]["behavior"] for i in reasons)
-    groups_used = {prov[i]["task_group"] for i in reasons}
-    order = final_ids[:]
-    rng.shuffle(order)
-    for i in order:
-        if len(reasons) >= 55:
-            break
-        b, g = prov[i]["behavior"], prov[i]["task_group"]
-        if i in reasons or g in groups_used or have[b] >= quota[b]:
-            continue
-        tags = ",".join(prov[i]["tags"]) or "no tags"
-        reasons[i] = f"stratified sample: {b}, {g}, {tags}"
-        have[b] += 1
-        groups_used.add(g)
+    # Human spot-check sheet. Once Ryan has logged it, never regenerate: keep his rows and fill the
+    # follow-up columns for corrected rows from the current version and its independent review.
     cols = "id,conversation_sha256,reviewer,reviewed_at,sampling_reason,source_refs,verdict,findings,proposed_correction,resolution,corrected_candidate_id,corrected_content_sha256,followup_review_id".split(",")
-    with open(OUT / "grounded_sft_500.human_spot_checks.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=cols)
-        w.writeheader()
-        for i in sorted(reasons):
-            w.writerow({"id": i, "conversation_sha256": prov[i]["content_sha256"], "sampling_reason": reasons[i],
-                        "source_refs": " ".join(s["ref_id"] for s in prov[i]["source_refs"])})
+    if SPOT.exists():
+        spot_rows = list(csv.DictReader(open(SPOT, encoding="utf-8")))
+        for row in spot_rows:
+            i = row["id"]
+            if row["verdict"] == "revise" and i in keep:
+                cur = prov[i]["generation"]["candidate_id"]
+                if prov[i]["content_sha256"] != row["conversation_sha256"]:
+                    row.update(corrected_candidate_id=cur, corrected_content_sha256=prov[i]["content_sha256"],
+                               followup_review_id=keep[i]["review_id"],
+                               resolution="corrected as " + cur + "; independent AI re-review: keep")
+        reasons = {r["id"]: r for r in spot_rows}
+        with open(SPOT, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=cols)
+            w.writeheader()
+            w.writerows(spot_rows)
+    else:
+        rng = random.Random(20261117)
+        reasons = {}
+        for i in final_ids:
+            hist = prov[i]["correction_history"]
+            if prov[i]["generation"].get("model") == "claude-opus-5-5" or any("Owner" in h.get("reason", "") for h in hist):
+                reasons[i] = "AI-review edge case: edited or written by the main session, not the writer agent"
+        for i, why in (("gsft-text_size-06", "edge case: user avoids Settings but the only documented path mentions it"),
+                       ("gsft-wifi_calling-07", "edge case: target keeps a page-stated wait between steps")):
+            if i in keep:
+                reasons[i] = why
+        for batch in ("b02.json", "b14.json"):
+            pool = [i for i in final_ids if prov[i]["generation"]["draft_file"] == batch and i not in reasons]
+            for i in rng.sample(pool, 2):
+                reasons[i] = "edge case: its reviewer read the targets before listing required actions"
+        quota = {b: round(55 * n / 500) for b, n in TARGET.items()}
+        have = collections.Counter(prov[i]["behavior"] for i in reasons)
+        groups_used = {prov[i]["task_group"] for i in reasons}
+        order = final_ids[:]
+        rng.shuffle(order)
+        for i in order:
+            if len(reasons) >= 55:
+                break
+            b, g = prov[i]["behavior"], prov[i]["task_group"]
+            if i in reasons or g in groups_used or have[b] >= quota[b]:
+                continue
+            tags = ",".join(prov[i]["tags"]) or "no tags"
+            reasons[i] = f"stratified sample: {b}, {g}, {tags}"
+            have[b] += 1
+            groups_used.add(g)
+        cols = "id,conversation_sha256,reviewer,reviewed_at,sampling_reason,source_refs,verdict,findings,proposed_correction,resolution,corrected_candidate_id,corrected_content_sha256,followup_review_id".split(",")
+        with open(OUT / "grounded_sft_500.human_spot_checks.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=cols)
+            w.writeheader()
+            for i in sorted(reasons):
+                w.writerow({"id": i, "conversation_sha256": prov[i]["content_sha256"], "sampling_reason": reasons[i],
+                            "source_refs": " ".join(s["ref_id"] for s in prov[i]["source_refs"])})
 
     # Task clearance request for the evaluation owner.
     req = list(csv.DictReader(open(WORK / "task_clearance_request_v1.csv", encoding="utf-8")))
@@ -166,7 +189,8 @@ def main():
         "authors": dict(collections.Counter(recs[i]["author"] for i in final_ids)),
         "candidates_drafted": len(prov), "excluded": excluded,
         "provenance_address_notes": url_notes,
-        "human_spot_check_rows": len(reasons), "human_checked": 0,
+        "human_spot_check_rows": len(reasons),
+        "human_checked": sum(1 for r in csv.DictReader(open(OUT / "grounded_sft_500.human_spot_checks.csv", encoding="utf-8")) if r["verdict"]),
         "ids": final_ids,
         "content_sha256": {i: prov[i]["content_sha256"] for i in final_ids},
         "inputs": {name: sha_file(H / name) for name in ("prompt_contract.py", "validate_grounded.py")} |
