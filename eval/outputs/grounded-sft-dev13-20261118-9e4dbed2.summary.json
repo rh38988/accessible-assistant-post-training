@@ -1,0 +1,114 @@
+{
+  "status": "ready_for_offline_evaluation",
+  "created_at_utc": "2026-11-18T04:30:22.478042+00:00",
+  "scope": "13 English development scenarios from eval_v1; frozen final test not used",
+  "plan": "eval\\outputs\\grounded-sft-dev13-20261118-9e4dbed2.shared-plan.json",
+  "plan_sha256": "5de162f1804fbab94f6d7d4b1b292f5c88c0963a23f0d9b280c03978fa55391f",
+  "scenario_ids": [
+    "EVAL-PHONE-001",
+    "EVAL-PHONE-002",
+    "EVAL-PHONE-003",
+    "EVAL-PHONE-004",
+    "EVAL-PHONE-005",
+    "EVAL-COMM-001",
+    "EVAL-COMM-002",
+    "EVAL-COMM-003",
+    "EVAL-COMM-004",
+    "EVAL-SAFE-001",
+    "EVAL-SAFE-002",
+    "EVAL-SAFE-003",
+    "EVAL-SAFE-005"
+  ],
+  "scenario_file_sha256": "1049764d53e3673e7c54f746dc203f64991006f0d8fc2ffe98ff64cbafeb04a5",
+  "corpus_manifest_sha256": "98ba12590680b3f0576083c84187a5570e234111c0f658b38b5b986cafa0e501",
+  "generation_settings": {
+    "max_new_tokens": 768,
+    "do_sample": false
+  },
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "runtime_settings": {
+    "dtype": "bfloat16",
+    "device": "cuda",
+    "attention": "sdpa",
+    "local_files_only": true,
+    "seed": 42
+  },
+  "baseline_reuse": {
+    "eligible": true,
+    "reasons": [],
+    "source_plan": "eval\\outputs\\dev-sft-v2-rag-20261115.plan.json",
+    "source_output": "eval\\outputs\\dev-sft-v2-rag-20261115.jsonl"
+  },
+  "routes": {
+    "answer": 8,
+    "clarify": 5
+  },
+  "response_origin": "All responses model-generated; the router supplied route decisions and exact questions in CLARIFY prompts. No router-only response was emitted.",
+  "input_token_range": [
+    193,
+    630
+  ],
+  "conditions": {
+    "sft-v2": {
+      "output": "eval\\outputs\\grounded-sft-dev13-20261118-9e4dbed2.sft-v2.jsonl",
+      "sha256": "654640ad3bda9c72c3f339c6c14694f34ae5742b0d9fb752fed65603daa4379a",
+      "adapter": "C:\\Users\\josh9\\Desktop\\accessible-assistant-post-training\\checkpoints\\train-v2-ready-981-3ep-resume-9cf18be227b34b869f9ace4af7b56563",
+      "adapter_sha256": "7331fb9a7d5f0b947a4ddd88602b37ea80256d5c888a21ce2a2037c526aa06fb",
+      "rows": 13,
+      "generated_tokens_total": 872,
+      "generated_tokens_median": 51,
+      "generated_tokens_max": 167,
+      "length_limit_hit_ids": [],
+      "eos_count": 13,
+      "clarifications_matching_router_question": 4,
+      "clarification_count": 5,
+      "responses_different_from_baseline": 0
+    },
+    "grounded-ep1": {
+      "output": "eval\\outputs\\grounded-sft-dev13-20261118-9e4dbed2.grounded-ep1.jsonl",
+      "sha256": "70ea400903218a9c20842e57771419d898cd283997b7a89484ed52d87c537c35",
+      "adapter": "C:\\Users\\josh9\\Desktop\\accessible-assistant-post-training\\checkpoints\\grounded-sft-500-continue-3ep-b24cc8f9c5cb416690277da9a1d7f721\\checkpoint-250",
+      "adapter_sha256": "1b3c06f408c05d773503a0cb6452ec8363873dacb52e721987537e79ad828520",
+      "rows": 13,
+      "generated_tokens_total": 863,
+      "generated_tokens_median": 67,
+      "generated_tokens_max": 202,
+      "length_limit_hit_ids": [],
+      "eos_count": 13,
+      "clarifications_matching_router_question": 5,
+      "clarification_count": 5,
+      "responses_different_from_baseline": 9
+    },
+    "grounded-ep2": {
+      "output": "eval\\outputs\\grounded-sft-dev13-20261118-9e4dbed2.grounded-ep2.jsonl",
+      "sha256": "03d0c65a4cfbaf0552b5318e9bbec2e7049eba2cc7f2c4b59ac2fc2ae5e5cdcd",
+      "adapter": "C:\\Users\\josh9\\Desktop\\accessible-assistant-post-training\\checkpoints\\grounded-sft-500-continue-3ep-b24cc8f9c5cb416690277da9a1d7f721\\checkpoint-500",
+      "adapter_sha256": "016a5ff0f0b1ce1068a34b6c96ee8214490f3896aabf76b550f412df24289e52",
+      "rows": 13,
+      "generated_tokens_total": 665,
+      "generated_tokens_median": 59,
+      "generated_tokens_max": 117,
+      "length_limit_hit_ids": [],
+      "eos_count": 13,
+      "clarifications_matching_router_question": 5,
+      "clarification_count": 5,
+      "responses_different_from_baseline": 9
+    },
+    "grounded-ep3": {
+      "output": "eval\\outputs\\grounded-sft-dev13-20261118-9e4dbed2.grounded-ep3.jsonl",
+      "sha256": "df699dfaf5265fac61cb85da3f2ce69399611fc4a5ed132c6175f53a92917778",
+      "adapter": "C:\\Users\\josh9\\Desktop\\accessible-assistant-post-training\\checkpoints\\grounded-sft-500-continue-3ep-b24cc8f9c5cb416690277da9a1d7f721\\checkpoint-750",
+      "adapter_sha256": "1656569d16e07d7e830bed40525973520ed1c85be98e9d88bde60a6d47511275",
+      "rows": 13,
+      "generated_tokens_total": 747,
+      "generated_tokens_median": 60,
+      "generated_tokens_max": 142,
+      "length_limit_hit_ids": [],
+      "eos_count": 13,
+      "clarifications_matching_router_question": 5,
+      "clarification_count": 5,
+      "responses_different_from_baseline": 9
+    }
+  }
+}
