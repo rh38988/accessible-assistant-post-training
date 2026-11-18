@@ -41,6 +41,7 @@ SCHEMA = """Return exactly this JSON (no other text):
  "missing_key_actions": ["K ids that are missing or only hinted at"],
  "constraint_violation": {"violated": false, "quote": ""},
  "invented_content": {"present": false, "quote": ""},
+ "unverified_claims": ["claims the source and documents neither support nor contradict"],
  "retrieved_steps_used": "used | partly | not used | not applicable",
  "clarification_behavior": "appropriate | guessed | over-asked",
  "platform_label": "ok | unsupported | none",
@@ -68,6 +69,9 @@ def build_user_prompt(sc, resp, prep, docs):
         "behavior_requirements": p.get("behavior_requirements", []),
         "user_constraint": p.get("user_constraint", "none"),
     }
+    if p.get("optional_hints"):
+        info["optional_hints"] = p["optional_hints"]
+        info["optional_hints_note"] = "Optional tips. Never count them as key actions and never lower completeness for missing them."
     if not p:
         info["note"] = "No prep file entry: all expected elements are listed under key_actions."
     txt = "SCENARIO\n" + json.dumps(info, ensure_ascii=False, indent=1)
@@ -119,6 +123,9 @@ def parse_json(text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--eval-dir", default=".", help="folder containing scenarios/ and outputs/ (the repo's eval folder)")
+    ap.add_argument("--scenarios", help="scenario jsonl (default: <eval-dir>/scenarios/eval_v1.jsonl)")
+    ap.add_argument("--outputs-dir", help="folder with the response files (default: <eval-dir>/outputs)")
+    ap.add_argument("--conditions-json", help="JSON {condition_name: response_file_name} (default: the five conditions of round 1)")
     ap.add_argument("--rubric", help="FROZEN rubric_v2 markdown file (required except with --ping)")
     ap.add_argument("--prep", help="optional JSON: per scenario key_actions, behavior_requirements, user_constraint")
     ap.add_argument("--docs", help="optional JSON: document id -> text, for RAG conditions")
@@ -142,20 +149,23 @@ def main():
         sys.exit("--rubric is required")
 
     ev = Path(a.eval_dir)
-    scen = {s["id"]: s for s in load_jsonl(ev / "scenarios" / "eval_v1.jsonl")}
+    scen_path = Path(a.scenarios) if a.scenarios else ev / "scenarios" / "eval_v1.jsonl"
+    out_dir_resp = Path(a.outputs_dir) if a.outputs_dir else ev / "outputs"
+    conds = json.load(open(a.conditions_json, encoding="utf-8")) if a.conditions_json else CONDITIONS
+    scen = {s["id"]: s for s in load_jsonl(scen_path)}
     rubric = Path(a.rubric).read_text(encoding="utf-8")
     prep = json.load(open(a.prep, encoding="utf-8")) if a.prep else {}
     docs_map = json.load(open(a.docs, encoding="utf-8")) if a.docs else {}
     only = set(a.only.split(",")) if a.only else None
 
     items = []
-    for cond, fn in CONDITIONS.items():
-        for r in load_jsonl(ev / "outputs" / fn):
+    for cond, fn in conds.items():
+        for r in load_jsonl(out_dir_resp / fn):
             if only and r["scenario_id"] not in only:
                 continue
             ids = (r.get("retrieval") or {}).get("document_ids", [])
             docs = "\n\n".join(f"[{i}]\n{docs_map[i]}" for i in ids if i in docs_map)
-            items.append({"cond": cond, "sid": r["scenario_id"], "resp": r["response"], "docs": docs,
+            items.append({"cond": cond, "sid": r["scenario_id"], "resp": r.get("response", r.get("response_text", "")), "docs": docs,
                           "had_retrieval": bool(ids), "docs_available": bool(docs)})
     random.Random(a.seed).shuffle(items)
     for n, it in enumerate(items, 1):

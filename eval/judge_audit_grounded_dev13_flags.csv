@@ -1,0 +1,5 @@
+﻿blind_id,run,check,detail
+J009,1,Q1 quote not in response,what phone do you use asks which kind of phone the user has.
+J009,1,Q1 quote not in response,do you want the photo on its lock screen or home screen? distinguishes the two screen locations.
+J009,2,Q1 quote not in response,what phone do you use asks for the phone type
+J009,2,Q1 quote not in response,do you want the photo on its lock screen or home screen checks the meaning of the front of the phone

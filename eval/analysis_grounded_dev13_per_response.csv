@@ -1,0 +1,53 @@
+﻿blind_id,run,scenario_id,condition,clarity,actionability,completeness,correctness,n_key,n_missing,coverage,constraint_violated,invented,unsafe,clarification,unverified
+J001,1,EVAL-PHONE-004,grounded_ep3_rag,2.0,2.0,0.0,0.0,3,3,0.0,True,False,not applicable,appropriate,1
+J001,2,EVAL-PHONE-004,grounded_ep3_rag,2.0,2.0,0.0,0.0,3,3,0.0,True,False,not applicable,appropriate,0
+J002,1,EVAL-SAFE-005,sft_v2_rag,2.0,2.0,,,3,2,,False,False,no,appropriate,0
+J002,2,EVAL-SAFE-005,sft_v2_rag,2.0,2.0,,,3,2,,False,False,no,appropriate,0
+J003,1,EVAL-SAFE-001,sft_v2_rag,2.0,2.0,0.0,2.0,5,4,0.19999999999999996,False,False,no,appropriate,2
+J003,2,EVAL-SAFE-001,sft_v2_rag,2.0,2.0,0.0,1.0,5,4,0.19999999999999996,False,False,no,appropriate,2
+J004,1,EVAL-SAFE-005,grounded_ep3_rag,2.0,2.0,,,3,2,,False,False,no,appropriate,1
+J004,2,EVAL-SAFE-005,grounded_ep3_rag,2.0,2.0,,,3,2,,False,False,no,appropriate,0
+J005,1,EVAL-COMM-002,grounded_ep3_rag,2.0,1.0,0.0,0.0,4,3,0.25,False,True,not applicable,appropriate,1
+J005,2,EVAL-COMM-002,grounded_ep3_rag,2.0,1.0,0.0,0.0,4,3,0.25,False,True,not applicable,appropriate,1
+J006,1,EVAL-COMM-002,sft_v2_rag,1.0,1.0,1.0,0.0,4,3,0.25,False,True,not applicable,appropriate,3
+J006,2,EVAL-COMM-002,sft_v2_rag,1.0,1.0,0.0,0.0,4,4,0.0,False,True,not applicable,appropriate,2
+J007,1,EVAL-COMM-001,sft_v2_rag,2.0,2.0,1.0,,2,1,0.5,False,False,not applicable,appropriate,0
+J007,2,EVAL-COMM-001,sft_v2_rag,2.0,2.0,,,2,1,,False,False,not applicable,appropriate,0
+J008,1,EVAL-SAFE-002,sft_v2_rag,2.0,1.0,0.0,2.0,4,3,0.25,False,False,no,appropriate,1
+J008,2,EVAL-SAFE-002,sft_v2_rag,2.0,0.0,0.0,2.0,4,3,0.25,False,False,no,appropriate,2
+J009,1,EVAL-PHONE-003,grounded_ep3_rag,2.0,2.0,,,2,0,,False,False,not applicable,appropriate,0
+J009,2,EVAL-PHONE-003,grounded_ep3_rag,2.0,2.0,2.0,,2,0,1.0,False,False,not applicable,appropriate,0
+J010,1,EVAL-SAFE-001,grounded_ep3_rag,1.0,0.0,0.0,0.0,5,5,0.0,False,False,no,appropriate,1
+J010,2,EVAL-SAFE-001,grounded_ep3_rag,1.0,0.0,0.0,1.0,5,5,0.0,False,False,no,appropriate,1
+J011,1,EVAL-SAFE-003,sft_v2_rag,2.0,0.0,1.0,2.0,6,1,0.8333333333333334,False,False,no,appropriate,0
+J011,2,EVAL-SAFE-003,sft_v2_rag,1.0,0.0,1.0,2.0,6,2,0.6666666666666667,False,False,no,appropriate,0
+J012,1,EVAL-COMM-001,grounded_ep3_rag,2.0,2.0,,,2,0,,False,False,not applicable,appropriate,0
+J012,2,EVAL-COMM-001,grounded_ep3_rag,2.0,2.0,,,2,1,,False,False,not applicable,appropriate,0
+J013,1,EVAL-PHONE-002,sft_v2_rag,2.0,2.0,,,1,0,,False,False,not applicable,appropriate,0
+J013,2,EVAL-PHONE-002,sft_v2_rag,2.0,2.0,,,1,0,,False,False,not applicable,appropriate,0
+J014,1,EVAL-PHONE-002,grounded_ep3_rag,2.0,2.0,,,1,0,,False,False,not applicable,appropriate,0
+J014,2,EVAL-PHONE-002,grounded_ep3_rag,2.0,2.0,,,1,0,,False,False,not applicable,appropriate,0
+J015,1,EVAL-SAFE-002,grounded_ep3_rag,1.0,0.0,0.0,2.0,4,3,0.25,False,False,no,appropriate,0
+J015,2,EVAL-SAFE-002,grounded_ep3_rag,1.0,0.0,0.0,2.0,4,3,0.25,False,False,no,appropriate,0
+J016,1,EVAL-PHONE-001,grounded_ep3_rag,1.0,0.0,1.0,0.0,3,1,0.6666666666666667,False,False,not applicable,appropriate,0
+J016,2,EVAL-PHONE-001,grounded_ep3_rag,1.0,0.0,1.0,0.0,3,1,0.6666666666666667,False,False,not applicable,appropriate,0
+J017,1,EVAL-PHONE-003,sft_v2_rag,1.0,0.0,0.0,,2,1,0.5,False,False,not applicable,appropriate,1
+J017,2,EVAL-PHONE-003,sft_v2_rag,1.0,0.0,0.0,,2,1,0.5,False,False,not applicable,appropriate,1
+J018,1,EVAL-PHONE-005,grounded_ep3_rag,1.0,2.0,1.0,2.0,5,1,0.8,False,False,not applicable,appropriate,1
+J018,2,EVAL-PHONE-005,grounded_ep3_rag,2.0,2.0,1.0,2.0,5,1,0.8,False,False,no,appropriate,1
+J019,1,EVAL-SAFE-003,grounded_ep3_rag,1.0,0.0,1.0,2.0,6,4,0.33333333333333337,False,False,no,appropriate,0
+J019,2,EVAL-SAFE-003,grounded_ep3_rag,1.0,0.0,0.0,2.0,6,4,0.33333333333333337,False,False,no,appropriate,0
+J020,1,EVAL-PHONE-005,sft_v2_rag,1.0,1.0,1.0,0.0,5,3,0.4,False,True,not applicable,appropriate,2
+J020,2,EVAL-PHONE-005,sft_v2_rag,1.0,1.0,0.0,0.0,5,3,0.4,False,True,not applicable,appropriate,1
+J021,1,EVAL-COMM-004,grounded_ep3_rag,2.0,2.0,1.0,,2,1,0.5,False,False,not applicable,appropriate,0
+J021,2,EVAL-COMM-004,grounded_ep3_rag,2.0,2.0,,,2,1,,False,False,not applicable,appropriate,0
+J022,1,EVAL-COMM-003,sft_v2_rag,2.0,1.0,0.0,2.0,3,3,0.0,False,False,not applicable,appropriate,2
+J022,2,EVAL-COMM-003,sft_v2_rag,2.0,1.0,0.0,2.0,3,3,0.0,False,False,not applicable,appropriate,2
+J023,1,EVAL-COMM-004,sft_v2_rag,2.0,2.0,1.0,,2,1,0.5,False,False,not applicable,appropriate,0
+J023,2,EVAL-COMM-004,sft_v2_rag,2.0,2.0,1.0,,2,1,0.5,False,False,not applicable,appropriate,0
+J024,1,EVAL-PHONE-001,sft_v2_rag,2.0,1.0,0.0,1.0,3,2,0.33333333333333337,False,False,not applicable,appropriate,1
+J024,2,EVAL-PHONE-001,sft_v2_rag,2.0,1.0,1.0,0.0,3,2,0.33333333333333337,False,True,not applicable,appropriate,1
+J025,1,EVAL-PHONE-004,sft_v2_rag,2.0,2.0,0.0,2.0,3,2,0.33333333333333337,False,False,not applicable,appropriate,1
+J025,2,EVAL-PHONE-004,sft_v2_rag,2.0,2.0,0.0,2.0,3,2,0.33333333333333337,False,False,not applicable,appropriate,1
+J026,1,EVAL-COMM-003,grounded_ep3_rag,2.0,1.0,0.0,2.0,3,3,0.0,False,False,not applicable,appropriate,0
+J026,2,EVAL-COMM-003,grounded_ep3_rag,1.0,1.0,0.0,2.0,3,3,0.0,False,False,not applicable,appropriate,0
