@@ -16,8 +16,6 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
@@ -26,7 +24,7 @@
   "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
  ],
  "hashes": {
-  "gsft-auto_reply-01": "3a66c1c5095ea225302cf72bf009c24c1c5537bcca20855eb478ee96c2870708",
+  "gsft-auto_reply-01": "0f5ea36c976ccf5dc172df42294561042d3da32fa47116b461ad12f8287d694d",
   "gsft-auto_reply-02": "41442d24e54065e2db4a9ad43e72507e6db60404ada9ad2ff1644e9195459311",
   "gsft-email_labels-01": "14fa6802ef754a0bae508d7309cbb0bb983f3b45b9b4e9dc32e6240c20c746bc",
   "gsft-email_labels-02": "46eeda6cf3960a6019786871286d358fb1eebe658a14d761e9a03b4a05bebe3b",

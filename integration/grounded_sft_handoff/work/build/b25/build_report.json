@@ -18,25 +18,23 @@
  "errors": [],
  "warnings": [
   "card battery_saver.json battery-saver-iphone-80pct: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-join: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card family_sharing.json family-sharing-iphone-age: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card find_downloads.json find-downloads-chrome-default-windows: double quote, backslash or line break; it cannot be used as an answer passage",
   "card gift_card_scam.json gift-card-stop: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-steps: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card send_photo_text.json send-photo-gm-quality: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
   "card text_size.json text-size-iphone-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-android-settings: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
-  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes"
+  "card text_size.json text-size-windows11-textsize: verified_excerpt over 25 words; fetch tools can only confirm short quotes",
+  "gsft-easy_mode-02: answer has no numbered steps"
  ],
  "hashes": {
   "gsft-easy_mode-01": "1364459fe5cab32bc588be0ee7c6e56b8c0a6253d7b4a564e766196861c7fbcf",
-  "gsft-easy_mode-02": "cf8ca73a8b0864088c4eadddf1064737b1d777b766789164425771f19edd72c2",
-  "gsft-home_screen_organize-01": "0d960b32789ae67bb99177d4f86d4333fa9f561052387a31af2e0018ac80584b",
-  "gsft-home_screen_organize-02": "78f23cbde1ab564187e829be65dda6bff13e6421a119b6a2fe95265ffa1c28e1",
+  "gsft-easy_mode-02": "ad9b9c04b16750db259f75ef3d3a8421df48f19fb101a2f042eb2154d6e99a19",
+  "gsft-home_screen_organize-01": "93a20fc8e797852aeb8674e583b260d6403d73ceed7e4604c7c0ef762b98d7e3",
+  "gsft-home_screen_organize-02": "21f265bd08becdadf6dccf665c1b3ceed1a7930f5f029772940de1c13fe42b61",
   "gsft-home_screen_organize-03": "1497b5d9d2bbbfde184293b70937d4ca0d70619b3e784390cf4e00da66b513c2",
   "gsft-home_screen_organize-04": "368ba5103d6d07b03dda35dde3ad99cbcf7cae437346579609b612a763a8cd1f",
   "gsft-home_screen_organize-05": "fecfce294637e3cdbfac944c27ec93674ab10135b5a12a3cff3b358ec705e68b",
-  "gsft-scan_document-01": "6d3d3f71f9bdf3984545bc7975f34bb3d610a5ff3ca7527ed15e71df740d87c2",
-  "gsft-scan_document-02": "afa7ace6c09219d5912ce5a6b3b0d3af242eb114ecdb8acd5f002bd2016b5f52"
+  "gsft-scan_document-01": "dd2a1c02b6e368fa6377618ec2facfc46de599c7bbc193da5b35d3276e15bdde",
+  "gsft-scan_document-02": "9820dd12b57122b1a6de984f4f1e578f06846a51a890624484998a172fa402e9"
  }
 }

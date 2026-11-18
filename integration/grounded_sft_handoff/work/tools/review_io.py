@@ -46,7 +46,12 @@ def current_review(done, prov, i):
     whose model-visible messages did not change (e.g. only the earlier assistant turn)
     still needs a fresh review."""
     r = done.get((i, prov[i]["content_sha256"]))
-    return r if r and r.get("candidate_id") == prov[i]["generation"]["candidate_id"] else None
+    if not r or r.get("candidate_id") != prov[i]["generation"]["candidate_id"]:
+        return None
+    # A review that could not read a source page is not a verdict: review again.
+    if any(sc.get("source_accessible") is not True for sc in r.get("source_checks") or []):
+        return None
+    return r
 
 
 def batch_ids(prov, batch):

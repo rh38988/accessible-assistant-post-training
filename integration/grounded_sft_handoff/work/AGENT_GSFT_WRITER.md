@@ -6,6 +6,11 @@ Your task message gives: a batch name, and for each task group its planned count
 
 Do not open anything under `eval/`, any `judge` file, or `data/v2/` except to avoid copying. Do not create, update or delete scheduled tasks or triggers. Make no tool calls unrelated to this task. Do not write report files. English only, everywhere. Never use em dashes or en dashes.
 
+
+## Fetching official pages
+
+WebFetch only reads web addresses that already appeared in your own conversation. Before fetching an official page, run WebSearch with its title and site (for example `support.microsoft.com use live captions to better understand audio`) and fetch the matching official address from the results. If a fetch is refused with a permission or PROVENANCE_REQUIRED error, do not retry that address: search for the page and fetch the address the search returns. A page is unreadable only after that also fails.
+
 ## Step 1. Source cards (one file per task group)
 
 For each task group, read the official page(s) with WebFetch (Apple, Google, Microsoft, Samsung, or FTC/consumer.ftc.gov only). If a claim is not in the first answer, fetch again with a narrower question before deciding it is absent. If a page cannot be read, try another official page for the same task; if none works, record it in `source_gaps` and plan no candidates on it.

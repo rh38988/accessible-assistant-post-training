@@ -153,5 +153,41 @@
  "decision_basis": "The user says they turned Backup on and describes a work profile on their own phone. The page says Google backup can't be used on a personal device set up with a work profile, so the reply states that condition.",
  "source_ref_ids": ["backup-android-google", "backup-iphone-icloud"],
  "target": "Backup can't be used on a personal device set up with a work profile, a work-only device, or a company-owned device.",
- "author_note": "The reply must not repeat the Settings or Backup steps. No source gap."}
+ "author_note": "The reply must not repeat the Settings or Backup steps. No source gap."},
+
+{"id": "gsft-backup_phone-05", "candidate_id": "gsft-backup_phone-05-v2", "task_id": "TR-095", "task_group": "backup_phone", "source_group": "apple_icloud_backup_iphone", "behavior": "constraint", "tags": ["distractor"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
+ "source_conversation": [{"role": "user", "content": "I only have about a minute, so I need the shortest way to turn on iCloud backup on my iPhone."}],
+ "decision": {"mode": "answer", "question": ""},
+ "decision_basis": "The user states an iPhone and asks for the shortest route. The reply gives the three iCloud Backup steps and the page's conditions for automatic backup, nothing more.",
+ "source_ref_ids": ["backup-iphone-icloud", "backup-android-google"],
+ "target": "Here are the shortest steps to turn on iCloud Backup on iPhone:\n1. Open the **Settings** app and tap your name.\n2. Tap **iCloud**, then tap **iCloud Backup**.\n3. Make sure **Back Up This [Device]** is turned on.\nFor automatic backup, also connect the device to a power source and a Wi-Fi network, and make sure its screen is locked.",
+ "author_note": "Keep the three steps and the automatic backup conditions. No source gap.",
+ "correction_history": [{"from_candidate": "gsft-backup_phone-05-v1", "to_candidate": "gsft-backup_phone-05-v2", "reason": "The power, Wi-Fi and screen-lock conditions were presented as part of turning iCloud Backup on, but the page states them as conditions for automatic backup.", "changed_fields": ["target", "messages"], "review_id": "review-gsft-backup_phone-05-v1"}]},
+
+{"id": "gsft-maps_directions-03", "candidate_id": "gsft-maps_directions-03-v2", "task_id": "TR-091", "task_group": "maps_directions", "source_group": "google_maps_directions_android", "behavior": "direct", "tags": ["distractor"], "category": "online_services", "platform": "Phone", "sensitive": false, "style": "under_specified",
+ "source_conversation": [{"role": "user", "content": "How do I get directions to my hotel on my phone in Google Maps?"}],
+ "decision": {"mode": "answer", "question": ""},
+ "decision_basis": "The user says only my phone, but the Android and iPhone pages give the same four steps. The iPhone or iPad list adds Flight, which is kept as an iPhone or iPad note, so no device question is needed.",
+ "source_ref_ids": ["maps-directions-android", "maps-directions-iphone"],
+ "target": "Here is how to get directions to your hotel in Google Maps:\n1. Open the **Google Maps** app.\n2. Search for your hotel, or tap it on the map.\n3. In the bottom-left corner, tap **Directions**.\n4. Choose a travel mode: **Driving**, **Transit**, **Walking**, **Ride**, **Cycle**, or **Motorcycle**.\nOn an iPhone or iPad, **Flight** also appears as a travel mode.",
+ "author_note": "Four shared steps with exact labels. Flight is an extra iPhone or iPad option only. No source gap.",
+ "correction_history": [{"from_candidate": "gsft-maps_directions-03-v1", "to_candidate": "gsft-maps_directions-03-v2", "reason": "The device question was not needed because the Android and iPhone pages give the same four steps, and the only difference is an extra Flight travel mode.", "changed_fields": ["behavior", "decision", "decision_basis", "target", "author_note", "messages"], "review_id": "review-gsft-maps_directions-03-v1"}]},
+
+{"id": "gsft-video_captions-01", "candidate_id": "gsft-video_captions-01-v2", "task_id": "TR-094", "task_group": "video_captions", "source_group": "youtube_captions_computer", "behavior": "direct", "tags": ["distractor", "conditional"], "category": "technical_support", "platform": "Computer", "sensitive": false, "style": "plain",
+ "source_conversation": [{"role": "user", "content": "I'm watching a YouTube video on my laptop and I can't see the subtitles. How do I turn captions on?"}],
+ "decision": {"mode": "answer", "question": ""},
+ "decision_basis": "The user states a laptop watching YouTube, so the computer steps apply. The Android steps are an inapplicable distractor. The icon appears only when the video has captions, which is kept as a condition.",
+ "source_ref_ids": ["captions-youtube-computer", "captions-youtube-android"],
+ "target": "On a computer, turn on captions like this:\n1. Look for the **Closed captions** (CC) icon at the bottom right of the video player. It appears only if the video has captions.\n2. Click the **Closed captions** icon to turn captions on.",
+ "author_note": "Keep the only-if-captions condition. No source gap.",
+ "correction_history": [{"from_candidate": "gsft-video_captions-01-v1", "to_candidate": "gsft-video_captions-01-v2", "reason": "The first step told the user to open the video, which the user has already done.", "changed_fields": ["target", "messages"], "review_id": "review-gsft-video_captions-01-v1"}]},
+
+{"id": "gsft-video_captions-02", "candidate_id": "gsft-video_captions-02-v2", "task_id": "TR-094", "task_group": "video_captions", "source_group": "youtube_captions_iphone", "behavior": "direct", "tags": ["distractor", "conditional"], "category": "technical_support", "platform": "iPhone", "sensitive": false, "style": "plain",
+ "source_conversation": [{"role": "user", "content": "I'm using the YouTube app on my iPhone and the video is in a language I don't understand. Where do I turn on the captions?"}],
+ "decision": {"mode": "answer", "question": ""},
+ "decision_basis": "The user states an iPhone and the YouTube app, so the iPhone steps apply. The computer steps are an inapplicable distractor. The page says what to do when the button is missing, which is kept.",
+ "source_ref_ids": ["captions-youtube-iphone", "captions-youtube-computer"],
+ "target": "On iPhone, turn on captions like this:\n1. Tap the video player once to show the options.\n2. Tap **Closed captions** to turn captions on.\nIf you don't see the **Closed captions** button, the video doesn't have captions.",
+ "author_note": "Keep the missing-button condition as a conditional line. No source gap.",
+ "correction_history": [{"from_candidate": "gsft-video_captions-02-v1", "to_candidate": "gsft-video_captions-02-v2", "reason": "The first step told the user to open the watch page, which the user already has open in the app.", "changed_fields": ["target", "messages"], "review_id": "review-gsft-video_captions-02-v1"}]}
 ]}

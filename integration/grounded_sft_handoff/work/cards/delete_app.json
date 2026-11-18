@@ -1,7 +1,86 @@
-{"task_group": "delete_app", "source_gaps": "Read through WebFetch summaries on 2026-11-17; excerpt and model_visible_text wording comes from those results and was not checked character by character against raw HTML. The Windows Control Panel uninstall steps are named by the page but their steps were not captured, so no ref gives them. Apple 101550 shows a Published Date of September 14, 2026. Google Play page 13627571 and Apple 116946 were not used. Android 7431795 has no exact uninstall steps (it only says uninstall apps you don't use), so the Android procedure uses Google Play help 13627402 instead.",
- "source_refs": [
-  {"ref_id": "delete_app-iphone-remove", "source_group": "apple_delete_apps_iphone", "organization": "Apple", "title": "Delete apps on your iPhone or iPad - Apple Support", "url": "https://support.apple.com/en-us/101550", "access_date": "2026-11-17", "page_update_date": null, "section": "How to delete an app; Before you get started; If you don't see the option to delete an app", "applicability": "iPhone (the page covers iPhone and iPad); published September 14, 2026", "platform": "iPhone", "app": "Home Screen", "verified_excerpt": "Touch and hold the app. Tap 'Remove App.' Tap 'Delete App,' then tap 'Delete' to confirm.", "model_visible_text": "On iPhone: Touch and hold the app. Tap 'Remove App.' Tap 'Delete App,' then tap 'Delete' to confirm. If you delete an app, it doesn't automatically cancel in-app subscriptions. If you don't see the option to delete an app, some built-in Apple apps can't be deleted. For third-party apps, check parental controls and make sure 'Deleting Apps' is set to 'Allow.' If an MDM solution manages the device, you may not be able to delete apps, so contact your administrator.", "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the named sections; platform prefix added; apostrophes straightened; the jiggle-mode steps are not included, to keep one procedure per ref."},
-  {"ref_id": "delete_app-android-play", "source_group": "google_play_delete_apps_android", "organization": "Google", "title": "Delete apps on your Android device - Google Play Help", "url": "https://support.google.com/googleplay/answer/13627402?hl=en", "access_date": "2026-11-17", "page_update_date": null, "section": "Delete apps that you installed", "applicability": "Android; the page says some of these steps work only on Android 13 and up", "platform": "Android", "app": "Google Play Store", "verified_excerpt": "Tap your profile icon in the top-right corner.", "model_visible_text": "On Android: Launch the Play Store app. Tap your profile icon in the top-right corner. Tap 'Manage apps & devices,' then tap 'Manage.' Select the app you want to remove. Tap 'Uninstall.' Some of these steps work only on Android 13 and up. Supervised users may have limited Personal Safety features.", "extraction_method": "WebFetch of the official page on 2026-11-17; steps taken from the named section; platform prefix added; the page shows no update date."},
-  {"ref_id": "delete_app-windows-uninstall", "source_group": "microsoft_uninstall_windows11", "organization": "Microsoft", "title": "Uninstall or remove apps and programs in Windows | Microsoft Support", "url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98", "access_date": "2026-11-17", "page_update_date": null, "section": "Uninstall from the Start menu; Uninstall in Settings", "applicability": "Windows 11 (the Applies To line lists Windows 10 and Windows 11)", "platform": "Windows 11", "app": "Start menu and Settings", "verified_excerpt": "Press and hold the app, or right-click it, then choose 'Uninstall.'", "model_visible_text": "On Windows 11: Open Start, go to 'All apps,' and search the list for the app. Press and hold the app, or right-click it, then choose 'Uninstall.' Open Start, then Settings, then Apps, then 'Installed apps.' Find the app, select 'More,' then choose 'Uninstall.' Some apps can't be uninstalled from the Settings app right now. For these, use the Control Panel method in the 'Uninstall from Control Panel' section. Apps built into Windows can't be uninstalled, so you may not see an Uninstall option for them.", "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the Start menu and Settings sections; platform prefix added; apostrophes straightened; the Control Panel steps are not included because they were not captured."},
-  {"ref_id": "delete_app-mac-uninstall", "source_group": "apple_delete_apps_mac", "organization": "Apple", "title": "Delete or uninstall apps on Mac - Apple Support", "url": "https://support.apple.com/en-us/102610", "access_date": "2026-11-17", "page_update_date": null, "section": "How to delete or uninstall an app on Mac", "applicability": "Mac; published June 08, 2026", "platform": "Mac", "app": "Finder", "verified_excerpt": "If the app isn't made by Apple, find out whether it includes an 'Uninstall' or 'Uninstaller' app", "model_visible_text": "On Mac: Quit the app first. If the app is currently open, quit the app before continuing. Locate it in the Applications folder, or use Spotlight with Command (⌘) and double-click. If the app isn't made by Apple, find out whether it includes an 'Uninstall' or 'Uninstaller' app. If the app doesn't include an uninstall app or feature, drag the app to the Trash. If you're asked for a user name and password, enter the name and password of an administrator account on your Mac. To permanently delete the app and make its storage space available for other items, choose Finder > Empty Trash. You can't use the Finder to delete apps that are required by your Mac. If you can't delete an app because your Mac says that it's in use, make sure that the app isn't open.", "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the named section; platform prefix added; apostrophes straightened; the Spotlight shortcut kept as the page words it; step 'Find the app in Finder' is merged into the Applications folder sentence."}
- ]}
+{
+  "task_group": "delete_app",
+  "source_gaps": "Read through WebFetch summaries on 2026-11-17; excerpt and model_visible_text wording comes from those results and was not checked character by character against raw HTML. The Windows Control Panel uninstall steps are in ref delete_app-windows-controlpanel, taken from the reviewer fetch in round 1 because the Microsoft page was blocked during revision; re-check before training. Apple 101550 shows a Published Date of September 14, 2026. Google Play page 13627571 and Apple 116946 were not used. Android 7431795 has no exact uninstall steps (it only says uninstall apps you don't use), so the Android procedure uses Google Play help 13627402 instead.",
+  "source_refs": [
+    {
+      "ref_id": "delete_app-iphone-remove",
+      "source_group": "apple_delete_apps_iphone",
+      "organization": "Apple",
+      "title": "Delete apps on your iPhone or iPad - Apple Support",
+      "url": "https://support.apple.com/en-us/101550",
+      "access_date": "2026-11-17",
+      "page_update_date": null,
+      "section": "How to delete an app; Before you get started; If you don't see the option to delete an app",
+      "applicability": "iPhone (the page covers iPhone and iPad); published September 14, 2026",
+      "platform": "iPhone",
+      "app": "Home Screen",
+      "verified_excerpt": "Touch and hold the app. Tap 'Remove App.' Tap 'Delete App,' then tap 'Delete' to confirm.",
+      "model_visible_text": "On iPhone: Touch and hold the app. Tap 'Remove App.' Tap 'Delete App,' then tap 'Delete' to confirm. If you delete an app, it doesn't automatically cancel in-app subscriptions. If you don't see the option to delete an app, some built-in Apple apps can't be deleted. For third-party apps, check parental controls and make sure 'Deleting Apps' is set to 'Allow.' If an MDM solution manages the device, you may not be able to delete apps, so contact your administrator.",
+      "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the named sections; platform prefix added; apostrophes straightened; the jiggle-mode steps are not included, to keep one procedure per ref."
+    },
+    {
+      "ref_id": "delete_app-android-play",
+      "source_group": "google_play_delete_apps_android",
+      "organization": "Google",
+      "title": "Delete apps on your Android device - Google Play Help",
+      "url": "https://support.google.com/googleplay/answer/13627402?hl=en",
+      "access_date": "2026-11-17",
+      "page_update_date": null,
+      "section": "Delete apps that you installed",
+      "applicability": "Android; the page says some of these steps work only on Android 13 and up",
+      "platform": "Android",
+      "app": "Google Play Store",
+      "verified_excerpt": "At the top right, tap the Profile icon.",
+      "model_visible_text": "On Android: Launch the Play Store app. Tap your profile icon in the top-right corner. Tap 'Manage apps & devices,' then tap 'Manage.' Select the app you want to remove. Tap 'Uninstall.' Some of these steps work only on Android 13 and up. Supervised users can use some Personal Safety app features.",
+      "extraction_method": "WebFetch of the official page on 2026-11-17; steps taken from the named section; platform prefix added; the page shows no update date. Revision 1: Personal Safety sentence corrected to the page wording (checked by the reviser on 2026-11-17); verified_excerpt set to the page wording."
+    },
+    {
+      "ref_id": "delete_app-windows-uninstall",
+      "source_group": "microsoft_uninstall_windows11",
+      "organization": "Microsoft",
+      "title": "Uninstall or remove apps and programs in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "access_date": "2026-11-17",
+      "page_update_date": null,
+      "section": "Uninstall from the Start menu; Uninstall in Settings",
+      "applicability": "Windows 11 (the Applies To line lists Windows 10 and Windows 11)",
+      "platform": "Windows 11",
+      "app": "Start menu and Settings",
+      "verified_excerpt": "Press and hold (or right-click) on the app, then select Uninstall.",
+      "model_visible_text": "On Windows 11: Open Start, go to 'All apps,' and search the list for the app. Press and hold the app, or right-click it, then choose 'Uninstall.' Open Start, then Settings, then Apps, then 'Installed apps.' Find the app, select 'More,' then choose 'Uninstall.' Some apps can't be uninstalled from the Settings app right now. For these, use the Control Panel method in the 'Uninstall from Control Panel' section. Apps built into Windows can't be uninstalled, so you may not see an Uninstall option for them.",
+      "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the Start menu and Settings sections; platform prefix added; apostrophes straightened; the Control Panel steps are not included because they were not captured. Revision 1: verified_excerpt set to the wording quoted by the reviewer from the page; the Microsoft page could not be re-fetched during revision."
+    },
+    {
+      "ref_id": "delete_app-windows-controlpanel",
+      "source_group": "microsoft_uninstall_windows11",
+      "organization": "Microsoft",
+      "title": "Uninstall or remove apps and programs in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "access_date": "2026-11-17",
+      "page_update_date": null,
+      "section": "Uninstall from Control Panel",
+      "applicability": "Windows 11 (the Applies To line lists Windows 10 and Windows 11); for apps that can't be uninstalled from the Settings app",
+      "platform": "Windows 11",
+      "app": "Control Panel",
+      "verified_excerpt": "Press and hold (or right-click) the program and select Uninstall or Uninstall/Change.",
+      "model_visible_text": "On Windows 11: Enter Control Panel in search on the taskbar, then select it. Select Programs, then Programs and Features. Press and hold (or right-click) the program, then select Uninstall or Uninstall/Change.",
+      "extraction_method": "Steps taken from the reviewer's WebFetch of the official page on 2026-11-17 (review round 1). The reviser could not re-fetch the page because it was blocked during revision, so re-check the steps before training. Steps kept in page order; labels as quoted by the reviewer."
+    },
+    {
+      "ref_id": "delete_app-mac-uninstall",
+      "source_group": "apple_delete_apps_mac",
+      "organization": "Apple",
+      "title": "Delete or uninstall apps on Mac - Apple Support",
+      "url": "https://support.apple.com/en-us/102610",
+      "access_date": "2026-11-17",
+      "page_update_date": null,
+      "section": "How to delete or uninstall an app on Mac",
+      "applicability": "Mac; published June 08, 2026",
+      "platform": "Mac",
+      "app": "Finder",
+      "verified_excerpt": "If the app isn't made by Apple, find out whether it includes an 'Uninstall' or 'Uninstaller' app",
+      "model_visible_text": "On Mac: Quit the app first. If the app is currently open, quit the app before continuing. Locate it in the Applications folder, or use Spotlight with Command (⌘) and double-click. If the app isn't made by Apple, find out whether it includes an 'Uninstall' or 'Uninstaller' app. If the app doesn't include an uninstall app or feature, drag the app to the Trash. If you're asked for a user name and password, enter the name and password of an administrator account on your Mac. To permanently delete the app and make its storage space available for other items, choose Finder > Empty Trash. You can't use the Finder to delete apps that are required by your Mac. If you can't delete an app because your Mac says that it's in use, make sure that the app isn't open.",
+      "extraction_method": "WebFetch of the official page on 2026-11-17; steps from the named section; platform prefix added; apostrophes straightened; the Spotlight shortcut kept as the page words it; step 'Find the app in Finder' is merged into the Applications folder sentence."
+    }
+  ]
+}

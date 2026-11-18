@@ -4,6 +4,11 @@ You did not write these candidates and must not edit them. Base folder: `/home/c
 
 Do not open anything under `eval/`, any `judge` file, `H/work/drafts/`, or `H/work/cards/`. Use only the review input file below and the official pages. Do not create, update or delete scheduled tasks or triggers. Make no tool calls unrelated to this task. Do not write report files. Never use em dashes.
 
+
+## Fetching official pages
+
+WebFetch only reads web addresses that already appeared in your own conversation. Before fetching an official page, run WebSearch with its title and site (for example `support.microsoft.com use live captions to better understand audio`) and fetch the matching official address from the results. If a fetch is refused with a permission or PROVENANCE_REQUIRED error, do not retry that address: search for the page and fetch the address the search returns. A page is unreadable only after that also fails.
+
 ## Input
 
 `H/work/reviews/input/<batch>.r<N>.md` (build it if missing: `python3 H/work/tools/review_io.py render <batch> <N>`). For each candidate it shows the ID, candidate ID, conversation hash, behavior, the user turns and any earlier assistant turn, the routing decision and its basis, the passages the model sees, and the source references. The final reply comes last, after a line `TARGET (read only after step 2)`.
