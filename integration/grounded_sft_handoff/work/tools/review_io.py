@@ -41,6 +41,14 @@ def all_reviews():
     return out
 
 
+def current_review(done, prov, i):
+    """The review for this id's exact hash AND current candidate version. A new version
+    whose model-visible messages did not change (e.g. only the earlier assistant turn)
+    still needs a fresh review."""
+    r = done.get((i, prov[i]["content_sha256"]))
+    return r if r and r.get("candidate_id") == prov[i]["generation"]["candidate_id"] else None
+
+
 def batch_ids(prov, batch):
     return [i for i, p in prov.items() if p["generation"]["draft_file"] == f"{batch}.json"]
 
@@ -51,7 +59,7 @@ REDO = set()  # ids to re-review even if their hash has a review (set with --red
 def render(batch, n):
     recs, prov = build(batch)
     done = all_reviews()
-    ids = [i for i in batch_ids(prov, batch) if (i, prov[i]["content_sha256"]) not in done or i in REDO]
+    ids = [i for i in batch_ids(prov, batch) if not current_review(done, prov, i) or i in REDO]
     lines = [f"# Review input: {batch}, round {n} ({len(ids)} candidates)\n"]
     for i in ids:
         p, t = prov[i], prov[i]["inference_template"]
@@ -140,7 +148,7 @@ def status():
     done = all_reviews()
     st = Counter()
     for i, p in prov.items():
-        r = done.get((i, p["content_sha256"]))
+        r = current_review(done, prov, i)
         st[r["decision"] if r else "not reviewed"] += 1
     print(dict(st))
 
